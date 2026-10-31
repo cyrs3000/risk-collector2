@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31T16:02:05Z",
+ "generated": "2026-10-31T16:13:12Z",
  "window_hours": {
   "news": 12,
   "military_air": 24
@@ -7,50 +7,561 @@
  "sources_status": {
   "adsb": "ok",
   "firms": "ok",
-  "markets": "ok",
+  "markets": "error: RuntimeError: all market symbols failed",
   "iran_fx": "ok",
   "news": "partial: 4 feed(s) failed: Times of Israel, Times of Israel liveblog, Gulf News, Arab News",
   "telegram": "ok",
   "safeairspace": "ok",
-  "polymarket": "ok"
+  "polymarket": "ok",
+  "state_dept": "ok",
+  "embassy_alerts": "ok",
+  "fcdo": "ok",
+  "easa_czib": "ok",
+  "faa": "ok",
+  "portwatch_hormuz": "error: RuntimeError: no PortWatch rows",
+  "marad": "error: HTTPError: 403 Client Error: Forbidden for url: https://www.maritime.dot.gov/msci-advisories",
+  "official_statements": "ok",
+  "ofac": "ok",
+  "ioda_iran": "ok",
+  "gdelt": "error: HTTPError: 429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28Iran%20OR%20Tehran%20OR%20IRGC%20OR%20Hormuz%29%20%28attack%20",
+  "usgs_seismic": "ok"
  },
- "alerts": [],
+ "alerts": [
+  {
+   "type": "statedept_change",
+   "text": "Iran - Level 4: Do Not Travel",
+   "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.irn.html"
+  },
+  {
+   "type": "statedept_change",
+   "text": "Syria - Level 4: Do Not Travel",
+   "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.syr.html"
+  },
+  {
+   "type": "statedept_change",
+   "text": "Yemen - Level 4: Do Not Travel",
+   "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.yem.html"
+  },
+  {
+   "type": "statedept_change",
+   "text": "Lebanon - Level 4: Do Not Travel",
+   "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lbn.html"
+  },
+  {
+   "type": "statedept_change",
+   "text": "Iraq - Level 4: Do Not Travel",
+   "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.irq.html"
+  },
+  {
+   "type": "statedept_change",
+   "text": "Afghanistan - Level 4: Do Not Travel",
+   "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.afg.html"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Israel",
+   "text": "Security Alert: U.S. Embassy Jerusalem – October 25, 2026",
+   "link": "https://il.usembassy.gov/security-alert-u-s-embassy-jerusalem-october-25-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Israel",
+   "text": "Security Alert: U.S. Embassy Jerusalem – October 23, 2026",
+   "link": "https://il.usembassy.gov/security-alert-u-s-embassy-jerusalem-october-23-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Israel",
+   "text": "Security Alert: U.S. Embassy Jerusalem – October 23, 2026",
+   "link": "https://il.usembassy.gov/security-alert-u-s-embassy-jerusalem-october-18-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Israel",
+   "text": "Security Alert: U.S. Embassy Jerusalem – October 13, 2026",
+   "link": "https://il.usembassy.gov/security-alert-u-s-embassy-jerusalem-october-13-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Israel",
+   "text": "Security Alert: U.S. Embassy Jerusalem – October 8, 2026",
+   "link": "https://il.usembassy.gov/security-alert-u-s-embassy-jerusalem-october-8-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Iraq",
+   "text": "Travel Advisory: Iraq October 2026",
+   "link": "https://iq.usembassy.gov/travel-advisory-iraq-october-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Iraq",
+   "text": "Security Alert: U.S. Mission Iraq – October 18, 2026",
+   "link": "https://iq.usembassy.gov/security-alert-u-s-mission-iraq-october-18-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Iraq",
+   "text": "Security Alert: U.S. Mission Iraq – October 8, 2026",
+   "link": "https://iq.usembassy.gov/security-alert-u-s-mission-iraq-october-8-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Iraq",
+   "text": "Security Alert: U.S. Mission Iraq – September 19, 2026",
+   "link": "https://iq.usembassy.gov/security-alert-u-s-mission-iraq-september-19-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Iraq",
+   "text": "Security Alert: U.S. Embassy Baghdad and U.S. Consulate General Erbil – September 1, 2026",
+   "link": "https://iq.usembassy.gov/security-alert-u-s-embassy-baghdad-and-u-s-consulate-general-erbil-september-1-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Jordan",
+   "text": "Travel Advisory: Jordan October 2026",
+   "link": "https://jo.usembassy.gov/travel-advisory-jordan-october-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Jordan",
+   "text": "Security Alert – U.S. Embassy Amman – October 23, 2026",
+   "link": "https://jo.usembassy.gov/security-alert-u-s-embassy-amman-october-23-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Jordan",
+   "text": "Security Alert: U.S. Embassy Amman – October 18, 2026",
+   "link": "https://jo.usembassy.gov/security-alert-u-s-embassy-amman-october-18-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Jordan",
+   "text": "Security Alert: U.S. Embassy Amman – October 8, 2026",
+   "link": "https://jo.usembassy.gov/security-alert-u-s-embassy-amman-october-8-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Jordan",
+   "text": "Routine Message: Voting in U.S. Elections from Overseas",
+   "link": "https://jo.usembassy.gov/routine-message-voting-in-u-s-elections-from-overseas/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Lebanon",
+   "text": "Security Alert: U.S. Embassy Beirut – October 24, 2026",
+   "link": "https://lb.usembassy.gov/security-alert-u-s-embassy-beirut-october-24-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Lebanon",
+   "text": "Travel Advisory: Lebanon October 2026",
+   "link": "https://lb.usembassy.gov/travel-advisory-lebanon-october-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Lebanon",
+   "text": "Security Alert: U.S. Embassy Beirut – October 18, 2026",
+   "link": "https://lb.usembassy.gov/security-alert-u-s-embassy-beirut-october-18-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Lebanon",
+   "text": "Security Alert: U.S. Embassy Beirut – October 8, 2026",
+   "link": "https://lb.usembassy.gov/security-alert-u-s-embassy-beirut-october-8-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Lebanon",
+   "text": "Security Alert: U.S. Embassy Beirut – September 19, 2026",
+   "link": "https://lb.usembassy.gov/security-alert-u-s-embassy-beirut-september-19-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Qatar",
+   "text": "Travel Advisory: Qatar October 2026",
+   "link": "https://qa.usembassy.gov/travel-advisory-qatar-october-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Qatar",
+   "text": "Security Alert: U.S. Embassy Doha – October 18, 2026",
+   "link": "https://qa.usembassy.gov/security-alert-u-s-embassy-doha-october-18-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Qatar",
+   "text": "Security Alert: U.S. Embassy Doha – October 8, 2026",
+   "link": "https://qa.usembassy.gov/security-alert-u-s-embassy-doha-october-8-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Qatar",
+   "text": "Security Alert: U.S. Embassy Doha – September 19, 2026",
+   "link": "https://qa.usembassy.gov/security-alert-u-s-embassy-doha-september-19-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Qatar",
+   "text": "Security Alert: Qatar – September 1, 2026",
+   "link": "https://qa.usembassy.gov/security-alert-qatar-september-1-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Bahrain",
+   "text": "Travel Advisory: Bahrain October 2026",
+   "link": "https://bh.usembassy.gov/travel-advisory-bahrain-october-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Bahrain",
+   "text": "Security Alert: U.S. Embassy Manama – October 18, 2026",
+   "link": "https://bh.usembassy.gov/security-alert-u-s-embassy-manama-october-18-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Bahrain",
+   "text": "Security Alert: U.S. Embassy Manama – October 8, 2026",
+   "link": "https://bh.usembassy.gov/security-alert-u-s-embassy-manama-october-8-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Bahrain",
+   "text": "Security Alert: U.S. Embassy Manama – September 19, 2026",
+   "link": "https://bh.usembassy.gov/security-alert-u-s-embassy-manama-september-19-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Bahrain",
+   "text": "Security Alert: U.S. Embassy Manama – September 5, 2026",
+   "link": "https://bh.usembassy.gov/security-alert-u-s-embassy-manama-september-5-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Kuwait",
+   "text": "Travel Advisory: Kuwait October 2026",
+   "link": "https://kw.usembassy.gov/travel-advisory-kuwait-october-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Kuwait",
+   "text": "Security Alert: U.S. Embassy Kuwait – October 18, 2026",
+   "link": "https://kw.usembassy.gov/security-alert-u-s-embassy-kuwait-october-18-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Kuwait",
+   "text": "Security Alert: U.S. Mission Kuwait – October 8, 2026",
+   "link": "https://kw.usembassy.gov/security-alert-u-s-mission-kuwait-october-8-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Kuwait",
+   "text": "Security Alert: U.S. Embassy Kuwait – September 19, 2026",
+   "link": "https://kw.usembassy.gov/security-alert-u-s-embassy-kuwait-september-19-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Kuwait",
+   "text": "Security Alert: U.S. Embassy Kuwait – September 2, 2026",
+   "link": "https://kw.usembassy.gov/security-alert-u-s-embassy-kuwait-september-2-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "UAE",
+   "text": "Travel Advisory: United Arab Emirates",
+   "link": "https://ae.usembassy.gov/travel-advisory-united-arab-emirates/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "UAE",
+   "text": "Security Alert: U.S. Mission United Arab Emirates – October 18, 2026",
+   "link": "https://ae.usembassy.gov/security-alert-u-s-mission-united-arab-emirates-october-18-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "UAE",
+   "text": "Security Alert: U.S. Mission United Arab Emirates – October 8, 2026”.",
+   "link": "https://ae.usembassy.gov/security-alert-u-s-mission-united-arab-emirates-october-8-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "UAE",
+   "text": "Security Alert: U.S. Mission United Arab Emirates – September 19, 2026",
+   "link": "https://ae.usembassy.gov/security-alert-u-s-mission-united-arab-emirates-september-19-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "UAE",
+   "text": "Security Alert: U.S. Embassy Abu Dhabi, United Arab Emirates – September 11, 2026",
+   "link": "https://ae.usembassy.gov/security-alert-u-s-embassy-abu-dhabi-united-arab-emirates-september-11-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Saudi Arabia",
+   "text": "Security Alert: U.S. Mission to Saudi Arabia – October 30, 2026",
+   "link": "https://sa.usembassy.gov/security-alert-u-s-mission-to-saudi-arabia-october-30-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Saudi Arabia",
+   "text": "Security Alert: U.S. Mission to Saudi Arabia – October 28, 2026",
+   "link": "https://sa.usembassy.gov/security-alert-u-s-mission-to-saudi-arabia-october-28-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Saudi Arabia",
+   "text": "Security Alert: U.S. Mission to Saudi Arabia – October 27, 2026",
+   "link": "https://sa.usembassy.gov/security-alert-u-s-mission-to-saudi-arabia-october-27-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Saudi Arabia",
+   "text": "Security Alert: U.S. Mission to Saudi Arabia – October 25, 2026",
+   "link": "https://sa.usembassy.gov/security-alert-u-s-mission-to-saudi-arabia-october-25-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Saudi Arabia",
+   "text": "Travel Advisory: Saudi Arabia October 2026",
+   "link": "https://sa.usembassy.gov/travel-advisory-saudi-arabia-october-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Oman",
+   "text": "Travel Advisory: Oman October 2026",
+   "link": "https://om.usembassy.gov/travel-advisory-oman-october-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Oman",
+   "text": "Security Alert: U.S. Embassy Muscat – October 18, 2026",
+   "link": "https://om.usembassy.gov/security-alert-u-s-embassy-muscat-october-18-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Oman",
+   "text": "Security Alert: U.S. Embassy Muscat – October 8, 2026",
+   "link": "https://om.usembassy.gov/security-alert-u-s-embassy-muscat-october-8-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Oman",
+   "text": "Security Alert: U.S. Embassy Muscat – September 19, 2026",
+   "link": "https://om.usembassy.gov/security-alert-u-s-embassy-muscat-september-19-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Oman",
+   "text": "Security Alert: Oman – September 1, 2026",
+   "link": "https://om.usembassy.gov/security-alert-oman-september-1-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Turkey",
+   "text": "Weather Alert: Delayed Opening on Thursday, October 15, 2026 – U.S. Consulate General Istanbul (Release Date: October 14, 2026)",
+   "link": "https://tr.usembassy.gov/weather-alert-delayed-opening-on-thursday-october-15-2026-u-s-consulate-general-istanbul-release-date-october-14-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Turkey",
+   "text": "Routine Message: Ongoing Potential for Demonstrations (U.S. Embassy Ankara, October 1, 2026)",
+   "link": "https://tr.usembassy.gov/routine-message-ongoing-potential-for-demonstrations-u-s-embassy-ankara-october-1-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Turkey",
+   "text": "Routine Message: CORRECTION to Worldwide Message for Americans: SSA Foreign Enforcement Questionnaire (FEQ)",
+   "link": "https://tr.usembassy.gov/routine-message-correction-to-worldwide-message-for-americans-ssa-foreign-enforcement-questionnaire-feq/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Turkey",
+   "text": "Weather Alert – Wildfires – U.S. Embassy Ankara, Türkiye (July 31, 2026)",
+   "link": "https://tr.usembassy.gov/weather-alert-wildfires-u-s-embassy-ankara-turkiye-july-31-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Turkey",
+   "text": "Security Alert: July 22, 2026 – Worldwide Caution for U.S. Citizens",
+   "link": "https://tr.usembassy.gov/security-alert-july-22-2026-worldwide-caution-for-u-s-citizens/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Cyprus",
+   "text": "Worldwide Caution: Public Health Arrival Restrictions and Enhanced Ebola Screening",
+   "link": "https://cy.usembassy.gov/worldwide-caution-public-health-arrival-restrictions-and-enhanced-ebola-screening/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Cyprus",
+   "text": "Security Alert – U.S. Embassy Nicosia (March 23, 2026)",
+   "link": "https://cy.usembassy.gov/security-alert-u-s-embassy-nicosia-march-23-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Cyprus",
+   "text": "Security Alert – U.S. Embassy Cyprus Operating Status and Cypriot Civil Defense Resources – March 05, 2026",
+   "link": "https://cy.usembassy.gov/security-alert-u-s-embassy-cyprus-operating-status-and-cypriot-civil-defense-resources-march-05-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Cyprus",
+   "text": "TRAVEL ADVISORY – Cyprus",
+   "link": "https://cy.usembassy.gov/travel-advisory-cyprus/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Cyprus",
+   "text": "MISSILE THREAT CAUTION – MARCH 2, 2026",
+   "link": "https://cy.usembassy.gov/missile-threat-caution-march-2-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Egypt",
+   "text": "Security Alert: U.S. Embassy Cairo – August 1, 2026",
+   "link": "https://eg.usembassy.gov/security-alert-u-s-embassy-cairo-august-1-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Egypt",
+   "text": "Routine Message: Reminder for U.S. Citizens: U.S. Passport Required to Enter the United States",
+   "link": "https://eg.usembassy.gov/routine-message-reminder-for-u-s-citizens-u-s-passport-required-to-enter-the-united-states/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Egypt",
+   "text": "Security Alert: Exercise Increased Caution in the Middle East",
+   "link": "https://eg.usembassy.gov/security-alert-exercise-increased-caution-in-the-middle-east/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Egypt",
+   "text": "Worldwide Caution: Public Health Arrival Restrictions and Enhanced Ebola Screening",
+   "link": "https://eg.usembassy.gov/worldwide-caution-public-health-arrival-restrictions-and-enhanced-ebola-screening/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Egypt",
+   "text": "Routine Message – U.S. Embassy Cairo, Egypt",
+   "link": "https://eg.usembassy.gov/routine-message-u-s-embassy-cairo-egypt/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Azerbaijan",
+   "text": "Worldwide Caution: Public Health Arrival Restrictions and Enhanced Ebola Screening",
+   "link": "https://az.usembassy.gov/worldwide-caution-public-health-arrival-restrictions-and-enhanced-ebola-screening/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Azerbaijan",
+   "text": "Azerbaijan Level 3 Travel Advisory (March 12, 2026)",
+   "link": "https://az.usembassy.gov/azerbaijan-level-3-travel-advisory-march-12-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Azerbaijan",
+   "text": "Security Alert: Azerbaijan – Alert 1 – Iranian Drones Struck Nakhchivan International Airport (March, 5, 2026)",
+   "link": "https://az.usembassy.gov/security-alert-azerbaijan-alert-1-iranian-drones-struck-nakhchivan-international-airport-march-5-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Azerbaijan",
+   "text": "IranSecurity Alert – Land Border Crossings (January 12, 2026)",
+   "link": "https://az.usembassy.gov/iransecurity-alert-land-border-crossings-january-12-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Azerbaijan",
+   "text": "Alert: Iran Security Alert – Airspace Partial Reopening (July 2, 2025)",
+   "link": "https://az.usembassy.gov/alert-iran-security-alert-airspace-partial-reopening-july-2-2025/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Pakistan",
+   "text": "Security Alert: Vigilance during demonstrations (September 27 to 30)",
+   "link": "https://pk.usembassy.gov/security-alert-vigilance-during-demonstrations-september-27-to-30/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Pakistan",
+   "text": "Security Alert: Vigilance During Independence Day Celebrations",
+   "link": "https://pk.usembassy.gov/security-alert-vigilance-during-independence-day-celebrations/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Pakistan",
+   "text": "Security Alert – U.S. Mission to Pakistan (August 12, 2026)",
+   "link": "https://pk.usembassy.gov/security-alert-u-s-mission-to-pakistan-august-12-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Pakistan",
+   "text": "Security Alert – U.S. Mission to Pakistan (August 3, 2026)",
+   "link": "https://pk.usembassy.gov/security-alert-u-s-mission-to-pakistan-august-3-2026/"
+  },
+  {
+   "type": "embassy_alert",
+   "country": "Pakistan",
+   "text": "Security Alert – July 22, 2026 – Worldwide Caution for U.S. Citizens",
+   "link": "https://pk.usembassy.gov/security-alert-july-22-2026-worldwide-caution-for-u-s-citizens/"
+  },
+  {
+   "type": "official_statement",
+   "source": "IAEA",
+   "text": "IAEA’s Grossi Calls for Progress in Deploying Nuclear Power as Ministerial Conference Opens",
+   "link": "http://www.iaea.org/newscenter/news/iaeas-grossi-calls-for-progress-in-deploying-nuclear-power-as-ministerial-conference-opens"
+  },
+  {
+   "type": "official_statement",
+   "source": "UN News ME",
+   "text": "West Bank: Guterres alarmed as Israel imposes sweeping closures after deadly Hebron attack",
+   "link": "https://news.un.org/feed/view/en/story/2026/10/1168660"
+  },
+  {
+   "type": "official_statement",
+   "source": "UN News ME",
+   "text": "‘Season of fear’: Escalating Israeli attacks on West Bank olive farmers, deadly strikes on Gaza",
+   "link": "https://news.un.org/feed/view/en/story/2026/10/1168625"
+  }
+ ],
  "adsb": {
-  "asof": "2026-10-31T16:02:05Z",
+  "asof": "2026-10-31T16:13:12Z",
   "points": [
    {
     "area": "Gulf",
-    "total": 91,
-    "mil": 1
+    "total": 97,
+    "mil": 2
    },
    {
     "area": "Israel",
-    "total": 34,
+    "total": 31,
     "mil": 1
    },
    {
     "area": "Saudi/Qatar",
-    "total": 18,
-    "mil": 0
+    "total": 20,
+    "mil": 1
    },
    {
     "area": "Iraq/Kuwait",
-    "total": 5,
+    "total": 4,
     "mil": 0
    },
    {
     "area": "Cyprus",
-    "total": 64,
+    "total": 60,
     "mil": 1
    },
    {
     "area": "Ramstein",
-    "total": 699,
-    "mil": 1
+    "total": 657,
+    "mil": 4
    },
    {
     "area": "UK",
-    "total": 731,
+    "total": 685,
     "mil": 4
    },
    {
@@ -76,13 +587,31 @@
     "type": "B738",
     "reg": "A9C-ISA",
     "group": "other",
-    "area": "Gulf",
-    "lat": 26.577371,
-    "lon": 51.337738,
-    "alt": 20675,
-    "track": 290.12,
+    "area": "Saudi/Qatar",
+    "lat": 26.190196,
+    "lon": 50.79814,
+    "alt": 9900,
+    "track": 190.09,
     "first": "2026-10-31T15:58:01Z",
-    "last": "2026-10-31T16:02:05Z",
+    "last": "2026-10-31T16:13:12Z",
+    "areas": [
+     "Gulf",
+     "Saudi/Qatar"
+    ]
+   },
+   {
+    "hex": "06a001",
+    "cs": "A7HHK",
+    "type": "A342",
+    "reg": "A7-HHK",
+    "group": "other",
+    "area": "Gulf",
+    "lat": 25.071442,
+    "lon": 52.012787,
+    "alt": 11425,
+    "track": 83.08,
+    "first": "2026-10-31T16:13:12Z",
+    "last": "2026-10-31T16:13:12Z",
     "areas": [
      "Gulf"
     ]
@@ -94,12 +623,12 @@
     "reg": "166767",
     "group": "other",
     "area": "Cyprus",
-    "lat": 30.863389,
-    "lon": 33.459357,
+    "lat": 31.948056,
+    "lon": 33.113802,
     "alt": 42975,
-    "track": 331.7,
+    "track": 357.56,
     "first": "2026-10-31T15:58:01Z",
-    "last": "2026-10-31T16:02:05Z",
+    "last": "2026-10-31T16:13:12Z",
     "areas": [
      "Cyprus",
      "Israel"
@@ -112,31 +641,65 @@
     "reg": "98-0057",
     "group": "transport",
     "area": "UK",
-    "lat": 51.723994,
-    "lon": 5.230772,
-    "alt": 28850,
-    "track": 310.0,
+    "lat": 52.567893,
+    "lon": 3.524086,
+    "alt": 30000,
+    "track": 312.0,
     "first": "2026-10-31T15:58:01Z",
-    "last": "2026-10-31T16:02:05Z",
+    "last": "2026-10-31T16:13:12Z",
     "areas": [
      "UK"
     ]
    },
    {
-    "hex": "ae4af5",
-    "cs": "RCH411",
-    "type": "C30J",
-    "reg": "08-5675",
+    "hex": "477ff1",
+    "cs": "BRK36",
+    "type": "C17",
+    "reg": "01",
     "group": "transport",
     "area": "UK",
-    "lat": 54.933723,
-    "lon": -3.287048,
-    "alt": 28000,
-    "track": 327.0,
-    "first": "2026-10-31T15:58:01Z",
-    "last": "2026-10-31T16:02:05Z",
+    "lat": 51.455017,
+    "lon": 5.381909,
+    "alt": "ground",
+    "track": null,
+    "first": "2026-10-31T16:13:12Z",
+    "last": "2026-10-31T16:13:12Z",
     "areas": [
      "UK"
+    ]
+   },
+   {
+    "hex": "3b7b94",
+    "cs": "DRAGO67",
+    "type": "EC45",
+    "reg": "F-ZBPW",
+    "group": "other",
+    "area": "Ramstein",
+    "lat": 48.426803,
+    "lon": 7.502072,
+    "alt": 1275,
+    "track": 214.46,
+    "first": "2026-10-31T16:13:12Z",
+    "last": "2026-10-31T16:13:12Z",
+    "areas": [
+     "Ramstein"
+    ]
+   },
+   {
+    "hex": "43c5ef",
+    "cs": "RRR4280",
+    "type": "A400",
+    "reg": "ZM421",
+    "group": "transport",
+    "area": "Ramstein",
+    "lat": 52.652985,
+    "lon": 10.003891,
+    "alt": 14325,
+    "track": 75.07,
+    "first": "2026-10-31T16:13:12Z",
+    "last": "2026-10-31T16:13:12Z",
+    "areas": [
+     "Ramstein"
     ]
    },
    {
@@ -146,12 +709,12 @@
     "reg": "ZZ343",
     "group": "tanker",
     "area": "UK",
-    "lat": 52.828015,
-    "lon": -1.336055,
-    "alt": "ground",
-    "track": null,
+    "lat": 52.830963,
+    "lon": -1.331024,
+    "alt": -250,
+    "track": 88.25,
     "first": "2026-10-31T16:02:05Z",
-    "last": "2026-10-31T16:02:05Z",
+    "last": "2026-10-31T16:13:12Z",
     "areas": [
      "UK"
     ]
@@ -163,12 +726,12 @@
     "reg": "130615",
     "group": "transport",
     "area": "UK",
-    "lat": 52.15871,
-    "lon": -0.333984,
+    "lat": 53.003819,
+    "lon": -1.240199,
     "alt": 28000,
-    "track": 324.28,
+    "track": 329.24,
     "first": "2026-10-31T15:58:01Z",
-    "last": "2026-10-31T16:02:05Z",
+    "last": "2026-10-31T16:13:12Z",
     "areas": [
      "UK"
     ]
@@ -181,15 +744,16 @@
     "type": "B738",
     "reg": "A9C-ISA",
     "group": "other",
-    "area": "Gulf",
-    "lat": 26.577371,
-    "lon": 51.337738,
-    "alt": 20675,
-    "track": 290.12,
+    "area": "Saudi/Qatar",
+    "lat": 26.190196,
+    "lon": 50.79814,
+    "alt": 9900,
+    "track": 190.09,
     "first": "2026-10-31T15:58:01Z",
-    "last": "2026-10-31T16:02:05Z",
+    "last": "2026-10-31T16:13:12Z",
     "areas": [
-     "Gulf"
+     "Gulf",
+     "Saudi/Qatar"
     ]
    },
    {
@@ -199,15 +763,49 @@
     "reg": "166767",
     "group": "other",
     "area": "Cyprus",
-    "lat": 30.863389,
-    "lon": 33.459357,
+    "lat": 31.948056,
+    "lon": 33.113802,
     "alt": 42975,
-    "track": 331.7,
+    "track": 357.56,
     "first": "2026-10-31T15:58:01Z",
-    "last": "2026-10-31T16:02:05Z",
+    "last": "2026-10-31T16:13:12Z",
     "areas": [
      "Cyprus",
      "Israel"
+    ]
+   },
+   {
+    "hex": "06a001",
+    "cs": "A7HHK",
+    "type": "A342",
+    "reg": "A7-HHK",
+    "group": "other",
+    "area": "Gulf",
+    "lat": 25.071442,
+    "lon": 52.012787,
+    "alt": 11425,
+    "track": 83.08,
+    "first": "2026-10-31T16:13:12Z",
+    "last": "2026-10-31T16:13:12Z",
+    "areas": [
+     "Gulf"
+    ]
+   },
+   {
+    "hex": "3b7b94",
+    "cs": "DRAGO67",
+    "type": "EC45",
+    "reg": "F-ZBPW",
+    "group": "other",
+    "area": "Ramstein",
+    "lat": 48.426803,
+    "lon": 7.502072,
+    "alt": 1275,
+    "track": 214.46,
+    "first": "2026-10-31T16:13:12Z",
+    "last": "2026-10-31T16:13:12Z",
+    "areas": [
+     "Ramstein"
     ]
    },
    {
@@ -217,12 +815,12 @@
     "reg": "ZZ343",
     "group": "tanker",
     "area": "UK",
-    "lat": 52.828015,
-    "lon": -1.336055,
-    "alt": "ground",
-    "track": null,
+    "lat": 52.830963,
+    "lon": -1.331024,
+    "alt": -250,
+    "track": 88.25,
     "first": "2026-10-31T16:02:05Z",
-    "last": "2026-10-31T16:02:05Z",
+    "last": "2026-10-31T16:13:12Z",
     "areas": [
      "UK"
     ]
@@ -234,12 +832,12 @@
     "reg": "98-0057",
     "group": "transport",
     "area": "UK",
-    "lat": 51.723994,
-    "lon": 5.230772,
-    "alt": 28850,
-    "track": 310.0,
+    "lat": 52.567893,
+    "lon": 3.524086,
+    "alt": 30000,
+    "track": 312.0,
     "first": "2026-10-31T15:58:01Z",
-    "last": "2026-10-31T16:02:05Z",
+    "last": "2026-10-31T16:13:12Z",
     "areas": [
      "UK"
     ]
@@ -268,52 +866,86 @@
     "reg": "130615",
     "group": "transport",
     "area": "UK",
-    "lat": 52.15871,
-    "lon": -0.333984,
+    "lat": 53.003819,
+    "lon": -1.240199,
     "alt": 28000,
-    "track": 324.28,
+    "track": 329.24,
     "first": "2026-10-31T15:58:01Z",
-    "last": "2026-10-31T16:02:05Z",
+    "last": "2026-10-31T16:13:12Z",
     "areas": [
      "UK"
+    ]
+   },
+   {
+    "hex": "477ff1",
+    "cs": "BRK36",
+    "type": "C17",
+    "reg": "01",
+    "group": "transport",
+    "area": "UK",
+    "lat": 51.455017,
+    "lon": 5.381909,
+    "alt": "ground",
+    "track": null,
+    "first": "2026-10-31T16:13:12Z",
+    "last": "2026-10-31T16:13:12Z",
+    "areas": [
+     "UK"
+    ]
+   },
+   {
+    "hex": "43c5ef",
+    "cs": "RRR4280",
+    "type": "A400",
+    "reg": "ZM421",
+    "group": "transport",
+    "area": "Ramstein",
+    "lat": 52.652985,
+    "lon": 10.003891,
+    "alt": 14325,
+    "track": 75.07,
+    "first": "2026-10-31T16:13:12Z",
+    "last": "2026-10-31T16:13:12Z",
+    "areas": [
+     "Ramstein"
     ]
    }
   ],
   "baseline": {
    "tanker": {
     "now": 1,
-    "median_14d": 0.0,
+    "median_14d": 0,
     "p90_14d": 0,
-    "samples": 2
+    "samples": 3
    },
    "transport": {
-    "now": 3,
-    "median_14d": 3.0,
+    "now": 4,
+    "median_14d": 3,
     "p90_14d": 3,
-    "samples": 2
+    "samples": 3
    },
    "bomber": {
     "now": 0,
-    "median_14d": 0.0,
+    "median_14d": 0,
     "p90_14d": 0,
-    "samples": 2
+    "samples": 3
    },
    "isr": {
     "now": 0,
-    "median_14d": 0.0,
+    "median_14d": 0,
     "p90_14d": 0,
-    "samples": 2
+    "samples": 3
    },
    "mil": {
-    "now": 6,
-    "median_14d": 5.0,
+    "now": 9,
+    "median_14d": 5,
     "p90_14d": 5,
-    "samples": 2
+    "samples": 3
    }
   }
  },
  "firms": {
-  "asof": "2026-10-31T16:02:05Z",
+  "asof": "2026-10-31T16:13:12Z",
   "MODIS_NRT": {
    "n": 153
   },
@@ -621,47 +1253,16 @@
     "near": []
    }
   ],
-  "not_oilgas_median_14d": 198.0
+  "not_oilgas_median_14d": 198
  },
- "markets": {
-  "brent": {
-   "error": "429 Client Error: Too Many Requests for url: https://query1.finance.yahoo.com/v8"
-  },
-  "wti": {
-   "error": "429 Client Error: Too Many Requests for url: https://query1.finance.yahoo.com/v8"
-  },
-  "gold": {
-   "error": "429 Client Error: Too Many Requests for url: https://query1.finance.yahoo.com/v8"
-  },
-  "vix": {
-   "v": 19.42,
-   "prev": 18.39,
-   "chg_pct": 5.6,
-   "t": "2026-10-30T20:15:01Z"
-  },
-  "sp500": {
-   "error": "429 Client Error: Too Many Requests for url: https://query1.finance.yahoo.com/v8"
-  },
-  "usd_ils": {
-   "error": "429 Client Error: Too Many Requests for url: https://query1.finance.yahoo.com/v8"
-  },
-  "ta35": {
-   "error": "429 Client Error: Too Many Requests for url: https://query1.finance.yahoo.com/v8"
-  },
-  "ta125": {
-   "error": "429 Client Error: Too Many Requests for url: https://query1.finance.yahoo.com/v8"
-  },
-  "dxy": {
-   "error": "429 Client Error: Too Many Requests for url: https://query1.finance.yahoo.com/v8"
-  }
- },
+ "markets": null,
  "iran_fx": {
   "usd_rial": 2725000,
   "usd_toman": 272500
  },
  "safeairspace": {
   "page_changed_since_last_check": true,
-  "last_change": "2026-10-31T16:02:05Z",
+  "last_change": "2026-10-31T16:13:12Z",
   "entries_last_3d": []
  },
  "polymarket": [
@@ -689,8 +1290,8 @@
    "q": "US x Iran ceasefire continues through October 31?",
    "end": "2026-10-31T23:59:00Z",
    "outcomes": {
-    "Yes": "0.9785",
-    "No": "0.0215"
+    "Yes": "0.978",
+    "No": "0.022"
    },
    "vol24h": 150888,
    "slug": "us-x-iran-ceasefire-continues-through-october-31-20260917"
@@ -706,6 +1307,1244 @@
    "slug": "will-benjamin-netanyahu-be-the-next-prime-minister-of-israel"
   }
  ],
+ "official": {
+  "state_dept": [
+   {
+    "title": "Iran - Level 4: Do Not Travel",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.irn.html",
+    "date": "Fri, 23 Oct 2026",
+    "desc": "Do not travel to  Iran  due to the risk of  terrorism ,  unrest ,  kidnapping ,  arbitrary arrest  of U.S. citizens, and  wrongful detention . Read the entire Travel Advisory.       Do not travel to Iran for any reason. U.S. citizens in Iran should leave immediately .&nbsp;     There is no U.S. Emba",
+    "level": 4,
+    "ordered_departure": false,
+    "new": true
+   },
+   {
+    "title": "Syria - Level 4: Do Not Travel",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.syr.html",
+    "date": "Fri, 23 Oct 2026",
+    "desc": "Do not travel to  Syria  for any reason due to the risk of  terrorism ,  unrest ,  kidnapping ,  hostage taking, crime , and  armed conflict.     Do not travel  to  Syria  for any reason.   The U.S. government suspended U.S. Embassy operations in 2012. The Czech Republic is the protecting power for ",
+    "level": 4,
+    "ordered_departure": false,
+    "new": true
+   },
+   {
+    "title": "Yemen - Level 4: Do Not Travel",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.yem.html",
+    "date": "Fri, 23 Oct 2026",
+    "desc": "Do not travel in  Yemen  due to risk of  terrorism ,  unrest ,  crime ,  health risks ,  kidnapping , and  landmines .   Do not travel to Yemen for any reason, including the island of Socotra. The U.S. Embassy in Sana’a suspended its operations in February 2015. The U.S. government cannot offer emer",
+    "level": 4,
+    "ordered_departure": false,
+    "new": true
+   },
+   {
+    "title": "Bahrain - Level 3: Reconsider Travel",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bhr.html",
+    "date": "Fri, 23 Oct 2026",
+    "desc": "Reconsider travel to  Bahrain  due to  terrorism  and  armed conflict .    U.S. government employee travel restrictions&nbsp;    Due to safety risks, U.S. government employees need special authorization to travel to Bahrain.&nbsp; Additional staffing posture adjustments may be imposed on U.S. person",
+    "level": 3,
+    "ordered_departure": false,
+    "new": true
+   },
+   {
+    "title": "Jordan - Level 3: Reconsider Travel",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.jor.html",
+    "date": "Fri, 23 Oct 2026",
+    "desc": "Reconsider travel to  Jordan  due to  terrorism  and  armed conflict . Some areas have increased risk. Read the entire Travel Advisory.   U.S. government employee travel restrictions   Due to safety risks, U.S. government employees need special authorization to travel to Jordan. Additional staffing ",
+    "level": 3,
+    "ordered_departure": false,
+    "new": true
+   },
+   {
+    "title": "Lebanon - Level 4: Do Not Travel",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lbn.html",
+    "date": "Fri, 23 Oct 2026",
+    "desc": "Do not travel to  Lebanon  due to the  risk of crime, terrorism, unrest, kidnapping, landmines,  and  armed conflict .&nbsp;    U.S. government employee travel restrictions    Do not travel to Lebanon for any reason. The U.S. government has limited ability to offer emergency services to U.S. citizen",
+    "level": 4,
+    "ordered_departure": false,
+    "new": true
+   },
+   {
+    "title": "Oman - Level 3: Reconsider Travel",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.omn.html",
+    "date": "Fri, 23 Oct 2026",
+    "desc": "Reconsider travel to  Oman  due to  risk of armed conflict  and  terrorism . Some areas have increased risk. Read the entire Travel Advisory    U.S. government employee travel restrictions    As of August 30, 2026, family members may join U.S. government employees who work in Oman.&nbsp; Due to safe",
+    "level": 3,
+    "ordered_departure": false,
+    "new": true
+   },
+   {
+    "title": "Saudi Arabia - Level 3: Reconsider Travel",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sau.html",
+    "date": "Fri, 23 Oct 2026",
+    "desc": "Reconsider travel to  Saudi Arabia  due to risk of  drone and missile targeting of American interests by Iran   and the Iranian-supported Houthis, armed conflict, terrorism, exit bans , and  local laws regarding social media activity.  Some areas have increased risk. Read the entire Travel Advisory.",
+    "level": 3,
+    "ordered_departure": false,
+    "new": true
+   },
+   {
+    "title": "Kuwait - Level 3: Reconsider Travel",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kwt.html",
+    "date": "Fri, 23 Oct 2026",
+    "desc": "Reconsider travel to  Kuwait  due to the threat of armed  conflict ,  landmines , and  crime .   The U.S. government has limited ability to offer services to U.S. citizens in Kuwait due to safety risks.   U.S. government employee travel restrictions    Due to safety risks, U.S. government employees ",
+    "level": 3,
+    "ordered_departure": false,
+    "new": true
+   },
+   {
+    "title": "Iraq - Level 4: Do Not Travel",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.irq.html",
+    "date": "Fri, 23 Oct 2026",
+    "desc": "Do not travel to  Iraq  due to  terrorism, kidnapping, armed conflict, crime, health risks , and  the U.S. government’s limited ability to provide emergency services to U.S. citizens in Iraq .   Do not travel to Iraq for any reason. The U.S. government has limited ability to offer emergency services",
+    "level": 4,
+    "ordered_departure": false,
+    "new": true
+   },
+   {
+    "title": "United Arab Emirates - Level 3: Reconsider Travel",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.are.html",
+    "date": "Fri, 23 Oct 2026",
+    "desc": "Reconsider travel to the  United Arab Emirates  due to  terrorism  and  armed conflict .     U.S. government employee travel restrictions   U.S. government employees working in the UAE   need special authorization to travel to military bases and critical energy infrastructure sites due to UAE govern",
+    "level": 3,
+    "ordered_departure": false,
+    "new": true
+   },
+   {
+    "title": "Qatar - Level 3: Reconsider Travel",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.qat.html",
+    "date": "Fri, 23 Oct 2026",
+    "desc": "Reconsider travel to  Qatar  due to risk of  armed conflict .    U.S. government employee travel restrictions    Due to safety risks, U.S. government employees need special authorization to travel to Qatar. &nbsp;Additional staffing posture adjustments may be imposed on U.S. personnel under Chief of",
+    "level": 3,
+    "ordered_departure": false,
+    "new": true
+   },
+   {
+    "title": "Israel - Level 3: Reconsider Travel",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.isr.html",
+    "date": "Fri, 23 Oct 2026",
+    "desc": "Reconsider travel to  Israel  due to  terrorism  and  unrest . Some areas have increased risk. Read the entire Travel Advisory.   As of August 26, 2026, family members may join U.S. government employees who work in Israel.    U.S. government employee travel restrictions    U.S. government employees ",
+    "level": 3,
+    "ordered_departure": false,
+    "new": true
+   },
+   {
+    "title": "Pakistan - Level 3: Reconsider Travel",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.pak.html",
+    "date": "Tue, 16 Jun 2026",
+    "desc": "Reconsider travel to  Pakistan  due to  armed conflict, terrorism, crime, and kidnapping . Some areas have increased risk. Read the entire Travel Advisory.     Terrorism      There is risk of terrorist violence, including terrorist attacks and other activity in Pakistan. Visit the U.S. Department of",
+    "level": 3,
+    "ordered_departure": false,
+    "new": true
+   },
+   {
+    "title": "Turkey - Level 2: Exercise Increased Caution",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.tur.html",
+    "date": "Tue, 09 Jun 2026",
+    "desc": "Exercise increased caution  Exercise increased caution  in  Türkiye  due to  terrorism ,  armed conflict , and  arbitrary detentions . Some areas have increased risk. Read the entire Travel Advisory.   Exercise caution in crowded public spaces including transportation hubs, markets, malls, governmen",
+    "level": 2,
+    "ordered_departure": false,
+    "new": true
+   },
+   {
+    "title": "Cyprus - Level 1: Exercise Normal Precautions",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.cyp.html",
+    "date": "Mon, 01 Jun 2026",
+    "desc": "Exercise normal precaution in  Cyprus . Some areas have increased risk. Read the entire Travel Advisory.   Cyprus is generally a safe destination for travelers.    United Nations Buffer Zone    Do not try to enter the United Nations buffer zone anywhere other than a designated crossing point. Police",
+    "level": 1,
+    "ordered_departure": false,
+    "new": true
+   },
+   {
+    "title": "Afghanistan - Level 4: Do Not Travel",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.afg.html",
+    "date": "Fri, 20 Feb 2026",
+    "desc": "Do not travel due to  civil unrest ,  crime, terrorism ,  risk of wrongful detention ,  kidnapping ,  natural disasters , and  limited health facilities .    Do not travel to Afghanistan for any reason       We urge American citizens in Afghanistan to leave immediately. U.S. citizens seeking U.S. go",
+    "level": 4,
+    "ordered_departure": false,
+    "new": true
+   },
+   {
+    "title": "Romania - Level 1: Exercise Normal Precautions",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.rou.html",
+    "date": "Tue, 14 Oct 2025",
+    "desc": "Exercise normal precaution in  Romania .&nbsp;      Exercise normal precautions in Romania.     Romania has moderate seismic activity and a history of strong earthquakes. Bucharest faces the highest risk.",
+    "level": 1,
+    "ordered_departure": false,
+    "new": true
+   },
+   {
+    "title": "Egypt - Level 2: Exercise Increased Caution",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.egy.html",
+    "date": "Tue, 15 Jul 2025",
+    "desc": "Exercise increased caution in  Egypt  due to  terrorism ,  crime , and  health . Some areas have increased risk.       The U.S. Embassy has limited ability to help dual national U.S.-Egyptian citizens who are arrested or detained.     Egyptian law considers dual citizens to be solely Egyptian citize",
+    "level": 2,
+    "ordered_departure": false,
+    "new": true
+   }
+  ],
+  "embassy_alerts": {
+   "feeds_ok": 15,
+   "items": [
+    {
+     "title": "Security Alert: U.S. Embassy Jerusalem – October 25, 2026",
+     "link": "https://il.usembassy.gov/security-alert-u-s-embassy-jerusalem-october-25-2026/",
+     "date": "Sun, 25 Oct 2026 12:57:58 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Jerusalem – October 25, 2026  appeared first on  U.S. Embassy Jerusalem .",
+     "country": "Israel",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Jerusalem – October 23, 2026",
+     "link": "https://il.usembassy.gov/security-alert-u-s-embassy-jerusalem-october-23-2026/",
+     "date": "Sat, 24 Oct 2026 10:02:10 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Jerusalem – October 23, 2026  appeared first on  U.S. Embassy Jerusalem .",
+     "country": "Israel",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Jerusalem – October 23, 2026",
+     "link": "https://il.usembassy.gov/security-alert-u-s-embassy-jerusalem-october-18-2026/",
+     "date": "Sat, 24 Oct 2026 10:00:31 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Jerusalem – October 23, 2026  appeared first on  U.S. Embassy Jerusalem .",
+     "country": "Israel",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Jerusalem – October 13, 2026",
+     "link": "https://il.usembassy.gov/security-alert-u-s-embassy-jerusalem-october-13-2026/",
+     "date": "Tue, 13 Oct 2026 19:32:26 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Jerusalem – October 13, 2026  appeared first on  U.S. Embassy Jerusalem .",
+     "country": "Israel",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Jerusalem – October 8, 2026",
+     "link": "https://il.usembassy.gov/security-alert-u-s-embassy-jerusalem-october-8-2026/",
+     "date": "Thu, 08 Oct 2026 19:56:16 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Jerusalem – October 8, 2026  appeared first on  U.S. Embassy Jerusalem .",
+     "country": "Israel",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Travel Advisory: Iraq October 2026",
+     "link": "https://iq.usembassy.gov/travel-advisory-iraq-october-2026/",
+     "date": "Sat, 24 Oct 2026 08:18:55 +0000",
+     "desc": "The post  Travel Advisory: Iraq October 2026  appeared first on  U.S. Embassy &amp; Consulate in Iraq .",
+     "country": "Iraq",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Mission Iraq – October 18, 2026",
+     "link": "https://iq.usembassy.gov/security-alert-u-s-mission-iraq-october-18-2026/",
+     "date": "Sun, 18 Oct 2026 20:44:00 +0000",
+     "desc": "The post  Security Alert: U.S. Mission Iraq – October 18, 2026  appeared first on  U.S. Embassy &amp; Consulate in Iraq .",
+     "country": "Iraq",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Mission Iraq – October 8, 2026",
+     "link": "https://iq.usembassy.gov/security-alert-u-s-mission-iraq-october-8-2026/",
+     "date": "Thu, 08 Oct 2026 19:33:24 +0000",
+     "desc": "The post  Security Alert: U.S. Mission Iraq – October 8, 2026  appeared first on  U.S. Embassy &amp; Consulate in Iraq .",
+     "country": "Iraq",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Mission Iraq – September 19, 2026",
+     "link": "https://iq.usembassy.gov/security-alert-u-s-mission-iraq-september-19-2026/",
+     "date": "Sat, 19 Sep 2026 21:07:09 +0000",
+     "desc": "The post  Security Alert: U.S. Mission Iraq &#8211; September 19, 2026  appeared first on  U.S. Embassy &amp; Consulate in Iraq .",
+     "country": "Iraq",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Baghdad and U.S. Consulate General Erbil – September 1, 2026",
+     "link": "https://iq.usembassy.gov/security-alert-u-s-embassy-baghdad-and-u-s-consulate-general-erbil-september-1-2026/",
+     "date": "Tue, 01 Sep 2026 15:19:57 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Baghdad and U.S. Consulate General Erbil – September 1, 2026  appeared first on  U.S. Embassy &amp; Consulate in Iraq .",
+     "country": "Iraq",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Travel Advisory: Jordan October 2026",
+     "link": "https://jo.usembassy.gov/travel-advisory-jordan-october-2026/",
+     "date": "Sat, 24 Oct 2026 09:59:06 +0000",
+     "desc": "The post  Travel Advisory: Jordan October 2026  appeared first on  U.S. Embassy in Jordan .",
+     "country": "Jordan",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert – U.S. Embassy Amman – October 23, 2026",
+     "link": "https://jo.usembassy.gov/security-alert-u-s-embassy-amman-october-23-2026/",
+     "date": "Thu, 22 Oct 2026 21:08:00 +0000",
+     "desc": "The post  Security Alert – U.S. Embassy Amman – October 23, 2026  appeared first on  U.S. Embassy in Jordan .",
+     "country": "Jordan",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Amman – October 18, 2026",
+     "link": "https://jo.usembassy.gov/security-alert-u-s-embassy-amman-october-18-2026/",
+     "date": "Sun, 18 Oct 2026 20:56:00 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Amman – October 18, 2026  appeared first on  U.S. Embassy in Jordan .",
+     "country": "Jordan",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Amman – October 8, 2026",
+     "link": "https://jo.usembassy.gov/security-alert-u-s-embassy-amman-october-8-2026/",
+     "date": "Thu, 08 Oct 2026 20:13:24 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Amman – October 8, 2026  appeared first on  U.S. Embassy in Jordan .",
+     "country": "Jordan",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Routine Message: Voting in U.S. Elections from Overseas",
+     "link": "https://jo.usembassy.gov/routine-message-voting-in-u-s-elections-from-overseas/",
+     "date": "Sun, 04 Oct 2026 13:22:18 +0000",
+     "desc": "The post  Routine Message: Voting in U.S. Elections from Overseas  appeared first on  U.S. Embassy in Jordan .",
+     "country": "Jordan",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Beirut – October 24, 2026",
+     "link": "https://lb.usembassy.gov/security-alert-u-s-embassy-beirut-october-24-2026/",
+     "date": "Sat, 24 Oct 2026 14:32:20 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Beirut – October 24, 2026  appeared first on  U.S. Embassy in Lebanon .",
+     "country": "Lebanon",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Travel Advisory: Lebanon October 2026",
+     "link": "https://lb.usembassy.gov/travel-advisory-lebanon-october-2026/",
+     "date": "Sat, 24 Oct 2026 09:23:32 +0000",
+     "desc": "The post  Travel Advisory: Lebanon October 2026  appeared first on  U.S. Embassy in Lebanon .",
+     "country": "Lebanon",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Beirut – October 18, 2026",
+     "link": "https://lb.usembassy.gov/security-alert-u-s-embassy-beirut-october-18-2026/",
+     "date": "Sun, 18 Oct 2026 20:58:00 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Beirut – October 18, 2026  appeared first on  U.S. Embassy in Lebanon .",
+     "country": "Lebanon",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Beirut – October 8, 2026",
+     "link": "https://lb.usembassy.gov/security-alert-u-s-embassy-beirut-october-8-2026/",
+     "date": "Thu, 08 Oct 2026 20:01:07 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Beirut – October 8, 2026  appeared first on  U.S. Embassy in Lebanon .",
+     "country": "Lebanon",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Beirut – September 19, 2026",
+     "link": "https://lb.usembassy.gov/security-alert-u-s-embassy-beirut-september-19-2026/",
+     "date": "Sat, 19 Sep 2026 21:36:56 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Beirut – September 19, 2026  appeared first on  U.S. Embassy in Lebanon .",
+     "country": "Lebanon",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Travel Advisory: Qatar October 2026",
+     "link": "https://qa.usembassy.gov/travel-advisory-qatar-october-2026/",
+     "date": "Sat, 24 Oct 2026 10:04:35 +0000",
+     "desc": "The post  Travel Advisory: Qatar October 2026  appeared first on  U.S. Embassy in Qatar .",
+     "country": "Qatar",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Doha – October 18, 2026",
+     "link": "https://qa.usembassy.gov/security-alert-u-s-embassy-doha-october-18-2026/",
+     "date": "Sun, 18 Oct 2026 20:07:00 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Doha – October 18, 2026   appeared first on  U.S. Embassy in Qatar .",
+     "country": "Qatar",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Doha – October 8, 2026",
+     "link": "https://qa.usembassy.gov/security-alert-u-s-embassy-doha-october-8-2026/",
+     "date": "Thu, 08 Oct 2026 20:04:26 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Doha – October 8, 2026  appeared first on  U.S. Embassy in Qatar .",
+     "country": "Qatar",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Doha – September 19, 2026",
+     "link": "https://qa.usembassy.gov/security-alert-u-s-embassy-doha-september-19-2026/",
+     "date": "Sat, 19 Sep 2026 21:46:28 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Doha – September 19, 2026  appeared first on  U.S. Embassy in Qatar .",
+     "country": "Qatar",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: Qatar – September 1, 2026",
+     "link": "https://qa.usembassy.gov/security-alert-qatar-september-1-2026/",
+     "date": "Tue, 01 Sep 2026 15:48:12 +0000",
+     "desc": "The post  Security Alert: Qatar – September 1, 2026  appeared first on  U.S. Embassy in Qatar .",
+     "country": "Qatar",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Travel Advisory: Bahrain October 2026",
+     "link": "https://bh.usembassy.gov/travel-advisory-bahrain-october-2026/",
+     "date": "Sat, 24 Oct 2026 08:13:18 +0000",
+     "desc": "The post  Travel Advisory: Bahrain October 2026  appeared first on  U.S. Embassy in Bahrain .",
+     "country": "Bahrain",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Manama – October 18, 2026",
+     "link": "https://bh.usembassy.gov/security-alert-u-s-embassy-manama-october-18-2026/",
+     "date": "Sun, 18 Oct 2026 20:46:00 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Manama – October 18, 2026   appeared first on  U.S. Embassy in Bahrain .",
+     "country": "Bahrain",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Manama – October 8, 2026",
+     "link": "https://bh.usembassy.gov/security-alert-u-s-embassy-manama-october-8-2026/",
+     "date": "Thu, 08 Oct 2026 19:08:23 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Manama – October 8, 2026  appeared first on  U.S. Embassy in Bahrain .",
+     "country": "Bahrain",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Manama – September 19, 2026",
+     "link": "https://bh.usembassy.gov/security-alert-u-s-embassy-manama-september-19-2026/",
+     "date": "Sat, 19 Sep 2026 21:23:48 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Manama &#8211; September 19, 2026  appeared first on  U.S. Embassy in Bahrain .",
+     "country": "Bahrain",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Manama – September 5, 2026",
+     "link": "https://bh.usembassy.gov/security-alert-u-s-embassy-manama-september-5-2026/",
+     "date": "Sat, 05 Sep 2026 10:09:18 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Manama – September 5, 2026  appeared first on  U.S. Embassy in Bahrain .",
+     "country": "Bahrain",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Travel Advisory: Kuwait October 2026",
+     "link": "https://kw.usembassy.gov/travel-advisory-kuwait-october-2026/",
+     "date": "Sat, 24 Oct 2026 10:09:49 +0000",
+     "desc": "The post  Travel Advisory: Kuwait October 2026  appeared first on  U.S. Embassy in Kuwait .",
+     "country": "Kuwait",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Kuwait – October 18, 2026",
+     "link": "https://kw.usembassy.gov/security-alert-u-s-embassy-kuwait-october-18-2026/",
+     "date": "Sun, 18 Oct 2026 20:49:00 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Kuwait – October 18, 2026  appeared first on  U.S. Embassy in Kuwait .",
+     "country": "Kuwait",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Mission Kuwait – October 8, 2026",
+     "link": "https://kw.usembassy.gov/security-alert-u-s-mission-kuwait-october-8-2026/",
+     "date": "Thu, 08 Oct 2026 20:10:43 +0000",
+     "desc": "The post  Security Alert: U.S. Mission Kuwait – October 8, 2026  appeared first on  U.S. Embassy in Kuwait .",
+     "country": "Kuwait",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Kuwait – September 19, 2026",
+     "link": "https://kw.usembassy.gov/security-alert-u-s-embassy-kuwait-september-19-2026/",
+     "date": "Sat, 19 Sep 2026 21:32:14 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Kuwait &#8211; September 19, 2026  appeared first on  U.S. Embassy in Kuwait .",
+     "country": "Kuwait",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Kuwait – September 2, 2026",
+     "link": "https://kw.usembassy.gov/security-alert-u-s-embassy-kuwait-september-2-2026/",
+     "date": "Thu, 03 Sep 2026 06:00:50 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Kuwait &#8211; September 2, 2026  appeared first on  U.S. Embassy in Kuwait .",
+     "country": "Kuwait",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Travel Advisory: United Arab Emirates",
+     "link": "https://ae.usembassy.gov/travel-advisory-united-arab-emirates/",
+     "date": "Fri, 23 Oct 2026 09:57:19 +0000",
+     "desc": "The post  Travel Advisory: United Arab Emirates  appeared first on  U.S. Embassy &amp; Consulate in the United Arab Emirates .",
+     "country": "UAE",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Mission United Arab Emirates – October 18, 2026",
+     "link": "https://ae.usembassy.gov/security-alert-u-s-mission-united-arab-emirates-october-18-2026/",
+     "date": "Sun, 18 Oct 2026 19:11:00 +0000",
+     "desc": "The post  Security Alert: U.S. Mission United Arab Emirates – October 18, 2026  appeared first on  U.S. Embassy &amp; Consulate in the United Arab Emirates .",
+     "country": "UAE",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Mission United Arab Emirates – October 8, 2026”.",
+     "link": "https://ae.usembassy.gov/security-alert-u-s-mission-united-arab-emirates-october-8-2026/",
+     "date": "Thu, 08 Oct 2026 19:48:14 +0000",
+     "desc": "The post  Security Alert: U.S. Mission United Arab Emirates – October 8, 2026”.  appeared first on  U.S. Embassy &amp; Consulate in the United Arab Emirates .",
+     "country": "UAE",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Mission United Arab Emirates – September 19, 2026",
+     "link": "https://ae.usembassy.gov/security-alert-u-s-mission-united-arab-emirates-september-19-2026/",
+     "date": "Sat, 19 Sep 2026 22:02:00 +0000",
+     "desc": "The post  Security Alert: U.S. Mission United Arab Emirates &#8211; September 19, 2026  appeared first on  U.S. Embassy &amp; Consulate in the United Arab Emirates .",
+     "country": "UAE",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Abu Dhabi, United Arab Emirates – September 11, 2026",
+     "link": "https://ae.usembassy.gov/security-alert-u-s-embassy-abu-dhabi-united-arab-emirates-september-11-2026/",
+     "date": "Fri, 11 Sep 2026 20:03:48 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Abu Dhabi, United Arab Emirates – September 11, 2026  appeared first on  U.S. Embassy &amp; Consulate in the United Arab Emirates .",
+     "country": "UAE",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Mission to Saudi Arabia – October 30, 2026",
+     "link": "https://sa.usembassy.gov/security-alert-u-s-mission-to-saudi-arabia-october-30-2026/",
+     "date": "Fri, 30 Oct 2026 16:30:39 +0000",
+     "desc": "The post  Security Alert: U.S. Mission to Saudi Arabia &#8211; October 30, 2026  appeared first on  U.S. Embassy &amp; Consulates in Saudi Arabia .",
+     "country": "Saudi Arabia",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Mission to Saudi Arabia – October 28, 2026",
+     "link": "https://sa.usembassy.gov/security-alert-u-s-mission-to-saudi-arabia-october-28-2026/",
+     "date": "Wed, 28 Oct 2026 15:15:41 +0000",
+     "desc": "The post  Security Alert: U.S. Mission to Saudi Arabia &#8211; October 28, 2026  appeared first on  U.S. Embassy &amp; Consulates in Saudi Arabia .",
+     "country": "Saudi Arabia",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Mission to Saudi Arabia – October 27, 2026",
+     "link": "https://sa.usembassy.gov/security-alert-u-s-mission-to-saudi-arabia-october-27-2026/",
+     "date": "Tue, 27 Oct 2026 01:42:18 +0000",
+     "desc": "The post  Security Alert: U.S. Mission to Saudi Arabia &#8211; October 27, 2026  appeared first on  U.S. Embassy &amp; Consulates in Saudi Arabia .",
+     "country": "Saudi Arabia",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Mission to Saudi Arabia – October 25, 2026",
+     "link": "https://sa.usembassy.gov/security-alert-u-s-mission-to-saudi-arabia-october-25-2026/",
+     "date": "Sun, 25 Oct 2026 15:04:49 +0000",
+     "desc": "The post  Security Alert: U.S. Mission to Saudi Arabia &#8211; October 25, 2026  appeared first on  U.S. Embassy &amp; Consulates in Saudi Arabia .",
+     "country": "Saudi Arabia",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Travel Advisory: Saudi Arabia October 2026",
+     "link": "https://sa.usembassy.gov/travel-advisory-saudi-arabia-october-2026/",
+     "date": "Sat, 24 Oct 2026 06:09:43 +0000",
+     "desc": "The post  Travel Advisory: Saudi Arabia October 2026  appeared first on  U.S. Embassy &amp; Consulates in Saudi Arabia .",
+     "country": "Saudi Arabia",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Travel Advisory: Oman October 2026",
+     "link": "https://om.usembassy.gov/travel-advisory-oman-october-2026/",
+     "date": "Sat, 24 Oct 2026 09:27:50 +0000",
+     "desc": "The post  Travel Advisory: Oman October 2026  appeared first on  U.S. Embassy Oman .",
+     "country": "Oman",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Muscat – October 18, 2026",
+     "link": "https://om.usembassy.gov/security-alert-u-s-embassy-muscat-october-18-2026/",
+     "date": "Sun, 18 Oct 2026 19:03:00 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Muscat – October 18, 2026   appeared first on  U.S. Embassy Oman .",
+     "country": "Oman",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Muscat – October 8, 2026",
+     "link": "https://om.usembassy.gov/security-alert-u-s-embassy-muscat-october-8-2026/",
+     "date": "Thu, 08 Oct 2026 19:25:07 +0000",
+     "desc": "The post   Security Alert: U.S. Embassy Muscat – October 8, 2026  appeared first on  U.S. Embassy Oman .",
+     "country": "Oman",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Muscat – September 19, 2026",
+     "link": "https://om.usembassy.gov/security-alert-u-s-embassy-muscat-september-19-2026/",
+     "date": "Sat, 19 Sep 2026 21:39:55 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Muscat – September 19, 2026  appeared first on  U.S. Embassy Oman .",
+     "country": "Oman",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: Oman – September 1, 2026",
+     "link": "https://om.usembassy.gov/security-alert-oman-september-1-2026/",
+     "date": "Tue, 01 Sep 2026 15:55:09 +0000",
+     "desc": "The post  Security Alert: Oman – September 1, 2026  appeared first on  U.S. Embassy Oman .",
+     "country": "Oman",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Weather Alert: Delayed Opening on Thursday, October 15, 2026 – U.S. Consulate General Istanbul (Release Date: October 14, 2026)",
+     "link": "https://tr.usembassy.gov/weather-alert-delayed-opening-on-thursday-october-15-2026-u-s-consulate-general-istanbul-release-date-october-14-2026/",
+     "date": "Wed, 14 Oct 2026 18:34:10 +0000",
+     "desc": "The post  Weather Alert: Delayed Opening on Thursday, October 15, 2026 &#8211; U.S. Consulate General Istanbul (Release Date: October 14, 2026)  appeared first on  U.S. Embassy &amp; Consulates in Türkiye .",
+     "country": "Turkey",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Routine Message: Ongoing Potential for Demonstrations (U.S. Embassy Ankara, October 1, 2026)",
+     "link": "https://tr.usembassy.gov/routine-message-ongoing-potential-for-demonstrations-u-s-embassy-ankara-october-1-2026/",
+     "date": "Thu, 01 Oct 2026 07:28:35 +0000",
+     "desc": "The post  Routine Message: Ongoing Potential for Demonstrations (U.S. Embassy Ankara, October 1, 2026)  appeared first on  U.S. Embassy &amp; Consulates in Türkiye .",
+     "country": "Turkey",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Routine Message: CORRECTION to Worldwide Message for Americans: SSA Foreign Enforcement Questionnaire (FEQ)",
+     "link": "https://tr.usembassy.gov/routine-message-correction-to-worldwide-message-for-americans-ssa-foreign-enforcement-questionnaire-feq/",
+     "date": "Tue, 18 Aug 2026 05:48:22 +0000",
+     "desc": "The post  Routine Message: CORRECTION to Worldwide Message for Americans: SSA Foreign Enforcement Questionnaire (FEQ)  appeared first on  U.S. Embassy &amp; Consulates in Türkiye .",
+     "country": "Turkey",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Weather Alert – Wildfires – U.S. Embassy Ankara, Türkiye (July 31, 2026)",
+     "link": "https://tr.usembassy.gov/weather-alert-wildfires-u-s-embassy-ankara-turkiye-july-31-2026/",
+     "date": "Sun, 02 Aug 2026 09:56:11 +0000",
+     "desc": "The post  Weather Alert – Wildfires – U.S. Embassy Ankara, Türkiye (July 31, 2026)  appeared first on  U.S. Embassy &amp; Consulates in Türkiye .",
+     "country": "Turkey",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: July 22, 2026 – Worldwide Caution for U.S. Citizens",
+     "link": "https://tr.usembassy.gov/security-alert-july-22-2026-worldwide-caution-for-u-s-citizens/",
+     "date": "Thu, 23 Jul 2026 05:06:20 +0000",
+     "desc": "The post  Security Alert: July 22, 2026 &#8211; Worldwide Caution for U.S. Citizens  appeared first on  U.S. Embassy &amp; Consulates in Türkiye .",
+     "country": "Turkey",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Worldwide Caution: Public Health Arrival Restrictions and Enhanced Ebola Screening",
+     "link": "https://cy.usembassy.gov/worldwide-caution-public-health-arrival-restrictions-and-enhanced-ebola-screening/",
+     "date": "Sun, 24 May 2026 19:17:49 +0000",
+     "desc": "The post  Worldwide Caution: Public Health Arrival Restrictions and Enhanced Ebola Screening  appeared first on  U.S. Embassy in Cyprus .",
+     "country": "Cyprus",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert – U.S. Embassy Nicosia (March 23, 2026)",
+     "link": "https://cy.usembassy.gov/security-alert-u-s-embassy-nicosia-march-23-2026/",
+     "date": "Mon, 23 Mar 2026 14:50:43 +0000",
+     "desc": "The post  Security Alert – U.S. Embassy Nicosia (March 23, 2026)  appeared first on  U.S. Embassy in Cyprus .",
+     "country": "Cyprus",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert – U.S. Embassy Cyprus Operating Status and Cypriot Civil Defense Resources – March 05, 2026",
+     "link": "https://cy.usembassy.gov/security-alert-u-s-embassy-cyprus-operating-status-and-cypriot-civil-defense-resources-march-05-2026/",
+     "date": "Thu, 05 Mar 2026 17:57:47 +0000",
+     "desc": "The post  Security Alert – U.S. Embassy Cyprus Operating Status and Cypriot Civil Defense Resources – March 05, 2026   appeared first on  U.S. Embassy in Cyprus .",
+     "country": "Cyprus",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "TRAVEL ADVISORY – Cyprus",
+     "link": "https://cy.usembassy.gov/travel-advisory-cyprus/",
+     "date": "Wed, 04 Mar 2026 04:12:45 +0000",
+     "desc": "The post  TRAVEL ADVISORY &#8211; Cyprus   appeared first on  U.S. Embassy in Cyprus .",
+     "country": "Cyprus",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "MISSILE THREAT CAUTION – MARCH 2, 2026",
+     "link": "https://cy.usembassy.gov/missile-threat-caution-march-2-2026/",
+     "date": "Mon, 02 Mar 2026 10:46:32 +0000",
+     "desc": "The post  MISSILE THREAT CAUTION &#8211; MARCH 2, 2026  appeared first on  U.S. Embassy in Cyprus .",
+     "country": "Cyprus",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: U.S. Embassy Cairo – August 1, 2026",
+     "link": "https://eg.usembassy.gov/security-alert-u-s-embassy-cairo-august-1-2026/",
+     "date": "Sat, 01 Aug 2026 09:02:58 +0000",
+     "desc": "The post  Security Alert: U.S. Embassy Cairo &#8211; August 1, 2026  appeared first on  U.S. Embassy in Egypt .",
+     "country": "Egypt",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Routine Message: Reminder for U.S. Citizens: U.S. Passport Required to Enter the United States",
+     "link": "https://eg.usembassy.gov/routine-message-reminder-for-u-s-citizens-u-s-passport-required-to-enter-the-united-states/",
+     "date": "Sun, 14 Jun 2026 13:06:43 +0000",
+     "desc": "The post  Routine Message: Reminder for U.S. Citizens: U.S. Passport Required to Enter the United States  appeared first on  U.S. Embassy in Egypt .",
+     "country": "Egypt",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: Exercise Increased Caution in the Middle East",
+     "link": "https://eg.usembassy.gov/security-alert-exercise-increased-caution-in-the-middle-east/",
+     "date": "Thu, 04 Jun 2026 16:43:29 +0000",
+     "desc": "The post  Security Alert: Exercise Increased Caution in the Middle East   appeared first on  U.S. Embassy in Egypt .",
+     "country": "Egypt",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Worldwide Caution: Public Health Arrival Restrictions and Enhanced Ebola Screening",
+     "link": "https://eg.usembassy.gov/worldwide-caution-public-health-arrival-restrictions-and-enhanced-ebola-screening/",
+     "date": "Fri, 22 May 2026 01:26:00 +0000",
+     "desc": "The post  Worldwide Caution: Public Health Arrival Restrictions and Enhanced Ebola Screening  appeared first on  U.S. Embassy in Egypt .",
+     "country": "Egypt",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Routine Message – U.S. Embassy Cairo, Egypt",
+     "link": "https://eg.usembassy.gov/routine-message-u-s-embassy-cairo-egypt/",
+     "date": "Mon, 27 Apr 2026 09:37:58 +0000",
+     "desc": "The post  Routine Message &#8211; U.S. Embassy Cairo, Egypt   appeared first on  U.S. Embassy in Egypt .",
+     "country": "Egypt",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Worldwide Caution: Public Health Arrival Restrictions and Enhanced Ebola Screening",
+     "link": "https://az.usembassy.gov/worldwide-caution-public-health-arrival-restrictions-and-enhanced-ebola-screening/",
+     "date": "Thu, 21 May 2026 14:28:41 +0000",
+     "desc": "The post  Worldwide Caution: Public Health Arrival Restrictions and Enhanced Ebola Screening  appeared first on  U.S. Embassy in Azerbaijan .",
+     "country": "Azerbaijan",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Azerbaijan Level 3 Travel Advisory (March 12, 2026)",
+     "link": "https://az.usembassy.gov/azerbaijan-level-3-travel-advisory-march-12-2026/",
+     "date": "Fri, 13 Mar 2026 07:25:04 +0000",
+     "desc": "The post  Azerbaijan Level 3 Travel Advisory (March 12, 2026)  appeared first on  U.S. Embassy in Azerbaijan .",
+     "country": "Azerbaijan",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: Azerbaijan – Alert 1 – Iranian Drones Struck Nakhchivan International Airport (March, 5, 2026)",
+     "link": "https://az.usembassy.gov/security-alert-azerbaijan-alert-1-iranian-drones-struck-nakhchivan-international-airport-march-5-2026/",
+     "date": "Thu, 05 Mar 2026 20:33:07 +0000",
+     "desc": "The post  Security Alert: Azerbaijan &#8211; Alert 1 &#8211; Iranian Drones Struck Nakhchivan International Airport (March, 5, 2026)  appeared first on  U.S. Embassy in Azerbaijan .",
+     "country": "Azerbaijan",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "IranSecurity Alert – Land Border Crossings (January 12, 2026)",
+     "link": "https://az.usembassy.gov/iransecurity-alert-land-border-crossings-january-12-2026/",
+     "date": "Tue, 13 Jan 2026 09:58:00 +0000",
+     "desc": "The post  IranSecurity Alert – Land Border Crossings (January 12, 2026)  appeared first on  U.S. Embassy in Azerbaijan .",
+     "country": "Azerbaijan",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Alert: Iran Security Alert – Airspace Partial Reopening (July 2, 2025)",
+     "link": "https://az.usembassy.gov/alert-iran-security-alert-airspace-partial-reopening-july-2-2025/",
+     "date": "Thu, 03 Jul 2025 07:05:48 +0000",
+     "desc": "The post  Alert: Iran Security Alert – Airspace Partial Reopening (July 2, 2025)  appeared first on  U.S. Embassy in Azerbaijan .",
+     "country": "Azerbaijan",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: Vigilance during demonstrations (September 27 to 30)",
+     "link": "https://pk.usembassy.gov/security-alert-vigilance-during-demonstrations-september-27-to-30/",
+     "date": "Fri, 25 Sep 2026 16:02:50 +0000",
+     "desc": "The post  Security Alert: Vigilance during demonstrations (September 27 to 30)  appeared first on  U.S. Embassy &amp; Consulates in Pakistan .",
+     "country": "Pakistan",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert: Vigilance During Independence Day Celebrations",
+     "link": "https://pk.usembassy.gov/security-alert-vigilance-during-independence-day-celebrations/",
+     "date": "Thu, 13 Aug 2026 10:41:52 +0000",
+     "desc": "The post  Security Alert: Vigilance During Independence Day Celebrations  appeared first on  U.S. Embassy &amp; Consulates in Pakistan .",
+     "country": "Pakistan",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert – U.S. Mission to Pakistan (August 12, 2026)",
+     "link": "https://pk.usembassy.gov/security-alert-u-s-mission-to-pakistan-august-12-2026/",
+     "date": "Thu, 13 Aug 2026 04:48:34 +0000",
+     "desc": "The post  Security Alert &#8211; U.S. Mission to Pakistan (August 12, 2026)  appeared first on  U.S. Embassy &amp; Consulates in Pakistan .",
+     "country": "Pakistan",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert – U.S. Mission to Pakistan (August 3, 2026)",
+     "link": "https://pk.usembassy.gov/security-alert-u-s-mission-to-pakistan-august-3-2026/",
+     "date": "Mon, 03 Aug 2026 06:14:47 +0000",
+     "desc": "The post  Security Alert &#8211; U.S. Mission to Pakistan (August 3, 2026)  appeared first on  U.S. Embassy &amp; Consulates in Pakistan .",
+     "country": "Pakistan",
+     "ordered_departure": false,
+     "new": true
+    },
+    {
+     "title": "Security Alert – July 22, 2026 – Worldwide Caution for U.S. Citizens",
+     "link": "https://pk.usembassy.gov/security-alert-july-22-2026-worldwide-caution-for-u-s-citizens/",
+     "date": "Thu, 23 Jul 2026 04:24:22 +0000",
+     "desc": "The post  Security Alert &#8211; July 22, 2026 &#8211; Worldwide Caution for U.S. Citizens  appeared first on  U.S. Embassy &amp; Consulates in Pakistan .",
+     "country": "Pakistan",
+     "ordered_departure": false,
+     "new": true
+    }
+   ]
+  },
+  "fcdo": [
+   {
+    "country": "Iran",
+    "updated": "2026-10-27T16:04:57+00:00",
+    "change": "Updated information about Regional tensions (‘Warnings and insurance’ page)  ",
+    "alert_status": "avoid_all_travel_to_whole_country",
+    "link": "https://www.gov.uk/foreign-travel-advice/iran",
+    "updated_last_24h": false
+   },
+   {
+    "country": "Israel",
+    "updated": "2026-10-27T16:05:38+00:00",
+    "change": "Updated information about Regional tensions (‘Warnings and insurance’ page)  ",
+    "alert_status": "avoid_all_travel_to_parts avoid_all_but_essential_travel_to_parts",
+    "link": "https://www.gov.uk/foreign-travel-advice/israel",
+    "updated_last_24h": false
+   },
+   {
+    "country": "Iraq",
+    "updated": "2026-10-27T16:06:23+00:00",
+    "change": "Updated information about regional tensions (‘Warnings and insurance’ page). ",
+    "alert_status": "avoid_all_travel_to_parts avoid_all_but_essential_travel_to_parts",
+    "link": "https://www.gov.uk/foreign-travel-advice/iraq",
+    "updated_last_24h": false
+   },
+   {
+    "country": "Lebanon",
+    "updated": "2026-08-10T14:51:12+01:00",
+    "change": "FCDO has changed the areas of Lebanon where it advises against all travel or all but essential travel. FCDO no longer advises against all travel or all but essential travel to some parts of Lebanon. FCDO continues to advise against all travel and all but essential travel to other areas of Lebanon.",
+    "alert_status": "avoid_all_travel_to_parts avoid_all_but_essential_travel_to_parts",
+    "link": "https://www.gov.uk/foreign-travel-advice/lebanon",
+    "updated_last_24h": false
+   },
+   {
+    "country": "Jordan",
+    "updated": "2026-10-27T16:06:24+00:00",
+    "change": "Updated information about regional tensions (‘Warnings and insurance’ page). ",
+    "alert_status": "avoid_all_travel_to_parts",
+    "link": "https://www.gov.uk/foreign-travel-advice/jordan",
+    "updated_last_24h": false
+   },
+   {
+    "country": "Saudi Arabia",
+    "updated": "2026-10-27T16:54:07+00:00",
+    "change": "Updated information about Regional tensions (‘Warnings and insurance’ page) ",
+    "alert_status": "avoid_all_travel_to_parts avoid_all_but_essential_travel_to_parts",
+    "link": "https://www.gov.uk/foreign-travel-advice/saudi-arabia",
+    "updated_last_24h": false
+   },
+   {
+    "country": "Qatar",
+    "updated": "2026-10-27T16:03:07+00:00",
+    "change": "Updated information about regional tensions (‘Warnings and insurance’ page) .\r\n\r\n ",
+    "alert_status": "",
+    "link": "https://www.gov.uk/foreign-travel-advice/qatar",
+    "updated_last_24h": false
+   },
+   {
+    "country": "Bahrain",
+    "updated": "2026-10-27T16:06:21+00:00",
+    "change": "Updated information about regional tensions (‘Warnings and insurance’ page) .",
+    "alert_status": "",
+    "link": "https://www.gov.uk/foreign-travel-advice/bahrain",
+    "updated_last_24h": false
+   },
+   {
+    "country": "Kuwait",
+    "updated": "2026-10-27T16:06:20+00:00",
+    "change": "Updated information about regional tensions (‘Warnings and insurance’ page).\r\n\r\n ",
+    "alert_status": "",
+    "link": "https://www.gov.uk/foreign-travel-advice/kuwait",
+    "updated_last_24h": false
+   },
+   {
+    "country": "UAE",
+    "updated": "2026-10-27T16:03:20+00:00",
+    "change": "Updated information about regional tensions (‘Warnings and insurance’ page) ",
+    "alert_status": "",
+    "link": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates",
+    "updated_last_24h": false
+   },
+   {
+    "country": "Oman",
+    "updated": "2026-10-27T16:01:00+00:00",
+    "change": "Updated information about regional tensions (‘Warnings and insurance’ page).\r\n",
+    "alert_status": "",
+    "link": "https://www.gov.uk/foreign-travel-advice/oman",
+    "updated_last_24h": false
+   },
+   {
+    "country": "Yemen",
+    "updated": "2026-10-27T16:06:42+00:00",
+    "change": "Updated information about regional tensions (‘Warnings and insurance’ page) ",
+    "alert_status": "avoid_all_travel_to_whole_country",
+    "link": "https://www.gov.uk/foreign-travel-advice/yemen",
+    "updated_last_24h": false
+   },
+   {
+    "country": "Syria",
+    "updated": "2026-10-27T16:05:05+00:00",
+    "change": "Updated information about regional tensions (‘Warnings and insurance’ page).\r\n\r\n",
+    "alert_status": "avoid_all_travel_to_whole_country",
+    "link": "https://www.gov.uk/foreign-travel-advice/syria",
+    "updated_last_24h": false
+   },
+   {
+    "country": "Cyprus",
+    "updated": "2026-08-14T10:34:05+01:00",
+    "change": "New information about fertility treatment (‘Safety and security’ page).",
+    "alert_status": "",
+    "link": "https://www.gov.uk/foreign-travel-advice/cyprus",
+    "updated_last_24h": false
+   },
+   {
+    "country": "Turkey",
+    "updated": "2026-10-27T16:07:12+00:00",
+    "change": "Updated information about regional tensions (‘Warnings and insurance’ page).\r\n\r\n",
+    "alert_status": "avoid_all_travel_to_parts",
+    "link": "https://www.gov.uk/foreign-travel-advice/turkey",
+    "updated_last_24h": false
+   },
+   {
+    "country": "Egypt",
+    "updated": "2026-10-27T16:03:56+00:00",
+    "change": "Updated information about Regional tensions (see ‘Warnings and insurance’ page)  ",
+    "alert_status": "avoid_all_travel_to_parts avoid_all_but_essential_travel_to_parts",
+    "link": "https://www.gov.uk/foreign-travel-advice/egypt",
+    "updated_last_24h": false
+   }
+  ],
+  "easa_czib": {
+   "changed_since_last_check": false,
+   "last_change": null,
+   "snippets": [
+    "date Revision date Valid until Subject/CZIB number More info 30/09/2026 09/10/2026 16/11/2026 Airspace of Saudi Arabia CZIB-2026-09-R1 Active view 22/07/2026 14/10/2026 16/11/2026 Airspace of Jordan CZIB-2026-08-R3 Active view 14/07/2026 30/09/2026 16/11/2026 Airspace of the Persian Gulf and Gulf of Oman CZIB-2026-07R3 Active view 08/07/2026 30/09/2026 16/11/2026 Airspace of",
+    "026 16/11/2026 Airspace of Saudi Arabia CZIB-2026-09-R1 Active view 22/07/2026 14/10/2026 16/11/2026 Airspace of Jordan CZIB-2026-08-R3 Active view 14/07/2026 30/09/2026 16/11/2026 Airspace of the Persian Gulf and Gulf of Oman CZIB-2026-07R3 Active view 08/07/2026 30/09/2026 16/11/2026 Airspace of Lebanon CZIB-2026-06-R2 Active view 08/07/2026 30/09/2026 16/11/2026 Airspace of Iraq CZIB",
+    "ce of Jordan CZIB-2026-08-R3 Active view 14/07/2026 30/09/2026 16/11/2026 Airspace of the Persian Gulf and Gulf of Oman CZIB-2026-07R3 Active view 08/07/2026 30/09/2026 16/11/2026 Airspace of Lebanon CZIB-2026-06-R2 Active view 08/07/2026 30/09/2026 16/11/2026 Airspace of Iraq CZIB-2026-05-R2 Active view 08/07/2026 30/09/2026 16/11/2026 Airspace of Iran CZIB-2026-04-R2 Active",
+    "ce of the Persian Gulf and Gulf of Oman CZIB-2026-07R3 Active view 08/07/2026 30/09/2026 16/11/2026 Airspace of Lebanon CZIB-2026-06-R2 Active view 08/07/2026 30/09/2026 16/11/2026 Airspace of Iraq CZIB-2026-05-R2 Active view 08/07/2026 30/09/2026 16/11/2026 Airspace of Iran CZIB-2026-04-R2 Active view 09/01/2025 24/07/2026 31/01/2027 Airspace of the Russian Federation 2025-",
+    "30/09/2026 16/11/2026 Airspace of Lebanon CZIB-2026-06-R2 Active view 08/07/2026 30/09/2026 16/11/2026 Airspace of Iraq CZIB-2026-05-R2 Active view 08/07/2026 30/09/2026 16/11/2026 Airspace of Iran CZIB-2026-04-R2 Active view 09/01/2025 24/07/2026 31/01/2027 Airspace of the Russian Federation 2025-01 R3 Active view 26/04/2023 24/07/2026 31/01/2027 Airspace of Sudan CZIB-2023",
+    "n and Khyber Pakhtunkhwa provinces CZIB-2018-02R21 Active view 17/10/2017 24/07/2026 31/01/2027 Airspace of Afghanistan CZIB-2017-08R19 Active view 31/08/2017 30/09/2026 30/04/2027 Airspace of Yemen – Sana’a Flight Information Region CZIB-2017-07R20 Active view 31/03/2017 30/09/2026 30/04/2027 Airspace of Mali CZIB-2017-01R21 Active view 31/03/2017 24/07/2026 31/01/2027 Airsp",
+    "7 30/09/2026 30/04/2027 Airspace of Mali CZIB-2017-01R21 Active view 31/03/2017 24/07/2026 31/01/2027 Airspace of Libya CZIB-2017-02R20 Active view 31/03/2017 01/10/2026 30/11/2026 Airspace of Syria CZIB-2017-03R20 Active view 31/03/2017 30/09/2026 30/04/2027 Airspace of Somalia CZIB-2017-05R20 Active view Status Withdrawn Issue date Revision date Valid until Subject/CZIB num",
+    "4 26/01/2026 30/04/2026 Airspace of Lebanon 2024-01 R7 Withdrawn view 31/07/2024 N/A 31/01/2025 Airspace of South Sudan CZIB-2018-03R15 Withdrawn view 06/12/2023 N/A 30/04/2024 Israel and neighbouring airspace 2023-03 R3 Withdrawn view 31/10/2023 N/A 31/12/2023 Airspace of Egypt, North Sinai Governorate CZIB-2017-09R13 Withdrawn view 30/09/2022 N/A 30/04/2023 A",
+    "y Region 2022-02R2 Withdrawn view 29/04/2022 N/A 31/10/2022 Airspace of Saudi Arabia – Jeddah Flight Information Region CZIB-2018-01R9 Withdrawn view 30/10/2021 N/A Airspace of Iran CZIB-2020-01R2 Withdrawn view 03/09/2018 N/A Airspace of Kenya CZIB-2016-01R4 Withdrawn view 25/04/2018 N/A Airspace of North Korea – Pyongyang Flight Information Region CZIB-2017",
+    "ace of Kenya CZIB-2016-01R4 Withdrawn view 25/04/2018 N/A Airspace of North Korea – Pyongyang Flight Information Region CZIB-2017-06R2 Withdrawn view 31/03/2017 31/10/2025 30/04/2026 Airspace of Iraq CZIB-2017-04R19 Withdrawn view 19/02/2016 N/A Airspace of Eastern Ukraine SIB 2014-21R1 Withdrawn view ONLINE SERVICES Official Publication AD - Airworthiness Directives - Safety"
+   ],
+   "url": "https://www.easa.europa.eu/en/domains/air-operations/czibs"
+  },
+  "faa": {
+   "changed_since_last_check": false,
+   "last_change": null,
+   "snippets": [
+    "rth Libya Mali Mexico Pacific Ocean Panama ​​​​​​ Persian Gulf and Gulf of Oman Russian Federation Saudi Arabia Somalia Syria Ukraine Yemen Panama Persian Gulf and Gulf of Oman The following acronyms are used to identify sources of information: NOTAM Notice to Airmen FDC Flight Data Center SFAR Special Federal Aviation Regulation CFR Code of Federal Regulations EO Executive Order issued by the President of the United States UN",
+    "ights in the Territory and Airspace of Haiti FAA Background Information Regarding U.S. Civil Aviation Haiti Back to top Iran&nbsp; Special Federal Aviation Regulation ( SFAR ) 117 — Prohibition Against Certain Flights in the Tehran Flight Information Region ( FIR ) ( OIIX ) KICZ NOTAM A0011/24-Security - Tehran Pointer Back to top Iraq Special Federal Aviation Regulat",
+    "ghts in the Tehran Flight Information Region ( FIR ) ( OIIX ) KICZ NOTAM A0011/24-Security - Tehran Pointer Back to top Iraq Special Federal Aviation Regulation (SFAR)77 - Prohibition Against Certain Flights in the Baghdad Flight Information Region (FIR) (ORBB) KICZ NOTAM A0013/24&nbsp;— Security — Baghdad Pointer Back to top Korea, North&nbsp; Special Feder",
+    "n Region (MPZL) FAA Background Information Regarding Airspace Risks Within the Eastern Pacific Ocean Region Back to top Persian Gulf and Gulf of Oman KICZ NOTAM A0016/20 — Security — United States of America Advisory for Overwater Airspace Above the Persian Gulf and the Gulf of Oman ( PDF ) FAA Background Information Regarding U.S. Civil",
+    "Gulf and the Gulf of Oman ( PDF ) FAA Background Information Regarding U.S. Civil Aviation-Overwater Airspace Above the Persian Gulf and Gulf of Oman ( PDF ) Back to top Russian Federation KICZ NOTAM A0005/22 — Security — United States of America Prohibition Against Certain Flights in the specified areas of the Moscow ( UUWV ), Samara ( UWWW ) and Rostov-Na Donu ( URRV ) Flight Information Regions ( FIR ) ( PDF ) Russian Airspace R",
+    "Rostov-Na Donu ( URRV ) Flight Information Regions ( FIR ) ( PDF ) Russian Airspace Reorganization ( PDF ) Back to top Saudi Arabia KICZ NOTAM A0056/26 - Security - United States of America Advisory for Potentially Hazardous Situation in the Jeddah Flight Information Region (OEJD) Back to top Somalia&nbsp; Special Federa",
+    "t Certain Flights in the Territory and Airspace of Somalia KICZ NOTAM A0020/22 – Security – Somalia Pointer Back to top Syria&nbsp; Special Federal Aviation Regulation ( SFAR ) 114 — Prohibition Against Certain Flights in the Damascus Flight Information Region ( FIR ) ( OSTT ) KICZ NOTAM A0012/23 — Security — Damascus Pointer KICZ NOTAM A0009/18 — Security — United Sta",
+    "Flight Information Regions ( FIR ), as well as, the Kyiv Upper Information Region ( UIR ) ( UKBU ) ( PDF ) Back to top Yemen&nbsp; Special Federal Aviation Regulation (SFAR) 115 –&nbsp; Prohibition Against Certain Flights in the Sanaa Flight Information Region (FIR) (OYSC) KICZ NOTAM A0022/24&nbsp;— Security — Sanaa Pointer Back to top Last updated: Tuesday, October 13, 2"
+   ],
+   "url": "https://www.faa.gov/air_traffic/publications/us_restrictions"
+  },
+  "portwatch_hormuz": null,
+  "marad": null,
+  "official_statements": {
+   "status": {
+    "CENTCOM": "ok",
+    "DoD releases": "ok",
+    "DoD news": "ok",
+    "IAEA": "ok",
+    "UN News ME": "ok",
+    "US Treasury": "error: 403 Client Error: Forbidden for url: https://ofac.treasury.g",
+    "White House": "ok"
+   },
+   "items": [
+    {
+     "title": "USS Delbert D. Black Departs Israel Following Port Visit",
+     "link": "https://www.centcom.mil/MEDIA/NEWS-ARTICLES/News-Article-View/Article/4398124/uss-delbert-d-black-departs-israel-following-port-visit/",
+     "date": "Thu, 05 Feb 2026 13:38:39 GMT",
+     "desc": "MANAMA, Bahrain (Feb. 1, 2026) – Arleigh Burke-class guided-missile destroyer USS Delbert D. Black (DDG 119) departed Eilat, Israel, following a scheduled port visit, Feb. 1. This port visit demonstrates U.S. and Israel’s strong maritime partnership and shared commitment to advancing security and pr",
+     "source": "CENTCOM",
+     "new": true
+    },
+    {
+     "title": "U.S. and Israeli Navies Conclude Exercise Intrinsic Defender",
+     "link": "https://www.centcom.mil/MEDIA/NEWS-ARTICLES/News-Article-View/Article/4357500/us-and-israeli-navies-conclude-exercise-intrinsic-defender/",
+     "date": "Thu, 11 Dec 2025 16:51:00 GMT",
+     "desc": "U.S. naval forces assigned to the U.S. 5th Fleet area of operations and the Israeli navy joined together for exercise Intrinsic Defender in Israel, Dec. 7-11.",
+     "source": "CENTCOM",
+     "new": true
+    },
+    {
+     "title": "U.S.-Jordan Complete Initial Planning for Exercise Eager Lion 2026",
+     "link": "https://www.centcom.mil/MEDIA/NEWS-ARTICLES/News-Article-View/Article/4325870/us-jordan-complete-initial-planning-for-exercise-eager-lion-2026/",
+     "date": "Fri, 24 Oct 2025 22:01:00 GMT",
+     "desc": "On Oct. 24, the Jordanian Armed Forces (JAF) and U.S. Central Command (CENTCOM) completed an initial planning conference for exercise Eager Lion 2026 in Amman, demonstrating the continued strong defense relationship between Jordan and the United States.",
+     "source": "CENTCOM",
+     "new": true
+    },
+    {
+     "title": "How Nuclear Technology Is Helping Cities Become More Sustainable",
+     "link": "http://www.iaea.org/newscenter/news/how-nuclear-technology-is-helping-cities-become-more-sustainable",
+     "date": "\n26-10-30  09:00\n",
+     "desc": "",
+     "source": "IAEA",
+     "new": true
+    },
+    {
+     "title": "IAEA’s Grossi Calls for Progress in Deploying Nuclear Power as Ministerial Conference Opens",
+     "link": "http://www.iaea.org/newscenter/news/iaeas-grossi-calls-for-progress-in-deploying-nuclear-power-as-ministerial-conference-opens",
+     "date": "\n26-10-27  09:00\n",
+     "desc": "IAEA Director General Rafael Mariano Grossi called on countries to turn growing support for nuclear power into concrete results as the International Ministerial Conference on Nuclear Power opened in the Republic of Korea today, amid rising electricity demand and renewed efforts to strengthen ener",
+     "source": "IAEA",
+     "new": true
+    },
+    {
+     "title": "What is Nuclear Fuel?",
+     "link": "http://www.iaea.org/newscenter/news/what-is-nuclear-fuel",
+     "date": "\n26-10-23  08:00\n",
+     "desc": "",
+     "source": "IAEA",
+     "new": true
+    },
+    {
+     "title": "IAEA Mission Finds Kenya Committed to Safe Management of Radioactive Waste as it Develops a Nuclear Power Programme",
+     "link": "http://www.iaea.org/newscenter/pressreleases/iaea-mission-finds-kenya-committed-to-safe-management-of-radioactive-waste-as-it-develops-a-nuclear-power-programme",
+     "date": "\n26-10-22  14:18\n",
+     "desc": "",
+     "source": "IAEA",
+     "new": true
+    },
+    {
+     "title": "IAEA Mission Says UAE Response to Barakah Nuclear Power Plant Event in May 2026 was Effective",
+     "link": "http://www.iaea.org/newscenter/pressreleases/iaea-mission-says-uae-response-to-barakah-nuclear-power-plant-event-in-may-2026-was-effective",
+     "date": "\n26-10-20  10:56\n",
+     "desc": "",
+     "source": "IAEA",
+     "new": true
+    },
+    {
+     "title": "From Farm to Fork: How Nuclear Science Helps Put Food on Our Tables",
+     "link": "http://www.iaea.org/newscenter/news/from-farm-to-fork-how-nuclear-science-helps-put-food-on-our-tables",
+     "date": "\n26-10-16  14:35\n",
+     "desc": "",
+     "source": "IAEA",
+     "new": true
+    },
+    {
+     "title": "Burkina Faso Grows More Rice with Nuclear Science",
+     "link": "http://www.iaea.org/newscenter/news/burkina-faso-grows-more-rice-with-nuclear-science",
+     "date": "\n26-10-15  23:00\n",
+     "desc": "",
+     "source": "IAEA",
+     "new": true
+    },
+    {
+     "title": "Burkina Faso Grows More Rice with Nuclear Science",
+     "link": "http://www.iaea.org/newscenter/news/burkina-faso-grows-more-rice-with-nuclear-science",
+     "date": "\n26-10-15  23:00\n",
+     "desc": "",
+     "source": "IAEA",
+     "new": true
+    },
+    {
+     "title": "IAEA Training Centre Builds Practical Skills for Nuclear Security",
+     "link": "http://www.iaea.org/news/photoessay/iaea-training-centre-builds-practical-skills-for-nuclear-security",
+     "date": "\n26-10-13  23:00\n",
+     "desc": "The IAEA’s Nuclear Security Training and Demonstration Centre, the world’s first international training centre dedicated to enhancing nuclear security, opened its doors in Seibersdorf, Austria, in October 2023.",
+     "source": "IAEA",
+     "new": true
+    },
+    {
+     "title": "UN rights office warns of deepening displacement ‘nightmare’ in Gaza",
+     "link": "https://news.un.org/feed/view/en/story/2026/10/1168707",
+     "date": "Fri, 30 Oct 2026 12:00:00 +0000",
+     "desc": "Israeli forces continue to push Palestinians into ever-smaller areas of the Gaza Strip while destroying civilian infrastructure and attacking displacement sites, the UN human rights office, OHCHR, warned on Friday amid concerns of ethnic cleansing.&nbsp;",
+     "source": "UN News ME",
+     "new": true
+    },
+    {
+     "title": "Yemen war makes reaching assistance too dangerous for many",
+     "link": "https://news.un.org/feed/view/en/story/2026/10/1168706",
+     "date": "Fri, 30 Oct 2026 12:00:00 +0000",
+     "desc": "More than 280,000 people have now been displaced by fighting in Yemen and many vulnerable people are unable to access lifesaving relief because it is too dangerous to do so, the UN refugee agency (UNHCR) said on Friday.",
+     "source": "UN News ME",
+     "new": true
+    },
+    {
+     "title": "Gaza: Families brace for fourth winter in tents as aid operations remain stymied",
+     "link": "https://news.un.org/feed/view/en/story/2026/10/1168685",
+     "date": "Tue, 27 Oct 2026 12:00:00 +0000",
+     "desc": "Families in Gaza are bracing for a fourth winter in tents and makeshift shelters as UN aid operations face mounting obstacles, with transport suspended on Tuesday due to Israel’s closure of the key Kerem Shalom crossing for election day.&nbsp;",
+     "source": "UN News ME",
+     "new": true
+    },
+    {
+     "title": "West Bank: Hebron crackdown displaces thousands, Türk warns of ethnic cleansing",
+     "link": "https://news.un.org/feed/view/en/story/2026/10/1168672",
+     "date": "Mon, 26 Oct 2026 12:00:00 +0000",
+     "desc": "Israel’s “aggressive operation” in the West Bank city of Hebron raises serious concerns of ethnic cleansing, UN human rights chief Volker Türk warned on Monday, as the number of Palestinians forced from their homes passed 3,000 on the eve of Israeli elections.",
+     "source": "UN News ME",
+     "new": true
+    },
+    {
+     "title": "West Bank: Guterres alarmed as Israel imposes sweeping closures after deadly Hebron attack",
+     "link": "https://news.un.org/feed/view/en/story/2026/10/1168660",
+     "date": "Fri, 23 Oct 2026 12:00:00 +0000",
+     "desc": "The UN said on Friday it was “extremely alarmed” by intensifying violence in the occupied West Bank, as Israel moved to seal off the territory following a deadly attack on its soldiers in Hebron.",
+     "source": "UN News ME",
+     "new": true
+    },
+    {
+     "title": "Yemen: Deepening concerns for Taiz City as aid is blocked from entering",
+     "link": "https://news.un.org/feed/view/en/story/2026/10/1168654",
+     "date": "Fri, 23 Oct 2026 12:00:00 +0000",
+     "desc": "Aid agencies warned on Friday of the fast-developing humanitarian emergency inside Taiz City in Yemen, which has been encircled by de facto Houthi forces fighting government troops along the country’s west coast.",
+     "source": "UN News ME",
+     "new": true
+    },
+    {
+     "title": "Yemen war continues to force families from homes amid hunger and disease",
+     "link": "https://news.un.org/feed/view/en/story/2026/10/1168629",
+     "date": "Tue, 20 Oct 2026 12:00:00 +0000",
+     "desc": "More than 250,000 people have now fled renewed fighting in Yemen, the UN said on Tuesday, citing particular concern for those sheltering in the southwestern city of Taiz and the wider governorate, where access is “essentially blocked”.",
+     "source": "UN News ME",
+     "new": true
+    },
+    {
+     "title": "‘Season of fear’: Escalating Israeli attacks on West Bank olive farmers, deadly strikes on Gaza",
+     "link": "https://news.un.org/feed/view/en/story/2026/10/1168625",
+     "date": "Mon, 19 Oct 2026 12:00:00 +0000",
+     "desc": "Israeli attacks on war-torn Gaza over the weekend killed at least six Palestinians, including children, despite a year-old ceasefire agreement. Meanwhile, in the occupied West Bank, settler violence continued through the ongoing olive harvest, with UN independent experts on Monday urging Israel to p",
+     "source": "UN News ME",
+     "new": true
+    },
+    {
+     "title": "Gaza: 340 children killed despite ceasefire agreement - UNICEF",
+     "link": "https://news.un.org/feed/view/en/story/2026/10/1168611",
+     "date": "Fri, 16 Oct 2026 12:00:00 +0000",
+     "desc": "A little over one year since a ceasefire agreement was announced between Hamas fighters and Israel, more than 340 children have been reported killed and hundreds more injured, the UN Children’s Fund (UNICEF) said on Friday.&nbsp;",
+     "source": "UN News ME",
+     "new": true
+    },
+    {
+     "title": "Security Council LIVE: Deaths, demolitions spike in Gaza, West Bank",
+     "link": "https://news.un.org/feed/view/en/story/2026/10/1168599",
+     "date": "Thu, 15 Oct 2026 12:00:00 +0000",
+     "desc": "Amid a rise in lethal Israeli strikes, demolitions and violence in Gaza and the West Bank, the Security Council held an open debate on Thursday focusing on the current situation in the Occupied Palestinian Territory.",
+     "source": "UN News ME",
+     "new": true
+    },
+    {
+     "title": "Yemen: WFP warns of potential ‘humanitarian catastrophe’ as fighting blocks aid delivery",
+     "link": "https://news.un.org/feed/view/en/story/2026/10/1168591",
+     "date": "Wed, 14 Oct 2026 12:00:00 +0000",
+     "desc": "Intensifying fighting in Yemen has cut off life-saving assistance to 800,000 people as shifting frontlines, blocked roads and growing insecurity severely restrict access to the city of Taiz and other conflict zones, the UN World Food Programme (WFP) said on Wednesday.&nbsp;",
+     "source": "UN News ME",
+     "new": true
+    },
+    {
+     "title": "WHO calls for urgent health action across the Eastern Mediterranean",
+     "link": "https://news.un.org/feed/view/en/story/2026/10/1168590",
+     "date": "Wed, 14 Oct 2026 12:00:00 +0000",
+     "desc": "The head of the World Health Organization (WHO) has called for promoting, providing and protecting health in the Eastern Mediterranean region, home to some of the world’s top humanitarian crises such as Sudan, Yemen and the Occupied Palestinian Territory.",
+     "source": "UN News ME",
+     "new": true
+    }
+   ]
+  },
+  "ofac": {
+   "changed_since_last_check": false,
+   "last_change": null,
+   "snippets": [],
+   "url": "https://ofac.treasury.gov/recent-actions"
+  },
+  "ioda_iran": {
+   "events_48h": [],
+   "bgp_latest": 41669,
+   "bgp_median_48h": 41670.0,
+   "bgp_drop_pct": 0.0
+  },
+  "gdelt": null,
+  "usgs_seismic": []
+ },
  "news_meta": {
   "feeds_ok": 26,
   "feeds_failed": [
@@ -739,7 +2578,8 @@
     "Springfield News-Sun",
     "Oskaloosa Herald",
     "Journal-News.com",
-    "YourCentralValley.com"
+    "YourCentralValley.com",
+    "FOX 2"
    ],
    "links": [
     "https://news.google.com/rss/articles/CBMihwJBVV95cUxOX01XNFpCUV9Ha0xrN2JuenhxQjJqb095RHVnYUFWVHE0Y2RtZzNzV20zSmw3eUdPQ2FINEgzdGNGbjhmRUtjVEktYmVadVQ5TGl1R1h3SThfNjVueFU2VnhqWGJTdU5lN1lzeGJtM08yTnBuUW9TdVJFLXc2OVRnbWc0MEctUXRuejRadGFsemtYbkFIWDNxWlFEZlc3SUlvT3hjVF9sS1RnaG9zWkFTQkd5NzA2ZGFfNnNhN3lIQVlEbndzV3FhZlVUWGxxOEU1TzBQWmxiX3VFTkhzbGU0SG9Kbkd6WmNJSi0zb2hBOUVILUl0d1pZb0NPaHlCOGpQU3RFeldDTQ?oc=5",
@@ -762,11 +2602,12 @@
     "https://news.google.com/rss/articles/CBMikgJBVV95cUxPOU9Rb3VPTC1sMGhWOWRJY0c2TV94OXhRLTFhSGd6NW9aWEN2T19SS214ZUFOd3ZTNFg4elRVQmZLbVBsc0JfSXBCamZQMm9UZ0hQbEk5UGxQT19rMXFVMUl0dnQ5NFVHZmVfb0hGSUVTbzU1TEU2ZlRRRW0xdXEyMnNibW5NcVU4UEQtSnlZcDdUS0p6aG9CRnptbUJDQ2lyblRpNWlBdG9mMnJfUkM5LXBBT2dvV24wdFRkdGdfUWY2M0RBbVJXS0R0bHA5em54WV9QV1BaVlFiQlE1T18yNjNIaVkta3ZzZWZJTVczaHNVbjk2VWxROTlreFFRRjY1MUZZa2RsemV6UV9tUWxBcVRR?oc=5",
     "https://news.google.com/rss/articles/CBMijgJBVV95cUxQUTF0NUMzbm5pbkNwam53TWwxSmhZbzh4a3ZYQXR1ekdwcFpCcHJzLW5nemc1LVJLMEg3aVdPOVZ5alM0cV9CU2djdE5SakkxNTBjXzN5cWotSEhZZU8tR19BZC01MHFxQXhVNU9FUWxrVzVmQmlSYnhvM0xjMWVZN2VoZXlCbVBSYWZjdGZHSXlOLUV4aWtrWTh5Z2U1TXJVbGdKemhwczhrOThmaVNWMmNEclpvRUxrWUM2dXhBYW1fQmxLc082OXRZNVhkMzZrMzJ5YXEyVFd1ZmNzOWxpMmFlMGhPQ1l0MnJWbWlTM25HVWZKX3pvZC1UdE4tdVRBUXZOSHQ0bXFNNmdoZkE?oc=5",
     "https://news.google.com/rss/articles/CBMikwJBVV95cUxNMEthYy1mNEdxYUYyZHVmMktDZHJQcDlJNDBqR1ktUml3a2NobFBSUnJxckd0ZjVDeGhjaGdJWEh0ams5S25ocy03MGtNYnlNQzBBWURNRlR5YjlnektuZzRCOGRQQ0hSUlVoSDVubXRaU3FfOFhWZGRWTHVzRzFRYVJtTHdPT0h2R1pIRXBibDRVdHg1Zk1SQXlwUUczemx4TjNlaXVMZS1ZelpGNDBlYnNPVndFSEdtY3p5MEpiU0tUS0hOanZ3Tmx5RHlSRk1idzdZc281UVVMZFZlRUVpa2xZeUFqdkNZYUJPVFYxYzZnTTdzRGloNFpFUllkTkl1dklhUG9LaVdWbktaV2Ztc0hjZw?oc=5",
-    "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPRzlvZ2NjNWJJVzJNSHFYcDZPTTJRWER4c3I4eEhaaHFraUZDa2h3X01PRXZMUEpTLU15aXBSbDk1aVNwR2N6dXpuZUt2U0VtTVpxTnJaOGdoYXpyVXFvQldIdDV2TGY0T2I1R2x3YjBBWjJ0bnZxSjA1dkh4bjNZbjBtNlVuWGE4UkZvNm5wMzhPa29NNzVvR3JuMmt1WU9xamNJUGZaZnVKYTdJVEVEYUMwQlFHR1B0TVJiYjgtb1JzNXVaRWdUR3hLZlBpNzl1NWtjT0RIQzPSAd4BQVVfeXFMTm5HM0hSZlZzQ2RvTnE4MlJxT3V0dlRzZ0JnQmlWMnhsbmYtNlVEZHhtRnRFaHcyWTVmdVAzOGxSNGZScW1kRlN4cDBFdHVPd25abXVpRmFIdzU5cndqQTFscEhiV01PYU1ia0RGallDcDduTkJlMG9YRFFXUy12bk1Jd1hjbDl4bEtvTTVJQkdwLXRHTmp4U3NWczdKT1lzbHVfY1F2Mzl3Z0hYYjdrMmFlVEt6RVpzeEVEbkJyV1EtYWFLV3IxRHJ0XzQ1TFRuODl0TUVIQkNhdUx6c2pB?oc=5"
+    "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPRzlvZ2NjNWJJVzJNSHFYcDZPTTJRWER4c3I4eEhaaHFraUZDa2h3X01PRXZMUEpTLU15aXBSbDk1aVNwR2N6dXpuZUt2U0VtTVpxTnJaOGdoYXpyVXFvQldIdDV2TGY0T2I1R2x3YjBBWjJ0bnZxSjA1dkh4bjNZbjBtNlVuWGE4UkZvNm5wMzhPa29NNzVvR3JuMmt1WU9xamNJUGZaZnVKYTdJVEVEYUMwQlFHR1B0TVJiYjgtb1JzNXVaRWdUR3hLZlBpNzl1NWtjT0RIQzPSAd4BQVVfeXFMTm5HM0hSZlZzQ2RvTnE4MlJxT3V0dlRzZ0JnQmlWMnhsbmYtNlVEZHhtRnRFaHcyWTVmdVAzOGxSNGZScW1kRlN4cDBFdHVPd25abXVpRmFIdzU5cndqQTFscEhiV01PYU1ia0RGallDcDduTkJlMG9YRFFXUy12bk1Jd1hjbDl4bEtvTTVJQkdwLXRHTmp4U3NWczdKT1lzbHVfY1F2Mzl3Z0hYYjdrMmFlVEt6RVpzeEVEbkJyV1EtYWFLV3IxRHJ0XzQ1TFRuODl0TUVIQkNhdUx6c2pB?oc=5",
+    "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPR3NPVU9VTFZ6b0pTdTcteUJwU3hnUmJDZWZ2YXBaV1BxdDd4ckFYU3ppUTRQNTF3Z2s0NUNYREw4QV9BLWlEeDZTZlo3NnVvczduMmRSSnJJSjR0d3F5SThQUnYwdWlhcklzazlRTDZkLVI5cGJ1ZkhCWlVuY3RWbW0tdW4xemRkQ1AxajdESVlKRmRVMkwteG9NNE1yMnhILUE2alV3dlR0WHFoa212RTQwUklmUEV0V3dkRzNMRl9fUzlZdnRTWWxKeUpYVU02M1lfWGxqc3NJMnczcGFjanF30gHiAUFVX3lxTE9Hc09VT1VMVnpvSlN1Ny15QnBTeGdSYkNlZnZhcFpXUHF0N3hyQVhTemlRNFA1MXdnazQ1Q1hETDhBX0EtaUR4NlNmWjc2dW9zN24yZFJKcklKNHR3cXlJOFBSdjB1aWFySXNrOVFMNmQtUjlwYnVmSEJaVW5jdFZtbS11bjF6ZGRDUDFqN0RJWUpGZFUyTC14b000TXIyeEgtQTZqVXd2VHRYcWhrbXZFNDBSSWZQRXRXd2RHM0xGX19TOVl2dFNZbEp5SlhVTTYzWV9YbGpzc0kydzNwYWNqcXc?oc=5"
    ],
    "pub": "2026-10-31T15:12:59Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran's Supreme Leader Warns US, Israel of Unrestricted Response to Renewed Attacks",
@@ -787,7 +2628,8 @@
     "Ratopati",
     "Dhaka Tribune",
     "香港電台",
-    "Ammon News"
+    "Ammon News",
+    "RTE.ie"
    ],
    "links": [
     "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNQ2xFWDJTYTNEbDloTEtJb0pNakwxMGdQY3RuSzVLOE1ENERFRmZ1ekg5c3dYckJQOEswMGhqUlcwbkF6M0M4cUFhQ3Mxc29weXlhd1lISEl5cHFaRWpiZmJmV0hZcjlLV1dMeHlhWWZ5aXAyZFhQampyT2JFVTdpS1F2M3Bjbk5XV3N5cE56LVg2dWFSQlk0MWxzSTMwajdxSUN2bGlobDV4Z01MX2NKRzl5ejVfb2ZXTTI0NXZRaWFLdw?oc=5",
@@ -806,11 +2648,12 @@
     "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOb1RobWVjVlk0V29xZUF4WkZYRFo0VGhtYW1kM3BsMmFLZ1pYR2lGUHY3U2RWNzBZMkZTNVJfR2JYbmJVQ2RYNTdGS3Z6MDE1bThob09NbGIyVGdlcWU0ZmdrQk9hczB3bUpldTNJYlRGWDZ6YXdtdEpvMk1heWZaYUlhY1Ryekk0ajVPTF9xWURiTV9xNThPbTU3cFpnMEdoYzZEY3FtWUVvcUYtY1lleDZSemZqeGhiZ0RFVm5aYVFjUQ?oc=5",
     "https://news.google.com/rss/articles/CBMitgFBVV95cUxOc3hjbE9sbk5zQVhseFhoUWJ3SHZsdXNSMzJyMl9Lei0zQWg0TGU3OWYyOFNzbFQ3WkVMUlIwb3NRMnR2OHFSamE2bnd1OHQwUWhseHJ2MHFrRGdQWThmRmZ3R0Zzdmxsdk1YUjJOQ180WjRpOE5UUW5TMXl6cjItVkU3djlqdEx6d0t2OHRhRFp0SXlGRGl0SlFPTXZHMktjbEZHd0hPYnJJV0pBLXZWYWtWR18yQdIBtgFBVV95cUxOc3hjbE9sbk5zQVhseFhoUWJ3SHZsdXNSMzJyMl9Lei0zQWg0TGU3OWYyOFNzbFQ3WkVMUlIwb3NRMnR2OHFSamE2bnd1OHQwUWhseHJ2MHFrRGdQWThmRmZ3R0Zzdmxsdk1YUjJOQ180WjRpOE5UUW5TMXl6cjItVkU3djlqdEx6d0t2OHRhRFp0SXlGRGl0SlFPTXZHMktjbEZHd0hPYnJJV0pBLXZWYWtWR18yQQ?oc=5",
     "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWkJoZ3c2U0pnQWVoYU9XYUVrVHRaQ3dVX05KX3pUYVRpMk1VQko0OXFJbkRobVRLNk41STVrTDFtQ3dsR081Z253QmxMVUhkWkxzdXJxUTRUb0xXRnhrbnFWVzdfUkZKZ2ZYWUdWTWt4QzhzZlVZeXFLS2Vxc1pOWENEcDBJeXBKaWFTck1IbjBzenlqZ3BER29UdTJTWGRRcWpF?oc=5",
-    "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5UQi1KZlJDelNHUEZYQVRTODFsQXZuSkRPODd1eDJYYUlhWkV2cWNfYS13ajlnOEV6TkIxS2FIaTFvdUlDbmhDdnpyRHZJQQ?oc=5"
+    "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5UQi1KZlJDelNHUEZYQVRTODFsQXZuSkRPODd1eDJYYUlhWkV2cWNfYS13ajlnOEV6TkIxS2FIaTFvdUlDbmhDdnpyRHZJQQ?oc=5",
+    "https://news.google.com/rss/articles/CBMie0FVX3lxTE5wXzM1M2JzNUx1cFRveGhXWlV0ZFlMYkVHdUoyM2dxN0otZkE1U3o1cUhoczY2VFVmeE53WFVUc1NZNWRhVTQ5STBvdXR3d0hzSWxnY2o1VC1IenJsS3g4dlFhVlJPd2R2LXo2cnJrcUZsZDZQcHk0Rl9DMA?oc=5"
    ],
    "pub": "2026-10-31T13:39:53Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran's army warns any new US attack would spread war wider",
@@ -836,7 +2679,7 @@
    ],
    "pub": "2026-10-31T14:08:53Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran Targeted US Air Defenses Then Hit Aircraft and Buildings on Mideast Bases, AP Analysis Finds",
@@ -858,7 +2701,7 @@
    ],
    "pub": "2026-10-31T14:45:17Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran's Khamenei orders 'geographically unrestricted' response to any attack",
@@ -880,7 +2723,7 @@
    ],
    "pub": "2026-10-31T13:45:26Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran's Mojtaba Khamenei orders 'immediate response' to any 'enemy threat'",
@@ -902,7 +2745,7 @@
    ],
    "pub": "2026-10-31T11:27:00Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "US delegation to join Iran for direct talks in Doha after breakthrough: Report",
@@ -924,7 +2767,7 @@
    ],
    "pub": "2026-10-31T08:28:44Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iranian delegation arrives in Qatar for talks: Report",
@@ -944,7 +2787,7 @@
    ],
    "pub": "2026-10-31T11:23:44Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iranian official says US attacked fishing boats off Qeshm Island, state media reports",
@@ -962,7 +2805,7 @@
    ],
    "pub": "2026-10-31T12:12:26Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Bad midterms could push Trump toward major Iran strike: Report",
@@ -980,7 +2823,7 @@
    ],
    "pub": "2026-10-31T05:37:09Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran says fourth tanker hit mine in Strait of Hormuz",
@@ -998,7 +2841,7 @@
    ],
    "pub": "2026-10-31T08:07:15Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran says fishermen found after accusing US of attack in Hormuz",
@@ -1014,7 +2857,7 @@
    ],
    "pub": "2026-10-31T12:07:57Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran Reports US Strike On Fishing Boats Near Qeshm, Two Injured",
@@ -1030,7 +2873,7 @@
    ],
    "pub": "2026-10-31T14:28:53Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iranian Envoys Meet Qatari Mediators Amid US Strike Threat",
@@ -1046,7 +2889,7 @@
    ],
    "pub": "2026-10-31T15:02:41Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Khamenei: IRGC will have 'immediate, unrestricted response' to any US, Israeli threats",
@@ -1062,7 +2905,7 @@
    ],
    "pub": "2026-10-31T14:10:09Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran negotiators in Doha for Qatar-mediated talks to end US-Iran war, official confirms",
@@ -1078,7 +2921,7 @@
    ],
    "pub": "2026-10-31T12:37:57Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Saudi-led coalition intercepts Houthi drones over Riyadh and Madinah, missile in south",
@@ -1094,7 +2937,7 @@
    ],
    "pub": "2026-10-31T13:11:35Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran FM says US outreach a ‘positive step’ as delegation in Qatar for talks",
@@ -1108,7 +2951,7 @@
    ],
    "pub": "2026-10-31T14:31:37Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran's supreme leader orders \"maximum\" response to any U.S. attack",
@@ -1122,7 +2965,7 @@
    ],
    "pub": "2026-10-31T14:30:30Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Trump says Iran war will end soon, US military insists Hormuz is secure",
@@ -1136,7 +2979,7 @@
    ],
    "pub": "2026-10-31T13:21:11Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Middle East latest: Attacks on ships transiting Hormuz in October highest since start of war",
@@ -1150,7 +2993,7 @@
    ],
    "pub": "2026-10-31T14:16:09Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran’s Mojtaba Khamenei orders military response without ‘geographic limits’ to new threats",
@@ -1164,7 +3007,7 @@
    ],
    "pub": "2026-10-31T10:07:49Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran War Day 246: Iran’s Leader Orders No-Limits Retaliation if Attacked",
@@ -1178,7 +3021,7 @@
    ],
    "pub": "2026-10-31T13:01:00Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Trump may order major Iran strike if Republicans suffer losses in midterm election: Axios",
@@ -1192,7 +3035,7 @@
    ],
    "pub": "2026-10-31T11:25:08Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "How Iran Battered U.S. Bases and Caused Billions in Damage",
@@ -1206,7 +3049,7 @@
    ],
    "pub": "2026-10-31T14:21:09Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iranian Strikes Caused At Least $5 Billion In Damage To U.S. Military Bases: WSJ",
@@ -1220,7 +3063,7 @@
    ],
    "pub": "2026-10-31T15:16:37Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Shipping Strikes In Hormuz Leave Both Sides With Economic Pain",
@@ -1234,7 +3077,7 @@
    ],
    "pub": "2026-10-31T10:30:00Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "274 US Military Structures Damaged at 24 Sites amid Iran’s Retaliation",
@@ -1248,7 +3091,21 @@
    ],
    "pub": "2026-10-31T07:00:33Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
+  },
+  {
+   "title": "‘Iran Will Not Surrender’: After Mojtaba Khamenei, Araghchi Warns Of Possible US Attack Amid Ongoing Talks",
+   "outlets": [
+    "News18",
+    "Moneycontrol.com"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOU19zWUI2WUlKQ2hXV2xlYXFNcDVLaG1MSnhadVJvelFsMExUQl9FZjM0V1VjajVtOFU2UnZZVzg2NTJ3RlFIOVBtT2gybi1leUx0bnM2U3A2cnpiTmpOUjFZNEV3TUFDYkh2Y0RWdXRGcFBxQk9oNzZYZDdpZ3UzWTlhamI1S254R2s3TXdqV1JKRW02YXR0dFhUc2FldU1SaVJQNGZBN0EySW5tb0pfVG51d3BNOEI0Ymo3TzJxZDNUNDN3aUhmbnlsNklZVG9VQzNZSlN1Q3h1b2E0dU5RN0pXVHRad9IB6wFBVV95cUxQYk1yNnhiM1Q0cmlQaUU3akh2YTdmLTNKNjYtMVVOejhuUmlaMWlHSmI1N3F5VmtsVVQ5YzdTSFp0MmpLMjFRNjhWeko0VllkTjFkNi1SNlhsSjdRb3FObTJFLTMtcU1icTZsM05OLW5tbEhxRGFrYjY3VGpIUzltb291SnFPckJfTng5T2JYZjluREJNWUZQMngydEc3S3NoaDBmcVFvdl80N3RndW9BOTU2c18tblFLOWNKbzhjSmdrbWFVRkRrWlNKak9tUktoRDZuVU1JLTh1bUU2U3RSV05nU25ZUUppVkJV?oc=5",
+    "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQb0xOVGNjYkNicHE1ZlBULU11V3ZsNFdUQV9KT3BNRDZiaWpkeUJ6Vmt3TTJDYUV2N0J1XzIwdFNnSHpwSmFsZS1FSzNkM21CMm1xTWFQakFVdnEzQmpoOXlxTHU5N1dGVXdkUmdvQnM2TThWR1dmSjItZTEzUFlsZzFQNEtkSE11eWNEcUlIRXd4c3hsMG52YkZKT3FrTDdsX21VWUZKeDBrbU1HOF9hOGJJUXJWMk1xVHhuUmduc0I4cTlmR2p4RXpCbG1qTk9vLXR6Nnl2c21aZGNyb0Etd1U4OGfSAeoBQVVfeXFMT0dRbXhteVM2MVM5NjlpN2lrcDBsRDdRRXc0VndEdzBrdk9DWTJOSjFRYVhzbWIxVkhyMkVOV1ZLTWFMQjBiSm5FcndQWEppRkNLVWVkc3RCMVRvN3QwOExTNXo4YmVQWmRFbTY0VG5wN1liQ3hUcHZ3V2xpVVcwLUtURDJqV2dsWnJUMk15M0EzMlNHR3E1SkFBLWYyUnVBeEozakdvZkEyb1lJNmtmWi1pS09SSGoyR1FEREduLXJxLXhhbjlmNFlHYTk2V2tabnA1M2hkemxCckFrZEVvRVo1UWRrRGJ2Y05R?oc=5"
+   ],
+   "pub": "2026-10-31T15:04:33Z",
+   "first": "2026-10-31T15:58:01Z",
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Oman rescues 25 from burning oil tanker in Strait of Hormuz",
@@ -1262,7 +3119,7 @@
    ],
    "pub": "2026-10-31T04:11:38Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Attacks on Ships in Strait of Hormuz Reach Record High in October",
@@ -1276,7 +3133,7 @@
    ],
    "pub": "2026-10-31T07:29:56Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "VIDEO: Iran says tankers caught fire in Strait of Hormuz",
@@ -1290,7 +3147,7 @@
    ],
    "pub": "2026-10-31T12:37:33Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "US Denies Iran Claim of Destroyed Drone in Hormuz...",
@@ -1304,7 +3161,7 @@
    ],
    "pub": "2026-10-31T06:20:45Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Oil hits six-month highs as Hormuz attacks threaten Iran peace efforts",
@@ -1318,7 +3175,7 @@
    ],
    "pub": "2026-10-31T06:10:51Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Saudi-led coalition intercepts Houthi drone over Eastern Region",
@@ -1332,7 +3189,7 @@
    ],
    "pub": "2026-10-31T05:46:11Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Oman Rescues Crew from Attacked Ship; Iran Stops Tankers in Strait of Hormuz",
@@ -1346,7 +3203,7 @@
    ],
    "pub": "2026-10-31T07:46:48Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Donald Trump downplays 18 US deaths as he compares Iran to ‘thousands and thousands’ killed in Vietnam",
@@ -1360,7 +3217,7 @@
    ],
    "pub": "2026-10-31T11:56:34Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran lawmakers call for withdrawal from NPT: Will we have war or peace?",
@@ -1372,7 +3229,7 @@
    ],
    "pub": "2026-10-31T12:22:45Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran warns of unfettered retaliation if attacked as mediators try for peace",
@@ -1384,7 +3241,7 @@
    ],
    "pub": "2026-10-31T12:13:42Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "عراقچی: هیئت ایرانی در دوحه است اما برنامه‌ای برای دیدار با مقام‌های آمریکا نداریم",
@@ -1396,7 +3253,7 @@
    ],
    "pub": null,
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "تلاش فشرده برای توافق پیش از انتخابات آمریکا؛واشنگتن میان جنگ و فرصت دادن به تحریم‌ها",
@@ -1408,7 +3265,7 @@
    ],
    "pub": "2026-10-31T09:17:36Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "زمستان ۱۴۰۵؛ آیا ایران با کمبود گاز و برق روبه‌رو خواهد شد؟",
@@ -1420,7 +3277,7 @@
    ],
    "pub": "2026-10-31T06:37:58Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "آنچه گذشت: سخنگوی ارتش پاکستان درباره «عوامل قدرتمند» مخالف میانجی‌گری ایران و آمریکا هشدار داد",
@@ -1432,7 +3289,7 @@
    ],
    "pub": null,
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran court sentences 21-year-old protester to death",
@@ -1444,7 +3301,7 @@
    ],
    "pub": "2026-10-31T11:53:00Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Halloween gathering in Tehran ends in arrests and police crackdown",
@@ -1456,7 +3313,7 @@
    ],
    "pub": "2026-10-31T10:34:53Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Arab states demand response from Iran as fears of wider war dominate Bahrain summit",
@@ -1468,7 +3325,7 @@
    ],
    "pub": "2026-10-31T09:45:00Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "US Treasury says Iran's oil revenue, trade hit hard by pressure campaign",
@@ -1480,7 +3337,7 @@
    ],
    "pub": "2026-10-31T05:38:00Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "آمریکا شماری از مهاجران افغان را از طریق پاکستان به افغانستان بازمی‌گرداند",
@@ -1492,7 +3349,7 @@
    ],
    "pub": "2026-10-31T15:44:32Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "دزدان دریایی سومالی یک شناور ماهیگیری ایرانی را ربودند",
@@ -1504,7 +3361,7 @@
    ],
    "pub": "2026-10-31T15:17:37Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "خامنه‌ای در «دیدار با فرماندهان نظامی» ایران: به حملات جدید احتمالی آمریکا بدون محدودیت جغرافیایی پاسخ دهید",
@@ -1516,7 +3373,7 @@
    ],
    "pub": "2026-10-31T13:31:41Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "زلنسکی با قدردانی از آمریکا برای فروش ۵۰۰ موشک پاتریوت: تحویل ممکن است سال‌ها طول بکشد",
@@ -1528,7 +3385,7 @@
    ],
    "pub": "2026-10-31T12:31:04Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "«آتش‌بس محدود و موضعی» روسیه و اوکراین؛ تخلیه‌شدگان «اولشکی» وارد بلاروس شدند",
@@ -1540,7 +3397,7 @@
    ],
    "pub": "2026-10-31T12:23:13Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "رویارویی ایران و آمریکا و تلاش قطری‌ها برای توافق؛ تهران به اروپا هشدار داد",
@@ -1552,7 +3409,7 @@
    ],
    "pub": "2026-10-31T10:04:46Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran Braces for More War, No Matter the Outcome of the U.S. and Israeli Elections",
@@ -1564,7 +3421,7 @@
    ],
    "pub": "2026-10-31T14:22:20Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran warns it will retaliate without ‘geographical limitations’ if attacked",
@@ -1576,7 +3433,7 @@
    ],
    "pub": "2026-10-31T13:38:29Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Qatari mediators held talks in Tehran aimed at restarting direct U.S.-Iran negotiations, source says",
@@ -1588,7 +3445,7 @@
    ],
    "pub": "2026-10-31T12:11:12Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran says 2 fishing boats hit by US drone",
@@ -1600,7 +3457,7 @@
    ],
    "pub": "2026-10-31T14:51:47Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Live - Tehran threatens wider strikes if attacked as talks continue in Doha",
@@ -1612,7 +3469,7 @@
    ],
    "pub": "2026-10-31T07:59:51Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran buying time in nuclear talks as US prepares for possible strikes",
@@ -1624,7 +3481,7 @@
    ],
    "pub": "2026-10-31T12:49:47Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Armed Faction Warns US Against Using Iraqi Airspace to Attack Iran",
@@ -1636,7 +3493,7 @@
    ],
    "pub": "2026-10-31T11:38:23Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "A new strike on Iran? Trump and Netanyahu may not be on the same page",
@@ -1648,7 +3505,7 @@
    ],
    "pub": "2026-10-31T11:57:02Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "UPDATES: US War on Iran, Day 247 — Trump Camp Threatens Attacks on November 4",
@@ -1660,7 +3517,7 @@
    ],
    "pub": "2026-10-31T10:04:05Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Khamenei said to order military response without ‘geographic limits’ if US, Israel attacks",
@@ -1672,7 +3529,7 @@
    ],
    "pub": "2026-10-31T14:30:01Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Gulf states scramble to avert another U.S.-Israeli war on Iran they cannot stop",
@@ -1684,7 +3541,7 @@
    ],
    "pub": "2026-10-31T13:00:00Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "The Iran War Might Soon Get Catastrophically Worse",
@@ -1696,7 +3553,7 @@
    ],
    "pub": "2026-10-31T14:43:45Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran’s supreme leader says Tehran will decide when conflict ends if ‘enemies resume attacks’",
@@ -1708,7 +3565,7 @@
    ],
    "pub": "2026-10-31T12:27:45Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Reports confirm Trump’s plans to resume Iran war including strikes on civilian infrastructure",
@@ -1720,7 +3577,7 @@
    ],
    "pub": "2026-10-31T04:26:28Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Report: US warns Gulf allies of possible Iran strikes as early as November 4",
@@ -1732,7 +3589,7 @@
    ],
    "pub": "2026-10-31T06:42:32Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran's Khamenei warns US against attacks, orders military buildup | Daily Sabah",
@@ -1744,7 +3601,7 @@
    ],
    "pub": "2026-10-31T10:53:18Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran Holds Firm to Seven Conditions Amid Strike Fears...",
@@ -1756,7 +3613,7 @@
    ],
    "pub": "2026-10-31T14:00:37Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iranian military ordered to counter any attack swiftly and without restraint",
@@ -1768,7 +3625,7 @@
    ],
    "pub": "2026-10-31T12:37:33Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran threatens US and Israel with widespread retaliation over fresh attack threats",
@@ -1780,7 +3637,7 @@
    ],
    "pub": "2026-10-31T14:53:52Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iranian leaders warn of massive military response to any new attack",
@@ -1792,7 +3649,7 @@
    ],
    "pub": "2026-10-31T12:03:23Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "'Only we will decide when it ends': Khamenei threatens US and Israel as Iran talks advance",
@@ -1804,7 +3661,7 @@
    ],
    "pub": "2026-10-31T13:01:32Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Axios: Trump Could Strike Iran After GOP Election Loss...",
@@ -1816,7 +3673,7 @@
    ],
    "pub": "2026-10-31T10:58:58Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "India news: Oil tanker carrying 27 Indians attacked with limpet mines in Strait of Hormuz",
@@ -1828,7 +3685,7 @@
    ],
    "pub": "2026-10-31T05:11:42Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "🇺🇸🇮🇷 Iran claims U.S. STRIKE HIT 2 fishing boats south of Qeshm Island Hormozgan officials say the attack occurred 14–18 nautical miles off the island, injuring 2 fishermen and briefly leaving 2 others missing. There is no U.S. confirmation so far. Qeshm is w",
@@ -1840,7 +3697,7 @@
    ],
    "pub": "2026-10-31T15:40:00Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Shafaq News..Drone hits Iranian fishing boats near Qeshm",
@@ -1852,7 +3709,7 @@
    ],
    "pub": "2026-10-31T15:31:45Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran’s Young Wrestlers Strike Gold at World Championships",
@@ -1864,7 +3721,7 @@
    ],
    "pub": "2026-10-31T15:00:31Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Oil spills from tankers attacked by Iran in Hormuz reach UAE coastline, report says",
@@ -1876,7 +3733,7 @@
    ],
    "pub": "2026-10-31T07:58:00Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "US Warns Gulf of Possible Nov 4 Strikes as Trump Says Iran Wants Talks",
@@ -1888,7 +3745,7 @@
    ],
    "pub": "2026-10-31T11:48:51Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran's Supreme Leader Orders Military Readiness Amid Renewed US Attack Concerns",
@@ -1900,7 +3757,7 @@
    ],
    "pub": "2026-10-31T14:14:00Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "US warns Arab states to prepare for a new strike on Iran: MSNOW",
@@ -1912,7 +3769,7 @@
    ],
    "pub": "2026-10-31T13:25:11Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "US Reports Rising Casualties in War with Iran",
@@ -1936,7 +3793,7 @@
    ],
    "pub": "2026-10-31T07:36:00Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran Claims US Attacked Two Fishing Boats in Strait of Hormuz",
@@ -1948,7 +3805,7 @@
    ],
    "pub": "2026-10-31T12:41:56Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Angered by Merz comments, Iran vows harsh response to new attacks",
@@ -1972,7 +3829,7 @@
    ],
    "pub": "2026-10-31T05:55:24Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran’s Response Plan Includes Regional Backers of US and Israel, Official Warns",
@@ -1984,7 +3841,7 @@
    ],
    "pub": "2026-10-31T12:05:15Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Saudi FM Faisal Meets Rubio at G20 on Iran, Yemen",
@@ -1996,7 +3853,7 @@
    ],
    "pub": "2026-10-31T09:40:42Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "US warns allies to prepare for possible Iran strikes, retaliation after elections, AP sources say",
@@ -2008,7 +3865,7 @@
    ],
    "pub": "2026-10-31T07:25:35Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran’s Khamenei Orders Military to Expand US Retaliation Plans",
@@ -2020,7 +3877,7 @@
    ],
    "pub": "2026-10-31T14:29:14Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran’s Supreme Leader threatens US with response if strikes are launched after midterms",
@@ -2032,7 +3889,7 @@
    ],
    "pub": "2026-10-31T15:54:24Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "First the radars, then the rest: Iran's methodical assault on US bases",
@@ -2044,7 +3901,7 @@
    ],
    "pub": "2026-10-31T14:36:26Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran's Khamenei Meets Military Brass as U.S. Said to Plot Post-Midterm Strikes",
@@ -2056,7 +3913,7 @@
    ],
    "pub": "2026-10-31T11:14:00Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "US continues talks with Iran despite strike threat - EFE",
@@ -2068,7 +3925,7 @@
    ],
    "pub": "2026-10-31T07:00:02Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "JD Vance Leads U.S. Delegation To Islamabad Talks With Iran Over Lebanon And Sanctions: how 5 outlets framed it",
@@ -2080,7 +3937,7 @@
    ],
    "pub": "2026-10-31T11:20:22Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran Targets U.S.Military Sites in Bahrain, Kuwait After American Strikes",
@@ -2092,7 +3949,7 @@
    ],
    "pub": "2026-10-31T04:59:12Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iranian army warns of wider war in case of new US strike — Asharq Al-Awsat",
@@ -2104,7 +3961,7 @@
    ],
    "pub": "2026-10-31T10:57:10Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Trump Says Iran Wants to Talk as Hormuz Tanker Attacks Continue",
@@ -2116,7 +3973,7 @@
    ],
    "pub": "2026-10-31T07:46:52Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran Claims Three Tankers Hit Naval Mines, US Disputes Reports",
@@ -2128,7 +3985,7 @@
    ],
    "pub": "2026-10-31T06:24:04Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Trump’s chilling nuclear warning as US prepares for potential new strikes on Iran",
@@ -2140,19 +3997,7 @@
    ],
    "pub": "2026-10-31T12:54:22Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
-  },
-  {
-   "title": "‘Iran Will Not Surrender’: After Mojtaba Khamenei, Araghchi Warns Of Possible US Attack Amid Ongoing Talks",
-   "outlets": [
-    "News18"
-   ],
-   "links": [
-    "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOU19zWUI2WUlKQ2hXV2xlYXFNcDVLaG1MSnhadVJvelFsMExUQl9FZjM0V1VjajVtOFU2UnZZVzg2NTJ3RlFIOVBtT2gybi1leUx0bnM2U3A2cnpiTmpOUjFZNEV3TUFDYkh2Y0RWdXRGcFBxQk9oNzZYZDdpZ3UzWTlhamI1S254R2s3TXdqV1JKRW02YXR0dFhUc2FldU1SaVJQNGZBN0EySW5tb0pfVG51d3BNOEI0Ymo3TzJxZDNUNDN3aUhmbnlsNklZVG9VQzNZSlN1Q3h1b2E0dU5RN0pXVHRad9IB6wFBVV95cUxQYk1yNnhiM1Q0cmlQaUU3akh2YTdmLTNKNjYtMVVOejhuUmlaMWlHSmI1N3F5VmtsVVQ5YzdTSFp0MmpLMjFRNjhWeko0VllkTjFkNi1SNlhsSjdRb3FObTJFLTMtcU1icTZsM05OLW5tbEhxRGFrYjY3VGpIUzltb291SnFPckJfTng5T2JYZjluREJNWUZQMngydEc3S3NoaDBmcVFvdl80N3RndW9BOTU2c18tblFLOWNKbzhjSmdrbWFVRkRrWlNKak9tUktoRDZuVU1JLTh1bUU2U3RSV05nU25ZUUppVkJV?oc=5"
-   ],
-   "pub": "2026-10-31T15:04:33Z",
-   "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "We have time: Trump calls Iran war not typical as peace efforts stall",
@@ -2164,7 +4009,7 @@
    ],
    "pub": "2026-10-31T05:52:03Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Türkiye's Fidan, US Rubio discuss Iran, Gaza, Ukraine at G20",
@@ -2176,7 +4021,7 @@
    ],
    "pub": "2026-10-31T07:52:44Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Crude Oil Prices Hit Six-Month High as Iran War Escalation Fears Grow",
@@ -2188,7 +4033,7 @@
    ],
    "pub": "2026-10-31T12:48:23Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran strike on Muwaffaq Salti base kills 3 US troops",
@@ -2200,7 +4045,7 @@
    ],
    "pub": "2026-10-31T15:02:35Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran’s Supreme Leader issues warning to US & vows response to any threats",
@@ -2212,7 +4057,7 @@
    ],
    "pub": "2026-10-31T11:04:00Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Trump and Netanyahu Need to Choose Victory on Iran",
@@ -2224,7 +4069,7 @@
    ],
    "pub": "2026-10-31T10:30:46Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "‘A Very Dangerous Moment’: Regional Powers Race to Head Off New U.S.-Israeli Strikes on Iran",
@@ -2236,7 +4081,7 @@
    ],
    "pub": "2026-10-31T13:27:56Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran warns war could spread ‘much wider’ if US launches ‘another military adventure’",
@@ -2248,7 +4093,7 @@
    ],
    "pub": "2026-10-31T09:44:13Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Report: Draft US-Iran framework outlines possible transfer of enriched uranium to 3rd country | LIVE BLOG",
@@ -2260,7 +4105,7 @@
    ],
    "pub": "2026-10-31T08:51:21Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran's Khamenei, military chief warn of ‘geographically unrestricted’ retaliation against US",
@@ -2272,7 +4117,7 @@
    ],
    "pub": "2026-10-31T15:17:59Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran’s Khamenei orders preparations for new confrontation with U.S., Israel",
@@ -2284,7 +4129,7 @@
    ],
    "pub": "2026-10-31T14:24:55Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Today’s Headlines: Israel Kills Two in Nuseirat | Fourth Oil Tanker Hit | 'We Do Not Work for War'",
@@ -2296,7 +4141,7 @@
    ],
    "pub": "2026-10-31T15:00:57Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran will expand its list of U.S. and Israeli targets amid the threat of a new escalation",
@@ -2308,7 +4153,7 @@
    ],
    "pub": "2026-10-31T14:30:08Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran warns of 'earth-shattering blow' as Araghchi slams Germany's war stance",
@@ -2320,7 +4165,7 @@
    ],
    "pub": "2026-10-31T04:58:00Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran's Khamenei warns US and Israel against fresh attacks, orders 'unrestricted' military response to threats | World News",
@@ -2332,7 +4177,7 @@
    ],
    "pub": "2026-10-31T12:32:06Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Reports claim over 80 US refueling aircraft deployed to Israel amid Iran tensions",
@@ -2344,7 +4189,7 @@
    ],
    "pub": "2026-10-31T09:25:00Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran readies for escalation after Khamenei directs expansion of US and Israel targets",
@@ -2356,7 +4201,7 @@
    ],
    "pub": "2026-10-31T14:30:35Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "US Fighter Jets Gather In Israel, Iran Suddenly Plots Its Biggest-Ever Nuclear Move Big Alert",
@@ -2368,7 +4213,7 @@
    ],
    "pub": "2026-10-31T11:28:35Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Murphy: Iran's Missiles Target Saudi Arabia, Not Israel",
@@ -2380,7 +4225,7 @@
    ],
    "pub": "2026-10-31T12:11:24Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Qataris hold marathon talks in Tehran seeking US-Iran deal before midterms",
@@ -2392,7 +4237,7 @@
    ],
    "pub": "2026-10-31T10:20:00Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "‘Red Lines Are a Thing of the Past’: Araghchi Hits Back at German Chancellor",
@@ -2404,7 +4249,7 @@
    ],
    "pub": "2026-10-31T07:40:28Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Hezbollah unlikely to join renewed war unless Iran faces existential threat, Lebanese official says",
@@ -2416,7 +4261,7 @@
    ],
    "pub": "2026-10-31T05:33:21Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iranian chief of staff: The US and Israel will face an unprecedented response, and we will be the ones deciding when any new war ends",
@@ -2428,7 +4273,7 @@
    ],
    "pub": "2026-10-31T14:18:09Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "'War will engulf wider region': Iran warns Trump against fresh US strikes amid stalled negotiations",
@@ -2440,7 +4285,7 @@
    ],
    "pub": "2026-10-31T11:23:31Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "As well as Iran and Trump, the election in Israel highlights the demographic shift in the Middle East",
@@ -2452,7 +4297,7 @@
    ],
    "pub": "2026-10-31T07:58:36Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran slams German chancellor for backing US-Israel aggression",
@@ -2464,7 +4309,7 @@
    ],
    "pub": "2026-10-31T05:20:00Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "No geographic restriction: Mojtaba Khamenei orders Iran military to prepare for immediate US attack",
@@ -2476,7 +4321,7 @@
    ],
    "pub": "2026-10-31T11:49:09Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Highest State of Alert: Israeli Army Prepares to Attack Iran",
@@ -2488,7 +4333,7 @@
    ],
    "pub": "2026-10-31T09:55:47Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran's Khamenei tells military to prepare for possible renewed US-Israeli strikes",
@@ -2500,7 +4345,7 @@
    ],
    "pub": "2026-10-31T13:36:26Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "CENTCOM Commander Visits Strait of Hormuz during Milestone Week",
@@ -2512,7 +4357,7 @@
    ],
    "pub": "2026-10-31T14:12:18Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Concerns Grow Over Security of Strait of Hormuz Despite US Claims",
@@ -2524,7 +4369,7 @@
    ],
    "pub": "2026-10-31T12:20:30Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Tankers on fire in the Strait of Hormuz: what Iran claims, what others confirm and why oil keeps rising",
@@ -2536,7 +4381,7 @@
    ],
    "pub": "2026-10-31T14:05:27Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Hormuz: New Shipping Routes Come Under Iran’s Scrutiny",
@@ -2548,7 +4393,7 @@
    ],
    "pub": "2026-10-31T15:25:31Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran says four tankers on fire after striking mines in Hormuz",
@@ -2572,7 +4417,7 @@
    ],
    "pub": "2026-10-31T12:37:33Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Imam Seyyed Ali Khamenei’s foresight on the Strait of Hormuz",
@@ -2596,7 +4441,7 @@
    ],
    "pub": "2026-10-31T14:09:00Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Tanker Struck By Limpet Mines In Strait of Hormuz In First Such Attack Since 2019",
@@ -2608,7 +4453,7 @@
    ],
    "pub": "2026-10-31T11:49:28Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Tanker struck by unidentified projectile in Strait of Hormuz: UK maritime agency",
@@ -2620,7 +4465,7 @@
    ],
    "pub": "2026-10-31T05:13:07Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Strait of Hormuz: Why Are Oil Tankers Still Sailing Into Danger?",
@@ -2632,7 +4477,7 @@
    ],
    "pub": "2026-10-31T07:42:17Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "'Adapt to higher prices', UN official warns amid Hormuz standoff and threat of new war",
@@ -2644,7 +4489,7 @@
    ],
    "pub": "2026-10-31T10:30:01Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Uranium transfer, Strait of Hormuz reopening: Key takeaways from Iran-US draft proposal | World News",
@@ -2656,7 +4501,7 @@
    ],
    "pub": "2026-10-31T08:03:05Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "UKMTO: Tanker in Strait of Hormuz Hit by Explosives Attached to Small Boat",
@@ -2668,7 +4513,7 @@
    ],
    "pub": "2026-10-31T07:28:24Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Saudi Arabia condemns Houthi attacks, calls for security in Hormuz and Bab el-Mandeb",
@@ -2680,7 +4525,7 @@
    ],
    "pub": "2026-10-31T07:59:51Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "An Iranian scenario outlining potential escalation in the Strait of Hormuz and its implications for Gulf countries",
@@ -2704,7 +4549,7 @@
    ],
    "pub": "2026-10-31T13:20:00Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Four tankers catch fire in Strait of Hormuz",
@@ -2716,7 +4561,7 @@
    ],
    "pub": "2026-10-31T05:46:16Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Poland calls for Black Sea truce as waters turn deadlier than Hormuz",
@@ -2728,7 +4573,7 @@
    ],
    "pub": "2026-10-31T11:49:03Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "UN warns of higher prices due to Hormuz Strait crisis — The National",
@@ -2740,7 +4585,7 @@
    ],
    "pub": "2026-10-31T08:39:54Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "IRGC: Fourth oil tanker explodes on unauthorized route through Strait of Hormuz",
@@ -2752,7 +4597,7 @@
    ],
    "pub": "2026-10-31T15:38:56Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Primary internationally recognised transit routes in Strait of Hormuz successfully cleared of Iranian sea mines: CENTCOM Commander",
@@ -2764,7 +4609,7 @@
    ],
    "pub": "2026-10-31T05:06:07Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Third Tanker Fire Reported in Hormuz as Qatari Mediators Return to Tehran",
@@ -2776,7 +4621,7 @@
    ],
    "pub": "2026-10-31T05:53:26Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Indian Seafarers Targeted In Projectile Attacks At Strait of Hormuz Safe: Sarbananda Sonowal",
@@ -2788,7 +4633,7 @@
    ],
    "pub": "2026-10-31T12:44:18Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran Blows Up 4th Ship; Fireball Rocks Trump-Approved Hormuz Route; IRGC Mine Trap Exposes US Lies",
@@ -2812,7 +4657,7 @@
    ],
    "pub": "2026-10-31T06:13:47Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "UKMTO says Strait of Hormuz transits remained about 70% below pre-conflict levels",
@@ -2824,7 +4669,7 @@
    ],
    "pub": "2026-10-31T13:42:31Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Fourth tanker catches fire in Strait of Hormuz ᐉ News from Fakti.bg - World",
@@ -2836,7 +4681,7 @@
    ],
    "pub": "2026-10-31T06:11:00Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Trump Says War With Iran Will End Soon After CENTCOM Briefing: how 7 outlets framed it",
@@ -2848,7 +4693,7 @@
    ],
    "pub": "2026-10-31T11:21:38Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Is Washington preparing for another military confrontation with Iran? - anews",
@@ -2884,7 +4729,7 @@
    ],
    "pub": "2026-10-31T08:27:21Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran War Cost to US Crosses $47 Billion, Over 25% Higher Than July Estimate: Pentagon Data",
@@ -2908,7 +4753,7 @@
    ],
    "pub": "2026-10-31T13:52:13Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Yemen's Houthi reports 93 attacks by Saudi-led coalition, Saudi Arabia claims interception of missiles, drones",
@@ -2920,7 +4765,7 @@
    ],
    "pub": "2026-10-31T07:37:00Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Yemeni government forces accuse the Houthi group of targeting Aden Airport and the Presidential Palace with missiles",
@@ -2932,7 +4777,7 @@
    ],
    "pub": "2026-10-31T08:52:38Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Britain Strengthens Saudi Air Defenses as Iran-Backed Houthi Missile and Drone Attacks Intensify",
@@ -2944,7 +4789,7 @@
    ],
    "pub": "2026-10-31T09:19:08Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Two Civilians Killed, Two Injured in Houthi Shelling of Taiz Villages",
@@ -2956,7 +4801,7 @@
    ],
    "pub": "2026-10-31T14:05:23Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Houthi Missiles Target Aden Airport, Palace 2 Days After Strike",
@@ -2968,7 +4813,7 @@
    ],
    "pub": "2026-10-31T09:12:35Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Saudi coalition intercepts missile, drones targeting several regions",
@@ -2980,7 +4825,7 @@
    ],
    "pub": "2026-10-31T04:29:24Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Houthi Missiles SMASH Saudi-Backed Forces in Deadly Ambush as Vehicles Go Up in Flames",
@@ -2992,7 +4837,7 @@
    ],
    "pub": "2026-10-31T07:34:01Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Houthi Rebels Attack Yemen Presidential Palace, Aden Airport; Saudi Coalition Reports Drone Interception",
@@ -3004,7 +4849,7 @@
    ],
    "pub": "2026-10-31T05:37:10Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Yemen government forces say 1,119 operations targeted Houthi leaders and reinforcements",
@@ -3016,7 +4861,7 @@
    ],
    "pub": "2026-10-31T15:11:33Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Qatari mediators push Tehran to take steps towards deal with Washington",
@@ -3028,7 +4873,7 @@
    ],
    "pub": "2026-10-31T12:44:19Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Diplomacy or war? Qatar signals Iran breakthrough as US warns Gulf states to prepare for war",
@@ -3040,7 +4885,7 @@
    ],
    "pub": "2026-10-31T06:58:06Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Qatar Mediators Return To Tehran As JD Vance Letter Pushes US-Iran Talks: how 5 outlets framed it",
@@ -3052,7 +4897,7 @@
    ],
    "pub": "2026-10-31T11:24:41Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Qatar pushes for US-Iran deal before midterms; holds marathon talks: Report | Hindustan Times",
@@ -3076,7 +4921,7 @@
    ],
    "pub": "2026-10-31T13:41:58Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "US Midterms Loom Over Iran Talks as Qatar Presses for a Deal Before Tuesday",
@@ -3088,7 +4933,7 @@
    ],
    "pub": "2026-10-31T08:14:30Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "US Delegation to Join Talks with Iran in Doha, Raising Hopes for Renewed Dialogue",
@@ -3100,7 +4945,7 @@
    ],
    "pub": "2026-10-31T07:48:47Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "US officials may join Iran's team for talks in Doha",
@@ -3112,7 +4957,7 @@
    ],
    "pub": "2026-10-31T15:13:00Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Qatari Mediators Back in Tehran as Trump Forecasts a Quick End to Iran War",
@@ -3136,7 +4981,7 @@
    ],
    "pub": "2026-10-31T12:30:28Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "US, Iran Likely To Hold Peace Talks In Doha After Qatar Mediation: Report",
@@ -3148,7 +4993,7 @@
    ],
    "pub": "2026-10-31T14:29:19Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iranian delegation arrives in Doha for talks — Anadolu Agency",
@@ -3160,7 +5005,7 @@
    ],
    "pub": "2026-10-31T11:34:56Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Report of breakthrough in Iran talks as Gulf officials say US warned of strikes from 4 November",
@@ -3172,7 +5017,7 @@
    ],
    "pub": "2026-10-31T07:27:24Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran, Qatar Hold 12-Hour Marathon Negotiations... \"Positive Progress\"",
@@ -3184,7 +5029,7 @@
    ],
    "pub": "2026-10-31T07:32:55Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Media: US delegation may travel to Doha for direct talks with Iran",
@@ -3196,7 +5041,7 @@
    ],
    "pub": "2026-10-31T07:55:00Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Qatar makes final push to revive U.S.-Iran talks ahead of U.S. midterm elections : Global : JKN",
@@ -3220,7 +5065,7 @@
    ],
    "pub": "2026-10-31T06:49:29Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Qatari delegation in Iran to revive US-Iran peace talks",
@@ -3244,7 +5089,7 @@
    ],
    "pub": "2026-10-31T07:08:40Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Qatar seeks to restart U.S.-Iran talks as Strait of Hormuz tensions lift oil prices",
@@ -3256,7 +5101,7 @@
    ],
    "pub": "2026-10-31T12:23:50Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Qatari Mediators Hold 12-Hour Talks In Tehran To Revive US-Iran Negotiations",
@@ -3268,7 +5113,7 @@
    ],
    "pub": "2026-10-31T07:24:01Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Qatar mediates US-Iran talks to avert renewed war",
@@ -3280,7 +5125,7 @@
    ],
    "pub": "2026-10-31T09:35:05Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "US-Israel-Iran War Latest News: Qatar Holds 12-Hour Talks In Tehran To Revive Deal Before Midterms",
@@ -3292,7 +5137,7 @@
    ],
    "pub": "2026-10-31T05:44:59Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "US-Iran Talks Gain Momentum: American Delegation Expected In Doha After Breakthrough On Nuclear Deal, Hormuz",
@@ -3304,7 +5149,7 @@
    ],
    "pub": "2026-10-31T08:16:09Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran Welcomes US Overture, Sets Conditions for Talks",
@@ -3316,7 +5161,7 @@
    ],
    "pub": "2026-10-31T13:47:58Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "US Iran Conflict Nears Breakthrough As Ceasefire Talks Intensify Rapidly",
@@ -3340,7 +5185,7 @@
    ],
    "pub": "2026-10-31T13:41:21Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran Says US Must Accept Conditions Before Direct Talks: FM Araghchi",
@@ -3352,7 +5197,7 @@
    ],
    "pub": "2026-10-31T13:46:10Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Trump says Iran wants talks, claims Tehran is 'in trouble'",
@@ -3364,7 +5209,7 @@
    ],
    "pub": "2026-10-31T04:54:41Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iranian Foreign Minister: We are still very far from returning cooperation with the International Atomic Energy Agency (IAEA) to its normal state.",
@@ -3376,7 +5221,7 @@
    ],
    "pub": "2026-10-31T13:18:28Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Shafaq News..Iran reviews Vance message, rules out imminent talks",
@@ -3388,7 +5233,7 @@
    ],
    "pub": "2026-10-31T15:45:27Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Middle East latest: Qatari mediators return to Tehran with latest proposal to end war",
@@ -3412,7 +5257,7 @@
    ],
    "pub": "2026-10-31T07:25:28Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Araghchi: No plans for talks with US officials as mediators discuss Iran’s conditions",
@@ -3424,7 +5269,7 @@
    ],
    "pub": "2026-10-31T14:19:49Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Araghchi: Iranian Delegation Has Traveled to Doha; No US Meeting Planned for Now",
@@ -3436,7 +5281,7 @@
    ],
    "pub": "2026-10-31T14:05:30Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iranian Foreign Minister: No Plans to Meet US Officials for Now",
@@ -3448,7 +5293,7 @@
    ],
    "pub": "2026-10-31T14:56:59Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "What The New Us Iran Draft Deal Actually Means For Oil And T",
@@ -3460,7 +5305,7 @@
    ],
    "pub": "2026-10-31T11:04:07Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Tanker attacks, Houthi strikes deepen Gulf-wide conflict",
@@ -3472,7 +5317,7 @@
    ],
    "pub": "2026-10-31T10:11:47Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Oil Prices Climb After Tanker Attack in Strait of Hormuz",
@@ -3484,7 +5329,7 @@
    ],
    "pub": "2026-10-31T04:28:51Z",
    "first": "2026-10-31T15:58:01Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Trump: US Has Eliminated Iran's Nuclear Threat Capability",
@@ -3592,7 +5437,7 @@
    ],
    "pub": "2026-10-31T14:17:30Z",
    "first": "2026-10-31T15:59:16Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Iran's supreme leader warns Tehran will dictate terms of any renewed conflict",
@@ -3604,7 +5449,7 @@
    ],
    "pub": "2026-10-31T13:30:00Z",
    "first": "2026-10-31T15:59:16Z",
-   "last": "2026-10-31T15:59:16Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Touch Iran and face retaliation: Mojtaba Khamenei warns US, Israel",
@@ -3664,7 +5509,7 @@
    ],
    "pub": "2026-10-31T16:04:21Z",
    "first": "2026-10-31T16:02:05Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "How a Houthi Blockade in the Red Sea Tightens Iran’s Grip on Global Energy Supplies",
@@ -3688,7 +5533,7 @@
    ],
    "pub": "2026-10-31T06:43:49Z",
    "first": "2026-10-31T16:02:05Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "IRAN IN CONTROL: Iran Says Strait of Hormuz Will Remain Closed Until Conditions Are Met",
@@ -3700,7 +5545,7 @@
    ],
    "pub": "2026-10-31T09:59:45Z",
    "first": "2026-10-31T16:02:05Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Interactive Map: Two Deadly Weeks in South Yemen Amid Intensified Houthi Attacks",
@@ -3712,7 +5557,7 @@
    ],
    "pub": "2026-10-31T14:13:51Z",
    "first": "2026-10-31T16:02:05Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Saudi coalition intercepts ‘hostile drone’ in Riyadh as Yemen conflict widens",
@@ -3724,7 +5569,7 @@
    ],
    "pub": "2026-10-31T07:03:38Z",
    "first": "2026-10-31T16:02:05Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
   },
   {
    "title": "Qatar pushes for US-Iran talks as regional tensions threaten renewed conflict",
@@ -3736,7 +5581,115 @@
    ],
    "pub": "2026-10-31T15:45:44Z",
    "first": "2026-10-31T16:02:05Z",
-   "last": "2026-10-31T16:02:05Z"
+   "last": "2026-10-31T16:13:12Z"
+  },
+  {
+   "title": "US-Iran: tentative negotiations, but possible US attacks. Khamenei: an unrestricted response",
+   "outlets": [
+    "Il Sole 24 ORE"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNSkNfVXNpRHppeVJvR2FvZUIxUEpUNV9IbnlHSlNoQ2JDekl5d1FmWW5jdEpVYWNqNG9NZUt0TVZCMVVUdFcyLXdRRng4NGozX2Q4TmJHNkdmY3JUd1pYYmFlc3FwaDg1eUxjUy1HbEN1X0pieWF1Z2RxVHlwelh1WG4xdnZXTXNSdmRNRXNXZnRUdmVKQXdvbDVMd3ZnSjhLWnVpY1hoTkhwLXBycUl6dV9vTGNNVzVBdGFtTFN0NmtNSF9WT2hRMWlNdmhnU1JKUFMyQk95U2hxMktUcUJv?oc=5"
+   ],
+   "pub": "2026-10-31T11:43:56Z",
+   "first": "2026-10-31T16:13:12Z",
+   "last": "2026-10-31T16:13:12Z"
+  },
+  {
+   "title": "\"Parents Are Still Crying\": Iranian Diplomat Recalls Minab School Attack",
+   "outlets": [
+    "NDTV"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPdm5rRzVrenA0dkppRF9vYmZhZnlIcTZBMWZmenpzRXA5eGt0eEhjWlpjNXVKbzNrTzNoNzRfbnFPNXRSLUdIbWU0VjhuczVOeGtiLVlpRFktR2ExS2Uta3dOdjVZTzdNUW9GZHVOUW9USjNFc0VfMEFET1dJa3RYX1N2b1NpTks2ZC1zTjJFU3BYXzQzNHdyY1p0SjA3TUx4VWdWek5DblVJVFBTbjVtdURZZEhwT1ZpZGQtRXZWdGlrWWp6T18xYk12ZVlza281bUYtVGs0djM0QlhnaXRqVlN4OUdPbDFycm9Nc08xRdIB9wFBVV95cUxQb3FrdFMydU9QOXlDeWh5TE1SVVBzcDJZcDNsb1oxT3pXUEl2NDZQdm1NYXp6Z1ZiNDBCRnN1dGdCZ0d2Vms5VmxSSXRSa3MzMVoxaGo2OXBUNTc0dUZCT3RPbWJrNV9YZDV4UzEtSTk4dXZfekhrSjczT3AteDF6ZUQyUzRIWjl4ZHVacnlFZUM5SmY4Mi1Lc1dvMHVvYkZJYW9MbFp5U3lJRkJ0VzB2QVZBeFJwaVFrbzlNM2NfaFhtNnNQU2xxaFQzbkF6TW9LTDJrbDQtclJYbzV1MS1vQkJEX3FVQ2JQRV9rNlNuVkRWTk9nVFdF?oc=5"
+   ],
+   "pub": "2026-10-31T07:35:39Z",
+   "first": "2026-10-31T16:13:12Z",
+   "last": "2026-10-31T16:13:12Z"
+  },
+  {
+   "title": "Drone attacks 2 fishing boats off Iran’s Qeshm Island, leaving 2 wounded, 2 missing: Media",
+   "outlets": [
+    "Anadolu Ajansı"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMizAFBVV95cUxQZmpTTENCV3VUVk0zOGIxU1pHSHBwSzZlanlfZGNqUS1FTXVNeTdSV29ocUROdkIzQlY3cWg5cVBXYnBSeEsxTDN0MFN3TGl2aFpEQml3NW5ISEh3eXVMLS00cWtlQjkxSWZFVlpaWm9LUFB3WTBaY3o0QkR3M0NGUzBqQXhBMFZodE1STm1UOXJuVk9Ud2xnNDhrLUozWC1rWTE1NzdZNnhWTzFrWTF1TlEwYmdNT01kZUhGNldCTm1laWU2RnE3aW10X2o?oc=5"
+   ],
+   "pub": "2026-10-31T10:21:58Z",
+   "first": "2026-10-31T16:13:12Z",
+   "last": "2026-10-31T16:13:12Z"
+  },
+  {
+   "title": "Iran vows earth-shattering reprisals if U.S. renews attacks",
+   "outlets": [
+    "Peoples Gazette Nigeria"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMiigFBVV95cUxNcXhhVmVOQzVrUHZfbFdMOVF1b001UzVuSkpxUll4M25GS1V0Ri1HbkZkNEp6WHFWa3ZiaXl1R1QtN24wT2tmVWV4bFA1aXlzRHBnWXJpUmdTRVRjdE9CTzA2OWNoV1k1S1dWaDA5Q0hSdVR0c1hMdll3M3VCRzdMRURxUk1pamhyN3c?oc=5"
+   ],
+   "pub": "2026-10-31T11:19:25Z",
+   "first": "2026-10-31T16:13:12Z",
+   "last": "2026-10-31T16:13:12Z"
+  },
+  {
+   "title": "US attacks 2 Iranian fishing boats off Masan, Qeshm Island",
+   "outlets": [
+    "Mehr News Agency"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMimAFBVV95cUxPN1VYM3l2TElKUjBtSXpFcVlJLUtJc1lTMEFGZ0xrVWhfUndBY3FyRWxNQUpZbGsySDBxZ003XzNoemdyNWxVcWF4b3VrY0M1V1VjbFR6WDhkMFFQdHRiRG9haW1Qbnh2dnhtSUlhdDRHbjd4OEdHTGs1a1d5QllhV3VvWUNBU1VxamhiX0dhNHZ0MFJXUTE4UA?oc=5"
+   ],
+   "pub": "2026-10-31T11:32:00Z",
+   "first": "2026-10-31T16:13:12Z",
+   "last": "2026-10-31T16:13:12Z"
+  },
+  {
+   "title": "Drone attack targets two boats near Iran’s Qeshm Island",
+   "outlets": [
+    "صوت الإمارات"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTlBTbDFHT3B6UHZ2T3dwSERIZ1hkbUN1M1VTOW4wbFVQS1dhNkhvS2l5dTVwanNPMXo4RGR1V3U3RmQxaE5wbnVHcERKZzBfTkg0b0JCeU05R0hzLWxCTFFZWUkzM2w5dUdmN1QtcHpTd1R3dzFrazJsR3QzdWs4bFZ1dUJxRExlZ05ISHRTNFZoYUhqRko0d3JhTTRLYi1NZjc2VkRqLTUxZw?oc=5"
+   ],
+   "pub": "2026-10-31T11:47:55Z",
+   "first": "2026-10-31T16:13:12Z",
+   "last": "2026-10-31T16:13:12Z"
+  },
+  {
+   "title": "Two fishermen missing after attack in Hormuz: Iranian official",
+   "outlets": [
+    "L'Orient Today"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxNN3VJZFBKdUR1N3dZbGp0Z1B6ejFNQjlSaUIwdGtlaHpsZ2JLOHUxZ0hRWExqY2lmVE9MMFpzQlRGZHFGZ3BJUTdTVHNZeW04VmhnWEtPTzBhb0dTX1FHWFNKM0pla2dWcEtGX2I0NUZyR0tMSFlXR3lpS1NjU1JKUGtpdl9TajYtbUpiMDZCRUhLVjhYc0Z1UEFqbEQ0VE8zb3hid0VRRWJRV3k2VmJoRUpYMF8?oc=5"
+   ],
+   "pub": "2026-10-31T10:22:50Z",
+   "first": "2026-10-31T16:13:12Z",
+   "last": "2026-10-31T16:13:12Z"
+  },
+  {
+   "title": "Iran conflict widens to Lebanon; Kuwait mistakenly shoots down US jets",
+   "outlets": [
+    "DD News"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMimwFBVV95cUxQc3pnNmlnS0k3Q2tld2hEWFpkQXo4RGxFd1BhTUJxVUlrWFZkQUpqUHR2ZzBuTE1paTFYeGlBSWdlTnhlNzV0aHVWdzBaYUFWemZlX2tUdURRa0VHb2ZpZWZITDRDakdYWW5ZMklPMmZtWUk2OXRXSDVxb0tKdUtkN01zX2FnUVhXZGVXa20zemZ2Q3podlowTjh6TQ?oc=5"
+   ],
+   "pub": "2026-10-31T09:04:45Z",
+   "first": "2026-10-31T16:13:12Z",
+   "last": "2026-10-31T16:13:12Z"
+  },
+  {
+   "title": "Trump Says Iran 'Wants to Talk' as Washington Weighs New Strikes",
+   "outlets": [
+    "JFeed"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBsSDRsNVJlaXkzdHl5M2kybGxUVUlQNXFDb3NjWEN4QmlwUTdMZVU3bFFJaU5wU2E1MlRKZzZaVGlUbEswMzNYa0dDSnlGdmto?oc=5"
+   ],
+   "pub": "2026-10-31T16:01:00Z",
+   "first": "2026-10-31T16:13:12Z",
+   "last": "2026-10-31T16:13:12Z"
   }
  ],
  "telegram_meta": {
@@ -3744,6 +5697,33 @@
   "channels_failed": []
  },
  "telegram": [
+  {
+   "ch": "irna_1313",
+   "id": 468272,
+   "t": "2026-10-31T16:13:04Z",
+   "text": "دو مدال برنز برای دختران ایران در جودو کاپ آسیا 🔹 پس از آن که تیم‌های ملی مردان و زنان بزرگسال جودو ایران با کسب ۸ مدال طلا، نقره و برنز عنوان قهرمانی رقابت‌های کاپ آسیا در سال ۲۰۲۶ به میزبانی اردن را به خود اختصاص دادند، امروز رقابت‌های رده سنی جوانان برگزار شد که طی آن مهشید صف",
+   "emoji": "",
+   "link": "https://t.me/irna_1313/468272",
+   "relevant": true
+  },
+  {
+   "ch": "presstv",
+   "id": 212945,
+   "t": "2026-10-31T16:13:01Z",
+   "text": "Iran criticized Europe’s support for the US-Israeli wars on Iran, saying governments that backed the aggression are now paying the price of war and terror. @PressTV",
+   "emoji": "",
+   "link": "https://t.me/presstv/212945",
+   "relevant": true
+  },
+  {
+   "ch": "abualiexpress",
+   "id": 132884,
+   "t": "2026-10-31T16:12:01Z",
+   "text": "כותרות השבת 1. לא לפספס: אלג'זירה חושפת לראשונה במשדר טלויזיוני מיוחד תיעודים חדשים של כל בכירי המטכ\"ל של חמאס שחוסלו מאז שומר החומות ובמהלך המלחמה האחרונה. נחשפת השיחה הראשונה של יחיא סנואר ומחמד דף עם סיום מבצע שומר החומות: https://t.me/abualiexpress/132847 https://t.me/abualie",
+   "emoji": "",
+   "link": "https://t.me/abualiexpress/132884",
+   "relevant": true
+  },
   {
    "ch": "irna_1313",
    "id": 468271,
