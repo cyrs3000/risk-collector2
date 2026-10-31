@@ -1,105 +1,22 @@
-# brief 2026-10-31T16:13:12Z
+# brief 2026-10-31T16:24:06Z
 
 ## sources
-adsb:ok, firms:ok, markets:error: RuntimeError: all market symbols , iran_fx:ok, news:partial: 4 feed(s) failed: Times of Isra, telegram:ok, safeairspace:ok, polymarket:ok, state_dept:ok, embassy_alerts:ok, fcdo:ok, easa_czib:ok, faa:ok, portwatch_hormuz:error: RuntimeError: no PortWatch rows, marad:error: HTTPError: 403 Client Error: Forb, official_statements:ok, ofac:ok, ioda_iran:ok, gdelt:error: HTTPError: 429 Client Error: Too , usgs_seismic:ok
+adsb:partial: 10 point(s) failed, firms:ok, markets:error: RuntimeError: all market symbols , iran_fx:ok, news:partial: 4 feed(s) failed: Times of Isra, telegram:ok, safeairspace:ok, polymarket:ok, state_dept:ok, embassy_alerts:ok, fcdo:ok, easa_czib:ok, faa:ok, portwatch_hormuz:ok, marad:error: HTTPError: 403 Client Error: Forb, official_statements:ok, ofac:ok, ioda_iran:ok, gdelt:error: HTTPError: 429 Client Error: Too , usgs_seismic:ok, notams:error: RuntimeError: no NOTAM source rea, foreign_advisories:ok, ais_military:error: RuntimeError: AISSTREAM_KEY secre
 
 ## ALERTS (verify before use)
-- {"type": "statedept_change", "text": "Iran - Level 4: Do Not Travel", "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.irn.html"}
-- {"type": "statedept_change", "text": "Syria - Level 4: Do Not Travel", "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.syr.html"}
-- {"type": "statedept_change", "text": "Yemen - Level 4: Do Not Travel", "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.yem.html"}
-- {"type": "statedept_change", "text": "Lebanon - Level 4: Do Not Travel", "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lbn.html"}
-- {"type": "statedept_change", "text": "Iraq - Level 4: Do Not Travel", "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.irq.html"}
-- {"type": "statedept_change", "text": "Afghanistan - Level 4: Do Not Travel", "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.afg.html"}
-- {"type": "embassy_alert", "country": "Israel", "text": "Security Alert: U.S. Embassy Jerusalem – October 25, 2026", "link": "https://il.usembassy.gov/security-alert-u-s-embassy-jerusalem-october-25-2026/"}
-- {"type": "embassy_alert", "country": "Israel", "text": "Security Alert: U.S. Embassy Jerusalem – October 23, 2026", "link": "https://il.usembassy.gov/security-alert-u-s-embassy-jerusalem-october-23-2026/"}
-- {"type": "embassy_alert", "country": "Israel", "text": "Security Alert: U.S. Embassy Jerusalem – October 23, 2026", "link": "https://il.usembassy.gov/security-alert-u-s-embassy-jerusalem-october-18-2026/"}
-- {"type": "embassy_alert", "country": "Israel", "text": "Security Alert: U.S. Embassy Jerusalem – October 13, 2026", "link": "https://il.usembassy.gov/security-alert-u-s-embassy-jerusalem-october-13-2026/"}
-- {"type": "embassy_alert", "country": "Israel", "text": "Security Alert: U.S. Embassy Jerusalem – October 8, 2026", "link": "https://il.usembassy.gov/security-alert-u-s-embassy-jerusalem-october-8-2026/"}
-- {"type": "embassy_alert", "country": "Iraq", "text": "Travel Advisory: Iraq October 2026", "link": "https://iq.usembassy.gov/travel-advisory-iraq-october-2026/"}
-- {"type": "embassy_alert", "country": "Iraq", "text": "Security Alert: U.S. Mission Iraq – October 18, 2026", "link": "https://iq.usembassy.gov/security-alert-u-s-mission-iraq-october-18-2026/"}
-- {"type": "embassy_alert", "country": "Iraq", "text": "Security Alert: U.S. Mission Iraq – October 8, 2026", "link": "https://iq.usembassy.gov/security-alert-u-s-mission-iraq-october-8-2026/"}
-- {"type": "embassy_alert", "country": "Iraq", "text": "Security Alert: U.S. Mission Iraq – September 19, 2026", "link": "https://iq.usembassy.gov/security-alert-u-s-mission-iraq-september-19-2026/"}
-- {"type": "embassy_alert", "country": "Iraq", "text": "Security Alert: U.S. Embassy Baghdad and U.S. Consulate General Erbil – September 1, 2026", "link": "https://iq.usembassy.gov/security-alert-u-s-embassy-baghdad-and-u-s-consulate-general-erbil-september-1-2026/"}
-- {"type": "embassy_alert", "country": "Jordan", "text": "Travel Advisory: Jordan October 2026", "link": "https://jo.usembassy.gov/travel-advisory-jordan-october-2026/"}
-- {"type": "embassy_alert", "country": "Jordan", "text": "Security Alert – U.S. Embassy Amman – October 23, 2026", "link": "https://jo.usembassy.gov/security-alert-u-s-embassy-amman-october-23-2026/"}
-- {"type": "embassy_alert", "country": "Jordan", "text": "Security Alert: U.S. Embassy Amman – October 18, 2026", "link": "https://jo.usembassy.gov/security-alert-u-s-embassy-amman-october-18-2026/"}
-- {"type": "embassy_alert", "country": "Jordan", "text": "Security Alert: U.S. Embassy Amman – October 8, 2026", "link": "https://jo.usembassy.gov/security-alert-u-s-embassy-amman-october-8-2026/"}
-- {"type": "embassy_alert", "country": "Jordan", "text": "Routine Message: Voting in U.S. Elections from Overseas", "link": "https://jo.usembassy.gov/routine-message-voting-in-u-s-elections-from-overseas/"}
-- {"type": "embassy_alert", "country": "Lebanon", "text": "Security Alert: U.S. Embassy Beirut – October 24, 2026", "link": "https://lb.usembassy.gov/security-alert-u-s-embassy-beirut-october-24-2026/"}
-- {"type": "embassy_alert", "country": "Lebanon", "text": "Travel Advisory: Lebanon October 2026", "link": "https://lb.usembassy.gov/travel-advisory-lebanon-october-2026/"}
-- {"type": "embassy_alert", "country": "Lebanon", "text": "Security Alert: U.S. Embassy Beirut – October 18, 2026", "link": "https://lb.usembassy.gov/security-alert-u-s-embassy-beirut-october-18-2026/"}
-- {"type": "embassy_alert", "country": "Lebanon", "text": "Security Alert: U.S. Embassy Beirut – October 8, 2026", "link": "https://lb.usembassy.gov/security-alert-u-s-embassy-beirut-october-8-2026/"}
-- {"type": "embassy_alert", "country": "Lebanon", "text": "Security Alert: U.S. Embassy Beirut – September 19, 2026", "link": "https://lb.usembassy.gov/security-alert-u-s-embassy-beirut-september-19-2026/"}
-- {"type": "embassy_alert", "country": "Qatar", "text": "Travel Advisory: Qatar October 2026", "link": "https://qa.usembassy.gov/travel-advisory-qatar-october-2026/"}
-- {"type": "embassy_alert", "country": "Qatar", "text": "Security Alert: U.S. Embassy Doha – October 18, 2026", "link": "https://qa.usembassy.gov/security-alert-u-s-embassy-doha-october-18-2026/"}
-- {"type": "embassy_alert", "country": "Qatar", "text": "Security Alert: U.S. Embassy Doha – October 8, 2026", "link": "https://qa.usembassy.gov/security-alert-u-s-embassy-doha-october-8-2026/"}
-- {"type": "embassy_alert", "country": "Qatar", "text": "Security Alert: U.S. Embassy Doha – September 19, 2026", "link": "https://qa.usembassy.gov/security-alert-u-s-embassy-doha-september-19-2026/"}
-- {"type": "embassy_alert", "country": "Qatar", "text": "Security Alert: Qatar – September 1, 2026", "link": "https://qa.usembassy.gov/security-alert-qatar-september-1-2026/"}
-- {"type": "embassy_alert", "country": "Bahrain", "text": "Travel Advisory: Bahrain October 2026", "link": "https://bh.usembassy.gov/travel-advisory-bahrain-october-2026/"}
-- {"type": "embassy_alert", "country": "Bahrain", "text": "Security Alert: U.S. Embassy Manama – October 18, 2026", "link": "https://bh.usembassy.gov/security-alert-u-s-embassy-manama-october-18-2026/"}
-- {"type": "embassy_alert", "country": "Bahrain", "text": "Security Alert: U.S. Embassy Manama – October 8, 2026", "link": "https://bh.usembassy.gov/security-alert-u-s-embassy-manama-october-8-2026/"}
-- {"type": "embassy_alert", "country": "Bahrain", "text": "Security Alert: U.S. Embassy Manama – September 19, 2026", "link": "https://bh.usembassy.gov/security-alert-u-s-embassy-manama-september-19-2026/"}
-- {"type": "embassy_alert", "country": "Bahrain", "text": "Security Alert: U.S. Embassy Manama – September 5, 2026", "link": "https://bh.usembassy.gov/security-alert-u-s-embassy-manama-september-5-2026/"}
-- {"type": "embassy_alert", "country": "Kuwait", "text": "Travel Advisory: Kuwait October 2026", "link": "https://kw.usembassy.gov/travel-advisory-kuwait-october-2026/"}
-- {"type": "embassy_alert", "country": "Kuwait", "text": "Security Alert: U.S. Embassy Kuwait – October 18, 2026", "link": "https://kw.usembassy.gov/security-alert-u-s-embassy-kuwait-october-18-2026/"}
-- {"type": "embassy_alert", "country": "Kuwait", "text": "Security Alert: U.S. Mission Kuwait – October 8, 2026", "link": "https://kw.usembassy.gov/security-alert-u-s-mission-kuwait-october-8-2026/"}
-- {"type": "embassy_alert", "country": "Kuwait", "text": "Security Alert: U.S. Embassy Kuwait – September 19, 2026", "link": "https://kw.usembassy.gov/security-alert-u-s-embassy-kuwait-september-19-2026/"}
-- {"type": "embassy_alert", "country": "Kuwait", "text": "Security Alert: U.S. Embassy Kuwait – September 2, 2026", "link": "https://kw.usembassy.gov/security-alert-u-s-embassy-kuwait-september-2-2026/"}
-- {"type": "embassy_alert", "country": "UAE", "text": "Travel Advisory: United Arab Emirates", "link": "https://ae.usembassy.gov/travel-advisory-united-arab-emirates/"}
-- {"type": "embassy_alert", "country": "UAE", "text": "Security Alert: U.S. Mission United Arab Emirates – October 18, 2026", "link": "https://ae.usembassy.gov/security-alert-u-s-mission-united-arab-emirates-october-18-2026/"}
-- {"type": "embassy_alert", "country": "UAE", "text": "Security Alert: U.S. Mission United Arab Emirates – October 8, 2026”.", "link": "https://ae.usembassy.gov/security-alert-u-s-mission-united-arab-emirates-october-8-2026/"}
-- {"type": "embassy_alert", "country": "UAE", "text": "Security Alert: U.S. Mission United Arab Emirates – September 19, 2026", "link": "https://ae.usembassy.gov/security-alert-u-s-mission-united-arab-emirates-september-19-2026/"}
-- {"type": "embassy_alert", "country": "UAE", "text": "Security Alert: U.S. Embassy Abu Dhabi, United Arab Emirates – September 11, 2026", "link": "https://ae.usembassy.gov/security-alert-u-s-embassy-abu-dhabi-united-arab-emirates-september-11-2026/"}
-- {"type": "embassy_alert", "country": "Saudi Arabia", "text": "Security Alert: U.S. Mission to Saudi Arabia – October 30, 2026", "link": "https://sa.usembassy.gov/security-alert-u-s-mission-to-saudi-arabia-october-30-2026/"}
-- {"type": "embassy_alert", "country": "Saudi Arabia", "text": "Security Alert: U.S. Mission to Saudi Arabia – October 28, 2026", "link": "https://sa.usembassy.gov/security-alert-u-s-mission-to-saudi-arabia-october-28-2026/"}
-- {"type": "embassy_alert", "country": "Saudi Arabia", "text": "Security Alert: U.S. Mission to Saudi Arabia – October 27, 2026", "link": "https://sa.usembassy.gov/security-alert-u-s-mission-to-saudi-arabia-october-27-2026/"}
-- {"type": "embassy_alert", "country": "Saudi Arabia", "text": "Security Alert: U.S. Mission to Saudi Arabia – October 25, 2026", "link": "https://sa.usembassy.gov/security-alert-u-s-mission-to-saudi-arabia-october-25-2026/"}
-- {"type": "embassy_alert", "country": "Saudi Arabia", "text": "Travel Advisory: Saudi Arabia October 2026", "link": "https://sa.usembassy.gov/travel-advisory-saudi-arabia-october-2026/"}
-- {"type": "embassy_alert", "country": "Oman", "text": "Travel Advisory: Oman October 2026", "link": "https://om.usembassy.gov/travel-advisory-oman-october-2026/"}
-- {"type": "embassy_alert", "country": "Oman", "text": "Security Alert: U.S. Embassy Muscat – October 18, 2026", "link": "https://om.usembassy.gov/security-alert-u-s-embassy-muscat-october-18-2026/"}
-- {"type": "embassy_alert", "country": "Oman", "text": "Security Alert: U.S. Embassy Muscat – October 8, 2026", "link": "https://om.usembassy.gov/security-alert-u-s-embassy-muscat-october-8-2026/"}
-- {"type": "embassy_alert", "country": "Oman", "text": "Security Alert: U.S. Embassy Muscat – September 19, 2026", "link": "https://om.usembassy.gov/security-alert-u-s-embassy-muscat-september-19-2026/"}
-- {"type": "embassy_alert", "country": "Oman", "text": "Security Alert: Oman – September 1, 2026", "link": "https://om.usembassy.gov/security-alert-oman-september-1-2026/"}
-- {"type": "embassy_alert", "country": "Turkey", "text": "Weather Alert: Delayed Opening on Thursday, October 15, 2026 – U.S. Consulate General Istanbul (Release Date: October 14, 2026)", "link": "https://tr.usembassy.gov/weather-alert-delayed-opening-on-thursday-october-15-2026-u-s-consulate-general-istanbul-release-date-october-14-2026/"}
-- {"type": "embassy_alert", "country": "Turkey", "text": "Routine Message: Ongoing Potential for Demonstrations (U.S. Embassy Ankara, October 1, 2026)", "link": "https://tr.usembassy.gov/routine-message-ongoing-potential-for-demonstrations-u-s-embassy-ankara-october-1-2026/"}
-- {"type": "embassy_alert", "country": "Turkey", "text": "Routine Message: CORRECTION to Worldwide Message for Americans: SSA Foreign Enforcement Questionnaire (FEQ)", "link": "https://tr.usembassy.gov/routine-message-correction-to-worldwide-message-for-americans-ssa-foreign-enforcement-questionnaire-feq/"}
-- {"type": "embassy_alert", "country": "Turkey", "text": "Weather Alert – Wildfires – U.S. Embassy Ankara, Türkiye (July 31, 2026)", "link": "https://tr.usembassy.gov/weather-alert-wildfires-u-s-embassy-ankara-turkiye-july-31-2026/"}
-- {"type": "embassy_alert", "country": "Turkey", "text": "Security Alert: July 22, 2026 – Worldwide Caution for U.S. Citizens", "link": "https://tr.usembassy.gov/security-alert-july-22-2026-worldwide-caution-for-u-s-citizens/"}
-- {"type": "embassy_alert", "country": "Cyprus", "text": "Worldwide Caution: Public Health Arrival Restrictions and Enhanced Ebola Screening", "link": "https://cy.usembassy.gov/worldwide-caution-public-health-arrival-restrictions-and-enhanced-ebola-screening/"}
-- {"type": "embassy_alert", "country": "Cyprus", "text": "Security Alert – U.S. Embassy Nicosia (March 23, 2026)", "link": "https://cy.usembassy.gov/security-alert-u-s-embassy-nicosia-march-23-2026/"}
-- {"type": "embassy_alert", "country": "Cyprus", "text": "Security Alert – U.S. Embassy Cyprus Operating Status and Cypriot Civil Defense Resources – March 05, 2026", "link": "https://cy.usembassy.gov/security-alert-u-s-embassy-cyprus-operating-status-and-cypriot-civil-defense-resources-march-05-2026/"}
-- {"type": "embassy_alert", "country": "Cyprus", "text": "TRAVEL ADVISORY – Cyprus", "link": "https://cy.usembassy.gov/travel-advisory-cyprus/"}
-- {"type": "embassy_alert", "country": "Cyprus", "text": "MISSILE THREAT CAUTION – MARCH 2, 2026", "link": "https://cy.usembassy.gov/missile-threat-caution-march-2-2026/"}
-- {"type": "embassy_alert", "country": "Egypt", "text": "Security Alert: U.S. Embassy Cairo – August 1, 2026", "link": "https://eg.usembassy.gov/security-alert-u-s-embassy-cairo-august-1-2026/"}
-- {"type": "embassy_alert", "country": "Egypt", "text": "Routine Message: Reminder for U.S. Citizens: U.S. Passport Required to Enter the United States", "link": "https://eg.usembassy.gov/routine-message-reminder-for-u-s-citizens-u-s-passport-required-to-enter-the-united-states/"}
-- {"type": "embassy_alert", "country": "Egypt", "text": "Security Alert: Exercise Increased Caution in the Middle East", "link": "https://eg.usembassy.gov/security-alert-exercise-increased-caution-in-the-middle-east/"}
-- {"type": "embassy_alert", "country": "Egypt", "text": "Worldwide Caution: Public Health Arrival Restrictions and Enhanced Ebola Screening", "link": "https://eg.usembassy.gov/worldwide-caution-public-health-arrival-restrictions-and-enhanced-ebola-screening/"}
-- {"type": "embassy_alert", "country": "Egypt", "text": "Routine Message – U.S. Embassy Cairo, Egypt", "link": "https://eg.usembassy.gov/routine-message-u-s-embassy-cairo-egypt/"}
-- {"type": "embassy_alert", "country": "Azerbaijan", "text": "Worldwide Caution: Public Health Arrival Restrictions and Enhanced Ebola Screening", "link": "https://az.usembassy.gov/worldwide-caution-public-health-arrival-restrictions-and-enhanced-ebola-screening/"}
-- {"type": "embassy_alert", "country": "Azerbaijan", "text": "Azerbaijan Level 3 Travel Advisory (March 12, 2026)", "link": "https://az.usembassy.gov/azerbaijan-level-3-travel-advisory-march-12-2026/"}
-- {"type": "embassy_alert", "country": "Azerbaijan", "text": "Security Alert: Azerbaijan – Alert 1 – Iranian Drones Struck Nakhchivan International Airport (March, 5, 2026)", "link": "https://az.usembassy.gov/security-alert-azerbaijan-alert-1-iranian-drones-struck-nakhchivan-international-airport-march-5-2026/"}
-- {"type": "embassy_alert", "country": "Azerbaijan", "text": "IranSecurity Alert – Land Border Crossings (January 12, 2026)", "link": "https://az.usembassy.gov/iransecurity-alert-land-border-crossings-january-12-2026/"}
-- {"type": "embassy_alert", "country": "Azerbaijan", "text": "Alert: Iran Security Alert – Airspace Partial Reopening (July 2, 2025)", "link": "https://az.usembassy.gov/alert-iran-security-alert-airspace-partial-reopening-july-2-2025/"}
-- {"type": "embassy_alert", "country": "Pakistan", "text": "Security Alert: Vigilance during demonstrations (September 27 to 30)", "link": "https://pk.usembassy.gov/security-alert-vigilance-during-demonstrations-september-27-to-30/"}
-- {"type": "embassy_alert", "country": "Pakistan", "text": "Security Alert: Vigilance During Independence Day Celebrations", "link": "https://pk.usembassy.gov/security-alert-vigilance-during-independence-day-celebrations/"}
-- {"type": "embassy_alert", "country": "Pakistan", "text": "Security Alert – U.S. Mission to Pakistan (August 12, 2026)", "link": "https://pk.usembassy.gov/security-alert-u-s-mission-to-pakistan-august-12-2026/"}
-- {"type": "embassy_alert", "country": "Pakistan", "text": "Security Alert – U.S. Mission to Pakistan (August 3, 2026)", "link": "https://pk.usembassy.gov/security-alert-u-s-mission-to-pakistan-august-3-2026/"}
-- {"type": "embassy_alert", "country": "Pakistan", "text": "Security Alert – July 22, 2026 – Worldwide Caution for U.S. Citizens", "link": "https://pk.usembassy.gov/security-alert-july-22-2026-worldwide-caution-for-u-s-citizens/"}
-- {"type": "official_statement", "source": "IAEA", "text": "IAEA’s Grossi Calls for Progress in Deploying Nuclear Power as Ministerial Conference Opens", "link": "http://www.iaea.org/newscenter/news/iaeas-grossi-calls-for-progress-in-deploying-nuclear-power-as-ministerial-conference-opens"}
-- {"type": "official_statement", "source": "UN News ME", "text": "West Bank: Guterres alarmed as Israel imposes sweeping closures after deadly Hebron attack", "link": "https://news.un.org/feed/view/en/story/2026/10/1168660"}
-- {"type": "official_statement", "source": "UN News ME", "text": "‘Season of fear’: Escalating Israeli attacks on West Bank olive farmers, deadly strikes on Gaza", "link": "https://news.un.org/feed/view/en/story/2026/10/1168625"}
+- {"type": "hormuz_transits_drop", "latest": {"date": "2026-10-25", "total": 2, "tanker": 1, "cargo": 1}, "median": 4}
 
 ## military air (ADS-B, 24h)
-points: Gulf 97/2mil; Israel 31/1mil; Saudi/Qatar 20/1mil; Iraq/Kuwait 4/0mil; Cyprus 60/1mil; Ramstein 657/4mil; UK 685/4mil; Crete 70/0mil; Incirlik 48/0mil; Tehran 0/0mil
-baseline: tanker now 1 med 0; transport now 4 med 3; bomber now 0 med 0; isr now 0 med 0; mil now 9 med 5
-- 16:02-16:13Z RRR2300 A332 (tanker) UK
-- 15:58-16:13Z RCH805 C17 (transport) UK
+points: Gulf 53/0mil; Israel 38/1mil; Saudi/Qatar 15/0mil; Iraq/Kuwait 4/0mil; Cyprus 60/1mil; Ramstein 675/2mil; UK 641/3mil; Crete 64/0mil; Incirlik 55/0mil; Tehran 0/0mil; Al Udeid 55/0mil; Prince Sultan AB None/Nonemil; Muwaffaq Salti None/Nonemil; Diego Garcia None/Nonemil; Akrotiri None/Nonemil; Souda None/Nonemil; Moron None/Nonemil; Lajes None/Nonemil; Mildenhall None/Nonemil; Red Sea None/Nonemil; Arabian Sea None/Nonemil
+baseline: tanker now 1 med 0.5; transport now 2 med 3.0; bomber now 0 med 0.0; isr now 0 med 0.0; mil now 6 med 5.5
+- 16:02-16:24Z RRR2300 A332 (tanker) UK
+- 15:58-16:24Z RCH805 C17 (transport) UK
 - 15:58-16:02Z RCH411 C30J (transport) UK
-- 15:58-16:13Z CFC4259 C30J (transport) UK
+- 15:58-16:24Z CFC4259 C30J (transport) UK
 - 16:13-16:13Z BRK36 C17 (transport) UK
 - 16:13-16:13Z RRR4280 A400 (transport) Ramstein
 
-## FIRMS: total 523, not oil/gas 198 (median 198)
+## FIRMS: total 523, not oil/gas 198 (median 198.0)
 - near [('Bandar Abbas', 17)] frp 6.75 2026-10-31 1200
 - near [('Bandar Abbas', 17)] frp 2.89 2026-10-31 932
 - near [('Bandar Abbas', 17)] frp 2.89 2026-10-31 932
@@ -115,126 +32,30 @@ baseline: tanker now 1 med 0; transport now 4 med 3; bomber now 0 med 0; isr now
 iran fx: {"usd_rial": 2725000, "usd_toman": 272500}
 
 ## official
-- StateDept NEW: Iran - Level 4: Do Not Travel
-- StateDept NEW: Syria - Level 4: Do Not Travel
-- StateDept NEW: Yemen - Level 4: Do Not Travel
-- StateDept NEW: Bahrain - Level 3: Reconsider Travel
-- StateDept NEW: Jordan - Level 3: Reconsider Travel
-- StateDept NEW: Lebanon - Level 4: Do Not Travel
-- StateDept NEW: Oman - Level 3: Reconsider Travel
-- StateDept NEW: Saudi Arabia - Level 3: Reconsider Travel
-- StateDept NEW: Kuwait - Level 3: Reconsider Travel
-- StateDept NEW: Iraq - Level 4: Do Not Travel
-- StateDept NEW: United Arab Emirates - Level 3: Reconsider Travel
-- StateDept NEW: Qatar - Level 3: Reconsider Travel
-- StateDept NEW: Israel - Level 3: Reconsider Travel
-- StateDept NEW: Pakistan - Level 3: Reconsider Travel
-- StateDept NEW: Turkey - Level 2: Exercise Increased Caution
-- StateDept NEW: Cyprus - Level 1: Exercise Normal Precautions
-- StateDept NEW: Afghanistan - Level 4: Do Not Travel
-- StateDept NEW: Romania - Level 1: Exercise Normal Precautions
-- StateDept NEW: Egypt - Level 2: Exercise Increased Caution
-- Embassy Israel: Security Alert: U.S. Embassy Jerusalem – October 25, 2026 https://il.usembassy.gov/security-alert-u-s-embassy-jerusalem-october-25-2026/
-- Embassy Israel: Security Alert: U.S. Embassy Jerusalem – October 23, 2026 https://il.usembassy.gov/security-alert-u-s-embassy-jerusalem-october-23-2026/
-- Embassy Israel: Security Alert: U.S. Embassy Jerusalem – October 23, 2026 https://il.usembassy.gov/security-alert-u-s-embassy-jerusalem-october-18-2026/
-- Embassy Israel: Security Alert: U.S. Embassy Jerusalem – October 13, 2026 https://il.usembassy.gov/security-alert-u-s-embassy-jerusalem-october-13-2026/
-- Embassy Israel: Security Alert: U.S. Embassy Jerusalem – October 8, 2026 https://il.usembassy.gov/security-alert-u-s-embassy-jerusalem-october-8-2026/
-- Embassy Iraq: Travel Advisory: Iraq October 2026 https://iq.usembassy.gov/travel-advisory-iraq-october-2026/
-- Embassy Iraq: Security Alert: U.S. Mission Iraq – October 18, 2026 https://iq.usembassy.gov/security-alert-u-s-mission-iraq-october-18-2026/
-- Embassy Iraq: Security Alert: U.S. Mission Iraq – October 8, 2026 https://iq.usembassy.gov/security-alert-u-s-mission-iraq-october-8-2026/
-- Embassy Iraq: Security Alert: U.S. Mission Iraq – September 19, 2026 https://iq.usembassy.gov/security-alert-u-s-mission-iraq-september-19-2026/
-- Embassy Iraq: Security Alert: U.S. Embassy Baghdad and U.S. Consulate General Erbil – September 1, 2026 https://iq.usembassy.gov/security-alert-u-s-embassy-baghdad-and-u-s-consulate-general-erbil-september-1-2026/
-- Embassy Jordan: Travel Advisory: Jordan October 2026 https://jo.usembassy.gov/travel-advisory-jordan-october-2026/
-- Embassy Jordan: Security Alert – U.S. Embassy Amman – October 23, 2026 https://jo.usembassy.gov/security-alert-u-s-embassy-amman-october-23-2026/
-- Embassy Jordan: Security Alert: U.S. Embassy Amman – October 18, 2026 https://jo.usembassy.gov/security-alert-u-s-embassy-amman-october-18-2026/
-- Embassy Jordan: Security Alert: U.S. Embassy Amman – October 8, 2026 https://jo.usembassy.gov/security-alert-u-s-embassy-amman-october-8-2026/
-- Embassy Jordan: Routine Message: Voting in U.S. Elections from Overseas https://jo.usembassy.gov/routine-message-voting-in-u-s-elections-from-overseas/
-- Embassy Lebanon: Security Alert: U.S. Embassy Beirut – October 24, 2026 https://lb.usembassy.gov/security-alert-u-s-embassy-beirut-october-24-2026/
-- Embassy Lebanon: Travel Advisory: Lebanon October 2026 https://lb.usembassy.gov/travel-advisory-lebanon-october-2026/
-- Embassy Lebanon: Security Alert: U.S. Embassy Beirut – October 18, 2026 https://lb.usembassy.gov/security-alert-u-s-embassy-beirut-october-18-2026/
-- Embassy Lebanon: Security Alert: U.S. Embassy Beirut – October 8, 2026 https://lb.usembassy.gov/security-alert-u-s-embassy-beirut-october-8-2026/
-- Embassy Lebanon: Security Alert: U.S. Embassy Beirut – September 19, 2026 https://lb.usembassy.gov/security-alert-u-s-embassy-beirut-september-19-2026/
-- Embassy Qatar: Travel Advisory: Qatar October 2026 https://qa.usembassy.gov/travel-advisory-qatar-october-2026/
-- Embassy Qatar: Security Alert: U.S. Embassy Doha – October 18, 2026 https://qa.usembassy.gov/security-alert-u-s-embassy-doha-october-18-2026/
-- Embassy Qatar: Security Alert: U.S. Embassy Doha – October 8, 2026 https://qa.usembassy.gov/security-alert-u-s-embassy-doha-october-8-2026/
-- Embassy Qatar: Security Alert: U.S. Embassy Doha – September 19, 2026 https://qa.usembassy.gov/security-alert-u-s-embassy-doha-september-19-2026/
-- Embassy Qatar: Security Alert: Qatar – September 1, 2026 https://qa.usembassy.gov/security-alert-qatar-september-1-2026/
-- Embassy Bahrain: Travel Advisory: Bahrain October 2026 https://bh.usembassy.gov/travel-advisory-bahrain-october-2026/
-- Embassy Bahrain: Security Alert: U.S. Embassy Manama – October 18, 2026 https://bh.usembassy.gov/security-alert-u-s-embassy-manama-october-18-2026/
-- Embassy Bahrain: Security Alert: U.S. Embassy Manama – October 8, 2026 https://bh.usembassy.gov/security-alert-u-s-embassy-manama-october-8-2026/
-- Embassy Bahrain: Security Alert: U.S. Embassy Manama – September 19, 2026 https://bh.usembassy.gov/security-alert-u-s-embassy-manama-september-19-2026/
-- Embassy Bahrain: Security Alert: U.S. Embassy Manama – September 5, 2026 https://bh.usembassy.gov/security-alert-u-s-embassy-manama-september-5-2026/
-- Embassy Kuwait: Travel Advisory: Kuwait October 2026 https://kw.usembassy.gov/travel-advisory-kuwait-october-2026/
-- Embassy Kuwait: Security Alert: U.S. Embassy Kuwait – October 18, 2026 https://kw.usembassy.gov/security-alert-u-s-embassy-kuwait-october-18-2026/
-- Embassy Kuwait: Security Alert: U.S. Mission Kuwait – October 8, 2026 https://kw.usembassy.gov/security-alert-u-s-mission-kuwait-october-8-2026/
-- Embassy Kuwait: Security Alert: U.S. Embassy Kuwait – September 19, 2026 https://kw.usembassy.gov/security-alert-u-s-embassy-kuwait-september-19-2026/
-- Embassy Kuwait: Security Alert: U.S. Embassy Kuwait – September 2, 2026 https://kw.usembassy.gov/security-alert-u-s-embassy-kuwait-september-2-2026/
-- Embassy UAE: Travel Advisory: United Arab Emirates https://ae.usembassy.gov/travel-advisory-united-arab-emirates/
-- Embassy UAE: Security Alert: U.S. Mission United Arab Emirates – October 18, 2026 https://ae.usembassy.gov/security-alert-u-s-mission-united-arab-emirates-october-18-2026/
-- Embassy UAE: Security Alert: U.S. Mission United Arab Emirates – October 8, 2026”. https://ae.usembassy.gov/security-alert-u-s-mission-united-arab-emirates-october-8-2026/
-- Embassy UAE: Security Alert: U.S. Mission United Arab Emirates – September 19, 2026 https://ae.usembassy.gov/security-alert-u-s-mission-united-arab-emirates-september-19-2026/
-- Embassy UAE: Security Alert: U.S. Embassy Abu Dhabi, United Arab Emirates – September 11, 2026 https://ae.usembassy.gov/security-alert-u-s-embassy-abu-dhabi-united-arab-emirates-september-11-2026/
-- Embassy Saudi Arabia: Security Alert: U.S. Mission to Saudi Arabia – October 30, 2026 https://sa.usembassy.gov/security-alert-u-s-mission-to-saudi-arabia-october-30-2026/
-- Embassy Saudi Arabia: Security Alert: U.S. Mission to Saudi Arabia – October 28, 2026 https://sa.usembassy.gov/security-alert-u-s-mission-to-saudi-arabia-october-28-2026/
-- Embassy Saudi Arabia: Security Alert: U.S. Mission to Saudi Arabia – October 27, 2026 https://sa.usembassy.gov/security-alert-u-s-mission-to-saudi-arabia-october-27-2026/
-- Embassy Saudi Arabia: Security Alert: U.S. Mission to Saudi Arabia – October 25, 2026 https://sa.usembassy.gov/security-alert-u-s-mission-to-saudi-arabia-october-25-2026/
-- Embassy Saudi Arabia: Travel Advisory: Saudi Arabia October 2026 https://sa.usembassy.gov/travel-advisory-saudi-arabia-october-2026/
-- Embassy Oman: Travel Advisory: Oman October 2026 https://om.usembassy.gov/travel-advisory-oman-october-2026/
-- Embassy Oman: Security Alert: U.S. Embassy Muscat – October 18, 2026 https://om.usembassy.gov/security-alert-u-s-embassy-muscat-october-18-2026/
-- Embassy Oman: Security Alert: U.S. Embassy Muscat – October 8, 2026 https://om.usembassy.gov/security-alert-u-s-embassy-muscat-october-8-2026/
-- Embassy Oman: Security Alert: U.S. Embassy Muscat – September 19, 2026 https://om.usembassy.gov/security-alert-u-s-embassy-muscat-september-19-2026/
-- Embassy Oman: Security Alert: Oman – September 1, 2026 https://om.usembassy.gov/security-alert-oman-september-1-2026/
-- Embassy Turkey: Weather Alert: Delayed Opening on Thursday, October 15, 2026 – U.S. Consulate General Istanbul (Release Date: October 14, 2026) https://tr.usembassy.gov/weather-alert-delayed-opening-on-thursday-october-15-2026-u-s-consulate-general-istanbul-release-date-october-14-2026/
-- Embassy Turkey: Routine Message: Ongoing Potential for Demonstrations (U.S. Embassy Ankara, October 1, 2026) https://tr.usembassy.gov/routine-message-ongoing-potential-for-demonstrations-u-s-embassy-ankara-october-1-2026/
-- Embassy Turkey: Routine Message: CORRECTION to Worldwide Message for Americans: SSA Foreign Enforcement Questionnaire (FEQ) https://tr.usembassy.gov/routine-message-correction-to-worldwide-message-for-americans-ssa-foreign-enforcement-questionnaire-feq/
-- Embassy Turkey: Weather Alert – Wildfires – U.S. Embassy Ankara, Türkiye (July 31, 2026) https://tr.usembassy.gov/weather-alert-wildfires-u-s-embassy-ankara-turkiye-july-31-2026/
-- Embassy Turkey: Security Alert: July 22, 2026 – Worldwide Caution for U.S. Citizens https://tr.usembassy.gov/security-alert-july-22-2026-worldwide-caution-for-u-s-citizens/
-- Embassy Cyprus: Worldwide Caution: Public Health Arrival Restrictions and Enhanced Ebola Screening https://cy.usembassy.gov/worldwide-caution-public-health-arrival-restrictions-and-enhanced-ebola-screening/
-- Embassy Cyprus: Security Alert – U.S. Embassy Nicosia (March 23, 2026) https://cy.usembassy.gov/security-alert-u-s-embassy-nicosia-march-23-2026/
-- Embassy Cyprus: Security Alert – U.S. Embassy Cyprus Operating Status and Cypriot Civil Defense Resources – March 05, 2026 https://cy.usembassy.gov/security-alert-u-s-embassy-cyprus-operating-status-and-cypriot-civil-defense-resources-march-05-2026/
-- Embassy Cyprus: TRAVEL ADVISORY – Cyprus https://cy.usembassy.gov/travel-advisory-cyprus/
-- Embassy Cyprus: MISSILE THREAT CAUTION – MARCH 2, 2026 https://cy.usembassy.gov/missile-threat-caution-march-2-2026/
-- Embassy Egypt: Security Alert: U.S. Embassy Cairo – August 1, 2026 https://eg.usembassy.gov/security-alert-u-s-embassy-cairo-august-1-2026/
-- Embassy Egypt: Routine Message: Reminder for U.S. Citizens: U.S. Passport Required to Enter the United States https://eg.usembassy.gov/routine-message-reminder-for-u-s-citizens-u-s-passport-required-to-enter-the-united-states/
-- Embassy Egypt: Security Alert: Exercise Increased Caution in the Middle East https://eg.usembassy.gov/security-alert-exercise-increased-caution-in-the-middle-east/
-- Embassy Egypt: Worldwide Caution: Public Health Arrival Restrictions and Enhanced Ebola Screening https://eg.usembassy.gov/worldwide-caution-public-health-arrival-restrictions-and-enhanced-ebola-screening/
-- Embassy Egypt: Routine Message – U.S. Embassy Cairo, Egypt https://eg.usembassy.gov/routine-message-u-s-embassy-cairo-egypt/
-- Embassy Azerbaijan: Worldwide Caution: Public Health Arrival Restrictions and Enhanced Ebola Screening https://az.usembassy.gov/worldwide-caution-public-health-arrival-restrictions-and-enhanced-ebola-screening/
-- Embassy Azerbaijan: Azerbaijan Level 3 Travel Advisory (March 12, 2026) https://az.usembassy.gov/azerbaijan-level-3-travel-advisory-march-12-2026/
-- Embassy Azerbaijan: Security Alert: Azerbaijan – Alert 1 – Iranian Drones Struck Nakhchivan International Airport (March, 5, 2026) https://az.usembassy.gov/security-alert-azerbaijan-alert-1-iranian-drones-struck-nakhchivan-international-airport-march-5-2026/
-- Embassy Azerbaijan: IranSecurity Alert – Land Border Crossings (January 12, 2026) https://az.usembassy.gov/iransecurity-alert-land-border-crossings-january-12-2026/
-- Embassy Azerbaijan: Alert: Iran Security Alert – Airspace Partial Reopening (July 2, 2025) https://az.usembassy.gov/alert-iran-security-alert-airspace-partial-reopening-july-2-2025/
-- Embassy Pakistan: Security Alert: Vigilance during demonstrations (September 27 to 30) https://pk.usembassy.gov/security-alert-vigilance-during-demonstrations-september-27-to-30/
-- Embassy Pakistan: Security Alert: Vigilance During Independence Day Celebrations https://pk.usembassy.gov/security-alert-vigilance-during-independence-day-celebrations/
-- Embassy Pakistan: Security Alert – U.S. Mission to Pakistan (August 12, 2026) https://pk.usembassy.gov/security-alert-u-s-mission-to-pakistan-august-12-2026/
-- Embassy Pakistan: Security Alert – U.S. Mission to Pakistan (August 3, 2026) https://pk.usembassy.gov/security-alert-u-s-mission-to-pakistan-august-3-2026/
-- Embassy Pakistan: Security Alert – July 22, 2026 – Worldwide Caution for U.S. Citizens https://pk.usembassy.gov/security-alert-july-22-2026-worldwide-caution-for-u-s-citizens/
-- CENTCOM: USS Delbert D. Black Departs Israel Following Port Visit https://www.centcom.mil/MEDIA/NEWS-ARTICLES/News-Article-View/Article/4398124/uss-delbert-d-black-departs-israel-following-port-visit/
-- CENTCOM: U.S. and Israeli Navies Conclude Exercise Intrinsic Defender https://www.centcom.mil/MEDIA/NEWS-ARTICLES/News-Article-View/Article/4357500/us-and-israeli-navies-conclude-exercise-intrinsic-defender/
-- CENTCOM: U.S.-Jordan Complete Initial Planning for Exercise Eager Lion 2026 https://www.centcom.mil/MEDIA/NEWS-ARTICLES/News-Article-View/Article/4325870/us-jordan-complete-initial-planning-for-exercise-eager-lion-2026/
-- IAEA: How Nuclear Technology Is Helping Cities Become More Sustainable http://www.iaea.org/newscenter/news/how-nuclear-technology-is-helping-cities-become-more-sustainable
-- IAEA: IAEA’s Grossi Calls for Progress in Deploying Nuclear Power as Ministerial Conference Opens http://www.iaea.org/newscenter/news/iaeas-grossi-calls-for-progress-in-deploying-nuclear-power-as-ministerial-conference-opens
-- IAEA: What is Nuclear Fuel? http://www.iaea.org/newscenter/news/what-is-nuclear-fuel
-- IAEA: IAEA Mission Finds Kenya Committed to Safe Management of Radioactive Waste as it Develops a Nuclear Power Programme http://www.iaea.org/newscenter/pressreleases/iaea-mission-finds-kenya-committed-to-safe-management-of-radioactive-waste-as-it-develops-a-nuclear-power-programme
-- IAEA: IAEA Mission Says UAE Response to Barakah Nuclear Power Plant Event in May 2026 was Effective http://www.iaea.org/newscenter/pressreleases/iaea-mission-says-uae-response-to-barakah-nuclear-power-plant-event-in-may-2026-was-effective
-- IAEA: From Farm to Fork: How Nuclear Science Helps Put Food on Our Tables http://www.iaea.org/newscenter/news/from-farm-to-fork-how-nuclear-science-helps-put-food-on-our-tables
-- IAEA: Burkina Faso Grows More Rice with Nuclear Science http://www.iaea.org/newscenter/news/burkina-faso-grows-more-rice-with-nuclear-science
-- IAEA: Burkina Faso Grows More Rice with Nuclear Science http://www.iaea.org/newscenter/news/burkina-faso-grows-more-rice-with-nuclear-science
-- IAEA: IAEA Training Centre Builds Practical Skills for Nuclear Security http://www.iaea.org/news/photoessay/iaea-training-centre-builds-practical-skills-for-nuclear-security
-- UN News ME: UN rights office warns of deepening displacement ‘nightmare’ in Gaza https://news.un.org/feed/view/en/story/2026/10/1168707
-- UN News ME: Yemen war makes reaching assistance too dangerous for many https://news.un.org/feed/view/en/story/2026/10/1168706
-- UN News ME: Gaza: Families brace for fourth winter in tents as aid operations remain stymied https://news.un.org/feed/view/en/story/2026/10/1168685
-- UN News ME: West Bank: Hebron crackdown displaces thousands, Türk warns of ethnic cleansing https://news.un.org/feed/view/en/story/2026/10/1168672
-- UN News ME: West Bank: Guterres alarmed as Israel imposes sweeping closures after deadly Hebron attack https://news.un.org/feed/view/en/story/2026/10/1168660
-- UN News ME: Yemen: Deepening concerns for Taiz City as aid is blocked from entering https://news.un.org/feed/view/en/story/2026/10/1168654
-- UN News ME: Yemen war continues to force families from homes amid hunger and disease https://news.un.org/feed/view/en/story/2026/10/1168629
-- UN News ME: ‘Season of fear’: Escalating Israeli attacks on West Bank olive farmers, deadly strikes on Gaza https://news.un.org/feed/view/en/story/2026/10/1168625
-- UN News ME: Gaza: 340 children killed despite ceasefire agreement - UNICEF https://news.un.org/feed/view/en/story/2026/10/1168611
-- UN News ME: Security Council LIVE: Deaths, demolitions spike in Gaza, West Bank https://news.un.org/feed/view/en/story/2026/10/1168599
-- UN News ME: Yemen: WFP warns of potential ‘humanitarian catastrophe’ as fighting blocks aid delivery https://news.un.org/feed/view/en/story/2026/10/1168591
-- UN News ME: WHO calls for urgent health action across the Eastern Mediterranean https://news.un.org/feed/view/en/story/2026/10/1168590
+- Hormuz transits {'date': '2026-10-25', 'total': 2, 'tanker': 1, 'cargo': 1} median 4
+- StateDept: Iran - Level 4: Do Not Travel
+- StateDept: Syria - Level 4: Do Not Travel
+- StateDept: Yemen - Level 4: Do Not Travel
+- StateDept: Bahrain - Level 3: Reconsider Travel
+- StateDept: Jordan - Level 3: Reconsider Travel
+- StateDept: Lebanon - Level 4: Do Not Travel
+- StateDept: Oman - Level 3: Reconsider Travel
+- StateDept: Saudi Arabia - Level 3: Reconsider Travel
+- StateDept: Kuwait - Level 3: Reconsider Travel
+- StateDept: Iraq - Level 4: Do Not Travel
+- StateDept: United Arab Emirates - Level 3: Reconsider Travel
+- StateDept: Qatar - Level 3: Reconsider Travel
+- StateDept: Israel - Level 3: Reconsider Travel
+- StateDept: Pakistan - Level 3: Reconsider Travel
+- StateDept: Turkey - Level 2: Exercise Increased Caution
+- StateDept: Cyprus - Level 1: Exercise Normal Precautions
+- StateDept: Afghanistan - Level 4: Do Not Travel
+- StateDept: Romania - Level 1: Exercise Normal Precautions
+- StateDept: Egypt - Level 2: Exercise Increased Caution
 - IODA Iran: {"events_48h": [], "bgp_latest": 41669, "bgp_median_48h": 41670.0, "bgp_drop_pct": 0.0}
 - GDELT: null
+- Advisory {"src": "Germany", "country": "Iran", "level": "warning", "modified": "2026-10-29T14:28:09Z", "changed_since_last_check": false}
+- civil traffic vs same hour: 
 
 ## polymarket
 - US x Iran ceasefire continues through November 8?: {'Yes': '0.705', 'No': '0.295'}
@@ -243,13 +64,13 @@ iran fx: {"usd_rial": 2725000, "usd_toman": 272500}
 - Will Benjamin Netanyahu be the next Prime Minister of Israel?: {'Yes': '0.435', 'No': '0.565'}
 
 ## news (multi-source first; outlets count)
-- [22] Iranian leader threatens immediate response to potential attack, and other Mideast news | Marietta Daily Journal, KTVN, The Killeen Daily Herald, WSLS | https://news.google.com/rss/articles/CBMihwJBVV95cUxOX01XNFpCUV9Ha0xrN2JuenhxQjJqb095RHVnYUFWVHE0Y2RtZzNzV20zSmw3eUdPQ2FINEgzdGNGbjhmRUtjVEktYmVadVQ5TGl1R1h3SThfNjVueFU2VnhqWGJTdU5lN1lzeGJtM08yTnBuUW9TdVJFLXc2OVRnbWc0MEctUXRuejRadGFsemtYbkFIWDNxWlFEZlc3SUlvT3hjVF9sS1RnaG9zWkFTQkd5NzA2ZGFfNnNhN3lIQVlEbndzV3FhZlVUWGxxOEU1TzBQWmxiX3VFTkhzbGU0SG9Kbkd6WmNJSi0zb2hBOUVILUl0d1pZb0NPaHlCOGpQU3RFeldDTQ?oc=5
+- [25] Iranian leader threatens immediate response to potential attack, and other Mideast news | Marietta Daily Journal, KTVN, The Killeen Daily Herald, WSLS | https://news.google.com/rss/articles/CBMihwJBVV95cUxOX01XNFpCUV9Ha0xrN2JuenhxQjJqb095RHVnYUFWVHE0Y2RtZzNzV20zSmw3eUdPQ2FINEgzdGNGbjhmRUtjVEktYmVadVQ5TGl1R1h3SThfNjVueFU2VnhqWGJTdU5lN1lzeGJtM08yTnBuUW9TdVJFLXc2OVRnbWc0MEctUXRuejRadGFsemtYbkFIWDNxWlFEZlc3SUlvT3hjVF9sS1RnaG9zWkFTQkd5NzA2ZGFfNnNhN3lIQVlEbndzV3FhZlVUWGxxOEU1TzBQWmxiX3VFTkhzbGU0SG9Kbkd6WmNJSi0zb2hBOUVILUl0d1pZb0NPaHlCOGpQU3RFeldDTQ?oc=5
 - [18] Iran's Supreme Leader Warns US, Israel of Unrestricted Response to Renewed Attacks | Kurdistan24, ASHARQ AL-AWSAT English, CNA, Deccan Chronicle | https://news.google.com/rss/articles/CBMiwgFBVV95cUxNQ2xFWDJTYTNEbDloTEtJb0pNakwxMGdQY3RuSzVLOE1ENERFRmZ1ekg5c3dYckJQOEswMGhqUlcwbkF6M0M4cUFhQ3Mxc29weXlhd1lISEl5cHFaRWpiZmJmV0hZcjlLV1dMeHlhWWZ5aXAyZFhQampyT2JFVTdpS1F2M3Bjbk5XV3N5cE56LVg2dWFSQlk0MWxzSTMwajdxSUN2bGlobDV4Z01MX2NKRzl5ejVfb2ZXTTI0NXZRaWFLdw?oc=5
 - [8] Iran's army warns any new US attack would spread war wider | Jordan Times, The Times of Israel, Hürriyet Daily News, The Economic Times | https://news.google.com/rss/articles/CBMimAFBVV95cUxOM3ozM1VBb3NvNkFZNDNmdF9WTjlYTUJRNl9XaG1kaVNSc2FEQkI0dlpTdHVjVW9mX1hHZVlaU1AtdllDRGk3dnQ0SjFMZDBjTC1PRjZxQ0docW8tdmtZbUltRm9jNDJEUEk3MzZrQXZlN3Z5bEdBX0poaW9HSFRIRW5iaU05UmQtb3Fka1dEWDMtOUxWWEFweA?oc=5
+- [7] US delegation to join Iran for direct talks in Doha after breakthrough: Report | Türkiye Today, The Times of Israel, WION, The Tribune | https://news.google.com/rss/articles/CBMivgFBVV95cUxQLUUxclFzS1ZjSk83dDNOQ254WFdxRDM1T3VBaDlRaS1sbm5EZG5wQWZKM2hnaWVBMndCMXBsbU9jbjN5YTdLeUg1OHhJZHJjTGRMV0l4dXAxdXZpRGQ3ODlqeG0zRmJfSlpGeVgySU5CUUhFUkdnazdvbnVzLUM3eV96VWo1ZUdTTHQ4R244REtyLVlTUWlheXdQdVBOd2lLSVY4ZTlzUDczOHllbnBSZml4YVlLdlZ1cXBOa1ln?oc=5
 - [6] Iran Targeted US Air Defenses Then Hit Aircraft and Buildings on Mideast Bases, AP Analysis Finds | Military.com, The Boston Globe, The Killeen Daily Herald, Herald Bulletin | https://news.google.com/rss/articles/CBMivgFBVV95cUxPelFoRGhUNDVsem5mY0p6VVhzT1FRRlBDQjc1M2JoOFpkdVZsRl9YTUtLTHh2c3Q4dThKRndzUVk0NVF6Tk92a0RnREptNTdwTE56ZGI1ZUhMeTFSNDdFaWVFZ0swZ2V2RGw4UmFZZ2p1VmtyNndNeEdtZm9KUm9KRjVHX0lkcVJSejFDZkNDaUdYejhZeF9DemJoMkJ0SHN3WFpZZHo0QTV2N0tILWw2Vlh2T1pfUW43T0VtZGF3?oc=5
 - [6] Iran's Khamenei orders 'geographically unrestricted' response to any attack | TRT Afrika, Türkiye Today, Firstpost, News Mobile | https://news.google.com/rss/articles/CBMiWkFVX3lxTFBQVHNNRFBjTVNZUnQ2UDFyX2U3MFpOemZPWjVlLU5uVTFBZDJHaDM0WnRhOHZoYW1PQmxxZjAxZmEzaHhjcXN3bTlVOEJSX2ZsTmpLQXFYVmxMQQ?oc=5
 - [6] Iran's Mojtaba Khamenei orders 'immediate response' to any 'enemy threat' | WION, News18, Firstpost, Xinhua | https://news.google.com/rss/articles/CBMipwFBVV95cUxOcGthWnRWT3o1azRhMThUbFF5Q2cyZXN2VTI3XzdzTUItbW1BemduNU56OTE3MTJIR3ZKZVZXbFJ5Qy1NUGQ5bFBYVXNvZm9HMGh3UU1BbThfc1pjZE1QUjhkVGJBc0phZ2ljMXFVVUcyQW5qcDc1SFNJaWY4UGNIbkZYOFJQdm5DQ21SQmVkUlFzdEZINy1xWjlDWk16UVZvWDJyN0dMd9IBrAFBVV95cUxNSF9VU0FfT0V6RFZ6SkZINnhfWHFsOUtYQ0ZyVU41VFNEbmFTbzJGcTFsbG4zMEliQjNXdVFvc1gwblptVzd5Y2Zqa1VNQmhEbFdEUjlxX1gxczc4cVI2N2tvd09ocVRMaEVQb29pYWxUcExCeTN0cDRHOUdQWE1CMm84Y0VxU3gycUNvWWI0MmkzOHRhYjZkUGVyblkzNEJrdXM5VzB6VmJsZUVK?oc=5
-- [6] US delegation to join Iran for direct talks in Doha after breakthrough: Report | Türkiye Today, The Times of Israel, WION, The Tribune | https://news.google.com/rss/articles/CBMivgFBVV95cUxQLUUxclFzS1ZjSk83dDNOQ254WFdxRDM1T3VBaDlRaS1sbm5EZG5wQWZKM2hnaWVBMndCMXBsbU9jbjN5YTdLeUg1OHhJZHJjTGRMV0l4dXAxdXZpRGQ3ODlqeG0zRmJfSlpGeVgySU5CUUhFUkdnazdvbnVzLUM3eV96VWo1ZUdTTHQ4R244REtyLVlTUWlheXdQdVBOd2lLSVY4ZTlzUDczOHllbnBSZml4YVlLdlZ1cXBOa1ln?oc=5
 - [5] Iranian delegation arrives in Qatar for talks: Report | Anadolu Ajansı, Saudi Gazette, thecradle.co, Operativ Məlumat Mərkəzi | https://news.google.com/rss/articles/CBMingFBVV95cUxQekFYbl9aQXZUcmE5QmhCdkZhTkhIdFA3Tm5VUkRJTGdYRGxNR0lYUWtSTlpyeXcwM2gtSjNKX3Nua0ZuTkxjZG1oQ2ZBOGo5eVZQT2VLT1hyNWJMQXRMS05QaHF4NUhhLU1wR2pLQWZ6TExDT2FtbXlYU3RzczVjRlR5Vk91NmRXU1JpMDBaODl2V0FOZFdsaVFFS3I0QQ?oc=5
 - [4] Iranian official says US attacked fishing boats off Qeshm Island, state media reports | Reuters, The Times of Israel, Deccan Herald, StreetInsider | https://news.google.com/rss/articles/CBMizAFBVV95cUxONll1eGZDNWJMVXFsdzlXTEs4WnlXRGJONjZ4eUQ1eGlaWGs5bVB0SnR6cUlhd1U0ZHl1bUxpM0ItUUl3cEdxdEhjTHBfZHZIc3ZQY2xMM2g1eGNkbVNfanFmVFY4R0JUeFVtb0pyb3JzSllCTG05S19HdkVzVXFTVlRaaDZidS01UVJ5SVpvUC00SlNpNUxOZXIyTnFaMGVNMmJoOWpCZ1RKRWxqam9UbG9Yb1pYWERLTkR0OG0xOE9Vc0c1U0lvbGNQZzI?oc=5
 - [4] Bad midterms could push Trump toward major Iran strike: Report | Türkiye Today, TRT World, Yeni Şafak English, Operativ Məlumat Mərkəzi | https://news.google.com/rss/articles/CBMipwFBVV95cUxNa2NwemFBei1vd0ViUnVDTzBHNVpZWWZYdmRodGxlLWhqWGIzVTB6RE5iSEU2eFRQdXdtVGwwRTFlcThoWFlIUG1GMWhGYjR2S3ZxMnJ3cjl0ekRfcUtOMUVPRk15MW9QZzEySGxvdHRhZ3lnS3RXQ0JGRFV4T1JVMXNZaTVxYkt5d1EzZHliRGVoekpaUVl6aXBZUWdRVkRnYi02Qzc2aw?oc=5
@@ -280,6 +101,7 @@ iran fx: {"usd_rial": 2725000, "usd_toman": 272500}
 - [2] Saudi-led coalition intercepts Houthi drone over Eastern Region | Hum News English, Daily Times | https://news.google.com/rss/articles/CBMimgFBVV95cUxNaXUzNkQ4aENWbktueFhDMURNS2t0cmk5WS1lSjVhSzZlcldYS1ZIamFocnE0WXVQM2pjazQtUnNIXzY4R1RZS1FCa3ZQQXhlWFJndjh1MTZ1bUpJNTFpZHdyWEFIOWk2akpZb2VBem9DNnFDRlIyV3d4Y2Nkd1I0bzJIeWljVU9MRXJQelRaeDF1bVJweWY5bHJR?oc=5
 - [2] Oman Rescues Crew from Attacked Ship; Iran Stops Tankers in Strait of Hormuz | Ratopati, The Straits Times | https://news.google.com/rss/articles/CBMipgFBVV95cUxObjRHOVBVNEZyWEtJQmx6dXNuQ3FYYzNtLVltUWlJa0VjMXlZM2NwdHFXSGlHd2taV3BualU1aXlPdm51OUpwZTFmbTdHRFlHM2NaSFYzYkdzMi1JQUtXcDBYQ2VaRUZNcXo1VllpX3RJSkN1Mjl3eXA3cFlPN2NiTndHMHVpVDJwdERsMFhjeXBrYUQxQmlHQkt2a2ZlMWFjTFNsVzlR?oc=5
 - [2] Donald Trump downplays 18 US deaths as he compares Iran to ‘thousands and thousands’ killed in Vietnam | NewsBreak: Local News & Alerts, The Mirror US | https://news.google.com/rss/articles/CBMi9AFBVV95cUxPM3p4aE91ZGRpbmNleVRzYzJNalhaak4yZ2FaRVY0anBVYWVSR1FkUUhId2h1VTJoVmdER2tqbGdMN1NTRTJUeURfQjVQMktZQnRxUVBmVGI1X0k2YjNDYzYwNkJxVXhDMVFrckpDYUZia1F6X1ltaGxXZUhyZmhSSng4UWEzRm5qV1E0eGo1dTVTOE1LcUg2WloyWWozVXJlczlDQVNjV3FVOEMzSWFycEl3dDRMUy1VQmctWnctWmo1aUgwVVVIWV9WVUhEenVwX2s4SjRYc3JqaXRZVkxWSk5adzRIVkFFSkNkSDBNdF9YeVNl?oc=5
+- [2] US attacks 2 Iranian fishing boats off Masan, Qeshm Island | Mehr News Agency, The Times of Israel | https://news.google.com/rss/articles/CBMimAFBVV95cUxPN1VYM3l2TElKUjBtSXpFcVlJLUtJc1lTMEFGZ0xrVWhfUndBY3FyRWxNQUpZbGsySDBxZ003XzNoemdyNWxVcWF4b3VrY0M1V1VjbFR6WDhkMFFQdHRiRG9haW1Qbnh2dnhtSUlhdDRHbjd4OEdHTGs1a1d5QllhV3VvWUNBU1VxamhiX0dhNHZ0MFJXUTE4UA?oc=5
 - [1] Iran lawmakers call for withdrawal from NPT: Will we have war or peace? | Al Jazeera | https://www.aljazeera.com/news/2026/10/31/iran-lawmakers-call-for-withdrawal-from-npt-will-we-have-war-or-peace?traffic_source=rss
 - [1] Iran warns of unfettered retaliation if attacked as mediators try for peace | Al Jazeera | https://www.aljazeera.com/news/2026/10/31/iran-warns-of-unfettered-retaliation-if-attacked-as-mediators-try-for-peace?traffic_source=rss
 - [1] عراقچی: هیئت ایرانی در دوحه است اما برنامه‌ای برای دیدار با مقام‌های آمریکا نداریم | BBC Persian | https://www.bbc.co.uk/persian/live/ck79p4jd83pnt?at_medium=RSS&at_campaign=rss
@@ -322,8 +144,18 @@ iran fx: {"usd_rial": 2725000, "usd_toman": 272500}
 - [1] 🇺🇸🇮🇷 Iran claims U.S. STRIKE HIT 2 fishing boats south of Qeshm Island Hormozgan officials say the attack occurred 14–18 nautical miles off the island, injuring 2 fishermen and briefly leaving 2 others missing. There is no U.S. confirmation so far. Qeshm is w | X | https://news.google.com/rss/articles/CBMibEFVX3lxTE0xd0pIQ0FyVXV6cU1QNFlqQjRXVHNoWjZEeUg0OUhSZ0dUR25JdGdabjJtQ2VUMTliXzZLR3k2S3dvYlJsME95MGItV2pNT3hLckczUWtyRk02SHVpVlo2MS1DOW9rN1VXVjRIbA?oc=5
 
 ## telegram (relevant)
+- 2026-10-31T16:23:52Z @akhbarefori: ♦️ بدون محدودیت در تیررَس 🔹 بانک اهداف به نحوی به روز رسانی شود که انواع دارایی های مادی و غیرمادی دشمن آمریکایی-صهیونی در تیررس نیروهای مسلح قرار گیرند. 🔹 دستور فرمانده کل قوا به فرماندهان ارشد نیروه https://t.me/akhbarefori/703092
+- 2026-10-31T16:23:01Z @presstv: Iran’s response will be ‘swift and without geographical limits’: Top commander Iran’s top military commander says the armed forces will respond to any hostile action by the enemy with a “swift, effect https://t.me/presstv/212947
+- 2026-10-31T16:22:12Z @akhbarefori: ♦️ ادعای ترامپ جنایتکار: ابتدا کار ایران را تمام می‌کنیم و سپس به سراغ کوبا می‌رویم! 🔹 فکر نمی‌کنم حکومت کوبا مدت زیادی دوام بیاورد، کوبا کشوری شکست‌خورده است و خیلی زود مردم را به آنجا بازمی‌گردانیم. https://t.me/akhbarefori/703091
+- 2026-10-31T16:21:01Z @isna94: سناتور فرانسوی: مشتی معتاد و الکلی، قدرت را در آمریکا به دست گرفته‌اند و هر زمان چیزی از پرونده اپستین منتشر می‌شود بخشی از دنیا را بمباران می‌کنند. @isna94 https://t.me/isna94/411155
+- 2026-10-31T16:19:05Z @farsna: ‌‍ 🔴 رهبر انقلاب: بانک اهداف باید به‌نحوی به‌روزرسانی شود که انواع دارایی‌های مادی و غیرمادی دشمن آمریکایی-صهیونی در تیررس نیروهای مسلّح قرار گیرد. @Farsna https://t.me/farsna/471713
+- 2026-10-31T16:18:40Z @mehrnews: شرکت بایننس ۶.۳ میلیارد دلار، خسارت حمله هکری را جبران می‌کند 🔺 بایننس اعلام کرد بیش از ۶.۳۴ میلیارد دلار برای جبران خسارت حمله هکری اختصاص داده است. در این حمله حدود ۶.۳ میلیارد دلار دارایی از کیف‌پو https://t.me/mehrnews/427709
+- 2026-10-31T16:18:18Z @indypersian: ♦️ خبرگزاری آسوشیتدپرس، روز شنبه نهم آبان در گزارشی تحقیقی اعلام کرد، بررسی تصاویر ماهواره‌ای نشان می‌دهد حملات نیروهای مسلح ایران به بیش از ۲۶ پایگاه نظامی و محل استقرار تجهیزات آمریکا در خاورمیانه،  https://t.me/indypersian/181549
+- 2026-10-31T16:17:59Z @ynetalerts: 🔴 ‏מצרים: 10 הרוגים ו-24 פצועים בתאונה בין אוטובוס למשאית בכביש מהיר למבזק המלא ב-ynet > https://t.me/ynetalerts/76767
+- 2026-10-31T16:16:04Z @euronewspe: به گزارش رسانه‌های آمریکایی، دولت دونالد ترامپ قصد دارد بیش از ۱۵۰ مهاجر افغان را از طریق پاکستان به افغانستان بازگرداند؛ اقدامی که به گفته گروه‌های مدافع حقوق، می‌تواند جان این افراد را به خطر بینداز https://t.me/euronewspe/91345
 - 2026-10-31T16:13:04Z @irna_1313: دو مدال برنز برای دختران ایران در جودو کاپ آسیا 🔹 پس از آن که تیم‌های ملی مردان و زنان بزرگسال جودو ایران با کسب ۸ مدال طلا، نقره و برنز عنوان قهرمانی رقابت‌های کاپ آسیا در سال ۲۰۲۶ به میزبانی اردن را https://t.me/irna_1313/468272
 - 2026-10-31T16:13:01Z @presstv: Iran criticized Europe’s support for the US-Israeli wars on Iran, saying governments that backed the aggression are now paying the price of war and terror. @PressTV https://t.me/presstv/212945
+- 2026-10-31T16:12:51Z @iranintltv: در آلمان، برای شنبه ۳۱ اکتبر در ۳۰ شهر فراخوان تجمع اعتراضی منتشر شد که در آن معترضان خواستار رسیدگی به مشکلات تامین هزینه‌های زندگی‌اند و با احتمال بازگشت سربازی اجباری مخالفت می‌کنند. جزئیات بیشتر د https://t.me/iranintltv/364742
 - 2026-10-31T16:12:01Z @abualiexpress: כותרות השבת 1. לא לפספס: אלג'זירה חושפת לראשונה במשדר טלויזיוני מיוחד תיעודים חדשים של כל בכירי המטכ"ל של חמאס שחוסלו מאז שומר החומות ובמהלך המלחמה האחרונה. נחשפת השיחה הראשונה של יחיא סנואר ומחמד דף  https://t.me/abualiexpress/132884
 - 2026-10-31T16:09:14Z @irna_1313: سقوط ۷۰ درصدی صادرات کود خاورمیانه؛ جنگ ایران بازار جهانی را آشفته کرد 🔹 تحلیلگران می‌گویند که درگیری‌ها در خاورمیانه، عرضه کودهای شیمیایی از این منطقه به بازارهای جهانی را مختل کرده و تولید جهانی موا https://t.me/irna_1313/468271
 - 2026-10-31T16:08:20Z @mehrnews: حکم انفصال از خدمت شهردار اوشان فشم میگون صادر شد 🔺 عضو شورای اسلامی اوشان فشم میگون گفت: برای جلوگیری از توقف امور شهری، منصور عزیزی به‌عنوان سرپرست شهرداری اوشان فشم میگون معرفی شده است. 🔗 mehrnews. https://t.me/mehrnews/427708
@@ -362,13 +194,3 @@ iran fx: {"usd_rial": 2725000, "usd_toman": 272500}
 - 2026-10-31T15:29:44Z @akhbarefori: ♦️ مقام ارشد امنیتی ایران: جنگ بعدی جنگ سورپرایزها است مقام ارشد امنیتی در تهران به سی ان ان: 🔹 بانک اهداف ایران در واکنش به هرگونه تعرض جدید از سوی آمریکا یا اسرائیل، به‌روز شده و دامنه آنها بسیار مت https://t.me/akhbarefori/703079
 - 2026-10-31T15:28:39Z @indypersian: ♦️ سرویس امنیت فدرال روسیه (اف‌اس‌بی) اعلام کرد آمریکا از طریق کانال‌های ارتباطی رسمی و موجود میان دو کشور، اطلاعاتی دربارهٔ تدارک یک حملهٔ تروریستی در مسکو در اختیار این نهاد قرار داده است. خبرگزاری  https://t.me/indypersian/181545
 - 2026-10-31T15:27:01Z @akhbarefori: ♦️ اروپا در تیررس موشک‌های ایران/ کدام مناطق اروپا جزء بانک اهداف ایران هستند؟/ این موشک‌های ایرانی به قلب قاره سبز می‌رسند 🔹 تهران حداقل روی کاغذ، گزینه‌های عملیاتی مختلف برای کشاندن جنگ به خارج از خ https://t.me/akhbarefori/703078
-- 2026-10-31T15:26:15Z @ynetalerts: 🔴 ‏שגרירות ארה"ב ברוסיה: איום למתקפת טרור רבת נפגעים במוזיאון במוסקבה למבזק המלא ב-ynet > https://t.me/ynetalerts/76765
-- 2026-10-31T15:23:03Z @irna_1313: هشدار سازمان ملل نسبت به وخامت بحران آوارگی در غزه در آستانه فصل سرد 🔹 دفتر کمیساریای عالی حقوق بشر سازمان ملل متحد در اراضی اشغالی فلسطین هشدار داد که آوارگی در باریکه غزه با تداوم سوق دادن فلسطینیان https://t.me/irna_1313/468258
-- 2026-10-31T15:22:27Z @indypersian: ⭕️ آنچه دربارهٔ انتخابات میان‌دوره‌ای آمریکا باید بدانید 📌 این انتخابات معمولاً معیاری برای سنجش رضایت عمومی از رئیس‌جمهوری و حزب حاکم محسوب می‌شود ♦️ آمریکایی‌ها روز ۳ نوامبر در انتخابات میان‌دوره‌ای https://t.me/indypersian/181544
-- 2026-10-31T15:21:41Z @iranintltv: ایرانیان سوئد روز شنبه نهم آبان‌ماه در ادامه تجمعات در حمایت از انقلاب ملی راهپیمایی کرده و شعار دادند: «پهلوی صدای من است.» https://t.me/iranintltv/364734
-- 2026-10-31T15:20:12Z @presstv: Press TV’s Nahid Poureisa addresses growing calls for nuclear deterrence in Iran, citing repeated attacks on the country and the failure of international safeguards to protect its sovereignty. @PressT https://t.me/presstv/212940
-- 2026-10-31T15:20:01Z @irna_1313: دلایل سقوط طلا به کف یک‌ساله از نگاه تحلیلگران؛ آیا اتفاق ۲۰۰۸ تکرار می‌شود؟ 🔹 تارنمای شرکت «مارکت‌واچ/ MarketWatch» در گزارشی به نقل از تحلیلگران، دلایل ریزش قیمت جهانی طلا را به‌رغم تشدید تنش‌ها در  https://t.me/irna_1313/468257
-- 2026-10-31T15:17:40Z @indypersian: ♦️ همسر جاویدنام وحید محمدلو، از کشته‌شدگان اعتراضات سراسری دی‌ماه ۱۴۰۴، روز شنبه نهم آبان‌ماه با انتشار ویدیویی در اینستاگرام، تصاویری از دخترانش را به اشتراک گذاشت که در آن، دو دختر بر آرامگاه پدرشا https://t.me/indypersian/181543
-- 2026-10-31T15:16:00Z @irna_1313: تداوم روزهای سیاه مس شهربابک؛ پیکان با سه گل جشن پیروزی گرفت 🔹 دیدار تیم‌های فوتبال مس شهربابک و پیکان امروز در هفته یازدهم لیگ برتر باشگاه‌های ایران با برتری سه بر یک خودروسازان تهرانی خاتمه پیدا کرد https://t.me/irna_1313/468256
-- 2026-10-31T15:15:45Z @clashreport: BIG: The US Embassy in Moscow warns of a “credible threat of a mass casualty event” today at the Tsaritsyno Museum Reserve. It urges Americans to avoid the area and says it is coordinating with Russia https://t.me/clashreport/103741
-- 2026-10-31T15:15:38Z @iranintltv: یک منبع مطلع به ایران‌اینترنشنال گفت زینب سلیمانی، متخصص اطفال، پس از ماه‌ها حبس در سلول انفرادی زندان دولت‌آباد اصفهان، از نظر روانی در شرایط بسیار وخیمی قرار دارد و تاکنون سه بار در بیمارستان روان‌پ https://t.me/iranintltv/364733
