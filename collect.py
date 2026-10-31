@@ -185,11 +185,29 @@ YAHOO = {"brent": "BZ=F", "wti": "CL=F", "gold": "GC=F", "vix": "^VIX", "sp500":
          "usd_ils": "ILS=X", "ta35": "TA35.TA", "ta125": "^TA125.TA", "dxy": "DX-Y.NYB"}
 
 
+STOOQ = {"brent": "cb.f", "wti": "cl.f", "gold": "gc.f", "vix": "^vix", "sp500": "^spx",
+         "usd_ils": "usdils", "ta35": "^ta35", "ta125": "^ta125", "dxy": "dx.f"}
+
+
+def stooq(sym):
+    t = get(f"https://stooq.com/q/d/l/?s={requests.utils.quote(sym)}&i=d").text
+    rows = [r for r in csv.DictReader(io.StringIO(t)) if r.get("Close") not in (None, "", "N/D")]
+    if len(rows) < 2:
+        raise RuntimeError("no stooq data")
+    v, p = float(rows[-1]["Close"]), float(rows[-2]["Close"])
+    return {"v": v, "prev": p, "chg_pct": round((v - p) / p * 100, 2), "t": rows[-1]["Date"], "src": "stooq"}
+
+
 @guard("markets")
 def collect_markets():
     out = {}
     fails = 0
     for k, sym in YAHOO.items():
+        try:
+            out[k] = stooq(STOOQ[k])
+            continue
+        except Exception:
+            pass
         try:
             j = get(f"https://query1.finance.yahoo.com/v8/finance/chart/{requests.utils.quote(sym)}?range=5d&interval=1d").json()
             m = j["chart"]["result"][0]["meta"]
@@ -224,6 +242,7 @@ def collect_iran_fx():
 # ---------------------------------------------------------------- news (RSS)
 FEEDS = {
     "Times of Israel": "https://www.timesofisrael.com/feed/",
+    "Times of Israel liveblog": "https://www.timesofisrael.com/liveblog/feed/",
     "Jerusalem Post": "https://www.jpost.com/rss/rssfeedsheadlines.aspx",
     "Al Jazeera": "https://www.aljazeera.com/xml/rss/all.xml",
     "BBC Middle East": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
@@ -257,7 +276,7 @@ PRECURSORS = [
     ("home_front", r"(shelters? (?:open|reopen)|schools? (?:closed|shut)|home front command (?:issues|orders|changes)|reservists? call)"),
     ("iaea_resolution", r"(iaea (?:board )?(?:resolution|censure)|board of governors (?:votes|adopts|resolution))"),
     ("bombers_tankers", r"(b-?52s?|b-?2s?|b-?1s?) (?:deploy|arriv|land|flown|sent)|tankers? (?:surge|deploy|arriv)"),
-    ("strike_reported", r"(explosions? (?:in|near|across) (?:tehran|isfahan|natanz|fordow|shiraz|tabriz)|strikes? on iran|attack on iran (?:has )?beg)"),
+    ("strike_reported", r"(explosions? (?:heard |reported )?(?:in|near|across) (?:tehran|isfahan|natanz|fordow|shiraz|tabriz|bandar abbas)|(?:launch(?:ed|es)|carr(?:ied|ies) out|beg[ia]n) (?:air ?)?strikes? (?:on|against) iran|(?:us|israel|israeli|american) (?:jets|aircraft|forces) (?:struck|hit|attacked) iran)"),
 ]
 
 
@@ -396,7 +415,8 @@ def collect_telegram(state):
     if bad:
         STATUS["telegram"] = f"partial: {len(bad)} channel(s) failed"
     keep = state.setdefault("tg_posts", [])
-    keep.extend(posts)
+    have = {p["link"] for p in keep}
+    keep.extend(p for p in posts if p["link"] not in have)
     cutoff = NOW - timedelta(hours=NEWS_WINDOW_H)
     state["tg_posts"] = [p for p in keep if not p["t"] or parse_iso(p["t"]) >= cutoff][-500:]
     return {"channels_ok": ok, "channels_failed": bad}
@@ -510,7 +530,9 @@ def main():
         "news_meta": news_meta,
         "news": [{k: s[k] for k in ("title", "outlets", "links", "pub", "first", "last")} for s in stories],
         "telegram_meta": tg_meta,
-        "telegram": sorted(state.get("tg_posts", []), key=lambda p: p.get("t") or "", reverse=True),
+        "telegram": sorted({p["link"]: p for p in state.get("tg_posts", [])
+                            if p.get("relevant") or p.get("emoji") or p["ch"] == "PikudHaoref_all"}.values(),
+                           key=lambda p: p.get("t") or "", reverse=True),
     }
     json.dump(state, open(STATE_F, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     json.dump(digest, open(DIGEST_F, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
