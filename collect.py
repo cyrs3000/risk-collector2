@@ -12,6 +12,7 @@ from email.utils import parsedate_to_datetime
 import xml.etree.ElementTree as ET
 
 import requests
+import official as O
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(ROOT, "data")
@@ -502,6 +503,84 @@ def detect_precursors(state, adsb, markets):
     return alerts
 
 
+def official_alerts(off):
+    a = []
+    for i in (off.get("state_dept") or []):
+        if i.get("new") and (i.get("ordered_departure") or i.get("level") == 4):
+            a.append({"type": "statedept_change", "text": i["title"], "link": i["link"]})
+    for i in ((off.get("embassy_alerts") or {}).get("items") or []):
+        if i.get("new"):
+            a.append({"type": "embassy_alert" + ("_DEPARTURE" if i.get("ordered_departure") else ""),
+                      "country": i["country"], "text": i["title"], "link": i["link"]})
+    for i in (off.get("fcdo") or []):
+        if i.get("updated_last_24h"):
+            a.append({"type": "fcdo_update", "country": i["country"], "text": i["change"], "link": i["link"]})
+    for k in ("easa_czib", "faa", "marad", "ofac"):
+        if (off.get(k) or {}).get("changed_since_last_check"):
+            a.append({"type": k + "_page_changed", "snippets": off[k]["snippets"][:3], "link": off[k]["url"]})
+    pw = off.get("portwatch_hormuz") or {}
+    lt, md = (pw.get("latest") or {}).get("total"), pw.get("median_prev_29d")
+    if lt is not None and md and lt < 0.6 * md:
+        a.append({"type": "hormuz_transits_drop", "latest": pw["latest"], "median": md})
+    for e in (off.get("usgs_seismic") or []):
+        if e["shallow_near_site"]:
+            a.append({"type": "shallow_seismic_near_site", **e})
+    io_ = off.get("ioda_iran") or {}
+    if (io_.get("bgp_drop_pct") or 0) >= 10 or io_.get("events_48h"):
+        a.append({"type": "iran_internet_disruption", "bgp_drop_pct": io_.get("bgp_drop_pct"), "events": io_.get("events_48h", [])[:3]})
+    for i in ((off.get("official_statements") or {}).get("items") or []):
+        if i.get("new") and re.search(r"resolution|strike|attack|deploy|evacuat|sanction", i["title"], re.I):
+            a.append({"type": "official_statement", "source": i["source"], "text": i["title"], "link": i["link"]})
+    g = off.get("gdelt") or {}
+    if (g.get("ratio") or 0) >= 2.5:
+        a.append({"type": "media_volume_spike", **g})
+    return a
+
+
+def write_brief(d):
+    """Compact human/Claude-readable summary (few KB) so runs need not parse the full digest."""
+    L = [f"# brief {d['generated']}", "", "## sources", ", ".join(f"{k}:{'ok' if v == 'ok' else v[:40]}" for k, v in d["sources_status"].items())]
+    L += ["", "## ALERTS (verify before use)"] + [("- " + json.dumps(a, ensure_ascii=False))[:400] for a in d["alerts"]] or ["- none"]
+    ad = d.get("adsb") or {}
+    if ad:
+        L += ["", "## military air (ADS-B, 24h)", "points: " + "; ".join(f"{p['area']} {p['total']}/{p['mil']}mil" for p in ad["points"]),
+              "baseline: " + "; ".join(f"{g} now {b['now']} med {b['median_14d']}" for g, b in ad["baseline"].items())]
+        L += [f"- {a['first'][11:16]}-{a['last'][11:16]}Z {a['cs'] or '?'} {a['type']} ({a['group']}) {','.join(a['areas'])}" for a in ad["seen_24h"] if a["group"] != "other"][:40]
+    f = d.get("firms") or {}
+    if f:
+        L += ["", f"## FIRMS: total {f.get('n_total')}, not oil/gas {f.get('n_not_oilgas')} (median {f.get('not_oilgas_median_14d')})"]
+        L += [f"- near {p['near']} frp {p['frp']} {p['date']} {p['time']}" for p in f.get("near_sites", [])][:15]
+    m = d.get("markets") or {}
+    L += ["", "## markets: " + "; ".join(f"{k} {v.get('v')} ({v.get('chg_pct')}%)" for k, v in m.items() if "v" in v),
+          "iran fx: " + json.dumps(d.get("iran_fx"), ensure_ascii=False)]
+    o = d.get("official") or {}
+    L += ["", "## official"]
+    pw = o.get("portwatch_hormuz") or {}
+    if pw:
+        L.append(f"- Hormuz transits {pw.get('latest')} median {pw.get('median_prev_29d')}")
+    for i in (o.get("state_dept") or []):
+        L.append(f"- StateDept{' NEW' if i.get('new') else ''}: {i['title']}")
+    for i in (o.get("fcdo") or []):
+        if i["updated_last_24h"]:
+            L.append(f"- FCDO {i['country']} {i['updated']}: {i['change'][:200]}")
+    for i in ((o.get("embassy_alerts") or {}).get("items") or []):
+        if i.get("new"):
+            L.append(f"- Embassy {i['country']}: {i['title']} {i['link']}")
+    for i in ((o.get("official_statements") or {}).get("items") or []):
+        if i.get("new"):
+            L.append(f"- {i['source']}: {i['title']} {i['link']}")
+    for e in (o.get("usgs_seismic") or [])[:8]:
+        L.append(f"- quake M{e['mag']} {e['depth_km']}km {e['place']} {e['t']}" + (f" NEAR {e['near_sites']}" if e["near_sites"] else ""))
+    L.append("- IODA Iran: " + json.dumps(o.get("ioda_iran"), ensure_ascii=False)[:300])
+    L.append("- GDELT: " + json.dumps(o.get("gdelt"), ensure_ascii=False))
+    L += ["", "## polymarket"] + [f"- {p['q']}: {p['outcomes']}" for p in (d.get("polymarket") or [])][:10]
+    L += ["", "## news (multi-source first; outlets count)"]
+    L += [f"- [{len(s['outlets'])}] {s['title']} | {', '.join(s['outlets'][:4])} | {s['links'][0]}" for s in d["news"] if len(s["outlets"]) >= 2][:60]
+    L += [f"- [1] {s['title']} | {s['outlets'][0]} | {s['links'][0]}" for s in d["news"] if len(s["outlets"]) == 1][:40]
+    L += ["", "## telegram (relevant)"] + [f"- {p['t']} @{p['ch']}: {p['text'][:200]} {p['link']}" for p in d["telegram"]][:50]
+    open(os.path.join(DATA, "brief.md"), "w", encoding="utf-8").write("\n".join(L) + "\n")
+
+
 def main():
     os.makedirs(DATA, exist_ok=True)
     state = json.load(open(STATE_F, encoding="utf-8")) if os.path.exists(STATE_F) else {}
@@ -513,7 +592,14 @@ def main():
     tg_meta = collect_telegram(state)
     sa = collect_safeairspace(state)
     pm = collect_polymarket()
+    off = {}
+    for name, fn in (("state_dept", O.state_dept), ("embassy_alerts", O.embassy_alerts), ("fcdo", O.fcdo),
+                     ("easa_czib", O.easa), ("faa", O.faa), ("portwatch_hormuz", O.portwatch), ("marad", O.marad),
+                     ("official_statements", O.statements), ("ofac", O.ofac_page), ("ioda_iran", O.ioda), ("gdelt", O.gdelt)):
+        off[name] = guard(name)(fn)(state, NOW)
+    off["usgs_seismic"] = guard("usgs_seismic")(O.usgs)(state, NOW, km)
     alerts = detect_precursors(state, adsb, markets)
+    alerts += official_alerts(off)
 
     stories = sorted(state.get("stories", []), key=lambda s: (-len(s["outlets"]), s["first"]), reverse=False)
     digest = {
@@ -527,6 +613,7 @@ def main():
         "iran_fx": fx,
         "safeairspace": sa,
         "polymarket": pm,
+        "official": off,
         "news_meta": news_meta,
         "news": [{k: s[k] for k in ("title", "outlets", "links", "pub", "first", "last")} for s in stories],
         "telegram_meta": tg_meta,
@@ -536,6 +623,7 @@ def main():
     }
     json.dump(state, open(STATE_F, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     json.dump(digest, open(DIGEST_F, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    write_brief(digest)
     day = NOW.strftime("%Y-%m-%d")
     os.makedirs(os.path.join(DATA, "archive"), exist_ok=True)
     with open(os.path.join(DATA, "archive", f"{day}.jsonl"), "a", encoding="utf-8") as f:

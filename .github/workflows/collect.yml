@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["collect.py", ".github/workflows/collect.yml"]
+    paths: ["collect.py", "official.py", ".github/workflows/collect.yml"]
 
 permissions:
   contents: write
