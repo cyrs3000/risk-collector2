@@ -13,6 +13,7 @@ import xml.etree.ElementTree as ET
 
 import requests
 import official as O
+import extra as E
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(ROOT, "data")
@@ -58,7 +59,7 @@ ADSB_POINTS = [
     ("Gulf", 27, 52), ("Israel", 31.5, 35), ("Saudi/Qatar", 24.5, 47),
     ("Iraq/Kuwait", 30, 44), ("Cyprus", 34.5, 32), ("Ramstein", 49.44, 7.6),
     ("UK", 52, 0), ("Crete", 36, 24), ("Incirlik", 38, 35), ("Tehran", 34, 50),
-]
+] + E.EXTRA_POINTS
 GROUPS = {
     "tanker": {"K35R", "K35E", "KC10", "K46", "A332", "B762", "A310", "B703", "MRTT", "KC2"},
     "transport": {"C17", "C5M", "C5", "C130", "C30J", "A400", "C2", "KC39", "IL76", "C135", "C27J"},
@@ -80,12 +81,12 @@ def collect_adsb(state):
     errs = 0
     for name, lat, lon in ADSB_POINTS:
         try:
-            ac = get(f"https://api.adsb.lol/v2/point/{lat}/{lon}/250").json().get("ac") or []
+            ac, _src = E.fetch_point(lat, lon)
         except Exception as e:
             errs += 1
             points.append({"area": name, "total": None, "mil": None, "err": str(e)[:80]})
             continue
-        mil = [a for a in ac if (a.get("dbFlags") or 0) & 1]
+        mil = [a for a in ac if ((a.get("dbFlags") or 0) & 1) or E.is_us_mil_hex(a.get("hex") or "")]
         points.append({"area": name, "total": len(ac), "mil": len(mil)})
         for a in mil:
             hx = a.get("hex")
@@ -120,7 +121,7 @@ def collect_adsb(state):
         med = statistics.median(vals) if vals else None
         p90 = sorted(vals)[int(0.9 * (len(vals) - 1))] if vals else None
         base[k] = {"now": cnt[k], "median_14d": med, "p90_14d": p90, "samples": len(vals)}
-    return {"asof": iso(NOW), "points": points, "now": list(seen.values()),
+    return {"asof": iso(NOW), "points": points, "traffic_vs_same_hour": E.traffic_drop(state, NOW, points), "now": list(seen.values()),
             "seen_24h": sorted(sight.values(), key=lambda a: (a["group"], a["first"])), "baseline": base}
 
 
@@ -531,6 +532,15 @@ def official_alerts(off):
     for i in ((off.get("official_statements") or {}).get("items") or []):
         if i.get("new") and re.search(r"resolution|strike|attack|deploy|evacuat|sanction", i["title"], re.I):
             a.append({"type": "official_statement", "source": i["source"], "text": i["title"], "link": i["link"]})
+    for fir, v in ((off.get("notams") or {}).get("by_fir") or {}).items():
+        for n in v["new_relevant"]:
+            if re.search(r"CLSD|CLOSED|PROHIBIT|MISSILE|ROCKET|FIRING|AIR DEFEN|EXCEPT STATE|NO FLIGHTS", n["text"], re.I):
+                a.append({"type": "notam_new", "fir": v["fir"], "id": n["id"], "text": n["text"][:250], "start": n.get("start"), "end": n.get("end")})
+    for i in ((off.get("foreign_advisories") or {}).get("items") or []):
+        if i.get("changed_since_last_check"):
+            a.append({"type": "foreign_advisory_changed", **{k: i.get(k) for k in ("src", "country", "level", "snippet", "url")}})
+    for s_ in ((off.get("ais_military") or {}).get("now") or []):
+        a.append({"type": "military_ship_ais", **s_})
     g = off.get("gdelt") or {}
     if (g.get("ratio") or 0) >= 2.5:
         a.append({"type": "media_volume_spike", **g})
@@ -573,6 +583,15 @@ def write_brief(d):
         L.append(f"- quake M{e['mag']} {e['depth_km']}km {e['place']} {e['t']}" + (f" NEAR {e['near_sites']}" if e["near_sites"] else ""))
     L.append("- IODA Iran: " + json.dumps(o.get("ioda_iran"), ensure_ascii=False)[:300])
     L.append("- GDELT: " + json.dumps(o.get("gdelt"), ensure_ascii=False))
+    for fir, v in ((o.get("notams") or {}).get("by_fir") or {}).items():
+        for n in v["new_relevant"][:6]:
+            L.append(f"- NOTAM {v['fir']} {n['id']}: {n['text'][:220]}")
+    for i in ((o.get("foreign_advisories") or {}).get("items") or []):
+        if i.get("changed_since_last_check") or i.get("level") in ("warning",) and i.get("country") == "Iran":
+            L.append("- Advisory " + json.dumps(i, ensure_ascii=False)[:260])
+    for s_ in ((o.get("ais_military") or {}).get("seen_48h") or [])[:15]:
+        L.append(f"- AIS mil {s_['name']} ({s_['mmsi']}) {s_['area']} last {s_['last']}")
+    L.append("- civil traffic vs same hour: " + "; ".join(f"{t['area']} {t['now']}/{t['median_same_hour']}" for t in ((d.get('adsb') or {}).get('traffic_vs_same_hour') or [])))
     L += ["", "## polymarket"] + [f"- {p['q']}: {p['outcomes']}" for p in (d.get("polymarket") or [])][:10]
     L += ["", "## news (multi-source first; outlets count)"]
     L += [f"- [{len(s['outlets'])}] {s['title']} | {', '.join(s['outlets'][:4])} | {s['links'][0]}" for s in d["news"] if len(s["outlets"]) >= 2][:60]
@@ -598,8 +617,14 @@ def main():
                      ("official_statements", O.statements), ("ofac", O.ofac_page), ("ioda_iran", O.ioda), ("gdelt", O.gdelt)):
         off[name] = guard(name)(fn)(state, NOW)
     off["usgs_seismic"] = guard("usgs_seismic")(O.usgs)(state, NOW, km)
+    off["notams"] = guard("notams")(E.notams)(state, NOW)
+    off["foreign_advisories"] = guard("foreign_advisories")(E.advisories)(state, NOW)
+    off["ais_military"] = guard("ais_military")(E.ais_military)(state, NOW)
     alerts = detect_precursors(state, adsb, markets)
     alerts += official_alerts(off)
+    for t in ((adsb or {}).get("traffic_vs_same_hour") or []):
+        if t["area"] in ("Israel", "Gulf", "Iraq/Kuwait", "Saudi/Qatar", "Al Udeid", "Muwaffaq Salti") and (t["drop_pct"] or 0) >= 50 and t["median_same_hour"] >= 15:
+            alerts.append({"type": "civil_traffic_drop_possible_airspace_closure", **t})
 
     stories = sorted(state.get("stories", []), key=lambda s: (-len(s["outlets"]), s["first"]), reverse=False)
     digest = {

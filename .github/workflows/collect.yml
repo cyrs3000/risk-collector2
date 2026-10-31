@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["collect.py", "official.py", ".github/workflows/collect.yml"]
+    paths: ["collect.py", "official.py", "extra.py", ".github/workflows/collect.yml"]
 
 permissions:
   contents: write
@@ -24,10 +24,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install requests==2.32.3
+      - run: pip install requests==2.32.3 websockets==13.1
       - name: Collect
         env:
           FIRMS_KEY: ${{ secrets.FIRMS_KEY }}
+          AISSTREAM_KEY: ${{ secrets.AISSTREAM_KEY }}
+          FAA_CLIENT_ID: ${{ secrets.FAA_CLIENT_ID }}
+          FAA_CLIENT_SECRET: ${{ secrets.FAA_CLIENT_SECRET }}
         run: python collect.py
       - name: Commit data
         run: |
