@@ -260,7 +260,8 @@ FEEDS = {
     "Euronews Persian": "https://parsi.euronews.com/rss",
 }
 GNEWS_Q = [
-    "Iran attack", "Iran strike US", "Israel Iran", "Strait of Hormuz", "UKMTO", "CENTCOM Iran",
+    "Iran attack", "Iran strike US", "Israel Iran", "Strait of Hormuz", "UKMTO", "UKMTO warning",
+    "JMIC advisory", "Joint Maritime Information Center", "CENTCOM Iran",
     "embassy ordered departure Middle East", "Iran airspace NOTAM", "Home Front Command", "Houthi missile",
     "Iran Qatar talks", "IAEA Iran", "USNI fleet tracker", "Iran tanker attack", "Iran nuclear site",
 ]
