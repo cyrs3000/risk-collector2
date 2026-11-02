@@ -377,7 +377,10 @@ def collect_news(state):
 TG = ["idfofficial", "PikudHaoref_all", "presstv", "amitsegal", "clashreport", "AuroraIntel", "bbcpersian",
       "iranintltv", "farsna", "abualiexpress", "warmonitors", "shin_persian", "alibk3", "manniefabian",
       "VahidOnline", "ynetalerts", "akhbarefori", "mehrnews", "isna94", "N12chat", "lieldaphna", "irna_1313",
-      "indypersian", "euronewspe", "manototv", "idf_telegram"]
+      "indypersian", "euronewspe", "manototv", "idf_telegram",
+      "BellumActaNews", "geopolitics_prime", "rnintel", "QudsNen",
+      "yediotnews25", "rotternews", "i24NEWS_HE", "amirbohbot", "almayadeen", "jamarannews",
+      "Tabnak_ir", "akharinkhabar", "Middle_East_Spectator"]
 EMOJI = set("⏳⌛⏰🚀💥🔥✈🛩🚁🎯☢🚨⚠🔴‼⚡💣🧨☄📡🛰🚢🛳⚓🔊👀⚔🪖🛑⛔")
 
 
