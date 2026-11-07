@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T08:00:14Z",
+ "generated": "2026-11-07T08:51:25Z",
  "window_hours": {
   "news": 12,
   "military_air": 24
@@ -33,20 +33,15 @@
  "alerts": [
   {
    "type": "airspace_closure",
-   "n_items": 2,
-   "n_outlets": 2,
+   "n_items": 1,
+   "n_outlets": 1,
    "outlets": [
-    "The New Region",
-    "akhbarefori"
+    "The New Region"
    ],
    "examples": [
     {
      "text": "Iraq denies airspace closure despite civil aviation alert",
      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5WbWt1Z0xPbkNob182ZmlVRFZENmJyc1VZTFBBYlJzeDZJX2JYWWQzVVVkdlBaY0hQS1l6ek1OSlJ1azBXR3BXaVpDbw?oc=5"
-    },
-    {
-     "text": "♦️ آمریکا هشدار امنیتی در چند کشور منطقه از جمله اراضی اشغالی، عربستان، امارات، قطر و بحرین را به‌روزرسانی کرد 🔹 این کشور از شهروندانش خواست برای احتمال اختلال در پروازها و بسته شدن حریم‌های هوایی آما",
-     "link": "https://t.me/akhbarefori/704773"
     }
    ],
    "note": "keyword match — verify before acting"
@@ -67,30 +62,36 @@
    "note": "keyword match — verify before acting"
   },
   {
+   "type": "adsb_transport_above_baseline",
+   "now": 6,
+   "median_14d": 2,
+   "p90_14d": 5
+  },
+  {
    "type": "foreign_advisory_changed",
    "src": "Switzerland Iran",
    "country": null,
    "level": null,
-   "snippet": " Access Denied Access Denied You don't have permission to access \"http&#58;&#47;&#47;www&#46;eda&#46;admin&#46;ch&#47;eda&#47;en&#47;fdfa&#47;representations&#45;and&#45;travel&#45;advice&#47;iran&#47;travel&#45;advice&#45;iran&#46;html\" on this server. Reference&#32;&#35;18&#46;8d51c317&#46;1794038",
+   "snippet": " Access Denied Access Denied You don't have permission to access \"http&#58;&#47;&#47;www&#46;eda&#46;admin&#46;ch&#47;eda&#47;en&#47;fdfa&#47;representations&#45;and&#45;travel&#45;advice&#47;iran&#47;travel&#45;advice&#45;iran&#46;html\" on this server. Reference&#32;&#35;18&#46;cd0e2017&#46;1794041",
    "url": "https://www.eda.admin.ch/eda/en/fdfa/representations-and-travel-advice/iran/travel-advice-iran.html"
   }
  ],
  "adsb": {
-  "asof": "2026-11-07T08:00:14Z",
+  "asof": "2026-11-07T08:51:25Z",
   "points": [
    {
     "area": "Gulf",
-    "total": 99,
+    "total": 86,
     "mil": 1
    },
    {
     "area": "Israel",
-    "total": 33,
-    "mil": 0
+    "total": 44,
+    "mil": 1
    },
    {
     "area": "Saudi/Qatar",
-    "total": 18,
+    "total": 15,
     "mil": 0
    },
    {
@@ -100,27 +101,27 @@
    },
    {
     "area": "Cyprus",
-    "total": 47,
-    "mil": 0
+    "total": 73,
+    "mil": 1
    },
    {
     "area": "Ramstein",
-    "total": 513,
+    "total": 575,
     "mil": 5
    },
    {
     "area": "UK",
-    "total": 497,
-    "mil": 1
+    "total": 518,
+    "mil": 3
    },
    {
     "area": "Crete",
-    "total": 36,
+    "total": 44,
     "mil": 0
    },
    {
     "area": "Incirlik",
-    "total": 45,
+    "total": 49,
     "mil": 0
    },
    {
@@ -198,20 +199,71 @@
   "traffic_vs_same_hour": [],
   "now": [
    {
-    "hex": "af8444",
-    "cs": "",
-    "type": "B762",
-    "reg": "19-46108",
-    "group": "tanker",
+    "hex": "8967d4",
+    "cs": "DU111",
+    "type": "A139",
+    "reg": "DU-111",
+    "group": "other",
     "area": "Gulf",
-    "lat": 25.229101,
-    "lon": 55.526088,
-    "alt": 25525,
-    "track": 102.0,
-    "first": "2026-11-07T08:00:14Z",
-    "last": "2026-11-07T08:00:14Z",
+    "lat": 25.037097,
+    "lon": 55.147791,
+    "alt": 900,
+    "track": 45.27,
+    "first": "2026-11-07T08:51:25Z",
+    "last": "2026-11-07T08:51:25Z",
     "areas": [
      "Gulf"
+    ]
+   },
+   {
+    "hex": "ae4f12",
+    "cs": "RCH161",
+    "type": "C17",
+    "reg": "10-0218",
+    "group": "transport",
+    "area": "Cyprus",
+    "lat": 33.39611,
+    "lon": 31.350889,
+    "alt": 29000,
+    "track": 140.84,
+    "first": "2026-11-07T08:51:25Z",
+    "last": "2026-11-07T08:51:25Z",
+    "areas": [
+     "Cyprus"
+    ]
+   },
+   {
+    "hex": "ae123d",
+    "cs": "RCH4968",
+    "type": "C17",
+    "reg": "04-4132",
+    "group": "transport",
+    "area": "Ramstein",
+    "lat": 49.965455,
+    "lon": 7.144276,
+    "alt": 10650,
+    "track": 252.0,
+    "first": "2026-11-07T08:51:25Z",
+    "last": "2026-11-07T08:51:25Z",
+    "areas": [
+     "Ramstein"
+    ]
+   },
+   {
+    "hex": "32003a",
+    "cs": "VOLP503",
+    "type": "A169",
+    "reg": "MM81966",
+    "group": "other",
+    "area": "Ramstein",
+    "lat": 46.550858,
+    "lon": 10.945062,
+    "alt": 6650,
+    "track": 348.48,
+    "first": "2026-11-07T08:51:25Z",
+    "last": "2026-11-07T08:51:25Z",
+    "areas": [
+     "Ramstein"
     ]
    },
    {
@@ -221,82 +273,82 @@
     "reg": "5874",
     "group": "transport",
     "area": "Ramstein",
-    "lat": 48.477359,
-    "lon": 6.336365,
+    "lat": 47.590164,
+    "lon": 11.908974,
     "alt": 27000,
-    "track": 92.05,
+    "track": 100.1,
     "first": "2026-11-07T08:00:14Z",
-    "last": "2026-11-07T08:00:14Z",
+    "last": "2026-11-07T08:51:25Z",
     "areas": [
      "Ramstein"
     ]
    },
    {
-    "hex": "ae49c7",
-    "cs": "RCH4977",
-    "type": "C17",
-    "reg": "09-9211",
+    "hex": "ae1bf6",
+    "cs": "HKY715",
+    "type": "C30J",
+    "reg": "07-4635",
     "group": "transport",
     "area": "Ramstein",
-    "lat": 50.220005,
-    "lon": 6.612453,
-    "alt": 12900,
-    "track": 100.0,
-    "first": "2026-11-06T07:57:20Z",
-    "last": "2026-11-07T08:00:14Z",
+    "lat": 50.867321,
+    "lon": 13.187784,
+    "alt": 22975,
+    "track": 64.0,
+    "first": "2026-11-07T08:51:25Z",
+    "last": "2026-11-07T08:51:25Z",
     "areas": [
      "Ramstein"
     ]
    },
    {
-    "hex": "ae1237",
-    "cs": "RCH4976",
+    "hex": "ae49c5",
+    "cs": "RCH235",
     "type": "C17",
-    "reg": "03-3126",
+    "reg": "09-9209",
     "group": "transport",
     "area": "Ramstein",
-    "lat": 49.462591,
-    "lon": 7.996361,
-    "alt": 5900,
-    "track": 301.0,
-    "first": "2026-11-07T08:00:14Z",
-    "last": "2026-11-07T08:00:14Z",
+    "lat": 49.585268,
+    "lon": 13.569528,
+    "alt": 27975,
+    "track": 108.0,
+    "first": "2026-11-07T08:51:25Z",
+    "last": "2026-11-07T08:51:25Z",
     "areas": [
      "Ramstein"
     ]
    },
    {
-    "hex": "ae026d",
-    "cs": "",
-    "type": "K35R",
-    "reg": "62-3576",
-    "group": "tanker",
-    "area": "Ramstein",
-    "lat": 50.279594,
-    "lon": 9.066319,
-    "alt": 33000,
-    "track": 116.0,
-    "first": "2026-11-07T08:00:14Z",
-    "last": "2026-11-07T08:00:14Z",
+    "hex": "3b77e5",
+    "cs": "CTM1280",
+    "type": "F900",
+    "reg": "F-RAFP",
+    "group": "other",
+    "area": "UK",
+    "lat": 49.689207,
+    "lon": -3.830962,
+    "alt": 34000,
+    "track": 312.41,
+    "first": "2026-11-07T08:51:25Z",
+    "last": "2026-11-07T08:51:25Z",
     "areas": [
-     "Ramstein"
+     "UK"
     ]
    },
    {
-    "hex": "ae035d",
-    "cs": "",
-    "type": "K35R",
-    "reg": "58-0063",
-    "group": "tanker",
-    "area": "Ramstein",
-    "lat": 50.000729,
-    "lon": 10.517289,
-    "alt": 33000,
-    "track": 96.0,
-    "first": "2026-11-07T08:00:14Z",
-    "last": "2026-11-07T08:00:14Z",
+    "hex": "c2b5cb",
+    "cs": "CFC2922",
+    "type": "C30J",
+    "reg": "130617",
+    "group": "transport",
+    "area": "UK",
+    "lat": 55.770035,
+    "lon": -0.880821,
+    "alt": 28975,
+    "track": 84.93,
+    "first": "2026-11-07T08:51:25Z",
+    "last": "2026-11-07T08:51:25Z",
     "areas": [
-     "Ramstein"
+     "UK"
     ]
    },
    {
@@ -306,12 +358,12 @@
     "reg": "C-GFMQ",
     "group": "other",
     "area": "UK",
-    "lat": 50.987068,
-    "lon": 1.391709,
-    "alt": 2875,
-    "track": 42.0,
+    "lat": 50.751807,
+    "lon": 1.204784,
+    "alt": 4700,
+    "track": 147.0,
     "first": "2026-11-06T07:57:20Z",
-    "last": "2026-11-07T08:00:14Z",
+    "last": "2026-11-07T08:51:25Z",
     "areas": [
      "UK"
     ]
@@ -445,12 +497,12 @@
     "reg": "C-GFMQ",
     "group": "other",
     "area": "UK",
-    "lat": 50.987068,
-    "lon": 1.391709,
-    "alt": 2875,
-    "track": 42.0,
+    "lat": 50.751807,
+    "lon": 1.204784,
+    "alt": 4700,
+    "track": 147.0,
     "first": "2026-11-06T07:57:20Z",
-    "last": "2026-11-07T08:00:14Z",
+    "last": "2026-11-07T08:51:25Z",
     "areas": [
      "UK"
     ]
@@ -779,6 +831,57 @@
     ]
    },
    {
+    "hex": "8967d4",
+    "cs": "DU111",
+    "type": "A139",
+    "reg": "DU-111",
+    "group": "other",
+    "area": "Gulf",
+    "lat": 25.037097,
+    "lon": 55.147791,
+    "alt": 900,
+    "track": 45.27,
+    "first": "2026-11-07T08:51:25Z",
+    "last": "2026-11-07T08:51:25Z",
+    "areas": [
+     "Gulf"
+    ]
+   },
+   {
+    "hex": "32003a",
+    "cs": "VOLP503",
+    "type": "A169",
+    "reg": "MM81966",
+    "group": "other",
+    "area": "Ramstein",
+    "lat": 46.550858,
+    "lon": 10.945062,
+    "alt": 6650,
+    "track": 348.48,
+    "first": "2026-11-07T08:51:25Z",
+    "last": "2026-11-07T08:51:25Z",
+    "areas": [
+     "Ramstein"
+    ]
+   },
+   {
+    "hex": "3b77e5",
+    "cs": "CTM1280",
+    "type": "F900",
+    "reg": "F-RAFP",
+    "group": "other",
+    "area": "UK",
+    "lat": 49.689207,
+    "lon": -3.830962,
+    "alt": 34000,
+    "track": 312.41,
+    "first": "2026-11-07T08:51:25Z",
+    "last": "2026-11-07T08:51:25Z",
+    "areas": [
+     "UK"
+    ]
+   },
+   {
     "hex": "ae04fb",
     "cs": "",
     "type": "K35R",
@@ -989,12 +1092,12 @@
     "reg": "5874",
     "group": "transport",
     "area": "Ramstein",
-    "lat": 48.477359,
-    "lon": 6.336365,
+    "lat": 47.590164,
+    "lon": 11.908974,
     "alt": 27000,
-    "track": 92.05,
+    "track": 100.1,
     "first": "2026-11-07T08:00:14Z",
-    "last": "2026-11-07T08:00:14Z",
+    "last": "2026-11-07T08:51:25Z",
     "areas": [
      "Ramstein"
     ]
@@ -1015,43 +1118,128 @@
     "areas": [
      "Ramstein"
     ]
+   },
+   {
+    "hex": "ae4f12",
+    "cs": "RCH161",
+    "type": "C17",
+    "reg": "10-0218",
+    "group": "transport",
+    "area": "Cyprus",
+    "lat": 33.39611,
+    "lon": 31.350889,
+    "alt": 29000,
+    "track": 140.84,
+    "first": "2026-11-07T08:51:25Z",
+    "last": "2026-11-07T08:51:25Z",
+    "areas": [
+     "Cyprus"
+    ]
+   },
+   {
+    "hex": "ae123d",
+    "cs": "RCH4968",
+    "type": "C17",
+    "reg": "04-4132",
+    "group": "transport",
+    "area": "Ramstein",
+    "lat": 49.965455,
+    "lon": 7.144276,
+    "alt": 10650,
+    "track": 252.0,
+    "first": "2026-11-07T08:51:25Z",
+    "last": "2026-11-07T08:51:25Z",
+    "areas": [
+     "Ramstein"
+    ]
+   },
+   {
+    "hex": "ae1bf6",
+    "cs": "HKY715",
+    "type": "C30J",
+    "reg": "07-4635",
+    "group": "transport",
+    "area": "Ramstein",
+    "lat": 50.867321,
+    "lon": 13.187784,
+    "alt": 22975,
+    "track": 64.0,
+    "first": "2026-11-07T08:51:25Z",
+    "last": "2026-11-07T08:51:25Z",
+    "areas": [
+     "Ramstein"
+    ]
+   },
+   {
+    "hex": "ae49c5",
+    "cs": "RCH235",
+    "type": "C17",
+    "reg": "09-9209",
+    "group": "transport",
+    "area": "Ramstein",
+    "lat": 49.585268,
+    "lon": 13.569528,
+    "alt": 27975,
+    "track": 108.0,
+    "first": "2026-11-07T08:51:25Z",
+    "last": "2026-11-07T08:51:25Z",
+    "areas": [
+     "Ramstein"
+    ]
+   },
+   {
+    "hex": "c2b5cb",
+    "cs": "CFC2922",
+    "type": "C30J",
+    "reg": "130617",
+    "group": "transport",
+    "area": "UK",
+    "lat": 55.770035,
+    "lon": -0.880821,
+    "alt": 28975,
+    "track": 84.93,
+    "first": "2026-11-07T08:51:25Z",
+    "last": "2026-11-07T08:51:25Z",
+    "areas": [
+     "UK"
+    ]
    }
   ],
   "baseline": {
    "tanker": {
-    "now": 3,
-    "median_14d": 1.0,
+    "now": 0,
+    "median_14d": 1,
     "p90_14d": 3,
-    "samples": 30
+    "samples": 31
    },
    "transport": {
-    "now": 3,
-    "median_14d": 2.0,
+    "now": 6,
+    "median_14d": 2,
     "p90_14d": 5,
-    "samples": 30
+    "samples": 31
    },
    "bomber": {
     "now": 0,
-    "median_14d": 0.0,
+    "median_14d": 0,
     "p90_14d": 0,
-    "samples": 30
+    "samples": 31
    },
    "isr": {
     "now": 0,
-    "median_14d": 0.0,
+    "median_14d": 0,
     "p90_14d": 2,
-    "samples": 30
+    "samples": 31
    },
    "mil": {
-    "now": 7,
-    "median_14d": 6.0,
+    "now": 10,
+    "median_14d": 6,
     "p90_14d": 47,
-    "samples": 30
+    "samples": 31
    }
   }
  },
  "firms": {
-  "asof": "2026-11-07T08:00:14Z",
+  "asof": "2026-11-07T08:51:25Z",
   "MODIS_NRT": {
    "n": 37
   },
@@ -1198,20 +1386,16 @@
     "near": []
    }
   ],
-  "not_oilgas_median_14d": 70.0
+  "not_oilgas_median_14d": 50
  },
  "markets": null,
  "iran_fx": {
-  "usd_rial": 2669000,
-  "usd_toman": 266900,
-  "emami_coin_rial": 2661900000,
-  "emami_coin_toman": 266190000,
-  "gold18_rial": 261665000,
-  "gold18_toman": 26166500
+  "usd_rial": 2675700,
+  "usd_toman": 267570
  },
  "safeairspace": {
   "page_changed_since_last_check": true,
-  "last_change": "2026-11-07T08:00:14Z",
+  "last_change": "2026-11-07T08:51:25Z",
   "entries_last_3d": []
  },
  "polymarket": [
@@ -1219,20 +1403,20 @@
    "q": "Israel x Iran ceasefire continues through November 7?",
    "end": "2026-11-08T04:59:00Z",
    "outcomes": {
-    "Yes": "0.965",
-    "No": "0.035"
+    "Yes": "0.955",
+    "No": "0.045"
    },
-   "vol24h": 646573,
+   "vol24h": 650346,
    "slug": "israel-x-iran-ceasefire-continues-through-november-7"
   },
   {
    "q": "US x Iran effective ceasefire continues through November 6, 2026?",
    "end": "2026-11-07T04:59:00Z",
    "outcomes": {
-    "Yes": "0.9715",
-    "No": "0.0285"
+    "Yes": "0.9695",
+    "No": "0.0305"
    },
-   "vol24h": 565719,
+   "vol24h": 565615,
    "slug": "us-x-iran-effective-ceasefire-continues-through-november-6-20261103"
   },
   {
@@ -1242,7 +1426,7 @@
     "Yes": "0.0005",
     "No": "0.9995"
    },
-   "vol24h": 481842,
+   "vol24h": 488471,
    "slug": "us-x-iran-effective-ceasefire-continues-through-november-15-20261103"
   },
   {
@@ -1252,7 +1436,7 @@
     "Yes": "0.105",
     "No": "0.895"
    },
-   "vol24h": 306583,
+   "vol24h": 305598,
    "slug": "will-the-us-invade-iran-before-2027"
   },
   {
@@ -1262,35 +1446,35 @@
     "Yes": "0.2075",
     "No": "0.7925"
    },
-   "vol24h": 235060,
+   "vol24h": 220231,
    "slug": "will-benjamin-netanyahu-be-the-next-prime-minister-of-israel"
   },
   {
    "q": "Israel x Iran ceasefire continues through November 15?",
    "end": "2026-11-16T04:59:00Z",
    "outcomes": {
-    "Yes": "0.8",
-    "No": "0.2"
+    "Yes": "0.795",
+    "No": "0.205"
    },
-   "vol24h": 201880,
+   "vol24h": 202394,
    "slug": "israel-x-iran-ceasefire-continues-through-november-15"
   },
   {
    "q": "Israel x Iran ceasefire continues through December 31?",
    "end": "2026-12-31T20:29:00Z",
    "outcomes": {
-    "Yes": "0.45",
-    "No": "0.55"
+    "Yes": "0.455",
+    "No": "0.545"
    },
-   "vol24h": 175160,
+   "vol24h": 175373,
    "slug": "israel-x-iran-ceasefire-continues-through-december-31-415"
   },
   {
    "q": "Israel x Iran ceasefire continues through November 6?",
    "end": "2026-11-07T04:59:00Z",
    "outcomes": {
-    "Yes": "0.996",
-    "No": "0.004"
+    "Yes": "0.9955",
+    "No": "0.0045"
    },
    "vol24h": 148541,
    "slug": "israel-x-iran-ceasefire-continues-through-november-6"
@@ -1302,17 +1486,17 @@
     "Yes": "0.0005",
     "No": "0.9995"
    },
-   "vol24h": 145459,
+   "vol24h": 145344,
    "slug": "us-x-iran-effective-ceasefire-continues-through-december-31-20261103"
   },
   {
    "q": "Will Avigdor Lieberman be the next Prime Minister of Israel?",
    "end": "2026-10-28T03:59:00Z",
    "outcomes": {
-    "Yes": "0.0995",
-    "No": "0.9005"
+    "Yes": "0.0895",
+    "No": "0.9105"
    },
-   "vol24h": 138422,
+   "vol24h": 123229,
    "slug": "will-avigdor-lieberman-be-the-next-prime-minister-of-israel"
   },
   {
@@ -1322,38 +1506,58 @@
     "Yes": "0.9985",
     "No": "0.0015"
    },
-   "vol24h": 110696,
+   "vol24h": 111290,
    "slug": "israel-x-iran-ceasefire-continues-through-november-4"
   },
   {
    "q": "Will Gadi Eizenkot be the next Prime Minister of Israel?",
    "end": "2026-10-28T03:59:00Z",
    "outcomes": {
-    "Yes": "0.629",
-    "No": "0.371"
+    "Yes": "0.6275",
+    "No": "0.3725"
    },
-   "vol24h": 109348,
+   "vol24h": 110048,
    "slug": "will-gadi-eizenkot-be-the-next-prime-minister-of-israel"
   },
   {
    "q": "Iran leadership change by November 30?",
    "end": "2026-12-01T04:59:00Z",
    "outcomes": {
-    "Yes": "0.04",
-    "No": "0.96"
+    "Yes": "0.0405",
+    "No": "0.9595"
    },
-   "vol24h": 98537,
+   "vol24h": 97514,
    "slug": "iran-leadership-change-by-november-30"
   },
   {
    "q": "US x Iran effective ceasefire continues through November 5, 2026?",
    "end": "2026-11-06T04:59:00Z",
    "outcomes": {
-    "Yes": "0.993",
-    "No": "0.007"
+    "Yes": "0.9945",
+    "No": "0.0055"
    },
-   "vol24h": 76005,
+   "vol24h": 73751,
    "slug": "us-x-iran-effective-ceasefire-continues-through-november-5-20261103"
+  },
+  {
+   "q": "Israel x Iran ceasefire continues through November 30?",
+   "end": "2026-11-30T20:29:00Z",
+   "outcomes": {
+    "Yes": "0.645",
+    "No": "0.355"
+   },
+   "vol24h": 64240,
+   "slug": "israel-x-iran-ceasefire-continues-through-november-30"
+  },
+  {
+   "q": "Will Aviv Kohavi be the next Prime Minister of Israel?",
+   "end": "2026-10-27T23:59:00Z",
+   "outcomes": {
+    "Yes": "0.0015",
+    "No": "0.9985"
+   },
+   "vol24h": 63446,
+   "slug": "will-aviv-kohavi-be-the-next-prime-minister-of-israel"
   },
   {
    "q": "Israel x Iran ceasefire continues through November 5?",
@@ -1372,18 +1576,8 @@
     "Yes": "0.017",
     "No": "0.983"
    },
-   "vol24h": 61955,
+   "vol24h": 61809,
    "slug": "will-naftali-bennett-be-the-next-prime-minister-of-israel"
-  },
-  {
-   "q": "Israel x Iran ceasefire continues through November 30?",
-   "end": "2026-11-30T20:29:00Z",
-   "outcomes": {
-    "Yes": "0.63",
-    "No": "0.37"
-   },
-   "vol24h": 59349,
-   "slug": "israel-x-iran-ceasefire-continues-through-november-30"
   }
  ],
  "official": {
@@ -1946,8 +2140,8 @@
   },
   "ioda_iran": {
    "events_48h": [],
-   "bgp_latest": 41763,
-   "bgp_median_48h": 41756.0,
+   "bgp_latest": 41761,
+   "bgp_median_48h": 41756,
    "bgp_drop_pct": -0.0
   },
   "gdelt": null,
@@ -2204,7 +2398,7 @@
     {
      "src": "Switzerland Iran",
      "changed_since_last_check": true,
-     "snippet": " Access Denied Access Denied You don't have permission to access \"http&#58;&#47;&#47;www&#46;eda&#46;admin&#46;ch&#47;eda&#47;en&#47;fdfa&#47;representations&#45;and&#45;travel&#45;advice&#47;iran&#47;travel&#45;advice&#45;iran&#46;html\" on this server. Reference&#32;&#35;18&#46;8d51c317&#46;1794038",
+     "snippet": " Access Denied Access Denied You don't have permission to access \"http&#58;&#47;&#47;www&#46;eda&#46;admin&#46;ch&#47;eda&#47;en&#47;fdfa&#47;representations&#45;and&#45;travel&#45;advice&#47;iran&#47;travel&#45;advice&#45;iran&#46;html\" on this server. Reference&#32;&#35;18&#46;cd0e2017&#46;1794041",
      "url": "https://www.eda.admin.ch/eda/en/fdfa/representations-and-travel-advice/iran/travel-advice-iran.html"
     },
     {
@@ -2308,7 +2502,7 @@
    ],
    "pub": "2026-11-05T04:21:00Z",
    "first": "2026-11-05T11:01:48Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US offers $20m reward for info on Iran's nuclear program",
@@ -2330,7 +2524,8 @@
     "Khaama Press",
     "Khaleej Times",
     "The Financial Express",
-    "Fox News"
+    "Fox News",
+    "Al-Monitor"
    ],
    "links": [
     "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9KX09qMC1QY1ZjRGlPV0hxTm51NXNRb0VzRmtVS3ZITkNRTVdKVFNCSlFtWUN2TmFZQXNzSzhDbDNSUXNDSTJYYmFPQ3ZJa1g2LTVPSk14UGwzRnhNWUxR0gFsQVVfeXFMT1pZN285aE91SFh1VTk1aFVaclByUU9IUXoxMHdUWklpZTlpRWxlUXJoQ1JsLWhCREVFX0xtelVMa0VsT0NCMEEybVAwSGhOMnphZjZBZ3NtQm41WlFMQUc5WW5TZEpTMlMwTXln?oc=5",
@@ -2350,11 +2545,12 @@
     "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZMVZhelJHVm1xcUFnd2RXUUZzWEo3T0VmdHVDQ24tS1NVSktBbUJBejc0Njk0ZUMweGVfQnBIUUFfdWhFSFNjM1QwN0FzVUg4b09TSVQ3YmxvN0FleHh1cjVwSkh6Y2JYQzNmcmg2ZGZNSGZvcWc?oc=5",
     "https://news.google.com/rss/articles/CBMiogFBVV95cUxPS211TTZ1U1MtRHlYdndjblJpMS1VdnBMUGdCUzJSaWxCVk5uR09jRmRXdXRXOHZFOGtGWlZPR1RoYlg3bWZHcG54MTAwazgteGNDMnZ1VGpubEpHUlZTMUN6UVV6T09ZTTRiS1JrZXZVajVQTWtmV2t6QjladHhOcHd2NXY4WUV6LXRrQ1NOeDVLSF9TbmtIamNsMWpZTE1laGfSAaoBQVVfeXFMUE8wM0RwcTZkVXZudGhCeGpsRHFlaXE0Ql84U3hhVnJ5N2l2MHdNRjFrdVJKSHN2TkJQam5ScTM1MGV3eEREdjhOSlFkWEpJR0hxMTE2T0RYb2xjeThrT2hlcjNUV0NTRzBFT2RGOGlud0FHZ292bU9BZVRnbzFvRVh4Si1fcWdWSTd0bmVLZ3hmZVRDX2VNRHhOV3p0MnhLY2lTWVVMTURXbVE?oc=5",
     "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQME81Zm5GMVZvS1FDZ29PSk0zUHU4WWdZTWxiYkZGamJPY0xyVnVIMzRONzRsNDBvQkk4TGd1U1R4THlNRzFyQUhrZTlFWW1KTXVsQnhmV2dvUldyZTNJUFAwY2NWejBBVXdqRXNwZ3h2WVBsR3dwODlFMDJ0NVlSRmlieXVYVWFMa0Z1cnhsZW9lbnNlbDd4OGpXOVF6eEhpRGhqVXVvRWY0M1MycFBYdjdzTDFJNE9VWEtjZjhERmRvaW5jbzVwRUJ2NDNLbGhKM0pUYtIB2wFBVV95cUxONEJLYl9pMVYzWUlfU3ppd3MzSjhsd2JzV1ktdDZBS0NiLVBETTRPSUJRZHRHdjRvRmIzaGhYLTVfSHI3SEQ5QTBaSmRpMkxuQTA2Q09ETzVfZ3JUQWRBTmtMRldCSzhFNFF6Z2hGNE5jRmwwVHVURDZvYnV1ckdxMlR4ajk0bS1PdkZ6YWJoY3prODNDNXVSN1k2Ri0tUFk1d0J6Y2lMX29XQTRtc2IyRWs5THpnRjhDeTJEN0NZdlp3UWI1TnozaTlPb1FRekIyaGhWdy1NZGZ4RzQ?oc=5",
-    "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdUFQLWZDeGVRc1lUWldrSHVlNWM1LXF6M0gwTTJleDUzdXYwV19JUVQ1OWltQWZkLUIxREZJbnJZbTFWQ3NRMUtHZFBwQ2JWbnVsSUlyRVAzaGF4dTd5SzJKRWltVXB1YzRLQkNXeURxVDd3dkxBNXdCNUo2QW14WmlmQjZXNnhWLW5pOXRwQnBNQlYyWW1pemFR?oc=5"
+    "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdUFQLWZDeGVRc1lUWldrSHVlNWM1LXF6M0gwTTJleDUzdXYwV19JUVQ1OWltQWZkLUIxREZJbnJZbTFWQ3NRMUtHZFBwQ2JWbnVsSUlyRVAzaGF4dTd5SzJKRWltVXB1YzRLQkNXeURxVDd3dkxBNXdCNUo2QW14WmlmQjZXNnhWLW5pOXRwQnBNQlYyWW1pemFR?oc=5",
+    "https://news.google.com/rss/articles/CBMipAFBVV95cUxNMUtveWRDbDdHZ1psZjM5NzBuVXdZNnlzbDh4WC0xZVBYWUJRMUx2TDk5MHNKSzNWWG1iTmFWc0VNT3dhcHl4alNWUXIwVTFxMHpoTEpFOTFTWll2d1hSYVdsU2hoQTdIdFdYMVJDYkJwMGNRbkE2VU5TT3F2bElsNVBJWGVMVnc3cG9WSk1oRDMwT0E4dkhPUTUzMEFudWpQQUhEeg?oc=5"
    ],
    "pub": "2026-11-07T04:09:54Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iran Exempts India, China, Iraq, and Qatar from Strait of Hormuz Restrictions",
@@ -2431,6 +2627,38 @@
    "last": "2026-11-06T21:32:56Z"
   },
   {
+   "title": "Saudi-led coalition says it intercepted Houthi cruise missile over Riyadh",
+   "outlets": [
+    "Anadolu Ajansı",
+    "Kurdistan24",
+    "Middle East Eye",
+    "The Times of Israel",
+    "Latest news from Azerbaijan",
+    "Breakingthenews.net",
+    "Yeni Şafak English",
+    "Crypto Briefing",
+    "thechronicle.com.ph",
+    "The Express Tribune",
+    "Saudi Gazette"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNUNidEdxZ0ZldC1CM2hrZ2QwREdiVEROZlhXTHBPc1NOME1IcDVkb1NOVHoxRHRTMGZFUHBoVllNVGFLTWMxLWNMMU80aXhuOFhMMTlXUENzU1VsVHVfTDFMcXpJa0ZFeGp2czAyVTZJZTJQTl81MFpKemQ5Q3JXeVRxZl82SjFCcHg4ZVBtOGV4Y2ZteFZBOXpraE1zTkVIeDFkZ3l4RmlnU3ZQOVBmdkpFb2xReERoTGc?oc=5",
+    "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNlJHMXBBLTIzTlBuamdDekduNG05ZUh1bnJDMGlwMW1CczE5aEFJclVmTlpsRU5RanNkbE1rRUduMS0zN2JzaDBXdVZXalBFbXdka05GU2kzNzQzTGxVMFNYSnoxck9yUXQyOE1UR3NtRFc5dVpBVEpEMVlucUFXcVpuZG1kYi1LejBqX0M4VmhLZ3BCRmFkbktIWmtSUXNSejVEMGU0aHVFRHNmN1gzZjF4TW1ZbUhUeDN3d192T24?oc=5",
+    "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNWRvWFZjVV9wcHhmbWVCY0dYNGt1UkxZQUlaRml5T3J3Z0YzeTBlS2hFV1Z6MXJyOUdRNXFJaTdHZ3NhYWx2VGFQcmxscTBWTjZSX25vTWRDY0V1LWx6ZWFfVlI2anBkelpodmNIbkZtck9JN2xGMnM5UDhTT0FiQ3pGSE5rdGlLNXR5NGNUN1pwb21tblF4aWdEZE9HSHEzbFNsdEJfVVpPd0lMcm5ua2l6djVYRnhCNWpDS0VtRjhlR1E?oc=5",
+    "https://news.google.com/rss/articles/CBMivAFBVV95cUxOVlQwTElHcmJNdjcwUDl3dG1NSXdHMTZDVFNmUjNFakx1N0xWdjdBTW1UYTFJelN3d084VVZLaDZHWDFQd21saVhIbFJuUWN0aXVEMGllR0tDclRGdkpIOHEybG96Z2U5Ty1OQ2xpNno1WmphZHR6N1ptaXp3R1Fqc05VbGRrd1ktaTFQbHFJSW5BZlo1QlBEUUJWVFZqVVpHbXJOdGxfcmFrOWoxN3JYRENaNmo4elFOTlpOTg?oc=5",
+    "https://news.google.com/rss/articles/CBMijgFBVV95cUxNa3NwMm9YTlVuSm91MXRzVnp5RG80Z05lMmtXNXZzNFRiM3pERVVHR29XSUZZZ0Z1el9DUUFLdlZ5Vld5Vy1jU3lodjBtM1B4c1hLY2UyTFgtcHF2R0FsSDJsQThRNC03WkM4bkRSVXRRNXVaNEIxTmNaZXBaNTZEc0RKRWFNNVhlanlhdVVR?oc=5",
+    "https://news.google.com/rss/articles/CBMimgFBVV95cUxOTmo5ZUt0bGozcG5JWTdrRnRxR0dRd3MwUDZsTjQyVEk4NENvMkEwWjJRN0NjTm9VY016Z1pJNVp3dFBHU1AtR0duM1BwUlViVnhmMXpvdno3eXZtak9tdVlld2JRc1VuMWlQQ2FyYnlUak81NzVGLThCcVROUzFKWk8zX0QzR081QTJ0T2lxSjRvTEJHUXM5eUh3?oc=5",
+    "https://news.google.com/rss/articles/CBMioAFBVV95cUxOM09nb1VrMlNGdVJvREhOaE9VMVpYc1hCSE9YRVduc2pCZ0VWUWRyblNKU29sZ0hIbEdTM1RiTERTdkZKaXBzT0lkdFVHMDV4dW5GZXdwcmV3TUZMa29YSWJuMkNhdExQWXl2cDczcU80c21CSTN4b3pmM040ZG44bXRla2V6bENublRMN3RyRGJncXd4Q28wYTMyaFliRFMy?oc=5",
+    "https://news.google.com/rss/articles/CBMijgFBVV95cUxORzY4aGJTRHM0YTlWZkJwangtZVItNXloU0h1UzJfUWt3Y1FOYlRfNDJKYXdicWdadEhCb19nalhvMzZjdDh1aE1WLVREQWNSUVhmbEdzZEhKcWU0dEdianFMOUViaW9RS182eWxwaHMxWmN0OTNlemgtUTFHZGpQRWZ1SUcyX2x2UjF5bnlB?oc=5",
+    "https://news.google.com/rss/articles/CBMimAFBVV95cUxOcHNvUkZKc21jeEg2YWkwT053ODNOdzc0Sm0yaE5WdURvMWRoWFNISWZONVp4cklXT3lwN3MtdUZxbHpLTnJxaThzeFM3WGlHSHJuc1VqNjlzZEJ2b1FNUVF4cmpCSDYzbC03Y05xSEhkRXBwbUVtVXhIS0xlS2pnc3ZZQnVlQmhBRG1jR1NpekN3bEF1MDRNRw?oc=5",
+    "https://news.google.com/rss/articles/CBMirwFBVV95cUxNSlhpV214Mm9uMTd1SURvTzZaTE05ZnhmSXJRbnpwU0NsRkVhcU9TbHgyS3R1MlMwZU9acGkyakROS1hXcnYyMmQtVXRkc2daSTZNSHk0MzJxcnJRbXJPeVRqUnNlUjZNWHpnRW9jTlZUSmRLYUNrb3Y5eWpuTk1welFMSEJEVXpnWmVPZmFLSjBuYjhBbnFWSFY3ZEI2dEIwTlZWVUFoU3psYjgxcHRZ?oc=5",
+    "https://news.google.com/rss/articles/CBMixAFBVV95cUxQb2RjbDhBZFlqa1VmQmI2OVdxcG1iQ0x2S0o4dmphS1BYdUVwSU1QSEpwZi02cHVuQWxhVlBMZE9ya3dZVHdQN2pKZzljVklOQlh6MzVCNmdUUTktQU1XRjNiSmFjd3k1LU42dnZJQWhheFdHV3hxNU8wMGtUa1Z4VURGQkcwYnctdVB2WC1kQk1Pd2lXNjFsX2xRTS16bl9zdXlCdEdsU3d1LWdIQ18xQ1Zzd2tkazFMakdLYWRVdEwtZGFo?oc=5"
+   ],
+   "pub": "2026-11-07T06:03:13Z",
+   "first": "2026-11-07T08:00:14Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
    "title": "Iran reportedly distributes iodine tablets near nuclear sites amid US strike fears",
    "outlets": [
     "Türkiye Today",
@@ -2456,7 +2684,7 @@
    ],
    "pub": "2026-11-06T17:49:24Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US military carries out new targeted strikes on Iran as Tehran's leaders weigh mediator's proposals",
@@ -2484,35 +2712,7 @@
    ],
    "pub": "2026-11-07T02:11:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
-  },
-  {
-   "title": "Saudi-led coalition says it intercepted Houthi cruise missile over Riyadh",
-   "outlets": [
-    "Anadolu Ajansı",
-    "Kurdistan24",
-    "Middle East Eye",
-    "The Times of Israel",
-    "Latest news from Azerbaijan",
-    "Breakingthenews.net",
-    "Yeni Şafak English",
-    "Crypto Briefing",
-    "thechronicle.com.ph"
-   ],
-   "links": [
-    "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNUNidEdxZ0ZldC1CM2hrZ2QwREdiVEROZlhXTHBPc1NOME1IcDVkb1NOVHoxRHRTMGZFUHBoVllNVGFLTWMxLWNMMU80aXhuOFhMMTlXUENzU1VsVHVfTDFMcXpJa0ZFeGp2czAyVTZJZTJQTl81MFpKemQ5Q3JXeVRxZl82SjFCcHg4ZVBtOGV4Y2ZteFZBOXpraE1zTkVIeDFkZ3l4RmlnU3ZQOVBmdkpFb2xReERoTGc?oc=5",
-    "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNlJHMXBBLTIzTlBuamdDekduNG05ZUh1bnJDMGlwMW1CczE5aEFJclVmTlpsRU5RanNkbE1rRUduMS0zN2JzaDBXdVZXalBFbXdka05GU2kzNzQzTGxVMFNYSnoxck9yUXQyOE1UR3NtRFc5dVpBVEpEMVlucUFXcVpuZG1kYi1LejBqX0M4VmhLZ3BCRmFkbktIWmtSUXNSejVEMGU0aHVFRHNmN1gzZjF4TW1ZbUhUeDN3d192T24?oc=5",
-    "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNWRvWFZjVV9wcHhmbWVCY0dYNGt1UkxZQUlaRml5T3J3Z0YzeTBlS2hFV1Z6MXJyOUdRNXFJaTdHZ3NhYWx2VGFQcmxscTBWTjZSX25vTWRDY0V1LWx6ZWFfVlI2anBkelpodmNIbkZtck9JN2xGMnM5UDhTT0FiQ3pGSE5rdGlLNXR5NGNUN1pwb21tblF4aWdEZE9HSHEzbFNsdEJfVVpPd0lMcm5ua2l6djVYRnhCNWpDS0VtRjhlR1E?oc=5",
-    "https://news.google.com/rss/articles/CBMivAFBVV95cUxOVlQwTElHcmJNdjcwUDl3dG1NSXdHMTZDVFNmUjNFakx1N0xWdjdBTW1UYTFJelN3d084VVZLaDZHWDFQd21saVhIbFJuUWN0aXVEMGllR0tDclRGdkpIOHEybG96Z2U5Ty1OQ2xpNno1WmphZHR6N1ptaXp3R1Fqc05VbGRrd1ktaTFQbHFJSW5BZlo1QlBEUUJWVFZqVVpHbXJOdGxfcmFrOWoxN3JYRENaNmo4elFOTlpOTg?oc=5",
-    "https://news.google.com/rss/articles/CBMijgFBVV95cUxNa3NwMm9YTlVuSm91MXRzVnp5RG80Z05lMmtXNXZzNFRiM3pERVVHR29XSUZZZ0Z1el9DUUFLdlZ5Vld5Vy1jU3lodjBtM1B4c1hLY2UyTFgtcHF2R0FsSDJsQThRNC03WkM4bkRSVXRRNXVaNEIxTmNaZXBaNTZEc0RKRWFNNVhlanlhdVVR?oc=5",
-    "https://news.google.com/rss/articles/CBMimgFBVV95cUxOTmo5ZUt0bGozcG5JWTdrRnRxR0dRd3MwUDZsTjQyVEk4NENvMkEwWjJRN0NjTm9VY016Z1pJNVp3dFBHU1AtR0duM1BwUlViVnhmMXpvdno3eXZtak9tdVlld2JRc1VuMWlQQ2FyYnlUak81NzVGLThCcVROUzFKWk8zX0QzR081QTJ0T2lxSjRvTEJHUXM5eUh3?oc=5",
-    "https://news.google.com/rss/articles/CBMioAFBVV95cUxOM09nb1VrMlNGdVJvREhOaE9VMVpYc1hCSE9YRVduc2pCZ0VWUWRyblNKU29sZ0hIbEdTM1RiTERTdkZKaXBzT0lkdFVHMDV4dW5GZXdwcmV3TUZMa29YSWJuMkNhdExQWXl2cDczcU80c21CSTN4b3pmM040ZG44bXRla2V6bENublRMN3RyRGJncXd4Q28wYTMyaFliRFMy?oc=5",
-    "https://news.google.com/rss/articles/CBMijgFBVV95cUxORzY4aGJTRHM0YTlWZkJwangtZVItNXloU0h1UzJfUWt3Y1FOYlRfNDJKYXdicWdadEhCb19nalhvMzZjdDh1aE1WLVREQWNSUVhmbEdzZEhKcWU0dEdianFMOUViaW9RS182eWxwaHMxWmN0OTNlemgtUTFHZGpQRWZ1SUcyX2x2UjF5bnlB?oc=5",
-    "https://news.google.com/rss/articles/CBMimAFBVV95cUxOcHNvUkZKc21jeEg2YWkwT053ODNOdzc0Sm0yaE5WdURvMWRoWFNISWZONVp4cklXT3lwN3MtdUZxbHpLTnJxaThzeFM3WGlHSHJuc1VqNjlzZEJ2b1FNUVF4cmpCSDYzbC03Y05xSEhkRXBwbUVtVXhIS0xlS2pnc3ZZQnVlQmhBRG1jR1NpekN3bEF1MDRNRw?oc=5"
-   ],
-   "pub": "2026-11-07T06:03:13Z",
-   "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Video | US Iran War Latest News | US Offers $20 Million Reward For Information On Iran's Nuclear Programme",
@@ -2538,7 +2738,7 @@
    ],
    "pub": "2026-11-07T06:00:21Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iran sent nuclear proposal to the US via Qatar, senior Iranian official tells Reuters",
@@ -2583,6 +2783,70 @@
    "pub": "2026-11-05T23:21:34Z",
    "first": "2026-11-06T00:20:48Z",
    "last": "2026-11-06T21:32:56Z"
+  },
+  {
+   "title": "Qatar denies reports of failed US-Iran talks, says negotiations ongoing",
+   "outlets": [
+    "Iran International",
+    "Middle East Eye",
+    "Report.az",
+    "İlke Haber Ajansı",
+    "خبرگزاری صدای افغان(آوا)",
+    "Operativ Məlumat Mərkəzi"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAtSVNvSXVNNzVZbGhHNFdoVUJxTkFXZ3FPQnZlMEVUVEw2cy1YaEZSNk4zNEZ4REZBcFFNdnVSbTdtOFVYTFFiZ21tTFhOdWIxa1E?oc=5",
+    "https://news.google.com/rss/articles/CBMixgFBVV95cUxNbFNaVWdMMXphVFR6aE5YQmZmVnhVLS1VQlR3SmZHRi1JekNNXzA4WEZGckY4RERVQ2FtUE9rWFE1VmptZzRqWlh0dk9yaDYwSXFBRjF6Ri1EdzRjeEpDMFRvZmJNWmFCZm4xd19iblh6NXYwOGNMeGV4MXdDYURpWjlqLXJZUnpidlVmTFV3eVVUUlRaeXIwd1RtNWY4TDRscjZOMkZ1OXI3R2gyRlFFR1hETlhNMlZFS29rZmpzUXVmV1VEV2c?oc=5",
+    "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNS3hXeHMza01QWmQzSlU5VF9McTUxRXIzcVpWT2txYzdHcWVpRGpBWnpTZmJ6Y3Jma1ZkOC11OTNiZUQyTnA3V1JrX0xtYVVnYm1ncUlkUGlzeVRJRzltSG5SaTk3ZUNxRHg0RG1BZ2p4WjhrcnFtaFVCMmJwQmxrUXRLVTJaenVQ?oc=5",
+    "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTVE0LWc0NS1WbTJkZzNnMkZEVVlFRjl0cm1OME43YWR6Rk5wdXJya0hlbEdpaWFjOFVzWFZwZDI3OU1SM3hfZk5qRFBBMEtJeEZfa2RZUG1rWFE2Y0RnQTlXenoxTGpCeUlyX05aSC1xWHdqS1RRaGxpMFhFcHlsOURienVpZ0FmbVpZV2dNVmJjd0pPNmxlekkwTTJLcDJFNzlfdWhsamZHcmFrM3g2aUdpdTEyV2FocnY3eEJR?oc=5",
+    "https://news.google.com/rss/articles/CBMikgFBVV95cUxNcEtBWjZFZ183N29oNWRBck5xeDFIa01zdFZMOEVrWFEzeklzbnF3Qy1kUmYwWDVtM05HNkt1V0E5aTZ3SnN0YVREQlNiTlU2WlExbTN1LXhidlZjSWp6MzZ1ZlB3ZGVpUUpUYnJyQ0xtLUFSRHBhUm4tRWRoR3JkeGRheU96cEdzUWFGdU1JWTNBQQ?oc=5",
+    "https://news.google.com/rss/articles/CBMiigFBVV95cUxQdXlMcllQMG1qYy04OFEwc1p2a2loYVhoNmRDeTVYdHc4YjVPUE1MeUZONTZNZEhoWEpxM3NadV9xVHBPc2tfNGthWjh1NUVnNkx6OWpQRUVTNGV1VEFDdTNpUEZabW9sbHRKdktHUGpvb0xzd2xFODdwZjV4aDhNdGlyc2F5UTR3VEE?oc=5"
+   ],
+   "pub": "2026-11-06T22:40:16Z",
+   "first": "2026-11-07T08:00:14Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "US offers up to $20 million for information on Iran’s nuclear program — NDTV World",
+   "outlets": [
+    "UA.NEWS",
+    "NewsCord",
+    "Latest news from Azerbaijan",
+    "Kurdistan24",
+    "Khaama Press",
+    "Fox News"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdUJ0RWM2M3hGdi01amwzanRvWGZ5UWpPaVA2WHQ2SDdUSW5fbXpKTzFVRGltUnBMM21zbXlmQjZhWEJqb3pESUFXa29qVlN0bUxnS25CcDJTSVJGQlRjWW8zSWVETy1PeHdIcS14SDU0cUxQdmNPUXBGdmswOWdMUzhkbFRBZjZjckVMLXl0ZDdram1zSkpteEFNejhpZWpCOE8ydDFlT19qZW9hcHg5N1A2WXZPZw?oc=5",
+    "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOeGFhV3lZWThYZGZmdy1ZYmpROEh1eG5SdkFHaDVDaHRmenphM042S3AxTUZVcFlzWm9keDQzbHZIa2VweU9CTjhtQ3pPQ3VKdVMtN01mbTV0WHhUN1JkLU5FS1o4WEpha3ZIcjBDcXg5aHpBempNUTZCWE9ZZ1F5SUFBaXdURm1Ca0FRRDJzM3pJcDk2WjhWQzk3TnZkQS1VaUl3V3pJZ1JIYkVWbjNuNzlMd3lnTDJseFIxNlgxU1JBdWt5WkdJSXFUQWVSYU5zbnprSkxFNDB0T0VWMDdsalRrS3QzNjVkM0E?oc=5",
+    "https://news.google.com/rss/articles/CBMikgFBVV95cUxORUZEM1dVWUxvRUdOd0d5WWFybjFDaTFrQ3kyVHJuX01XRUpudm9zcVpZYzBKZDBIUzZVdm94aW1iOFVrYmR1eDNUVWJJa2tscU96ZWxaODFaWS1tLUxHSkUyaDVXVmQ3V2VBVHZFMWhkeGUydzJqQm1hUmc3S2EzTXozS2dnNEZIdHVnVk44MzdCdw?oc=5",
+    "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcjlTT0o2YkN4ZGhRcFRHbkh3RTNUdkliRXlVMHZxbmU4cHE3N2NDNDR4SEJqZzVaeUtXZktXT0pnWV9NRHZmby1nOW1HWk83c0xfODNtSnF0TFlTbFNZbFhvajBOaGVPQmhxTVJQMHdTTjRMb05xYU1iaEJJZktEM0hrUGZGZnV4Rkh1S1RkeThFTm1iNnRxRndrc08xSHNqdHZlZU11dEowTjQ?oc=5",
+    "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZMVZhelJHVm1xcUFnd2RXUUZzWEo3T0VmdHVDQ24tS1NVSktBbUJBejc0Njk0ZUMweGVfQnBIUUFfdWhFSFNjM1QwN0FzVUg4b09TSVQ3YmxvN0FleHh1cjVwSkh6Y2JYQzNmcmg2ZGZNSGZvcWc?oc=5",
+    "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdUFQLWZDeGVRc1lUWldrSHVlNWM1LXF6M0gwTTJleDUzdXYwV19JUVQ1OWltQWZkLUIxREZJbnJZbTFWQ3NRMUtHZFBwQ2JWbnVsSUlyRVAzaGF4dTd5SzJKRWltVXB1YzRLQkNXeURxVDd3dkxBNXdCNUo2QW14WmlmQjZXNnhWLW5pOXRwQnBNQlYyWW1pemFR0gGfAUFVX3lxTE1jTkhWNWdRaExoU0Q5eXdQZ1RBMGxLSEpzZ1VtSndKU2xTNGM4OFZxLUF3eHNlb0VIWHFDODVUZDlPUzdIV0JKd0NTQ0l6SV91Sk5WLWlrSFI1QnRBSkdua2hGbUxteW9fYS04QUhIdG91U0ltME1DdmxYbnRHcko0YTMwb0tDdnZMRFNpa1o5ejYxSTdtMTNGYzV5WDMyRQ?oc=5"
+   ],
+   "pub": "2026-11-07T02:35:19Z",
+   "first": "2026-11-07T08:00:14Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "IRAN IN CONTROL: Iran Says Strait of Hormuz Will Remain Closed Until Conditions Are Met",
+   "outlets": [
+    "EnergyNow",
+    "EnergyNow.com",
+    "WANA News Agency",
+    "Latest news from Azerbaijan",
+    "The Malaysian Reserve"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMitwFBVV95cUxNQ3M0TXQ1MGdDNnhQSXJEM3dsNDlOZU1Remx0Y0htNURnNzlIVGNXR2h6MVBCNEZXWEFxT1lvbldPdnVGNS1TcUtaMktyZlRZY1ExQVQwdXVzTXJBUjREV0lRLXFHb1NaT2lKa182cndKb1ZrcWFwbEI1ajVZYlR6bjJfd2sxWk5fWmEtN180a21vcWlSZUoyZGNBU0VnazdRNlVPY0l0WU9jNmgwdnFHeUlYZUZURGM?oc=5",
+    "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVnh1U08wWE5DdnNueUtJX29mYzNhVUxQUlV1TUxxX3NHWEliaEVaeV9vdC1MUjNSLUVBVUdjWUkwTlI4a2ZRTl9NYjBTOFYyRG1qaVpWdV8zQ3I5a0V5Smt4ZGN6UTBrNjE0RnZwS09qRWRZTmJjLVB0Um43MmNLdjRoOXNHNjIydFRQMWNBZWpIT3hqXzhGVUdqYnQxUG1iT0pfMDZoelJUOWdmQnlwc09MQTZYYTRa?oc=5",
+    "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQU1p1VVVYN2h5ZXdpZWFYVEc5Q21LNk9QV0xLUG1XY0h3VWdxY0dvN2lXUkZsVWpwanM1eTU3SGtrX1o3akpvcVFNTDdHYWk0YVNQcUczMURza1lIWnAzdlhLaXV1U0czRHFsbEh5YWNRVFd2dVNEd3lldWpOVHl4UXhZOGtVdTZ1cWNBVHdFQUlqRUtCNnRNSnp5X2RvbWFKSVNNTi1ndloya0JSa0hSc3BFSmxhbnJ0MEt2UU0xOG15ZkhiNDJ6RHU3cHdmLXBHNlE?oc=5",
+    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSFljdU5wX01VaEFIVzl2X1RjLURLOWVzalhlTHpYanVYZVVVX19TSjZ3eE5sU3hNRzF4WVRxbnVfTnFWZXlqSm54RlJkako1aTNEUEdNTU4zeXRfU2lOanBwNDJMeU9WLVN0ZGRMaUlPX3JaSWNoTDVOWlNfWTZlOWxJNGhLNkRPamt4XzJ2TzBYQ3pqRXVCMndrMmp5ZmJWSU1EY2I5c3dZdw?oc=5",
+    "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSVBOYTRFa05FWG15RGdxbkRpSkNzTm13TEVvMEEzekF0QU1ndzByOEI2bTFKbVd0ZVJXZGRXX293c2pPakNXbUhNX1FzWkVJQlhCS0c4blFjS3pIM204MGRlb0FDZUpYNW1DXzZMNEJ0V1M2M1BIZ2h4WkNHYk91NExQQ1hPYm1ObHViV0F1eDZIbUpFUWoxeUlyaHJpdUlSSXBFQllOXzBqbWpYN3c?oc=5"
+   ],
+   "pub": "2026-11-05T02:07:42Z",
+   "first": "2026-11-05T11:01:48Z",
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iran says it downed US MQ-1 drone over Qeshm Island",
@@ -2642,7 +2906,7 @@
    ],
    "pub": "2026-11-06T12:24:36Z",
    "first": "2026-11-06T15:57:30Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Saudi-led coalition intercepts drone in Mecca region, 2 Houthi missiles over Najran",
@@ -2662,7 +2926,7 @@
    ],
    "pub": "2026-11-06T08:13:54Z",
    "first": "2026-11-06T15:57:30Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Two missiles strike Iran's Qeshm Island, Tasnim news agency says",
@@ -2682,7 +2946,27 @@
    ],
    "pub": "2026-11-06T23:04:12Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "Iran war latest: Qatar says mediation efforts between US and Iran continue",
+   "outlets": [
+    "thenationalnews.com",
+    "The Straits Times",
+    "Deccan Herald",
+    "The Express Tribune",
+    "The National"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaFNGVjU3UzU0cjFEQUhzeDVsZGJsRUsxeTVNUHNRbldqRWtZVFhiejFqNEZFMEs3T2luRkhkVXNmRkx4RVMyR2hjOUEzMXIyZU9Pak9KOU9WcVJCWEFnQUd2MVZhUWxIaWtwOHczMHRkaWwtZC1ua3VWU0R0ZEhIXzdBUENXN3NlT2pkYlJzdWg?oc=5",
+    "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeXJ6M1BBSUhtQzZvYjBxY3dTM0F6QndQcjRBcW9GNFlobENIUWR2Y0s0VkVRSUpoaGJLbTNscTRzMnNlbXJ2NDZ3OGF0N2U4UEk0R1ZGemJ2dkh3RzI3Ul96UllZdFBDd25tUGVpTWFKRk9RYmtHTXhHQ0s4SVYzYXNoMXZNWFV5bzlTWEVtNGZLSkRHelFJNVVoVms3UEdrOGxEdHNCb1NkMzdzRVlqaG1FOWw5WmV0?oc=5",
+    "https://news.google.com/rss/articles/CBMizAFBVV95cUxPTE1VbVlxUDJTUVBsSURZMjM2dm9GRDVLU1pfRFFGVmI2QXVjT2VqcmhJU2FiVXVsbXpfSi1jd1ZQTHhmdHlheWw2RmFEM2g0THhMWVhaOVk1N0t0c1ctWUpyOG16eTB1anNHV2Y0azZsTnQ4N1doalZwbWxJamFyQ2VSbVpkb0dqRVZtcUlMVUJNSVdnNHdRbGF6RHNrUldzSWtVRFJHb0hsNlBqbk04UTlOaFJkQWRHY0JiUzFxZUFITmZ2U1RvVGdWRzU?oc=5",
+    "https://news.google.com/rss/articles/CBMivAFBVV95cUxOYTY4RFdIclFSQnBSVVVkVUZ5enh4M1RFN0hjOW04aHh6ZDR4Y3dYTFQ5TUZKWVZwc1FRbWJzTk9xUE1CVjgxbHVURm5fTkxMZlhxb0tNQnpTQzdRQzZmcFBUOG1yaHdaOTVDb3NLRzJWa2F1VFBxY2IySUFMWUJtYWF6R1NqcVIyWnVEUG9uWDBZRF9KV05YNGgwQ2JsNFRiTHFEOFlOZXVlcVVaajE1aUNLNE9JLVRCWlFSaw?oc=5",
+    "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaFNGVjU3UzU0cjFEQUhzeDVsZGJsRUsxeTVNUHNRbldqRWtZVFhiejFqNEZFMEs3T2luRkhkVXNmRkx4RVMyR2hjOUEzMXIyZU9Pak9KOU9WcVJCWEFnQUd2MVZhUWxIaWtwOHczMHRkaWwtZC1ua3VWU0R0ZEhIXzdBUENXN3NlT2pkYlJzdWg?oc=5"
+   ],
+   "pub": "2026-11-07T05:18:07Z",
+   "first": "2026-11-07T08:00:14Z",
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iran Update, November 3, 2026",
@@ -2700,25 +2984,7 @@
    ],
    "pub": "2026-11-04T01:32:24Z",
    "first": "2026-11-04T06:32:28Z",
-   "last": "2026-11-07T08:00:14Z"
-  },
-  {
-   "title": "IRAN IN CONTROL: Iran Says Strait of Hormuz Will Remain Closed Until Conditions Are Met",
-   "outlets": [
-    "EnergyNow",
-    "EnergyNow.com",
-    "WANA News Agency",
-    "Latest news from Azerbaijan"
-   ],
-   "links": [
-    "https://news.google.com/rss/articles/CBMitwFBVV95cUxNQ3M0TXQ1MGdDNnhQSXJEM3dsNDlOZU1Remx0Y0htNURnNzlIVGNXR2h6MVBCNEZXWEFxT1lvbldPdnVGNS1TcUtaMktyZlRZY1ExQVQwdXVzTXJBUjREV0lRLXFHb1NaT2lKa182cndKb1ZrcWFwbEI1ajVZYlR6bjJfd2sxWk5fWmEtN180a21vcWlSZUoyZGNBU0VnazdRNlVPY0l0WU9jNmgwdnFHeUlYZUZURGM?oc=5",
-    "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVnh1U08wWE5DdnNueUtJX29mYzNhVUxQUlV1TUxxX3NHWEliaEVaeV9vdC1MUjNSLUVBVUdjWUkwTlI4a2ZRTl9NYjBTOFYyRG1qaVpWdV8zQ3I5a0V5Smt4ZGN6UTBrNjE0RnZwS09qRWRZTmJjLVB0Um43MmNLdjRoOXNHNjIydFRQMWNBZWpIT3hqXzhGVUdqYnQxUG1iT0pfMDZoelJUOWdmQnlwc09MQTZYYTRa?oc=5",
-    "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQU1p1VVVYN2h5ZXdpZWFYVEc5Q21LNk9QV0xLUG1XY0h3VWdxY0dvN2lXUkZsVWpwanM1eTU3SGtrX1o3akpvcVFNTDdHYWk0YVNQcUczMURza1lIWnAzdlhLaXV1U0czRHFsbEh5YWNRVFd2dVNEd3lldWpOVHl4UXhZOGtVdTZ1cWNBVHdFQUlqRUtCNnRNSnp5X2RvbWFKSVNNTi1ndloya0JSa0hSc3BFSmxhbnJ0MEt2UU0xOG15ZkhiNDJ6RHU3cHdmLXBHNlE?oc=5",
-    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSFljdU5wX01VaEFIVzl2X1RjLURLOWVzalhlTHpYanVYZVVVX19TSjZ3eE5sU3hNRzF4WVRxbnVfTnFWZXlqSm54RlJkako1aTNEUEdNTU4zeXRfU2lOanBwNDJMeU9WLVN0ZGRMaUlPX3JaSWNoTDVOWlNfWTZlOWxJNGhLNkRPamt4XzJ2TzBYQ3pqRXVCMndrMmp5ZmJWSU1EY2I5c3dZdw?oc=5"
-   ],
-   "pub": "2026-11-05T02:07:42Z",
-   "first": "2026-11-05T11:01:48Z",
-   "last": "2026-11-06T21:32:56Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Coalition forces intercept Houthi ballistic missiles targeting Najran",
@@ -2754,7 +3020,7 @@
    ],
    "pub": "2026-11-06T19:00:13Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Trump again claims Israel wouldn't exist if he 'did not stop Iran from having a nuclear weapon'",
@@ -2772,43 +3038,7 @@
    ],
    "pub": "2026-11-06T18:16:10Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-07T08:00:14Z"
-  },
-  {
-   "title": "Iran war latest: Qatar says mediation efforts between US and Iran continue",
-   "outlets": [
-    "thenationalnews.com",
-    "The Straits Times",
-    "Deccan Herald",
-    "The Express Tribune"
-   ],
-   "links": [
-    "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaFNGVjU3UzU0cjFEQUhzeDVsZGJsRUsxeTVNUHNRbldqRWtZVFhiejFqNEZFMEs3T2luRkhkVXNmRkx4RVMyR2hjOUEzMXIyZU9Pak9KOU9WcVJCWEFnQUd2MVZhUWxIaWtwOHczMHRkaWwtZC1ua3VWU0R0ZEhIXzdBUENXN3NlT2pkYlJzdWg?oc=5",
-    "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeXJ6M1BBSUhtQzZvYjBxY3dTM0F6QndQcjRBcW9GNFlobENIUWR2Y0s0VkVRSUpoaGJLbTNscTRzMnNlbXJ2NDZ3OGF0N2U4UEk0R1ZGemJ2dkh3RzI3Ul96UllZdFBDd25tUGVpTWFKRk9RYmtHTXhHQ0s4SVYzYXNoMXZNWFV5bzlTWEVtNGZLSkRHelFJNVVoVms3UEdrOGxEdHNCb1NkMzdzRVlqaG1FOWw5WmV0?oc=5",
-    "https://news.google.com/rss/articles/CBMizAFBVV95cUxPTE1VbVlxUDJTUVBsSURZMjM2dm9GRDVLU1pfRFFGVmI2QXVjT2VqcmhJU2FiVXVsbXpfSi1jd1ZQTHhmdHlheWw2RmFEM2g0THhMWVhaOVk1N0t0c1ctWUpyOG16eTB1anNHV2Y0azZsTnQ4N1doalZwbWxJamFyQ2VSbVpkb0dqRVZtcUlMVUJNSVdnNHdRbGF6RHNrUldzSWtVRFJHb0hsNlBqbk04UTlOaFJkQWRHY0JiUzFxZUFITmZ2U1RvVGdWRzU?oc=5",
-    "https://news.google.com/rss/articles/CBMivAFBVV95cUxOYTY4RFdIclFSQnBSVVVkVUZ5enh4M1RFN0hjOW04aHh6ZDR4Y3dYTFQ5TUZKWVZwc1FRbWJzTk9xUE1CVjgxbHVURm5fTkxMZlhxb0tNQnpTQzdRQzZmcFBUOG1yaHdaOTVDb3NLRzJWa2F1VFBxY2IySUFMWUJtYWF6R1NqcVIyWnVEUG9uWDBZRF9KV05YNGgwQ2JsNFRiTHFEOFlOZXVlcVVaajE1aUNLNE9JLVRCWlFSaw?oc=5"
-   ],
-   "pub": "2026-11-07T05:18:07Z",
-   "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
-  },
-  {
-   "title": "Qatar denies reports of failed US-Iran talks, says negotiations ongoing",
-   "outlets": [
-    "Iran International",
-    "Middle East Eye",
-    "Report.az",
-    "İlke Haber Ajansı"
-   ],
-   "links": [
-    "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAtSVNvSXVNNzVZbGhHNFdoVUJxTkFXZ3FPQnZlMEVUVEw2cy1YaEZSNk4zNEZ4REZBcFFNdnVSbTdtOFVYTFFiZ21tTFhOdWIxa1E?oc=5",
-    "https://news.google.com/rss/articles/CBMixgFBVV95cUxNbFNaVWdMMXphVFR6aE5YQmZmVnhVLS1VQlR3SmZHRi1JekNNXzA4WEZGckY4RERVQ2FtUE9rWFE1VmptZzRqWlh0dk9yaDYwSXFBRjF6Ri1EdzRjeEpDMFRvZmJNWmFCZm4xd19iblh6NXYwOGNMeGV4MXdDYURpWjlqLXJZUnpidlVmTFV3eVVUUlRaeXIwd1RtNWY4TDRscjZOMkZ1OXI3R2gyRlFFR1hETlhNMlZFS29rZmpzUXVmV1VEV2c?oc=5",
-    "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNS3hXeHMza01QWmQzSlU5VF9McTUxRXIzcVpWT2txYzdHcWVpRGpBWnpTZmJ6Y3Jma1ZkOC11OTNiZUQyTnA3V1JrX0xtYVVnYm1ncUlkUGlzeVRJRzltSG5SaTk3ZUNxRHg0RG1BZ2p4WjhrcnFtaFVCMmJwQmxrUXRLVTJaenVQ?oc=5",
-    "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTVE0LWc0NS1WbTJkZzNnMkZEVVlFRjl0cm1OME43YWR6Rk5wdXJya0hlbEdpaWFjOFVzWFZwZDI3OU1SM3hfZk5qRFBBMEtJeEZfa2RZUG1rWFE2Y0RnQTlXenoxTGpCeUlyX05aSC1xWHdqS1RRaGxpMFhFcHlsOURienVpZ0FmbVpZV2dNVmJjd0pPNmxlekkwTTJLcDJFNzlfdWhsamZHcmFrM3g2aUdpdTEyV2FocnY3eEJR?oc=5"
-   ],
-   "pub": "2026-11-06T22:40:16Z",
-   "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "The Strait of Hormuz and Iran’s Negotiations with the United States",
@@ -2824,7 +3054,7 @@
    ],
    "pub": "2026-11-02T14:48:48Z",
    "first": "2026-11-02T20:49:57Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Jordan Condemns Houthi Missile Attack Targeting Saudi Arabia’s Madinah",
@@ -2936,7 +3166,7 @@
    ],
    "pub": "2026-11-06T18:49:34Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Trump: U.S. Is 'Talking to Iran' and Doing 'Very Well' With Tehran",
@@ -2952,7 +3182,23 @@
    ],
    "pub": "2026-11-06T20:20:00Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "The US has struck Iran: two missiles hit the island of Qeshm",
+   "outlets": [
+    "UkrMedia News",
+    "The Times of Israel",
+    "Apa.az"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMie0FVX3lxTE9tdDlJYVFLNFI3a2FRdjJWZTRyR1FKQkZjWU5PMFlONzJaRFZ3X2syVmtrcFRLQXVqc3p6NGFwdEFIRlYweVU5dEFpOVRzU3pTcU9WYS1CYUNWcWZuYTJObEI1RnhrUXdUQW1YaEJCRlp6VndJekNRQk5rWQ?oc=5",
+    "https://news.google.com/rss/articles/CBMiowFBVV95cUxQT2w0R2pWTE40bmxYclBVUk1EY3h6bWJtMV82Z3dRLU41SmJ1QTVHLTNyUkJsTkhFTVJfaFR6TFJGTURWVmc0S0RNdjdXS2F2WHlKMFFNWHZzcVhuWEFrZXFtUUEyNGxwb0dWTzdIeEdLbHhBM3JNVmVXcXIycTZQTXpyaHZ3SWNBdXV0YWl6R0ZOTnprbG9RUExHYksyaXB2QXRn?oc=5",
+    "https://news.google.com/rss/articles/CBMikAFBVV95cUxNNWxpaDBmSEQxa2I4VmpPZ2wxNUdMcnoya3hPWjhPMUpvZ2wwVjhzMW8tSDVaTUJBUWg1YnA2Xy1CNzhDYXhaTkNPaFM1aVRQMW5TVkNhOENJUWNsNzBxQmw3c2JsTkpLNWhsbEdpa2RpQmY4UzI1aXg5QTZJVUhTdGpidEJTMFpjcXNYcUFib2E?oc=5"
+   ],
+   "pub": "2026-11-07T07:28:47Z",
+   "first": "2026-11-07T08:00:14Z",
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Coalition Intercepts, Destroys Houthi Ballistic Missile Fired at Madinah",
@@ -3092,7 +3338,7 @@
    ],
    "pub": "2026-11-06T10:32:43Z",
    "first": "2026-11-06T15:57:30Z",
-   "last": "2026-11-06T21:32:56Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Qatar, US discuss mediation efforts as Iran sets terms for talks",
@@ -3232,7 +3478,7 @@
    ],
    "pub": "2026-11-06T21:16:34Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Trump weighs fresh strikes on Iran amid talks",
@@ -3246,7 +3492,7 @@
    ],
    "pub": "2026-11-06T11:55:34Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Houthi Ballistic Missile Attack Leaves Civilian Casualties in Taiz",
@@ -3260,7 +3506,7 @@
    ],
    "pub": "2026-11-06T17:33:25Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Saudi Air Defense Shot Down Two Houthi Ballistic Missiles Over Najran",
@@ -3302,7 +3548,7 @@
    ],
    "pub": "2026-11-06T17:00:01Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US carries out another round of ‘minor’ strikes on Iran, Trump says",
@@ -3316,7 +3562,7 @@
    ],
    "pub": "2026-11-07T03:26:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iran’s hardliners see a weakened Trump – and want more to end the war",
@@ -3330,7 +3576,7 @@
    ],
    "pub": "2026-11-07T05:01:15Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iran’s army warns of possible renewed US attack despite reported naval withdrawal",
@@ -3344,7 +3590,7 @@
    ],
    "pub": "2026-11-06T21:45:06Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Crude gains on worries about renewed US attacks on Iran",
@@ -3358,7 +3604,7 @@
    ],
    "pub": "2026-11-06T21:47:47Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "'Will attack without geographic limits': Iran's fresh warning to US after Trump's threats | World News",
@@ -3372,7 +3618,7 @@
    ],
    "pub": "2026-11-07T03:58:52Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Trump Confirms US Strikes on Iran’s Qeshm Island, Calls Them “Minor”: who 7 outlets blamed",
@@ -3386,7 +3632,7 @@
    ],
    "pub": "2026-11-07T05:19:19Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iran's health ministry denies report on iodine distribution over US strike fears",
@@ -3400,21 +3646,21 @@
    ],
    "pub": "2026-11-06T22:36:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
-   "title": "The US has struck Iran: two missiles hit the island of Qeshm",
+   "title": "Iran says forces ‘stronger’ than at beginning of war",
    "outlets": [
-    "UkrMedia News",
-    "The Times of Israel"
+    "Arab News",
+    "France 24"
    ],
    "links": [
-    "https://news.google.com/rss/articles/CBMie0FVX3lxTE9tdDlJYVFLNFI3a2FRdjJWZTRyR1FKQkZjWU5PMFlONzJaRFZ3X2syVmtrcFRLQXVqc3p6NGFwdEFIRlYweVU5dEFpOVRzU3pTcU9WYS1CYUNWcWZuYTJObEI1RnhrUXdUQW1YaEJCRlp6VndJekNRQk5rWQ?oc=5",
-    "https://news.google.com/rss/articles/CBMiowFBVV95cUxQT2w0R2pWTE40bmxYclBVUk1EY3h6bWJtMV82Z3dRLU41SmJ1QTVHLTNyUkJsTkhFTVJfaFR6TFJGTURWVmc0S0RNdjdXS2F2WHlKMFFNWHZzcVhuWEFrZXFtUUEyNGxwb0dWTzdIeEdLbHhBM3JNVmVXcXIycTZQTXpyaHZ3SWNBdXV0YWl6R0ZOTnprbG9RUExHYksyaXB2QXRn?oc=5"
+    "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSUsxOFU0YU1CSnVRdHdrSzluMzU0QktlbHA3WDhxSndMLXI2Y3J2T0lCeXhrcXBYdXZKUzhUQnFpMUdLcDJXX2QyOTZKS0JFSzhOQTl4dEQwaDNnNTlFWDBsRWZEWE5LQmpoQnJtN1RYVzhSbXZhb3JuMEdoa1I3ZTJ2bnFQY0RfdDFHQW8yX0d4OW05eTdFaDJKOA?oc=5",
+    "https://news.google.com/rss/articles/CBMingFBVV95cUxOQ2dfYm5xMVZzVjdfblh1d0Q5dkxEbENuLTNVN05kUUNaUEFOc3F3LXRhdzRNa1J4Vkx1N29WR3lZRGhCSFZtRlBZeHItZ2Z0N2huZ3dzZEZBZDZIR25IbFB3eXNhMEJua0UtZlV6T2RsaHdZRURUMXp3Z3lqQWVJdW92dDBBekpKNGU3OTVBTDhReFRVQ2oxdUU0Vk1lUQ?oc=5"
    ],
-   "pub": "2026-11-07T07:28:47Z",
+   "pub": "2026-11-07T05:08:03Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Strait of Hormuz could reopen as part of Qatari plan for Iran nuclear inspections",
@@ -3428,7 +3674,35 @@
    ],
    "pub": "2026-11-07T07:00:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "Trump Says Strait of Hormuz Is Reopening as US Confirms New Strikes on Iran",
+   "outlets": [
+    "Khaama Press",
+    "Rudaw"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KcnpzMlBSMjU4cm45a0tCQURETHdpb2V2NVUtaF9CR0hqeTV0MEtBVDVNNzNWeWtMbklJODZGRjV3TG1lQXJkNm5uUjdTNWtwN1o5UWNKcGlnVVR3QWY3RjZXWEF2TmptTjhCVERTcw?oc=5",
+    "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9SUmF6TVdxTkNPbko0Z0JEaWwwMndpSWktN3F3d2NONVRGNGt6MXNMX2gwaFI3b2lUd3E0bzhjN3JEWmlta1I3cjRoYmlQT0ZzVlUwbmdNcWtGODZjQkE?oc=5"
+   ],
+   "pub": "2026-11-07T07:50:00Z",
+   "first": "2026-11-07T08:00:14Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "Two projectiles hit Iran’s Qeshm Island, Trump confirms",
+   "outlets": [
+    "The Siasat Daily",
+    "Al Jazeera"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMiigFBVV95cUxNcUlFVVVfSXFyTnFBOFFpZ1k0UkJ3WkVieGc1TFEwQkVrcGotQk9xZ3laanJnVDRWakJsUFlydjhENjBMcF8zZmlhVWF2ZXlJMXMyVThZVDZJV3k0c3AxdlJISTN2TVI5V1dpQVR2YmxuZUtJOGFiVjZyd05saHdUbFJ5aTBhaU9UYWfSAY8BQVVfeXFMTlJfNnlqOEF2N0VMOEFkYUgzSzNPcUd2QzlmdTAzby0yOXVBSXNWamNTN2l0UVh5d2stWTl3bDIzeVBtQUFyUE5BbGtiY1VqNXBFY1dIRmk0X3BUXzdDTkhqdDVEN1A1aE41YXliRnlmTElsWDBuWUpXQ1AyOXVveDluYVZOMmdZOTNrZHlCc0k?oc=5",
+    "https://www.aljazeera.com/news/2026/11/7/trump-confirms-new-us-strikes-on-irans-qeshm-island?traffic_source=rss"
+   ],
+   "pub": "2026-11-07T01:01:12Z",
+   "first": "2026-11-07T08:00:14Z",
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Security Alert: U.S. Mission Iraq – November 6, 2026",
@@ -3442,7 +3716,7 @@
    ],
    "pub": "2026-11-06T23:10:27Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Saudi Coalition Intercepts Drone Over Riyadh, Names No Launcher",
@@ -3456,7 +3730,21 @@
    ],
    "pub": "2026-11-07T04:15:15Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "Coalition: Interception and Destruction of Cruise Missile Launched by Houthi Terrorist Militia Towards Riyadh Region",
+   "outlets": [
+    "صحيفة سبق الإلكترونية",
+    "وكالة الأنباء السعودية"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMiS0FVX3lxTE93VzJuR1kyOGhBZk54Mi1nNFBMa2lJdEp6ZzdNZVlTRlp6ZkxwSTBaRGZzUDE0Z2FrUVZSQ2hkNXkzbW1NVmxONWljaw?oc=5",
+    "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9aT3I0TThmM1NmaEw0ZEFTWEdEM09MWHZFMHNiRFNuMUR6aUh5aDlkQXc4VHA0Zk1NU0gtR0hwWFNfQzh0Q29uWjFn?oc=5"
+   ],
+   "pub": "2026-11-07T07:05:06Z",
+   "first": "2026-11-07T08:00:14Z",
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "\"Can't wait for perfect moment\": Qatari PM urges US-Iran peace deal as Trump confirms talks; says 'doing well'",
@@ -3470,7 +3758,7 @@
    ],
    "pub": "2026-11-06T22:04:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Washington puts $20m bounty on information about Iran’s ‘obliterated’ nuclear programme",
@@ -3484,7 +3772,7 @@
    ],
    "pub": "2026-11-07T02:44:49Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US Announces $20 Million Reward and Possible Relocation for Information on Iran’s Nuclear Facilities and Key Personnel",
@@ -3498,7 +3786,35 @@
    ],
    "pub": "2026-11-07T05:22:50Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "Trump Says Iran's Nuclear Program Was 'Obliterated,' But His Administration Is Now Offering $20 Million t",
+   "outlets": [
+    "Benzinga",
+    "TradingView"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRlRJdG5HQWw1RFo2UFFXSDZNVm8weEVkdWhFZFpDU3A4WElMNnVXTTdvbDlqcXRoVkR2QldudTM4bkVCNjM2MjVjMTBQMXhXRFVMRHpsZWJFY0pXTzByYmYyVkpuMjQzcVY2cWF1NVBVeUEyMkxkT1lTVm1DdTNBYUNxMUhqY1Boa3JZbml0VzNiRDhjYXJfOU9yY3czRTA?oc=5",
+    "https://news.google.com/rss/articles/CBMilAJBVV95cUxPb1ctODBGOTZUNVdSbG81cEVsQnB4THJvMlNwTGRsYTZxdjdlRjdVQmIzWjJDN3VocHJoZEEwMjZjNVMwdWdlOU1BYVR5OHNPQ3ZBR0xjaDF0UEEzNERwSGZLQktSbFFHbWg4MmgyNHBtcDROa3podFRNbldJZEo2OF9Nc3ZRdXlFMEFDQnhPd0pVYkNORlpIeEtIRkpURDNPYW5FdkpYbFBrNnFWT3hlZGVVbHBjbW1jNDVhdVF0T0VWMXA2SFZ1SFR3Nkh5bmd0SnhJMkJBa2RPTEFVejA4YUctU0xNSElFMjg5SFNCdVlybTRtbDNaSEhZWFdOX1VSZUdVVzhQQ3NaX25BelJla0JXcHg?oc=5"
+   ],
+   "pub": "2026-11-07T07:02:11Z",
+   "first": "2026-11-07T08:00:14Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "The Coalition intercepts a Houthi cruise missile headed toward Riyadh",
+   "outlets": [
+    "صوت الإمارات",
+    "Crypto Briefing"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMivgFBVV95cUxPbHotZTFWcVBBTHd4LWtzLVVhM19OY2NxVjZqaUs3bHYtM3Ffc01sckZQNk43TXBwamF3dkFmM21vZlpWdDB4VHVVVlRyVFlfb2ZyU0ZDQlBncU5yZGI1cnJUSHNWdXV2QWtWd1dZY2JwYzUweE1kLWd6a2RGX2MtRU9LUGdsUE1XRGczeDExY0c3Y1JHT2oxd0w5NjVhUnZlTTh2NExZbW1oMm9LRDRBX0dnRmpVSVR5ZDRRYTZR?oc=5",
+    "https://news.google.com/rss/articles/CBMijgFBVV95cUxORzY4aGJTRHM0YTlWZkJwangtZVItNXloU0h1UzJfUWt3Y1FOYlRfNDJKYXdicWdadEhCb19nalhvMzZjdDh1aE1WLVREQWNSUVhmbEdzZEhKcWU0dEdianFMOUViaW9RS182eWxwaHMxWmN0OTNlemgtUTFHZGpQRWZ1SUcyX2x2UjF5bnlB?oc=5"
+   ],
+   "pub": "2026-11-07T08:32:08Z",
+   "first": "2026-11-07T08:51:25Z",
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Alternative Routes for Middle East Oil and Gas Due to Hormuz Disruption",
@@ -3510,7 +3826,7 @@
    ],
    "pub": "2026-11-05T16:17:24Z",
    "first": "2026-11-06T00:20:48Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US Navy Could Escort Vessels in Strait of Hormuz With International Coalition, Bessent Says",
@@ -3534,7 +3850,7 @@
    ],
    "pub": "2026-11-05T22:31:24Z",
    "first": "2026-11-06T07:57:20Z",
-   "last": "2026-11-06T21:32:56Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Russia to UAE, Iran steps up diplomacy amid Trump threats: What we know",
@@ -4086,7 +4402,7 @@
    ],
    "pub": "2026-11-06T15:21:26Z",
    "first": "2026-11-06T15:57:30Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "FILE PHOTO: Vessels at the Strait of Hormuz, as seen from Musandam",
@@ -4434,7 +4750,7 @@
    ],
    "pub": null,
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "مقام سازمان ملل: داعش ولایت خراسان با پهپاد و هوش مصنوعی مجهز شده است",
@@ -4470,7 +4786,7 @@
    ],
    "pub": "2026-11-06T21:25:00Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US urges Iranians to stay away from IRGC positions if tensions escalate",
@@ -4518,7 +4834,7 @@
    ],
    "pub": "2026-11-06T21:17:39Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US, Colombian troops kick off exercise amid the Pentagon’s Western Hemisphere pivot",
@@ -4542,7 +4858,7 @@
    ],
    "pub": "2026-11-06T21:25:17Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "اشتغال در آمریکا فراتر از انتظارها رشد کرد؛ احتمال افزایش دوباره نرخ بهره بیشتر شد",
@@ -4602,7 +4918,7 @@
    ],
    "pub": "2026-11-06T17:54:59Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "What’s Next for Iran Peace Talks After the Midterms",
@@ -4662,7 +4978,7 @@
    ],
    "pub": "2026-11-06T21:24:56Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "F-16s Build on Iran Combat Lessons to Prepare for China Threat",
@@ -5094,7 +5410,7 @@
    ],
    "pub": "2026-11-06T18:16:34Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Reported Russia–Iran S-400 Talks Raise Stakes for US and Israeli Airstrikes",
@@ -5166,7 +5482,7 @@
    ],
    "pub": "2026-11-06T21:13:00Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "How Hormuz shuttle voyages cut tanker capacity, boosting spot rates",
@@ -5466,7 +5782,7 @@
    ],
    "pub": "2026-11-06T20:52:40Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "No ‘paper commitments’: Iran seeks concrete US action before talks",
@@ -5670,7 +5986,7 @@
    ],
    "pub": "2026-11-06T22:44:02Z",
    "first": "2026-11-07T01:58:01Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Qatari PM says US willing to seek solution to war with Iran",
@@ -5682,7 +5998,7 @@
    ],
    "pub": "2026-11-07T07:10:37Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Trump confirms US strikes in Iran, insists ‘it’s not a war’",
@@ -5694,7 +6010,7 @@
    ],
    "pub": "2026-11-07T07:05:01Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "How the Iran war helped Democrats win the midterms",
@@ -5706,7 +6022,7 @@
    ],
    "pub": "2026-11-07T06:26:58Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Russia launches missile attack on Kyiv, injuring residents",
@@ -5718,7 +6034,7 @@
    ],
    "pub": "2026-11-07T05:11:03Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "گزارش حملات تازه به چند نقطه در جنوب ایران؛ ترامپ: تجهیزات ضدهوایی آنها را منهدم کردیم",
@@ -5742,7 +6058,7 @@
    ],
    "pub": "2026-11-07T07:07:35Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "آیا دوران حمایت بی‌چون‌وچرای آمریکا از اسرائیل رو به پایان است؟",
@@ -5754,7 +6070,7 @@
    ],
    "pub": "2026-11-07T05:17:33Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iran presses ahead with military, nuclear rebuilding despite economic woes",
@@ -5766,7 +6082,7 @@
    ],
    "pub": "2026-11-07T02:25:16Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "امارات: از جنگ ایران و آمریکا درس‌های زیادی گرفتیم؛ زیرساخت‌های انرژی خود را تقویت می‌کنیم",
@@ -5778,7 +6094,7 @@
    ],
    "pub": "2026-11-07T07:27:14Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "«انفجار کوتاه گرمای شدید» می‌تواند به تیغه‌های سخت‌بازیافت توربین بادی جان دوباره دهد",
@@ -5790,7 +6106,7 @@
    ],
    "pub": "2026-11-07T06:02:39Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Trump holds war planning meeting amid speculation of November 9 attack on Iran",
@@ -5802,7 +6118,7 @@
    ],
    "pub": "2026-11-07T04:41:50Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US Says it Struck Iranian Military Sites, Tehran Responds with Air Base Attack",
@@ -5814,7 +6130,7 @@
    ],
    "pub": "2026-11-06T22:21:22Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Netanyahu planned Iran attack before Israel polls; operative's mistaken tip to US stopped it: Report",
@@ -5826,7 +6142,7 @@
    ],
    "pub": "2026-11-07T06:55:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "'Complete demolition': Trump outlines 4-hour attack plan if Iran deal isn't reached by 8 p.m. ET Tuesday - ABC News",
@@ -5838,7 +6154,7 @@
    ],
    "pub": "2026-11-07T00:23:07Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "If Trump Resumes attacking Iran, US and Europe will Pay an Extreme Price",
@@ -5850,7 +6166,7 @@
    ],
    "pub": "2026-11-07T05:06:16Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US hits anti-arcraft device on Iran's Queshm Island in minor strikes, Donald Trump says",
@@ -5862,7 +6178,7 @@
    ],
    "pub": "2026-11-06T22:19:06Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Trump and Netanyahu Explored all Iran Options Including Attack, Israeli Official Says",
@@ -5874,7 +6190,7 @@
    ],
    "pub": "2026-11-06T22:08:33Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Ships loiter near subsea cables amid Iran’s warnings to Trump",
@@ -5886,7 +6202,7 @@
    ],
    "pub": "2026-11-06T22:41:37Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iran warns any new US attack will face response ‘without geographical limits’",
@@ -5898,7 +6214,7 @@
    ],
    "pub": "2026-11-06T22:00:02Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Trump signals Iran peace progress as Hormuz attacks threaten talks",
@@ -5910,7 +6226,7 @@
    ],
    "pub": "2026-11-07T04:41:10Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US warns Americans in Middle East of heightened threat from Iran-related attacks",
@@ -5922,7 +6238,7 @@
    ],
    "pub": "2026-11-07T00:28:51Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iran Is Handing Out Iodine Pills Near Pickaxe Mountain. Here’s What a Nuclear Strike There Would Actually Do.",
@@ -5934,7 +6250,7 @@
    ],
    "pub": "2026-11-07T00:35:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "U.S. Strikes Strategic Qeshm Island Amid Iran Talks",
@@ -5946,7 +6262,7 @@
    ],
    "pub": "2026-11-07T06:47:40Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Video: Iran's army says military doctrine shifting toward offensive strategy",
@@ -5958,7 +6274,7 @@
    ],
    "pub": "2026-11-06T23:19:54Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Trump says U.S. conducts \"minor attack\" on Iran",
@@ -5970,7 +6286,7 @@
    ],
    "pub": "2026-11-07T06:18:09Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "'Netanyahu Would Have Been Killed': Trump's Explosive Iran's Nuclear Attack On Israel Claim | Watch",
@@ -5982,7 +6298,7 @@
    ],
    "pub": "2026-11-07T05:20:21Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US Weighs November 9 Iran Strike as New Moon Nears",
@@ -5994,7 +6310,7 @@
    ],
    "pub": "2026-11-07T01:21:02Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US Plans for an Attack on Iran",
@@ -6006,7 +6322,7 @@
    ],
    "pub": "2026-11-06T22:36:48Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "They Knock Out...: Trump Nearly Admits Iranian Strike On US Military Near Qeshm Island Watch",
@@ -6018,7 +6334,7 @@
    ],
    "pub": "2026-11-07T05:56:31Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "‘Will Attack Without Geographic Limits’: Iran Warns US Of Strikes, Says Forces Stronger Than Before",
@@ -6030,7 +6346,7 @@
    ],
    "pub": "2026-11-07T05:59:19Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iodine pills and fallout warnings: is Iran preparing for a nuclear strike on Pickaxe mountain? | war | Videos",
@@ -6042,7 +6358,7 @@
    ],
    "pub": "2026-11-07T03:44:26Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Missile attack targets Iran’s Qeshm Island; Qatar denies failure of negotiations to end the war",
@@ -6054,7 +6370,7 @@
    ],
    "pub": "2026-11-07T07:41:55Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iran holds firm on seven demands",
@@ -6078,7 +6394,7 @@
    ],
    "pub": "2026-11-07T07:35:34Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iranian Military Claims Increased Strength and Motivation Amidst Conflict with US and Israel",
@@ -6090,7 +6406,7 @@
    ],
    "pub": "2026-11-07T04:35:20Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Pentagon says US troops are poised to strike Iran. Then 5 tankers are hit in the Strait of Hormuz",
@@ -6102,7 +6418,7 @@
    ],
    "pub": "2026-11-06T21:45:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "The US could attack Iran on the night of the new moon.",
@@ -6114,7 +6430,7 @@
    ],
    "pub": "2026-11-06T23:53:24Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Trump: \"Continued dialogue with Iran\"; decision on resuming attacks expected soon : Global : JKN",
@@ -6126,7 +6442,7 @@
    ],
    "pub": "2026-11-06T21:50:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iran threatens to attack US without 'geographic restrictions'",
@@ -6138,7 +6454,7 @@
    ],
    "pub": "2026-11-07T07:38:08Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Strike Iran Before Democrats Take Over? Trump Faces 8-Week Military Deadline",
@@ -6150,7 +6466,7 @@
    ],
    "pub": "2026-11-07T00:43:01Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Netanyahu and Mossad chief's pre-election Iran strike stopped by US.",
@@ -6162,7 +6478,7 @@
    ],
    "pub": "2026-11-07T07:14:03Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US-Israel-Iran War Latest News: Iran Says Military Is Stronger Than At Start Of War, Warns Of Immediate Response To Fresh Attacks",
@@ -6186,7 +6502,7 @@
    ],
    "pub": "2026-11-06T23:16:33Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Trump confirms ‘minor’ Iran strikes as US warns citizens of Houthi threats",
@@ -6198,7 +6514,7 @@
    ],
    "pub": "2026-11-07T05:46:31Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Trump Advisers Split Over Ending Iran War Or Resuming Strikes As Iran Delegation Heads To Qatar: 5 outlets compared",
@@ -6210,7 +6526,7 @@
    ],
    "pub": "2026-11-07T05:22:13Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "President Trump announces new US strike on Iran’s air defenses — The Guardian",
@@ -6222,7 +6538,7 @@
    ],
    "pub": "2026-11-07T03:31:17Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Trump threatens, Tehran hits back: Iran war edges towards another flare-up",
@@ -6234,7 +6550,7 @@
    ],
    "pub": "2026-11-07T07:57:03Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Trump Says U.S. Is Talking to Iran, Claims No Soldiers Killed in Six Months: how 8 outlets framed it",
@@ -6246,7 +6562,7 @@
    ],
    "pub": "2026-11-06T23:22:17Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "U.S. Forces Have Iran Strike Plans Ready, With Thousands on Standby",
@@ -6258,7 +6574,7 @@
    ],
    "pub": "2026-11-07T01:23:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Vance leads Iran peace push as Trump weighs fresh strikes, US offers $20 million for nuclear intelligence",
@@ -6270,7 +6586,7 @@
    ],
    "pub": "2026-11-07T06:34:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iran rebuilding missile sites, moving military infrastructure underground to evade strikes",
@@ -6282,7 +6598,7 @@
    ],
    "pub": "2026-11-07T05:00:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US strikes Iran's air defense systems",
@@ -6294,7 +6610,7 @@
    ],
    "pub": "2026-11-07T02:51:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Trump: US Launches New Strikes Against Iran",
@@ -6306,7 +6622,7 @@
    ],
    "pub": "2026-11-07T05:15:12Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US Carries Out Fresh Strikes on Iran, Targets Air Defence System",
@@ -6318,7 +6634,7 @@
    ],
    "pub": "2026-11-07T04:01:02Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Trump announced new strikes on Iran - US in 15 minutes...",
@@ -6330,7 +6646,7 @@
    ],
    "pub": "2026-11-07T04:51:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US Weighs Renewed Iran Strikes, Fox News Reports; No New Order Reported",
@@ -6342,7 +6658,7 @@
    ],
    "pub": "2026-11-07T04:39:30Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Trump Orders Fresh Strikes On Iran As Qatar Pushes For A Deal",
@@ -6354,7 +6670,7 @@
    ],
    "pub": "2026-11-07T05:43:43Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US-Israel-Iran War Latest News: Trump Confirms Fresh US Strikes On Iran, Says Air Defence System Destroyed",
@@ -6366,7 +6682,7 @@
    ],
    "pub": "2026-11-07T06:26:47Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US-Iran war - Two missiles hit Iran's Qeshm Island as Trump administration remains divided over conflict",
@@ -6378,7 +6694,7 @@
    ],
    "pub": "2026-11-07T03:10:38Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "\"Benefit Verification\": Trump Reveals Execution of \"Limited Strikes\" in Iran (Video)",
@@ -6390,7 +6706,7 @@
    ],
    "pub": "2026-11-07T07:14:23Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US strikes Iranian air defense in Qeshm, 1st since midterms",
@@ -6402,19 +6718,7 @@
    ],
    "pub": "2026-11-07T02:57:33Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
-  },
-  {
-   "title": "Iran says forces ‘stronger’ than at beginning of war",
-   "outlets": [
-    "Arab News"
-   ],
-   "links": [
-    "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSUsxOFU0YU1CSnVRdHdrSzluMzU0QktlbHA3WDhxSndMLXI2Y3J2T0lCeXhrcXBYdXZKUzhUQnFpMUdLcDJXX2QyOTZKS0JFSzhOQTl4dEQwaDNnNTlFWDBsRWZEWE5LQmpoQnJtN1RYVzhSbXZhb3JuMEdoa1I3ZTJ2bnFQY0RfdDFHQW8yX0d4OW05eTdFaDJKOA?oc=5"
-   ],
-   "pub": "2026-11-07T05:08:03Z",
-   "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Trump says US launched ‘minor’ strikes on Iran targeting ‘a little bit of an anti-aircraft device’",
@@ -6426,7 +6730,7 @@
    ],
    "pub": "2026-11-07T02:31:36Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US Central Command announces $20M reward for info on Iranian nuclear program",
@@ -6438,7 +6742,7 @@
    ],
    "pub": "2026-11-07T00:56:35Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Trump says 'there would be no Israel' if Iran was allowed nuclear weapon",
@@ -6450,7 +6754,7 @@
    ],
    "pub": "2026-11-07T01:04:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Analysis • Did Netanyahu forgo U.S. aid to Israel for Trump's political backing?",
@@ -6462,7 +6766,7 @@
    ],
    "pub": "2026-11-07T04:26:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iran says it will never allow US bases in region to be rebuilt - IRGC outlet",
@@ -6474,7 +6778,7 @@
    ],
    "pub": "2026-11-07T01:47:13Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Opinion | Is Trump Going To Double Down On His Strikes On Iran? The Signs Are There",
@@ -6486,7 +6790,7 @@
    ],
    "pub": "2026-11-07T07:24:28Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Qatar says its mediation between US and Iran continuing to prevent regional escalation",
@@ -6498,7 +6802,7 @@
    ],
    "pub": "2026-11-07T02:31:36Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iranian military claims it’s now ‘stronger’ than at start of war with Israel and US",
@@ -6510,7 +6814,7 @@
    ],
    "pub": "2026-11-07T02:31:36Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "How Far Have the U.S. and Iran Got Towards Ending the Iran War?",
@@ -6522,7 +6826,7 @@
    ],
    "pub": "2026-11-06T22:29:56Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US Treasury cuts off money exchanger MEXC over Iran, North Korea, Russia transactions",
@@ -6546,7 +6850,7 @@
    ],
    "pub": "2026-11-06T22:12:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iran says its military is ‘stronger’ now than when the war against US, Israel began in February",
@@ -6558,7 +6862,7 @@
    ],
    "pub": "2026-11-07T05:01:33Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "The Bibi Factor: Is Netanyahu’s political longevity good for India?",
@@ -6570,7 +6874,7 @@
    ],
    "pub": "2026-11-07T06:01:24Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Israeli army prepares to resume offensive in Lebanon if fighting with Iran resumes — Anadolu Agency",
@@ -6582,7 +6886,7 @@
    ],
    "pub": "2026-11-07T00:26:12Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iran is reviewing proposals focusing on Tehran’s nuclear program, officials say",
@@ -6594,7 +6898,7 @@
    ],
    "pub": "2026-11-06T22:46:29Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "us-israel-swift-strikes-plan-iran-trump-approval-nyt-2026 Archives",
@@ -6618,7 +6922,7 @@
    ],
    "pub": "2026-11-07T03:46:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iran claims forces stronger as US offers $20m info reward",
@@ -6654,7 +6958,7 @@
    ],
    "pub": "2026-11-06T22:06:22Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Trump says US 'could be an occupier' in Iran",
@@ -6666,7 +6970,7 @@
    ],
    "pub": "2026-11-07T04:11:12Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "New Report of Attack on Strait of Hormuz Shipping Fans fears of Threats to Oil Supplies",
@@ -6678,7 +6982,7 @@
    ],
    "pub": "2026-11-06T22:23:53Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Two Tankers Carrying Saudi Oil Attacked in Strait of Hormuz",
@@ -6690,7 +6994,7 @@
    ],
    "pub": "2026-11-06T23:05:19Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iran Has Laid About a Dozen Mines in Strait of Hormuz, Sources Say",
@@ -6714,7 +7018,7 @@
    ],
    "pub": "2026-11-06T22:36:03Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "ADNOC LNG Tanker Crosses Strait of Hormuz for First Time Since Iran War, Ship-Tracking Data Shows",
@@ -6738,7 +7042,7 @@
    ],
    "pub": "2026-11-06T22:55:24Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Strait of Hormuz Attacks Increase Marine War-Risk Insurance Concerns",
@@ -6750,7 +7054,7 @@
    ],
    "pub": "2026-11-07T00:00:36Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "UKMTO says 11 ships attacked in week to 4 Nov in Hormuz, Arabian Gulf",
@@ -6762,7 +7066,7 @@
    ],
    "pub": "2026-11-07T02:25:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Trump Says US and Iran Are Talking as Hormuz Mine Attacks Continue",
@@ -6774,19 +7078,7 @@
    ],
    "pub": "2026-11-07T06:23:16Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
-  },
-  {
-   "title": "Trump Says Strait of Hormuz Is Reopening as US Confirms New Strikes on Iran",
-   "outlets": [
-    "Khaama Press"
-   ],
-   "links": [
-    "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KcnpzMlBSMjU4cm45a0tCQURETHdpb2V2NVUtaF9CR0hqeTV0MEtBVDVNNzNWeWtMbklJODZGRjV3TG1lQXJkNm5uUjdTNWtwN1o5UWNKcGlnVVR3QWY3RjZXWEF2TmptTjhCVERTcw?oc=5"
-   ],
-   "pub": "2026-11-07T07:50:00Z",
-   "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Oil Steady as Investors Focus on Hormuz Flows After Peace Talks",
@@ -6798,7 +7090,7 @@
    ],
    "pub": "2026-11-06T22:56:39Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Hormuz not to be reopened until Iran’s 7 conditions are met",
@@ -6810,7 +7102,7 @@
    ],
    "pub": "2026-11-07T05:21:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Global gas supplies could tighten in winter amid unprecedented Strait of Hormuz supply shock: IEA",
@@ -6822,7 +7114,7 @@
    ],
    "pub": "2026-11-07T05:20:58Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "New US strikes on Iran raise fears of wider war as Tehran issues stark warning",
@@ -6834,7 +7126,7 @@
    ],
    "pub": "2026-11-07T02:05:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Windward tracked Iran-linked tankers near subsea cables — Ars Technica",
@@ -6846,7 +7138,7 @@
    ],
    "pub": "2026-11-07T02:07:18Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Lawmaker Says Iran Exempted Ships From Four Countries From Hormuz Restrictions",
@@ -6858,7 +7150,7 @@
    ],
    "pub": "2026-11-06T23:48:27Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "South Korea Military Mission to Protect Commercial Shipping in the Strait of Hormuz (China and Japan Fiddle)",
@@ -6870,7 +7162,7 @@
    ],
    "pub": "2026-11-07T02:19:44Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Oman, Iran seek \"resuming navigation\" through Hormuz \"without obstacles\" amid regional tensions",
@@ -6882,7 +7174,7 @@
    ],
    "pub": "2026-11-07T03:51:14Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Qatar Mediates US-Iran Talks Amid Strait of Hormuz Standoff",
@@ -6894,7 +7186,7 @@
    ],
    "pub": "2026-11-07T05:42:45Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US warns Iran against using Strait of Hormuz disruptions as economic leverage",
@@ -6906,7 +7198,7 @@
    ],
    "pub": "2026-11-06T22:44:39Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Blasts heard near Hormuz as two projectiles reportedly hit Qeshm Island",
@@ -6918,7 +7210,7 @@
    ],
    "pub": "2026-11-06T22:47:08Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "At Least 25 seafarers killed in Strait of Hormuz amid US-Iran conflict",
@@ -6930,7 +7222,7 @@
    ],
    "pub": "2026-11-06T22:16:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "IRGC Mocks CENTCOM Chief over Downed US Drones",
@@ -6942,7 +7234,7 @@
    ],
    "pub": "2026-11-07T06:49:39Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Shipping operators seek Houthi transit assurances as Red Sea risks persist",
@@ -6954,7 +7246,7 @@
    ],
    "pub": "2026-11-07T00:34:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Explosions Heard in Southern Iran; US Military Says Situation Is “Calm”",
@@ -6966,7 +7258,7 @@
    ],
    "pub": "2026-11-07T07:10:12Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iran Nuke Game Confuses US Trump In Biggest Dilemma; Clueless CENTCOM Now Offers $20 Mn Reward",
@@ -6978,7 +7270,7 @@
    ],
    "pub": "2026-11-07T04:40:11Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "U.S. Central Command Offers $20 Million for Iran Nuclear Intelligence",
@@ -6990,7 +7282,7 @@
    ],
    "pub": "2026-11-07T06:16:42Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "‘Who Gave The Order?’: CENTCOM’s Brad Cooper Turns On Hegseth Amid Impeachment Row? Pentagon Shocker",
@@ -7002,19 +7294,7 @@
    ],
    "pub": "2026-11-06T22:31:31Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
-  },
-  {
-   "title": "Two projectiles hit Iran’s Qeshm Island, Trump confirms",
-   "outlets": [
-    "The Siasat Daily"
-   ],
-   "links": [
-    "https://news.google.com/rss/articles/CBMiigFBVV95cUxNcUlFVVVfSXFyTnFBOFFpZ1k0UkJ3WkVieGc1TFEwQkVrcGotQk9xZ3laanJnVDRWakJsUFlydjhENjBMcF8zZmlhVWF2ZXlJMXMyVThZVDZJV3k0c3AxdlJISTN2TVI5V1dpQVR2YmxuZUtJOGFiVjZyd05saHdUbFJ5aTBhaU9UYWfSAY8BQVVfeXFMTlJfNnlqOEF2N0VMOEFkYUgzSzNPcUd2QzlmdTAzby0yOXVBSXNWamNTN2l0UVh5d2stWTl3bDIzeVBtQUFyUE5BbGtiY1VqNXBFY1dIRmk0X3BUXzdDTkhqdDVEN1A1aE41YXliRnlmTElsWDBuWUpXQ1AyOXVveDluYVZOMmdZOTNrZHlCc0k?oc=5"
-   ],
-   "pub": "2026-11-07T01:01:12Z",
-   "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US warns Jerusalem embassy of Iranian plots to target American officials",
@@ -7026,7 +7306,7 @@
    ],
    "pub": "2026-11-06T23:18:58Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US issues fresh warning for Americans across Middle East over Houthi attacks, reported Iran threats | Hindustan Times",
@@ -7038,7 +7318,7 @@
    ],
    "pub": "2026-11-07T03:37:45Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US warns Middle East missions of Iranian threats",
@@ -7050,7 +7330,7 @@
    ],
    "pub": "2026-11-06T23:32:45Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US warns Americans in Mideast of Iran-backed Houthis, urges step",
@@ -7062,7 +7342,7 @@
    ],
    "pub": "2026-11-07T03:52:39Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Shafaq News..Saudi forces intercept Houthi missile over Riyadh",
@@ -7074,19 +7354,7 @@
    ],
    "pub": "2026-11-07T06:53:06Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
-  },
-  {
-   "title": "Coalition: Interception and Destruction of Cruise Missile Launched by Houthi Terrorist Militia Towards Riyadh Region",
-   "outlets": [
-    "صحيفة سبق الإلكترونية"
-   ],
-   "links": [
-    "https://news.google.com/rss/articles/CBMiS0FVX3lxTE93VzJuR1kyOGhBZk54Mi1nNFBMa2lJdEp6ZzdNZVlTRlp6ZkxwSTBaRGZzUDE0Z2FrUVZSQ2hkNXkzbW1NVmxONWljaw?oc=5"
-   ],
-   "pub": "2026-11-07T07:05:06Z",
-   "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Arab League Condemns Houthi Missile Aimed at Madinah",
@@ -7098,7 +7366,7 @@
    ],
    "pub": "2026-11-07T03:00:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Saudi air defenses intercept ballistic missile, drone in Riyadh region",
@@ -7110,7 +7378,7 @@
    ],
    "pub": "2026-11-06T21:30:27Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Riyadh targeted twice as Saudi Arabia intercepts Houthi threats",
@@ -7122,7 +7390,7 @@
    ],
    "pub": "2026-11-07T07:52:52Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "\"We Hope To Reach Good Agreement\": Qatar Expresses Optimism On US-Iran Talks",
@@ -7134,7 +7402,7 @@
    ],
    "pub": "2026-11-07T04:56:33Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Qatar rejects reports claiming PM said US-Iran talks had failed",
@@ -7146,7 +7414,7 @@
    ],
    "pub": "2026-11-07T04:16:36Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Qatar denies PM's remarks misrepresented US-Iran talks | Tap to know more | Inshorts",
@@ -7158,7 +7426,7 @@
    ],
    "pub": "2026-11-07T07:11:32Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Qatar dismisses 'misleading' claims US, Iran failed to reach deal, says talks ongoing",
@@ -7170,7 +7438,7 @@
    ],
    "pub": "2026-11-07T05:04:03Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Qatar rejects reports on PM-FM’s remarks as “false and misleading”, says U.S.-Iran talks continue",
@@ -7182,7 +7450,7 @@
    ],
    "pub": "2026-11-06T22:41:24Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iran considers Qatar-mediated nuclear talks proposal, raising possibility of resuming dialogue with US",
@@ -7194,7 +7462,7 @@
    ],
    "pub": "2026-11-07T00:14:36Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Qatar responds to false claims about PM's remarks on US-Iran talks",
@@ -7206,7 +7474,7 @@
    ],
    "pub": "2026-11-07T03:36:11Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US and Iran discuss plan to launch nuclear talks immediately… Qatar mediates in final push : Global : JKN",
@@ -7218,7 +7486,7 @@
    ],
    "pub": "2026-11-07T06:25:03Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US Puts $20 Million Bounty On Iran Nuclear Secrets As Qatar Pushes For Deal",
@@ -7230,7 +7498,7 @@
    ],
    "pub": "2026-11-07T02:33:17Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Qatar Clarifies PM's Remarks on US-Iran Talks, Dismisses Online 'Distortions'",
@@ -7242,7 +7510,7 @@
    ],
    "pub": "2026-11-07T04:06:09Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Qatar proposal raises hopes of renewed Iran-US nuclear talks",
@@ -7254,7 +7522,7 @@
    ],
    "pub": "2026-11-07T03:34:43Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US-Israel-Iran War Latest Live Updates: Why Is US Offering $20 Million For Information On Iran’s Nuclear Programme As Qatar Makes Fresh Push For Talks?",
@@ -7266,7 +7534,7 @@
    ],
    "pub": "2026-11-07T06:06:42Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Trump Reports Progress in US-Iran Talks as Qatar Intensifies Mediation Amid Hormuz Dispute",
@@ -7278,7 +7546,7 @@
    ],
    "pub": "2026-11-06T22:29:13Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US, Iran move towards Possible Peace Deal as Qatar brokers Key Nuclear Talks",
@@ -7290,7 +7558,7 @@
    ],
    "pub": "2026-11-07T07:41:21Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Three-Urgency Bill on Iran’s Withdrawal from NPT Awaits Parliament Speaker’s Approval for Floor Debate",
@@ -7302,7 +7570,7 @@
    ],
    "pub": "2026-11-07T07:37:22Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Rewards for Justice seeking info on Iran's nuclear program",
@@ -7314,7 +7582,7 @@
    ],
    "pub": "2026-11-07T01:00:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US puts $20M bounty on tips about Iran's nuclear sites and scientists",
@@ -7326,7 +7594,7 @@
    ],
    "pub": "2026-11-07T06:38:47Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US announces $20 million reward for intel on Iran's nuclear program amid diplomatic tensions",
@@ -7350,7 +7618,7 @@
    ],
    "pub": "2026-11-07T03:08:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "State Department offers $20M reward for Iran nuclear secrets despite Trump's claims of destruction",
@@ -7362,19 +7630,7 @@
    ],
    "pub": "2026-11-07T04:43:12Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
-  },
-  {
-   "title": "Trump Says Iran's Nuclear Program Was 'Obliterated,' But His Administration Is Now Offering $20 Million t",
-   "outlets": [
-    "Benzinga"
-   ],
-   "links": [
-    "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRlRJdG5HQWw1RFo2UFFXSDZNVm8weEVkdWhFZFpDU3A4WElMNnVXTTdvbDlqcXRoVkR2QldudTM4bkVCNjM2MjVjMTBQMXhXRFVMRHpsZWJFY0pXTzByYmYyVkpuMjQzcVY2cWF1NVBVeUEyMkxkT1lTVm1DdTNBYUNxMUhqY1Boa3JZbml0VzNiRDhjYXJfOU9yY3czRTA?oc=5"
-   ],
-   "pub": "2026-11-07T07:02:11Z",
-   "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "US announces $20 million bounty, offers possible relocation for details on Iran's nuclear sites, scientists",
@@ -7386,19 +7642,7 @@
    ],
    "pub": "2026-11-07T04:17:00Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
-  },
-  {
-   "title": "US offers up to $20 million for information on Iran’s nuclear program — NDTV World",
-   "outlets": [
-    "UA.NEWS"
-   ],
-   "links": [
-    "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdUJ0RWM2M3hGdi01amwzanRvWGZ5UWpPaVA2WHQ2SDdUSW5fbXpKTzFVRGltUnBMM21zbXlmQjZhWEJqb3pESUFXa29qVlN0bUxnS25CcDJTSVJGQlRjWW8zSWVETy1PeHdIcS14SDU0cUxQdmNPUXBGdmswOWdMUzhkbFRBZjZjckVMLXl0ZDdram1zSkpteEFNejhpZWpCOE8ydDFlT19qZW9hcHg5N1A2WXZPZw?oc=5"
-   ],
-   "pub": "2026-11-07T02:35:19Z",
-   "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
   },
   {
    "title": "Iran Distributes Anti-Radiation Pills As Trump Threatens To 'Destroy The Rest Of The Country'",
@@ -7410,7 +7654,271 @@
    ],
    "pub": "2026-11-07T07:10:15Z",
    "first": "2026-11-07T08:00:14Z",
-   "last": "2026-11-07T08:00:14Z"
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "سپاه: محدودیت برد موشک‌ها برداشته شده است؛ گزارش‌ها از حملات شبانه به جنوب ایران",
+   "outlets": [
+    "BBC Persian"
+   ],
+   "links": [
+    "https://www.bbc.co.uk/persian/live/cjg477wl2dg2t?at_medium=RSS&at_campaign=rss"
+   ],
+   "pub": null,
+   "first": "2026-11-07T08:51:25Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "ترامپ: سامانه پدافندی «کوچک» ایران را منهدم کردیم؛ سپاه: محدودیت برد موشک‌های ما برداشته شد",
+   "outlets": [
+    "Euronews Persian"
+   ],
+   "links": [
+    "https://parsi.euronews.com/2026/11/07/trump-iran-air-defense-qeshm-missile-range-qatar-talks-2026"
+   ],
+   "pub": "2026-11-07T08:31:03Z",
+   "first": "2026-11-07T08:51:25Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "Can Attacks on Iran’s Infrastructure Bring Down the Government?",
+   "outlets": [
+    "WANA News Agency"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZW5CWGM5N09SS2xkRnFGZnNkaXNNQ19YUjhtNWFrQ3hOM2hFR202aXRJVmpTSnVlSWxBSmpJMUQ4QzJ0NzdXWGQ4WExkMFNFNkFObFNYdU1VRUlHNW8xSlJLODYyek5DNW1qX0UyX290S1pHdWNzd01OZ0NadVdpSmlpdXZKTGlw?oc=5"
+   ],
+   "pub": "2026-11-07T08:27:02Z",
+   "first": "2026-11-07T08:51:25Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "IMO Says 25 Seafarers Killed in Hormuz Since US-Iran War Began",
+   "outlets": [
+    "https://houseofsaud.com/"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMiY0FVX3lxTE94YmFocUVQSEpNak5qNDZURVBCdVJzVWtfTmlneWM4cGlFVmVKQ2g0YXlfQU9wNzVrd0xxaEN5LUNDdWhVenNVR0JfRDNyQ1BTMlE4bnZRRE5iR1M2SFZtTHFnMA?oc=5"
+   ],
+   "pub": "2026-11-07T07:56:33Z",
+   "first": "2026-11-07T08:51:25Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "Iran: ‘Stronger than at the start of the war’. New US attack on Qeshm Island",
+   "outlets": [
+    "Il Sole 24 ORE"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTTRGVnZVT2UweUxZUG1tRFMwRFU4d0tJNHJuVHc1cFV0MjRuaTdBd0I3dlRFMTVvRzZEbFJVeVFMcFpENll2cnlicElQck5qdjJkSzk1cDZ5TTlDTmZVSW1xRlhLNzk0UzdwczdLT0V2NzVacFVyOHF6a2ZzRG5pazBMV095WXlBU3dNZUNNNFVEWHhPa3RZSzJxQnZaX0liM2cxXzFxVm9kY0wtOXRaMHpB?oc=5"
+   ],
+   "pub": "2026-11-07T00:12:35Z",
+   "first": "2026-11-07T08:51:25Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "The US confirms airstrikes targeting Iranian air defense systems.",
+   "outlets": [
+    "Vietnam.vn"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMif0FVX3lxTE1Ra0dUSE1GSW0wSTZiUGg4alBlcVRSNTY0S2p6UW1MOGtPZHdwWnVtY1lVNk9LTGZNdkdtMHlLaEN3emRzaEZhWENTQnVBdVpzV0l1QkZWZDA2Ql8zdWt2UDI2ekVxbWRiWWZjd051akJ5N1FCX1F0X0hjamp5SFU?oc=5"
+   ],
+   "pub": "2026-11-07T08:10:18Z",
+   "first": "2026-11-07T08:51:25Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "The US confirms airstrikes against Iran, missiles strike strategic island of Qeshm.",
+   "outlets": [
+    "Vietnam.vn"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaDVMXzR4QnI2OEVoaERncUhxTWJpQ254d19vVm9zV2JmTF9vQno1T0ZZRk9IREwwNUVfdkRQQnhIQUlJeDVKMndJV2NESVJ3S3dBX3dRZlBOR2owWWxJS0x3Qm5FUTJwUkdYQWdtRFF5VlNjNl8zVXAySzJNQnJlVlJHdkdrczhTVkxBQ1FGYlVOdkJIX1E?oc=5"
+   ],
+   "pub": "2026-11-07T08:16:13Z",
+   "first": "2026-11-07T08:51:25Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "Iran's Qeshm Island was hit by missiles again following a US airstrike earlier this week.",
+   "outlets": [
+    "Vietnam.vn"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMinwFBVV95cUxQOVpoaUNTaDZZRTljX2R0bTZ2dDRacDJLQUF3WThiWGJJSGVSQUx5MDQ0Z0Y2bUplOUFMbDZURkxqcjhIdURwM0g4SG52NXZldy1pYW5YWWFNTnZtR0ZMZDNEU2RTejUxY3JrZ2N1VGVxUGxIc2p4WEZpeEtQSHZ2ZF9UT1YxNU9uWE43R3FRX20zYnBuVG1yb1R5bTk1eWM?oc=5"
+   ],
+   "pub": "2026-11-07T08:06:09Z",
+   "first": "2026-11-07T08:51:25Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "Qatar Says US-Iran Mediation Continues as Reports Emerge of Missile Strikes on Qeshm Island",
+   "outlets": [
+    "Cyprus Inform"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSDJPRTVIQWRyOUdrYWRreHhoZ19kQkdnVk5SNE5vWnNyVV9BV2wxTUpLR2toeWg3SHEtR3B3eXdkUlJCdlc2bVBmZ0pJejNXVkZ5eDlsckw2M095S3BxQldmTGh1YVhqb3VpRUFtVmJDbUhGeWJvaXNTbGRyRjJDUFliRy0zdU9JLUUycndlRVA0MGdza1NrXzc2Rk9DTTNGZmRhYTlZRTJFc1F4S2hBZElqd3hBYmFoTHZOQ1NRcUx4d3BVUXc?oc=5"
+   ],
+   "pub": "2026-11-07T07:58:06Z",
+   "first": "2026-11-07T08:51:25Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "Iranian island hit by missiles; Tehran claims to have shot down US plane.",
+   "outlets": [
+    "Vietnam.vn"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWEsyZlhWYkV5bG9iSHYyalRabTVsMTVfMkVUMGFyN09OUmlGUXRWdFJDV2JjbDlUQzhBZUtXbm1panV6QVFCRnA2LXNuZlJNenEtcUotRDhleEs2b0RrOU9HdF90TS1iTklLZS14YjNQZ0pSTXZzWmpmZkZFcm41ZFVRZkk?oc=5"
+   ],
+   "pub": "2026-11-07T08:06:08Z",
+   "first": "2026-11-07T08:51:25Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "U.S. military carries out new limited strikes on Iran",
+   "outlets": [
+    "NBC News"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMimAFBVV95cUxONS03bnllYUlGZGk4ckpGT0NNbkVucEZRT0FfeFlhbzZpbXp0aV95cFJ0bFI3LUYtN2RmT2Vta3ZOM2d2QWNOU2VFNGJha1I4SzFuZGotc1NGQXRvbTJhS255a0tfMWZCODNtMzVSOGJwWkM1OGVJZ3JpeUFRb1A5cUVhN21IZl9pWkdROTFzYXlRSEh1TldVeg?oc=5"
+   ],
+   "pub": "2026-11-07T06:17:41Z",
+   "first": "2026-11-07T08:51:25Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "Trump Says U.S. Carried Out 'Minor' Strikes on Iranian Air Defense System",
+   "outlets": [
+    "Haaretz"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMihgJBVV95cUxPRW10U0p5WnlEZFM3VFVQeExYaFlJRHp2a1ZKak5FYjd3R1N0ZS1TNGZCb0E1RllBVkRzYmFndDM3SHpJYWZpMDM2Uk4zNGJ4eks2ay0yd0RDck9nZ1hmeXlLbkFBaWtFemw4R3FZcFFjNWJpN0d3ck5XbXZkd1E1bDd1X0Z1X3oxajVIZmR4X3lOZGJSSERENzFWQ1JUdVRwajREN0lhMzFNYlZlYkR3VUphWWtSckZndXU4bGMta0RFbG5NeHlreXJyZW9yUWx1WTFIVlRzRVVxdHFrOGJpVE1wZGs3QkxFQU9hNWswTVhwNDN0VlFJSGtHODgxX1NqV0JNdGR3?oc=5"
+   ],
+   "pub": "2026-11-07T07:42:00Z",
+   "first": "2026-11-07T08:51:25Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "Shafaq News..Iran claims 260+ aircraft downed in US-Israel war",
+   "outlets": [
+    "شفق نيوز"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMiggFBVV95cUxPY0xFNWlhQjlfaDBPUlRZdl9vZmNhRmgzd19iZ2x6VDljbVA0ZEJEOGdIM1VackMyNWgxTERQaTZJUWZPcVIzeTlsd0JvQ0owY0tLOHZSN2x1SExwUS1ydF9odlJyWmpuQUVUWVB4RXBITWtGMHB2WDlDVTY2RnBiejJR?oc=5"
+   ],
+   "pub": "2026-11-07T07:53:18Z",
+   "first": "2026-11-07T08:51:25Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "Israel Readies Lebanon Offensive if Iran Fighting Resumes",
+   "outlets": [
+    "Menafn"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMikAFBVV95cUxQdnc1SHdyNVlYREJSd19VN1BsSzFtTjZzOUxOdWxnT1E3enlpQ014b2FaZDJkVXM1b0xTdy1MQ015M2FZMHRncjFYUWh2UVRYYU9jTzdOTGRNQzNPcjhDQWZ6QlNobk9KZ0xIUjhjWmVkTm5IMGFBcGw5dTJ4LXpiVTdPNWtMaVhOUTczT1ppMmE?oc=5"
+   ],
+   "pub": "2026-11-07T08:19:33Z",
+   "first": "2026-11-07T08:51:25Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "US offers €17m for details on Iran's nuclear programme",
+   "outlets": [
+    "RTE.ie"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMieEFVX3lxTE9hNU5EbDNXTi15S1BmMHJTaC13NVpxUHh6UExUbTk0Tk1TbEhLNmxUTlJpeWx1QnZwSENqcWZiRnpicGJMOGVBdU5HekFWbmJOMVR6U1d6WlhPS25XTFZEdTVfcDNzNDNmdHhVOUsxX1J3bmE3TlIzWA?oc=5"
+   ],
+   "pub": "2026-11-07T08:15:00Z",
+   "first": "2026-11-07T08:51:25Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "Iranian Forces ‘Stronger’ Than At Beginning Of War — Army Spokesman",
+   "outlets": [
+    "Channels Television"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVF9leXVGNkQzbFlaNDM0eDJDUHdJN0hhcGV3eHJHN0RSeVRyUm1zOEVwc2MzRVNOdzVXVGg3aW1FZ09yNF9ZS1lHMG5lOEt5THM0cXB5UGhxRmJ4N09FMHcyUkhhcmtpaUE2NHNRY3gwa1NubnRpeXVyY0o5TjNjX25qcFhweXc4VmJ2QkI2anYyX240VTh1QTBGMGQ1cHBUdlJVbQ?oc=5"
+   ],
+   "pub": "2026-11-07T06:32:56Z",
+   "first": "2026-11-07T08:51:25Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "Vessels Crossing Strait of Hormuz rop to 5 Per Day Over Weekend",
+   "outlets": [
+    "EnergyNow.com"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWDVVc3NmUUgyRnhCMkE5UXQyaC1mTTI0cWdxemRZc25ha0o0NldQRmVNWThBeFF6X29KQ3ZmaUN3RDlUZHVGUlMybF9PZjBtSFFEUmdmVFltTXlRY0NJYjdla3FYSkkzSFp3MU1YTDJYRUNWWHNWOW00T0x5X0ZZQkZfOS04bjBKbDg0RDJGS2psT24tRnJybTJR?oc=5"
+   ],
+   "pub": "2026-11-06T22:40:25Z",
+   "first": "2026-11-07T08:51:25Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "Tankers Pass Strait of Hormuz on First Day of US Blockade, Data Shows",
+   "outlets": [
+    "EnergyNow.com"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSDhQN2x1THE4VEhycTZKbWQ3RE9qeXVHZE9oVkkwWGhTeUNUZ1JxQ3ZtMTZFa3o5RW1HS2VUWGg0d0hrSFZQVjRTOUVrX004MWJKQkN5U0Q1SVZWM3NPVUl5N1pYYmNiYVdrRkFVRVFRYjZQQVZuSmwzOS1DNWk1U2pEc1R3dExFbW5CYVVlQURYY1ZhV0JOalNhYUUyZkZY?oc=5"
+   ],
+   "pub": "2026-11-06T22:27:56Z",
+   "first": "2026-11-07T08:51:25Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "Tehran vows a 'limitless' response and sets conditions for navigation in Hormuz, coinciding with Washington offering financial rewards",
+   "outlets": [
+    "جريدة القدس"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMisgFBVV95cUxNRnVtWkxwWWxuVF9iRUdXUWNzeFE1UEcxRDB3M3FCWHd3TlBLS1BTVnRXNUIyWmtRVncySzQ5RWdtSDc1ZlRIV1VNYm1hUWQ0X196WmdCd1hWMjNkQ1ZuRU1EM0pfRE8yaFQyZlBkZ3k0VEFhU1ZEVk15aDZKeXBlX1hKU1JxalZvRHZ3QXFLcy1pYVZ2QklTeS03M0d2dTRQZk9oNzRGRHVwejlmZWxHOGJn?oc=5"
+   ],
+   "pub": "2026-11-07T08:25:32Z",
+   "first": "2026-11-07T08:51:25Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "The United States is offering up to $20 million for information about Iran’s nuclear program",
+   "outlets": [
+    "Українські Національні Новини (УНН)"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTHUwRWJTRGFaVkY3clZnRXA1N25Zd0QyQl9ieGd0Vl80ME9SMWZJTkgyQ2E5S1RVejVELWRKYV9Qd1FTVU1xSlp3c0NKeVRVTWRDRG9VajM5dXp2bWhwaDhOMThRUGwycTVieFU0QzViTDFycURGTTVUaHhUWWtxWTJ6dnJ5MTRSeWxJVllGY0pWV1FPOXdWT0FFT3ItT2cwbVlzaWdRWlXSAacBQVVfeXFMTWFqc2tIZm40bjJuajZMVC1tMlU4b1pHSzFyVmstMEsyTTVuMTNhMEstNjA4Q2VLMGlnZk0waGk5UkZhM2N6MElyWl9vdXU0VDlfNHdoQ0owT2dYVDdMN3F2LWcwMW0tQnpaVzRmRE4xN2x3QklYOTNuV1dlZmxZakVmRFozQnBndzhOaW1DYzU1Z0dQbHhlU0lhRk5RWEJKb2U0VTZiMW8?oc=5"
+   ],
+   "pub": "2026-11-07T07:32:34Z",
+   "first": "2026-11-07T08:51:25Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "Piers Morgan gives blunt response to $20m US reward for intel on Iran's nuclear program",
+   "outlets": [
+    "The Mirror"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbkI0X3pJcm5MNkNWOHNmM1RfSU5iWGhDeGpRcVhrRl81T25nbDlDQWJ5LXN1WlRNUi1xWTdsbGJERGpsaXpUZi10dktsbnBQRmlaQmNab0I4dTJEaWkxN0hoNzFDcHpZUFh2M3ZoYXk2WlprRTk2VzRIYTZ6QWpzdzMxNmhvdDh5WXpyS0ZR0gGOAUFVX3lxTE1uQjRfeklybkw2Q1Y4c2YzVF9JTmJYaEN4alFxWGtGXzVPbmdsOUNBYnktc3VaVE1SLXFZN2xsYkREamxpelRmLXR2S2xucFBGaVpCY1pvQjh1MkRpaTE3SGg3MUNwellQWHYzdmhheTZaWmtFOTZXNEhhNnpBanN3MzE2aG90OHlZenJLRlE?oc=5"
+   ],
+   "pub": "2026-11-07T07:18:00Z",
+   "first": "2026-11-07T08:51:25Z",
+   "last": "2026-11-07T08:51:25Z"
+  },
+  {
+   "title": "US Israel Iran War Latest News: Iran Reportedly Distributes Iodine Tablets Near Nuclear Sites As Trump Threatens Fresh Strikes",
+   "outlets": [
+    "The Sunday Guardian"
+   ],
+   "links": [
+    "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOMnJlczBqOVE1NTExX3lpc2F1U1ozUlhNTjZRajluYkk0NnVEa3lvdU52cFAtSE5wRkdka2JyWmFUTi0wR2wzQnVqU3RDTE9EZk1KV0hYR2lhcVJXWHNobnUzN2FmLVBCR1pZUl9CSmlrTHF6clZPZFNvM0hLREVxRlVfYXBTVU50U191aUlkeU4ySTYyLUh5bGdJMW10YzM1aVBQUEN6M3BlbkdLN3VmdzJSNEIzdnpJUGpoYlRlR1dPbHJPQjJiUlN3VDRqeklUWE9hYU9MMEhwanRPNF9oY0J6QVRsLTdBYjgzNnZhUm5OZHloNktDbVpBSXhyNkHSAYQCQVVfeXFMTVBMWmtaUlpxV1RBZlBkdmNGVTIzSWxPMlZxckhxNGh6VDJmdUpPc1hVUzR6dUs2NUdhcUZQUHd5WTh3N0tPUWV5NHBpV3l4WjdiT3RhS0hnZDJUQXM3c3F4U2VBVHBXakRlUFNDSmNuSmVQX2llMExRRUxOdTUwNllsRFV3em45S1VBNUJBbjFvU0dEb3Zxc3E4T3pMM3dKQmR2cllNeTlxSlBiQXFyb25WVlZHT1dHenEwQVhwQ3lfNFlGZ0lvc0dSeEVvelh4NHZpVS0ySGxGa1c0bzkwZDBsLWFjMk8xZ01wVm9CQnNKLWl6ZUhKZUg4OHpVUHdsNWxLM1Y?oc=5"
+   ],
+   "pub": "2026-11-07T08:05:27Z",
+   "first": "2026-11-07T08:51:25Z",
+   "last": "2026-11-07T08:51:25Z"
   }
  ],
  "telegram_meta": {
@@ -7418,6 +7926,564 @@
   "channels_failed": []
  },
  "telegram": [
+  {
+   "ch": "irna_1313",
+   "id": 470795,
+   "t": "2026-11-07T08:52:02Z",
+   "text": "قضاوت تیم داوری ایران در لیگ نخبگان آسیا 🔹 کنفدراسیون فوتبال آسیا از قضاوت تیم داوری ایران در هفته پنجم لیگ نخبگان آسیا (منطقه شرق) خبر داد. https://irna.ir/xjYGp8 @IRNA_1313",
+   "emoji": "",
+   "link": "https://t.me/irna_1313/470795",
+   "relevant": true
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429551,
+   "t": "2026-11-07T08:51:11Z",
+   "text": "🔹 خبرنگاری بحران 🔹 ⏰ ⚫ 24,26,28 آبان ماه ۱۴۰۵ ساعت : ۱۶ تا ۱۹ 🧑🏻‍💻 با حضور جناب آقای حامد هادیان 🔻 راه های ثبت نام فقط از طریق شماره تماس های زیر میباشد: ☝ 02143051671 📱 09021900163 🖥 www.mehrinno.ir 💻 @mehrinno ادمین تلگرام : @mehrino_admin",
+   "emoji": "⏰",
+   "link": "https://t.me/mehrnews/429551",
+   "relevant": false
+  },
+  {
+   "ch": "jamarannews",
+   "id": 560163,
+   "t": "2026-11-07T08:49:23Z",
+   "text": "🔴 حکم اعدام محمدعارف شه‌بخش از عناصر مرتبط با گروهک تروریستی جیش‌الظلم اجرا شد مرکز رسانه قوه قضائیه: حکم اعدام محمدعارف شه‌بخش فرزند محمد‌اکبر، از عناصر مرتبط با گروهک تروریستی جیش‌الظلم که به اتهام بغی و محاربه از طریق حمله مسلحانه به پاسگاه انتظامی قلعه‌بید شهرستان خاش، منتهی ",
+   "emoji": "🔴",
+   "link": "https://t.me/jamarannews/560163",
+   "relevant": true
+  },
+  {
+   "ch": "iranintltv",
+   "id": 365790,
+   "t": "2026-11-07T08:49:21Z",
+   "text": "جمعی از ایرانیان مقیم شهر توکیو در کشور ژاپن، تجمعی را به مناسبت اهدای جایزه آزادی به مردم ایران برگزار کردند. شاهزاده رضا پهلوی قرار است روز شنبه در شهر فرانکفورت آلمان، به نمایندگی از مردم ایران جایزه آزادی ۲۰۲۶ بنیاد «فریدریش ناومان» را دریافت کند.",
+   "emoji": "",
+   "link": "https://t.me/iranintltv/365790",
+   "relevant": true
+  },
+  {
+   "ch": "irna_1313",
+   "id": 470793,
+   "t": "2026-11-07T08:49:11Z",
+   "text": "فاجعه میناب یادآور دردناک پیامدهای ویرانگر مناقشه است 🔹 مایسا الغریباوی نماینده هماهنگ کننده مقیم سازمان ملل متحد در تهران با تاکید بر اینکه فاجعه میناب یادآور دردناک پیامدهای ویرانگر مناقشه است، گفت: حفاظت از کودکان و مراکز آموزشی صرفاً یک ضرورت اخلاقی نیست؛ بلکه تعهدی بر اساس ح",
+   "emoji": "",
+   "link": "https://t.me/irna_1313/470793",
+   "relevant": true
+  },
+  {
+   "ch": "irna_1313",
+   "id": 470782,
+   "t": "2026-11-07T08:47:02Z",
+   "text": "#اختصاصی کاهش ازدواج و باروری 🔹 معاون برنامه‌ریزی، پایش و ارزیابی عملکرد ستاد ملی جمعیت با هشدار نسبت به کاهش نرخ باروری و افت آمار ازدواج در کشور گفت: نرخ باروری کل ایران به ۱.۳۴ رسیده و با تداوم روند فعلی، کاهش ازدواج، افزایش سن فرزندآوری و فاصله طولانی میان تولد فرزندان می‌توا",
+   "emoji": "",
+   "link": "https://t.me/irna_1313/470782",
+   "relevant": true
+  },
+  {
+   "ch": "akharinkhabar",
+   "id": 643104,
+   "t": "2026-11-07T08:46:45Z",
+   "text": "🔺 🔻 اولین تغییرات/ ترامپ رئیس دفترش را برکنار کرد 🔹 رئیس جمهور آمریکا رئیس دفتر ریاست جمهوری آمریکا، سوزان سامرال وایلز را برکنار کرد و استیون میلر را منصوب کرد 🔹 این خبر چند ساعت پس از آن صورت گرفت که ترامپ به شبکه سی‌بی‌اس نیوز گفته بود که قصد دارد پس از شکست‌های…",
+   "emoji": "",
+   "link": "https://t.me/akharinkhabar/643104",
+   "relevant": true
+  },
+  {
+   "ch": "Tabnak_ir",
+   "id": 278432,
+   "t": "2026-11-07T08:46:11Z",
+   "text": "🔺️ انفجارهای مهیب در ریاض و هشدار فوری آمریکا 🔹 دومین موج انفجارهای مهیب صبح امروز پایتخت عربستان را لرزاند و همزمان آمریکا دربارهٔ احتمال «حملات گسترده و بزرگ» در ساعات آینده به اتباعش در خاک عربستان هشدار داد 🔹 سخنگوی ائتلاف سعودی، ضمن تأیید حملهٔ موشکی به ریاض، مدعی شد یکی از ",
+   "emoji": "",
+   "link": "https://t.me/Tabnak_ir/278432",
+   "relevant": true
+  },
+  {
+   "ch": "ynetalerts",
+   "id": 77343,
+   "t": "2026-11-07T08:45:51Z",
+   "text": "🔴 ‏ארה\"ב: שני הרוגים בתאונת צניחה בקליפורניה למבזק המלא ב-ynet >",
+   "emoji": "🔴",
+   "link": "https://t.me/ynetalerts/77343",
+   "relevant": false
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429550,
+   "t": "2026-11-07T08:45:22Z",
+   "text": "از زنجیره شکست‌های ترامپ تا بلعیده شدن تدریجی غزه توسط رژیم اشغالگر 🔺 اواسط آبان از راه رسیده است؛ باران‌های پاییزی همراه با برگ‌های رنگارنگ چشم نواز روی خیابان‌ها نشسته‌اند، هوا رنگ سردتری به خود گرفته و شهر آرام‌آرام به استقبال روزهای کوتاه و بلندای شب‌های پاییزی می‌رود. در همی",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429550",
+   "relevant": false
+  },
+  {
+   "ch": "abualiexpress",
+   "id": 133206,
+   "t": "2026-11-07T08:45:17Z",
+   "text": "פיקוד מרכז של ארה\"ב הכריז על פרס של 20 מיליון דולר ואפשרות לרילוקשיין למי שימסור מידע על תוכנית הגרעין של איראן, מתקני גרעין, ציוד, אנשים קשורים ובכלל זה מדענים. כדי להגיב לכתבה לחצו כאן",
+   "emoji": "",
+   "link": "https://t.me/abualiexpress/133206",
+   "relevant": true
+  },
+  {
+   "ch": "jamarannews",
+   "id": 560162,
+   "t": "2026-11-07T08:44:23Z",
+   "text": "🔴 سدهای تهران چقدر آب دارند؟ سخنگوی آبفای تهران: 🔹 مجموع ذخایر ۵ سد تهران حدود ۳۴۰ میلیون مترمکعب است که ۲۷۰ میلیون مترمکعب آن در سدهای امیرکبیر و طالقان و ۷۰ میلیون مترمکعب در سامانه شرقی قرار دارد. 🔹 سد لار تنها ۳ درصد، لتیان ۲۹ درصد و ماملو حدود ۱۱ درصد پرشدگی دارند. در مجموع،",
+   "emoji": "🔴",
+   "link": "https://t.me/jamarannews/560162",
+   "relevant": true
+  },
+  {
+   "ch": "farsna",
+   "id": 473020,
+   "t": "2026-11-07T08:43:30Z",
+   "text": "انفجارهای مهیب در ریاض و هشدار فوری آمریکا 🔹 دومین موج انفجارهای مهیب صبح امروز پایتخت عربستان را لرزاند و همزمان آمریکا دربارهٔ احتمال «حملات گسترده و بزرگ» در ساعات آینده به اتباعش در خاک عربستان هشدار داد. 🔹 سخنگوی ائتلاف سعودی، ضمن تأیید حملهٔ موشکی به ریاض، مدعی شد یکی از مو",
+   "emoji": "",
+   "link": "https://t.me/farsna/473020",
+   "relevant": true
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429549,
+   "t": "2026-11-07T08:42:45Z",
+   "text": "📹 بخش ویژه معرفی آرا و نظریات رهبر شهید به دومین جایزه جهانی صدر اضافه شد 🔺 دبیر ارکان اجرایی جایزه جهانی صدر از اختصاص بخشی ویژه به آرا و نظریات نوآورانه رهبر شهید در دومین دوره این جایزه خبر داد و گفت: ایشان با طراحی و ارائه یک دکترین و نظام فکری، ظرفیت پاسخگویی به بسیاری از مس",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429549",
+   "relevant": false
+  },
+  {
+   "ch": "iranintltv",
+   "id": 365789,
+   "t": "2026-11-07T08:39:57Z",
+   "text": "🔻 محمد پنجعلی، کاپیتان پیشین پرسپولیس در حاشیه مراسم یادبود حمید علیدوستی در پاسخ به سوالی درباره وضعیت فوتبال ایران گفت: «الان وقت این سوال‌ها نیست، مردم گرفتار نان شب‌ هستند، فوتبالیست ۲۰۰ میلیاردی به دماغ هیچ‌کس نیست.» 🔹 او گفت: «فوتبالیست‌های امروزی بجای اینکه الگو باشند، شر ",
+   "emoji": "",
+   "link": "https://t.me/iranintltv/365789",
+   "relevant": true
+  },
+  {
+   "ch": "irna_1313",
+   "id": 470779,
+   "t": "2026-11-07T08:39:51Z",
+   "text": "مفتی جعفری لبنان: انتخابات آمریکا، ایران را در قلب موازنه‌های جهانی قرار داد 🔹 النشره:«احمد قبلان» مفتی جعفری لبنان تاکید کرد که ایران با تسلط بر تنگه هرمز و در نتیجه قدرت موشک‌های خود به بازیگری جهانی تبدیل شده و نتیجه انتخابات آمریکا، ایران را در قلب موازنه‌های جهانی قرار داد. ",
+   "emoji": "",
+   "link": "https://t.me/irna_1313/470779",
+   "relevant": true
+  },
+  {
+   "ch": "QudsNen",
+   "id": 244636,
+   "t": "2026-11-07T08:39:42Z",
+   "text": "Rainwater has flooded the tents of displaced Palestinians in Deir Al-Balah, central Gaza, leaving displaced families exposed to harsh weather conditions amid the ongoing lack of adequate shelter.",
+   "emoji": "",
+   "link": "https://t.me/QudsNen/244636",
+   "relevant": true
+  },
+  {
+   "ch": "irna_1313",
+   "id": 470777,
+   "t": "2026-11-07T08:37:51Z",
+   "text": "اروپا با شکست ترامپ در کنگره نفس راحت کشید 🔹 شکست سنگین دونالد ترامپ و جمهوری‌خواهان در انتخابات میان‌دوره‌ای کنگره آمریکا با استقبال محافل سیاسی اروپا روبه‌رو شده و امیدها را به مهار سیاست‌های جنگ‌طلبانه واشنگتن، پایان جنگ تجاوزکارانه علیه ایران و کاهش فشارهای اقتصادی ناشی از آن",
+   "emoji": "",
+   "link": "https://t.me/irna_1313/470777",
+   "relevant": true
+  },
+  {
+   "ch": "akhbarefori",
+   "id": 704844,
+   "t": "2026-11-07T08:37:13Z",
+   "text": "♦️ انفجارهای مهیب در ریاض و هشدار فوری آمریکا 🔹 دومین موج انفجارهای مهیب صبح امروز پایتخت عربستان را لرزاند و همزمان آمریکا درباره احتمال «حملات گسترده و بزرگ» در ساعات آینده به اتباعش در خاک عربستان سعودی هشدار داد. 📲 🇮🇷 ✊ @AkhbareFori | Link",
+   "emoji": "",
+   "link": "https://t.me/akhbarefori/704844",
+   "relevant": true
+  },
+  {
+   "ch": "abualiexpress",
+   "id": 133205,
+   "t": "2026-11-07T08:37:01Z",
+   "text": "הלילה דיווחו כלי תקשורת איראנים על תקיפה אמריקאית בשני טילים על האי קשם בדרום איראן. טראמפ נשאל האם ארה\"ב ביצעה אותן? תשובתו: \"אני לא רוצה לדבר על זה. אנחנו מבצעים תקיפות נקודתיות, אבל הם הקימו מתקן קטן להגנה נגד מטוסים, והשמדנו אותו בתוך כ-15 דקות, אולי אפילו חמש דקות\". כדי להגי",
+   "emoji": "",
+   "link": "https://t.me/abualiexpress/133205",
+   "relevant": true
+  },
+  {
+   "ch": "bbcpersian",
+   "id": 294934,
+   "t": "2026-11-07T08:35:00Z",
+   "text": "🔻 سخنگوی سپاه پاسداران: محدودیت برد موشک‌ها برای ما برداشته شده است سپاه پاسداران انقلاب اسلامی گفته است «محدودیت برد موشک‌ها» برای این نیرو برداشته شده است. خبرگزاری ایسنا می گوید حسین محبی، سخنگوی سپاه پاسداران انقلاب اسلامی، در پاسخ به این سوال که آیا محدودیت برد موشک‌های ایرا",
+   "emoji": "",
+   "link": "https://t.me/bbcpersian/294934",
+   "relevant": true
+  },
+  {
+   "ch": "akhbarefori",
+   "id": 704841,
+   "t": "2026-11-07T08:34:16Z",
+   "text": "♦️ عبدال السید: این جنگ احمقانه با ایران را تمام کنید؛ هیچ منطقی ندارد عبدل السید، نامزد دموکرات پیروز: 🔹 این جنگ باید فوراً متوقف شود و باید به همان دیپلماسی بازگردیم که از ابتدا تهدید هسته‌ای را مهار کرده بود. 🇮🇷 ✊ @AkhbareFori",
+   "emoji": "",
+   "link": "https://t.me/akhbarefori/704841",
+   "relevant": true
+  },
+  {
+   "ch": "iranintltv",
+   "id": 365788,
+   "t": "2026-11-07T08:33:50Z",
+   "text": "شماری از ایرانیان از شهر هامبورگ در کشور آلمان، شنبه ۱۶ آبان، برای پشتیبانی از حضور شاهزاده رضا پهلوی راهی شهر فرانکفورت در همین کشور شدند. شاهزاده رضا پهلوی قرار است روز شنبه در شهر فرانکفورت آلمان، به نمایندگی از مردم ایران جایزه آزادی ۲۰۲۶ بنیاد «فریدریش ناومان» را دریافت کند.",
+   "emoji": "",
+   "link": "https://t.me/iranintltv/365788",
+   "relevant": true
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429546,
+   "t": "2026-11-07T08:31:55Z",
+   "text": "📹 آبگرفتگی معابر شهر ایلام بر اثر شدت بارش باران 🔗 mehrnews.com/x3dxxD 📡 @mehrnews",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429546",
+   "relevant": false
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429547,
+   "t": "2026-11-07T08:31:55Z",
+   "text": "📹 بارندگی شدید در شوش 🔗 mehrnews.com/x3dxyF 📡 @mehrnews",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429547",
+   "relevant": false
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429548,
+   "t": "2026-11-07T08:31:55Z",
+   "text": "حکم اعدام عامل حمله تروریستی به پاسگاه قلعه‌بید خاش اجرا شد 🔺 زاهدان- حکم اعدام محمدعارف شه‌بخش، از عناصر مرتبط با گروهک تروریستی جیش‌الظلم که در حمله مسلحانه به پاسگاه قلعه‌بید خاش نقش داشت، پس از طی مراحل قانونی اجرا شد. 🔗 mehrnews.com/x3dxzy 📡 @mehrnews",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429548",
+   "relevant": true
+  },
+  {
+   "ch": "akharinkhabar",
+   "id": 643101,
+   "t": "2026-11-07T08:30:55Z",
+   "text": "🔺 🔻 صدای انفجار بندرخمیر ناشی از عملیات معدنی است فرمانداری بندرخمیر استان هرمزگان: 🔹 صدای انفجار در محدوده بندرخمیر مربوط به عملیات معدنی سیمان است؛ شهروندان آرامش خود را حفظ کنند. @Akharinkhabar | akharinkhabar.ir",
+   "emoji": "",
+   "link": "https://t.me/akharinkhabar/643101",
+   "relevant": true
+  },
+  {
+   "ch": "rotternews",
+   "id": 370156,
+   "t": "2026-11-07T08:30:25Z",
+   "text": "בעקבות המלחמה עם איראן: בחרין יוצאת למאבק נגד אנשי דת שיעים 📰 לאשכול המלא 📰",
+   "emoji": "",
+   "link": "https://t.me/rotternews/370156",
+   "relevant": true
+  },
+  {
+   "ch": "presstv",
+   "id": 213757,
+   "t": "2026-11-07T08:29:31Z",
+   "text": "Press TV pinned « Source: Any strike against Iran will trigger ‘immediate, unlimited and devastating’ response A senior Iranian security official has warned that any renewed strike against Iran will be grounds for an “immediate, unlimited, and devastating response,” stressing… »",
+   "emoji": "",
+   "link": "https://t.me/presstv/213757",
+   "relevant": true
+  },
+  {
+   "ch": "akhbarefori",
+   "id": 704833,
+   "t": "2026-11-07T08:28:15Z",
+   "text": "🎥 فراخوان خبرفوری؛ ایران زیبا 🔹 جلوه‌هایی از ایران زیبا در قاب نگاه شما؛ پاسخی به اظهارات توهین‌آمیز ترامپ که ایران را «زشت‌ترین و خشن‌ترین کشور جهان» توصیف کرده است. 📍 استان لرستان 🔹 الوفوری را دنبال کنید 👇 #ایران_زیبا @Alo_fori",
+   "emoji": "",
+   "link": "https://t.me/akhbarefori/704833",
+   "relevant": true
+  },
+  {
+   "ch": "indypersian",
+   "id": 182108,
+   "t": "2026-11-07T08:28:02Z",
+   "text": "♦️ علیرضا کاظمی، وزیر آموزش و پرورش جمهوری اسلامی، روز شنبه ۱۶ آبان در نشست «حفاظت از آموزش در برابر حملات آمریکا و اسرائیل» بر ضرورت استمرار فعالیت مدارس در شرایط بحرانی و جنگی تأکید کرد و گفت: «مدارس هیچ‌وقت، حتی در زمان جنگ، نباید بدون مجوز وزیر آموزش و پرورش تعطیل شوند.» کاظم",
+   "emoji": "",
+   "link": "https://t.me/indypersian/182108",
+   "relevant": true
+  },
+  {
+   "ch": "iranintltv",
+   "id": 365787,
+   "t": "2026-11-07T08:27:04Z",
+   "text": "کانال ۱۲ تلویزیون اسرائیل گزارش داد بنیامین نتانیاهو و رییس موساد پیش از انتخابات اسرائیل قصد اجرای عملیاتی علیه جمهوری اسلامی را داشتند؛ طرحی که با مخالفت مقام‌های امنیتی روبه‌رو شد و در نهایت آمریکا از آن مطلع شد. جزییات بیشتر با اشکان صفایی، خبرنگار ایران‌اینترنشنال @iranintlt",
+   "emoji": "",
+   "link": "https://t.me/iranintltv/365787",
+   "relevant": true
+  },
+  {
+   "ch": "farsna",
+   "id": 473017,
+   "t": "2026-11-07T08:27:01Z",
+   "text": "فرمانداری بندرخمیر استان هرمزگان: صدای انفجار در محدودۀ بندرخمیر مربوط به عملیات معدنی سیمان است؛ شهروندان آرامش خود را حفظ کنند. @Farsna - Link",
+   "emoji": "",
+   "link": "https://t.me/farsna/473017",
+   "relevant": true
+  },
+  {
+   "ch": "Tabnak_ir",
+   "id": 278431,
+   "t": "2026-11-07T08:27:01Z",
+   "text": "🔹️ فرمانداری بندرخمیر: صدای انفجار در محدوده بندرخمیر مربوط به عملیات معدنی سیمان است 🌐 Tabnak.ir @Tabnak_ir",
+   "emoji": "",
+   "link": "https://t.me/Tabnak_ir/278431",
+   "relevant": true
+  },
+  {
+   "ch": "abualiexpress",
+   "id": 133204,
+   "t": "2026-11-07T08:27:00Z",
+   "text": "חלון זמן קצר של 8 שבועות למבצע צבאי באיראן עומד בפני הנשיא טראמפ רשת NBC מדווחת: על נשיא ארה\"ב דונלד טראמפ מופעל לחץ לפתוח במערכה צבאית נרחבת חדשה נגד איראן בתוך שמונה שבועות, לפני שהדמוקרטים ישתלטו על הקונגרס בינואר. על פי הדיווח, שר ההגנה פיט הגסת' דוחף לחידוש התקיפות נגד איראן",
+   "emoji": "",
+   "link": "https://t.me/abualiexpress/133204",
+   "relevant": true
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429545,
+   "t": "2026-11-07T08:26:20Z",
+   "text": "حکم اعدام عنصر گروهک تروریستی جیش‌الظلم اجرا شد 🔺 حکم اعدام محمدعارف شه‌بخش فرزند محمداکبر، از عناصر مرتبط با گروهک تروریستی جیش‌الظلم که به اتهام بغی و محاربه از طریق حمله مسلحانه به پاسگاه انتظامی قلعه‌بید شهرستان خاش، منتهی به شهادت و مجروحیت پرسنل انتظامی شده بود، پس از طی مر",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429545",
+   "relevant": true
+  },
+  {
+   "ch": "presstv",
+   "id": 213756,
+   "t": "2026-11-07T08:26:02Z",
+   "text": "▶️ Press TV's Zainab Zakariyah says any renewed US-Israeli aggression against Iran could trigger a wider regional conflict and prompt Tehran to expand its retaliatory response. @PressTV",
+   "emoji": "",
+   "link": "https://t.me/presstv/213756",
+   "relevant": true
+  },
+  {
+   "ch": "jamarannews",
+   "id": 560160,
+   "t": "2026-11-07T08:24:23Z",
+   "text": "🔴 سخنگوی سپاه: شب گذشته یک هواگرد آمریکایی مورد هدف قرار گرفته است 🇮🇷 @jamarannews",
+   "emoji": "🔴",
+   "link": "https://t.me/jamarannews/560160",
+   "relevant": true
+  },
+  {
+   "ch": "akhbarefori",
+   "id": 704831,
+   "t": "2026-11-07T08:22:08Z",
+   "text": "♦️ نامزدهای احتمالی حزب دموکرات و حزب جمهوری‌خواه در انتخابات ۲۰۲۸ آمریکا 📲 🇮🇷 ✊ @AkhbareFori | Link",
+   "emoji": "",
+   "link": "https://t.me/akhbarefori/704831",
+   "relevant": true
+  },
+  {
+   "ch": "iranintltv",
+   "id": 365786,
+   "t": "2026-11-07T08:20:24Z",
+   "text": "قاسم روانبخش، نماینده قم در مجلس، به سایت دیده‌بان ایران گفت: «ما در این جنگ، پایگاه‌های منطقه‌ای کشورهای مختلف را هدف قرار دادیم. اگر کشورهای دوردست، از جمله کشورهای اروپایی مانند بریتانیا، بخواهند با آمریکا همراهی و به ما حمله کنند، می‌توانیم با افزایش برد موشک‌ها، حتی زیرساخت‌",
+   "emoji": "",
+   "link": "https://t.me/iranintltv/365786",
+   "relevant": true
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429544,
+   "t": "2026-11-07T08:19:57Z",
+   "text": "رئیس جمهور مصوبه جدید شرکت مجدد در آزمون دستیاری پزشکی را ابلاغ کرد 🔺 رئیس جمهور مصوبه جدید شورای عالی انقلاب فرهنگی درباره شرکت مجدد پذیرفته‌شدگان آزمون دستیاری پزشکی را برای اجرا ابلاغ کرد. 🔗 mehrnews.com/x3dxxg 📡 @Mehrnews",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429544",
+   "relevant": false
+  },
+  {
+   "ch": "Tabnak_ir",
+   "id": 278430,
+   "t": "2026-11-07T08:19:37Z",
+   "text": "بررسی تخصصی عملکرد ورزش ایران در بازی‌های پاراآسیایی ۲۰۲۶ ناگویا؛ 🔺 آسیب‌شناسی درباره افت کیفی ایران در بازی‌های پاراآسیایی/ تناقض، نبود تخصص و تصمیمات سلیقه‌ای 🔴 کاروان ورزش ایران در بازی‌های پاراآسیایی ۲۰۲۶ آیچی-ناگویا با چهار پله سقوط در جدول مدالی نسبت به دوره گذشته، در جایگا",
+   "emoji": "🔴",
+   "link": "https://t.me/Tabnak_ir/278430",
+   "relevant": true
+  },
+  {
+   "ch": "isna94",
+   "id": 412188,
+   "t": "2026-11-07T08:18:05Z",
+   "text": "حکم اعدام یکی از عوامل حمله مسلحانه به پاسگاه قلعه‌بید خاش اجرا شد قوه قضائیه اعلام کرد: 🔹️ حکم اعدام محمدعارف شه‌بخش فرزند محمداکبر، از عناصر مرتبط با گروهک تروریستی جیش‌الظلم که به اتهام بغی و محاربه از طریق حمله مسلحانه به پاسگاه انتظامی قلعه‌بید شهرستان خاش، منتهی به شهادت و ",
+   "emoji": "",
+   "link": "https://t.me/isna94/412188",
+   "relevant": true
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429543,
+   "t": "2026-11-07T08:16:20Z",
+   "text": "درازگوش‌ها و درازخرطوم‌ها در دشمنی با ایران یکی هستند 🔺 حافظه‌ی سیاسی ملت‌ها را طوری دست‌کاری می‌کنند که تحریم، نفوذ، بحران‌سازی قومیتی و داعش، به عنوان کارنامه‌ی سیاه دموکرات‌های آمریکایی در ذهن‌ها تداعی نشود./ درازگوش‌ها و درازخرطوم‌ها شاید رقیب انتخاباتی باشند، اما در دشمنی با",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429543",
+   "relevant": true
+  },
+  {
+   "ch": "jamarannews",
+   "id": 560159,
+   "t": "2026-11-07T08:16:10Z",
+   "text": "🔴 سخنگوی دولت: رقم کالابرگ بیش از ۳۰ میلیون نفر به افزایش ۵۰ درصدی رسیده است 🔹 دولت درصدد اصلاح شیوه توزیع حمایت‌های معیشتی است. /ایسنا 🇮🇷 @jamarannews",
+   "emoji": "🔴",
+   "link": "https://t.me/jamarannews/560159",
+   "relevant": false
+  },
+  {
+   "ch": "isna94",
+   "id": 412187,
+   "t": "2026-11-07T08:15:41Z",
+   "text": "نقشه‌های سیلاب شهر تهران تهیه شده است رئیس سازمان پیشگیری و مدیریت بحران شهر تهران: 🔹 سازمان هواشناسی به‌ندرت برای تهران هشدار قرمز صادر می‌کند و این هشدار نشان‌دهنده احتمال وقوع سیلاب با خسارت گسترده است؛ بنابراین باید موضوع را جدی گرفت. 🔹 مردم از ترددهای غیرضروری با خودروی شخصی",
+   "emoji": "",
+   "link": "https://t.me/isna94/412187",
+   "relevant": true
+  },
+  {
+   "ch": "akhbarefori",
+   "id": 704829,
+   "t": "2026-11-07T08:15:01Z",
+   "text": "♦️ فرمانداری بندرخمیر: صدای انفجار در محدوده بندرخمیر مربوط به عملیات معدنی سیمان است #اخبار_هرمزگان در فضای مجازی 👇 @akhbare_hormozgan",
+   "emoji": "",
+   "link": "https://t.me/akhbarefori/704829",
+   "relevant": true
+  },
+  {
+   "ch": "akharinkhabar",
+   "id": 643089,
+   "t": "2026-11-07T08:14:26Z",
+   "text": "🔺 🔻 محور ریلی جنوب در محدوده لرستان مسدود شد/ لغو تردد تعدادی از قطارهای مسافری راه‌آهن جمهوری اسلامی ایران: 🔹 در پی بارندگی‌های شدید و بی سابقه ناشی از شرایط جوی حاکم، چندین نقطه در چند بلاک از خطوط ریلی محور جنوب در محدوده استان لرستان، به دلیل آب‌شستگی دامنه کوه‌ها و ریزش سنگ ",
+   "emoji": "",
+   "link": "https://t.me/akharinkhabar/643089",
+   "relevant": true
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429540,
+   "t": "2026-11-07T08:14:22Z",
+   "text": "هشدار نارنجی هواشناسی برای کشاورزان خراسان شمالی صادر شد 🔺 بجنورد- مدیرکل هواشناسی خراسان شمالی با اشاره به صدور هشدار نارنجی گفت: کشاورزان، باغداران و دامداران استان باید برای مدیریت سرما و جلوگیری از خسارات احتمالی، توصیه‌های لازم را جدی بگیرند.. 🔗 mehrnews.com/x3dxyp 📡 @mehrne",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429540",
+   "relevant": false
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429541,
+   "t": "2026-11-07T08:14:22Z",
+   "text": "مدارس ابتدایی ایلام در نوبت بعدازظهر مجازی شدند 🔺 ایلام - فعالیت مدارس ابتدایی، مهدهای کودک و پیش دبستانی نوبت بعد از ظهر در ایلام مجازی شد. 🔗 mehrnews.com/x3dxz2 📡 @mehrnews",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429541",
+   "relevant": false
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429542,
+   "t": "2026-11-07T08:14:22Z",
+   "text": "مدارس و دانشگاه‌های ازنا و الیگودرز در نوبت عصر تعطیل شدند در پی شدت بارش‌های امروز و با تصمیم ستاد مدیریت بحران استان لرستان، فعالیت مدارس و دانشگاه‌های شهرستان‌های ازنا و الیگودرز در نوبت عصر تعطیل اعلام شد. 🔗 mehrnews.com/x3dxwJ 📡 @mehrnews",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429542",
+   "relevant": false
+  },
+  {
+   "ch": "Tabnak_ir",
+   "id": 278429,
+   "t": "2026-11-07T08:12:43Z",
+   "text": "🔺️ حکم اعدام عنصر گروهک تروریستی جیش‌الظلم و از عوامل حمله مسلحانه به پاسگاه قلعه‌بید خاش اجرا شد 🔹️ حکم اعدام محمدعارف شه‌بخش فرزند محمد‌اکبر، از عناصر مرتبط با گروهک تروریستی جیش‌الظلم که به اتهام بغی و محاربه از طریق حمله مسلحانه به پاسگاه انتظامی قلعه‌بید شهرستان خاش، منتهی ب",
+   "emoji": "",
+   "link": "https://t.me/Tabnak_ir/278429",
+   "relevant": true
+  },
+  {
+   "ch": "akharinkhabar",
+   "id": 643087,
+   "t": "2026-11-07T08:12:41Z",
+   "text": "🔺 🔻 حکم اعدام عضو گروهک جیش‌الظلم اجرا شد 🔹 حکم اعدام محمدعارف شه‌بخش فرزند محمد‌اکبر، از عناصر مرتبط با گروهک تروریستی جیش‌الظلم که به اتهام بغی و محاربه از طریق حمله مسلحانه به پاسگاه انتظامی قلعه‌بید شهرستان خاش، منتهی به شهادت و مجروحیت پرسنل انتظامی شده بود، پس از طی مراحل ق",
+   "emoji": "",
+   "link": "https://t.me/akharinkhabar/643087",
+   "relevant": true
+  },
+  {
+   "ch": "isna94",
+   "id": 412186,
+   "t": "2026-11-07T08:11:39Z",
+   "text": "فرمانداری بندرخمیر: صدای انفجار در محدوده بندرخمیر مربوط به عملیات معدنی سیمان است 🔹 شهروندان آرامش خود را حفظ کنند و به اخبار منتشره از سوی منابع غیررسمی توجه نکنند. isna.ir/xdXpQ7 @isna94",
+   "emoji": "",
+   "link": "https://t.me/isna94/412186",
+   "relevant": true
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429539,
+   "t": "2026-11-07T08:10:30Z",
+   "text": "شرایط تعویض پلاک خودروها تغییری نکرده است 🔺 سردار سیدتیمور حسینی، رئیس پلیس راهور فراجا، با اشاره به انتشار برخی اخباری در فضای مجازی درباره تغییر شرایط تعویض پلاک خودرو گفت: طی روزهای اخیر اخباری منتشر شده مبنی بر اینکه مالکان خودرو برای تعویض پلاک باید حتماً به همان مرکزی مراجع",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429539",
+   "relevant": false
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429538,
+   "t": "2026-11-07T08:09:42Z",
+   "text": "گفتگوی عراقچی با ۱۲ تن از وزرای خارجه منطقه؛ تاکید بر دفاع مشروع 🔺 سید عباس عراقچی در خصوص تحرکات دیپلماتیک روزهای اخیر در فضای مجازی نوشت: در ۴۸ ساعت گذشته در گفت‌وگوهای تلفنی جداگانه با ۱۲ نفر از همتایانم از کشورهای عمان، مصر، اردن، عربستان سعودی، قطر، قبرس، ترکیه، کویت، امارات",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429538",
+   "relevant": true
+  },
+  {
+   "ch": "farsna",
+   "id": 473015,
+   "t": "2026-11-07T08:09:33Z",
+   "text": "حکم اعدام عنصر گروهک تروریستی جیش‌الظلم و از عوامل حملهٔ مسلحانه به پاسگاه قلعه‌بید خاش سیستان‌وبلوچستان اجرا شد 🔹 حکم اعدام «محمدعارف شه‌بخش» فرزند محمد‌اکبر، از عناصر مرتبط با گروهک تروریستی جیش‌الظلم که به‌اتهام بغی و محاربه از طریق حملهٔ مسلحانه به پاسگاه انتظامی قلعه‌بید شهر",
+   "emoji": "",
+   "link": "https://t.me/farsna/473015",
+   "relevant": true
+  },
+  {
+   "ch": "alibk3",
+   "id": 40961,
+   "t": "2026-11-07T08:08:15Z",
+   "text": "سماع دوي انفجار في العاصمة اليمنية صنعاء.",
+   "emoji": "",
+   "link": "https://t.me/alibk3/40961",
+   "relevant": true
+  },
+  {
+   "ch": "jamarannews",
+   "id": 560158,
+   "t": "2026-11-07T08:04:23Z",
+   "text": "🔴 زیدآبادی: خشم و نارضایتی مردم حتی در گفت‌وگوهای روزمره افزایش یافته است احمد زیدآبادی، چهره سیاسی اصلاح‌طلب: 🔹 مردم با مشکلات عادی زندگی از جمله ترافیک و آلودگی هوا مواجه‌اند و برای حل این مسائل برنامه مشخصی وجود ندارد. 🔹 وعده‌های بزرگی درباره حل مشکلات از طریق جنگ مطرح می‌شود،",
+   "emoji": "🔴",
+   "link": "https://t.me/jamarannews/560158",
+   "relevant": false
+  },
+  {
+   "ch": "presstv",
+   "id": 213755,
+   "t": "2026-11-07T08:03:20Z",
+   "text": "▶️ Newly released footage captures the harrowing aftermath of US-Israeli attacks on Tehran’s residential Zarafshan neighborhood during the 40-day war. Red Crescent rescuers are seen pulling dozens of wounded residents alive from beneath the rubble. @PressTV",
+   "emoji": "",
+   "link": "https://t.me/presstv/213755",
+   "relevant": true
+  },
+  {
+   "ch": "isna94",
+   "id": 412183,
+   "t": "2026-11-07T08:03:01Z",
+   "text": "‌ کفش خارجی ۲۰ میلیونی خریدار دارد، کفش ایرانی نه! 🔹️ در شرایطی که برخی مصرف‌کنندگان برای خرید یک جفت کفش پارچه‌ای با برند خارجی تا۲۰ میلیون تومان هزینه می‌کنند، فروش کفش چرمی باکیفیت تولید داخل در محدوده ۱۴میلیون تومان نیز با دشواری مواجه است. 🔹️ وضعیتی که در کنار جهش قیمت مواد ",
+   "emoji": "",
+   "link": "https://t.me/isna94/412183",
+   "relevant": true
+  },
+  {
+   "ch": "iranintltv",
+   "id": 365785,
+   "t": "2026-11-07T08:00:39Z",
+   "text": "جمعی از ایرانیان مقیم شهر مالمو در کشور سوئد، در مسیر سفر به سوی شهر فرانکفورت، سرود «ای ایران» را همخوانی کردند. شاهزاده رضا پهلوی قرار است روز شنبه در شهر فرانکفورت آلمان، به نمایندگی از مردم ایران جایزه آزادی ۲۰۲۶ بنیاد «فریدریش ناومان» را دریافت کن",
+   "emoji": "",
+   "link": "https://t.me/iranintltv/365785",
+   "relevant": true
+  },
   {
    "ch": "irna_1313",
    "id": 470754,
@@ -9219,48 +10285,12 @@
    "relevant": true
   },
   {
-   "ch": "ynetalerts",
-   "id": 77333,
-   "t": "2026-11-07T01:59:46Z",
-   "text": "🔴 ‏פרגאווי: הקונגרס הדיח את הנשיא סנטיאגו - שנעצר למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77333",
-   "relevant": false
-  },
-  {
-   "ch": "irna_1313",
-   "id": 470658,
-   "t": "2026-11-07T01:52:04Z",
-   "text": "تناقض‌گویی و اعتراف آمریکا/ترامپ: در حال انجام حملات محدود به ایران هستیم 🔹 رئیس جمهوری ایالات متحده در تداوم تناقض‌گویی‌هایش، با بیان این ادعا که واشنگتن با ایران در حال جنگ نیست و در حال تعامل و گفت‌ وگو است، اعتراف کرد که آمریکا همچنان حملات محدودی را در ایران انجام می‌دهد. #ا",
-   "emoji": "",
-   "link": "https://t.me/irna_1313/470658",
-   "relevant": true
-  },
-  {
-   "ch": "indypersian",
-   "id": 182097,
-   "t": "2026-11-07T01:47:18Z",
-   "text": "♦️ شیخ محمد بن عبدالرحمن آل ثانی، نخست‌وزیر و وزیر خارجه قطر، روز جمعه، اعلام کرد که تلاش‌های میانجی‌گرانه دوحه برای جلوگیری از خارج شدن کنترل اوضاع در منطقه همچنان ادامه دارد. به گفته او، طی هفته‌های گذشته همکاری‌ها و اقداماتی با دولت ایالات متحده به منظور مهار تنش‌ها و کنترل وض",
-   "emoji": "",
-   "link": "https://t.me/indypersian/182097",
-   "relevant": true
-  },
-  {
    "ch": "geopolitics_prime",
    "id": 77418,
    "t": "2026-11-07T01:39:45Z",
    "text": "⚔️ We will never allow US to rebuild in the region — Iran's army Iranian Military Spokesperson Rear Admiral Akrami-Nia has issued a stark warning to the CENTCOM, claiming that the US military footprint in the Middle East has been effectively obliterated. He claimed more than 228 ",
    "emoji": "⚔",
    "link": "https://t.me/geopolitics_prime/77418",
-   "relevant": true
-  },
-  {
-   "ch": "irna_1313",
-   "id": 470656,
-   "t": "2026-11-07T01:36:01Z",
-   "text": "🕌 اوقات شرعی | اذان صبح به افق تهران امام علی(ع) می‌فرماید : قَد جَهِلَ مَن استَنصَحَ أعداءَهُ كسى كه از دشمنانش انتظار خيرخواهى داشته باشد، نادان است. @IRNA_1313",
-   "emoji": "",
-   "link": "https://t.me/irna_1313/470656",
    "relevant": true
   },
   {
@@ -9282,15 +10312,6 @@
    "relevant": true
   },
   {
-   "ch": "indypersian",
-   "id": 182096,
-   "t": "2026-11-07T01:28:31Z",
-   "text": "♦️ دونالد ترامپ، روز جمعه، با اشاره به حضور نظامی واشنگتن در آبراه‌های جنوبی ایران به خبرنگاران گفت: «تمام آنچه ما هستیم، شاید یک اشغالگر باشد؛ می‌توان گفت یک اشغالگر. چون می‌دانید ما چه می‌کنیم، ما تنگه هرمز را کنترل می‌کنیم و اکنون بیش از هر زمان دیگری در تاریخ تنگه هرمز نفت خا",
-   "emoji": "",
-   "link": "https://t.me/indypersian/182096",
-   "relevant": true
-  },
-  {
    "ch": "rnintel",
    "id": 68797,
    "t": "2026-11-07T01:27:59Z",
@@ -9298,24 +10319,6 @@
    "emoji": "⚡",
    "link": "https://t.me/rnintel/68797",
    "relevant": false
-  },
-  {
-   "ch": "mehrnews",
-   "id": 429480,
-   "t": "2026-11-07T01:26:27Z",
-   "text": "📹 قابی از تونل پرچم ۱۸ کیلومتری؛ از بلوار پیروزی تا میدان بسیج مشهد 🔗 mehrnews.com 📡 @Mehrnews",
-   "emoji": "📡",
-   "link": "https://t.me/mehrnews/429480",
-   "relevant": false
-  },
-  {
-   "ch": "VahidOnline",
-   "id": 79021,
-   "t": "2026-11-07T01:25:31Z",
-   "text": "دونالد ترامپ، روز جمعه، در پاسخ به پرسش خبرنگاران درباره گزارش‌های مربوط به حملات نظامی در جزیره قشم، این اقدام را تأیید کرد و گفت: «نمی‌خواهم درباره آن صحبت کنم. ما حملات جزئی انجام می‌دهیم.» رئیس‌جمهوری ایالات متحده با اشاره به استقرار سامانه‌های پدافندی جمهوری اسلامی ایران افز",
-   "emoji": "📡",
-   "link": "https://t.me/VahidOnline/79021",
-   "relevant": true
   },
   {
    "ch": "rotternews",
@@ -9327,57 +10330,12 @@
    "relevant": true
   },
   {
-   "ch": "irna_1313",
-   "id": 470655,
-   "t": "2026-11-07T01:07:38Z",
-   "text": "ادعای ترامپ: اجازه دستیابی ایران به سلاح هسته‌ای را نخواهیم داد 🔹 رئیس جمهوری آمریکا با تکرار ادعاهای خود در توجیه جنگ علیه ایران بار دیگر مدعی شد که واشنگتن اجازه دستیابی ایران را به سلاح هسته ای نخواهد داد. #ایرنا_جهان https://irna.ir/xjYGjH @IRNA_1313",
-   "emoji": "",
-   "link": "https://t.me/irna_1313/470655",
-   "relevant": true
-  },
-  {
-   "ch": "indypersian",
-   "id": 182095,
-   "t": "2026-11-07T01:07:33Z",
-   "text": "♦️ دونالد ترامپ، روز جمعه، در پاسخ به پرسش خبرنگاران درباره گزارش‌های مربوط به حملات نظامی در جزیره قشم، این اقدام را تأیید کرد و گفت: «نمی‌خواهم درباره آن صحبت کنم. ما حملات جزئی انجام می‌دهیم.» رئیس‌جمهوری ایالات متحده با اشاره به استقرار سامانه‌های پدافندی جمهوری اسلامی ایران ",
-   "emoji": "",
-   "link": "https://t.me/indypersian/182095",
-   "relevant": true
-  },
-  {
-   "ch": "irna_1313",
-   "id": 470654,
-   "t": "2026-11-07T00:57:11Z",
-   "text": "هشدار امنیتی آمریکا به شهروندان خود در خاورمیانه 🔹 وزارت امور خارجه آمریکا از شهروندان خود در سراسر خاورمیانه خواست که هوشیاری خود را افزایش دهند. #ایرنا_جهان https://irna.ir/xjYGjJ @IRNA_1313",
-   "emoji": "",
-   "link": "https://t.me/irna_1313/470654",
-   "relevant": true
-  },
-  {
    "ch": "QudsNen",
    "id": 244619,
    "t": "2026-11-07T00:51:20Z",
    "text": "\"You're dodging me here, Ro.\" Krystal Ball presses Rep. Ro Khanna on whether progressives will actually withhold their votes for Hakeem Jeffries as Speaker unless they secure firm commitments on Medicare for All, ending aid to Israel, and stopping an Iran war.",
    "emoji": "",
    "link": "https://t.me/QudsNen/244619",
-   "relevant": true
-  },
-  {
-   "ch": "ynetalerts",
-   "id": 77332,
-   "t": "2026-11-07T00:50:53Z",
-   "text": "🔴 ‏טראמפ: \"מדברים עם האיראנים, נראה מה יצא. השמדנו נשק נגד כלי טיס שהם בנו\" למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77332",
-   "relevant": false
-  },
-  {
-   "ch": "mehrnews",
-   "id": 429479,
-   "t": "2026-11-07T00:48:41Z",
-   "text": "تلاش‌های پشت‌پرده ونس برای توافق آتش‌بس جدید با ایران 🔺 ‏پایگاه خبری آکسیوس نوشت که جی‌دی ونس، معاون رئیس‌جمهور آمریکا تلاش‌های پشت‌پرده برای دستیابی به توافقی جدید با ایران با هدف برقراری آتش‌بس و ازسرگیری مذاکرات هسته‌ای را هدایت می‌کند. 🔗 mehrnews.com/x3dxqM 📡 @Mehrnews",
-   "emoji": "📡",
-   "link": "https://t.me/mehrnews/429479",
    "relevant": true
   },
   {
@@ -9399,24 +10357,6 @@
    "relevant": true
   },
   {
-   "ch": "indypersian",
-   "id": 182093,
-   "t": "2026-11-07T00:35:30Z",
-   "text": "♦️ بخش امور کنسولی وزارت امور خارجه ایالات متحده با صدور یک هشدار امنیتی از شهروندان آمریکایی حاضر در منطقه خاورمیانه خواست تا هوشیاری خود را به‌طور ویژه افزایش دهند؛ در این بیانیه تأکید شده است: «آمریکایی‌هایی که در حال حاضر در خاورمیانه به‌سر می‌برند باید با توجه به افزایش تهدی",
-   "emoji": "",
-   "link": "https://t.me/indypersian/182093",
-   "relevant": true
-  },
-  {
-   "ch": "mehrnews",
-   "id": 429477,
-   "t": "2026-11-07T00:35:10Z",
-   "text": "تصادفات مرگبار در محورهای ساوه چهار کشته و ۱۸ مصدوم بر جای ماند 🔺 ‏رئیس مرکز فوریت‌های پزشکی دانشکده علوم پزشکی ساوه از وقوع سه سانحه رانندگی در محورهای مواصلاتی این شهرستان خبر داد که در مجموع چهار کشته و ۱۸ مصدوم بر جای گذاشت. 🔗 mehrnews.com/x3dxp9 📡 @Mehrnews",
-   "emoji": "📡",
-   "link": "https://t.me/mehrnews/429477",
-   "relevant": false
-  },
-  {
    "ch": "rotternews",
    "id": 370140,
    "t": "2026-11-07T00:20:09Z",
@@ -9424,42 +10364,6 @@
    "emoji": "",
    "link": "https://t.me/rotternews/370140",
    "relevant": true
-  },
-  {
-   "ch": "alibk3",
-   "id": 40950,
-   "t": "2026-11-07T00:17:06Z",
-   "text": "صور الأقمار الصناعية ترصد تسربًا نفطيًا كبيرًا في مضيق هرمز",
-   "emoji": "",
-   "link": "https://t.me/alibk3/40950",
-   "relevant": true
-  },
-  {
-   "ch": "indypersian",
-   "id": 182091,
-   "t": "2026-11-07T00:13:14Z",
-   "text": "♦️ «ان‌بی‌سی نیوز» به نقل از دو مقام آمریکایی روز جمعه گزارش داد، مشاوران و مقام‌های دفاعی به دونالد ترامپ، رئیس‌جمهوری ایالات متحده، اعلام کرده‌اند که فرصت او برای آغاز حمله به ایران «محدود» و رو به پایان است و از او خواسته‌اند تا ظرف هشت هفته آینده، پیش از آغاز به کار کنگره جدی",
-   "emoji": "",
-   "link": "https://t.me/indypersian/182091",
-   "relevant": true
-  },
-  {
-   "ch": "mehrnews",
-   "id": 429475,
-   "t": "2026-11-07T00:11:20Z",
-   "text": "📹 حجت الاسلام سیدحسین آقامیری در تجمع میدان انقلاب: این دشمن تحت هیچ شرایطی دست از این جنگ برنخواهد داشت 🔗 mehrnews.com 📡 @Mehrnews",
-   "emoji": "📡",
-   "link": "https://t.me/mehrnews/429475",
-   "relevant": false
-  },
-  {
-   "ch": "mehrnews",
-   "id": 429474,
-   "t": "2026-11-07T00:09:43Z",
-   "text": "📹 بارون گریه کرد برای تو... مداحی در شب بارانی تجمع میدان انقلاب 🔗 mehrnews.com 📡 @Mehrnews",
-   "emoji": "📡",
-   "link": "https://t.me/mehrnews/429474",
-   "relevant": false
   },
   {
    "ch": "rotternews",
@@ -9480,96 +10384,6 @@
    "relevant": true
   },
   {
-   "ch": "mehrnews",
-   "id": 429472,
-   "t": "2026-11-06T23:50:46Z",
-   "text": "📹 اجرای گروه سرود فرشته‌های آسمانی در تجمع میدان انقلاب 🔗 mehrnews.com 📡 @Mehrnews",
-   "emoji": "📡",
-   "link": "https://t.me/mehrnews/429472",
-   "relevant": false
-  },
-  {
-   "ch": "mehrnews",
-   "id": 429471,
-   "t": "2026-11-06T23:47:45Z",
-   "text": "📹 فاطمیه خط مقدم ماست؛ شعرخوانی محمد حسین رحیمیان در تجمع میدان انقلاب 🔗 mehrnews.com 📡 @Mehrnews",
-   "emoji": "📡",
-   "link": "https://t.me/mehrnews/429471",
-   "relevant": false
-  },
-  {
-   "ch": "akhbarefori",
-   "id": 704776,
-   "t": "2026-11-06T23:42:35Z",
-   "text": "🚨 فریادِ کمک از میانِ زخم‌های دیابتی 🚨 ــــــــــــــــــــــــــــــــــــــــ تصور کنید هر قدمی که برمی‌دارید، با ترس و لرز همراه باشد؛ ترس از اینکه شاید، فقط شاید، این قدمِ بعدی، قدمِ آخر باشد... 😭 💔 «محمد» ۳۲ ساله، امروز در میانِ نبردِ تلخ با «زخم دیابتی» گرفتار شده است. اما ",
-   "emoji": "🚨",
-   "link": "https://t.me/akhbarefori/704776",
-   "relevant": true
-  },
-  {
-   "ch": "akhbarefori",
-   "id": 704775,
-   "t": "2026-11-06T23:38:27Z",
-   "text": "خبرفوری pinned « 🔴 خبرفوری/ ارتش: دقایقی قبل، یک فروند پهپاد MQ9 دشمن متجاوز آمریکایی، با آتش سامانه‌های نوین نیروی پدافند هوایی ارتش، تحت شبکه یکپارچه پدافند هوایی کشور، در آسمان قشم مورد اصابت قرار گرفت و منهدم شد. 🇮🇷 ✊ @AkhbareFori »",
-   "emoji": "🔴",
-   "link": "https://t.me/akhbarefori/704775",
-   "relevant": true
-  },
-  {
-   "ch": "indypersian",
-   "id": 182089,
-   "t": "2026-11-06T23:34:49Z",
-   "text": "♦️ سخنگوی کمیسیون امنیت ملی و سیاست خارجی مجلس شورای اسلامی با نقل روایتی از یکی از سفیران پیشین جمهوری اسلامی در سازمان ملل گفت جو بایدن، زمانی که سناتور بود، در دیداری با این سفیر گفته بود دموکرات‌ها و جمهوری‌خواهان درباره «ازبین‌رفتن» جمهوری اسلامی اختلافی ندارند و اختلاف آن‌ه",
-   "emoji": "",
-   "link": "https://t.me/indypersian/182089",
-   "relevant": true
-  },
-  {
-   "ch": "akhbarefori",
-   "id": 704774,
-   "t": "2026-11-06T23:33:19Z",
-   "text": "♦️ ترامپ و سندروم ناجی اسرائیل! ترامپ: 🔹 اگر اجازه می‌دادم ایران سلاح هسته‌ای داشته باشد، امروز اسرائیل وجود نخواهد داشت./اسرائیل از روی زمین محو می‌شد. 🇮🇷 ✊ @AkhbareFori",
-   "emoji": "",
-   "link": "https://t.me/akhbarefori/704774",
-   "relevant": true
-  },
-  {
-   "ch": "akhbarefori",
-   "id": 704773,
-   "t": "2026-11-06T23:29:40Z",
-   "text": "♦️ آمریکا هشدار امنیتی در چند کشور منطقه از جمله اراضی اشغالی، عربستان، امارات، قطر و بحرین را به‌روزرسانی کرد 🔹 این کشور از شهروندانش خواست برای احتمال اختلال در پروازها و بسته شدن حریم‌های هوایی آماده شوند. 🇮🇷 ✊ @AkhbareFori",
-   "emoji": "",
-   "link": "https://t.me/akhbarefori/704773",
-   "relevant": true
-  },
-  {
-   "ch": "akhbarefori",
-   "id": 704772,
-   "t": "2026-11-06T23:29:00Z",
-   "text": "♦️ ترامپ جنایتکار: اگر جلوی دستیابی ایران به سلاح هسته‌ای را نمی‌گرفتم، امروز اسرائیل و در واقع کل خاورمیانه وجود نداشتند 🔹 هیچ‌کس نمی‌خواهد این را بگوید، اما همه می‌دانند که این حقیقت دارد! #Devil 🇮🇷 ✊ @AkhbareFori | Link",
-   "emoji": "",
-   "link": "https://t.me/akhbarefori/704772",
-   "relevant": true
-  },
-  {
-   "ch": "indypersian",
-   "id": 182088,
-   "t": "2026-11-06T23:28:39Z",
-   "text": "♦️ «آکسیوس» روز جمعه به نقل از منابع آگاه گزارش داد که جی‌دی ونس، معاون رئیس‌جمهوری ایالات متحده، طی دو هفته گذشته شخصاً هدایت تلاش‌های دیپلماتیک پشت پرده را برای برقراری آتش‌بس جدید و ازسرگیری مذاکرات هسته‌ای با جمهوری اسلامی ایران بر عهده گرفته است. بر اساس این گزارش، ونس که جن",
-   "emoji": "",
-   "link": "https://t.me/indypersian/182088",
-   "relevant": true
-  },
-  {
-   "ch": "ynetalerts",
-   "id": 77331,
-   "t": "2026-11-06T23:28:38Z",
-   "text": "🔴 ‏אזרח ונצואלה נעצר סמוך לבית הלבן עם רובה: \"שומע קולות שמורים לי לרצוח את טראמפ\" למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77331",
-   "relevant": false
-  },
-  {
    "ch": "BellumActaNews",
    "id": 178306,
    "t": "2026-11-06T23:24:31Z",
@@ -9577,15 +10391,6 @@
    "emoji": "💥",
    "link": "https://t.me/BellumActaNews/178306",
    "relevant": false
-  },
-  {
-   "ch": "mehrnews",
-   "id": 429470,
-   "t": "2026-11-06T23:24:22Z",
-   "text": "آمریکا حاضر به اظهار نظر درباره سقوط پهپاد خود در قشم نشد 🔺 ‏ارتش تروریستی آمریکا درباره تحولات جمعه شب و سرنگونی یک فروند پهپاد این کشور در قشم اظهار نظر نکرد. 🔗 mehrnews.com/x3dxqJ 📡 @Mehrnews",
-   "emoji": "📡",
-   "link": "https://t.me/mehrnews/429470",
-   "relevant": true
   },
   {
    "ch": "BellumActaNews",
@@ -9606,93 +10411,12 @@
    "relevant": false
   },
   {
-   "ch": "indypersian",
-   "id": 182087,
-   "t": "2026-11-06T23:17:28Z",
-   "text": "♦️ بامداد شنبه، همزمان با اعلام خبرگزاری‌های داخلی همچون فارس، تسنیم و ایرنا مبنی بر شنیده‌شدن «صدای مهیب جنگنده» و «اصابت دو موشک» به جزیرهٔ قشم، روابط عمومی ارتش جمهوری اسلامی ایران از انهدام یک پهپاد آمریکایی در این جزیره خبر داد. در این بیانیه آمده است: «یک پهپاد ام‌کیو-۹ آمر",
-   "emoji": "",
-   "link": "https://t.me/indypersian/182087",
-   "relevant": true
-  },
-  {
-   "ch": "mehrnews",
-   "id": 429469,
-   "t": "2026-11-06T23:14:26Z",
-   "text": "سقوط یک فروند پهپاد MQ9 دشمن آمریکایی در قشم 🔺 ‏روابط عمومی ارتش:‌ یک فروند پهپاد MQ9 دشمن متجاوز آمریکایی در آسمان قشم مورد اصابت قرار گرفت و منهدم شد. 🔗 mehrnews.com 📡 @Mehrnews",
-   "emoji": "📡",
-   "link": "https://t.me/mehrnews/429469",
-   "relevant": true
-  },
-  {
-   "ch": "akhbarefori",
-   "id": 704771,
-   "t": "2026-11-06T23:13:15Z",
-   "text": "♦️ ادعای آکسیوس درباره تلاش‌های پشت‌پرده معاون ترامپ برای مذاکره با ایران 🔹 جی‌دی ونس در مذاکرات غیرمستقیم با ایران با هدف آتش‌بس و از سرگیری مذاکرات حضور دارد 🔹 ترامپ در حال حاضر آماده است تا زمینه را برای تلاش‌های دیپلماتیک فراهم کند. 🔹 ویتکوف و کوشنر در مذاکرات مربوط به دستیاب",
-   "emoji": "",
-   "link": "https://t.me/akhbarefori/704771",
-   "relevant": true
-  },
-  {
-   "ch": "N12chat",
-   "id": 233761,
-   "t": "2026-11-06T23:12:53Z",
-   "text": "דסק החוץ צבא איראן טוען: הפלנו כטב\"ם אמריקני מסוג MQ-9 מעל האי קשם @N12chat",
-   "emoji": "",
-   "link": "https://t.me/N12chat/233761",
-   "relevant": true
-  },
-  {
-   "ch": "isna94",
-   "id": 412119,
-   "t": "2026-11-06T23:08:00Z",
-   "text": "ارتش: یک فروند پهپاد MQ9 ارتش تروریستی آمریکا رهگیری و منهدم شد روابط عمومی ارتش جمهوری اسلامی: 🔹 دقایقی قبل یک فروند پهپاد MQ9 دشمن متجاوز آمریکایی، با آتش سامانه‌های نوین نیروی پدافند هوایی ارتش، تحت شبکه یکپارچه پدافند هوایی کشور، در آسمان قشم مورد اصابت قرار گرفت و منهدم شد. ",
-   "emoji": "",
-   "link": "https://t.me/isna94/412119",
-   "relevant": true
-  },
-  {
-   "ch": "irna_1313",
-   "id": 470650,
-   "t": "2026-11-06T23:06:30Z",
-   "text": "قطر بر ادامه حمایت از مذاکرات ایران و آمریکا تاکید کرد 🔹 قطر گزارش‌های منتشر شده مبنی بر عدم دستیابی آمریکا و ایران به توافق را تکذیب و بر حمایت مداوم خود از مذاکرات تاکید کرد. #ایرنا_جهان https://irna.ir/xjYGjx @IRNA_1313",
-   "emoji": "",
-   "link": "https://t.me/irna_1313/470650",
-   "relevant": true
-  },
-  {
-   "ch": "akhbarefori",
-   "id": 704770,
-   "t": "2026-11-06T23:04:36Z",
-   "text": "🔴 خبرفوری/ ارتش: دقایقی قبل، یک فروند پهپاد MQ9 دشمن متجاوز آمریکایی، با آتش سامانه‌های نوین نیروی پدافند هوایی ارتش، تحت شبکه یکپارچه پدافند هوایی کشور، در آسمان قشم مورد اصابت قرار گرفت و منهدم شد. 🇮🇷 ✊ @AkhbareFori",
-   "emoji": "🔴",
-   "link": "https://t.me/akhbarefori/704770",
-   "relevant": true
-  },
-  {
-   "ch": "indypersian",
-   "id": 182085,
-   "t": "2026-11-06T23:03:57Z",
-   "text": "♦️ دفتر مطبوعاتی شاهزاده رضا پهلوی در واکنش به پرسش‌های رسانه‌ها و نگرانی‌های ابرازشده با صدور بیانیه‌ای اعلام کرد او همچنان در مراسم اعطای جایزه آزادی فریدریش نائومان شرکت می‌کند و مصمم است پس از آن در گردهمایی بزرگ ایرانیان در «اوست‌پارک» (Ostpark) فرانکفورت نیز حضور یابد. این ",
-   "emoji": "",
-   "link": "https://t.me/indypersian/182085",
-   "relevant": true
-  },
-  {
    "ch": "geopolitics_prime",
    "id": 77412,
    "t": "2026-11-06T23:03:55Z",
    "text": "📹 Iran fires SAMs at US jet, US strikes back with Tomahawks Footage shows Iranian surface-to-air missiles launching at an American fighter jet that violated the airspace over Qeshm Island. Sources report that the US has retaliated by firing two Tomahawk cruise missiles into Souza",
    "emoji": "",
    "link": "https://t.me/geopolitics_prime/77412",
-   "relevant": true
-  },
-  {
-   "ch": "irna_1313",
-   "id": 470649,
-   "t": "2026-11-06T23:02:20Z",
-   "text": "ارتش: یک فروند پهپاد MQ9 ارتش تروریستی آمریکا رهگیری و منهدم شد ارتش جمهوری اسلامی: 🔹 دقایقی قبل یک فروند پهپاد MQ9 دشمن متجاوز آمریکایی، با آتش سامانه‌های نوین نیروی پدافند هوایی ارتش، تحت شبکه یکپارچه پدافند هوایی کشور، در آسمان قشم مورد اصابت قرار گرفت و منهدم شد. منبع: روابط ",
-   "emoji": "",
-   "link": "https://t.me/irna_1313/470649",
    "relevant": true
   },
   {
@@ -9705,15 +10429,6 @@
    "relevant": true
   },
   {
-   "ch": "shin_persian",
-   "id": 12086,
-   "t": "2026-11-06T22:59:50Z",
-   "text": "Shin ✓ @hey_itsmyturn Islamic Regime Army PR to IRIB: \"Army air defenses intercepted and destroyed a US military MQ-9 over Qeshm minutes ago, using new Army Air Defense Force systems under the country’s integrated air defense network.\" ترجمه خودکار فارسی روابط عمومی ارتش رژیم اسل",
-   "emoji": "",
-   "link": "https://t.me/shin_persian/12086",
-   "relevant": true
-  },
-  {
    "ch": "rnintel",
    "id": 68796,
    "t": "2026-11-06T22:50:57Z",
@@ -9723,30 +10438,12 @@
    "relevant": false
   },
   {
-   "ch": "shin_persian",
-   "id": 12085,
-   "t": "2026-11-06T22:49:55Z",
-   "text": "Shin ✓ @hey_itsmyturn Yediot: \"The United States has issued security warnings through its diplomatic missions across the Middle East, including the embassy in Jerusalem, following increased threats from the Houthis in Yemen and intelligence indicating Iranian attempts to target s",
-   "emoji": "",
-   "link": "https://t.me/shin_persian/12085",
-   "relevant": true
-  },
-  {
    "ch": "Middle_East_Spectator",
    "id": 38022,
    "t": "2026-11-06T22:48:09Z",
    "text": "— ❗️ 🇺🇸 / 🇮🇷 NEW: Footage from earlier shows Iranian surface-to-air missiles being launched at an American fighter jet that violated the airspace of Qeshm Island Some sources report that two U.S. ‘Tomahawk’ cruise missiles struck Souza Port, Qeshm, in response. @Middle_East_Spect",
    "emoji": "",
    "link": "https://t.me/Middle_East_Spectator/38022",
-   "relevant": true
-  },
-  {
-   "ch": "irna_1313",
-   "id": 470648,
-   "t": "2026-11-06T22:44:32Z",
-   "text": "گفت‌ وگوی وزیر دفاع قطر با وزیر جنگ آمریکا و وزیر خارجه امارات 🔹 «شیخ سعود بن عبدالرحمن بن حسن آل ثانی» معاون نخست‌وزیر و وزیر مشاور در امور دفاعی قطر با «پیت هگست» وزیر جنگ آمریکا درباره موضوعات مورد اهتمام مشترک دو طرف گفت‌ و گو کرد. 🔹 وی همچنین در تماس تلفنی جداگانه با «عبدالل",
-   "emoji": "",
-   "link": "https://t.me/irna_1313/470648",
    "relevant": true
   },
   {
@@ -9768,66 +10465,12 @@
    "relevant": true
   },
   {
-   "ch": "indypersian",
-   "id": 182084,
-   "t": "2026-11-06T22:30:46Z",
-   "text": "♦️ دفتر رسانه‌ای بین‌المللی دولت قطر، روز جمعه، با صدور بیانیه‌ای در واکنش به گزارش‌های منتشرشده در شبکه‌های اجتماعی مبنی بر سخنان نخست‌وزیر این کشور درباره «شکست تلاش‌های آمریکا و ایران برای دستیابی به توافق»، این گزارش‌ها را «کاملاً نادرست و گمراه‌کننده» خواند و اعلام کرد: «اظه",
-   "emoji": "",
-   "link": "https://t.me/indypersian/182084",
-   "relevant": true
-  },
-  {
-   "ch": "mehrnews",
-   "id": 429468,
-   "t": "2026-11-06T22:28:53Z",
-   "text": "قطر: واشنگتن و تهران همچنان برای دستیابی به توافق تلاش می‌کنند 🔺 دفتر رسانه‌ای بین‌المللی قطر اعلام کرد که «محمد بن عبدالرحمن آل ثانی» نخست‌وزیر و وزیر امور خارجه این کشور تأکید کرده است که آمریکا و ایران همچنان برای دستیابی به توافق به تلاش‌های خود ادامه می‌دهند. 🔗 mehrnews.com/",
-   "emoji": "📡",
-   "link": "https://t.me/mehrnews/429468",
-   "relevant": true
-  },
-  {
    "ch": "QudsNen",
    "id": 244613,
    "t": "2026-11-06T22:25:18Z",
    "text": "Despite the October 2025 ceasefire, Israeli attacks continue to threaten education in Gaza, where nearly 98% of school buildings have been damaged or destroyed. As hundreds of thousands of students returned to classes in September 2026 after nearly three years of disruption, Isra",
    "emoji": "",
    "link": "https://t.me/QudsNen/244613",
-   "relevant": true
-  },
-  {
-   "ch": "mehrnews",
-   "id": 429467,
-   "t": "2026-11-06T22:22:42Z",
-   "text": "30 شهید و 21 زخمی در حملات عربستان و مزدوران آن در 24 ساعت گذشته 🔺 ‏سخنگوی وزارت بهداشت یمن اعلام کرد در حملات عربستان و مزدوران آن در ۲۴ ساعت گذشته ۳۰ نفر شهید و ۲۱ نفر زخمی شدند. 🔗 mehrnews.com/x3dxqz 📡 @Mehrnews",
-   "emoji": "📡",
-   "link": "https://t.me/mehrnews/429467",
-   "relevant": false
-  },
-  {
-   "ch": "shin_persian",
-   "id": 12082,
-   "t": "2026-11-06T22:22:24Z",
-   "text": "Shin ✓ @hey_itsmyturn Earlier @ 2108Z 2 AL projectiles landed in Qeshm, launched by aircraft. Target is not known as of now Hormozgan Province, Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/RMoo2nbOBIvnSC685JG1Psyk?xv=1 ترجمه خودکار فارسی",
-   "emoji": "",
-   "link": "https://t.me/shin_persian/12082",
-   "relevant": true
-  },
-  {
-   "ch": "shin_persian",
-   "id": 12081,
-   "t": "2026-11-06T22:14:54Z",
-   "text": "Shin ✓ @hey_itsmyturn The 𝐅𝐀𝐓𝐅 𝐍𝐨𝐯𝐞𝐦𝐛𝐞𝐫 𝟐𝟎𝟐𝟔 𝐏𝐥𝐞𝐧𝐚𝐫𝐲 𝐢𝐧𝐢𝐭𝐢𝐚𝐭𝐢𝐯𝐞𝐬 targeted Iranian illicit finance, Southeast Asian scam compounds, and systemic virtual-asset compliance deficiencies. FATF also adopted mutual evaluations of the United States and Mexico, recognizing the effectivene",
-   "emoji": "",
-   "link": "https://t.me/shin_persian/12081",
-   "relevant": true
-  },
-  {
-   "ch": "akhbarefori",
-   "id": 704768,
-   "t": "2026-11-06T22:14:19Z",
-   "text": "خبرفوری pinned « 🔴 تسنیم: گزارش اولیه از اصابت دو موشک در قشم 🔹 بر اساس گزارش‌های اولیه، دو موشک در جزیره قشم اصابت کرده است. تاکنون اطلاعات رسمی درباره میزان خسارات احتمالی منتشر نشده است. #اخبار_هرمزگان در فضای مجازی 👇 @akhbare_hormozgan »",
-   "emoji": "🔴",
-   "link": "https://t.me/akhbarefori/704768",
    "relevant": true
   },
   {
@@ -9840,57 +10483,12 @@
    "relevant": false
   },
   {
-   "ch": "ynetalerts",
-   "id": 77330,
-   "t": "2026-11-06T22:10:24Z",
-   "text": "🔴 ‏מנהיג הדמוקרטים בבית הנבחרים: ראש הסגל החדש של טראמפ - גידול ממאיר שיש להשמיד למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77330",
-   "relevant": false
-  },
-  {
    "ch": "rotternews",
    "id": 370133,
    "t": "2026-11-06T22:10:06Z",
    "text": "עקב איומים מאיראן: ארה''ב פרסמה אזהרות ביטחון לדיפלומטים במזה''ת, גם בי-ם 📰 לאשכול המלא 📰",
    "emoji": "",
    "link": "https://t.me/rotternews/370133",
-   "relevant": true
-  },
-  {
-   "ch": "akhbarefori",
-   "id": 704767,
-   "t": "2026-11-06T22:08:45Z",
-   "text": "🔴 تسنیم: گزارش اولیه از اصابت دو موشک در قشم 🔹 بر اساس گزارش‌های اولیه، دو موشک در جزیره قشم اصابت کرده است. تاکنون اطلاعات رسمی درباره میزان خسارات احتمالی منتشر نشده است. #اخبار_هرمزگان در فضای مجازی 👇 @akhbare_hormozgan",
-   "emoji": "🔴",
-   "link": "https://t.me/akhbarefori/704767",
-   "relevant": true
-  },
-  {
-   "ch": "indypersian",
-   "id": 182083,
-   "t": "2026-11-06T22:05:22Z",
-   "text": "♦️ به گزارش تسنیم، بامداد شنبه، «صدای مهیب» ناشی از پرواز یک جنگنده بر فراز شهر قشم و مناطق اطراف شنیده شده و شدت این صدا به حدی بوده که به وحشت و خروج شماری از مردم از خانه‌هایشان انجامیده است. تسنیم در ادامه نوشت: «بر اساس گزارش‌های اولیه، دو موشک در جزیره قشم اصابت کرده است.» ",
-   "emoji": "",
-   "link": "https://t.me/indypersian/182083",
-   "relevant": true
-  },
-  {
-   "ch": "ynetalerts",
-   "id": 77329,
-   "t": "2026-11-06T22:04:19Z",
-   "text": "🔴 ‏עקב איומים מאיראן: ארה\"ב פרסמה אזהרות ביטחון לדיפלומטים במזה\"ת, גם בי-ם למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77329",
-   "relevant": true
-  },
-  {
-   "ch": "VahidOnline",
-   "id": 79020,
-   "t": "2026-11-06T22:01:23Z",
-   "text": "به گزارش تسنیم، بامداد شنبه، «صدای مهیب» ناشی از پرواز یک جنگنده بر فراز شهر قشم و مناطق اطراف شنیده شده و شدت این صدا به حدی بوده که به وحشت و خروج شماری از مردم از خانه‌هایشان انجامیده است. تسنیم در ادامه نوشت: «بر اساس گزارش‌های اولیه، دو موشک در جزیره قشم اصابت کرده است.» این",
-   "emoji": "📡",
-   "link": "https://t.me/VahidOnline/79020",
    "relevant": true
   },
   {
@@ -9912,15 +10510,6 @@
    "relevant": true
   },
   {
-   "ch": "akhbarefori",
-   "id": 704765,
-   "t": "2026-11-06T21:57:34Z",
-   "text": "🔴 تسنیم: گزارش اولیه از اصابت دو موشک در قشم 🔹 بر اساس گزارش‌های اولیه، دو موشک در جزیره قشم اصابت کرده است. تاکنون اطلاعات رسمی درباره میزان خسارات احتمالی منتشر نشده است. #اخبار_هرمزگان در فضای مجازی 👇 @akhbare_hormozgan",
-   "emoji": "🔴",
-   "link": "https://t.me/akhbarefori/704765",
-   "relevant": true
-  },
-  {
    "ch": "rnintel",
    "id": 68792,
    "t": "2026-11-06T21:57:31Z",
@@ -9928,51 +10517,6 @@
    "emoji": "⚡",
    "link": "https://t.me/rnintel/68792",
    "relevant": false
-  },
-  {
-   "ch": "indypersian",
-   "id": 182082,
-   "t": "2026-11-06T21:55:19Z",
-   "text": "♦️ رسانه‌های داخلی، بامداد شنبه، از «شنیده‌شدن صدای انفجار» و «تردد هواگرد» در جزیره قشم و بندرخمیر خبر داده‌اند. خبرگزاری ایرنا به نقل از شاهدان عینی اعلام کرد که دو پرتابه در منطقه «سوزا» واقع در جزیره قشم اصابت کرده است، اما منابع استانی هنوز درباره ماهیت و جزئیات آن توضیحی ند",
-   "emoji": "",
-   "link": "https://t.me/indypersian/182082",
-   "relevant": true
-  },
-  {
-   "ch": "akhbarefori",
-   "id": 704764,
-   "t": "2026-11-06T21:53:58Z",
-   "text": "🔴 تسنیم: دقایقی پیش صدای بلند عبور یک فروند جنگنده دشمن از فراز شهر قشم و مناطق پیرامونی به گوش رسید 🇮🇷 ✊ @AkhbareFori",
-   "emoji": "🔴",
-   "link": "https://t.me/akhbarefori/704764",
-   "relevant": false
-  },
-  {
-   "ch": "akhbarefori",
-   "id": 704763,
-   "t": "2026-11-06T21:52:24Z",
-   "text": "🔴 دقایقی پیش صدای یک هواگرد در قشم به گوش رسید 🔹 شاهدان محلی از اصابت ۲ پرتابه در سوزا در جزیره قشم خبر می‌دهند. منابع محلی و استانی در مورد جزئیات این واقعه اظهار نظر نکرده‌اند./ ایرنا 🇮🇷 ✊ @AkhbareFori",
-   "emoji": "🔴",
-   "link": "https://t.me/akhbarefori/704763",
-   "relevant": false
-  },
-  {
-   "ch": "akhbarefori",
-   "id": 704762,
-   "t": "2026-11-06T21:51:52Z",
-   "text": "🔴 فارس: شنیده‌شدن صدای انفجار در قشم و بندرخمیر؛ ماهیت انفجارها مشخص نیست اما ممکن است مرتبط با شلیک تیر هشدار به سمت تنگهٔ هرمز باشد 🇮🇷 ✊ @AkhbareFori",
-   "emoji": "🔴",
-   "link": "https://t.me/akhbarefori/704762",
-   "relevant": true
-  },
-  {
-   "ch": "shin_persian",
-   "id": 12080,
-   "t": "2026-11-06T21:51:43Z",
-   "text": "Shin ✓ @hey_itsmyturn Code 100 [Highest level of alert] issued for evacuation and dispersal for southern provinces of Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/Q5b9k80idJVyfiqknL80Z1mu ترجمه خودکار فارسی کد…",
-   "emoji": "",
-   "link": "https://t.me/shin_persian/12080",
-   "relevant": true
   },
   {
    "ch": "rotternews",
@@ -9993,24 +10537,6 @@
    "relevant": true
   },
   {
-   "ch": "indypersian",
-   "id": 182081,
-   "t": "2026-11-06T21:47:37Z",
-   "text": "♦️ محمدجواد لاریجانی، رئیس پژوهشگاه دانش‌های بنیادی و برادر علی لاریجانی، با اشاره به توان هسته‌ای جمهوری اسلامی گفت ساخت سلاح هسته‌ای برای ایران «مثل آب خوردن» است و دانش هسته‌ای جمهوری اسلامی را فراتر از این مرحله توصیف کرد. لاریجانی گفت: «اگر ولی‌امر اجازه بدهد، مقدار زیادی بر",
-   "emoji": "",
-   "link": "https://t.me/indypersian/182081",
-   "relevant": true
-  },
-  {
-   "ch": "indypersian",
-   "id": 182080,
-   "t": "2026-11-06T21:42:19Z",
-   "text": "♦️ برنامه «پاداش برای عدالت» وزارت خارجه آمریکا روز جمعه، ۱۵ آبان‌ماه، اعلام کرد که برای دریافت اطلاعات درباره برنامه هسته‌ای جمهوری اسلامی ایران تا ۲۰ میلیون دلار پاداش پرداخت می‌کند و امکان جابجایی و اسکان مجدد را نیز برای ارائه‌دهندگان اطلاعات در نظر گرفته است. بر اساس این فرا",
-   "emoji": "",
-   "link": "https://t.me/indypersian/182080",
-   "relevant": true
-  },
-  {
    "ch": "rnintel",
    "id": 68790,
    "t": "2026-11-06T21:38:02Z",
@@ -10018,15 +10544,6 @@
    "emoji": "⚡",
    "link": "https://t.me/rnintel/68790",
    "relevant": false
-  },
-  {
-   "ch": "indypersian",
-   "id": 182079,
-   "t": "2026-11-06T21:37:22Z",
-   "text": "♦️ فرارو، بامداد شنبه، از شنیده‌شدن صدای انفجار در جزیرهٔ قشم خبر داد و نوشت: «هنوز اطلاعات تکمیلی از علت شنیده شدن این صدا اعلام نشده است.» به گزارش کانال تلگرامی «وحید آنلاین»، شماری از مردم در پیام‌های ارسالی خود اعلام کرده‌اند که حوالی ساعت ۰۰:۳۲ بامداد شنبه صدایی شبیه به «پر",
-   "emoji": "",
-   "link": "https://t.me/indypersian/182079",
-   "relevant": true
   },
   {
    "ch": "BellumActaNews",
@@ -10040,24 +10557,137 @@
  ],
  "geo_events": [
   {
-   "t": "2026-11-07T08:00:14Z",
-   "src": "news:Reuters, The Times of Israel, Internazionale",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSVljNk9VX0xKSElKQjgwMVhnLVpzdmZMTE9YMW5Eb0FpdFpkb0tkczBNZkh1eWFyLU5VanpKU3VGd21EUk52bGc3ZDN4UVd2UFhHM3VReWVUa2kxTVQ3TlJ5UkRFbmdYQzAxTVF0bldhS1BIYjhIOWx4RVU3UnZiMkRORW5nUHJERUQzeTdoSE1kRzlmYVduLVhUbzkzMVFNX1pqb0I2YXZpT1FJRW00alBCWXQydmc?oc=5",
+   "t": "2026-11-07T08:51:25Z",
+   "src": "news:Vietnam.vn",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaDVMXzR4QnI2OEVoaERncUhxTWJpQ254d19vVm9zV2JmTF9vQno1T0ZZRk9IREwwNUVfdkRQQnhIQUlJeDVKMndJV2NESVJ3S3dBX3dRZlBOR2owWWxJS0x3Qm5FUTJwUkdYQWdtRFF5VlNjNl8zVXAySzJNQnJlVlJHdkdrczhTVkxBQ1FGYlVOdkJIX1E?oc=5",
    "place": "قشم",
    "lat": 26.95,
    "lon": 56.27,
    "kinds": [
+    "missile",
+    "strike"
+   ],
+   "text": "The US confirms airstrikes against Iran, missiles strike strategic island of Qeshm.",
+   "n_outlets": 1,
+   "n_sources": 9,
+   "more": [
+    "https://news.google.com/rss/articles/CBMinwFBVV95cUxQOVpoaUNTaDZZRTljX2R0bTZ2dDRacDJLQUF3WThiWGJJSGVSQUx5MDQ0Z0Y2bUplOUFMbDZURkxqcjhIdURwM0g4SG52NXZldy1pYW5YWWFNTnZtR0ZMZDNEU2RTejUxY3JrZ2N1VGVxUGxIc2p4WEZpeEtQSHZ2ZF9UT1YxNU9uWE43R3FRX20zYnBuVG1yb1R5bTk1eWM?oc=5",
+    "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSDJPRTVIQWRyOUdrYWRreHhoZ19kQkdnVk5SNE5vWnNyVV9BV2wxTUpLR2toeWg3SHEtR3B3eXdkUlJCdlc2bVBmZ0pJejNXVkZ5eDlsckw2M095S3BxQldmTGh1YVhqb3VpRUFtVmJDbUhGeWJvaXNTbGRyRjJDUFliRy0zdU9JLUUycndlRVA0MGdza1NrXzc2Rk9DTTNGZmRhYTlZRTJFc1F4S2hBZElqd3hBYmFoTHZOQ1NRcUx4d3BVUXc?oc=5",
+    "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSVljNk9VX0xKSElKQjgwMVhnLVpzdmZMTE9YMW5Eb0FpdFpkb0tkczBNZkh1eWFyLU5VanpKU3VGd21EUk52bGc3ZDN4UVd2UFhHM3VReWVUa2kxTVQ3TlJ5UkRFbmdYQzAxTVF0bldhS1BIYjhIOWx4RVU3UnZiMkRORW5nUHJERUQzeTdoSE1kRzlmYVduLVhUbzkzMVFNX1pqb0I2YXZpT1FJRW00alBCWXQydmc?oc=5",
+    "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOMGF1bGEtWk5MdnJicHUyYld3d28yWEJJcWN3a2FZX2FaMUl2V0xpZTIwU1BDdFY1eEMxcTNDVkRQYVdSenVsbHFORk84ZHlsbkFUcFEzZ1pwbUhhcEFfTWlIQ3dPa25FOE9nQUo5b21OMkppY1JLMEswbHpSdVNEYVF4MnUybWtpWEtiTnJKdFZDNW5UaXBVM1NSQjRVNG5YVjg5RFVVOEN5b2JzN1VIZWdxckdHTkR6QnBjVlpqdTZRVEtMVHJ4MW1LZml1SHJVM2FVMC1EdWFOQTVSdk11b1VvUQ?oc=5"
+   ]
+  },
+  {
+   "t": "2026-11-07T08:51:25Z",
+   "src": "news:Vietnam.vn",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWEsyZlhWYkV5bG9iSHYyalRabTVsMTVfMkVUMGFyN09OUmlGUXRWdFJDV2JjbDlUQzhBZUtXbm1panV6QVFCRnA2LXNuZlJNenEtcUotRDhleEs2b0RrOU9HdF90TS1iTklLZS14YjNQZ0pSTXZzWmpmZkZFcm41ZFVRZkk?oc=5",
+   "place": "تهران",
+   "lat": 35.69,
+   "lon": 51.39,
+   "kinds": [
     "missile"
    ],
-   "text": "Two missiles strike Iran's Qeshm Island, Tasnim news agency says",
-   "n_outlets": 5,
-   "n_sources": 6,
+   "text": "Iranian island hit by missiles; Tehran claims to have shot down US plane.",
+   "n_outlets": 1,
+   "n_sources": 1,
+   "more": []
+  },
+  {
+   "t": "2026-11-07T08:51:25Z",
+   "src": "news:صوت الإمارات, Crypto Briefing",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPbHotZTFWcVBBTHd4LWtzLVVhM19OY2NxVjZqaUs3bHYtM3Ffc01sckZQNk43TXBwamF3dkFmM21vZlpWdDB4VHVVVlRyVFlfb2ZyU0ZDQlBncU5yZGI1cnJUSHNWdXV2QWtWd1dZY2JwYzUweE1kLWd6a2RGX2MtRU9LUGdsUE1XRGczeDExY0c3Y1JHT2oxd0w5NjVhUnZlTTh2NExZbW1oMm9LRDRBX0dnRmpVSVR5ZDRRYTZR?oc=5",
+   "place": "ریاض",
+   "lat": 24.71,
+   "lon": 46.68,
+   "kinds": [
+    "missile"
+   ],
+   "text": "The Coalition intercepts a Houthi cruise missile headed toward Riyadh",
+   "n_outlets": 2,
+   "n_sources": 5,
    "more": [
-    "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOMGF1bGEtWk5MdnJicHUyYld3d28yWEJJcWN3a2FZX2FaMUl2V0xpZTIwU1BDdFY1eEMxcTNDVkRQYVdSenVsbHFORk84ZHlsbkFUcFEzZ1pwbUhhcEFfTWlIQ3dPa25FOE9nQUo5b21OMkppY1JLMEswbHpSdVNEYVF4MnUybWtpWEtiTnJKdFZDNW5UaXBVM1NSQjRVNG5YVjg5RFVVOEN5b2JzN1VIZWdxckdHTkR6QnBjVlpqdTZRVEtMVHJ4MW1LZml1SHJVM2FVMC1EdWFOQTVSdk11b1VvUQ?oc=5",
-    "https://news.google.com/rss/articles/CBMie0FVX3lxTE9tdDlJYVFLNFI3a2FRdjJWZTRyR1FKQkZjWU5PMFlONzJaRFZ3X2syVmtrcFRLQXVqc3p6NGFwdEFIRlYweVU5dEFpOVRzU3pTcU9WYS1CYUNWcWZuYTJObEI1RnhrUXdUQW1YaEJCRlp6VndJekNRQk5rWQ?oc=5",
-    "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5rWWhzZXVnWGJ0bFlPeTdoZ1dpTGF1czNKM3pqUHg2Qm53eXFyOTFjVzhuWGp6blMwUUpPdUpxeVcxR2t6U3B1WDJOcm5XUjRmTmhFRlFB?oc=5",
-    "https://news.google.com/rss/articles/CBMitgFBVV95cUxNam9SRWV0TFRrOFRZa3BCby1jOUtIWWtoU01OekctOW92RUhXemlrYTVuUC1xQVdIOE1HT0FKNnYwbDBwYjAxZFB3MWR2d2NkWTdOdi0wTllDU3JnczFqOGhFSFE4WUFQa0FaYmxna3BBUDRXZkNrOGdPbE9iNThMY0taMjJwa3JXR1RkQ1dNQVJOZ2hJVXJnOFVOT0Y3M3RheFB3MEVjNTEyRFZadTJRMnFDMk1MQQ?oc=5"
+    "https://t.me/Tabnak_ir/278432",
+    "https://t.me/farsna/473020",
+    "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNejZEYkM2LXc3VktqZmNtSUZRQzhRM28zekItNHE3YzhrRjlxeU9EdHV5ck95cXhrYmtsOXpzMVBXU3J1X28ycTFOY3Q1MWxDdU5BeDg4Uld4U0dnTWpjT21ockxUQW4xbjhSS2dOZHFfSDNHbHBkSHVfX19qamJ1YWFWdGY4ZS02VVJV?oc=5",
+    "https://news.google.com/rss/articles/CBMiS0FVX3lxTE93VzJuR1kyOGhBZk54Mi1nNFBMa2lJdEp6ZzdNZVlTRlp6ZkxwSTBaRGZzUDE0Z2FrUVZSQ2hkNXkzbW1NVmxONWljaw?oc=5"
    ]
+  },
+  {
+   "t": "2026-11-07T08:39:51Z",
+   "src": "tg:irna_1313",
+   "link": "https://t.me/irna_1313/470779",
+   "place": "تنگه هرمز",
+   "lat": 26.57,
+   "lon": 56.25,
+   "kinds": [
+    "missile"
+   ],
+   "text": "مفتی جعفری لبنان: انتخابات آمریکا، ایران را در قلب موازنه‌های جهانی قرار داد 🔹 النشره:«احمد قبلان» مفتی جعفری لبنان تاکید کرد که ایران با تسلط بر تنگه هرمز و در نتیجه قدرت موشک‌های خود به بازیگری جهانی تبدیل شده و نتیجه ",
+   "n_sources": 2,
+   "more": [
+    "https://news.google.com/rss/articles/CBMisgFBVV95cUxPeVJITTZ0U0pnY21SN08xZVNQOG9DR1RDdUZXbXZBNmFNWEMyNXNCUjVVbWpHNXo2ZGhjMTF0MThBTllCdGl5WGtDQ29kTVVQRUNxTUJUNFNncU4tVXprLUpRUGc5S3NMRWpRZ2EzbU1uSldPd1Y1QWtDV3ZoSjFES0lsazVyNXo0X0NZRk9Lai1pQnZhamowZHJDckNhVkY4a1Z3QTQ2RllxYUNQc3JoTnBB?oc=5"
+   ]
+  },
+  {
+   "t": "2026-11-07T08:37:13Z",
+   "src": "tg:akhbarefori",
+   "link": "https://t.me/akhbarefori/704844",
+   "place": "ریاض",
+   "lat": 24.71,
+   "lon": 46.68,
+   "kinds": [
+    "explosion"
+   ],
+   "text": "♦️ انفجارهای مهیب در ریاض و هشدار فوری آمریکا 🔹 دومین موج انفجارهای مهیب صبح امروز پایتخت عربستان را لرزاند و همزمان آمریکا درباره احتمال «حملات گسترده و بزرگ» در ساعات آینده به اتباعش در خاک عربستان سعودی هشدار داد. 📲 🇮",
+   "n_sources": 1,
+   "more": []
+  },
+  {
+   "t": "2026-11-07T08:30:55Z",
+   "src": "tg:akharinkhabar",
+   "link": "https://t.me/akharinkhabar/643101",
+   "place": "بندرخمیر",
+   "lat": 26.95,
+   "lon": 55.59,
+   "kinds": [
+    "explosion"
+   ],
+   "text": "🔺 🔻 صدای انفجار بندرخمیر ناشی از عملیات معدنی است فرمانداری بندرخمیر استان هرمزگان: 🔹 صدای انفجار در محدوده بندرخمیر مربوط به عملیات معدنی سیمان است؛ شهروندان آرامش خود را حفظ کنند. @Akharinkhabar | akharinkhabar.ir",
+   "n_sources": 5,
+   "more": [
+    "https://t.me/farsna/473017",
+    "https://t.me/Tabnak_ir/278431",
+    "https://t.me/akhbarefori/704829",
+    "https://t.me/isna94/412186"
+   ]
+  },
+  {
+   "t": "2026-11-07T08:20:24Z",
+   "src": "tg:iranintltv",
+   "link": "https://t.me/iranintltv/365786",
+   "place": "قم",
+   "lat": 34.64,
+   "lon": 50.88,
+   "kinds": [
+    "missile"
+   ],
+   "text": "قاسم روانبخش، نماینده قم در مجلس، به سایت دیده‌بان ایران گفت: «ما در این جنگ، پایگاه‌های منطقه‌ای کشورهای مختلف را هدف قرار دادیم. اگر کشورهای دوردست، از جمله کشورهای اروپایی مانند بریتانیا، بخواهند با آمریکا همراهی و به",
+   "n_sources": 1,
+   "more": []
+  },
+  {
+   "t": "2026-11-07T08:03:20Z",
+   "src": "tg:presstv",
+   "link": "https://t.me/presstv/213755",
+   "place": "تهران",
+   "lat": 35.69,
+   "lon": 51.39,
+   "kinds": [
+    "air_defense"
+   ],
+   "text": "▶️ Newly released footage captures the harrowing aftermath of US-Israeli attacks on Tehran’s residential Zarafshan neighborhood during the 40-day war. Red Crescent rescuers are seen pulling dozens of wounded residents al",
+   "n_sources": 1,
+   "more": []
   },
   {
    "t": "2026-11-07T08:00:14Z",
@@ -10110,22 +10740,7 @@
   },
   {
    "t": "2026-11-07T08:00:14Z",
-   "src": "news:EnergyNow",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPeVJITTZ0U0pnY21SN08xZVNQOG9DR1RDdUZXbXZBNmFNWEMyNXNCUjVVbWpHNXo2ZGhjMTF0MThBTllCdGl5WGtDQ29kTVVQRUNxTUJUNFNncU4tVXprLUpRUGc5S3NMRWpRZ2EzbU1uSldPd1Y1QWtDV3ZoSjFES0lsazVyNXo0X0NZRk9Lai1pQnZhamowZHJDckNhVkY4a1Z3QTQ2RllxYUNQc3JoTnBB?oc=5",
-   "place": "تنگه هرمز",
-   "lat": 26.57,
-   "lon": 56.25,
-   "kinds": [
-    "missile"
-   ],
-   "text": "UAE Says Iranian Missiles Struck Oil Tankers in Strait of Hormuz, One Sailor Killed",
-   "n_outlets": 1,
-   "n_sources": 1,
-   "more": []
-  },
-  {
-   "t": "2026-11-07T08:00:14Z",
-   "src": "news:Khaama Press",
+   "src": "news:Khaama Press, Rudaw",
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KcnpzMlBSMjU4cm45a0tCQURETHdpb2V2NVUtaF9CR0hqeTV0MEtBVDVNNzNWeWtMbklJODZGRjV3TG1lQXJkNm5uUjdTNWtwN1o5UWNKcGlnVVR3QWY3RjZXWEF2TmptTjhCVERTcw?oc=5",
    "place": "تنگه هرمز",
    "lat": 26.57,
@@ -10134,7 +10749,7 @@
     "strike"
    ],
    "text": "Trump Says Strait of Hormuz Is Reopening as US Confirms New Strikes on Iran",
-   "n_outlets": 1,
+   "n_outlets": 2,
    "n_sources": 1,
    "more": []
   },
@@ -10150,29 +10765,12 @@
     "missile"
    ],
    "text": "Saudi-led coalition says it intercepted Houthi cruise missile over Riyadh",
-   "n_outlets": 9,
+   "n_outlets": 11,
    "n_sources": 4,
    "more": [
     "https://news.google.com/rss/articles/CBMitgFBVV95cUxNc1VsZU1YMXFnNUxjbWFaOXY1bjZLSVJ6QmJlOHI1RjBIYzNSdEtZZmtlMGRvUElyME11eEgtNGtpaDIyUTRrdXF5QTQwaHpZZ3ljemNmXzlDQ00tYm8wNHRNV25WWWQ5MDFUb3FTRHNBVV9DYVMyRUVuRVBjVGxSMjI0RVdDeHlraHNHdlNjLXFFZWw4VnNKLTM1cHdkbFZtXzVkeFlId2hrZ0lNLXJHdHR0VEpwQQ?oc=5",
     "https://t.me/akharinkhabar/643054",
     "https://t.me/Tabnak_ir/278416"
-   ]
-  },
-  {
-   "t": "2026-11-07T08:00:14Z",
-   "src": "news:شفق نيوز",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNejZEYkM2LXc3VktqZmNtSUZRQzhRM28zekItNHE3YzhrRjlxeU9EdHV5ck95cXhrYmtsOXpzMVBXU3J1X28ycTFOY3Q1MWxDdU5BeDg4Uld4U0dnTWpjT21ockxUQW4xbjhSS2dOZHFfSDNHbHBkSHVfX19qamJ1YWFWdGY4ZS02VVJV?oc=5",
-   "place": "ریاض",
-   "lat": 24.71,
-   "lon": 46.68,
-   "kinds": [
-    "missile"
-   ],
-   "text": "Shafaq News..Saudi forces intercept Houthi missile over Riyadh",
-   "n_outlets": 1,
-   "n_sources": 2,
-   "more": [
-    "https://news.google.com/rss/articles/CBMiS0FVX3lxTE93VzJuR1kyOGhBZk54Mi1nNFBMa2lJdEp6ZzdNZVlTRlp6ZkxwSTBaRGZzUDE0Z2FrUVZSQ2hkNXkzbW1NVmxONWljaw?oc=5"
    ]
   },
   {
@@ -10344,31 +10942,28 @@
    ],
    "text": "گزارش حملات تازه به قشم و چند نقطه دیگر در جنوب؛ ارتش ایران مدعی سرنگونی پهپاد آمریکایی شد",
    "n_outlets": 1,
-   "n_sources": 4,
+   "n_sources": 2,
    "more": [
-    "https://t.me/mehrnews/429470",
-    "https://t.me/mehrnews/429469",
     "https://t.me/Middle_East_Spectator/38024"
    ]
   },
   {
-   "t": "2026-11-06T23:38:27Z",
-   "src": "tg:akhbarefori",
-   "link": "https://t.me/akhbarefori/704775",
+   "t": "2026-11-06T23:03:55Z",
+   "src": "tg:geopolitics_prime",
+   "link": "https://t.me/geopolitics_prime/77412",
    "place": "قشم",
    "lat": 26.95,
    "lon": 56.27,
    "kinds": [
     "air_defense",
-    "drone"
+    "missile",
+    "fighter"
    ],
-   "text": "خبرفوری pinned « 🔴 خبرفوری/ ارتش: دقایقی قبل، یک فروند پهپاد MQ9 دشمن متجاوز آمریکایی، با آتش سامانه‌های نوین نیروی پدافند هوایی ارتش، تحت شبکه یکپارچه پدافند هوایی کشور، در آسمان قشم مورد اصابت قرار گرفت و منهدم شد. 🇮🇷 ",
-   "n_sources": 8,
+   "text": "📹 Iran fires SAMs at US jet, US strikes back with Tomahawks Footage shows Iranian surface-to-air missiles launching at an American fighter jet that violated the airspace over Qeshm Island. Sources report that the US has ",
+   "n_sources": 3,
    "more": [
-    "https://t.me/isna94/412119",
-    "https://t.me/akhbarefori/704770",
-    "https://t.me/geopolitics_prime/77412",
-    "https://t.me/irna_1313/470649"
+    "https://t.me/Middle_East_Spectator/38022",
+    "https://t.me/BellumActaNews/178298"
    ]
   },
   {
@@ -10382,42 +10977,9 @@
     "missile"
    ],
    "text": "🚨 🇮🇷 Missiles strike Qeshm Island At least 2 missiles have hit Qeshm Island, according to a report from Tasnim News Agency. Official information regarding damage or casualties has not yet been released. Qeshm has been a ",
-   "n_sources": 11,
-   "more": [
-    "https://t.me/shin_persian/12082",
-    "https://t.me/akhbarefori/704768",
-    "https://t.me/akhbarefori/704767",
-    "https://t.me/indypersian/182083"
-   ]
-  },
-  {
-   "t": "2026-11-06T21:53:58Z",
-   "src": "tg:akhbarefori",
-   "link": "https://t.me/akhbarefori/704764",
-   "place": "قشم",
-   "lat": 26.95,
-   "lon": 56.27,
-   "kinds": [
-    "fighter"
-   ],
-   "text": "🔴 تسنیم: دقایقی پیش صدای بلند عبور یک فروند جنگنده دشمن از فراز شهر قشم و مناطق پیرامونی به گوش رسید 🇮🇷 ✊ @AkhbareFori",
-   "n_sources": 1,
-   "more": []
-  },
-  {
-   "t": "2026-11-06T21:51:52Z",
-   "src": "tg:akhbarefori",
-   "link": "https://t.me/akhbarefori/704762",
-   "place": "قشم",
-   "lat": 26.95,
-   "lon": 56.27,
-   "kinds": [
-    "explosion"
-   ],
-   "text": "🔴 فارس: شنیده‌شدن صدای انفجار در قشم و بندرخمیر؛ ماهیت انفجارها مشخص نیست اما ممکن است مرتبط با شلیک تیر هشدار به سمت تنگهٔ هرمز باشد 🇮🇷 ✊ @AkhbareFori",
    "n_sources": 2,
    "more": [
-    "https://t.me/indypersian/182079"
+    "https://t.me/rnintel/68793"
    ]
   },
   {
