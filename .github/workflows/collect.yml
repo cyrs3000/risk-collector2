@@ -31,7 +31,7 @@ jobs:
           AISSTREAM_KEY: ${{ secrets.AISSTREAM_KEY }}
           FAA_CLIENT_ID: ${{ secrets.FAA_CLIENT_ID }}
           FAA_CLIENT_SECRET: ${{ secrets.FAA_CLIENT_SECRET }}
-        run: python collect.py
+        run: python collect.py    && python geo.py
       - name: Commit data
         run: |
           git config user.name "risk-collector-bot"
