@@ -1,34 +1,35 @@
-# brief 2026-11-06T21:32:56Z
+# brief 2026-11-07T01:58:01Z
 
 ## sources
-adsb:partial: 4 point(s) failed, firms:ok, markets:error: RuntimeError: all market symbols , iran_fx:ok, news:partial: 4 feed(s) failed: Times of Isra, telegram:ok, safeairspace:ok, polymarket:ok, state_dept:ok, embassy_alerts:error: RuntimeError: no embassy feed rea, fcdo:ok, easa_czib:ok, faa:ok, portwatch_hormuz:error: RuntimeError: no PortWatch rows, marad:error: HTTPError: 403 Client Error: Forb, official_statements:ok, ofac:ok, ioda_iran:ok, gdelt:error: HTTPError: 429 Client Error: Too , usgs_seismic:ok, notams:error: RuntimeError: no NOTAM source rea, foreign_advisories:ok, ais_military:ok
+adsb:partial: 11 point(s) failed, firms:ok, markets:error: RuntimeError: all market symbols , iran_fx:ok, news:partial: 22 feed(s) failed: Times of Isr, telegram:ok, safeairspace:ok, polymarket:ok, state_dept:ok, embassy_alerts:error: RuntimeError: no embassy feed rea, fcdo:ok, easa_czib:ok, faa:ok, portwatch_hormuz:error: RuntimeError: no PortWatch rows, marad:error: HTTPError: 403 Client Error: Forb, official_statements:ok, ofac:ok, ioda_iran:ok, gdelt:error: HTTPError: 429 Client Error: Too , usgs_seismic:ok, notams:error: RuntimeError: no NOTAM source rea, foreign_advisories:ok, ais_military:ok
 
 ## ALERTS (verify before use)
-- {"type": "airspace_closure", "n_items": 1, "n_outlets": 1, "outlets": ["The New Region"], "examples": [{"text": "Iraq denies airspace closure despite civil aviation alert", "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5WbWt1Z0xPbkNob182ZmlVRFZENmJyc1VZTFBBYlJzeDZJX2JYWWQzVVVkdlBaY0hQS1l6ek1OSlJ1azBXR3BXaVpDbw?oc=5"}], "note": "keyword match — verify before acting"}
-- {"type": "foreign_advisory_changed", "src": "Switzerland Iran", "country": null, "level": null, "snippet": " Access Denied Access Denied You don't have permission to access \"http&#58;&#47;&#47;www&#46;eda&#46;admin&#46;ch&#47;eda&#47;en&#47;fdfa&#47;representations&#45;and&#45;travel&#45;advice&#47;iran&#47;travel&#45;advice&#45;iran&#46;html\" on this server. Reference&#32;&#35;18&#46;6f6d3e17
+- {"type": "airspace_closure", "n_items": 2, "n_outlets": 2, "outlets": ["The New Region", "akhbarefori"], "examples": [{"text": "Iraq denies airspace closure despite civil aviation alert", "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5WbWt1Z0xPbkNob182ZmlVRFZENmJyc1VZTFBBYlJzeDZJX2JYWWQzVVVkdlBaY0hQS1l6ek1OSlJ1azBXR3BXaVpDbw?oc=5"}, {"text": "♦️ آمریکا هشدار امنیتی در چند کشور منطق
+- {"type": "foreign_advisory_changed", "src": "Switzerland Iran", "country": null, "level": null, "snippet": " Access Denied Access Denied You don't have permission to access \"http&#58;&#47;&#47;www&#46;eda&#46;admin&#46;ch&#47;eda&#47;en&#47;fdfa&#47;representations&#45;and&#45;travel&#45;advice&#47;iran&#47;travel&#45;advice&#45;iran&#46;html\" on this server. Reference&#32;&#35;18&#46;1ca7cb17
+- {"type": "foreign_advisory_changed", "src": "Netherlands Iran", "country": null, "level": null, "snippet": " Reisadvies Iran | Ministerie van Buitenlandse Zaken | NederlandWereldwijd Ga direct naar inhoud Naar de homepage van www.nederlandwereldwijd.nl Ministerie van Buitenlandse Zaken Menu Home Familie Geld Gezondheid Identiteit Onderwijs Reizen Vervoer Werk Wonen Onderwerpen A-Z Contact Zoeken
 
 ## military air (ADS-B, 24h)
-points: Gulf 69/0mil; Israel 22/0mil; Saudi/Qatar 10/0mil; Iraq/Kuwait 4/0mil; Cyprus 30/0mil; Ramstein 413/0mil; UK 340/1mil; Crete 19/1mil; Incirlik 27/0mil; Tehran 0/0mil; Al Udeid 69/0mil; Prince Sultan AB 16/0mil; Muwaffaq Salti 20/0mil; Diego Garcia 0/0mil; Akrotiri 33/0mil; Souda 16/1mil; Moron 132/1mil; Lajes None/Nonemil; Mildenhall None/Nonemil; Red Sea None/Nonemil; Arabian Sea None/Nonemil
-baseline: tanker now 0 med 1.0; transport now 0 med 2.0; bomber now 0 med 0.0; isr now 0 med 0.0; mil now 3 med 6.0
+points: Gulf 84/1mil; Israel 32/0mil; Saudi/Qatar 14/0mil; Iraq/Kuwait 1/0mil; Cyprus 38/0mil; Ramstein 50/1mil; UK 42/0mil; Crete 9/0mil; Incirlik 36/0mil; Tehran 0/0mil; Al Udeid None/Nonemil; Prince Sultan AB None/Nonemil; Muwaffaq Salti None/Nonemil; Diego Garcia None/Nonemil; Akrotiri None/Nonemil; Souda None/Nonemil; Moron None/Nonemil; Lajes None/Nonemil; Mildenhall None/Nonemil; Red Sea None/Nonemil; Arabian Sea None/Nonemil
+baseline: tanker now 1 med 1; transport now 1 med 2; bomber now 0 med 0; isr now 0 med 0; mil now 2 med 6
 - 11:01-07:57Z VALOR76 GLF5 (isr) Ramstein
 - 15:57-15:57Z NATO01 E3TF (isr) Ramstein
 - 15:57-15:57Z JAKE27 R135 (isr) UK
-- 00:20-00:20Z RRR2888 A332 (tanker) UK
 - 07:57-07:57Z RRR9915 A332 (tanker) Incirlik
 - 07:57-15:57Z ? K35R (tanker) UK
 - 07:57-07:57Z ? K35R (tanker) UK
 - 15:57-15:57Z IAM1424 B762 (tanker) Cyprus
+- 01:58-01:58Z ? B762 (tanker) Gulf
 - 07:57-07:57Z BAF662 A400 (transport) UK
 - 07:57-15:57Z CTM2060 A400 (transport) Ramstein
 - 07:57-07:57Z GAF101 A400 (transport) UK
 - 07:57-07:57Z PRIMR01 A400 (transport) Ramstein
-- 07:57-07:57Z RCH4967 C17 (transport) Ramstein
+- 07:57-01:58Z RCH4967 C17 (transport) Ramstein
 - 15:57-15:57Z CTM1254 A400 (transport) Ramstein
 - 15:57-15:57Z NAF22 C130 (transport) Ramstein
 - 15:57-15:57Z RCH1881 C5M (transport) Ramstein
 - 15:57-15:57Z RCH265 C17 (transport) UK
 
-## FIRMS: total 83, not oil/gas 25 (median 90.5)
+## FIRMS: total 0, not oil/gas 0 (median 90)
 
 ## markets: 
 iran fx: {"usd_rial": 2669000, "usd_toman": 266900, "emami_coin_rial": 2661900000, "emami_coin_toman": 266190000, "gold18_rial": 261665000, "gold18_toman": 26166500}
@@ -54,24 +55,25 @@ iran fx: {"usd_rial": 2669000, "usd_toman": 266900, "emami_coin_rial": 266190000
 - StateDept: Romania - Level 1: Exercise Normal Precautions
 - StateDept: Egypt - Level 2: Exercise Increased Caution
 - quake M4.4 10km 37 km SSW of Masjed Soleymān, Iran 2026-11-05T18:59:01Z
-- IODA Iran: {"events_48h": [], "bgp_latest": 41757, "bgp_median_48h": 41756.0, "bgp_drop_pct": -0.0}
+- IODA Iran: {"events_48h": [], "bgp_latest": 41752, "bgp_median_48h": 41756.0, "bgp_drop_pct": 0.0}
 - GDELT: null
 - Advisory {"src": "Germany", "country": "Iran", "level": "warning", "modified": "2026-10-29T14:28:09Z", "changed_since_last_check": false}
 - Advisory {"src": "Switzerland Iran", "changed_since_last_check": true, "snippet": " Access Denied Access Denied You don't have permission to access \"http&#58;&#47;&#47;www&#46;eda&#46;admin&#46;ch&#47;eda&#47;en&#47;fdfa&#47;representations&#45;and&#45;travel&#45;advi
+- Advisory {"src": "Netherlands Iran", "changed_since_last_check": true, "snippet": " Reisadvies Iran | Ministerie van Buitenlandse Zaken | NederlandWereldwijd Ga direct naar inhoud Naar de homepage van www.nederlandwereldwijd.nl Ministerie van Buitenlandse Zaken Menu Ho
 - AIS mil IRIS (209969000) Eastern Med last 2026-11-06T00:20:48Z
 - civil traffic vs same hour: 
 
 ## polymarket
-- US x Iran ceasefire continues through November 2?: {'Yes': '0.9995', 'No': '0.0005'}
-- Israel x Iran ceasefire continues through November 7?: {'Yes': '0.943', 'No': '0.057'}
-- Will the U.S. invade Iran before 2027?: {'Yes': '0.105', 'No': '0.895'}
-- US x Iran effective ceasefire continues through November 6, 2026?: {'Yes': '0.983', 'No': '0.017'}
-- Will Benjamin Netanyahu be the next Prime Minister of Israel?: {'Yes': '0.2025', 'No': '0.7975'}
-- US x Iran effective ceasefire continues through November 8, 2026?: {'Yes': '0.725', 'No': '0.275'}
-- Israel x Iran ceasefire continues through November 15?: {'Yes': '0.78', 'No': '0.22'}
-- Will Gadi Eizenkot be the next Prime Minister of Israel?: {'Yes': '0.6725', 'No': '0.3275'}
-- Israel x Iran ceasefire continues through November 6?: {'Yes': '0.993', 'No': '0.007'}
-- US x Iran effective ceasefire continues through November 15, 2026?: {'Yes': '0.49', 'No': '0.51'}
+- US x Iran effective ceasefire continues through November 8, 2026?: {'Yes': '0.005', 'No': '0.995'}
+- US x Iran effective ceasefire continues through November 6, 2026?: {'Yes': '0.969', 'No': '0.031'}
+- Israel x Iran ceasefire continues through November 7?: {'Yes': '0.972', 'No': '0.028'}
+- US x Iran effective ceasefire continues through November 15, 2026?: {'Yes': '0.005', 'No': '0.995'}
+- Will the U.S. invade Iran before 2027?: {'Yes': '0.115', 'No': '0.885'}
+- Will Benjamin Netanyahu be the next Prime Minister of Israel?: {'Yes': '0.2035', 'No': '0.7965'}
+- Israel x Iran ceasefire continues through December 31?: {'Yes': '0.455', 'No': '0.545'}
+- Israel x Iran ceasefire continues through November 15?: {'Yes': '0.765', 'No': '0.235'}
+- Will Gadi Eizenkot be the next Prime Minister of Israel?: {'Yes': '0.6235', 'No': '0.3765'}
+- US x Iran effective ceasefire continues through November 30, 2026?: {'Yes': '0.002', 'No': '0.998'}
 
 ## news (multi-source first; outlets count)
 - [24] Iran's IRGC says two tankers and tugboat caught fire in Strait of Hormuz | Reuters, Anadolu Ajansı, safety4sea, Arab News | https://news.google.com/rss/articles/CBMitgFBVV95cUxQN2pHcmkxeDJDM184TXNiS2xIOUdXdHNrTXcyVHFKcUNGZEgtanhxTm9TR0UxWjA5cGlXSy12RVBLT3JYYVVBVEltbXFTNWtFT09OMVBIUkFEVlZiaW1mcVhPM3JfQ2tnZm1uRnJSQlVoX1FfNTl5bmh1c1pZMUJBVlVZeVdoWnlQMURoR0g0WVZYcjU4WDloZzRxMHh3Q24zMlRSYXV3MUFZTGxEQXM3NXNuNExxUQ?oc=5
@@ -176,53 +178,53 @@ iran fx: {"usd_rial": 2669000, "usd_toman": 266900, "emami_coin_rial": 266190000
 - [1] Russia to UAE, Iran steps up diplomacy amid Trump threats: What we know | Al Jazeera | https://www.aljazeera.com/news/2026/11/6/russia-to-uae-iran-steps-up-diplomacy-amid-trump-threats-what-we-know?traffic_source=rss
 
 ## telegram (relevant)
-- 2026-11-06T21:29:40Z @ynetalerts: 🔴 ‏ראש ממשלת קטאר: ארה"ב ואיראן לא הצליחו להגיע ל"הסכם מלא" למבזק המלא ב-ynet > https://t.me/ynetalerts/77328
-- 2026-11-06T21:28:05Z @iranintltv: شاهد علوی، عضو تحریریه ایران‌اینترنشنال، گفت رسیدگی به پرونده سه متهم به جاسوسی برای جمهوری اسلامی با هدف آسیب رساندن به دو خبرنگار ایران‌اینترنشنال در دادگاه لندن پایان یافته و هیات منصفه وارد مرحله  https://t.me/iranintltv/365738
-- 2026-11-06T21:26:19Z @indypersian: ♦️ سعید جلیلی، نماینده رهبر جمهوری اسلامی در شورای عالی امنیت ملی، با اشاره به دیدگاه‌های مطرح‌شده درباره ازسرگیری مذاکره با آمریکا گفت علی خامنه‌ای رهبر پیشین جمهوری اسلامی پس از جنگ ۱۲ روزه به‌صراحت https://t.me/indypersian/182078
-- 2026-11-06T21:24:26Z @Middle_East_Spectator: — ❗️ 🇺🇸 / 🇮🇷 NEW: According to my sources, Iranian air defenses on Qeshm launched a surface-to-air missile at an American F/A-18 ‘Hornet’ intruding Iran’s airspace @Middle_East_Spectator https://t.me/Middle_East_Spectator/38021
-- 2026-11-06T21:24:01Z @jamarannews: 🟠 سخنگوی ارتش: نیروهای مسلح قوی‌تر از آغاز جنگ در آماده‌باش هستند 🔹 سرتیپ محمد اکرمی‌نیا سخنگوی ارتش جمهوری اسلامی در یادواره شهدا در شهرستان پیشوا: 🔸 امروز نیروهای مسلح جمهوری اسلامی شامل ارتش، سپاه  https://t.me/jamarannews/560092
-- 2026-11-06T21:23:30Z @mehrnews: وزارت بهداشت ادعای روزنامه تایمز درباره توزیع قرص‌های ید را تکذیب کرد 🔺 ‏حسین کرمانپور مدیر روابط عمومی وزارت بهداشت در فضای مجازی نوشت: هیچ مقام وزارت بهداشت با تایمز مصاحبه نکرده و نقل‌قول منتسب به  https://t.me/mehrnews/429466
-- 2026-11-06T21:22:53Z @iranintltv: تحقیقات اختصاصی ایران‌اینترنشنال نشان می‌دهد جمهوری اسلامی با استفاده از شرکت‌های پوششی و پرداخت پول نقد از طریق سفارت خود در بریتانیا، شبکه‌ای برای گسترش نفوذ رسانه‌ای ایجاد کرده است. بر اساس اسناد ا https://t.me/iranintltv/365737
-- 2026-11-06T21:21:40Z @clashreport: Stephen Miller reportedly urged Trump to wind down the Iran war as part of his bid to become White House chief of staff. According to The New York Times, Miller argued that the conflict had alienated  https://t.me/clashreport/104906
-- 2026-11-06T21:20:40Z @ynetalerts: 🔴 ‏דיווח איראני: נשמעו פיצוצים באי קשם - כתוצאה משיגור טילים לעבר הורמוז למבזק המלא ב-ynet > https://t.me/ynetalerts/77327
-- 2026-11-06T21:19:49Z @indypersian: ♦️ ابراهیم عزیزی، رئیس کمیسیون امنیت ملی مجلس شورای اسلامی، روز جمعه با انتشار پیامی در اکس نوشت: «اجازه نمی‌دهیم ترامپ بی هزینه و غرامت از منطقه فرار کند.» او گفت: «پاسخ ما به هر خطا، ضربه‌ای کاری اس https://t.me/indypersian/182077
-- 2026-11-06T21:18:21Z @iranintltv: روح‌الله رحیم‌پور، روزنامه‌نگار و تحلیل‌گر سیاسی، گفت طرح تازه قطر برای کاهش تنش میان تهران و واشینگتن، با وجود در نظر گرفتن بخشی از خواسته‌های دو طرف، همچنان با شروط جمهوری اسلامی و مطالبات هسته‌ای آ https://t.me/iranintltv/365736
-- 2026-11-06T21:18:13Z @alibk3: سماع دوي انفجار جديد في مضيق هرمز. https://t.me/alibk3/40927
-- 2026-11-06T21:18:03Z @jamarannews: 🟠 طنین ایستادگی و استقلال‌خواهی ملت ایران در یوم الله۱۳ آبان 🔹 هم‌زمان با فرارسیدن یوم‌الله ۱۳ آبان، روز ملی مبارزه با استکبار جهانی، نوای حماسی «مرگ بر ترامپ» با صدای محمدرضا نوشه‌ور منتشر شد؛ اثری ک https://t.me/jamarannews/560091
-- 2026-11-06T21:17:19Z @euronewspe: سرمایه‌گذاران می‌پرسند آیا پیروزی فراگیر دموکرات‌ها در انتخابات میان‌دوره‌ای این هفته آمریکا می‌تواند به تصویب قوانین بازدارنده سخت‌گیرانه‌تر علیه احداث مراکز جدید داده بینجامد یا خیر. شمار زیادی از ن https://t.me/euronewspe/91617
-- 2026-11-06T21:16:57Z @irna_1313: سخنگوی ارتش: نیروهای مسلح قوی‌تر از آغاز جنگ در آماده‌باش هستند 🔹 سرتیپ محمد اکرمی‌نیا سخنگوی ارتش جمهوری اسلامی در یادواره شهدا در شهرستان پیشوا: امروز نیروهای مسلح جمهوری اسلامی شامل ارتش، سپاه پاسد https://t.me/irna_1313/470642
-- 2026-11-06T21:16:23Z @iranintltv: فروغ کنعانی، پژوهشگر جامعه‌شناسی و فعال حقوق زنان، گفت با وجود اعلام محدودیت امنیتی برای حضور شاهزاده رضا پهلوی و همسرش در مراسم فرانکفورت، تاکنون تغییری در برنامه تجمع ایجاد نشده است. او این تصمیم را https://t.me/iranintltv/365735
-- 2026-11-06T21:12:24Z @ynetalerts: 🔴 ‏ארה"ב: הטלנו סנקציות על 8 חברות קנדיות שסייעו לאיראן להעביר כספים לטרור למבזק המלא ב-ynet > https://t.me/ynetalerts/77326
-- 2026-11-06T21:12:02Z @shin_persian: Shin ✓ @hey_itsmyturn Jet activity over Qeshm Hormozgan Province, Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/RTAYB9nmfhWSSqQ-6JH0YYPE?xv=1 ترجمه خودکار فار https://t.me/shin_persian/12078
-- 2026-11-06T21:11:54Z @bbcpersian: وزارت خارجه آمریکا در فراخوانی عمومی برای دریافت اطلاعات درباره افراد، تاسیسات و فناوری‌های مرتبط با برنامه هسته‌ای ایران، تا سقف ۲۰ میلیون دلار پاداش تعیین کرده است. برنامه «پاداش برای عدالت» وزارت خ https://t.me/bbcpersian/294906
-- 2026-11-06T21:10:11Z @rnintel: 🇺🇸 ⚡️ - BREAKING: President Trump has removed Susie Wiles as White House chief of staff. Deputy Chief of Staff Stephen Miller will take over the role starting Monday. https://t.me/rnintel/68789
-- 2026-11-06T21:09:46Z @shin_persian: Shin ✓ @hey_itsmyturn UAV was launched from Omidiyeh. Khuzestan Province, Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/C8n4Hm6iUYyZ9Eh7pT0kPNOu ترجمه خودکار  https://t.me/shin_persian/12077
-- 2026-11-06T21:06:15Z @shin_persian: Shin ✓ @hey_itsmyturn AA activity in Qeshm Hormozgan Province, Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/nbfxyZspgwV-4sUqHXkM7gZn?xv=1 ترجمه خودکار فارسی  https://t.me/shin_persian/12076
-- 2026-11-06T21:05:34Z @alibk3: أنباء عن سماع دوي انفجارين في قشم الإيرانية جراء إطلاق صواريخ نحو مضيق هرمز. https://t.me/alibk3/40926
-- 2026-11-06T21:05:28Z @shin_persian: Shin ✓ @hey_itsmyturn AA activity in Qeshm Hormozgan Province, Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/nbfxyZspgwV-4sUqHXkM7gZn?xv=1 ترجمه خودکار فارسی  https://t.me/shin_persian/12075
-- 2026-11-06T21:05:19Z @jamarannews: 🚨 هشدار قرمز برای مناطق شمالی استان تهران است، نه پایتخت 🔹 حامد یزدی‌مهر، مدیر کل مدیریت بحران استانداری تهران اعلام کرد: هشدار قرمز صادرشده برای مناطق شمالی استان است، نه شهر تهران. 🔹 هشدار قرمز هواش https://t.me/jamarannews/560090
-- 2026-11-06T21:05:10Z @akhbarefori: 🚨 فریادِ کمک از میانِ زخم‌های دیابتی 🚨 ــــــــــــــــــــــــــــــــــــــــ تصور کنید هر قدمی که برمی‌دارید، با ترس و لرز همراه باشد؛ ترس از اینکه شاید، فقط شاید، این قدمِ بعدی، قدمِ آخر باشد... 😭 https://t.me/akhbarefori/704761
-- 2026-11-06T21:04:00Z @VahidOnline: پیام‌های دریافتی: وحید جان شروع شد قشم همین الان موشک بلند شد موشک زدند از قشم موشک پدافندی بود الان از قشم صدایی شبیه پرتاب موشک اومد سلام وحید جان همین الان یک موشک از قشم #قشم 00:32 16 آبان شلیک مو https://t.me/VahidOnline/79019
-- 2026-11-06T20:58:54Z @iranintltv: یک مقام نظامی آمریکایی به ایران‌اینترنشنال گفت ایالات متحده نگران امنیت و ایمنی مردم ایران است و از آنان می‌خواهد در صورت تشدید تنش‌های نظامی، در خانه بمانند و از نیروها و مراکز سپاه پاسداران فاصله بگ https://t.me/iranintltv/365734
-- 2026-11-06T20:58:02Z @akhbarefori: ♦️ حرف‌های یک کشیش مسیحی درباره سقوط آمریکا و ترامپ؛ چهار سال پیش 🇮🇷 ✊ @AkhbareFori | Link https://t.me/akhbarefori/704759
-- 2026-11-06T20:58:01Z @QudsNen: Trump announced in a Fox News phone interview that the US will stop paying Israel military aid by the end of this year, saying he made the deal with Netanyahu, who "brought it up," and adding that Isr https://t.me/QudsNen/244608
-- 2026-11-06T20:57:11Z @geopolitics_prime: ⚔️ Syria sends military advisers and trainers to back Saudi Arabia against Houthis — report Saudi Arabia is calling in reinforcements as the Houthis escalate their missile and drone strikes on Saudi i https://t.me/geopolitics_prime/77409
-- 2026-11-06T20:56:53Z @irna_1313: آمریکا هشت شرکت را در کانادا به بهانه ارتباط با ایران تحریم کرد 🔹 وزارت خزانه‌داری آمریکا هشت شرکت خدمات مالی و صرافی را در کانادا به بهانه ارتباط با ایران تحریم کرد. #ایرنا_جهان https://irna.ir/xjYGj https://t.me/irna_1313/470638
-- 2026-11-06T20:56:01Z @akhbarefori: ♦️ یکی از برج‌های مسکونی بالاشهر تهران 🔹 این برج جایگاه هلی‌کوپتر دارد و با هلی‌کوپتر اختصاصی وارد آن می‌شوند! #اخبار_تهران در فضای مجازی 👇 @akhbartehran https://t.me/akhbarefori/704758
-- 2026-11-06T20:55:13Z @presstv: IRGC intercepted and destroyed a 16th US MQ-1 drone over Qeshm Island, marking another failure for American reconnaissance missions in the region. @PressTV https://t.me/presstv/213720
-- 2026-11-06T20:54:08Z @indypersian: ♦️ بانو یاسمین پهلوی روز جمعه ۱۵ آبان در ویدیویی که در حساب اینستاگرامش منتشر کرد، گفت پلیس فرانکفورت به او و شاهزاده رضا پهلوی اطلاع داده است که به دلیل تهدیدهای جمهوری اسلامی، نمی‌توانند در تجمع روز https://t.me/indypersian/182076
-- 2026-11-06T20:53:11Z @alibk3: أنباء عن سماع دوي انفجارين في قشم الإيرانية جراء إطلاق صواريخ نحو مضيق هرمز. https://t.me/alibk3/40923
-- 2026-11-06T20:53:01Z @jamarannews: ✅ عضو هیئت رئیسه مجلس: آمریکایی‌ها از تنبیهی که شدند، هنوز درس نگرفته‌اند 🔸 روح‌الله متفکرآزاد در گفت‌وگو با خبرنگار جماران در پاسخ به اینکه به نظر شما مذاکرات ایران و آمریکا از طریق میانجیگری قطر به  https://t.me/jamarannews/560089
-- 2026-11-06T20:52:01Z @akhbarefori: ♦️ هشدار اورژانس استان تهران در پی بارندگی‌های شدید در پایتخت 🔹 از سفرها و ترددهای غیرضروری خودداری کنید و در صورت امکان از حمل‌ونقل عمومی استفاده کنید. 🔹 از حاشیه رودخانه‌ها، مسیل‌ها و معابر آب‌گرفته https://t.me/akhbarefori/704756
-- 2026-11-06T20:49:18Z @akhbarefori: ♦️ بعضی‌ها ساعتی پول می‌گیرند تا بی‌حجاب بیرون بیایند؛ اعتراف هم کرده‌اند/ فیلم دیدم که دختر و پسر وسط چمن روی هم افتاده‌اند و یک کاری می‌کنند محمدحسن قدیری ابیانه، سفیر سابق ایران در مکزیک و استرالیا https://t.me/akhbarefori/704755
-- 2026-11-06T20:48:54Z @mehrnews: ابراهیم عزیزی: اجازه نمی‌دهیم ترامپ بی‌هزینه و غرامت از منطقه فرار کند 🔺 ابراهیم عزیزی رئیس کمیسیون امنیت ملی و سیاست خارجی مجلس در صفحه شخصی خود نوشت: اجازه نمی‌دهیم ترامپ بی‌هزینه و غرامت از منطقه ف https://t.me/mehrnews/429465
-- 2026-11-06T20:43:40Z @N12chat: ניר דבורי ראש הממשלה נתניהו ניסה לקדם פעולה נגד איראן ימים בודדים לפני הבחירות, בתמיכת ראש המוסד רומן גופמן. הפעולה נבלמה על ידי האמריקנים כאשר נודע להם על התכנון, כך פרסמנו ב"אולפן שישי" @N12chat https://t.me/N12chat/233756
-- 2026-11-06T20:41:23Z @bbcpersian: ‌ ‌ ‌ دونالد ترامپ، رئیس‌جمهور آمریکا، اعلام کرد که استیون میلر، از نزدیک‌ترین مشاورانش، از روز دوشنبه ۹ نوامبر ریاست دفتر کاخ سفید را بر عهده خواهد گرفت. این تغییر پس از شکست سنگین جمهوری‌خواهان در ا https://t.me/bbcpersian/294905
-- 2026-11-06T20:41:12Z @isna94: 🎥 تصاویری از امدادرسانی به حادثه‌دیدگان اتوبوس واژگون شده با ۴۵ سرنشین در هرمزگان مدیرکل مدیریت بحران استانداری هرمزگان : این حادثه خوشبختانه مصدومیت جدی در پی نداشته است. @isna94 https://t.me/isna94/412115
-- 2026-11-06T20:40:59Z @irna_1313: معرفی جاذبه های گردشگری و هنری ایران در نمایشگاه بین المللی پاکستان از دریچه دوربین 🔹 نمایشگاه بین المللی گردشگری پاکستان با مشارکت ۱۰ کشور از جمله جمهوری اسلامی ایران به مدت ۳ روز در اسلام‌آباد گشایش https://t.me/irna_1313/470636
-- 2026-11-06T20:39:19Z @ynetalerts: 🔴 ‏המשטרה: אותרה אליה קדוש שהוגדרה כנעדרת למבזק המלא ב-ynet > https://t.me/ynetalerts/77325
-- 2026-11-06T20:37:59Z @indypersian: ♦️ دفتر کنترل دارایی‌های خارجی وزارت خزانه‌داری ایالات متحده، روز جمعه، در چارچوب عملیات «طرد اقتصادی»، هشت صرافی و شرکت خدمات مالی مستقر در کانادا را به دلیل تسهیل انتقال پول و دارایی‌های دیجیتال برا https://t.me/indypersian/182075
-- 2026-11-06T20:35:18Z @bbcpersian: ‌ ‌ ‌ الکساندر زویف، معاون دبیرکل سازمان ملل متحد در امور مبارزه با تروریسم، گفته است که شاخه خراسان گروه داعش در افغانستان به تجهیزات تاکتیکی مدرن، از جمله وسایط نقلیه هوایی بدون سرنشین (پهپاد)، دست  https://t.me/bbcpersian/294904
-- 2026-11-06T20:31:29Z @presstv: Tech Olympics: Empowering young talent, inspiring innovation, building Iran’s future Moeen Amini reports from Tehran @PressTV https://t.me/presstv/213719
-- 2026-11-06T20:29:43Z @iranintltv: یک مقام آمریکایی به ایران‌اینترنشنال گفت ایالات متحده نگران امنیت و ایمنی مردم ایران است و از آنان می‌خواهد در صورت تشدید تنش‌های نظامی، در خانه بمانند و از نیروها و مراکز سپاه پاسداران فاصله بگیرند.  https://t.me/iranintltv/365733
-- 2026-11-06T20:29:10Z @jamarannews: 🟠 وزارت بهداشت خبر توزیع قرص‌های یُد را تکذیب کرد / اعلام وضعیت جنگی در صلاحیت وزارت بهداشت نیست ✍ حسین کرمانپور ، مدیر روابط عمومی و سخنگوی وزارت بهداشت در شبکه اِکس نوشت: «هیچ مقام وزارت بهداشت با ت https://t.me/jamarannews/560086
+- 2026-11-07T01:59:46Z @ynetalerts: 🔴 ‏פרגאווי: הקונגרס הדיח את הנשיא סנטיאגו - שנעצר למבזק המלא ב-ynet > https://t.me/ynetalerts/77333
+- 2026-11-07T01:56:31Z @iranintltv: روزنامه وال‌استریت ژورنال گزارش داد: «جی‌دی ونس، معاون رییس‌جمهوری آمریکا، و متحدان واشینگتن در کشورهای حاشیه خلیج فارس به دونالد ترامپ توصیه می‌کنند به جنگ پایان دهد، اما گروه دیگری از مشاوران او در  https://t.me/iranintltv/365755
+- 2026-11-07T01:52:04Z @irna_1313: تناقض‌گویی و اعتراف آمریکا/ترامپ: در حال انجام حملات محدود به ایران هستیم 🔹 رئیس جمهوری ایالات متحده در تداوم تناقض‌گویی‌هایش، با بیان این ادعا که واشنگتن با ایران در حال جنگ نیست و در حال تعامل و گفت https://t.me/irna_1313/470658
+- 2026-11-07T01:52:01Z @farsna: میانجی رسما دلال شد 🔹 شرکت استرالیایی وودساید انرژی اعلام کرده که براساس توافقی ۲۰ ساله، گاز طبیعی مایع (LNG) به شرکت «قطر انرژی» عرضه خواهد کرد. 🔹 این قرارداد نوعی دلالی است و قطری‌ها تصمیم گرفته‌اند https://t.me/farsna/472984
+- 2026-11-07T01:51:47Z @presstv: Democrats seeking to block funding of war on Iran before taking control of Congress US Democratic lawmakers are considering using their control over federal spending to block further funding for Presi https://t.me/presstv/213737
+- 2026-11-07T01:47:18Z @indypersian: ♦️ شیخ محمد بن عبدالرحمن آل ثانی، نخست‌وزیر و وزیر خارجه قطر، روز جمعه، اعلام کرد که تلاش‌های میانجی‌گرانه دوحه برای جلوگیری از خارج شدن کنترل اوضاع در منطقه همچنان ادامه دارد. به گفته او، طی هفته‌های https://t.me/indypersian/182097
+- 2026-11-07T01:40:11Z @presstv: Iran’s Army air defense shot down another enemy MQ-9 drone in the sky over Qeshm Island. @PressTV https://t.me/presstv/213736
+- 2026-11-07T01:39:45Z @geopolitics_prime: ⚔️ We will never allow US to rebuild in the region — Iran's army Iranian Military Spokesperson Rear Admiral Akrami-Nia has issued a stark warning to the CENTCOM, claiming that the US military footprin https://t.me/geopolitics_prime/77418
+- 2026-11-07T01:36:01Z @irna_1313: 🕌 اوقات شرعی | اذان صبح به افق تهران امام علی(ع) می‌فرماید : قَد جَهِلَ مَن استَنصَحَ أعداءَهُ كسى كه از دشمنانش انتظار خيرخواهى داشته باشد، نادان است. @IRNA_1313 https://t.me/irna_1313/470656
+- 2026-11-07T01:35:42Z @iranintltv: ترامپ هنگام عزیمت از فلوریدا در پاسخ به پرسشی درباره انفجار در قشم به خبرنگاران گفت: آنها یک سامانه ضدهوایی کوچک ساخته بودند و ما آن را ظرف حدود ۱۵ دقیقه، شاید هم پنج دقیقه، منهدم کردیم.» به گزارش خبر https://t.me/iranintltv/365754
+- 2026-11-07T01:35:17Z @rnintel: 🇺🇸 ⚡️ - Elon says Tesla will wind down production of the Cybertruck next year, to make room for the Cybercab. https://t.me/rnintel/68798
+- 2026-11-07T01:30:07Z @rotternews: טראמפ: איראן מאוד רוצה להגיע להסכם. 📰 לאשכול המלא 📰 https://t.me/rotternews/370146
+- 2026-11-07T01:28:31Z @indypersian: ♦️ دونالد ترامپ، روز جمعه، با اشاره به حضور نظامی واشنگتن در آبراه‌های جنوبی ایران به خبرنگاران گفت: «تمام آنچه ما هستیم، شاید یک اشغالگر باشد؛ می‌توان گفت یک اشغالگر. چون می‌دانید ما چه می‌کنیم، ما ت https://t.me/indypersian/182096
+- 2026-11-07T01:27:59Z @rnintel: 🇺🇸 🇨🇳 ⚡️ - US intelligence officials believe Nvidia CEO Jensen Huang was targeted by a Chinese espionage operation involving Alice Huang, a Chinese executive at Singapore-based Megaspeed, according to https://t.me/rnintel/68797
+- 2026-11-07T01:26:27Z @mehrnews: 📹 قابی از تونل پرچم ۱۸ کیلومتری؛ از بلوار پیروزی تا میدان بسیج مشهد 🔗 mehrnews.com 📡 @Mehrnews https://t.me/mehrnews/429480
+- 2026-11-07T01:25:31Z @VahidOnline: دونالد ترامپ، روز جمعه، در پاسخ به پرسش خبرنگاران درباره گزارش‌های مربوط به حملات نظامی در جزیره قشم، این اقدام را تأیید کرد و گفت: «نمی‌خواهم درباره آن صحبت کنم. ما حملات جزئی انجام می‌دهیم.» رئیس‌جم https://t.me/VahidOnline/79021
+- 2026-11-07T01:11:17Z @warmonitors: ⚡ The Wall Street Journal, citing US officials: Higseth and the Central Command chief supported resuming large-scale combat operations against Iran. 💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sports https://t.me/warmonitors/46540
+- 2026-11-07T01:10:06Z @rotternews: ממשל טראמפ נותר מפוצל לגבי סיום המלחמה עם איראן או חידוש התקיפות. 📰 לאשכול המלא 📰 https://t.me/rotternews/370144
+- 2026-11-07T01:08:01Z @farsna: سخنگوی ارتش: مقاومت پولادین ملت ایران سران جنگ‌طلب آمریکا را در عرصهٔ سیاسی به زیر کشید 🔹 امیر اکرمی‌نیا: مقاومت مردم ایران سبب شد کارشناسان و مقامات آمریکایی به نقش انکارناپذیر جنگ با ایران در این شک https://t.me/farsna/472983
+- 2026-11-07T01:07:38Z @irna_1313: ادعای ترامپ: اجازه دستیابی ایران به سلاح هسته‌ای را نخواهیم داد 🔹 رئیس جمهوری آمریکا با تکرار ادعاهای خود در توجیه جنگ علیه ایران بار دیگر مدعی شد که واشنگتن اجازه دستیابی ایران را به سلاح هسته ای نخو https://t.me/irna_1313/470655
+- 2026-11-07T01:07:33Z @indypersian: ♦️ دونالد ترامپ، روز جمعه، در پاسخ به پرسش خبرنگاران درباره گزارش‌های مربوط به حملات نظامی در جزیره قشم، این اقدام را تأیید کرد و گفت: «نمی‌خواهم درباره آن صحبت کنم. ما حملات جزئی انجام می‌دهیم.» رئیس https://t.me/indypersian/182095
+- 2026-11-07T00:57:11Z @irna_1313: هشدار امنیتی آمریکا به شهروندان خود در خاورمیانه 🔹 وزارت امور خارجه آمریکا از شهروندان خود در سراسر خاورمیانه خواست که هوشیاری خود را افزایش دهند. #ایرنا_جهان https://irna.ir/xjYGjJ @IRNA_1313 https://t.me/irna_1313/470654
+- 2026-11-07T00:51:20Z @QudsNen: "You're dodging me here, Ro." Krystal Ball presses Rep. Ro Khanna on whether progressives will actually withhold their votes for Hakeem Jeffries as Speaker unless they secure firm commitments on Medic https://t.me/QudsNen/244619
+- 2026-11-07T00:50:53Z @ynetalerts: 🔴 ‏טראמפ: "מדברים עם האיראנים, נראה מה יצא. השמדנו נשק נגד כלי טיס שהם בנו" למבזק המלא ב-ynet > https://t.me/ynetalerts/77332
+- 2026-11-07T00:48:41Z @mehrnews: تلاش‌های پشت‌پرده ونس برای توافق آتش‌بس جدید با ایران 🔺 ‏پایگاه خبری آکسیوس نوشت که جی‌دی ونس، معاون رئیس‌جمهور آمریکا تلاش‌های پشت‌پرده برای دستیابی به توافقی جدید با ایران با هدف برقراری آتش‌بس و از https://t.me/mehrnews/429479
+- 2026-11-07T00:47:03Z @geopolitics_prime: 🔊 Trump admits Iran is rebuilding its air defenses President Trump refused to confirm tonight's direct clashes near Qeshm Island, where Iranian air defenses fired on US jets. Instead, he downplayed th https://t.me/geopolitics_prime/77417
+- 2026-11-07T00:45:14Z @bbcpersian: 🔻 قطر گزارش‌ها درباره شکست مذاکرات ایران و آمریکا را رد کرد دفتر رسانه‌ای بین‌المللی قطر گزارش‌های منتشرشده درباره ناکامی ایران و آمریکا در دستیابی به توافقی برای پایان جنگ را «نادرست و گمراه‌کننده» خ https://t.me/bbcpersian/294913
+- 2026-11-07T00:41:55Z @iranintltv: دونالد ترامپ، رییس‌جمهوری آمریکا، در سخنرانی خود در برنامه‌ای متعلق به ناسا در فلوریدا تاکید کرد که آمریکا باید همچنان در زمینه «ابرهوش» (هوش مصنوعی) رهبر بلامنازع جهان باقی بماند. او گفت: «ما اکنون ح https://t.me/iranintltv/365751
+- 2026-11-07T00:40:07Z @rotternews: פיקוד מרכז האמריקאי מציע 20 מיליון דולר ורילוקיישן עבור איראניים שימסרו פרטים על תוכנית הגרעין של איראן 📰 לאשכול המלא 📰 https://t.me/rotternews/370142
+- 2026-11-07T00:35:30Z @indypersian: ♦️ بخش امور کنسولی وزارت امور خارجه ایالات متحده با صدور یک هشدار امنیتی از شهروندان آمریکایی حاضر در منطقه خاورمیانه خواست تا هوشیاری خود را به‌طور ویژه افزایش دهند؛ در این بیانیه تأکید شده است: «آمر https://t.me/indypersian/182093
+- 2026-11-07T00:35:10Z @mehrnews: تصادفات مرگبار در محورهای ساوه چهار کشته و ۱۸ مصدوم بر جای ماند 🔺 ‏رئیس مرکز فوریت‌های پزشکی دانشکده علوم پزشکی ساوه از وقوع سه سانحه رانندگی در محورهای مواصلاتی این شهرستان خبر داد که در مجموع چهار ک https://t.me/mehrnews/429477
+- 2026-11-07T00:26:09Z @warmonitors: ⚡ #BREAKING A five-story residential building was damaged in a Russian attack on Kyiv, local authorities say 💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom +18 https://t.me/warmonitors/46539
+- 2026-11-07T00:23:18Z @iranintltv: اکسیوس به نقل از دو منبع آگاه گزارش داد جی‌دی ونس، معاون رییس‌جمهوری آمریکا، طی دو هفته گذشته شخصا در مذاکرات غیرمستقیم با ایران برای دستیابی به آتش‌بس جدید و ازسرگیری مذاکرات هسته‌ای مشارکت داشته است https://t.me/iranintltv/365750
+- 2026-11-07T00:20:09Z @rotternews: סגן נשיא ארה''ב ואנס מנהל בשבועיים האחרונים ערוצי הידברות עקיפים מול איראן, במטרה לקדם הפסקת אש חדשה וחידוש של המו''מ הגרעיני. 📰 לאשכול המלא 📰 https://t.me/rotternews/370140
+- 2026-11-07T00:17:36Z @bbcpersian: 🔻 ارتش ایران مدعی سرنگونی یک پهپاد آمریکایی شد خبرگزاری تسنیم به نقل از گزارش‌های اولیه از اصابت دو موشک به جزیره قشم خبر داده است. خبرگزاری دولتی ایرنا نیز به نقل از شاهدان محلی گزارش داد که پس از شن https://t.me/bbcpersian/294911
+- 2026-11-07T00:17:06Z @alibk3: صور الأقمار الصناعية ترصد تسربًا نفطيًا كبيرًا في مضيق هرمز https://t.me/alibk3/40950
+- 2026-11-07T00:13:14Z @indypersian: ♦️ «ان‌بی‌سی نیوز» به نقل از دو مقام آمریکایی روز جمعه گزارش داد، مشاوران و مقام‌های دفاعی به دونالد ترامپ، رئیس‌جمهوری ایالات متحده، اعلام کرده‌اند که فرصت او برای آغاز حمله به ایران «محدود» و رو به  https://t.me/indypersian/182091
+- 2026-11-07T00:11:20Z @mehrnews: 📹 حجت الاسلام سیدحسین آقامیری در تجمع میدان انقلاب: این دشمن تحت هیچ شرایطی دست از این جنگ برنخواهد داشت 🔗 mehrnews.com 📡 @Mehrnews https://t.me/mehrnews/429475
+- 2026-11-07T00:09:43Z @mehrnews: 📹 بارون گریه کرد برای تو... مداحی در شب بارانی تجمع میدان انقلاب 🔗 mehrnews.com 📡 @Mehrnews https://t.me/mehrnews/429474
+- 2026-11-07T00:02:57Z @bbcpersian: وزارت دارایی آمریکا اعلام کرد که هشت شرکت خدمات مالی مستقر در کانادا را به اتهام تسهیل معاملات مالی با نهادهای ایرانی تحت تحریم، در فهرست تحریم‌های خود قرار داده است. این تحریم‌ها عملا دسترسی شرکت‌های https://t.me/bbcpersian/294910
+- 2026-11-07T00:00:23Z @rotternews: NBC: חלק מיועציו של הנשיא טראמפ הודיעו לו שאפשרויותיו לחידוש המלחמה באיראן הולכות ומצטמצמות - טראמפ טרם הכריע בנושא ברק נטש 📰 לאשכול המלא 📰 https://t.me/rotternews/370138
+- 2026-11-06T23:54:55Z @presstv: Iran’s Army air defense shot down another enemy MQ-9 drone in the sky over Qeshm Island. @PressTV https://t.me/presstv/213730
+- 2026-11-06T23:54:54Z @geopolitics_prime: 🔥 Iskander-M missiles hit industrial zone in Kiev Russian forces concentrated a devastating ballistic missile strike on a single industrial zone on the eastern outskirts of Kiev, firing at least 8 Isk https://t.me/geopolitics_prime/77415
+- 2026-11-06T23:50:46Z @mehrnews: 📹 اجرای گروه سرود فرشته‌های آسمانی در تجمع میدان انقلاب 🔗 mehrnews.com 📡 @Mehrnews https://t.me/mehrnews/429472
+- 2026-11-06T23:49:45Z @iranintltv: 🔻️ ️️️️️هواداران تیم فوتبال سپاهان، روز جمعه ۱۵ آبان، در جریان بازی با ملوان در استادیوم نقش جهان اصفهان، آتش بازی کردند و جو فوق‌العاده‌ای را بوجود آوردند؛ چیزی شبیه به صحنه‌هایی که هواداران تیم فوتب https://t.me/iranintltv/365749
+- 2026-11-06T23:48:57Z @farsna: ‌ 🔴 انهدام پهپاد MQ9 دشمن در آسمان قشم 🔹 ارتش: دقایقی قبل، یک فروند پهپاد MQ9 دشمن متجاوز آمریکایی در آسمان قشم مورد اصابت قرار گرفت و منهدم شد. @Farsna https://t.me/farsna/472980
+- 2026-11-06T23:47:47Z @clashreport: Trump has been urged to launch a new major military campaign against Iran within eight weeks, before Democrats take control of Congress in January. Defense Secretary Pete Hegseth is reportedly pushing https://t.me/clashreport/104922
+- 2026-11-06T23:47:45Z @mehrnews: 📹 فاطمیه خط مقدم ماست؛ شعرخوانی محمد حسین رحیمیان در تجمع میدان انقلاب 🔗 mehrnews.com 📡 @Mehrnews https://t.me/mehrnews/429471
+- 2026-11-06T23:42:35Z @akhbarefori: 🚨 فریادِ کمک از میانِ زخم‌های دیابتی 🚨 ــــــــــــــــــــــــــــــــــــــــ تصور کنید هر قدمی که برمی‌دارید، با ترس و لرز همراه باشد؛ ترس از اینکه شاید، فقط شاید، این قدمِ بعدی، قدمِ آخر باشد... 😭 https://t.me/akhbarefori/704776
+- 2026-11-06T23:38:27Z @akhbarefori: خبرفوری pinned « 🔴 خبرفوری/ ارتش: دقایقی قبل، یک فروند پهپاد MQ9 دشمن متجاوز آمریکایی، با آتش سامانه‌های نوین نیروی پدافند هوایی ارتش، تحت شبکه یکپارچه پدافند هوایی کشور، در آسمان قشم مورد اصابت قرار  https://t.me/akhbarefori/704775

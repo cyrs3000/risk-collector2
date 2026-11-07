@@ -1,15 +1,15 @@
 {
- "generated": "2026-11-06T21:32:56Z",
+ "generated": "2026-11-07T01:58:01Z",
  "window_hours": {
   "news": 12,
   "military_air": 24
  },
  "sources_status": {
-  "adsb": "partial: 4 point(s) failed",
+  "adsb": "partial: 11 point(s) failed",
   "firms": "ok",
   "markets": "error: RuntimeError: all market symbols failed",
   "iran_fx": "ok",
-  "news": "partial: 4 feed(s) failed: Times of Israel, Times of Israel liveblog, Gulf News, Arab News",
+  "news": "partial: 22 feed(s) failed: Times of Israel, Times of Israel liveblog, Gulf News, Arab News, Google News: Iran attack, Google News: Iran strike US",
   "telegram": "ok",
   "safeairspace": "ok",
   "polymarket": "ok",
@@ -32,15 +32,20 @@
  "alerts": [
   {
    "type": "airspace_closure",
-   "n_items": 1,
-   "n_outlets": 1,
+   "n_items": 2,
+   "n_outlets": 2,
    "outlets": [
-    "The New Region"
+    "The New Region",
+    "akhbarefori"
    ],
    "examples": [
     {
      "text": "Iraq denies airspace closure despite civil aviation alert",
      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5WbWt1Z0xPbkNob182ZmlVRFZENmJyc1VZTFBBYlJzeDZJX2JYWWQzVVVkdlBaY0hQS1l6ek1OSlJ1azBXR3BXaVpDbw?oc=5"
+    },
+    {
+     "text": "♦️ آمریکا هشدار امنیتی در چند کشور منطقه از جمله اراضی اشغالی، عربستان، امارات، قطر و بحرین را به‌روزرسانی کرد 🔹 این کشور از شهروندانش خواست برای احتمال اختلال در پروازها و بسته شدن حریم‌های هوایی آما",
+     "link": "https://t.me/akhbarefori/704773"
     }
    ],
    "note": "keyword match — verify before acting"
@@ -50,56 +55,64 @@
    "src": "Switzerland Iran",
    "country": null,
    "level": null,
-   "snippet": " Access Denied Access Denied You don't have permission to access \"http&#58;&#47;&#47;www&#46;eda&#46;admin&#46;ch&#47;eda&#47;en&#47;fdfa&#47;representations&#45;and&#45;travel&#45;advice&#47;iran&#47;travel&#45;advice&#45;iran&#46;html\" on this server. Reference&#32;&#35;18&#46;6f6d3e17&#46;1794000",
+   "snippet": " Access Denied Access Denied You don't have permission to access \"http&#58;&#47;&#47;www&#46;eda&#46;admin&#46;ch&#47;eda&#47;en&#47;fdfa&#47;representations&#45;and&#45;travel&#45;advice&#47;iran&#47;travel&#45;advice&#45;iran&#46;html\" on this server. Reference&#32;&#35;18&#46;1ca7cb17&#46;1794016",
    "url": "https://www.eda.admin.ch/eda/en/fdfa/representations-and-travel-advice/iran/travel-advice-iran.html"
+  },
+  {
+   "type": "foreign_advisory_changed",
+   "src": "Netherlands Iran",
+   "country": null,
+   "level": null,
+   "snippet": " Reisadvies Iran | Ministerie van Buitenlandse Zaken | NederlandWereldwijd Ga direct naar inhoud Naar de homepage van www.nederlandwereldwijd.nl Ministerie van Buitenlandse Zaken Menu Home Familie Geld Gezondheid Identiteit Onderwijs Reizen Vervoer Werk Wonen Onderwerpen A-Z Contact Zoeken Waar kunn",
+   "url": "https://www.nederlandwereldwijd.nl/reisadvies/iran"
   }
  ],
  "adsb": {
-  "asof": "2026-11-06T21:32:56Z",
+  "asof": "2026-11-07T01:58:01Z",
   "points": [
    {
     "area": "Gulf",
-    "total": 69,
-    "mil": 0
+    "total": 84,
+    "mil": 1
    },
    {
     "area": "Israel",
-    "total": 22,
+    "total": 32,
     "mil": 0
    },
    {
     "area": "Saudi/Qatar",
-    "total": 10,
+    "total": 14,
     "mil": 0
    },
    {
     "area": "Iraq/Kuwait",
-    "total": 4,
+    "total": 1,
     "mil": 0
    },
    {
     "area": "Cyprus",
-    "total": 30,
+    "total": 38,
     "mil": 0
    },
    {
     "area": "Ramstein",
-    "total": 413,
-    "mil": 0
+    "total": 50,
+    "mil": 1
    },
    {
     "area": "UK",
-    "total": 340,
-    "mil": 1
+    "total": 42,
+    "mil": 0
    },
    {
     "area": "Crete",
-    "total": 19,
-    "mil": 1
+    "total": 9,
+    "mil": 0
    },
    {
     "area": "Incirlik",
-    "total": 27,
+    "total": 36,
     "mil": 0
    },
    {
@@ -109,38 +122,45 @@
    },
    {
     "area": "Al Udeid",
-    "total": 69,
-    "mil": 0
+    "total": null,
+    "mil": null,
+    "err": "both ADS-B sources failed"
    },
    {
     "area": "Prince Sultan AB",
-    "total": 16,
-    "mil": 0
+    "total": null,
+    "mil": null,
+    "err": "both ADS-B sources failed"
    },
    {
     "area": "Muwaffaq Salti",
-    "total": 20,
-    "mil": 0
+    "total": null,
+    "mil": null,
+    "err": "both ADS-B sources failed"
    },
    {
     "area": "Diego Garcia",
-    "total": 0,
-    "mil": 0
+    "total": null,
+    "mil": null,
+    "err": "both ADS-B sources failed"
    },
    {
     "area": "Akrotiri",
-    "total": 33,
-    "mil": 0
+    "total": null,
+    "mil": null,
+    "err": "both ADS-B sources failed"
    },
    {
     "area": "Souda",
-    "total": 16,
-    "mil": 1
+    "total": null,
+    "mil": null,
+    "err": "both ADS-B sources failed"
    },
    {
     "area": "Moron",
-    "total": 132,
-    "mil": 1
+    "total": null,
+    "mil": null,
+    "err": "both ADS-B sources failed"
    },
    {
     "area": "Lajes",
@@ -170,54 +190,37 @@
   "traffic_vs_same_hour": [],
   "now": [
    {
-    "hex": "4ca28c",
-    "cs": "E270",
-    "type": "EC35",
-    "reg": "270",
-    "group": "other",
-    "area": "UK",
-    "lat": 53.314277,
-    "lon": -6.40656,
-    "alt": 450,
+    "hex": "ae5e12",
+    "cs": "",
+    "type": "B762",
+    "reg": "17-46037",
+    "group": "tanker",
+    "area": "Gulf",
+    "lat": 25.967443,
+    "lon": 51.567923,
+    "alt": 20325,
+    "track": 120.3,
+    "first": "2026-11-07T01:58:01Z",
+    "last": "2026-11-07T01:58:01Z",
+    "areas": [
+     "Gulf"
+    ]
+   },
+   {
+    "hex": "ae49c7",
+    "cs": "RCH4967",
+    "type": "C17",
+    "reg": "09-9211",
+    "group": "transport",
+    "area": "Ramstein",
+    "lat": 49.874529,
+    "lon": 10.81288,
+    "alt": 36000,
     "track": 273.0,
-    "first": "2026-11-06T21:32:56Z",
-    "last": "2026-11-06T21:32:56Z",
+    "first": "2026-11-06T07:57:20Z",
+    "last": "2026-11-07T01:58:01Z",
     "areas": [
-     "UK"
-    ]
-   },
-   {
-    "hex": "4b8392",
-    "cs": "2445",
-    "type": "BTB2",
-    "reg": "TC-J1",
-    "group": "other",
-    "area": "Souda",
-    "lat": 37.083094,
-    "lon": 27.318938,
-    "alt": 17050,
-    "track": 357.1,
-    "first": "2026-11-06T21:32:56Z",
-    "last": "2026-11-06T21:32:56Z",
-    "areas": [
-     "Souda"
-    ]
-   },
-   {
-    "hex": "3474d2",
-    "cs": "ANGEL09",
-    "type": "EC35",
-    "reg": "HE.26-33A",
-    "group": "other",
-    "area": "Moron",
-    "lat": 36.585311,
-    "lon": -4.547697,
-    "alt": 625,
-    "track": 70.63,
-    "first": "2026-11-06T21:32:56Z",
-    "last": "2026-11-06T21:32:56Z",
-    "areas": [
-     "Moron"
+     "Ramstein"
     ]
    }
   ],
@@ -389,57 +392,6 @@
     "track": 222.9,
     "first": "2026-11-05T11:01:48Z",
     "last": "2026-11-06T07:57:20Z",
-    "areas": [
-     "Crete"
-    ]
-   },
-   {
-    "hex": "498457",
-    "cs": "KR07",
-    "type": "W3",
-    "reg": "0714",
-    "group": "other",
-    "area": "Ramstein",
-    "lat": 50.009784,
-    "lon": 13.048693,
-    "alt": 3550,
-    "track": 341.0,
-    "first": "2026-11-06T00:20:48Z",
-    "last": "2026-11-06T00:20:48Z",
-    "areas": [
-     "Ramstein"
-    ]
-   },
-   {
-    "hex": "c0532c",
-    "cs": "",
-    "type": "DH8C",
-    "reg": "C-GFMX",
-    "group": "other",
-    "area": "UK",
-    "lat": 50.877573,
-    "lon": 1.241702,
-    "alt": 4700,
-    "track": 230.0,
-    "first": "2026-11-06T00:20:48Z",
-    "last": "2026-11-06T00:20:48Z",
-    "areas": [
-     "UK"
-    ]
-   },
-   {
-    "hex": "ae04da",
-    "cs": "CNV6602",
-    "type": "B737",
-    "reg": "165832",
-    "group": "other",
-    "area": "Crete",
-    "lat": 35.921336,
-    "lon": 18.898296,
-    "alt": 40000,
-    "track": 289.87,
-    "first": "2026-11-06T00:20:48Z",
-    "last": "2026-11-06T00:20:48Z",
     "areas": [
      "Crete"
     ]
@@ -1091,23 +1043,6 @@
     ]
    },
    {
-    "hex": "43c6fb",
-    "cs": "RRR2888",
-    "type": "A332",
-    "reg": "ZZ338",
-    "group": "tanker",
-    "area": "UK",
-    "lat": 52.351822,
-    "lon": -4.405594,
-    "alt": 39000,
-    "track": 51.36,
-    "first": "2026-11-06T00:20:48Z",
-    "last": "2026-11-06T00:20:48Z",
-    "areas": [
-     "UK"
-    ]
-   },
-   {
     "hex": "43c6f8",
     "cs": "RRR9915",
     "type": "A332",
@@ -1173,6 +1108,23 @@
     "last": "2026-11-06T15:57:30Z",
     "areas": [
      "Cyprus"
+    ]
+   },
+   {
+    "hex": "ae5e12",
+    "cs": "",
+    "type": "B762",
+    "reg": "17-46037",
+    "group": "tanker",
+    "area": "Gulf",
+    "lat": 25.967443,
+    "lon": 51.567923,
+    "alt": 20325,
+    "track": 120.3,
+    "first": "2026-11-07T01:58:01Z",
+    "last": "2026-11-07T01:58:01Z",
+    "areas": [
+     "Gulf"
     ]
    },
    {
@@ -1250,12 +1202,12 @@
     "reg": "09-9211",
     "group": "transport",
     "area": "Ramstein",
-    "lat": 49.977944,
-    "lon": 10.322016,
-    "alt": 31000,
-    "track": 102.0,
+    "lat": 49.874529,
+    "lon": 10.81288,
+    "alt": 36000,
+    "track": 273.0,
     "first": "2026-11-06T07:57:20Z",
-    "last": "2026-11-06T07:57:20Z",
+    "last": "2026-11-07T01:58:01Z",
     "areas": [
      "Ramstein"
     ]
@@ -1331,186 +1283,53 @@
   ],
   "baseline": {
    "tanker": {
-    "now": 0,
-    "median_14d": 1.0,
+    "now": 1,
+    "median_14d": 1,
     "p90_14d": 3,
-    "samples": 28
+    "samples": 29
    },
    "transport": {
-    "now": 0,
-    "median_14d": 2.0,
+    "now": 1,
+    "median_14d": 2,
     "p90_14d": 5,
-    "samples": 28
+    "samples": 29
    },
    "bomber": {
     "now": 0,
-    "median_14d": 0.0,
+    "median_14d": 0,
     "p90_14d": 0,
-    "samples": 28
+    "samples": 29
    },
    "isr": {
     "now": 0,
-    "median_14d": 0.0,
+    "median_14d": 0,
     "p90_14d": 2,
-    "samples": 28
+    "samples": 29
    },
    "mil": {
-    "now": 3,
-    "median_14d": 6.0,
+    "now": 2,
+    "median_14d": 6,
     "p90_14d": 47,
-    "samples": 28
+    "samples": 29
    }
   }
  },
  "firms": {
-  "asof": "2026-11-06T21:32:56Z",
+  "asof": "2026-11-07T01:58:01Z",
   "MODIS_NRT": {
-   "n": 71
+   "n": 0
   },
   "VIIRS_NOAA20_NRT": {
-   "n": 12
+   "n": 0
   },
   "VIIRS_SNPP_NRT": {
    "n": 0
   },
-  "n_total": 83,
-  "n_not_oilgas": 25,
+  "n_total": 0,
+  "n_not_oilgas": 0,
   "near_sites": [],
-  "top_not_oilgas": [
-   {
-    "prod": "MODIS_NRT",
-    "lat": 32.24689,
-    "lon": 51.42892,
-    "frp": 65.68,
-    "date": "2026-11-06",
-    "time": "1724",
-    "conf": "77",
-    "oilgas": false,
-    "near": []
-   },
-   {
-    "prod": "MODIS_NRT",
-    "lat": 32.24235,
-    "lon": 51.43607,
-    "frp": 58.45,
-    "date": "2026-11-06",
-    "time": "1724",
-    "conf": "59",
-    "oilgas": false,
-    "near": []
-   },
-   {
-    "prod": "MODIS_NRT",
-    "lat": 25.52512,
-    "lon": 53.14481,
-    "frp": 47.56,
-    "date": "2026-11-06",
-    "time": "1229",
-    "conf": "72",
-    "oilgas": false,
-    "near": []
-   },
-   {
-    "prod": "MODIS_NRT",
-    "lat": 25.53607,
-    "lon": 53.14366,
-    "frp": 42.25,
-    "date": "2026-11-06",
-    "time": "448",
-    "conf": "71",
-    "oilgas": false,
-    "near": []
-   },
-   {
-    "prod": "MODIS_NRT",
-    "lat": 25.53461,
-    "lon": 53.15987,
-    "frp": 37.95,
-    "date": "2026-11-06",
-    "time": "448",
-    "conf": "69",
-    "oilgas": false,
-    "near": []
-   },
-   {
-    "prod": "MODIS_NRT",
-    "lat": 25.52768,
-    "lon": 53.15213,
-    "frp": 33.79,
-    "date": "2026-11-06",
-    "time": "1229",
-    "conf": "63",
-    "oilgas": false,
-    "near": []
-   },
-   {
-    "prod": "MODIS_NRT",
-    "lat": 25.53677,
-    "lon": 53.13766,
-    "frp": 26.12,
-    "date": "2026-11-06",
-    "time": "448",
-    "conf": "59",
-    "oilgas": false,
-    "near": []
-   },
-   {
-    "prod": "MODIS_NRT",
-    "lat": 25.17265,
-    "lon": 52.86752,
-    "frp": 25.46,
-    "date": "2026-11-06",
-    "time": "448",
-    "conf": "58",
-    "oilgas": false,
-    "near": []
-   },
-   {
-    "prod": "MODIS_NRT",
-    "lat": 25.52918,
-    "lon": 53.15913,
-    "frp": 24.98,
-    "date": "2026-11-06",
-    "time": "1721",
-    "conf": "64",
-    "oilgas": false,
-    "near": []
-   },
-   {
-    "prod": "MODIS_NRT",
-    "lat": 26.16318,
-    "lon": 52.2617,
-    "frp": 24.3,
-    "date": "2026-11-06",
-    "time": "448",
-    "conf": "36",
-    "oilgas": false,
-    "near": []
-   },
-   {
-    "prod": "MODIS_NRT",
-    "lat": 25.59591,
-    "lon": 52.53866,
-    "frp": 20.77,
-    "date": "2026-11-06",
-    "time": "1229",
-    "conf": "53",
-    "oilgas": false,
-    "near": []
-   },
-   {
-    "prod": "MODIS_NRT",
-    "lat": 25.53407,
-    "lon": 53.16589,
-    "frp": 17.57,
-    "date": "2026-11-06",
-    "time": "448",
-    "conf": "38",
-    "oilgas": false,
-    "near": []
-   }
-  ],
-  "not_oilgas_median_14d": 90.5
+  "top_not_oilgas": [],
+  "not_oilgas_median_14d": 90
  },
  "markets": null,
  "iran_fx": {
@@ -1523,179 +1342,159 @@
  },
  "safeairspace": {
   "page_changed_since_last_check": true,
-  "last_change": "2026-11-06T21:32:56Z",
+  "last_change": "2026-11-07T01:58:01Z",
   "entries_last_3d": []
  },
  "polymarket": [
   {
-   "q": "US x Iran ceasefire continues through November 2?",
-   "end": "2026-11-03T04:59:00Z",
+   "q": "US x Iran effective ceasefire continues through November 8, 2026?",
+   "end": "2026-11-09T04:59:00Z",
    "outcomes": {
-    "Yes": "0.9995",
-    "No": "0.0005"
+    "Yes": "0.005",
+    "No": "0.995"
    },
-   "vol24h": 423509,
-   "slug": "us-x-iran-ceasefire-continues-through-november-2"
-  },
-  {
-   "q": "Israel x Iran ceasefire continues through November 7?",
-   "end": "2026-11-08T04:59:00Z",
-   "outcomes": {
-    "Yes": "0.943",
-    "No": "0.057"
-   },
-   "vol24h": 400048,
-   "slug": "israel-x-iran-ceasefire-continues-through-november-7"
-  },
-  {
-   "q": "Will the U.S. invade Iran before 2027?",
-   "end": "2027-01-01T04:59:00Z",
-   "outcomes": {
-    "Yes": "0.105",
-    "No": "0.895"
-   },
-   "vol24h": 318105,
-   "slug": "will-the-us-invade-iran-before-2027"
+   "vol24h": 955535,
+   "slug": "us-x-iran-effective-ceasefire-continues-through-november-8-20261103"
   },
   {
    "q": "US x Iran effective ceasefire continues through November 6, 2026?",
    "end": "2026-11-07T04:59:00Z",
    "outcomes": {
-    "Yes": "0.983",
-    "No": "0.017"
+    "Yes": "0.969",
+    "No": "0.031"
    },
-   "vol24h": 304985,
+   "vol24h": 531592,
    "slug": "us-x-iran-effective-ceasefire-continues-through-november-6-20261103"
+  },
+  {
+   "q": "Israel x Iran ceasefire continues through November 7?",
+   "end": "2026-11-08T04:59:00Z",
+   "outcomes": {
+    "Yes": "0.972",
+    "No": "0.028"
+   },
+   "vol24h": 484922,
+   "slug": "israel-x-iran-ceasefire-continues-through-november-7"
+  },
+  {
+   "q": "US x Iran effective ceasefire continues through November 15, 2026?",
+   "end": "2026-11-16T04:59:00Z",
+   "outcomes": {
+    "Yes": "0.005",
+    "No": "0.995"
+   },
+   "vol24h": 337954,
+   "slug": "us-x-iran-effective-ceasefire-continues-through-november-15-20261103"
+  },
+  {
+   "q": "Will the U.S. invade Iran before 2027?",
+   "end": "2027-01-01T04:59:00Z",
+   "outcomes": {
+    "Yes": "0.115",
+    "No": "0.885"
+   },
+   "vol24h": 281599,
+   "slug": "will-the-us-invade-iran-before-2027"
   },
   {
    "q": "Will Benjamin Netanyahu be the next Prime Minister of Israel?",
    "end": "2026-10-28T03:59:00Z",
    "outcomes": {
-    "Yes": "0.2025",
-    "No": "0.7975"
+    "Yes": "0.2035",
+    "No": "0.7965"
    },
-   "vol24h": 266943,
+   "vol24h": 243315,
    "slug": "will-benjamin-netanyahu-be-the-next-prime-minister-of-israel"
   },
   {
-   "q": "US x Iran effective ceasefire continues through November 8, 2026?",
-   "end": "2026-11-09T04:59:00Z",
+   "q": "Israel x Iran ceasefire continues through December 31?",
+   "end": "2026-12-31T20:29:00Z",
    "outcomes": {
-    "Yes": "0.725",
-    "No": "0.275"
+    "Yes": "0.455",
+    "No": "0.545"
    },
-   "vol24h": 215520,
-   "slug": "us-x-iran-effective-ceasefire-continues-through-november-8-20261103"
+   "vol24h": 190638,
+   "slug": "israel-x-iran-ceasefire-continues-through-december-31-415"
   },
   {
    "q": "Israel x Iran ceasefire continues through November 15?",
    "end": "2026-11-16T04:59:00Z",
    "outcomes": {
-    "Yes": "0.78",
-    "No": "0.22"
+    "Yes": "0.765",
+    "No": "0.235"
    },
-   "vol24h": 199252,
+   "vol24h": 186561,
    "slug": "israel-x-iran-ceasefire-continues-through-november-15"
   },
   {
    "q": "Will Gadi Eizenkot be the next Prime Minister of Israel?",
    "end": "2026-10-28T03:59:00Z",
    "outcomes": {
-    "Yes": "0.6725",
-    "No": "0.3275"
+    "Yes": "0.6235",
+    "No": "0.3765"
    },
-   "vol24h": 170280,
+   "vol24h": 164059,
    "slug": "will-gadi-eizenkot-be-the-next-prime-minister-of-israel"
+  },
+  {
+   "q": "US x Iran effective ceasefire continues through November 30, 2026?",
+   "end": "2026-12-01T04:59:00Z",
+   "outcomes": {
+    "Yes": "0.002",
+    "No": "0.998"
+   },
+   "vol24h": 153813,
+   "slug": "us-x-iran-effective-ceasefire-continues-through-november-30-20261103"
   },
   {
    "q": "Israel x Iran ceasefire continues through November 6?",
    "end": "2026-11-07T04:59:00Z",
    "outcomes": {
-    "Yes": "0.993",
-    "No": "0.007"
+    "Yes": "0.997",
+    "No": "0.003"
    },
-   "vol24h": 156246,
+   "vol24h": 144475,
    "slug": "israel-x-iran-ceasefire-continues-through-november-6"
-  },
-  {
-   "q": "US x Iran effective ceasefire continues through November 15, 2026?",
-   "end": "2026-11-16T04:59:00Z",
-   "outcomes": {
-    "Yes": "0.49",
-    "No": "0.51"
-   },
-   "vol24h": 142766,
-   "slug": "us-x-iran-effective-ceasefire-continues-through-november-15-20261103"
-  },
-  {
-   "q": "Israel x Iran ceasefire continues through November 3?",
-   "end": "2026-11-04T04:59:00Z",
-   "outcomes": {
-    "Yes": "0.9995",
-    "No": "0.0005"
-   },
-   "vol24h": 124764,
-   "slug": "israel-x-iran-ceasefire-continues-through-november-3"
   },
   {
    "q": "Will Avigdor Lieberman be the next Prime Minister of Israel?",
    "end": "2026-10-28T03:59:00Z",
    "outcomes": {
-    "Yes": "0.0845",
-    "No": "0.9155"
+    "Yes": "0.09",
+    "No": "0.91"
    },
-   "vol24h": 114755,
+   "vol24h": 120832,
    "slug": "will-avigdor-lieberman-be-the-next-prime-minister-of-israel"
   },
   {
-   "q": "Israel x Iran ceasefire continues through December 31?",
-   "end": "2026-12-31T20:29:00Z",
+   "q": "US x Iran effective ceasefire continues through December 31, 2026?",
+   "end": "2027-01-01T04:59:00Z",
    "outcomes": {
-    "Yes": "0.47",
-    "No": "0.53"
+    "Yes": "0.004",
+    "No": "0.996"
    },
-   "vol24h": 102283,
-   "slug": "israel-x-iran-ceasefire-continues-through-december-31-415"
+   "vol24h": 119479,
+   "slug": "us-x-iran-effective-ceasefire-continues-through-december-31-20261103"
   },
   {
    "q": "Israel x Iran ceasefire continues through November 4?",
    "end": "2026-11-05T04:59:00Z",
    "outcomes": {
-    "Yes": "0.999",
-    "No": "0.001"
+    "Yes": "0.9985",
+    "No": "0.0015"
    },
-   "vol24h": 100771,
+   "vol24h": 105900,
    "slug": "israel-x-iran-ceasefire-continues-through-november-4"
   },
   {
-   "q": "US x Iran effective ceasefire continues through November 5, 2026?",
-   "end": "2026-11-06T04:59:00Z",
+   "q": "Iran leadership change by November 30?",
+   "end": "2026-12-01T04:59:00Z",
    "outcomes": {
-    "Yes": "0.997",
-    "No": "0.003"
+    "Yes": "0.0415",
+    "No": "0.9585"
    },
-   "vol24h": 92406,
-   "slug": "us-x-iran-effective-ceasefire-continues-through-november-5-20261103"
-  },
-  {
-   "q": "Israel x Iran ceasefire continues through November 5?",
-   "end": "2026-11-06T04:59:00Z",
-   "outcomes": {
-    "Yes": "0.998",
-    "No": "0.002"
-   },
-   "vol24h": 91324,
-   "slug": "israel-x-iran-ceasefire-continues-through-november-5"
-  },
-  {
-   "q": "Strait of Hormuz traffic returns to normal by December 31?",
-   "end": "2027-01-01T04:59:00Z",
-   "outcomes": {
-    "Yes": "0.095",
-    "No": "0.905"
-   },
-   "vol24h": 78546,
-   "slug": "strait-of-hormuz-traffic-returns-to-normal-by-december-31"
+   "vol24h": 99362,
+   "slug": "iran-leadership-change-by-november-30"
   }
  ],
  "official": {
@@ -2258,9 +2057,9 @@
   },
   "ioda_iran": {
    "events_48h": [],
-   "bgp_latest": 41757,
+   "bgp_latest": 41752,
    "bgp_median_48h": 41756.0,
-   "bgp_drop_pct": -0.0
+   "bgp_drop_pct": 0.0
   },
   "gdelt": null,
   "usgs_seismic": [
@@ -2516,12 +2315,12 @@
     {
      "src": "Switzerland Iran",
      "changed_since_last_check": true,
-     "snippet": " Access Denied Access Denied You don't have permission to access \"http&#58;&#47;&#47;www&#46;eda&#46;admin&#46;ch&#47;eda&#47;en&#47;fdfa&#47;representations&#45;and&#45;travel&#45;advice&#47;iran&#47;travel&#45;advice&#45;iran&#46;html\" on this server. Reference&#32;&#35;18&#46;6f6d3e17&#46;1794000",
+     "snippet": " Access Denied Access Denied You don't have permission to access \"http&#58;&#47;&#47;www&#46;eda&#46;admin&#46;ch&#47;eda&#47;en&#47;fdfa&#47;representations&#45;and&#45;travel&#45;advice&#47;iran&#47;travel&#45;advice&#45;iran&#46;html\" on this server. Reference&#32;&#35;18&#46;1ca7cb17&#46;1794016",
      "url": "https://www.eda.admin.ch/eda/en/fdfa/representations-and-travel-advice/iran/travel-advice-iran.html"
     },
     {
      "src": "Netherlands Iran",
-     "changed_since_last_check": false,
+     "changed_since_last_check": true,
      "snippet": " Reisadvies Iran | Ministerie van Buitenlandse Zaken | NederlandWereldwijd Ga direct naar inhoud Naar de homepage van www.nederlandwereldwijd.nl Ministerie van Buitenlandse Zaken Menu Home Familie Geld Gezondheid Identiteit Onderwijs Reizen Vervoer Werk Wonen Onderwerpen A-Z Contact Zoeken Waar kunn",
      "url": "https://www.nederlandwereldwijd.nl/reisadvies/iran"
     },
@@ -2553,12 +2352,30 @@
   }
  },
  "news_meta": {
-  "feeds_ok": 29,
+  "feeds_ok": 11,
   "feeds_failed": [
    "Times of Israel",
    "Times of Israel liveblog",
    "Gulf News",
-   "Arab News"
+   "Arab News",
+   "Google News: Iran attack",
+   "Google News: Iran strike US",
+   "Google News: Israel Iran",
+   "Google News: Strait of Hormuz",
+   "Google News: UKMTO",
+   "Google News: UKMTO warning",
+   "Google News: JMIC advisory",
+   "Google News: Joint Maritime Information Center",
+   "Google News: CENTCOM Iran",
+   "Google News: embassy ordered departure Middle East",
+   "Google News: Iran airspace NOTAM",
+   "Google News: Home Front Command",
+   "Google News: Houthi missile",
+   "Google News: Iran Qatar talks",
+   "Google News: IAEA Iran",
+   "Google News: USNI fleet tracker",
+   "Google News: Iran tanker attack",
+   "Google News: Iran nuclear site"
   ]
  },
  "news": [
@@ -3062,7 +2879,7 @@
    ],
    "pub": "2026-11-06T14:36:10Z",
    "first": "2026-11-06T15:57:30Z",
-   "last": "2026-11-06T21:32:56Z"
+   "last": "2026-11-07T01:58:01Z"
   },
   {
    "title": "Iran reportedly distributes iodine tablets near nuclear sites amid US strike fears",
@@ -4136,7 +3953,7 @@
    ],
    "pub": "2026-11-06T15:50:00Z",
    "first": "2026-11-06T15:57:30Z",
-   "last": "2026-11-06T21:32:56Z"
+   "last": "2026-11-07T01:58:01Z"
   },
   {
    "title": "Iran threatened Belgium over Pahlavi’s Brussels speech, defense minister says",
@@ -4184,7 +4001,7 @@
    ],
    "pub": "2026-11-06T14:04:35Z",
    "first": "2026-11-06T15:57:30Z",
-   "last": "2026-11-06T21:32:56Z"
+   "last": "2026-11-07T01:58:01Z"
   },
   {
    "title": "در بحبوحه زمزمه‌های استیضاح و برکناری؛ هگست تمام‌قد از جنگ با ایران دفاع کرد",
@@ -4196,7 +4013,7 @@
    ],
    "pub": "2026-11-06T15:08:41Z",
    "first": "2026-11-06T15:57:30Z",
-   "last": "2026-11-06T21:32:56Z"
+   "last": "2026-11-07T01:58:01Z"
   },
   {
    "title": "واکنش به مراکز داده؛ کدام شرکت‌های هوش مصنوعی از نتایج انتخابات میاندوره‌ای آمریکا متأثر شدند؟",
@@ -4208,7 +4025,7 @@
    ],
    "pub": "2026-11-06T14:45:13Z",
    "first": "2026-11-06T15:57:30Z",
-   "last": "2026-11-06T21:32:56Z"
+   "last": "2026-11-07T01:58:01Z"
   },
   {
    "title": "نشست ترامپ با تیم مشاوران امنیت ملی: به‌زودی درباره ازسرگیری جنگ با ایران تصمیم می‌گیریم",
@@ -4220,7 +4037,7 @@
    ],
    "pub": "2026-11-06T14:24:41Z",
    "first": "2026-11-06T15:57:30Z",
-   "last": "2026-11-06T21:32:56Z"
+   "last": "2026-11-07T01:58:01Z"
   },
   {
    "title": "سقوط بازارهای سهام اروپا در پی بدترین ریزش سهام تراشه آمریکا از ۲۰۲۰",
@@ -5480,7 +5297,7 @@
    ],
    "pub": null,
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-06T21:32:56Z"
+   "last": "2026-11-07T01:58:01Z"
   },
   {
    "title": "مقام سازمان ملل: داعش ولایت خراسان با پهپاد و هوش مصنوعی مجهز شده است",
@@ -5492,7 +5309,7 @@
    ],
    "pub": "2026-11-06T19:14:20Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-06T21:32:56Z"
+   "last": "2026-11-07T01:58:01Z"
   },
   {
    "title": "پاکستان می‌گوید در حال بررسی طرح آمریکا برای اخراج مهاجران افغان از طریق این کشور است",
@@ -5504,7 +5321,7 @@
    ],
    "pub": "2026-11-06T18:31:42Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-06T21:32:56Z"
+   "last": "2026-11-07T01:58:01Z"
   },
   {
    "title": "Opportunity or trap? Vance's Iran war remarks divide Tehran",
@@ -5516,7 +5333,7 @@
    ],
    "pub": "2026-11-06T21:25:00Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-06T21:32:56Z"
+   "last": "2026-11-07T01:58:01Z"
   },
   {
    "title": "US urges Iranians to stay away from IRGC positions if tensions escalate",
@@ -5528,7 +5345,7 @@
    ],
    "pub": "2026-11-06T20:26:16Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-06T21:32:56Z"
+   "last": "2026-11-07T01:58:01Z"
   },
   {
    "title": "Khamenei sent security chief to Moscow to seek S-400 air defenses – report",
@@ -5540,7 +5357,7 @@
    ],
    "pub": "2026-11-06T17:15:56Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-06T21:32:56Z"
+   "last": "2026-11-07T01:58:01Z"
   },
   {
    "title": "U.S. Targets Cuba’s Oil Tanker Fleet in New Sanctions Crackdown",
@@ -5552,7 +5369,7 @@
    ],
    "pub": "2026-11-06T17:11:47Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-06T21:32:56Z"
+   "last": "2026-11-07T01:58:01Z"
   },
   {
    "title": "USS Theodore Roosevelt Arrives In Singapore; Last Stop Before Third Strike Group Reaches The Middle East",
@@ -5564,7 +5381,7 @@
    ],
    "pub": "2026-11-06T21:17:39Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-06T21:32:56Z"
+   "last": "2026-11-07T01:58:01Z"
   },
   {
    "title": "US, Colombian troops kick off exercise amid the Pentagon’s Western Hemisphere pivot",
@@ -5576,7 +5393,7 @@
    ],
    "pub": "2026-11-06T19:27:32Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-06T21:32:56Z"
+   "last": "2026-11-07T01:58:01Z"
   },
   {
    "title": "موارد سرخک در آمریکا در سال ۲۰۲۶ از ۵۰۰۰ گذشت؛ بالاترین سطح در ۳۵ سال",
@@ -5588,7 +5405,7 @@
    ],
    "pub": "2026-11-06T21:25:17Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-06T21:32:56Z"
+   "last": "2026-11-07T01:58:01Z"
   },
   {
    "title": "اشتغال در آمریکا فراتر از انتظارها رشد کرد؛ احتمال افزایش دوباره نرخ بهره بیشتر شد",
@@ -5600,7 +5417,7 @@
    ],
    "pub": "2026-11-06T18:54:05Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-06T21:32:56Z"
+   "last": "2026-11-07T01:58:01Z"
   },
   {
    "title": "واکنش نتانیاهو به خبر قطع کمک‌های نظامی آمریکا؛ «روابط دو کشور از مرحله کمک به شراکت رسیده است»",
@@ -5612,7 +5429,7 @@
    ],
    "pub": "2026-11-06T18:14:16Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-06T21:32:56Z"
+   "last": "2026-11-07T01:58:01Z"
   },
   {
    "title": "سفر رضایی به مسکو همزمان با تلاش‌ها برای توافق بر سر احداث خط لوله انتقال گاز روسیه به ایران",
@@ -5624,7 +5441,7 @@
    ],
    "pub": "2026-11-06T16:44:41Z",
    "first": "2026-11-06T21:32:56Z",
-   "last": "2026-11-06T21:32:56Z"
+   "last": "2026-11-07T01:58:01Z"
   },
   {
    "title": "پیامد انتخابات آمریکا؛ ریزش ۲.۹ تریلیون دلاری وال‌استریت، بورس‌‌های اروپا و آسیا را سرخ کرد",
@@ -6717,6 +6534,54 @@
    "pub": "2026-11-06T20:33:22Z",
    "first": "2026-11-06T21:32:56Z",
    "last": "2026-11-06T21:32:56Z"
+  },
+  {
+   "title": "Iran war live: Qatar says US, Iran should not wait to reach a peace deal",
+   "outlets": [
+    "Al Jazeera"
+   ],
+   "links": [
+    "https://www.aljazeera.com/news/liveblog/2026/11/7/iran-war-live-qatar-says-us-iran-should-not-wait-to-reach-a-peace-deal?traffic_source=rss"
+   ],
+   "pub": "2026-11-07T00:00:00Z",
+   "first": "2026-11-07T01:58:01Z",
+   "last": "2026-11-07T01:58:01Z"
+  },
+  {
+   "title": "How Trump’s unconvincing narrative on Iran lost him the US midterms",
+   "outlets": [
+    "Al Jazeera"
+   ],
+   "links": [
+    "https://www.aljazeera.com/video/the-listening-post/2026/11/6/how-trumps-unconvincing-narrative-on-iran-lost-him-the-us-midterms?traffic_source=rss"
+   ],
+   "pub": "2026-11-06T23:07:22Z",
+   "first": "2026-11-07T01:58:01Z",
+   "last": "2026-11-07T01:58:01Z"
+  },
+  {
+   "title": "گزارش حملات تازه به قشم و چند نقطه دیگر در جنوب؛ ارتش ایران مدعی سرنگونی پهپاد آمریکایی شد",
+   "outlets": [
+    "BBC Persian"
+   ],
+   "links": [
+    "https://www.bbc.co.uk/persian/live/cjg477wl2dg2t?at_medium=RSS&at_campaign=rss"
+   ],
+   "pub": null,
+   "first": "2026-11-07T01:58:01Z",
+   "last": "2026-11-07T01:58:01Z"
+  },
+  {
+   "title": "پدر مگان مارکل به اتهام نگهداری تصاویر سوءاستفاده جنسی از کودکان در دادگاه آمریکا حاضر شد",
+   "outlets": [
+    "BBC Persian"
+   ],
+   "links": [
+    "https://www.bbc.com/persian/articles/cjdx33g01q40o?at_medium=RSS&at_campaign=rss"
+   ],
+   "pub": "2026-11-06T22:44:02Z",
+   "first": "2026-11-07T01:58:01Z",
+   "last": "2026-11-07T01:58:01Z"
   }
  ],
  "telegram_meta": {
@@ -6726,20 +6591,1199 @@
  "telegram": [
   {
    "ch": "ynetalerts",
-   "id": 77328,
-   "t": "2026-11-06T21:29:40Z",
-   "text": "🔴 ‏ראש ממשלת קטאר: ארה\"ב ואיראן לא הצליחו להגיע ל\"הסכם מלא\" למבזק המלא ב-ynet >",
+   "id": 77333,
+   "t": "2026-11-07T01:59:46Z",
+   "text": "🔴 ‏פרגאווי: הקונגרס הדיח את הנשיא סנטיאגו - שנעצר למבזק המלא ב-ynet >",
    "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77328",
+   "link": "https://t.me/ynetalerts/77333",
+   "relevant": false
+  },
+  {
+   "ch": "iranintltv",
+   "id": 365755,
+   "t": "2026-11-07T01:56:31Z",
+   "text": "روزنامه وال‌استریت ژورنال گزارش داد: «جی‌دی ونس، معاون رییس‌جمهوری آمریکا، و متحدان واشینگتن در کشورهای حاشیه خلیج فارس به دونالد ترامپ توصیه می‌کنند به جنگ پایان دهد، اما گروه دیگری از مشاوران او در تلاش‌اند رییس‌جمهوری آمریکا را به ازسرگیری حملات متقاعد کنند.» این روزنامه به نق",
+   "emoji": "",
+   "link": "https://t.me/iranintltv/365755",
+   "relevant": true
+  },
+  {
+   "ch": "irna_1313",
+   "id": 470658,
+   "t": "2026-11-07T01:52:04Z",
+   "text": "تناقض‌گویی و اعتراف آمریکا/ترامپ: در حال انجام حملات محدود به ایران هستیم 🔹 رئیس جمهوری ایالات متحده در تداوم تناقض‌گویی‌هایش، با بیان این ادعا که واشنگتن با ایران در حال جنگ نیست و در حال تعامل و گفت‌ وگو است، اعتراف کرد که آمریکا همچنان حملات محدودی را در ایران انجام می‌دهد. #ا",
+   "emoji": "",
+   "link": "https://t.me/irna_1313/470658",
+   "relevant": true
+  },
+  {
+   "ch": "farsna",
+   "id": 472984,
+   "t": "2026-11-07T01:52:01Z",
+   "text": "میانجی رسما دلال شد 🔹 شرکت استرالیایی وودساید انرژی اعلام کرده که براساس توافقی ۲۰ ساله، گاز طبیعی مایع (LNG) به شرکت «قطر انرژی» عرضه خواهد کرد. 🔹 این قرارداد نوعی دلالی است و قطری‌ها تصمیم گرفته‌اند در شرایطی که به‌دلیل بسته بودن تنگۀ هرمز امکان صادرات…",
+   "emoji": "",
+   "link": "https://t.me/farsna/472984",
+   "relevant": true
+  },
+  {
+   "ch": "presstv",
+   "id": 213737,
+   "t": "2026-11-07T01:51:47Z",
+   "text": "Democrats seeking to block funding of war on Iran before taking control of Congress US Democratic lawmakers are considering using their control over federal spending to block further funding for President Donald Trump’s war on Iran, as pressure mounts within the party to bring Tr",
+   "emoji": "",
+   "link": "https://t.me/presstv/213737",
+   "relevant": true
+  },
+  {
+   "ch": "indypersian",
+   "id": 182097,
+   "t": "2026-11-07T01:47:18Z",
+   "text": "♦️ شیخ محمد بن عبدالرحمن آل ثانی، نخست‌وزیر و وزیر خارجه قطر، روز جمعه، اعلام کرد که تلاش‌های میانجی‌گرانه دوحه برای جلوگیری از خارج شدن کنترل اوضاع در منطقه همچنان ادامه دارد. به گفته او، طی هفته‌های گذشته همکاری‌ها و اقداماتی با دولت ایالات متحده به منظور مهار تنش‌ها و کنترل وض",
+   "emoji": "",
+   "link": "https://t.me/indypersian/182097",
+   "relevant": true
+  },
+  {
+   "ch": "presstv",
+   "id": 213736,
+   "t": "2026-11-07T01:40:11Z",
+   "text": "Iran’s Army air defense shot down another enemy MQ-9 drone in the sky over Qeshm Island. @PressTV",
+   "emoji": "",
+   "link": "https://t.me/presstv/213736",
+   "relevant": true
+  },
+  {
+   "ch": "geopolitics_prime",
+   "id": 77418,
+   "t": "2026-11-07T01:39:45Z",
+   "text": "⚔️ We will never allow US to rebuild in the region — Iran's army Iranian Military Spokesperson Rear Admiral Akrami-Nia has issued a stark warning to the CENTCOM, claiming that the US military footprint in the Middle East has been effectively obliterated. He claimed more than 228 ",
+   "emoji": "⚔",
+   "link": "https://t.me/geopolitics_prime/77418",
+   "relevant": true
+  },
+  {
+   "ch": "irna_1313",
+   "id": 470656,
+   "t": "2026-11-07T01:36:01Z",
+   "text": "🕌 اوقات شرعی | اذان صبح به افق تهران امام علی(ع) می‌فرماید : قَد جَهِلَ مَن استَنصَحَ أعداءَهُ كسى كه از دشمنانش انتظار خيرخواهى داشته باشد، نادان است. @IRNA_1313",
+   "emoji": "",
+   "link": "https://t.me/irna_1313/470656",
    "relevant": true
   },
   {
    "ch": "iranintltv",
-   "id": 365738,
-   "t": "2026-11-06T21:28:05Z",
-   "text": "شاهد علوی، عضو تحریریه ایران‌اینترنشنال، گفت رسیدگی به پرونده سه متهم به جاسوسی برای جمهوری اسلامی با هدف آسیب رساندن به دو خبرنگار ایران‌اینترنشنال در دادگاه لندن پایان یافته و هیات منصفه وارد مرحله شور شده است. به گفته او، در صورت نرسیدن به نتیجه، بررسی‌ها روز دوشنبه ادامه خواه",
+   "id": 365754,
+   "t": "2026-11-07T01:35:42Z",
+   "text": "ترامپ هنگام عزیمت از فلوریدا در پاسخ به پرسشی درباره انفجار در قشم به خبرنگاران گفت: آنها یک سامانه ضدهوایی کوچک ساخته بودند و ما آن را ظرف حدود ۱۵ دقیقه، شاید هم پنج دقیقه، منهدم کردیم.» به گزارش خبرگزاری تسنیم، بامداد شنبه دو موشک در جزیره قشم اصابت کرد. ترامپ با اشاره به مذاکر",
    "emoji": "",
-   "link": "https://t.me/iranintltv/365738",
+   "link": "https://t.me/iranintltv/365754",
+   "relevant": true
+  },
+  {
+   "ch": "rnintel",
+   "id": 68798,
+   "t": "2026-11-07T01:35:17Z",
+   "text": "🇺🇸 ⚡️ - Elon says Tesla will wind down production of the Cybertruck next year, to make room for the Cybercab.",
+   "emoji": "⚡",
+   "link": "https://t.me/rnintel/68798",
+   "relevant": false
+  },
+  {
+   "ch": "rotternews",
+   "id": 370146,
+   "t": "2026-11-07T01:30:07Z",
+   "text": "טראמפ: איראן מאוד רוצה להגיע להסכם. 📰 לאשכול המלא 📰",
+   "emoji": "",
+   "link": "https://t.me/rotternews/370146",
+   "relevant": true
+  },
+  {
+   "ch": "indypersian",
+   "id": 182096,
+   "t": "2026-11-07T01:28:31Z",
+   "text": "♦️ دونالد ترامپ، روز جمعه، با اشاره به حضور نظامی واشنگتن در آبراه‌های جنوبی ایران به خبرنگاران گفت: «تمام آنچه ما هستیم، شاید یک اشغالگر باشد؛ می‌توان گفت یک اشغالگر. چون می‌دانید ما چه می‌کنیم، ما تنگه هرمز را کنترل می‌کنیم و اکنون بیش از هر زمان دیگری در تاریخ تنگه هرمز نفت خا",
+   "emoji": "",
+   "link": "https://t.me/indypersian/182096",
+   "relevant": true
+  },
+  {
+   "ch": "rnintel",
+   "id": 68797,
+   "t": "2026-11-07T01:27:59Z",
+   "text": "🇺🇸 🇨🇳 ⚡️ - US intelligence officials believe Nvidia CEO Jensen Huang was targeted by a Chinese espionage operation involving Alice Huang, a Chinese executive at Singapore-based Megaspeed, according to The New York Times. American surveillance reportedly revealed…",
+   "emoji": "⚡",
+   "link": "https://t.me/rnintel/68797",
+   "relevant": false
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429480,
+   "t": "2026-11-07T01:26:27Z",
+   "text": "📹 قابی از تونل پرچم ۱۸ کیلومتری؛ از بلوار پیروزی تا میدان بسیج مشهد 🔗 mehrnews.com 📡 @Mehrnews",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429480",
+   "relevant": false
+  },
+  {
+   "ch": "VahidOnline",
+   "id": 79021,
+   "t": "2026-11-07T01:25:31Z",
+   "text": "دونالد ترامپ، روز جمعه، در پاسخ به پرسش خبرنگاران درباره گزارش‌های مربوط به حملات نظامی در جزیره قشم، این اقدام را تأیید کرد و گفت: «نمی‌خواهم درباره آن صحبت کنم. ما حملات جزئی انجام می‌دهیم.» رئیس‌جمهوری ایالات متحده با اشاره به استقرار سامانه‌های پدافندی جمهوری اسلامی ایران افز",
+   "emoji": "📡",
+   "link": "https://t.me/VahidOnline/79021",
+   "relevant": true
+  },
+  {
+   "ch": "warmonitors",
+   "id": 46540,
+   "t": "2026-11-07T01:11:17Z",
+   "text": "⚡ The Wall Street Journal, citing US officials: Higseth and the Central Command chief supported resuming large-scale combat operations against Iran. 💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom +18",
+   "emoji": "⚡",
+   "link": "https://t.me/warmonitors/46540",
+   "relevant": true
+  },
+  {
+   "ch": "rotternews",
+   "id": 370144,
+   "t": "2026-11-07T01:10:06Z",
+   "text": "ממשל טראמפ נותר מפוצל לגבי סיום המלחמה עם איראן או חידוש התקיפות. 📰 לאשכול המלא 📰",
+   "emoji": "",
+   "link": "https://t.me/rotternews/370144",
+   "relevant": true
+  },
+  {
+   "ch": "farsna",
+   "id": 472983,
+   "t": "2026-11-07T01:08:01Z",
+   "text": "سخنگوی ارتش: مقاومت پولادین ملت ایران سران جنگ‌طلب آمریکا را در عرصهٔ سیاسی به زیر کشید 🔹 امیر اکرمی‌نیا: مقاومت مردم ایران سبب شد کارشناسان و مقامات آمریکایی به نقش انکارناپذیر جنگ با ایران در این شکست مفتضحانه اذعان کنند، و نشان داد ملت بزرگ ما چگونه تحولات…",
+   "emoji": "",
+   "link": "https://t.me/farsna/472983",
+   "relevant": true
+  },
+  {
+   "ch": "irna_1313",
+   "id": 470655,
+   "t": "2026-11-07T01:07:38Z",
+   "text": "ادعای ترامپ: اجازه دستیابی ایران به سلاح هسته‌ای را نخواهیم داد 🔹 رئیس جمهوری آمریکا با تکرار ادعاهای خود در توجیه جنگ علیه ایران بار دیگر مدعی شد که واشنگتن اجازه دستیابی ایران را به سلاح هسته ای نخواهد داد. #ایرنا_جهان https://irna.ir/xjYGjH @IRNA_1313",
+   "emoji": "",
+   "link": "https://t.me/irna_1313/470655",
+   "relevant": true
+  },
+  {
+   "ch": "indypersian",
+   "id": 182095,
+   "t": "2026-11-07T01:07:33Z",
+   "text": "♦️ دونالد ترامپ، روز جمعه، در پاسخ به پرسش خبرنگاران درباره گزارش‌های مربوط به حملات نظامی در جزیره قشم، این اقدام را تأیید کرد و گفت: «نمی‌خواهم درباره آن صحبت کنم. ما حملات جزئی انجام می‌دهیم.» رئیس‌جمهوری ایالات متحده با اشاره به استقرار سامانه‌های پدافندی جمهوری اسلامی ایران ",
+   "emoji": "",
+   "link": "https://t.me/indypersian/182095",
+   "relevant": true
+  },
+  {
+   "ch": "irna_1313",
+   "id": 470654,
+   "t": "2026-11-07T00:57:11Z",
+   "text": "هشدار امنیتی آمریکا به شهروندان خود در خاورمیانه 🔹 وزارت امور خارجه آمریکا از شهروندان خود در سراسر خاورمیانه خواست که هوشیاری خود را افزایش دهند. #ایرنا_جهان https://irna.ir/xjYGjJ @IRNA_1313",
+   "emoji": "",
+   "link": "https://t.me/irna_1313/470654",
+   "relevant": true
+  },
+  {
+   "ch": "QudsNen",
+   "id": 244619,
+   "t": "2026-11-07T00:51:20Z",
+   "text": "\"You're dodging me here, Ro.\" Krystal Ball presses Rep. Ro Khanna on whether progressives will actually withhold their votes for Hakeem Jeffries as Speaker unless they secure firm commitments on Medicare for All, ending aid to Israel, and stopping an Iran war.",
+   "emoji": "",
+   "link": "https://t.me/QudsNen/244619",
+   "relevant": true
+  },
+  {
+   "ch": "ynetalerts",
+   "id": 77332,
+   "t": "2026-11-07T00:50:53Z",
+   "text": "🔴 ‏טראמפ: \"מדברים עם האיראנים, נראה מה יצא. השמדנו נשק נגד כלי טיס שהם בנו\" למבזק המלא ב-ynet >",
+   "emoji": "🔴",
+   "link": "https://t.me/ynetalerts/77332",
+   "relevant": false
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429479,
+   "t": "2026-11-07T00:48:41Z",
+   "text": "تلاش‌های پشت‌پرده ونس برای توافق آتش‌بس جدید با ایران 🔺 ‏پایگاه خبری آکسیوس نوشت که جی‌دی ونس، معاون رئیس‌جمهور آمریکا تلاش‌های پشت‌پرده برای دستیابی به توافقی جدید با ایران با هدف برقراری آتش‌بس و ازسرگیری مذاکرات هسته‌ای را هدایت می‌کند. 🔗 mehrnews.com/x3dxqM 📡 @Mehrnews",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429479",
+   "relevant": true
+  },
+  {
+   "ch": "geopolitics_prime",
+   "id": 77417,
+   "t": "2026-11-07T00:47:03Z",
+   "text": "🔊 Trump admits Iran is rebuilding its air defenses President Trump refused to confirm tonight's direct clashes near Qeshm Island, where Iranian air defenses fired on US jets. Instead, he downplayed the American strikes as \"minor,\" aimed at destroying Iran's newly built air defens",
+   "emoji": "🔊",
+   "link": "https://t.me/geopolitics_prime/77417",
+   "relevant": true
+  },
+  {
+   "ch": "bbcpersian",
+   "id": 294913,
+   "t": "2026-11-07T00:45:14Z",
+   "text": "🔻 قطر گزارش‌ها درباره شکست مذاکرات ایران و آمریکا را رد کرد دفتر رسانه‌ای بین‌المللی قطر گزارش‌های منتشرشده درباره ناکامی ایران و آمریکا در دستیابی به توافقی برای پایان جنگ را «نادرست و گمراه‌کننده» خواند. این دفتر روز شنبه اعلام کرد که نخست‌وزیر قطر بر ادامه تلاش‌های دو طرف برای",
+   "emoji": "",
+   "link": "https://t.me/bbcpersian/294913",
+   "relevant": true
+  },
+  {
+   "ch": "iranintltv",
+   "id": 365751,
+   "t": "2026-11-07T00:41:55Z",
+   "text": "دونالد ترامپ، رییس‌جمهوری آمریکا، در سخنرانی خود در برنامه‌ای متعلق به ناسا در فلوریدا تاکید کرد که آمریکا باید همچنان در زمینه «ابرهوش» (هوش مصنوعی) رهبر بلامنازع جهان باقی بماند. او گفت: «ما اکنون حدود یک سال و شاید حتی کمی بیشتر از چین جلوتر هستیم و می‌خواهیم پیروز شویم. باید ",
+   "emoji": "",
+   "link": "https://t.me/iranintltv/365751",
+   "relevant": true
+  },
+  {
+   "ch": "rotternews",
+   "id": 370142,
+   "t": "2026-11-07T00:40:07Z",
+   "text": "פיקוד מרכז האמריקאי מציע 20 מיליון דולר ורילוקיישן עבור איראניים שימסרו פרטים על תוכנית הגרעין של איראן 📰 לאשכול המלא 📰",
+   "emoji": "",
+   "link": "https://t.me/rotternews/370142",
+   "relevant": true
+  },
+  {
+   "ch": "indypersian",
+   "id": 182093,
+   "t": "2026-11-07T00:35:30Z",
+   "text": "♦️ بخش امور کنسولی وزارت امور خارجه ایالات متحده با صدور یک هشدار امنیتی از شهروندان آمریکایی حاضر در منطقه خاورمیانه خواست تا هوشیاری خود را به‌طور ویژه افزایش دهند؛ در این بیانیه تأکید شده است: «آمریکایی‌هایی که در حال حاضر در خاورمیانه به‌سر می‌برند باید با توجه به افزایش تهدی",
+   "emoji": "",
+   "link": "https://t.me/indypersian/182093",
+   "relevant": true
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429477,
+   "t": "2026-11-07T00:35:10Z",
+   "text": "تصادفات مرگبار در محورهای ساوه چهار کشته و ۱۸ مصدوم بر جای ماند 🔺 ‏رئیس مرکز فوریت‌های پزشکی دانشکده علوم پزشکی ساوه از وقوع سه سانحه رانندگی در محورهای مواصلاتی این شهرستان خبر داد که در مجموع چهار کشته و ۱۸ مصدوم بر جای گذاشت. 🔗 mehrnews.com/x3dxp9 📡 @Mehrnews",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429477",
+   "relevant": false
+  },
+  {
+   "ch": "warmonitors",
+   "id": 46539,
+   "t": "2026-11-07T00:26:09Z",
+   "text": "⚡ #BREAKING A five-story residential building was damaged in a Russian attack on Kyiv, local authorities say 💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom +18",
+   "emoji": "⚡",
+   "link": "https://t.me/warmonitors/46539",
+   "relevant": false
+  },
+  {
+   "ch": "iranintltv",
+   "id": 365750,
+   "t": "2026-11-07T00:23:18Z",
+   "text": "اکسیوس به نقل از دو منبع آگاه گزارش داد جی‌دی ونس، معاون رییس‌جمهوری آمریکا، طی دو هفته گذشته شخصا در مذاکرات غیرمستقیم با ایران برای دستیابی به آتش‌بس جدید و ازسرگیری مذاکرات هسته‌ای مشارکت داشته است. به نوشته اکسیوس، ونس تلاش می‌کند آمریکا را از جنگی خارج کند که به گفته او، در ",
+   "emoji": "",
+   "link": "https://t.me/iranintltv/365750",
+   "relevant": true
+  },
+  {
+   "ch": "rotternews",
+   "id": 370140,
+   "t": "2026-11-07T00:20:09Z",
+   "text": "סגן נשיא ארה''ב ואנס מנהל בשבועיים האחרונים ערוצי הידברות עקיפים מול איראן, במטרה לקדם הפסקת אש חדשה וחידוש של המו''מ הגרעיני. 📰 לאשכול המלא 📰",
+   "emoji": "",
+   "link": "https://t.me/rotternews/370140",
+   "relevant": true
+  },
+  {
+   "ch": "bbcpersian",
+   "id": 294911,
+   "t": "2026-11-07T00:17:36Z",
+   "text": "🔻 ارتش ایران مدعی سرنگونی یک پهپاد آمریکایی شد خبرگزاری تسنیم به نقل از گزارش‌های اولیه از اصابت دو موشک به جزیره قشم خبر داده است. خبرگزاری دولتی ایرنا نیز به نقل از شاهدان محلی گزارش داد که پس از شنیده شدن صدای یک هواگرد، دو پرتابه به منطقه سوزا در این جزیره اصابت کرده‌اند. تسن",
+   "emoji": "",
+   "link": "https://t.me/bbcpersian/294911",
+   "relevant": true
+  },
+  {
+   "ch": "alibk3",
+   "id": 40950,
+   "t": "2026-11-07T00:17:06Z",
+   "text": "صور الأقمار الصناعية ترصد تسربًا نفطيًا كبيرًا في مضيق هرمز",
+   "emoji": "",
+   "link": "https://t.me/alibk3/40950",
+   "relevant": true
+  },
+  {
+   "ch": "indypersian",
+   "id": 182091,
+   "t": "2026-11-07T00:13:14Z",
+   "text": "♦️ «ان‌بی‌سی نیوز» به نقل از دو مقام آمریکایی روز جمعه گزارش داد، مشاوران و مقام‌های دفاعی به دونالد ترامپ، رئیس‌جمهوری ایالات متحده، اعلام کرده‌اند که فرصت او برای آغاز حمله به ایران «محدود» و رو به پایان است و از او خواسته‌اند تا ظرف هشت هفته آینده، پیش از آغاز به کار کنگره جدی",
+   "emoji": "",
+   "link": "https://t.me/indypersian/182091",
+   "relevant": true
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429475,
+   "t": "2026-11-07T00:11:20Z",
+   "text": "📹 حجت الاسلام سیدحسین آقامیری در تجمع میدان انقلاب: این دشمن تحت هیچ شرایطی دست از این جنگ برنخواهد داشت 🔗 mehrnews.com 📡 @Mehrnews",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429475",
+   "relevant": false
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429474,
+   "t": "2026-11-07T00:09:43Z",
+   "text": "📹 بارون گریه کرد برای تو... مداحی در شب بارانی تجمع میدان انقلاب 🔗 mehrnews.com 📡 @Mehrnews",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429474",
+   "relevant": false
+  },
+  {
+   "ch": "bbcpersian",
+   "id": 294910,
+   "t": "2026-11-07T00:02:57Z",
+   "text": "وزارت دارایی آمریکا اعلام کرد که هشت شرکت خدمات مالی مستقر در کانادا را به اتهام تسهیل معاملات مالی با نهادهای ایرانی تحت تحریم، در فهرست تحریم‌های خود قرار داده است. این تحریم‌ها عملا دسترسی شرکت‌های یادشده به نظام مالی مبتنی بر دلار آمریکا را قطع می‌کند، دارایی‌های احتمالی آنها",
+   "emoji": "",
+   "link": "https://t.me/bbcpersian/294910",
+   "relevant": true
+  },
+  {
+   "ch": "rotternews",
+   "id": 370138,
+   "t": "2026-11-07T00:00:23Z",
+   "text": "NBC: חלק מיועציו של הנשיא טראמפ הודיעו לו שאפשרויותיו לחידוש המלחמה באיראן הולכות ומצטמצמות - טראמפ טרם הכריע בנושא ברק נטש 📰 לאשכול המלא 📰",
+   "emoji": "",
+   "link": "https://t.me/rotternews/370138",
+   "relevant": true
+  },
+  {
+   "ch": "presstv",
+   "id": 213730,
+   "t": "2026-11-06T23:54:55Z",
+   "text": "Iran’s Army air defense shot down another enemy MQ-9 drone in the sky over Qeshm Island. @PressTV",
+   "emoji": "",
+   "link": "https://t.me/presstv/213730",
+   "relevant": true
+  },
+  {
+   "ch": "geopolitics_prime",
+   "id": 77415,
+   "t": "2026-11-06T23:54:54Z",
+   "text": "🔥 Iskander-M missiles hit industrial zone in Kiev Russian forces concentrated a devastating ballistic missile strike on a single industrial zone on the eastern outskirts of Kiev, firing at least 8 Iskander-M missiles at the site, according to local reports. Video footage captured",
+   "emoji": "🔥",
+   "link": "https://t.me/geopolitics_prime/77415",
+   "relevant": true
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429472,
+   "t": "2026-11-06T23:50:46Z",
+   "text": "📹 اجرای گروه سرود فرشته‌های آسمانی در تجمع میدان انقلاب 🔗 mehrnews.com 📡 @Mehrnews",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429472",
+   "relevant": false
+  },
+  {
+   "ch": "iranintltv",
+   "id": 365749,
+   "t": "2026-11-06T23:49:45Z",
+   "text": "🔻️ ️️️️️هواداران تیم فوتبال سپاهان، روز جمعه ۱۵ آبان، در جریان بازی با ملوان در استادیوم نقش جهان اصفهان، آتش بازی کردند و جو فوق‌العاده‌ای را بوجود آوردند؛ چیزی شبیه به صحنه‌هایی که هواداران تیم فوتبال دورتموند آلمان در استادیوم سیگنال ایدونا پارک خلق می‌کنند. @iranintltvsport",
+   "emoji": "",
+   "link": "https://t.me/iranintltv/365749",
+   "relevant": true
+  },
+  {
+   "ch": "farsna",
+   "id": 472980,
+   "t": "2026-11-06T23:48:57Z",
+   "text": "‌ 🔴 انهدام پهپاد MQ9 دشمن در آسمان قشم 🔹 ارتش: دقایقی قبل، یک فروند پهپاد MQ9 دشمن متجاوز آمریکایی در آسمان قشم مورد اصابت قرار گرفت و منهدم شد. @Farsna",
+   "emoji": "🔴",
+   "link": "https://t.me/farsna/472980",
+   "relevant": true
+  },
+  {
+   "ch": "clashreport",
+   "id": 104922,
+   "t": "2026-11-06T23:47:47Z",
+   "text": "Trump has been urged to launch a new major military campaign against Iran within eight weeks, before Democrats take control of Congress in January. Defense Secretary Pete Hegseth is reportedly pushing for renewed strikes, while Vice President JD Vance favors negotiations. Trump h",
+   "emoji": "",
+   "link": "https://t.me/clashreport/104922",
+   "relevant": true
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429471,
+   "t": "2026-11-06T23:47:45Z",
+   "text": "📹 فاطمیه خط مقدم ماست؛ شعرخوانی محمد حسین رحیمیان در تجمع میدان انقلاب 🔗 mehrnews.com 📡 @Mehrnews",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429471",
+   "relevant": false
+  },
+  {
+   "ch": "akhbarefori",
+   "id": 704776,
+   "t": "2026-11-06T23:42:35Z",
+   "text": "🚨 فریادِ کمک از میانِ زخم‌های دیابتی 🚨 ــــــــــــــــــــــــــــــــــــــــ تصور کنید هر قدمی که برمی‌دارید، با ترس و لرز همراه باشد؛ ترس از اینکه شاید، فقط شاید، این قدمِ بعدی، قدمِ آخر باشد... 😭 💔 «محمد» ۳۲ ساله، امروز در میانِ نبردِ تلخ با «زخم دیابتی» گرفتار شده است. اما ",
+   "emoji": "🚨",
+   "link": "https://t.me/akhbarefori/704776",
+   "relevant": true
+  },
+  {
+   "ch": "akhbarefori",
+   "id": 704775,
+   "t": "2026-11-06T23:38:27Z",
+   "text": "خبرفوری pinned « 🔴 خبرفوری/ ارتش: دقایقی قبل، یک فروند پهپاد MQ9 دشمن متجاوز آمریکایی، با آتش سامانه‌های نوین نیروی پدافند هوایی ارتش، تحت شبکه یکپارچه پدافند هوایی کشور، در آسمان قشم مورد اصابت قرار گرفت و منهدم شد. 🇮🇷 ✊ @AkhbareFori »",
+   "emoji": "🔴",
+   "link": "https://t.me/akhbarefori/704775",
+   "relevant": true
+  },
+  {
+   "ch": "indypersian",
+   "id": 182089,
+   "t": "2026-11-06T23:34:49Z",
+   "text": "♦️ سخنگوی کمیسیون امنیت ملی و سیاست خارجی مجلس شورای اسلامی با نقل روایتی از یکی از سفیران پیشین جمهوری اسلامی در سازمان ملل گفت جو بایدن، زمانی که سناتور بود، در دیداری با این سفیر گفته بود دموکرات‌ها و جمهوری‌خواهان درباره «ازبین‌رفتن» جمهوری اسلامی اختلافی ندارند و اختلاف آن‌ه",
+   "emoji": "",
+   "link": "https://t.me/indypersian/182089",
+   "relevant": true
+  },
+  {
+   "ch": "akhbarefori",
+   "id": 704774,
+   "t": "2026-11-06T23:33:19Z",
+   "text": "♦️ ترامپ و سندروم ناجی اسرائیل! ترامپ: 🔹 اگر اجازه می‌دادم ایران سلاح هسته‌ای داشته باشد، امروز اسرائیل وجود نخواهد داشت./اسرائیل از روی زمین محو می‌شد. 🇮🇷 ✊ @AkhbareFori",
+   "emoji": "",
+   "link": "https://t.me/akhbarefori/704774",
+   "relevant": true
+  },
+  {
+   "ch": "akhbarefori",
+   "id": 704773,
+   "t": "2026-11-06T23:29:40Z",
+   "text": "♦️ آمریکا هشدار امنیتی در چند کشور منطقه از جمله اراضی اشغالی، عربستان، امارات، قطر و بحرین را به‌روزرسانی کرد 🔹 این کشور از شهروندانش خواست برای احتمال اختلال در پروازها و بسته شدن حریم‌های هوایی آماده شوند. 🇮🇷 ✊ @AkhbareFori",
+   "emoji": "",
+   "link": "https://t.me/akhbarefori/704773",
+   "relevant": true
+  },
+  {
+   "ch": "akhbarefori",
+   "id": 704772,
+   "t": "2026-11-06T23:29:00Z",
+   "text": "♦️ ترامپ جنایتکار: اگر جلوی دستیابی ایران به سلاح هسته‌ای را نمی‌گرفتم، امروز اسرائیل و در واقع کل خاورمیانه وجود نداشتند 🔹 هیچ‌کس نمی‌خواهد این را بگوید، اما همه می‌دانند که این حقیقت دارد! #Devil 🇮🇷 ✊ @AkhbareFori | Link",
+   "emoji": "",
+   "link": "https://t.me/akhbarefori/704772",
+   "relevant": true
+  },
+  {
+   "ch": "indypersian",
+   "id": 182088,
+   "t": "2026-11-06T23:28:39Z",
+   "text": "♦️ «آکسیوس» روز جمعه به نقل از منابع آگاه گزارش داد که جی‌دی ونس، معاون رئیس‌جمهوری ایالات متحده، طی دو هفته گذشته شخصاً هدایت تلاش‌های دیپلماتیک پشت پرده را برای برقراری آتش‌بس جدید و ازسرگیری مذاکرات هسته‌ای با جمهوری اسلامی ایران بر عهده گرفته است. بر اساس این گزارش، ونس که جن",
+   "emoji": "",
+   "link": "https://t.me/indypersian/182088",
+   "relevant": true
+  },
+  {
+   "ch": "ynetalerts",
+   "id": 77331,
+   "t": "2026-11-06T23:28:38Z",
+   "text": "🔴 ‏אזרח ונצואלה נעצר סמוך לבית הלבן עם רובה: \"שומע קולות שמורים לי לרצוח את טראמפ\" למבזק המלא ב-ynet >",
+   "emoji": "🔴",
+   "link": "https://t.me/ynetalerts/77331",
+   "relevant": false
+  },
+  {
+   "ch": "BellumActaNews",
+   "id": 178306,
+   "t": "2026-11-06T23:24:31Z",
+   "text": "🇵🇾 💥 — Pedro Alliana was sworn in as the new president of Paraguay, after the dismissal of Santiago Peña.",
+   "emoji": "💥",
+   "link": "https://t.me/BellumActaNews/178306",
+   "relevant": false
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429470,
+   "t": "2026-11-06T23:24:22Z",
+   "text": "آمریکا حاضر به اظهار نظر درباره سقوط پهپاد خود در قشم نشد 🔺 ‏ارتش تروریستی آمریکا درباره تحولات جمعه شب و سرنگونی یک فروند پهپاد این کشور در قشم اظهار نظر نکرد. 🔗 mehrnews.com/x3dxqJ 📡 @Mehrnews",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429470",
+   "relevant": true
+  },
+  {
+   "ch": "BellumActaNews",
+   "id": 178305,
+   "t": "2026-11-06T23:19:22Z",
+   "text": "🇵🇾 💥 — Pedro Alliana was sworn in as the new president of Paraguay, after the dismissal of Santiago Peña.",
+   "emoji": "💥",
+   "link": "https://t.me/BellumActaNews/178305",
+   "relevant": false
+  },
+  {
+   "ch": "BellumActaNews",
+   "id": 178304,
+   "t": "2026-11-06T23:19:21Z",
+   "text": "🇵🇾 💥 — Paraguay's Senate unanimously approves the impeachment of President Santiago Peña.",
+   "emoji": "💥",
+   "link": "https://t.me/BellumActaNews/178304",
+   "relevant": false
+  },
+  {
+   "ch": "indypersian",
+   "id": 182087,
+   "t": "2026-11-06T23:17:28Z",
+   "text": "♦️ بامداد شنبه، همزمان با اعلام خبرگزاری‌های داخلی همچون فارس، تسنیم و ایرنا مبنی بر شنیده‌شدن «صدای مهیب جنگنده» و «اصابت دو موشک» به جزیرهٔ قشم، روابط عمومی ارتش جمهوری اسلامی ایران از انهدام یک پهپاد آمریکایی در این جزیره خبر داد. در این بیانیه آمده است: «یک پهپاد ام‌کیو-۹ آمر",
+   "emoji": "",
+   "link": "https://t.me/indypersian/182087",
+   "relevant": true
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429469,
+   "t": "2026-11-06T23:14:26Z",
+   "text": "سقوط یک فروند پهپاد MQ9 دشمن آمریکایی در قشم 🔺 ‏روابط عمومی ارتش:‌ یک فروند پهپاد MQ9 دشمن متجاوز آمریکایی در آسمان قشم مورد اصابت قرار گرفت و منهدم شد. 🔗 mehrnews.com 📡 @Mehrnews",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429469",
+   "relevant": true
+  },
+  {
+   "ch": "akhbarefori",
+   "id": 704771,
+   "t": "2026-11-06T23:13:15Z",
+   "text": "♦️ ادعای آکسیوس درباره تلاش‌های پشت‌پرده معاون ترامپ برای مذاکره با ایران 🔹 جی‌دی ونس در مذاکرات غیرمستقیم با ایران با هدف آتش‌بس و از سرگیری مذاکرات حضور دارد 🔹 ترامپ در حال حاضر آماده است تا زمینه را برای تلاش‌های دیپلماتیک فراهم کند. 🔹 ویتکوف و کوشنر در مذاکرات مربوط به دستیاب",
+   "emoji": "",
+   "link": "https://t.me/akhbarefori/704771",
+   "relevant": true
+  },
+  {
+   "ch": "clashreport",
+   "id": 104914,
+   "t": "2026-11-06T23:13:03Z",
+   "text": "Trump on Iran: If I allowed Iran to have a nuclear weapon, today there would be no Israel. Israel would've been wiped off the face of the earth.",
+   "emoji": "",
+   "link": "https://t.me/clashreport/104914",
+   "relevant": true
+  },
+  {
+   "ch": "N12chat",
+   "id": 233761,
+   "t": "2026-11-06T23:12:53Z",
+   "text": "דסק החוץ צבא איראן טוען: הפלנו כטב\"ם אמריקני מסוג MQ-9 מעל האי קשם @N12chat",
+   "emoji": "",
+   "link": "https://t.me/N12chat/233761",
+   "relevant": true
+  },
+  {
+   "ch": "isna94",
+   "id": 412119,
+   "t": "2026-11-06T23:08:00Z",
+   "text": "ارتش: یک فروند پهپاد MQ9 ارتش تروریستی آمریکا رهگیری و منهدم شد روابط عمومی ارتش جمهوری اسلامی: 🔹 دقایقی قبل یک فروند پهپاد MQ9 دشمن متجاوز آمریکایی، با آتش سامانه‌های نوین نیروی پدافند هوایی ارتش، تحت شبکه یکپارچه پدافند هوایی کشور، در آسمان قشم مورد اصابت قرار گرفت و منهدم شد. ",
+   "emoji": "",
+   "link": "https://t.me/isna94/412119",
+   "relevant": true
+  },
+  {
+   "ch": "irna_1313",
+   "id": 470650,
+   "t": "2026-11-06T23:06:30Z",
+   "text": "قطر بر ادامه حمایت از مذاکرات ایران و آمریکا تاکید کرد 🔹 قطر گزارش‌های منتشر شده مبنی بر عدم دستیابی آمریکا و ایران به توافق را تکذیب و بر حمایت مداوم خود از مذاکرات تاکید کرد. #ایرنا_جهان https://irna.ir/xjYGjx @IRNA_1313",
+   "emoji": "",
+   "link": "https://t.me/irna_1313/470650",
+   "relevant": true
+  },
+  {
+   "ch": "bbcpersian",
+   "id": 294909,
+   "t": "2026-11-06T23:05:30Z",
+   "text": "توماس مارکل، پدر مگان، دوشس ساسکس و عروس پادشاه بریتانیا، که به اتهام نگهداری تصاویر سوءاستفاده جنسی از کودکان در آمریکا بازداشت شده بود، روز جمعه در دادگاهی در ایالت فلوریدا حاضر شد. دادگاه دستور داد که او در محل اقامت تحت مراقبت خود در فلوریدا، در حبس خانگی و تحت نظارت الکترونی",
+   "emoji": "",
+   "link": "https://t.me/bbcpersian/294909",
+   "relevant": true
+  },
+  {
+   "ch": "akhbarefori",
+   "id": 704770,
+   "t": "2026-11-06T23:04:36Z",
+   "text": "🔴 خبرفوری/ ارتش: دقایقی قبل، یک فروند پهپاد MQ9 دشمن متجاوز آمریکایی، با آتش سامانه‌های نوین نیروی پدافند هوایی ارتش، تحت شبکه یکپارچه پدافند هوایی کشور، در آسمان قشم مورد اصابت قرار گرفت و منهدم شد. 🇮🇷 ✊ @AkhbareFori",
+   "emoji": "🔴",
+   "link": "https://t.me/akhbarefori/704770",
+   "relevant": true
+  },
+  {
+   "ch": "farsna",
+   "id": 472978,
+   "t": "2026-11-06T23:04:01Z",
+   "text": "شنیده‌شدن صدای انفجار در قشم و بندرخمیر 🔹 صدای انفجار در ساعات اخیر در بندرخمیر و قشم شنیده شده است. 🔹 ماهیت انفجارها مشخص نیست اما ممکن است مرتبط با شلیک تیر هشدار به سمت تنگهٔ هرمز باشد. 🔹 طی چندروز اخیر، دست کم ۶ پهپاد شناسایی پیشرفتهٔ دشمن آمریکایی در…",
+   "emoji": "",
+   "link": "https://t.me/farsna/472978",
+   "relevant": true
+  },
+  {
+   "ch": "indypersian",
+   "id": 182085,
+   "t": "2026-11-06T23:03:57Z",
+   "text": "♦️ دفتر مطبوعاتی شاهزاده رضا پهلوی در واکنش به پرسش‌های رسانه‌ها و نگرانی‌های ابرازشده با صدور بیانیه‌ای اعلام کرد او همچنان در مراسم اعطای جایزه آزادی فریدریش نائومان شرکت می‌کند و مصمم است پس از آن در گردهمایی بزرگ ایرانیان در «اوست‌پارک» (Ostpark) فرانکفورت نیز حضور یابد. این ",
+   "emoji": "",
+   "link": "https://t.me/indypersian/182085",
+   "relevant": true
+  },
+  {
+   "ch": "geopolitics_prime",
+   "id": 77412,
+   "t": "2026-11-06T23:03:55Z",
+   "text": "📹 Iran fires SAMs at US jet, US strikes back with Tomahawks Footage shows Iranian surface-to-air missiles launching at an American fighter jet that violated the airspace over Qeshm Island. Sources report that the US has retaliated by firing two Tomahawk cruise missiles into Souza",
+   "emoji": "",
+   "link": "https://t.me/geopolitics_prime/77412",
+   "relevant": true
+  },
+  {
+   "ch": "irna_1313",
+   "id": 470649,
+   "t": "2026-11-06T23:02:20Z",
+   "text": "ارتش: یک فروند پهپاد MQ9 ارتش تروریستی آمریکا رهگیری و منهدم شد ارتش جمهوری اسلامی: 🔹 دقایقی قبل یک فروند پهپاد MQ9 دشمن متجاوز آمریکایی، با آتش سامانه‌های نوین نیروی پدافند هوایی ارتش، تحت شبکه یکپارچه پدافند هوایی کشور، در آسمان قشم مورد اصابت قرار گرفت و منهدم شد. منبع: روابط ",
+   "emoji": "",
+   "link": "https://t.me/irna_1313/470649",
+   "relevant": true
+  },
+  {
+   "ch": "clashreport",
+   "id": 104911,
+   "t": "2026-11-06T23:01:07Z",
+   "text": "Iran’s military says it shot down a U.S. MQ-9 drone over Qeshm Island using its air defense systems.",
+   "emoji": "",
+   "link": "https://t.me/clashreport/104911",
+   "relevant": true
+  },
+  {
+   "ch": "Middle_East_Spectator",
+   "id": 38024,
+   "t": "2026-11-06T23:00:08Z",
+   "text": "— ❗️ 🇺🇸 / 🇮🇷 NEW: The Iranian Army announces that an American MQ-9 ‘Reaper’ drone was shot down over Qeshm Island a few minutes ago @Middle_East_Spectator",
+   "emoji": "",
+   "link": "https://t.me/Middle_East_Spectator/38024",
+   "relevant": true
+  },
+  {
+   "ch": "shin_persian",
+   "id": 12086,
+   "t": "2026-11-06T22:59:50Z",
+   "text": "Shin ✓ @hey_itsmyturn Islamic Regime Army PR to IRIB: \"Army air defenses intercepted and destroyed a US military MQ-9 over Qeshm minutes ago, using new Army Air Defense Force systems under the country’s integrated air defense network.\" ترجمه خودکار فارسی روابط عمومی ارتش رژیم اسل",
+   "emoji": "",
+   "link": "https://t.me/shin_persian/12086",
+   "relevant": true
+  },
+  {
+   "ch": "iranintltv",
+   "id": 365748,
+   "t": "2026-11-06T22:57:19Z",
+   "text": "هوشنگ حسن‌یاری، کارشناس خاورمیانه و امور نظامی، گفت همکاری تسلیحاتی روسیه و جمهوری اسلامی همچنان ادامه دارد و ابعاد آن فراتر از معاملات نظامی معمول است. به گفته او، مسکو با تحویل تجهیزات پیشرفته و گسترش همکاری‌های موشکی با تهران، اهداف بلندمدتی را دنبال می‌کند و به‌طور غیرمستقیم ",
+   "emoji": "",
+   "link": "https://t.me/iranintltv/365748",
+   "relevant": true
+  },
+  {
+   "ch": "iranintltv",
+   "id": 365746,
+   "t": "2026-11-06T22:55:00Z",
+   "text": "شهرام خلدی، پژوهشگر تاریخ خاورمیانه و روابط بین‌الملل، گفت توزیع قرص ید در اطراف تاسیسات هسته‌ای جمهوری اسلامی، علاوه بر هشدار به ساکنان منطقه، می‌تواند پیامی به آمریکا و افکار عمومی جهان درباره خطرات حمله احتمالی به این مراکز باشد. به گفته او، ابهام درباره فعالیت‌های هسته‌ای در ",
+   "emoji": "",
+   "link": "https://t.me/iranintltv/365746",
+   "relevant": true
+  },
+  {
+   "ch": "clashreport",
+   "id": 104909,
+   "t": "2026-11-06T22:54:14Z",
+   "text": "JD Vance is leading behind-the-scenes efforts to secure a new ceasefire with Iran and restart nuclear negotiations. He has held near-daily talks with Qatari and Pakistani mediators and proposed resuming direct negotiations with Tehran. Trump is allowing diplomacy to continue, tho",
+   "emoji": "",
+   "link": "https://t.me/clashreport/104909",
+   "relevant": true
+  },
+  {
+   "ch": "rnintel",
+   "id": 68796,
+   "t": "2026-11-06T22:50:57Z",
+   "text": "🇺🇸 🇮🇳 ⚡️ - President Trump celebrated Diwali in the Oval Office today.",
+   "emoji": "⚡",
+   "link": "https://t.me/rnintel/68796",
+   "relevant": false
+  },
+  {
+   "ch": "shin_persian",
+   "id": 12085,
+   "t": "2026-11-06T22:49:55Z",
+   "text": "Shin ✓ @hey_itsmyturn Yediot: \"The United States has issued security warnings through its diplomatic missions across the Middle East, including the embassy in Jerusalem, following increased threats from the Houthis in Yemen and intelligence indicating Iranian attempts to target s",
+   "emoji": "",
+   "link": "https://t.me/shin_persian/12085",
+   "relevant": true
+  },
+  {
+   "ch": "Middle_East_Spectator",
+   "id": 38022,
+   "t": "2026-11-06T22:48:09Z",
+   "text": "— ❗️ 🇺🇸 / 🇮🇷 NEW: Footage from earlier shows Iranian surface-to-air missiles being launched at an American fighter jet that violated the airspace of Qeshm Island Some sources report that two U.S. ‘Tomahawk’ cruise missiles struck Souza Port, Qeshm, in response. @Middle_East_Spect",
+   "emoji": "",
+   "link": "https://t.me/Middle_East_Spectator/38022",
+   "relevant": true
+  },
+  {
+   "ch": "iranintltv",
+   "id": 365745,
+   "t": "2026-11-06T22:46:19Z",
+   "text": "دفتر رسانه‌ای بین‌المللی دولت قطر در بیانیه‌ای گزارش‌ها مبنی بر شکست مذاکرات برای توافق آمریکا و جمهوری اسلامی را تکذیب کرد و گفت کسانی که از تداوم جنگ و بی‌ثباتی در منطقه سود می‌برند، به طور عمدی اظهارات نخست‌وزیر قطر را تحریف کرده‌اند تا تلاش‌های دیپلماتیک را تضعیف کنند. این بی",
+   "emoji": "",
+   "link": "https://t.me/iranintltv/365745",
+   "relevant": true
+  },
+  {
+   "ch": "warmonitors",
+   "id": 46538,
+   "t": "2026-11-06T22:45:49Z",
+   "text": "⚡ #BREAKING Iranian Tasnim News Agency: Two missiles fell on Qeshm Island 💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom +18",
+   "emoji": "⚡",
+   "link": "https://t.me/warmonitors/46538",
+   "relevant": true
+  },
+  {
+   "ch": "irna_1313",
+   "id": 470648,
+   "t": "2026-11-06T22:44:32Z",
+   "text": "گفت‌ وگوی وزیر دفاع قطر با وزیر جنگ آمریکا و وزیر خارجه امارات 🔹 «شیخ سعود بن عبدالرحمن بن حسن آل ثانی» معاون نخست‌وزیر و وزیر مشاور در امور دفاعی قطر با «پیت هگست» وزیر جنگ آمریکا درباره موضوعات مورد اهتمام مشترک دو طرف گفت‌ و گو کرد. 🔹 وی همچنین در تماس تلفنی جداگانه با «عبدالل",
+   "emoji": "",
+   "link": "https://t.me/irna_1313/470648",
+   "relevant": true
+  },
+  {
+   "ch": "bbcpersian",
+   "id": 294908,
+   "t": "2026-11-06T22:38:57Z",
+   "text": "امیر اکرمی‌نیا، سخنگوی ارتش ایران، می‌گوید که «هیچ تلاش یا ماجراجویی آمریکا» نمی‌تواند تنگه هرمز را باز کند و تنها راه بازگشایی آن، پذیرش شروط جمهوری اسلامی ایران است. او گفت که این شروط از سوی مسئولان سیاسی ایران به آمریکایی‌ها اطلاع داده شده است. سخنگوی ارتش ایران همچنین بار دی",
+   "emoji": "",
+   "link": "https://t.me/bbcpersian/294908",
+   "relevant": true
+  },
+  {
+   "ch": "farsna",
+   "id": 472975,
+   "t": "2026-11-06T22:38:57Z",
+   "text": "اقدام کم‌سابقهٔ چین در نمایش موشک‌های قاره‌پیما و مافوق صوت 🔹 چین در تازه‌ترین نمایش تسلیحات راهبردی خود، موشک بالستیک قاره‌پیمای DF-61 با قابلیت حمل کلاهک هسته‌ای را به نمایش گذاشت و هم‌زمان تصاویری کم‌سابقه از موشک کروز مافوق صوت دوربرد DF-100 منتشر کرد. @Farsna - Link",
+   "emoji": "",
+   "link": "https://t.me/farsna/472975",
+   "relevant": true
+  },
+  {
+   "ch": "geopolitics_prime",
+   "id": 77411,
+   "t": "2026-11-06T22:32:54Z",
+   "text": "🚨 🇮🇷 Missiles strike Qeshm Island At least 2 missiles have hit Qeshm Island, according to a report from Tasnim News Agency. Official information regarding damage or casualties has not yet been released. Qeshm has been a major military flashpoint in recent weeks. The IRGC recently",
+   "emoji": "🚨",
+   "link": "https://t.me/geopolitics_prime/77411",
+   "relevant": true
+  },
+  {
+   "ch": "BellumActaNews",
+   "id": 178303,
+   "t": "2026-11-06T22:32:28Z",
+   "text": "🇺🇸 📞 🇮🇱 🇸🇦 — The United States State Department has just issued new security warnings across its diplomatic missions in the Middle East, including the embassy in Jerusalem, citing intelligence information indicating Iranian attempts to target senior American officials in the regi",
+   "emoji": "",
+   "link": "https://t.me/BellumActaNews/178303",
+   "relevant": true
+  },
+  {
+   "ch": "indypersian",
+   "id": 182084,
+   "t": "2026-11-06T22:30:46Z",
+   "text": "♦️ دفتر رسانه‌ای بین‌المللی دولت قطر، روز جمعه، با صدور بیانیه‌ای در واکنش به گزارش‌های منتشرشده در شبکه‌های اجتماعی مبنی بر سخنان نخست‌وزیر این کشور درباره «شکست تلاش‌های آمریکا و ایران برای دستیابی به توافق»، این گزارش‌ها را «کاملاً نادرست و گمراه‌کننده» خواند و اعلام کرد: «اظه",
+   "emoji": "",
+   "link": "https://t.me/indypersian/182084",
+   "relevant": true
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429468,
+   "t": "2026-11-06T22:28:53Z",
+   "text": "قطر: واشنگتن و تهران همچنان برای دستیابی به توافق تلاش می‌کنند 🔺 دفتر رسانه‌ای بین‌المللی قطر اعلام کرد که «محمد بن عبدالرحمن آل ثانی» نخست‌وزیر و وزیر امور خارجه این کشور تأکید کرده است که آمریکا و ایران همچنان برای دستیابی به توافق به تلاش‌های خود ادامه می‌دهند. 🔗 mehrnews.com/",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429468",
+   "relevant": true
+  },
+  {
+   "ch": "bbcpersian",
+   "id": 294907,
+   "t": "2026-11-06T22:25:58Z",
+   "text": "🔻 ایرنا و تسنیم از اصابت دو پرتابه به جزیره قشم خبر دادند خبرگزاری دولتی ایرنا به نقل از شاهدان محلی از اصابت دو پرتابه به منطقه سوزا در جزیره قشم در جنوب ایران خبر داده است. ایرنا بامداد شنبه ۱۶ آبان گزارش داد که صدای یک هواگرد در قشم شنیده شده و شاهدان محلی از اصابت دو پرتابه ب",
+   "emoji": "",
+   "link": "https://t.me/bbcpersian/294907",
+   "relevant": true
+  },
+  {
+   "ch": "QudsNen",
+   "id": 244613,
+   "t": "2026-11-06T22:25:18Z",
+   "text": "Despite the October 2025 ceasefire, Israeli attacks continue to threaten education in Gaza, where nearly 98% of school buildings have been damaged or destroyed. As hundreds of thousands of students returned to classes in September 2026 after nearly three years of disruption, Isra",
+   "emoji": "",
+   "link": "https://t.me/QudsNen/244613",
+   "relevant": true
+  },
+  {
+   "ch": "mehrnews",
+   "id": 429467,
+   "t": "2026-11-06T22:22:42Z",
+   "text": "30 شهید و 21 زخمی در حملات عربستان و مزدوران آن در 24 ساعت گذشته 🔺 ‏سخنگوی وزارت بهداشت یمن اعلام کرد در حملات عربستان و مزدوران آن در ۲۴ ساعت گذشته ۳۰ نفر شهید و ۲۱ نفر زخمی شدند. 🔗 mehrnews.com/x3dxqz 📡 @Mehrnews",
+   "emoji": "📡",
+   "link": "https://t.me/mehrnews/429467",
+   "relevant": false
+  },
+  {
+   "ch": "shin_persian",
+   "id": 12082,
+   "t": "2026-11-06T22:22:24Z",
+   "text": "Shin ✓ @hey_itsmyturn Earlier @ 2108Z 2 AL projectiles landed in Qeshm, launched by aircraft. Target is not known as of now Hormozgan Province, Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/RMoo2nbOBIvnSC685JG1Psyk?xv=1 ترجمه خودکار فارسی",
+   "emoji": "",
+   "link": "https://t.me/shin_persian/12082",
+   "relevant": true
+  },
+  {
+   "ch": "presstv",
+   "id": 213726,
+   "t": "2026-11-06T22:22:03Z",
+   "text": "Saudi Arabia pounded Yemen with over 100 strikes, killing more than 30 at a crowded local market, as Yemen's forces retaliated with a drone strike that halted flights at Dammam airport. @PressTV",
+   "emoji": "",
+   "link": "https://t.me/presstv/213726",
+   "relevant": true
+  },
+  {
+   "ch": "farsna",
+   "id": 472974,
+   "t": "2026-11-06T22:19:38Z",
+   "text": "تهران برای سیلاب احتمالی به خط شد 🔹 در پی صدور هشدار قرمز تشدید بارش و هشدار نارنجی نفوذ تودهٔ هوای سرد از سوی سازمان هواشناسی، دستگاه‌های امدادی و خدمات‌رسان استان تهران برای مقابله با مخاطرات جوی پیش‌رو به حالت آماده‌باش درآمدند؛ از آماده‌باش کامل پایگاه‌های اورژانس و ۱۳۸ ایستگ",
+   "emoji": "",
+   "link": "https://t.me/farsna/472974",
+   "relevant": true
+  },
+  {
+   "ch": "iranintltv",
+   "id": 365744,
+   "t": "2026-11-06T22:17:47Z",
+   "text": "در پی گزارش‌های رسانه‌های ایران درباره شنیده شدن صدای انفجار در قشم و بندر خمیر، خبرگزاری تسنیم گزارش داد بر اساس گزارش‌های اولیه، دو موشک در جزیره قشم اصابت کرده است. https://iranintl.com/202611061376",
+   "emoji": "",
+   "link": "https://t.me/iranintltv/365744",
+   "relevant": true
+  },
+  {
+   "ch": "shin_persian",
+   "id": 12081,
+   "t": "2026-11-06T22:14:54Z",
+   "text": "Shin ✓ @hey_itsmyturn The 𝐅𝐀𝐓𝐅 𝐍𝐨𝐯𝐞𝐦𝐛𝐞𝐫 𝟐𝟎𝟐𝟔 𝐏𝐥𝐞𝐧𝐚𝐫𝐲 𝐢𝐧𝐢𝐭𝐢𝐚𝐭𝐢𝐯𝐞𝐬 targeted Iranian illicit finance, Southeast Asian scam compounds, and systemic virtual-asset compliance deficiencies. FATF also adopted mutual evaluations of the United States and Mexico, recognizing the effectivene",
+   "emoji": "",
+   "link": "https://t.me/shin_persian/12081",
+   "relevant": true
+  },
+  {
+   "ch": "akhbarefori",
+   "id": 704768,
+   "t": "2026-11-06T22:14:19Z",
+   "text": "خبرفوری pinned « 🔴 تسنیم: گزارش اولیه از اصابت دو موشک در قشم 🔹 بر اساس گزارش‌های اولیه، دو موشک در جزیره قشم اصابت کرده است. تاکنون اطلاعات رسمی درباره میزان خسارات احتمالی منتشر نشده است. #اخبار_هرمزگان در فضای مجازی 👇 @akhbare_hormozgan »",
+   "emoji": "🔴",
+   "link": "https://t.me/akhbarefori/704768",
+   "relevant": true
+  },
+  {
+   "ch": "rnintel",
+   "id": 68795,
+   "t": "2026-11-06T22:10:39Z",
+   "text": "🇺🇸 ⚡️ - Governor DeSantis is on a hiring spree for his 2028 Presidential campaign and plans on announcing his run sooner rather than later. Those close to him say that he learned his lesson by waiting too long to announce in 2023 according to the Washington Post.",
+   "emoji": "⚡",
+   "link": "https://t.me/rnintel/68795",
+   "relevant": false
+  },
+  {
+   "ch": "ynetalerts",
+   "id": 77330,
+   "t": "2026-11-06T22:10:24Z",
+   "text": "🔴 ‏מנהיג הדמוקרטים בבית הנבחרים: ראש הסגל החדש של טראמפ - גידול ממאיר שיש להשמיד למבזק המלא ב-ynet >",
+   "emoji": "🔴",
+   "link": "https://t.me/ynetalerts/77330",
+   "relevant": false
+  },
+  {
+   "ch": "rotternews",
+   "id": 370133,
+   "t": "2026-11-06T22:10:06Z",
+   "text": "עקב איומים מאיראן: ארה''ב פרסמה אזהרות ביטחון לדיפלומטים במזה''ת, גם בי-ם 📰 לאשכול המלא 📰",
+   "emoji": "",
+   "link": "https://t.me/rotternews/370133",
+   "relevant": true
+  },
+  {
+   "ch": "iranintltv",
+   "id": 365743,
+   "t": "2026-11-06T22:09:56Z",
+   "text": "🔻️ ️️️️️محمد تقوی، ایران اینترنشنال در برنامه هت‌تریک با آنالیز بازی پرسپولیس - فجر سپاسی گفت: «پرسپولیس در سه بازی گذشته، فقط یک گل زده؛ این نشان می‌دهد خط حمله پرسپولیس ضعیت است، اما اوضاع خط دفاع این تیم هم نگران‌کننده است.» 🔹️ ️️️️️تماشای نسخه کامل هت‌تریک؛ 👇️ ️️️️️ https://y",
+   "emoji": "",
+   "link": "https://t.me/iranintltv/365743",
+   "relevant": true
+  },
+  {
+   "ch": "akhbarefori",
+   "id": 704767,
+   "t": "2026-11-06T22:08:45Z",
+   "text": "🔴 تسنیم: گزارش اولیه از اصابت دو موشک در قشم 🔹 بر اساس گزارش‌های اولیه، دو موشک در جزیره قشم اصابت کرده است. تاکنون اطلاعات رسمی درباره میزان خسارات احتمالی منتشر نشده است. #اخبار_هرمزگان در فضای مجازی 👇 @akhbare_hormozgan",
+   "emoji": "🔴",
+   "link": "https://t.me/akhbarefori/704767",
+   "relevant": true
+  },
+  {
+   "ch": "indypersian",
+   "id": 182083,
+   "t": "2026-11-06T22:05:22Z",
+   "text": "♦️ به گزارش تسنیم، بامداد شنبه، «صدای مهیب» ناشی از پرواز یک جنگنده بر فراز شهر قشم و مناطق اطراف شنیده شده و شدت این صدا به حدی بوده که به وحشت و خروج شماری از مردم از خانه‌هایشان انجامیده است. تسنیم در ادامه نوشت: «بر اساس گزارش‌های اولیه، دو موشک در جزیره قشم اصابت کرده است.» ",
+   "emoji": "",
+   "link": "https://t.me/indypersian/182083",
+   "relevant": true
+  },
+  {
+   "ch": "presstv",
+   "id": 213725,
+   "t": "2026-11-06T22:04:55Z",
+   "text": "🔴 The sound of explosions has been heard in Qeshm Island. @PressTV",
+   "emoji": "🔴",
+   "link": "https://t.me/presstv/213725",
+   "relevant": false
+  },
+  {
+   "ch": "ynetalerts",
+   "id": 77329,
+   "t": "2026-11-06T22:04:19Z",
+   "text": "🔴 ‏עקב איומים מאיראן: ארה\"ב פרסמה אזהרות ביטחון לדיפלומטים במזה\"ת, גם בי-ם למבזק המלא ב-ynet >",
+   "emoji": "🔴",
+   "link": "https://t.me/ynetalerts/77329",
+   "relevant": true
+  },
+  {
+   "ch": "iranintltv",
+   "id": 365740,
+   "t": "2026-11-06T22:04:14Z",
+   "text": "دفتر مطبوعاتی شاهزاده رضا پهلوی اعلام کرد که او همچنان در مراسم اعطای جایزه آزادی فریدریش نائومان شرکت می‌کنند و مصصم است تا پس از آن، در گردهمایی ایرانیان در فرانکفورت نیز حضور یابد. دفتر شاهزاده رضا پهلوی گفت این گردهمایی همچنان طبق برنامه برگزار خواهد شد. پیش‌تر یاسمین پهلوی، ",
+   "emoji": "",
+   "link": "https://t.me/iranintltv/365740",
+   "relevant": true
+  },
+  {
+   "ch": "presstv",
+   "id": 213724,
+   "t": "2026-11-06T22:02:03Z",
+   "text": "Iran’s Armed Forces ‘stronger, more alert’ than at start of war: Army Spokesman Brigadier General Mohammad Akraminia, spokesman for the Islamic Republic of Iran Army, has declared that the country’s armed forces are significantly stronger, more experienced, and on higher alert to",
+   "emoji": "",
+   "link": "https://t.me/presstv/213724",
+   "relevant": true
+  },
+  {
+   "ch": "VahidOnline",
+   "id": 79020,
+   "t": "2026-11-06T22:01:23Z",
+   "text": "به گزارش تسنیم، بامداد شنبه، «صدای مهیب» ناشی از پرواز یک جنگنده بر فراز شهر قشم و مناطق اطراف شنیده شده و شدت این صدا به حدی بوده که به وحشت و خروج شماری از مردم از خانه‌هایشان انجامیده است. تسنیم در ادامه نوشت: «بر اساس گزارش‌های اولیه، دو موشک در جزیره قشم اصابت کرده است.» این",
+   "emoji": "📡",
+   "link": "https://t.me/VahidOnline/79020",
+   "relevant": true
+  },
+  {
+   "ch": "rnintel",
+   "id": 68794,
+   "t": "2026-11-06T22:00:22Z",
+   "text": "🇺🇸 ⚡️ - RFK Jr. is now alluding to Q Anon conspiracies by repeating the \"unleash the kraken\" line used by Sidney Powell during the 2020 post election fight. \"Release the Kraken\" is obviously an age old saying however Kennedy was close with Michael Flynn and…",
+   "emoji": "⚡",
+   "link": "https://t.me/rnintel/68794",
+   "relevant": false
+  },
+  {
+   "ch": "farsna",
+   "id": 472973,
+   "t": "2026-11-06T21:59:57Z",
+   "text": "🎥 سخنگوی ارتش: دکترین نظامی ایران با دستور فرمانده کل قوا به‌سمت تهاجمی‌شدن پیش می‌رود 🔹 امیر اکرمی‌نیا: اگر دشمن شرارتی کند، پاسخ فوری، اثرگذار و بدون محدودیت خواهیم داشت. 🔹 هم‌رزمان من در مرزها با قدرت پای عهدشان با ملت ایران ایستاده‌اند و حضور مردم در خیابان‌ها…",
+   "emoji": "",
+   "link": "https://t.me/farsna/472973",
+   "relevant": true
+  },
+  {
+   "ch": "rnintel",
+   "id": 68793,
+   "t": "2026-11-06T21:59:49Z",
+   "text": "🇺🇸 🇮🇷 ⚡️ - Two missiles struck Iran's Qeshm Island, according to Tasnim News.",
+   "emoji": "⚡",
+   "link": "https://t.me/rnintel/68793",
+   "relevant": true
+  },
+  {
+   "ch": "akhbarefori",
+   "id": 704765,
+   "t": "2026-11-06T21:57:34Z",
+   "text": "🔴 تسنیم: گزارش اولیه از اصابت دو موشک در قشم 🔹 بر اساس گزارش‌های اولیه، دو موشک در جزیره قشم اصابت کرده است. تاکنون اطلاعات رسمی درباره میزان خسارات احتمالی منتشر نشده است. #اخبار_هرمزگان در فضای مجازی 👇 @akhbare_hormozgan",
+   "emoji": "🔴",
+   "link": "https://t.me/akhbarefori/704765",
+   "relevant": true
+  },
+  {
+   "ch": "rnintel",
+   "id": 68792,
+   "t": "2026-11-06T21:57:31Z",
+   "text": "🇺🇸 ⚡️ - RFK Jr. is now alluding to Q Anon conspiracies by repeating the \"unleash the kraken\" line used by Sidney Powell during the 2020 post election fight. \"Release the Kraken\" is obviously an age old saying however Kennedy was close with Michael Flynn and Q related nonsense. Th",
+   "emoji": "⚡",
+   "link": "https://t.me/rnintel/68792",
+   "relevant": false
+  },
+  {
+   "ch": "indypersian",
+   "id": 182082,
+   "t": "2026-11-06T21:55:19Z",
+   "text": "♦️ رسانه‌های داخلی، بامداد شنبه، از «شنیده‌شدن صدای انفجار» و «تردد هواگرد» در جزیره قشم و بندرخمیر خبر داده‌اند. خبرگزاری ایرنا به نقل از شاهدان عینی اعلام کرد که دو پرتابه در منطقه «سوزا» واقع در جزیره قشم اصابت کرده است، اما منابع استانی هنوز درباره ماهیت و جزئیات آن توضیحی ند",
+   "emoji": "",
+   "link": "https://t.me/indypersian/182082",
+   "relevant": true
+  },
+  {
+   "ch": "akhbarefori",
+   "id": 704764,
+   "t": "2026-11-06T21:53:58Z",
+   "text": "🔴 تسنیم: دقایقی پیش صدای بلند عبور یک فروند جنگنده دشمن از فراز شهر قشم و مناطق پیرامونی به گوش رسید 🇮🇷 ✊ @AkhbareFori",
+   "emoji": "🔴",
+   "link": "https://t.me/akhbarefori/704764",
+   "relevant": false
+  },
+  {
+   "ch": "akhbarefori",
+   "id": 704763,
+   "t": "2026-11-06T21:52:24Z",
+   "text": "🔴 دقایقی پیش صدای یک هواگرد در قشم به گوش رسید 🔹 شاهدان محلی از اصابت ۲ پرتابه در سوزا در جزیره قشم خبر می‌دهند. منابع محلی و استانی در مورد جزئیات این واقعه اظهار نظر نکرده‌اند./ ایرنا 🇮🇷 ✊ @AkhbareFori",
+   "emoji": "🔴",
+   "link": "https://t.me/akhbarefori/704763",
+   "relevant": false
+  },
+  {
+   "ch": "akhbarefori",
+   "id": 704762,
+   "t": "2026-11-06T21:51:52Z",
+   "text": "🔴 فارس: شنیده‌شدن صدای انفجار در قشم و بندرخمیر؛ ماهیت انفجارها مشخص نیست اما ممکن است مرتبط با شلیک تیر هشدار به سمت تنگهٔ هرمز باشد 🇮🇷 ✊ @AkhbareFori",
+   "emoji": "🔴",
+   "link": "https://t.me/akhbarefori/704762",
+   "relevant": true
+  },
+  {
+   "ch": "shin_persian",
+   "id": 12080,
+   "t": "2026-11-06T21:51:43Z",
+   "text": "Shin ✓ @hey_itsmyturn Code 100 [Highest level of alert] issued for evacuation and dispersal for southern provinces of Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/Q5b9k80idJVyfiqknL80Z1mu ترجمه خودکار فارسی کد…",
+   "emoji": "",
+   "link": "https://t.me/shin_persian/12080",
+   "relevant": true
+  },
+  {
+   "ch": "iranintltv",
+   "id": 365739,
+   "t": "2026-11-06T21:51:04Z",
+   "text": "یاسمین پهلوی، همسر رضا پهلوی، گفت پلیس فرانکفورت رسماً به آنان اعلام کرده است که اجازه حضور و سخنرانی در گردهمایی روز شنبه را ندارند و مانع حضورشان خواهد شد. به گفته او، پلیس دلیل این تصمیم را تهدید جمهوری اسلامی به خشونت و احتمال هدف قرار گرفتن شرکت‌کنندگان در گردهمایی عنوان کرد",
+   "emoji": "",
+   "link": "https://t.me/iranintltv/365739",
+   "relevant": true
+  },
+  {
+   "ch": "farsna",
+   "id": 472972,
+   "t": "2026-11-06T21:50:34Z",
+   "text": "واژگونی اتوبوس در جادهٔ حاجی‌آباد استان هرمزگان 🔹 هلال‌احمر هرمزگان: ساعت ۲۰:۵۲ جمعه، یک دستگاه اتوبوس با ۴۵ مسافر در جادهٔ بندرعباس به حاجی‌‌آباد واژگون شد. 🔹 طبق ارزیابی اولیه، این حادثه تاکنون ۲۵ مصدوم داشته است. @Farsna - Link",
+   "emoji": "",
+   "link": "https://t.me/farsna/472972",
+   "relevant": true
+  },
+  {
+   "ch": "shin_persian",
+   "id": 12079,
+   "t": "2026-11-06T21:50:19Z",
+   "text": "Shin ✓ @hey_itsmyturn Code 100 [Highest level of alert] issued for evacuation and dispersal for southern provinces of Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/Q5b9k80idJVyfiqknL80Z1mu ترجمه خودکار فارسی کد ۱۰۰ [بالاترین سطح هشدار] بر",
+   "emoji": "",
+   "link": "https://t.me/shin_persian/12079",
+   "relevant": true
+  },
+  {
+   "ch": "rotternews",
+   "id": 370132,
+   "t": "2026-11-06T21:50:06Z",
+   "text": "דיווח: מילר טען במסגרת מועמדותו לתפקיד כי טראמפ חייב לסיים את המלחמה באיראן, משום שתומכיו הנאמנים ביותר רואים בה בגידה. 📰 לאשכול המלא 📰",
+   "emoji": "",
+   "link": "https://t.me/rotternews/370132",
+   "relevant": true
+  },
+  {
+   "ch": "geopolitics_prime",
+   "id": 77410,
+   "t": "2026-11-06T21:48:25Z",
+   "text": "🔍 Miller takes over as Chief of Staff as Trump shrinks cabinet after midterm catastrophe President Donald Trump is reorganizing his White House, naming Stephen Miller—the architect of his hardline immigration policies—as his new Chief of Staff. Miller replaces Susie Wiles, who re",
+   "emoji": "",
+   "link": "https://t.me/geopolitics_prime/77410",
+   "relevant": true
+  },
+  {
+   "ch": "indypersian",
+   "id": 182081,
+   "t": "2026-11-06T21:47:37Z",
+   "text": "♦️ محمدجواد لاریجانی، رئیس پژوهشگاه دانش‌های بنیادی و برادر علی لاریجانی، با اشاره به توان هسته‌ای جمهوری اسلامی گفت ساخت سلاح هسته‌ای برای ایران «مثل آب خوردن» است و دانش هسته‌ای جمهوری اسلامی را فراتر از این مرحله توصیف کرد. لاریجانی گفت: «اگر ولی‌امر اجازه بدهد، مقدار زیادی بر",
+   "emoji": "",
+   "link": "https://t.me/indypersian/182081",
+   "relevant": true
+  },
+  {
+   "ch": "indypersian",
+   "id": 182080,
+   "t": "2026-11-06T21:42:19Z",
+   "text": "♦️ برنامه «پاداش برای عدالت» وزارت خارجه آمریکا روز جمعه، ۱۵ آبان‌ماه، اعلام کرد که برای دریافت اطلاعات درباره برنامه هسته‌ای جمهوری اسلامی ایران تا ۲۰ میلیون دلار پاداش پرداخت می‌کند و امکان جابجایی و اسکان مجدد را نیز برای ارائه‌دهندگان اطلاعات در نظر گرفته است. بر اساس این فرا",
+   "emoji": "",
+   "link": "https://t.me/indypersian/182080",
+   "relevant": true
+  },
+  {
+   "ch": "rnintel",
+   "id": 68790,
+   "t": "2026-11-06T21:38:02Z",
+   "text": "🇺🇸 ⚡️ - Krispy Kreme stock has skyrocketed nearly 40% since the midterm elections. A powerful omen in favor of a possible Chris Christie 2028 campaign in the GOP primary.",
+   "emoji": "⚡",
+   "link": "https://t.me/rnintel/68790",
+   "relevant": false
+  },
+  {
+   "ch": "indypersian",
+   "id": 182079,
+   "t": "2026-11-06T21:37:22Z",
+   "text": "♦️ فرارو، بامداد شنبه، از شنیده‌شدن صدای انفجار در جزیرهٔ قشم خبر داد و نوشت: «هنوز اطلاعات تکمیلی از علت شنیده شدن این صدا اعلام نشده است.» به گزارش کانال تلگرامی «وحید آنلاین»، شماری از مردم در پیام‌های ارسالی خود اعلام کرده‌اند که حوالی ساعت ۰۰:۳۲ بامداد شنبه صدایی شبیه به «پر",
+   "emoji": "",
+   "link": "https://t.me/indypersian/182079",
+   "relevant": true
+  },
+  {
+   "ch": "farsna",
+   "id": 472971,
+   "t": "2026-11-06T21:36:44Z",
+   "text": "شنیده‌شدن صدای انفجار در قشم و بندرخمیر 🔹 صدای انفجار در ساعات اخیر در بندرخمیر و قشم شنیده شده است. 🔹 ماهیت انفجارها مشخص نیست اما ممکن است مرتبط با شلیک تیر هشدار به سمت تنگهٔ هرمز باشد. 🔹 طی چندروز اخیر، دست کم ۶ پهپاد شناسایی پیشرفتهٔ دشمن آمریکایی در آسمان تنگهٔ هرمز توسط رز",
+   "emoji": "",
+   "link": "https://t.me/farsna/472971",
+   "relevant": true
+  },
+  {
+   "ch": "presstv",
+   "id": 213722,
+   "t": "2026-11-06T21:34:15Z",
+   "text": "Israeli attacks kill three Palestinians, including 15-year-old boy and medical student At least three Palestinians, including a 15-year-old boy and a medical student, have been killed in fresh Israeli attacks across the besieged Gaza Strip, as the regime continues its genocidal w",
+   "emoji": "",
+   "link": "https://t.me/presstv/213722",
+   "relevant": true
+  },
+  {
+   "ch": "BellumActaNews",
+   "id": 178298,
+   "t": "2026-11-06T21:34:02Z",
+   "text": "🇺🇸 ❌ 🇮🇷 — 4 explosions were just heard on Qeshm Island, Hormozgan Province of southern Iran. It’s being reported that a surface-to-air missile was launched, with AAA activity recorded as well. ➖ ➖ ➖ ➖ ➖ ➖ 💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom ➖ ➖ ➖ ➖",
+   "emoji": "",
+   "link": "https://t.me/BellumActaNews/178298",
    "relevant": true
   },
   {
@@ -6779,57 +7823,12 @@
    "relevant": false
   },
   {
-   "ch": "iranintltv",
-   "id": 365737,
-   "t": "2026-11-06T21:22:53Z",
-   "text": "تحقیقات اختصاصی ایران‌اینترنشنال نشان می‌دهد جمهوری اسلامی با استفاده از شرکت‌های پوششی و پرداخت پول نقد از طریق سفارت خود در بریتانیا، شبکه‌ای برای گسترش نفوذ رسانه‌ای ایجاد کرده است. بر اساس اسناد این گزارش، بیش از ۴۱ هزار پوند از طریق شرکتی در لندن به احمد کابالو، خبرنگار پیشی",
-   "emoji": "",
-   "link": "https://t.me/iranintltv/365737",
-   "relevant": true
-  },
-  {
-   "ch": "clashreport",
-   "id": 104906,
-   "t": "2026-11-06T21:21:40Z",
-   "text": "Stephen Miller reportedly urged Trump to wind down the Iran war as part of his bid to become White House chief of staff. According to The New York Times, Miller argued that the conflict had alienated Trump's core supporters, who viewed the war as a betrayal. Trump appointed Mille",
-   "emoji": "",
-   "link": "https://t.me/clashreport/104906",
-   "relevant": true
-  },
-  {
-   "ch": "ynetalerts",
-   "id": 77327,
-   "t": "2026-11-06T21:20:40Z",
-   "text": "🔴 ‏דיווח איראני: נשמעו פיצוצים באי קשם - כתוצאה משיגור טילים לעבר הורמוז למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77327",
-   "relevant": true
-  },
-  {
    "ch": "indypersian",
    "id": 182077,
    "t": "2026-11-06T21:19:49Z",
    "text": "♦️ ابراهیم عزیزی، رئیس کمیسیون امنیت ملی مجلس شورای اسلامی، روز جمعه با انتشار پیامی در اکس نوشت: «اجازه نمی‌دهیم ترامپ بی هزینه و غرامت از منطقه فرار کند.» او گفت: «پاسخ ما به هر خطا، ضربه‌ای کاری است تا بزرگترین پایگاه نظامی آمریکا یعنی اسرائیل را یکبار برای همیشه آزاد کنیم.» @",
    "emoji": "",
    "link": "https://t.me/indypersian/182077",
-   "relevant": true
-  },
-  {
-   "ch": "iranintltv",
-   "id": 365736,
-   "t": "2026-11-06T21:18:21Z",
-   "text": "روح‌الله رحیم‌پور، روزنامه‌نگار و تحلیل‌گر سیاسی، گفت طرح تازه قطر برای کاهش تنش میان تهران و واشینگتن، با وجود در نظر گرفتن بخشی از خواسته‌های دو طرف، همچنان با شروط جمهوری اسلامی و مطالبات هسته‌ای آمریکا فاصله دارد. رحیم‌پور افزود جمهوری اسلامی با ادامه بررسی این پیشنهاد تلاش م",
-   "emoji": "",
-   "link": "https://t.me/iranintltv/365736",
-   "relevant": true
-  },
-  {
-   "ch": "alibk3",
-   "id": 40927,
-   "t": "2026-11-06T21:18:13Z",
-   "text": "سماع دوي انفجار جديد في مضيق هرمز.",
-   "emoji": "",
-   "link": "https://t.me/alibk3/40927",
    "relevant": true
   },
   {
@@ -6860,42 +7859,6 @@
    "relevant": true
   },
   {
-   "ch": "iranintltv",
-   "id": 365735,
-   "t": "2026-11-06T21:16:23Z",
-   "text": "فروغ کنعانی، پژوهشگر جامعه‌شناسی و فعال حقوق زنان، گفت با وجود اعلام محدودیت امنیتی برای حضور شاهزاده رضا پهلوی و همسرش در مراسم فرانکفورت، تاکنون تغییری در برنامه تجمع ایجاد نشده است. او این تصمیم را نشانه ضعف اراده سیاسی آلمان در مقابله با تهدیدهای جمهوری اسلامی دانست. کنعانی ا",
-   "emoji": "",
-   "link": "https://t.me/iranintltv/365735",
-   "relevant": true
-  },
-  {
-   "ch": "ynetalerts",
-   "id": 77326,
-   "t": "2026-11-06T21:12:24Z",
-   "text": "🔴 ‏ארה\"ב: הטלנו סנקציות על 8 חברות קנדיות שסייעו לאיראן להעביר כספים לטרור למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77326",
-   "relevant": true
-  },
-  {
-   "ch": "shin_persian",
-   "id": 12078,
-   "t": "2026-11-06T21:12:02Z",
-   "text": "Shin ✓ @hey_itsmyturn Jet activity over Qeshm Hormozgan Province, Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/RTAYB9nmfhWSSqQ-6JH0YYPE?xv=1 ترجمه خودکار فارسی فعالیت جت‌ها بر فراز قشم استان هرمزگان، ایران [پست با تأخیر از طریق FromIran ",
-   "emoji": "",
-   "link": "https://t.me/shin_persian/12078",
-   "relevant": true
-  },
-  {
-   "ch": "bbcpersian",
-   "id": 294906,
-   "t": "2026-11-06T21:11:54Z",
-   "text": "وزارت خارجه آمریکا در فراخوانی عمومی برای دریافت اطلاعات درباره افراد، تاسیسات و فناوری‌های مرتبط با برنامه هسته‌ای ایران، تا سقف ۲۰ میلیون دلار پاداش تعیین کرده است. برنامه «پاداش برای عدالت» وزارت خارجه آمریکا در پیامی در شبکه ایکس نوشت: «دولت ایالات متحده همچنان متعهد است که ب",
-   "emoji": "",
-   "link": "https://t.me/bbcpersian/294906",
-   "relevant": true
-  },
-  {
    "ch": "rnintel",
    "id": 68789,
    "t": "2026-11-06T21:10:11Z",
@@ -6903,42 +7866,6 @@
    "emoji": "⚡",
    "link": "https://t.me/rnintel/68789",
    "relevant": false
-  },
-  {
-   "ch": "shin_persian",
-   "id": 12077,
-   "t": "2026-11-06T21:09:46Z",
-   "text": "Shin ✓ @hey_itsmyturn UAV was launched from Omidiyeh. Khuzestan Province, Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/C8n4Hm6iUYyZ9Eh7pT0kPNOu ترجمه خودکار فارسی یک پهپاد از امیدیه به پرواز درآمد. استان خوزستان، ایران [انتشار با تأخیر ا",
-   "emoji": "",
-   "link": "https://t.me/shin_persian/12077",
-   "relevant": true
-  },
-  {
-   "ch": "shin_persian",
-   "id": 12076,
-   "t": "2026-11-06T21:06:15Z",
-   "text": "Shin ✓ @hey_itsmyturn AA activity in Qeshm Hormozgan Province, Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/nbfxyZspgwV-4sUqHXkM7gZn?xv=1 ترجمه خودکار فارسی فعالیت پدافند هوایی در قشم استان هرمزگان، ایران [انتشار…",
-   "emoji": "",
-   "link": "https://t.me/shin_persian/12076",
-   "relevant": true
-  },
-  {
-   "ch": "alibk3",
-   "id": 40926,
-   "t": "2026-11-06T21:05:34Z",
-   "text": "أنباء عن سماع دوي انفجارين في قشم الإيرانية جراء إطلاق صواريخ نحو مضيق هرمز.",
-   "emoji": "",
-   "link": "https://t.me/alibk3/40926",
-   "relevant": true
-  },
-  {
-   "ch": "shin_persian",
-   "id": 12075,
-   "t": "2026-11-06T21:05:28Z",
-   "text": "Shin ✓ @hey_itsmyturn AA activity in Qeshm Hormozgan Province, Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/nbfxyZspgwV-4sUqHXkM7gZn?xv=1 ترجمه خودکار فارسی فعالیت پدافند هوایی در قشم استان هرمزگان، ایران [انتشار با تأخیر از طریق FromIra",
-   "emoji": "",
-   "link": "https://t.me/shin_persian/12075",
-   "relevant": true
   },
   {
    "ch": "jamarannews",
@@ -6956,24 +7883,6 @@
    "text": "🚨 فریادِ کمک از میانِ زخم‌های دیابتی 🚨 ــــــــــــــــــــــــــــــــــــــــ تصور کنید هر قدمی که برمی‌دارید، با ترس و لرز همراه باشد؛ ترس از اینکه شاید، فقط شاید، این قدمِ بعدی، قدمِ آخر باشد... 😭 💔 «محمد» ۳۲ ساله، امروز در میانِ نبردِ تلخ با «زخم دیابتی» گرفتار شده است. اما ",
    "emoji": "🚨",
    "link": "https://t.me/akhbarefori/704761",
-   "relevant": true
-  },
-  {
-   "ch": "VahidOnline",
-   "id": 79019,
-   "t": "2026-11-06T21:04:00Z",
-   "text": "پیام‌های دریافتی: وحید جان شروع شد قشم همین الان موشک بلند شد موشک زدند از قشم موشک پدافندی بود الان از قشم صدایی شبیه پرتاب موشک اومد سلام وحید جان همین الان یک موشک از قشم #قشم 00:32 16 آبان شلیک موشک از قشم با صدای واضح 📡 @VahidOnline",
-   "emoji": "📡",
-   "link": "https://t.me/VahidOnline/79019",
-   "relevant": true
-  },
-  {
-   "ch": "iranintltv",
-   "id": 365734,
-   "t": "2026-11-06T20:58:54Z",
-   "text": "یک مقام نظامی آمریکایی به ایران‌اینترنشنال گفت ایالات متحده نگران امنیت و ایمنی مردم ایران است و از آنان می‌خواهد در صورت تشدید تنش‌های نظامی، در خانه بمانند و از نیروها و مراکز سپاه پاسداران فاصله بگیرند.",
-   "emoji": "",
-   "link": "https://t.me/iranintltv/365734",
    "relevant": true
   },
   {
@@ -7022,30 +7931,12 @@
    "relevant": true
   },
   {
-   "ch": "presstv",
-   "id": 213720,
-   "t": "2026-11-06T20:55:13Z",
-   "text": "IRGC intercepted and destroyed a 16th US MQ-1 drone over Qeshm Island, marking another failure for American reconnaissance missions in the region. @PressTV",
-   "emoji": "",
-   "link": "https://t.me/presstv/213720",
-   "relevant": true
-  },
-  {
    "ch": "indypersian",
    "id": 182076,
    "t": "2026-11-06T20:54:08Z",
    "text": "♦️ بانو یاسمین پهلوی روز جمعه ۱۵ آبان در ویدیویی که در حساب اینستاگرامش منتشر کرد، گفت پلیس فرانکفورت به او و شاهزاده رضا پهلوی اطلاع داده است که به دلیل تهدیدهای جمهوری اسلامی، نمی‌توانند در تجمع روز شنبه ایرانیان در این شهر حضور پیدا کنند یا سخنرانی داشته باشند. او گفت پلیس به ",
    "emoji": "",
    "link": "https://t.me/indypersian/182076",
-   "relevant": true
-  },
-  {
-   "ch": "alibk3",
-   "id": 40923,
-   "t": "2026-11-06T20:53:11Z",
-   "text": "أنباء عن سماع دوي انفجارين في قشم الإيرانية جراء إطلاق صواريخ نحو مضيق هرمز.",
-   "emoji": "",
-   "link": "https://t.me/alibk3/40923",
    "relevant": true
   },
   {
@@ -7094,15 +7985,6 @@
    "relevant": true
   },
   {
-   "ch": "bbcpersian",
-   "id": 294905,
-   "t": "2026-11-06T20:41:23Z",
-   "text": "‌ ‌ ‌ دونالد ترامپ، رئیس‌جمهور آمریکا، اعلام کرد که استیون میلر، از نزدیک‌ترین مشاورانش، از روز دوشنبه ۹ نوامبر ریاست دفتر کاخ سفید را بر عهده خواهد گرفت. این تغییر پس از شکست سنگین جمهوری‌خواهان در انتخابات میان‌دوره‌ای آمریکا صورت می‌گیرد؛ انتخاباتی که جنگ با ایران و افزایش قیم",
-   "emoji": "",
-   "link": "https://t.me/bbcpersian/294905",
-   "relevant": true
-  },
-  {
    "ch": "isna94",
    "id": 412115,
    "t": "2026-11-06T20:41:12Z",
@@ -7121,48 +8003,12 @@
    "relevant": true
   },
   {
-   "ch": "ynetalerts",
-   "id": 77325,
-   "t": "2026-11-06T20:39:19Z",
-   "text": "🔴 ‏המשטרה: אותרה אליה קדוש שהוגדרה כנעדרת למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77325",
-   "relevant": false
-  },
-  {
    "ch": "indypersian",
    "id": 182075,
    "t": "2026-11-06T20:37:59Z",
    "text": "♦️ دفتر کنترل دارایی‌های خارجی وزارت خزانه‌داری ایالات متحده، روز جمعه، در چارچوب عملیات «طرد اقتصادی»، هشت صرافی و شرکت خدمات مالی مستقر در کانادا را به دلیل تسهیل انتقال پول و دارایی‌های دیجیتال برای جمهوری اسلامی، صرافی‌های تحریم‌شده ایرانی و سپاه پاسداران، و همچنین پولشویی می",
    "emoji": "",
    "link": "https://t.me/indypersian/182075",
-   "relevant": true
-  },
-  {
-   "ch": "bbcpersian",
-   "id": 294904,
-   "t": "2026-11-06T20:35:18Z",
-   "text": "‌ ‌ ‌ الکساندر زویف، معاون دبیرکل سازمان ملل متحد در امور مبارزه با تروریسم، گفته است که شاخه خراسان گروه داعش در افغانستان به تجهیزات تاکتیکی مدرن، از جمله وسایط نقلیه هوایی بدون سرنشین (پهپاد)، دست یافته و افرادش آموزش‌های لازم برای استفاده عملی از آن‌ها را نیز فرا گرفته‌اند. ا",
-   "emoji": "",
-   "link": "https://t.me/bbcpersian/294904",
-   "relevant": true
-  },
-  {
-   "ch": "presstv",
-   "id": 213719,
-   "t": "2026-11-06T20:31:29Z",
-   "text": "Tech Olympics: Empowering young talent, inspiring innovation, building Iran’s future Moeen Amini reports from Tehran @PressTV",
-   "emoji": "",
-   "link": "https://t.me/presstv/213719",
-   "relevant": true
-  },
-  {
-   "ch": "iranintltv",
-   "id": 365733,
-   "t": "2026-11-06T20:29:43Z",
-   "text": "یک مقام آمریکایی به ایران‌اینترنشنال گفت ایالات متحده نگران امنیت و ایمنی مردم ایران است و از آنان می‌خواهد در صورت تشدید تنش‌های نظامی، در خانه بمانند و از نیروها و مراکز سپاه پاسداران فاصله بگیرند. این مقام گفت سپاه پاسداران تجهیزات و تاسیسات نظامی، از جمله تسلیحات و مراکز فرما",
-   "emoji": "",
-   "link": "https://t.me/iranintltv/365733",
    "relevant": true
   },
   {
@@ -7182,15 +8028,6 @@
    "emoji": "",
    "link": "https://t.me/akharinkhabar/643027",
    "relevant": true
-  },
-  {
-   "ch": "ynetalerts",
-   "id": 77324,
-   "t": "2026-11-06T20:25:07Z",
-   "text": "🔴 ‏סעודיה: יירטנו כטב\"ם באזור ריאד למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77324",
-   "relevant": false
   },
   {
    "ch": "akhbarefori",
@@ -7217,15 +8054,6 @@
    "text": "إيران: المتحدث باسم الجيش، العميد محمد أكرمي نيا: مضيق هرمز يخضع للسيطرة الاستراتيجية الإيرانية",
    "emoji": "",
    "link": "https://t.me/almayadeen/405494",
-   "relevant": true
-  },
-  {
-   "ch": "shin_persian",
-   "id": 12073,
-   "t": "2026-11-06T20:23:39Z",
-   "text": "Shin ✓ @hey_itsmyturn UAV activity in Dezful Khuzestan Province, Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/Ufe3mZTKlbdUdYhKzt65FHbG ترجمه خودکار فارسی فعالیت پهپادی در دزفول استان خوزستان، ایران [پست با تأخیر از طریق FromIran · تأخیر ",
-   "emoji": "",
-   "link": "https://t.me/shin_persian/12073",
    "relevant": true
   },
   {
@@ -7262,15 +8090,6 @@
    "text": "🎥 خیال بافی های تکراری رئیس جمهور آمریکا: ما در حال گفت‌وگو با ایران هستیم! رئیس جمهور تروریست آمریکا: 🔹 داریم ایران را شکست می دهیم و ما در حال گفت‌وگو هستیم. 🔹 طی ۶ تا ۷ ماه گذشته هیچ سربازی را از دست نداده‌ایم. @Akharinkhabar | akharinkhabar.ir",
    "emoji": "",
    "link": "https://t.me/akharinkhabar/643024",
-   "relevant": true
-  },
-  {
-   "ch": "akhbarefori",
-   "id": 704750,
-   "t": "2026-11-06T20:20:16Z",
-   "text": "♦️ نقشه قدیری ابیانه برای خانه زوج‌ها: خانه ۲۰ متری، اتاق خواب ۹ متری برای زن و شوهر؛ «چه حالی بکنند!» حسن قدیری ابیانه، سفیر سابق ایران در مکزیک و استرالیا در #گفتگو با خبرفوری: 🔹 نقشه خانه ۲۰ متری اینگونه می‌شود که یک اتاق ۹ متری برای زن و شوهر که تخت‌شان را بگذارند. 🔹 یک‌متر د",
-   "emoji": "",
-   "link": "https://t.me/akhbarefori/704750",
    "relevant": true
   },
   {
@@ -7328,30 +8147,12 @@
    "relevant": true
   },
   {
-   "ch": "akhbarefori",
-   "id": 704749,
-   "t": "2026-11-06T20:16:21Z",
-   "text": "♦️ منابع عربی از حملۀ پهپادی به ریاض پایتخت عربستان خبر می‌دهند 🇮🇷 ✊ @AkhbareFori",
-   "emoji": "",
-   "link": "https://t.me/akhbarefori/704749",
-   "relevant": true
-  },
-  {
    "ch": "akharinkhabar",
    "id": 643022,
    "t": "2026-11-06T20:16:02Z",
    "text": "🔺 🔻 منابع عربی از حملۀ پهپادی به ریاض پایتخت عربستان خبر می‌دهند @Akharinkhabar | akharinkhabar.ir",
    "emoji": "",
    "link": "https://t.me/akharinkhabar/643022",
-   "relevant": true
-  },
-  {
-   "ch": "farsna",
-   "id": 472963,
-   "t": "2026-11-06T20:15:34Z",
-   "text": "🔴 منابع عربی از حملۀ پهپادی به ریاض پایتخت عربستان خبر می‌دهند. @Farsna",
-   "emoji": "🔴",
-   "link": "https://t.me/farsna/472963",
    "relevant": true
   },
   {
@@ -7362,24 +8163,6 @@
    "emoji": "📡",
    "link": "https://t.me/mehrnews/429450",
    "relevant": false
-  },
-  {
-   "ch": "shin_persian",
-   "id": 12071,
-   "t": "2026-11-06T20:15:27Z",
-   "text": "Shin ✓ @hey_itsmyturn I received a Persian nuclear explosion response guide, reportedly circulated to healthcare staff in Iran. Can’t independently confirm its authenticity though. The page is marked \"unapproved training version.\" (2nd image: AI translated from the Persian/1st on",
-   "emoji": "",
-   "link": "https://t.me/shin_persian/12071",
-   "relevant": true
-  },
-  {
-   "ch": "warmonitors",
-   "id": 46537,
-   "t": "2026-11-06T20:15:21Z",
-   "text": "⚡ #BREAKING The Saudi-led coalition says it intercepted and destroyed a drone in the Riyadh region 💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom +18",
-   "emoji": "⚡",
-   "link": "https://t.me/warmonitors/46537",
-   "relevant": true
   },
   {
    "ch": "akharinkhabar",
@@ -7400,24 +8183,6 @@
    "relevant": true
   },
   {
-   "ch": "shin_persian",
-   "id": 12070,
-   "t": "2026-11-06T20:10:56Z",
-   "text": "Shin ✓ @hey_itsmyturn Under 𝐎𝐩𝐞𝐫𝐚𝐭𝐢𝐨𝐧 𝐄𝐜𝐨𝐧𝐨𝐦𝐢𝐜 𝐎𝐮𝐭𝐜𝐚𝐬𝐭, OFAC designated eight Canadian money services businesses for enabling Iranian sanctions evasion through currency conversion and digital assets. Several also allegedly laundered drug proceeds for sanctioned Canadian narcotraf",
-   "emoji": "",
-   "link": "https://t.me/shin_persian/12070",
-   "relevant": true
-  },
-  {
-   "ch": "farsna",
-   "id": 472962,
-   "t": "2026-11-06T20:10:23Z",
-   "text": "سخنگوی ارتش: برای بازشدن تنگۀ هرمز باید به ۷ شرط ایران تن بدهید 🔹 قطعا هیچ تلاش یا ماجراجویی آمریکا نمی‌تواند تنگه را باز کند و تنها راه تن‌دادن به شروط ایران است که از طرف مسئولین سیاسی به آمریکایی‌ها اطلاع داده شده است. @Farsna",
-   "emoji": "",
-   "link": "https://t.me/farsna/472962",
-   "relevant": true
-  },
-  {
    "ch": "rotternews",
    "id": 370123,
    "t": "2026-11-06T20:10:03Z",
@@ -7427,66 +8192,12 @@
    "relevant": true
   },
   {
-   "ch": "iranintltv",
-   "id": 365732,
-   "t": "2026-11-06T20:09:52Z",
-   "text": "دونالد ترامپ، رییس‌جمهوری آمریکا، در پاسخ به پرسشی درباره پیامش برای ایران گفت واشینگتن با تهران در حال گفت‌وگو است. ترامپ جمعه ۱۵ آبان، پیش از عزیمت به فلوریدا، به خبرنگاران گفت: «در مورد ایران خوب پیش می‌رویم. با ایران صحبت می‌کنیم.» او همچنین گفت آمریکا در «شش یا هفت ماه» گذشت",
-   "emoji": "",
-   "link": "https://t.me/iranintltv/365732",
-   "relevant": true
-  },
-  {
-   "ch": "akhbarefori",
-   "id": 704747,
-   "t": "2026-11-06T20:09:02Z",
-   "text": "♦️ سخنگوی ارتش: تنگه هرمز در کنترل راهبردی ایران قرار دارد 🔹 پایگاه‌ها و منافع آمریکا در خارج از منطقه غرب آسیا و خلیج فارس نیز در تیررس پهپادها و موشک‌های ایران قرار دارند. 🇮🇷 ✊ @AkhbareFori",
-   "emoji": "",
-   "link": "https://t.me/akhbarefori/704747",
-   "relevant": true
-  },
-  {
-   "ch": "shin_persian",
-   "id": 12069,
-   "t": "2026-11-06T20:07:36Z",
-   "text": "Shin ✓ @hey_itsmyturn Operation Economic Outcast: FinCEN ordered 𝐌𝐄𝐗𝐂 𝐆𝐥𝐨𝐛𝐚𝐥 cut off from the U.S. financial system after finding the cryptocurrency exchange facilitated at least $16 billion in illicit transactions tied to Iranian, North Korean, and Russian sanctions evasion, cyb",
-   "emoji": "",
-   "link": "https://t.me/shin_persian/12069",
-   "relevant": true
-  },
-  {
-   "ch": "ynetalerts",
-   "id": 77323,
-   "t": "2026-11-06T20:07:35Z",
-   "text": "🔴 ‏טראמפ: \"אנחנו נפגשים עם איראן ומתקדמים טוב מאוד מולם\" למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77323",
-   "relevant": true
-  },
-  {
    "ch": "akharinkhabar",
    "id": 643018,
    "t": "2026-11-06T20:07:34Z",
    "text": "🔺 🔻 سخنگوی ارتش: تنگه هرمز در کنترل راهبردی ایران قرار دارد 🔹 نیروهای مسلح با تجربه جنگ قوی‌تر شده‌اند. 🔹 ایران با مقاومت در جنگ، معادلات سیاسی آمریکا را تغییر داد. 🔹 با وجود عقب‌نشینی شناورهای آمریکایی از منطقه، احتمال تجاوز مجدد این کشور منتفی نیست. 🔹 ممکن است آمریکا به دلیل شر",
    "emoji": "",
    "link": "https://t.me/akharinkhabar/643018",
-   "relevant": true
-  },
-  {
-   "ch": "akhbarefori",
-   "id": 704746,
-   "t": "2026-11-06T20:06:45Z",
-   "text": "♦️ نمایی زیبا از کوه باشکوه قارون ⛰ #ایران_زیبا #اخبار_لرستان در فضای مجازی 👇 @Akhbarlorestan",
-   "emoji": "",
-   "link": "https://t.me/akhbarefori/704746",
-   "relevant": true
-  },
-  {
-   "ch": "warmonitors",
-   "id": 46536,
-   "t": "2026-11-06T20:05:19Z",
-   "text": "⚡ Trump says the US is talking to Iran 💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom +18",
-   "emoji": "⚡",
-   "link": "https://t.me/warmonitors/46536",
    "relevant": true
   },
   {
@@ -7533,33 +8244,6 @@
    "emoji": "📡",
    "link": "https://t.me/mehrnews/429448",
    "relevant": false
-  },
-  {
-   "ch": "iranintltv",
-   "id": 365731,
-   "t": "2026-11-06T20:02:56Z",
-   "text": "سارا از تهران: «نکنه هیچ اتفاقی نیفته و باز جمهوری اسلامی باقی بمونه؟» «یک ایران صدای شما را می‌شنود» دوشنبه تا پنجشنبه ۱۱ شب تهران از تلویزیون ایران اینترنشنال @iranintltv",
-   "emoji": "",
-   "link": "https://t.me/iranintltv/365731",
-   "relevant": true
-  },
-  {
-   "ch": "akhbarefori",
-   "id": 704745,
-   "t": "2026-11-06T20:02:54Z",
-   "text": "🔹 اگر فرصت دنبال کردن همه خبرهای امروز را نداشته‌اید، داغ‌ترین‌ها اینجا در دسترس شماست 🔹 🔹 مدارس و ادارات کدام شهرها در روز ۱۶ آبان غیر حضوری شد 👇 khabarfoori.com/fa/tiny/news-3257873 🔹 تحولات ۲۴ ساعت گذشته که احتمال جنگ دوباره را بالا برد 👇 khabarfoori.com/fa/tiny/news-3257787 🔹",
-   "emoji": "",
-   "link": "https://t.me/akhbarefori/704745",
-   "relevant": true
-  },
-  {
-   "ch": "clashreport",
-   "id": 104902,
-   "t": "2026-11-06T20:01:08Z",
-   "text": "Argentine President Javier Milei on the Strait of Hormuz: Argentina, like much of the world, is suffering a negative supply shock.",
-   "emoji": "",
-   "link": "https://t.me/clashreport/104902",
-   "relevant": true
   },
   {
    "ch": "N12chat",
@@ -7616,30 +8300,12 @@
    "relevant": true
   },
   {
-   "ch": "akhbarefori",
-   "id": 704744,
-   "t": "2026-11-06T19:57:47Z",
-   "text": "♦️ ادعای ترامپ جنایتکار: ما در حال مذاکره با ایران هستیم #Devil 🇮🇷 ✊ @AkhbareFori",
-   "emoji": "",
-   "link": "https://t.me/akhbarefori/704744",
-   "relevant": true
-  },
-  {
    "ch": "Middle_East_Spectator",
    "id": 38019,
    "t": "2026-11-06T19:57:26Z",
    "text": "— ❗️ 🇺🇸 NEW: Trump’s long-time aide Susie Wiles has left her position as White House Chief of Staff, and is being replaced by Stephen Miller Miller is one of Trump’s staunchest supporters. He is also known for being very hawkish on Iran. @Middle_East_Spectator",
    "emoji": "",
    "link": "https://t.me/Middle_East_Spectator/38019",
-   "relevant": true
-  },
-  {
-   "ch": "iranintltv",
-   "id": 365730,
-   "t": "2026-11-06T19:57:00Z",
-   "text": "دفتر کنترل دارایی‌های خارجی وزارت خزانه‌داری آمریکا، اوفک، هشت شرکت و صرافی مستقر در کانادا را به فهرست تحریم‌های مرتبط با جمهوری اسلامی اضافه کرد. بر اساس اطلاعیه اوفک در جمعه ۱۵ آبان، شرکت‌های اداره‌کننده صرافی‌های «امین اکسچنج ونکوور»، «فرح اکسچنج»، «درویش»، «میلیون»، «نیا» و ",
-   "emoji": "",
-   "link": "https://t.me/iranintltv/365730",
    "relevant": true
   },
   {
@@ -7652,15 +8318,6 @@
    "relevant": true
   },
   {
-   "ch": "clashreport",
-   "id": 104901,
-   "t": "2026-11-06T19:55:42Z",
-   "text": "Trump on Iran: We haven't lost a soldier in 7 or 6 months.",
-   "emoji": "",
-   "link": "https://t.me/clashreport/104901",
-   "relevant": true
-  },
-  {
    "ch": "indypersian",
    "id": 182073,
    "t": "2026-11-06T19:53:58Z",
@@ -7670,48 +8327,12 @@
    "relevant": true
   },
   {
-   "ch": "clashreport",
-   "id": 104899,
-   "t": "2026-11-06T19:53:49Z",
-   "text": "Trump on Iran: We're talking to Iran.",
-   "emoji": "",
-   "link": "https://t.me/clashreport/104899",
-   "relevant": true
-  },
-  {
-   "ch": "farsna",
-   "id": 472959,
-   "t": "2026-11-06T19:53:31Z",
-   "text": "🔴 استانداری البرز: مدارس شهرستان طالقان و بخش آسارا فردا به‌صورت غیرحضوری و از طریق آموزش مجازی دنبال خواهد شد. @Farsna - Link",
-   "emoji": "🔴",
-   "link": "https://t.me/farsna/472959",
-   "relevant": false
-  },
-  {
    "ch": "irna_1313",
    "id": 470624,
    "t": "2026-11-06T19:53:25Z",
    "text": "تشدید اختلاف بر سر تشکیل کابینه رژیم اسرائیل/احزاب عربی شروط آیزنکوت را رد کردند 🔹 منابع خبری از وجود اختلاف بین احزاب عربی و صهیونیستی برای تشکیل کابینه رژیم اسرائیل خبر دادند. #ایرنا_جهان https://irna.ir/xjYGhy @IRNA_1313",
    "emoji": "",
    "link": "https://t.me/irna_1313/470624",
-   "relevant": true
-  },
-  {
-   "ch": "bbcpersian",
-   "id": 294902,
-   "t": "2026-11-06T19:51:58Z",
-   "text": "🔻 جی‌دی ونس، معاون دونالد ترامپ، هم اذعان کرد که از نظر او علت شکست جمهوری‌خواهان در انتخابات میان‌دوره‌ای، جنگ با ایران است و هم حزبی‌های او در بحث‌های خود این نکته محوری را نادیده نگیرند. معاون رئیس‌جمهور آمریکا در توییت مفصل خود نوشته بود : «دلیل شکست ما جنگ بود. خود رئیس‌جمهو",
-   "emoji": "",
-   "link": "https://t.me/bbcpersian/294902",
-   "relevant": true
-  },
-  {
-   "ch": "bbcpersian",
-   "id": 294901,
-   "t": "2026-11-06T19:51:21Z",
-   "text": "🔻 ترامپ: اگر مانع دستیابی ایران به سلاح هسته‌ای نشده بودم، اسرائیل و کل خاورمیانه امروز وجود نداشت دونالد ترامپ، رئیس‌جمهور آمریکا بار دیگر تصمیمش برای حمله به ایران را ستود. او روز جمعه ششم نوامبر در شبکه اجتماعی خودش، تروث سوشال نوشت: «اگر من مانع دستیابی ایران به سلاح هسته‌ای ",
-   "emoji": "",
-   "link": "https://t.me/bbcpersian/294901",
    "relevant": true
   },
   {
@@ -7724,30 +8345,12 @@
    "relevant": true
   },
   {
-   "ch": "farsna",
-   "id": 472958,
-   "t": "2026-11-06T19:49:56Z",
-   "text": "پیام‌هایی که شما برای فارس فرستادید 🔹 چرا نظارت بر دستگاه‌ها و ادارات این‌قدر ضعیف شده است؟ چرا هیچ‌کدام از مسئولان پاسخ‌گوی تلفن‌های خود نیستند؟ ما برای پرسیدن یک سؤال ساده مجبوریم ۲۰۰ کیلومتر راه برویم و به مرکز استان مراجعه کنیم ؛ درحالی‌که اگر تلفن را پاسخ دهند، دیگر نیازی به",
-   "emoji": "",
-   "link": "https://t.me/farsna/472958",
-   "relevant": true
-  },
-  {
    "ch": "indypersian",
    "id": 182072,
    "t": "2026-11-06T19:49:56Z",
    "text": "♦️ خبرگزاری تسنیم روز جمعه ۱۵ آبان‌ماه، به نقل از خبرگزاری رسمی عراق گزارش داد که فواد حسین، وزیر امور خارجه عراق، در تماس تلفنی با عباس عراقچی، وزیر امور خارجه جمهوری اسلامی، پیشنهاد تشکیل کمیته‌ای متشکل از وزیران خارجه چند کشور منطقه را مطرح کرده است. اعضای این کمیته قرار است ب",
    "emoji": "",
    "link": "https://t.me/indypersian/182072",
-   "relevant": true
-  },
-  {
-   "ch": "akhbarefori",
-   "id": 704742,
-   "t": "2026-11-06T19:49:06Z",
-   "text": "♦️ ادعای قدیری ابیانه: ۴ خواهرزاده خاتمی همزمان رئیس ۴ هلدینگ شدند!/ در ایران‌خودرو به فامیل‌های استخدام‌ شده می‌گفتند نام خانوادگی‌تان را عوض کنید تا آبرویمان نرود! محمد حسن قدیری ابیانه، سفیر سابق ایران در مکزیک و استرالیا در #گفتگو با خبرفوری: 🔹 شرکت‌های دولتی تا می‌توانند نیر",
-   "emoji": "",
-   "link": "https://t.me/akhbarefori/704742",
    "relevant": true
   },
   {
@@ -7769,15 +8372,6 @@
    "relevant": true
   },
   {
-   "ch": "shin_persian",
-   "id": 12068,
-   "t": "2026-11-06T19:46:31Z",
-   "text": "Shin ✓ @hey_itsmyturn Chairman of the Islamic Regime's National Security Commission: \"Our response to any misstep by America will be a decisive blow to liberate America’s largest military base the [he means Israel] once and for all.\" ترجمه خودکار فارسی رئیس کمیسیون امنیت ملی رژیم",
-   "emoji": "",
-   "link": "https://t.me/shin_persian/12068",
-   "relevant": true
-  },
-  {
    "ch": "jamarannews",
    "id": 560079,
    "t": "2026-11-06T19:45:50Z",
@@ -7793,15 +8387,6 @@
    "text": "🔺 وزارت خزانه‌درای آمریکا ۸ شرکت مستقر در کانادا را به فهرست تحریم‌های ضدایرانی اضافه کرد. 🌐 Tabnak.ir @Tabnak_ir",
    "emoji": "",
    "link": "https://t.me/Tabnak_ir/278402",
-   "relevant": true
-  },
-  {
-   "ch": "akhbarefori",
-   "id": 704741,
-   "t": "2026-11-06T19:44:04Z",
-   "text": "♦️ وزارت خزانه‌درای آمریکا ۸ شرکت مستقر در کانادا را به فهرست تحریم‌های ضدایرانی اضافه کرد 🇮🇷 ✊ @AkhbareFori",
-   "emoji": "",
-   "link": "https://t.me/akhbarefori/704741",
    "relevant": true
   },
   {
@@ -7823,24 +8408,6 @@
    "relevant": true
   },
   {
-   "ch": "farsna",
-   "id": 472955,
-   "t": "2026-11-06T19:43:00Z",
-   "text": "وزارت خزانه‌درای آمریکا ۸ شرکت مستقر در کانادا را به فهرست تحریم‌های ضدایرانی اضافه کرد. @Farsna",
-   "emoji": "",
-   "link": "https://t.me/farsna/472955",
-   "relevant": true
-  },
-  {
-   "ch": "shin_persian",
-   "id": 12067,
-   "t": "2026-11-06T19:42:03Z",
-   "text": "Shin ✓ @hey_itsmyturn AA firing in Meymeh. Isfahan Province, Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/tyWlNQ6IGumTNV4-D7CT14Kt ترجمه خودکار فارسی شلیک پدافند هوایی در میمه. استان اصفهان، ایران [انتشار با تأخیر از طریق FromIran · ۱۲۰ ",
-   "emoji": "",
-   "link": "https://t.me/shin_persian/12067",
-   "relevant": true
-  },
-  {
    "ch": "akharinkhabar",
    "id": 643014,
    "t": "2026-11-06T19:41:15Z",
@@ -7856,15 +8423,6 @@
    "text": "🔴 خبرنگار آکسیوس خبر منتسب به نخست وزیر قطر را تکذیب کرد : 🔸 « اکسیوس حساب کاربری عربی X ندارد و تا جایی که من می‌دانم، نخست‌وزیر قطر هم چنین چیزی نگفته است. این توییت و این حساب کاربری هر دو جعلی هستند.» ❌ ❌ برخی منابع از قول آکسیوس مدعی شده بودند: وزیر خارجه قطر الان اعلام کرد ",
    "emoji": "🔴",
    "link": "https://t.me/jamarannews/560077",
-   "relevant": true
-  },
-  {
-   "ch": "shin_persian",
-   "id": 12066,
-   "t": "2026-11-06T19:40:04Z",
-   "text": "Shin ✓ @hey_itsmyturn AA activity heard in Shushtar Khuzestan Province, Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/RUcztehaLS40_jDJVkf3pMZJ ترجمه خودکار فارسی صدای فعالیت پدافند هوایی در شوشتر شنیده شد استان خوزستان، ایران [ارسال با تأ",
-   "emoji": "",
-   "link": "https://t.me/shin_persian/12066",
    "relevant": true
   },
   {
@@ -7886,51 +8444,6 @@
    "relevant": true
   },
   {
-   "ch": "farsna",
-   "id": 472954,
-   "t": "2026-11-06T19:37:56Z",
-   "text": "آغاز روند استیضاح وزیر جنگ ترامپ از هفتهٔ آینده 🔹 بلومبرگ: قانون‌گذاران آمریکایی قصد دارند پیت هگزث وزیر جنگ آمریکا که با بحران‌های متعددی روبه‌روست، را از هفتهٔ آینده استیضاح کنند. 🔹 این تلاش پس از آن شتاب گرفته که جنگ علیه ایران، که هگزث از حامیان اصلی آن…",
-   "emoji": "",
-   "link": "https://t.me/farsna/472954",
-   "relevant": true
-  },
-  {
-   "ch": "shin_persian",
-   "id": 12065,
-   "t": "2026-11-06T19:36:34Z",
-   "text": "Shin ✓ @hey_itsmyturn AA activity near the Fifth Fighter Base in Omidiyeh. Khuzestan Province, Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/F59nR-QjTg8U00fLQiLyf-mg ترجمه خودکار فارسی فعالیت پدافند هوایی در نزدیکی پایگاه پنجم شکاری در ام",
-   "emoji": "",
-   "link": "https://t.me/shin_persian/12065",
-   "relevant": true
-  },
-  {
-   "ch": "presstv",
-   "id": 213717,
-   "t": "2026-11-06T19:35:12Z",
-   "text": "Iran women make history with first-ever bronze at Asian Team Squash Championships Iran's women's squash team claimed a historic first-ever bronze medal at the Asian Team Squash Championships. @PressTV",
-   "emoji": "",
-   "link": "https://t.me/presstv/213717",
-   "relevant": true
-  },
-  {
-   "ch": "farsna",
-   "id": 472953,
-   "t": "2026-11-06T19:34:43Z",
-   "text": "🎥 جلیلی: نمی‌شود ما همهٔ تکالیف NPT را انجام دهیم و از هیچ حقی برخوردار نشویم 🔹 نه‌تنها حقی به‌ ما نمی‌دهند تازه به ما حمله هم می‌‌کنند؛ خب ما باید الان چکار کنیم؟ @Farsna",
-   "emoji": "",
-   "link": "https://t.me/farsna/472953",
-   "relevant": true
-  },
-  {
-   "ch": "clashreport",
-   "id": 104896,
-   "t": "2026-11-06T19:33:08Z",
-   "text": "Hegseth: Patriots in control.",
-   "emoji": "",
-   "link": "https://t.me/clashreport/104896",
-   "relevant": true
-  },
-  {
    "ch": "akharinkhabar",
    "id": 643011,
    "t": "2026-11-06T19:31:32Z",
@@ -7949,30 +8462,12 @@
    "relevant": true
   },
   {
-   "ch": "farsna",
-   "id": 472952,
-   "t": "2026-11-06T19:30:00Z",
-   "text": "🎥 جلیلی: باید دشمنی با ملت ایران برای دشمنان پرهزینه شود 🔹 امروز دشمنی که برای سرنگونی ایران آمده بود می‌گوید به‌خاطر جنگ با ایران انتخابات را باختیم. @Farsna",
-   "emoji": "",
-   "link": "https://t.me/farsna/472952",
-   "relevant": true
-  },
-  {
    "ch": "jamarannews",
    "id": 560073,
    "t": "2026-11-06T19:29:20Z",
    "text": "🟠 عبدال السید: این جنگ احمقانه با ایران را تمام کنید؛ هیچ منطقی ندارد 🔸 نامزد دموکرات پیروز در انتخابات سنای آمریکا از ایالت میشیگان : 🔹 این جنگ احمقانه با ایران را تمام کنید؛ هیچ منطقی ندارد. 🔹 ما داریم هزینه این جنگ را با جان دختران و پسران نظامی‌مان و افزایش قیمت‌ها در پمپ‌بنز",
    "emoji": "",
    "link": "https://t.me/jamarannews/560073",
-   "relevant": true
-  },
-  {
-   "ch": "farsna",
-   "id": 472951,
-   "t": "2026-11-06T19:28:36Z",
-   "text": "🎥 جلیلی: دشمن درست زمانی که داشت [در تلویزیون] به‌نقل از مقامات ایرانی زیرنویس می‌شد که «مذاکرات درحال پیشرفت است» به ایران حمله کرد 🔹 امروز خود متحدان آمریکا هم می‌گویند که با آمریکا نمی‌شود توافق کرد چون فقط تسلیم می‌خواهد. @Farsna",
-   "emoji": "",
-   "link": "https://t.me/farsna/472951",
    "relevant": true
   },
   {
@@ -7983,33 +8478,6 @@
    "emoji": "",
    "link": "https://t.me/akharinkhabar/643010",
    "relevant": true
-  },
-  {
-   "ch": "presstv",
-   "id": 213716,
-   "t": "2026-11-06T19:25:20Z",
-   "text": "Senior Iranian security official Ali Bagheri Kani warns Tehran will no longer accept American paper commitments, insisting that any new diplomacy must be matched by concrete action on the ground. @PressTV",
-   "emoji": "",
-   "link": "https://t.me/presstv/213716",
-   "relevant": true
-  },
-  {
-   "ch": "warmonitors",
-   "id": 46535,
-   "t": "2026-11-06T19:25:13Z",
-   "text": "⚡ #BREAKING Ukrainian President Volodymyr Zelenskiy says intelligence indicates Russian forces are planning new strikes on energy targets, infrastructure and bridges across the Dnipro River 💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom +18",
-   "emoji": "⚡",
-   "link": "https://t.me/warmonitors/46535",
-   "relevant": false
-  },
-  {
-   "ch": "ynetalerts",
-   "id": 77322,
-   "t": "2026-11-06T19:22:36Z",
-   "text": "🔴 ‏ראש הסגל היוצאת וויילס על סיום תפקידה: \"מחויבותי לטראמפ לעולם לא תשתנה\" למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77322",
-   "relevant": false
   },
   {
    "ch": "jamarannews",
@@ -8037,24 +8505,6 @@
    "emoji": "",
    "link": "https://t.me/Tabnak_ir/278400",
    "relevant": true
-  },
-  {
-   "ch": "abualiexpress",
-   "id": 133200,
-   "t": "2026-11-06T19:17:54Z",
-   "text": "ראש ממשלת קטר: ארה\"ב איראן נכשלו בהגעה להסכם מלא. 2 תגובות",
-   "emoji": "",
-   "link": "https://t.me/abualiexpress/133200",
-   "relevant": true
-  },
-  {
-   "ch": "ynetalerts",
-   "id": 77321,
-   "t": "2026-11-06T19:14:05Z",
-   "text": "🔴 ‏המשטרה מבקשת עזרה מהציבור באיתור הנעדרת אליה קדוש שנראתה ליד בילינסון למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77321",
-   "relevant": false
   },
   {
    "ch": "geopolitics_prime",
@@ -8093,48 +8543,12 @@
    "relevant": true
   },
   {
-   "ch": "presstv",
-   "id": 213714,
-   "t": "2026-11-06T19:07:01Z",
-   "text": "Senior Iranian lawmaker Ebrahim Azizi stated that Tehran's new military doctrine relies on deterrence and retaliation, warning that threats to regional interests will face decisive, unlimited action. @PressTV",
-   "emoji": "",
-   "link": "https://t.me/presstv/213714",
-   "relevant": true
-  },
-  {
    "ch": "Tabnak_ir",
    "id": 278399,
    "t": "2026-11-06T19:02:55Z",
    "text": "🔺 توییت معنا دار سخنگوی سپاه در واکنش به ضبط پادکست توسط کوپر در زمانی که پهپادهای گران قیمت آمریکایی در تنگه هرمز یک به یک سرنگون می شود 🔹 بهتر است اینگونه بگویی: در این قسمت از پادکست سنتکام، توضیح خواهم داد که چگونه پهپادهای فوق‌پیشرفته و چندمیلیون‌دلاری MQ-۱ و MQ-۹ خودمان را ",
    "emoji": "",
    "link": "https://t.me/Tabnak_ir/278399",
-   "relevant": true
-  },
-  {
-   "ch": "ynetalerts",
-   "id": 77320,
-   "t": "2026-11-06T19:00:36Z",
-   "text": "🔴 ‏טראמפ הודיע שמינה ראש סגל חדש - שיחליף את סוזי ויילס למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77320",
-   "relevant": false
-  },
-  {
-   "ch": "alibk3",
-   "id": 40917,
-   "t": "2026-11-06T19:00:11Z",
-   "text": "9 طائرات تزويد بالوقود أميركية تُحلق بالقرب من مضيق هرمز.",
-   "emoji": "",
-   "link": "https://t.me/alibk3/40917",
-   "relevant": true
-  },
-  {
-   "ch": "shin_persian",
-   "id": 12063,
-   "t": "2026-11-06T18:59:08Z",
-   "text": "Shin ✓ @hey_itsmyturn 8x #USAF 🇺🇸 Tankers over UAE, KSA, Strait of Hormuz, Persian Gulf and the Gulf of Oman ترجمه خودکار فارسی ۸ فروند هواپیمای سوخت‌رسان #USAF 🇺🇸 بر فراز امارات متحده عربی، عربستان سعودی، تنگه هرمز، خلیج فارس و دریای عمان 𝕏 · @shin_persian",
-   "emoji": "",
-   "link": "https://t.me/shin_persian/12063",
    "relevant": true
   },
   {
@@ -8165,48 +8579,12 @@
    "relevant": true
   },
   {
-   "ch": "shin_persian",
-   "id": 12062,
-   "t": "2026-11-06T18:57:24Z",
-   "text": "Shin ✓ @hey_itsmyturn 22:16 Local time / 1846Z Sound explosion heard from the Strait of Hormuz. Hormozgan Province, Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/hlKO-67QSLjDG_10RaqZn3_W?xv=1 ترجمه خودکار فارسی ۲۲:۱۶ به وقت محلی / 1846Z (",
-   "emoji": "",
-   "link": "https://t.me/shin_persian/12062",
-   "relevant": true
-  },
-  {
-   "ch": "shin_persian",
-   "id": 12061,
-   "t": "2026-11-06T18:55:49Z",
-   "text": "Shin ✓ @hey_itsmyturn 20:10 local time | 1640Z Launcher activity and movement observed on Siyakh Road Shiraz, Fars Province, Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/XT8gl43mMAu-4wXKWxsyu0oE ترجمه خودکار فارسی ۲۰:۱۰ به وقت محلی | 164",
-   "emoji": "",
-   "link": "https://t.me/shin_persian/12061",
-   "relevant": true
-  },
-  {
    "ch": "isna94",
    "id": 412099,
    "t": "2026-11-06T18:48:49Z",
    "text": "خیز دموکرات‌ها برای قطع بودجه جنگ ترامپ علیه ایران 🔹 «آدام اسمیت» نماینده دموکرات ایالت واشنگتن و رئیس آینده کمیته نیروهای مسلح مجلس نمایندگان آمریکا وعده داد که دموکرات‌ها پس از در دست گرفتن کنترل مجلس نمایندگان و سنا در سال آینده میلادی، برای جلوگیری از تامین مالی جنگ «دونالد ت",
    "emoji": "",
    "link": "https://t.me/isna94/412099",
-   "relevant": true
-  },
-  {
-   "ch": "alibk3",
-   "id": 40916,
-   "t": "2026-11-06T18:47:43Z",
-   "text": "سماع دوي انفجار في مضيق هرمز.",
-   "emoji": "",
-   "link": "https://t.me/alibk3/40916",
-   "relevant": true
-  },
-  {
-   "ch": "iranintltv",
-   "id": 365726,
-   "t": "2026-11-06T18:46:41Z",
-   "text": "🔻 پس از شکست خانگی پرسپولیس برابر فجرسپاسی در هفته دوازدهم لیگ برتر، هواداران این تیم علیه مهدی تارتار،سرمربی سرخپوشان شعار «حیاکن، رهاکن» سر دادند و خواستار جدایی او از این تیم شدند. 🔹 این دومین شکست خانگی پرسپولیس و سومین باخت آنها در لیگ برتر بود تا تیم مهدی تارتار که تا پیش ا",
-   "emoji": "",
-   "link": "https://t.me/iranintltv/365726",
    "relevant": true
   },
   {
@@ -8225,42 +8603,6 @@
    "text": "♦️ ویدیوهای منتشرشده در شبکه‌های اجتماعی از مراسم سومین روز درگذشت حمید علیدوستی، بازیکن پیشین تیم ملی فوتبال ایران و پدر ترانه علیدوستی، حضور نگار جواهریان، سحر دولتشاهی و تعدادی دیگر از زنان بازیگر را بدون حجاب اجباری نشان می‌دهد. پیش‌تر، مراسم تشییع پیکر حمید علیدوستی روز سه‌ش",
    "emoji": "",
    "link": "https://t.me/indypersian/182068",
-   "relevant": true
-  },
-  {
-   "ch": "ynetalerts",
-   "id": 77319,
-   "t": "2026-11-06T18:39:36Z",
-   "text": "🔴 ‏הבמאי זוכה האוסקר סבסטיאן לליו הלך לעולמו בגיל 52 למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77319",
-   "relevant": false
-  },
-  {
-   "ch": "presstv",
-   "id": 213710,
-   "t": "2026-11-06T18:39:32Z",
-   "text": "Hakimeh Saghaye-Biria says Maj. Gen. Mohsen Rezaei’s recent visit to the Kremlin reflects Iran’s view that only regional countries can determine the region’s future. @PressTV",
-   "emoji": "",
-   "link": "https://t.me/presstv/213710",
-   "relevant": true
-  },
-  {
-   "ch": "iranintltv",
-   "id": 365724,
-   "t": "2026-11-06T18:39:25Z",
-   "text": "ابراهیم عزیزی، رییس کمیسیون امنیت ملی مجلس، در شبکه ایکس نوشت: «اجازه نمی‌دهیم ترامپ بی‌هزینه و غرامت از منطقه فرار کند.» این نماینده مجلس، جمعه ۱۵ آبان نوشت: «پاسخ ما به هر خطا، ضربه‌ای کاری است تا بزرگترین پایگاه نظامی آمریکا یعنی اسرائیل را یکبار برای همیشه آزاد کنیم.» https:/",
-   "emoji": "",
-   "link": "https://t.me/iranintltv/365724",
-   "relevant": true
-  },
-  {
-   "ch": "VahidOnline",
-   "id": 79018,
-   "t": "2026-11-06T18:35:57Z",
-   "text": "دونالد ترامپ، رئیس‌جمهوری آمریکا، روز جمعه ۱۵ آبان‌ماه، در پیامی در شبکهٔ اجتماعی تروث سوشال، با اشاره به حملات واشنگتن و تل‌آویو به تهران، گفت که اگر مانع دستیابی جمهوری اسلامی به سلاح هسته‌ای نشده بود، اسرائیل و سراسر خاورمیانه امروز وجود نداشتند. ترامپ در این پیام نوشت: «اگر م",
-   "emoji": "📡",
-   "link": "https://t.me/VahidOnline/79018",
    "relevant": true
   },
   {
@@ -8291,93 +8633,12 @@
    "relevant": false
   },
   {
-   "ch": "presstv",
-   "id": 213709,
-   "t": "2026-11-06T18:32:03Z",
-   "text": "Hezbollah vows the Lebanese resistance will not yield to pressure, urging the government to stand firm against Israeli aggression and reject US interference in Lebanon's affairs. @PressTV",
-   "emoji": "",
-   "link": "https://t.me/presstv/213709",
-   "relevant": true
-  },
-  {
-   "ch": "presstv",
-   "id": 213708,
-   "t": "2026-11-06T18:31:58Z",
-   "text": "🔺 During the US-Israeli wars against Iran, Tehran demonstrated its military capabilities on the battlefield by deploying advanced missiles against key strategic targets in Israel and destroying nearly 70 percent of US military and logistical capabilities in the region. Watch in f",
-   "emoji": "",
-   "link": "https://t.me/presstv/213708",
-   "relevant": true
-  },
-  {
-   "ch": "ynetalerts",
-   "id": 77318,
-   "t": "2026-11-06T18:31:20Z",
-   "text": "🔴 ‏לראשונה: מונה ישראלי לוועדה לביקורת של האו\"ם למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77318",
-   "relevant": false
-  },
-  {
-   "ch": "iranintltv",
-   "id": 365723,
-   "t": "2026-11-06T18:31:09Z",
-   "text": "دونالد ترامپ، رییس‌جمهوری آمریکا، گفت اگر جلوی دستیابی جمهوری اسلامی به سلاح هسته‌ای را نگرفته بود، امروز اسرائیل و در واقع کل خاورمیانه وجود نداشتند. او جمعه ۱۵ آبان در تروث سوشال نوشت: «هیچ‌کس نمی‌خواهد این را بگوید، اما همه می‌دانند حقیقت دارد!» https://iranintl.com/2026110606",
-   "emoji": "",
-   "link": "https://t.me/iranintltv/365723",
-   "relevant": true
-  },
-  {
-   "ch": "shin_persian",
-   "id": 12060,
-   "t": "2026-11-06T18:30:32Z",
-   "text": "Shin ✓ @hey_itsmyturn UAV launch from the Fifth Fighter Base in Omidiyeh, Khuzestan Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/1JRYU2nmQiNZ3dqlQRTBCkMI ترجمه خودکار فارسی پرتاب پهپاد از پایگاه پنجم شکاری در امیدیه، خوزستان ایران [پست ب",
-   "emoji": "",
-   "link": "https://t.me/shin_persian/12060",
-   "relevant": true
-  },
-  {
-   "ch": "iranintltv",
-   "id": 365722,
-   "t": "2026-11-06T18:30:17Z",
-   "text": "یک کاروان خودرویی حامل پرچم‌های شیروخورشید، جمعه ۱۵ آبان، خیابان‌های فرانکفورت در آلمان را پیمود؛ شهری که قرار است در آنجا شاهزاده رضا پهلوی به نمایندگی از مردم ایران جایزه آزادی ۲۰۲۶ بنیاد «فریدریش ناومان» را دریافت کند.",
-   "emoji": "",
-   "link": "https://t.me/iranintltv/365722",
-   "relevant": true
-  },
-  {
-   "ch": "iranintltv",
-   "id": 365721,
-   "t": "2026-11-06T18:27:29Z",
-   "text": "🔻 تصاویر منتشرشده در فضای مجازی نشان می‌دهد که جمعی از بازیگران زن و مرد سینما، چهره‌های فوتبال و اهالی ورزش، عصر جمعه در مراسم یادبود زنده‌یاد حمید علیدوستی، مهاجم پیشین تیم ملی فوتبال ایران و باشگاه هما، حضور یافتند و با ترانه علیدوستی و خانواده او ابراز همدردی کردند. 🔹 در تصاو",
-   "emoji": "",
-   "link": "https://t.me/iranintltv/365721",
-   "relevant": true
-  },
-  {
    "ch": "indypersian",
    "id": 182067,
    "t": "2026-11-06T18:24:42Z",
    "text": "♦️ دونالد ترامپ، رئیس‌جمهوری آمریکا، روز جمعه ۱۵ آبان‌ماه، در پیامی در شبکهٔ اجتماعی تروث سوشال، با اشاره به حملات واشنگتن و تل‌آویو به تهران، گفت که اگر مانع دستیابی جمهوری اسلامی به سلاح هسته‌ای نشده بود، اسرائیل و سراسر خاورمیانه امروز وجود نداشتند. ترامپ در این پیام نوشت: «اگ",
    "emoji": "",
    "link": "https://t.me/indypersian/182067",
-   "relevant": true
-  },
-  {
-   "ch": "ynetalerts",
-   "id": 77317,
-   "t": "2026-11-06T18:21:12Z",
-   "text": "🔴 ‏השירות המטאורולוגי: \"אזהרה צהובה\" על שיטפונות בצפון מדבר יהודה וים המלח למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77317",
-   "relevant": false
-  },
-  {
-   "ch": "presstv",
-   "id": 213707,
-   "t": "2026-11-06T18:20:08Z",
-   "text": "▶️ How Iran used advanced electronic warfare to seize US MQM-170 drones @PressTV",
-   "emoji": "",
-   "link": "https://t.me/presstv/213707",
    "relevant": true
   },
   {
@@ -8390,30 +8651,12 @@
    "relevant": true
   },
   {
-   "ch": "iranintltv",
-   "id": 365720,
-   "t": "2026-11-06T18:16:28Z",
-   "text": "بی‌بی‌سی وریفای به نقل از شرکت اطلاعاتی بریتانیایی «مایار» نوشت تصاویر ماهواره‌ای از حفاری و ساخت‌وسازهای تازه در پایگاه‌های نظامی گرمدره کرج و شاهرود حکایت دارد. این فعالیت‌ها در تصاویر آبان ثبت شده‌اند. این گزارش از نشانه‌های بازسازی در دست‌کم ۱۲ سایت نظامی دیگر، از جمله پایگاه",
-   "emoji": "",
-   "link": "https://t.me/iranintltv/365720",
-   "relevant": true
-  },
-  {
    "ch": "rnintel",
    "id": 68785,
    "t": "2026-11-06T18:15:27Z",
    "text": "🇺🇸 🇮🇷 🇮🇱 ⚡️ - President Trump says Israel and the entire Middle East wouldn’t exist if he hadn’t gone to war with Iran. The President continues to crash out on Truth social since the midterm election results.",
    "emoji": "⚡",
    "link": "https://t.me/rnintel/68785",
-   "relevant": true
-  },
-  {
-   "ch": "ynetalerts",
-   "id": 77316,
-   "t": "2026-11-06T18:15:19Z",
-   "text": "🔴 ‏טראמפ: \"ישראל, והמזה\"ת כולו, לא היו קיימים כיום אלמלא עצרתי את איראן\" למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77316",
    "relevant": true
   },
   {
@@ -8435,15 +8678,6 @@
    "relevant": true
   },
   {
-   "ch": "shin_persian",
-   "id": 12059,
-   "t": "2026-11-06T18:10:37Z",
-   "text": "Shin ✓ @hey_itsmyturn POTUS: \"Israel and, in fact, the entire Middle East, WOULD NOT EXIST TODAY if I did not stop Iran from having a Nuclear Weapon. Nobody wants to say that, but everybody knows it’s true! President DONALD J. TRUMP\" ترجمه خودکار فارسی رئیس‌جمهور آمریکا: «اگر من ",
-   "emoji": "",
-   "link": "https://t.me/shin_persian/12059",
-   "relevant": true
-  },
-  {
    "ch": "rotternews",
    "id": 370114,
    "t": "2026-11-06T18:10:08Z",
@@ -8451,15 +8685,6 @@
    "emoji": "",
    "link": "https://t.me/rotternews/370114",
    "relevant": true
-  },
-  {
-   "ch": "ynetalerts",
-   "id": 77315,
-   "t": "2026-11-06T18:10:00Z",
-   "text": "🔴 ‏דיווח: סוריה שלחה כוחות מצומצמים לסעודיה, לסייע באימונים צבאיים למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77315",
-   "relevant": false
   },
   {
    "ch": "manototv",
@@ -8516,75 +8741,12 @@
    "relevant": false
   },
   {
-   "ch": "bbcpersian",
-   "id": 294899,
-   "t": "2026-11-06T17:57:33Z",
-   "text": "🔻 موج جدیدی از تهدیدهای بمب‌گذاری پروازهای اروپایی را مختل کرد خطوط هوایی در اروپا بار دیگر هدف موجی از تهدیدهای بمب‌گذاری قرار گرفته‌اند؛ سومین مورد از این نوع حوادث در یک هفته اخیر. مقام‌ها می‌گویند روز جمعه چندین پرواز به مقصد یا مبدأ لیسبون، رم، پراگ و صوفیه هدف تهدید قرار گر",
-   "emoji": "",
-   "link": "https://t.me/bbcpersian/294899",
-   "relevant": true
-  },
-  {
-   "ch": "alibk3",
-   "id": 40912,
-   "t": "2026-11-06T17:54:24Z",
-   "text": "صور الأقمار الصناعية ترصد حريقًا في مضيق هرمز قبالة قطر، يبدو تم استهداف سفينة مخالفة.",
-   "emoji": "",
-   "link": "https://t.me/alibk3/40912",
-   "relevant": true
-  },
-  {
-   "ch": "presstv",
-   "id": 213703,
-   "t": "2026-11-06T17:51:01Z",
-   "text": "🔴 IRGC says it intercepted another advanced MQ-1 military drone over Qeshm Island moments ago, bringing the total number to 16. @Presstv",
-   "emoji": "🔴",
-   "link": "https://t.me/presstv/213703",
-   "relevant": true
-  },
-  {
    "ch": "geopolitics_prime",
    "id": 77401,
    "t": "2026-11-06T17:49:02Z",
    "text": "⚔️ 🇸🇦 Houthis ramp up assault on Saudi-backed forces and infrastructure Yemen’s Ansar Allah has released new combat footage of operations against the enemy in the Kahbub Mountain Range east of the Bab al-Mandab Strait. The footage shows attacks on enemy vehicles, from Toyota pick",
    "emoji": "⚔",
    "link": "https://t.me/geopolitics_prime/77401",
-   "relevant": true
-  },
-  {
-   "ch": "bbcpersian",
-   "id": 294898,
-   "t": "2026-11-06T17:47:00Z",
-   "text": "توماس مارکل، پدر مگان، دوشس ساسکس و عروس پادشاه بریتانیا به اتهام داشتن تصاویر سواستفاده جنسی کودکان در آمریکا رسما متهم و بازداشت شد. بازداشت این مرد ۸۲ ساله در ایالت فلوریدا آمریکا پس از آن بود که پلیس فدرال دو انبار اجاره‌ای متعلق به او را در لس‌آ‌‌‎نجلس…",
-   "emoji": "",
-   "link": "https://t.me/bbcpersian/294898",
-   "relevant": true
-  },
-  {
-   "ch": "bbcpersian",
-   "id": 294897,
-   "t": "2026-11-06T17:45:16Z",
-   "text": "توماس مارکل، پدر مگان، دوشس ساسکس و عروس پادشاه بریتانیا به اتهام داشتن تصاویر سواستفاده جنسی کودکان در آمریکا رسما متهم و بازداشت شد. بازداشت این مرد ۸۲ ساله در ایالت فلوریدا آمریکا پس از آن بود که پلیس فدرال دو انبار اجاره‌ای متعلق به او را در لس‌آ‌‌‎نجلس بازرسی کرد. این دو انب",
-   "emoji": "",
-   "link": "https://t.me/bbcpersian/294897",
-   "relevant": true
-  },
-  {
-   "ch": "presstv",
-   "id": 213702,
-   "t": "2026-11-06T17:41:01Z",
-   "text": "Struggle Against Global Arrogance: Aban 13 The 13th of Aban on the Iranian calendar, which usually coincides with November 4th, 1979 takeover of US embassy in Tehran, occupies a special place in Iran's contemporary history, known in Iran as the “National Day of Struggle Against G",
-   "emoji": "",
-   "link": "https://t.me/presstv/213702",
-   "relevant": true
-  },
-  {
-   "ch": "abualiexpress",
-   "id": 133198,
-   "t": "2026-11-06T17:36:52Z",
-   "text": "הטיימס הבריטי מפי גורם רפואי איראני: איראן מחלקת טבליות יוד לתושבים המתגוררים בקרבת מתקני גרעין הגורם אישר כי החלוקה מתבצעת ברדיוס של שניים עד שלושה קילומטרים ממתקני הגרעין, כחלק מההיערכות לשעת מלחמה. טבליות היוד נועדו לצמצם את ספיגת היוד הרדיואקטיבי בבלוטת התריס במקרה של דליפה ר",
-   "emoji": "",
-   "link": "https://t.me/abualiexpress/133198",
    "relevant": true
   },
   {
@@ -8615,15 +8777,6 @@
    "relevant": true
   },
   {
-   "ch": "ynetalerts",
-   "id": 77314,
-   "t": "2026-11-06T17:23:04Z",
-   "text": "🔴 ‏אל-סייד יקדם את אחד ממבקרי ישראל הבולטים להנהגת הדמוקרטים בסנאט למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77314",
-   "relevant": false
-  },
-  {
    "ch": "manototv",
    "id": 109270,
    "t": "2026-11-06T17:11:02Z",
@@ -8642,15 +8795,6 @@
    "relevant": false
   },
   {
-   "ch": "bbcpersian",
-   "id": 294895,
-   "t": "2026-11-06T17:07:10Z",
-   "text": "سازمان حفاظت از محیط‌زیست ایران تصویری از دو یوزپلنگ آسیایی که در پناهگاه میاندشت جاجرم خراسان شمالی برای چندمین بار دیده شده‌اند منتشر کرده است. در توضیح این ویدیو آمده دو یوزپلنگ آسیایی که از فرزندان هلیا هستند و در اردیبهشت سال ۱۴۰۵ از مادر مستقل شده بودند برای چندمین بار در ا",
-   "emoji": "",
-   "link": "https://t.me/bbcpersian/294895",
-   "relevant": true
-  },
-  {
    "ch": "geopolitics_prime",
    "id": 77397,
    "t": "2026-11-06T17:06:01Z",
@@ -8658,15 +8802,6 @@
    "emoji": "⚡",
    "link": "https://t.me/geopolitics_prime/77397",
    "relevant": false
-  },
-  {
-   "ch": "bbcpersian",
-   "id": 294893,
-   "t": "2026-11-06T17:00:34Z",
-   "text": "🎶 بخشی از اجرای قطعه «یادم تو را فراموش» از جی‌دال را می‌بینید. رپ در سال‌های اخیر به یکی از تأثیرگذارترین جریان‌های موسیقی در ایران تبدیل شده است. این سبک که عمدتاً در فضای زیرزمینی رشد کرده، به بستری برای بیان احساسات، تجربه‌ها و دیدگاه‌های نسل جوان، به‌ویژه نسل زد، بدل شده و ب",
-   "emoji": "",
-   "link": "https://t.me/bbcpersian/294893",
-   "relevant": true
   },
   {
    "ch": "BellumActaNews",
@@ -8678,30 +8813,12 @@
    "relevant": true
   },
   {
-   "ch": "ynetalerts",
-   "id": 77313,
-   "t": "2026-11-06T16:54:42Z",
-   "text": "🔴 ‏דיווח: איראן \"אופטימית\" שרוסיה תספק לה מערכות הגנה אווירית מתקדמות למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77313",
-   "relevant": true
-  },
-  {
    "ch": "amirbohbot",
    "id": 31704,
    "t": "2026-11-06T16:50:33Z",
    "text": "הזמן עובד לטובת טהראן? על הנייר, מונחות שתי אפשרויות: תקיפה אמריקאית בטהראן או הסכם. בפועל? המשטר הקיצוני באיראן לא באמת ינטוש את חלום הגרעין והטילים. לכל היותר הוא יקנה עוד זמן. בינתיים, אסטרטגיית 'מריחת הזמן' של האיראנים עובדת להם מצוין, במטרה לעבור את תופעת טראמפ במינימום נזק.",
    "emoji": "",
    "link": "https://t.me/amirbohbot/31704",
-   "relevant": true
-  },
-  {
-   "ch": "bbcpersian",
-   "id": 294892,
-   "t": "2026-11-06T16:49:30Z",
-   "text": "🔻 فواد حسین، وزیر خارجه عراق نسبت به ورود گروه‌های مسلح نزدیک به ایران به هرگونه درگیری نظامی احتمالی میان ایران و آمریکا هشدار داد و گفت چنین اقدامی عراق را به درون «تونلی تاریک» می‌کشاند. آقای حسین در مصاحبه‌ای با شبکه تلویزیونی «دجله» با اشاره به نتایج انتخابات آمریکا و اسرائی",
-   "emoji": "",
-   "link": "https://t.me/bbcpersian/294892",
    "relevant": true
   },
   {
@@ -8723,15 +8840,6 @@
    "relevant": true
   },
   {
-   "ch": "bbcpersian",
-   "id": 294891,
-   "t": "2026-11-06T16:40:01Z",
-   "text": "🔻 نگرانی در اسرائیل از آینده روابط با آمریکا پس از انتخابات میان‌دوره‌ای 🖋 لوسی ویلیامسون، بیت‌المقدس نتایج انتخابات میان‌دوره‌ای آمریکا موجی از نگرانی را در اسرائیل درباره آینده روابط دو کشور برانگیخته است. در حالی که دموکرات‌ها کنترل هر دو مجلس کنگره را به دست آورده‌اند، برخی س",
-   "emoji": "",
-   "link": "https://t.me/bbcpersian/294891",
-   "relevant": true
-  },
-  {
    "ch": "indypersian",
    "id": 182059,
    "t": "2026-11-06T16:30:22Z",
@@ -8750,48 +8858,12 @@
    "relevant": true
   },
   {
-   "ch": "ynetalerts",
-   "id": 77312,
-   "t": "2026-11-06T16:26:14Z",
-   "text": "🔴 ‏גורם איראני: \"מתייחסים בחיוב להצעה האחרונה שהציגו המתווכים\" למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77312",
-   "relevant": false
-  },
-  {
    "ch": "geopolitics_prime",
    "id": 77394,
    "t": "2026-11-06T16:24:02Z",
    "text": "⚔️ 🇮🇱 Hebron faces renewed Israeli settler attacks on farmers and residents Israeli settlers continue attacking Palestinian farmers and targeting communities in the occupied West Bank, with violence intensifying during the olive harvest season. The latest incidents have been repo",
    "emoji": "⚔🔴",
    "link": "https://t.me/geopolitics_prime/77394",
-   "relevant": false
-  },
-  {
-   "ch": "ynetalerts",
-   "id": 77311,
-   "t": "2026-11-06T16:21:04Z",
-   "text": "🔴 ‏התובע האמריקני שפיקח על חקירות שיזם טראמפ התפטר מתפקידו למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77311",
-   "relevant": false
-  },
-  {
-   "ch": "warmonitors",
-   "id": 46534,
-   "t": "2026-11-06T16:19:41Z",
-   "text": "⚡ Polish Foreign Minister Radoslaw Sikorski says an agreement on the war made over the heads of Ukraine and Europe is impossible 💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom +18",
-   "emoji": "⚡",
-   "link": "https://t.me/warmonitors/46534",
-   "relevant": false
-  },
-  {
-   "ch": "ynetalerts",
-   "id": 77310,
-   "t": "2026-11-06T16:19:22Z",
-   "text": "🔴 ‏משה הלל (\"הצנחן המזמר\") הלך לעולמו בגיל 81 למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77310",
    "relevant": false
   },
   {
@@ -8813,345 +8885,12 @@
    "relevant": true
   },
   {
-   "ch": "abualiexpress",
-   "id": 133196,
-   "t": "2026-11-06T16:05:01Z",
-   "text": "מחסן רזאאי, מזכיר המועצה העליונה לביטחון לאומי של איראן נחת היום במוסקבה, נפגש עם הנשיא פוטין והעביר לו איגרת מהמנהיג העליון של איראן. תגובה אחת",
-   "emoji": "",
-   "link": "https://t.me/abualiexpress/133196",
-   "relevant": true
-  },
-  {
    "ch": "QudsNen",
    "id": 244586,
    "t": "2026-11-06T16:01:02Z",
    "text": "Trump’s announced end of aid to Israel is now a “partnership,” says Netanyahu’s office, which did not deny the announcement but called it a “transition from assistance to partnership.” https://qudsnen.com/share/68575?lang=en",
    "emoji": "",
    "link": "https://t.me/QudsNen/244586",
-   "relevant": true
-  },
-  {
-   "ch": "bbcpersian",
-   "id": 294889,
-   "t": "2026-11-06T15:59:41Z",
-   "text": "🖊 حسین باستانی، بی‌بی‌سی به‌دشواری می‌توان تردید کرد که نتایج انتخابات کنگره در آمریکا، بر حیطه سیاست خارجی و از جمله بر پرونده ایران تاثیرگذار خواهد بود. تاثیر این نتایج در معادلات قدرت در ایران نیز اجتناب‌ناپذیر است؛ از جمله، در تغییر توازن قوا میان دو جریان حکومتی رقیب که می‌ت",
-   "emoji": "",
-   "link": "https://t.me/bbcpersian/294889",
-   "relevant": true
-  },
-  {
-   "ch": "ynetalerts",
-   "id": 77309,
-   "t": "2026-11-06T15:58:55Z",
-   "text": "🔴 ‏נעצר חשוד בדקירת הגבר בחיפה למבזק המלא ב-ynet >",
-   "emoji": "🔴",
-   "link": "https://t.me/ynetalerts/77309",
-   "relevant": false
-  },
-  {
-   "ch": "jamarannews",
-   "id": 560040,
-   "t": "2026-11-06T15:52:35Z",
-   "text": "🔴 حضور ۱.۶ میلیون فرانسوی در اعتراضات این کشور در روز ۵ نوامبر 🔻 دیروز بر اساس اعلام کنفدراسیون عمومی کار، بیش از ۱.۶ میلیون فرانسوی در اعتراضات سراسری شرکت کردند. این در حالی است که داده‌های وزارت کشور فرانسه ، تعداد معترضان را تقریباً سه برابر کمتر و ۵۷۵ هزار نفر اعلام کرده است",
-   "emoji": "🔴",
-   "link": "https://t.me/jamarannews/560040",
-   "relevant": false
-  },
-  {
-   "ch": "jamarannews",
-   "id": 560038,
-   "t": "2026-11-06T15:43:12Z",
-   "text": "✅ نایب رئیس مجلس: دیگر به آمریکا اعتماد نداریم 🔸 حمیدرضا حاجی‌بابایی، در گفت‌وگو با خبرنگار جماران، در پاسخ به اینکه به نظر شما مذاکرات ایران و آمریکا با میانجیگری قطر منجر به نتیجه خواهد شد؟ گفت: این موضوع به عقلانیت حاکمان آمریکا بستگی دارد. 🔸 ما دیگر نمی‌توانیم…",
-   "emoji": "",
-   "link": "https://t.me/jamarannews/560038",
-   "relevant": true
-  },
-  {
-   "ch": "akharinkhabar",
-   "id": 642978,
-   "t": "2026-11-06T15:36:57Z",
-   "text": "🔺 🔻 شبکه سعودی العربیه به نقل از یک منبع ایرانی: نسبت به پیشنهاد اخیر ارائه شده از سوی میانجی‌گران خوش‌بین هستیم 🔹 تهران انتظار دارد گام‌های عملی از سوی واشینگتن برای اعتمادسازی برداشته شود 🔹 باید از سوی دو طرف متقابلا اعتمادسازی شود. 🔹 ایران از مذاکراتی که تحقق خواسته‌های مشروع ",
-   "emoji": "",
-   "link": "https://t.me/akharinkhabar/642978",
-   "relevant": true
-  },
-  {
-   "ch": "jamarannews",
-   "id": 560037,
-   "t": "2026-11-06T15:34:45Z",
-   "text": "🔵 شبکه سعودی العربیه به نقل از یک منبع ایرانی: 🔴 نسبت به پیشنهاد اخیر ارائه شده از سوی میانجی‌گران خوش‌بین هستیم 🔸 تهران انتظار دارد گام‌های عملی از سوی واشینگتن برای اعتمادسازی برداشته شود 🔸 باید از سوی دو طرف متقابلا اعتمادسازی شود. 🔸 ایران از مذاکراتی که…",
-   "emoji": "🔴",
-   "link": "https://t.me/jamarannews/560037",
-   "relevant": true
-  },
-  {
-   "ch": "jamarannews",
-   "id": 560036,
-   "t": "2026-11-06T15:32:45Z",
-   "text": "🚫 میدل ایست‌آی: ترکیه تحت فشار آمریکا، واردات گاز ترکمنستان از مسیر ایران را متوقف کرد 🔸 ترکیه به دلیل فشار آمریکا ناچار شد واردات گاز از ترکمنستان از طریق ایران را متوقف کند. آلپ‌ارسلان بایراکتار، وزیر انرژی ترکیه، روز پنجشنبه در جریان نشستی توجیهی با خبرنگاران این موضوع را فاش ",
-   "emoji": "",
-   "link": "https://t.me/jamarannews/560036",
-   "relevant": true
-  },
-  {
-   "ch": "Tabnak_ir",
-   "id": 278385,
-   "t": "2026-11-06T15:30:49Z",
-   "text": "🔺 سیل ویرانگر در ایالت جورجیا آمریکا رکورد تاریخی را شکست 🔹 بارش‌های شدید شبانه و طغیان بی‌سابقه رودخانه در ایالت جورجیا آمریکا، مناطق مسکونی را در نوردید و رکورد تاریخی این منطقه را جابه‌جا کرد. 🔹 بارش نزدیک به ۲۵ سانتی‌متر باران شبانه در شهر مک‌کیسویل (شهرستان فانین، جورجیا) مو",
-   "emoji": "",
-   "link": "https://t.me/Tabnak_ir/278385",
-   "relevant": true
-  },
-  {
-   "ch": "jamarannews",
-   "id": 560035,
-   "t": "2026-11-06T15:24:45Z",
-   "text": "✅ عضو کمیسیون امنیت ملی: مذاکرات انجام شده و منتظر پاسخ آمریکا هستیم 🔸 فداحسین مالکی، عضو کمیسیون امنیت ملی و سیاست خارجی مجلس شورای اسلامی در گفت‌وگو با خبرنگار جماران، در پاسخ به اینکه به نظر شما مذاکرات میان ایران و آمریکا با میانجیگری قطر منجر به نتیجه…",
-   "emoji": "",
-   "link": "https://t.me/jamarannews/560035",
-   "relevant": true
-  },
-  {
-   "ch": "Tabnak_ir",
-   "id": 278384,
-   "t": "2026-11-06T15:22:06Z",
-   "text": "🔺 قوی‌تر از همیشه ایران 🌐 Tabnak.ir @Tabnak_ir",
-   "emoji": "",
-   "link": "https://t.me/Tabnak_ir/278384",
-   "relevant": true
-  },
-  {
-   "ch": "jamarannews",
-   "id": 560034,
-   "t": "2026-11-06T15:19:39Z",
-   "text": "🔴 آکسیوس از پیشنهاد دو مرحله‌ای قطر برای توافق ایران و آمریکا خبر داد: لغو محاصره دریایی و آزادسازی دارایی‌های ایران در برابر بازدید آژانس و بازگشایی تنگه هرمز 🔻 به گزارش آکسیوس، هم‌زمان با تشدید رایزنی‌های دیپلماتیک درباره آینده جنگ ایران و آمریکا، میانجی‌گران…",
-   "emoji": "🔴",
-   "link": "https://t.me/jamarannews/560034",
-   "relevant": true
-  },
-  {
-   "ch": "akharinkhabar",
-   "id": 642972,
-   "t": "2026-11-06T15:15:05Z",
-   "text": "🎥 پیروزی انتخاباتی عبدالرحمن، ایلهان و رشیده؛ حملات مسلمان ستیزانه ترامپ ناکام ماند 🔹 دونالد ترامپ رئیس جمهور آمریکا طی کارزار انتخابات میان دوره‌ای موجی از حملات لفظی مسلمان ستیزانه را علیه نامزدهای مسلمان و به ویژه عبدالرحمن السید نامزد کرسی سنای ایالت میشیگان روانه کرد، اما ای",
-   "emoji": "",
-   "link": "https://t.me/akharinkhabar/642972",
-   "relevant": true
-  },
-  {
-   "ch": "akharinkhabar",
-   "id": 642970,
-   "t": "2026-11-06T15:07:00Z",
-   "text": "🔺 🔻 میدل ایست آی: ترکیه تحت فشار آمریکا، واردات گاز ترکمنستان از مسیر ایران را متوقف کرد @Akharinkhabar | akharinkhabar.ir",
-   "emoji": "",
-   "link": "https://t.me/akharinkhabar/642970",
-   "relevant": true
-  },
-  {
-   "ch": "jamarannews",
-   "id": 560032,
-   "t": "2026-11-06T15:04:32Z",
-   "text": "✅ عضو کمیسیون امنیت ملی: مذاکرات انجام شده و منتظر پاسخ آمریکا هستیم 🔸 فداحسین مالکی، عضو کمیسیون امنیت ملی و سیاست خارجی مجلس شورای اسلامی در گفت‌وگو با خبرنگار جماران، در پاسخ به اینکه به نظر شما مذاکرات میان ایران و آمریکا با میانجیگری قطر منجر به نتیجه خواهد شد؟ گفت: ما به آن",
-   "emoji": "",
-   "link": "https://t.me/jamarannews/560032",
-   "relevant": true
-  },
-  {
-   "ch": "jamarannews",
-   "id": 560031,
-   "t": "2026-11-06T15:00:57Z",
-   "text": "🚨 خطر سیل وجود دارد/ به سفرهای غیرضروری نروید 🚨 سازمان مدیریت بحران با پیامک به مردم هشدار داد 🇮🇷 @jamarannews",
-   "emoji": "🚨",
-   "link": "https://t.me/jamarannews/560031",
-   "relevant": false
-  },
-  {
-   "ch": "jamarannews",
-   "id": 560030,
-   "t": "2026-11-06T14:52:58Z",
-   "text": "📸 دموکرات‌ها در انتخابات ۲۰۲۶ در مجلس نمایندگان آمریکا با کسب بیش از ۶۶ میلیون رای، رکورد بیشترین تعداد رای یک حزب در تاریخ انتخابات میان‌دوره‌ای را به نام خود ثبت کردند 🇮🇷 @jamarannews",
-   "emoji": "",
-   "link": "https://t.me/jamarannews/560030",
-   "relevant": true
-  },
-  {
-   "ch": "Tabnak_ir",
-   "id": 278382,
-   "t": "2026-11-06T14:52:37Z",
-   "text": "‍ 🔺 سازمان رادیو و تلویزیون و مؤسسات رسانه‌ای در سراسر ایرلند پس از تهدید به بمب‌گذاری، تخلیه شدند 🌐 Tabnak.ir @Tabnak_ir",
-   "emoji": "",
-   "link": "https://t.me/Tabnak_ir/278382",
-   "relevant": true
-  },
-  {
-   "ch": "jamarannews",
-   "id": 560029,
-   "t": "2026-11-06T14:42:50Z",
-   "text": "☑️ سید محمد خاتمی: علی‌اصغر فانی نقش ممتازی در عرصه آموزش و پرورش و تعلیم و تربیت داشت ✍️ به گزارش جماران، حجت‌الاسلام و المسلمین سید محمد خاتمی با صدور پیامی، درگذشت دکتر علی‌اصغر فانی وزیر پیشین آموزش و پرورش را تسلیت گفت: بسم‌الله الرحمن الرحیم ▪️ درگذشت تأسف‌انگیز چهره درخشان",
-   "emoji": "",
-   "link": "https://t.me/jamarannews/560029",
-   "relevant": true
-  },
-  {
-   "ch": "jamarannews",
-   "id": 560026,
-   "t": "2026-11-06T14:41:31Z",
-   "text": "🔴 گل های بازی پرسپولیس و فجر سپاسی شیراز 🔻 فجر سپاسی ۲ بر ۱ پرسپولیس را پشت‌سر گذاشت 🇮🇷 @jamarannews",
-   "emoji": "🔴",
-   "link": "https://t.me/jamarannews/560026",
-   "relevant": false
-  },
-  {
-   "ch": "jamarannews",
-   "id": 560025,
-   "t": "2026-11-06T14:41:03Z",
-   "text": "🔵 آیزنکوت مدعی پیشرفت در روند تشکیل دولت جدید رژیم صهیونیستی شد 🔸 گادی آیزنکوت، رئیس پیشین ستاد ارتش صهیونیستی و رئیس حزب یشار مدعی شد که طی روزهای گذشته با سران احزاب دیدار داشته است. 🔸 او گفت: پیشرفت چشمگیری در مشورت‌های مربوط به تشکیل دولت جدید اسرائیل حاصل…",
-   "emoji": "",
-   "link": "https://t.me/jamarannews/560025",
-   "relevant": true
-  },
-  {
-   "ch": "jamarannews",
-   "id": 560024,
-   "t": "2026-11-06T14:34:49Z",
-   "text": "🔴 شرکت یونانی ولوس تانکرز: یک ملوان در انفجاری که گمان می‌رود ناشی از حمله موشکی به یکی از نفتکش‌های ما در خلیج فارس در روز گذشته بوده، کشته شد. 🌐 @jamarannews_int",
-   "emoji": "🔴",
-   "link": "https://t.me/jamarannews/560024",
-   "relevant": true
-  },
-  {
-   "ch": "akharinkhabar",
-   "id": 642962,
-   "t": "2026-11-06T14:33:52Z",
-   "text": "🔺 🔻 مخابره کد اضطراری توسط هواگرد آمریکایی بر فراز سواحل عمان فارس: 🔹 یک فروند هواگرد «CMV-22B آسپری» متعلق به نیروی دریایی آمریکا هنگام پرواز در امتداد سواحل جنوبی عمان، کد اضطراری ۷۷۰۰ را مخابره کرد. 🔹 مخابرهٔ کد اضطراری ۷۷۰۰ به معنای وجود یک وضعیت اضطراری…",
-   "emoji": "",
-   "link": "https://t.me/akharinkhabar/642962",
-   "relevant": true
-  },
-  {
-   "ch": "Tabnak_ir",
-   "id": 278381,
-   "t": "2026-11-06T14:32:39Z",
-   "text": "🔺 دموکرات‌ها و جمهوری‌خواهان دو لبه یک قیچی‌اند / برای تغییر دکترین هسته‌ای آماده قانون‌گذاری هستیم 🔹 عزیزی، رئیس کمیسیون امنیت ملی و سیاست خارجی مجلس، با تأکید بر بی‌تفاوتی ایران نسبت به پیروزی دموکرات‌ها یا جمهوری‌خواهان، گفت: اگر دشمن به تأسیسات هسته‌ای ایران حمله کند، موضوع خ",
-   "emoji": "",
-   "link": "https://t.me/Tabnak_ir/278381",
-   "relevant": true
-  },
-  {
-   "ch": "Middle_East_Spectator",
-   "id": 38015,
-   "t": "2026-11-06T14:28:35Z",
-   "text": "— 🇺🇸 / 🇮🇷 NEW: The IRGC shot down another American MQ-1 ‘Grey Eagle’ drone over Qeshm Island @Middle_East_Spectator",
-   "emoji": "",
-   "link": "https://t.me/Middle_East_Spectator/38015",
-   "relevant": true
-  },
-  {
-   "ch": "akharinkhabar",
-   "id": 642958,
-   "t": "2026-11-06T14:26:01Z",
-   "text": "🔺 پایان بازی سپاهان 4 _ 0 ملوان 🔸 گل‌ها: احسان حاج‌صفی(P7)، آرش رضاوند(42)، کسری طاهری(55)، مهدی لیموچی(61) 🔸 هفته دوازدهم لیگ برتر 🆔 @canalevarzesh",
-   "emoji": "",
-   "link": "https://t.me/akharinkhabar/642958",
-   "relevant": true
-  },
-  {
-   "ch": "Middle_East_Spectator",
-   "id": 38014,
-   "t": "2026-11-06T14:24:46Z",
-   "text": "— 🇺🇸 / 🇮🇷 NEW: The IRGC shot down another American MQ-1 ‘Grey Eagle’ drone over Qeshm Island @Middle_East_Spectator",
-   "emoji": "",
-   "link": "https://t.me/Middle_East_Spectator/38014",
-   "relevant": true
-  },
-  {
-   "ch": "Tabnak_ir",
-   "id": 278380,
-   "t": "2026-11-06T14:19:20Z",
-   "text": "🔺 یحیی سریع: جنایت وحشیانه سعودی در حمله به بازاری در تعز، بی‌پاسخ نخواهد ماند 🔹 سخنگوی نیروهای مسلح یمن: یک جنگنده اف‌ ۱۵ سعودی با سه حمله هوایی، بازار الحضاره در شهرستان الوازعیه استان تعز را هدف قرار داد. 🔹 این حمله ده‌ها شهید و زخمی از میان غیرنظامیان برجا گذاشت. 🔹 این «جنایت",
-   "emoji": "",
-   "link": "https://t.me/Tabnak_ir/278380",
-   "relevant": true
-  },
-  {
-   "ch": "jamarannews",
-   "id": 560022,
-   "t": "2026-11-06T14:16:13Z",
-   "text": "🔹 هرتزوگ، نامزد مأمور به تشکیل کابینه جدید اسرائیل را هفته آینده معرفی می‌کند 🔸 اسحاق هرتزوگ، رئیس رژیم صهیونیستی اعلام کرد که بعد از پایان مشورت‌ها و شنیدن توصیه‌ها، یکشنبه آینده کاندیدای مورد نظر را برای تشکیل دولت جدید معرفی خواهد کرد. 🔸 او همچنین گفت که…",
-   "emoji": "",
-   "link": "https://t.me/jamarannews/560022",
-   "relevant": true
-  },
-  {
-   "ch": "jamarannews",
-   "id": 560021,
-   "t": "2026-11-06T14:09:20Z",
-   "text": "🟠 آکسیوس: ارتش آمریکا در آماده‌باش کامل است ❌ آکسیوس به نقل از یک مقام آمریکایی: فرماندهی مرکزی ایالات متحده برای از سرگیری احتمالی جنگ با ایران در حالت آماده‌باش کامل است. 🇮🇷 @jamarannews",
-   "emoji": "",
-   "link": "https://t.me/jamarannews/560021",
-   "relevant": true
-  },
-  {
-   "ch": "Tabnak_ir",
-   "id": 278378,
-   "t": "2026-11-06T14:07:01Z",
-   "text": "🔺 انهدام پهپاد MQ1 دشمن آمریکایی در آسمان جزیرۀ قشم 🔹 روابط عمومی سپاه: دقایقی پیش شانزدهمین پهپاد MQ1 آمریکا توسط سامانه نوین پدافند پیشرفته سپاه و تحت کنترل شبکه یکپارچه پدافند هوایی کشور در آسمان جزیرۀ قشم رهگیری و منهدم شد. 🔹 شکست‌های پی‌درپی مأموریت‌های شناسایی دشمن، بر کارن",
-   "emoji": "",
-   "link": "https://t.me/Tabnak_ir/278378",
-   "relevant": true
-  },
-  {
-   "ch": "Tabnak_ir",
-   "id": 278375,
-   "t": "2026-11-06T13:29:58Z",
-   "text": "🔺 اخبار تائید نشده از هدف قرار داده شدن یک هواگرد آمریکا در سواحل عمان 🌐 Tabnak.ir @Tabnak_ir",
-   "emoji": "",
-   "link": "https://t.me/Tabnak_ir/278375",
-   "relevant": true
-  },
-  {
-   "ch": "Tabnak_ir",
-   "id": 278373,
-   "t": "2026-11-06T13:14:44Z",
-   "text": "🔺 تکرار خطر بمب گذاری پروازهای اروپایی را مختل کرد 🔹 فرانسه اعلام کرد امروز ۴ تهدید جدید بمب‌گذاری علیه هواپیماهایی که در حریم هوایی این کشور پرواز می‌کردند، دریافت شده است. 🔹 پلیس جمهوری چک هم گفته امروز تهدیدهای ناشناسی دربارۀ بمب‌گذاری در ۹ هواپیما دریافت…",
-   "emoji": "",
-   "link": "https://t.me/Tabnak_ir/278373",
-   "relevant": true
-  },
-  {
-   "ch": "Tabnak_ir",
-   "id": 278372,
-   "t": "2026-11-06T12:50:04Z",
-   "text": "🔺 سکتۀ ناقص طلا از ترس تورم آمریکا 🔹 امروز قیمت فلز زرد با افزایش دوبارۀ قیمت نفت، به شدت کاهش یافت و در مقطعی تا حدود یک درصد افت کرد. 🔹 با افزایش تورم آمریکا، فدرال‌رزور نرخ بهره را در چند ماه گذشته افزایش داده بود و نگرانی سرمایه گذاران از ادامۀ افزایش نرخ بهره، عاملی برای افت",
-   "emoji": "",
-   "link": "https://t.me/Tabnak_ir/278372",
-   "relevant": true
-  },
-  {
-   "ch": "Tabnak_ir",
-   "id": 278370,
-   "t": "2026-11-06T12:26:47Z",
-   "text": "🔺 انفجار در یک نفتکش در نزدیکی سواحل عمان 🔹 سازمان عملیات تجارت دریایی انگلیس (UKMTO) از وقوع انفجار در یک نفتکش در ۱۶ مایل دریایی شرق منطقه خصب عمان در تنگه هرمز خبر داد. 🌐 Tabnak.ir @Tabnak_ir",
-   "emoji": "",
-   "link": "https://t.me/Tabnak_ir/278370",
-   "relevant": true
-  },
-  {
-   "ch": "Tabnak_ir",
-   "id": 278369,
-   "t": "2026-11-06T12:18:50Z",
-   "text": "🔺 تکرار خطر بمب گذاری پروازهای اروپایی را مختل کرد 🔹 فرانسه اعلام کرد امروز ۴ تهدید جدید بمب‌گذاری علیه هواپیماهایی که در حریم هوایی این کشور پرواز می‌کردند، دریافت شده است. 🔹 پلیس جمهوری چک هم گفته امروز تهدیدهای ناشناسی دربارۀ بمب‌گذاری در ۹ هواپیما دریافت کرده؛ این ۹ پرواز اکن",
-   "emoji": "",
-   "link": "https://t.me/Tabnak_ir/278369",
-   "relevant": true
-  },
-  {
-   "ch": "Tabnak_ir",
-   "id": 278368,
-   "t": "2026-11-06T12:07:31Z",
-   "text": "🔺 اعتراض مردم عراق به بسته ماندن گذرگاه چذابه با ایران 🔹 اعتراض شهروندان عراقی‌ به تعطیلی گذرگاه الشیب( چذابه ایران) همچنان ادامه دارد و عراقی ها بار دیگر خواستار بازگشایی فوری این گذرگاه مهم در مرز عراق و ایران واقع در استان میسان شدند. 🌐 Tabnak.ir @Tabnak_ir",
-   "emoji": "",
-   "link": "https://t.me/Tabnak_ir/278368",
    "relevant": true
   }
  ]
