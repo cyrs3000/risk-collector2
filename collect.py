@@ -59,7 +59,8 @@ ADSB_POINTS = [
     ("Gulf", 27, 52), ("Israel", 31.5, 35), ("Saudi/Qatar", 24.5, 47),
     ("Iraq/Kuwait", 30, 44), ("Cyprus", 34.5, 32), ("Ramstein", 49.44, 7.6),
     ("UK", 52, 0), ("Crete", 36, 24), ("Incirlik", 38, 35), ("Tehran", 34, 50),
-] + E.EXTRA_POINTS
+] + E.EXTRA_POINTS + E.IRAN_RIM_POINTS
+GLOBAL_QUERIES = ["mil", "type/IL76", "type/A124", "type/Y20", "type/IL62", "type/IL96"]
 GROUPS = {
     "tanker": {"K35R", "K35E", "KC10", "K46", "A332", "B762", "A310", "B703", "MRTT", "KC2"},
     "transport": {"C17", "C5M", "C5", "C130", "C30J", "A400", "C2", "KC39", "IL76", "C135", "C27J"},
@@ -79,21 +80,48 @@ def group_of(t):
 def collect_adsb(state):
     points, seen = [], {}
     errs = 0
+
+    def keep(a, area):
+        hx = a.get("hex")
+        if not hx:
+            return
+        t = (a.get("t") or "").upper()
+        is_mil = bool((a.get("dbFlags") or 0) & 1) or E.is_us_mil_hex(hx)
+        if is_mil:
+            g, why = group_of(t), "military"
+        else:
+            g, why = E.classify_extra(a)
+            if not g:
+                return False
+        prev = seen.get(hx)
+        seen[hx] = {"hex": hx, "cs": (a.get("flight") or "").strip(), "type": t, "reg": a.get("r"),
+                    "group": g, "why": why, "mil": is_mil, "cc": E.hex_country(hx), "area": (prev or {}).get("area", area),
+                    "lat": a.get("lat"), "lon": a.get("lon"), "alt": a.get("alt_baro"), "track": a.get("track"),
+                    "gs": a.get("gs"), "desc": a.get("desc"), "own": a.get("ownOp")}
+        return is_mil
+
     for name, lat, lon in ADSB_POINTS:
+        time.sleep(1.2)  # stay under the ~1 req/s limit of both APIs
         try:
             ac, _src = E.fetch_point(lat, lon)
         except Exception as e:
             errs += 1
             points.append({"area": name, "total": None, "mil": None, "err": str(e)[:80]})
             continue
-        mil = [a for a in ac if ((a.get("dbFlags") or 0) & 1) or E.is_us_mil_hex(a.get("hex") or "")]
-        points.append({"area": name, "total": len(ac), "mil": len(mil)})
-        for a in mil:
-            hx = a.get("hex")
-            t = (a.get("t") or "").upper()
-            seen[hx] = {"hex": hx, "cs": (a.get("flight") or "").strip(), "type": t, "reg": a.get("r"),
-                        "group": group_of(t), "area": name, "lat": a.get("lat"), "lon": a.get("lon"),
-                        "alt": a.get("alt_baro"), "track": a.get("track")}
+        nmil = sum(1 for a in ac if keep(a, name))
+        points.append({"area": name, "total": len(ac), "mil": nmil})
+    gq = {}
+    for q in GLOBAL_QUERIES:
+        time.sleep(1.2)
+        try:
+            ac, _src = E.fetch_global(q)
+        except Exception as e:
+            gq[q] = f"error: {str(e)[:60]}"
+            continue
+        reg = [a for a in ac if E.in_region(a) or (q != "mil" and E.hex_country(a.get("hex") or "") in ("IR", "RU", "CN", "BY"))]
+        gq[q] = len(reg)
+        for a in reg:
+            keep(a, "global:" + q)
     if errs == len(ADSB_POINTS):
         raise RuntimeError("all ADS-B points failed")
     if errs:
@@ -110,8 +138,8 @@ def collect_adsb(state):
     for hx in [h for h, a in sight.items() if parse_iso(a["last"]) < cutoff]:
         del sight[hx]
     # hourly counts for baseline (14 days)
-    cnt = {g: sum(1 for a in seen.values() if a["group"] == g) for g in GROUPS}
-    cnt["mil"] = len(seen)
+    cnt = {g: sum(1 for a in seen.values() if a["group"] == g) for g in list(GROUPS) + ["gov", "bridge_ir"]}
+    cnt["mil"] = sum(1 for a in seen.values() if a.get("mil"))
     hist = state.setdefault("adsb_hist", [])
     hist.append({"t": iso(NOW), **cnt})
     state["adsb_hist"] = [h for h in hist if parse_iso(h["t"]) > NOW - timedelta(days=14)]
@@ -122,7 +150,8 @@ def collect_adsb(state):
         p90 = sorted(vals)[int(0.9 * (len(vals) - 1))] if vals else None
         base[k] = {"now": cnt[k], "median_14d": med, "p90_14d": p90, "samples": len(vals)}
     return {"asof": iso(NOW), "points": points, "traffic_vs_same_hour": E.traffic_drop(state, NOW, points), "now": list(seen.values()),
-            "seen_24h": sorted(sight.values(), key=lambda a: (a["group"], a["first"])), "baseline": base}
+            "seen_24h": sorted(sight.values(), key=lambda a: (a["group"], a["first"])), "baseline": base,
+            "global_queries": gq}
 
 
 # ---------------------------------------------------------------- FIRMS
@@ -559,7 +588,14 @@ def write_brief(d):
     if ad:
         L += ["", "## military air (ADS-B, 24h)", "points: " + "; ".join(f"{p['area']} {p['total']}/{p['mil']}mil" for p in ad["points"]),
               "baseline: " + "; ".join(f"{g} now {b['now']} med {b['median_14d']}" for g, b in ad["baseline"].items())]
-        L += [f"- {a['first'][11:16]}-{a['last'][11:16]}Z {a['cs'] or '?'} {a['type']} ({a['group']}) {','.join(a['areas'])}" for a in ad["seen_24h"] if a["group"] != "other"][:40]
+        L += [f"- {a['first'][11:16]}-{a['last'][11:16]}Z {a['cs'] or '?'} {a['type']} ({a['group']}) {','.join(a['areas'])}" for a in ad["seen_24h"] if a["group"] not in ("other", "gov", "bridge_ir")][:40]
+        br = [a for a in ad["seen_24h"] if a["group"] == "bridge_ir"]
+        gv = [a for a in ad["seen_24h"] if a["group"] == "gov"]
+        L += ["", f"## Iran airbridge & state flights (24h; IR/RU/CN/BY regs, heavy cargo types, sanctioned callsigns) — {len(br)}",
+              "global: " + json.dumps(ad.get("global_queries"), ensure_ascii=False)]
+        L += [f"- {a['last'][11:16]}Z {a['cs'] or '?'} {a['type']} {a.get('reg') or ''} [{a.get('cc') or ''}] {a.get('why')} @{a.get('lat')},{a.get('lon')} alt {a.get('alt')} trk {a.get('track')} {','.join(a['areas'])}" for a in sorted(br, key=lambda x: x['last'], reverse=True)][:30]
+        L += ["", f"## government/VIP flights (24h) — {len(gv)}"]
+        L += [f"- {a['last'][11:16]}Z {a['cs'] or '?'} {a['type']} {a.get('reg') or ''} {a.get('own') or ''} @{a.get('lat')},{a.get('lon')} trk {a.get('track')} {','.join(a['areas'])}" for a in sorted(gv, key=lambda x: x['last'], reverse=True)][:30]
     f = d.get("firms") or {}
     if f:
         L += ["", f"## FIRMS: total {f.get('n_total')}, not oil/gas {f.get('n_not_oilgas')} (median {f.get('not_oilgas_median_14d')})"]
