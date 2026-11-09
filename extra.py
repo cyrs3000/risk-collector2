@@ -157,6 +157,68 @@ EXTRA_POINTS = [("Al Udeid", 25.12, 51.32), ("Prince Sultan AB", 24.06, 47.58), 
                 ("Diego Garcia", -7.31, 72.41), ("Akrotiri", 34.59, 32.99), ("Souda", 35.53, 24.15),
                 ("Moron", 37.17, -5.62), ("Lajes", 38.76, -27.09), ("Mildenhall", 52.36, 0.49),
                 ("Red Sea", 20.0, 38.6), ("Arabian Sea", 18.0, 61.0)]
+# Iran periphery: community ADS-B has almost no receivers inside Iran, so aircraft flying into/out of
+# Iran are only visible near its borders. These points watch the entry corridors of an airbridge to Tehran.
+IRAN_RIM_POINTS = [("Caspian/Baku", 40.4, 49.9), ("Ashgabat", 37.9, 58.4), ("Yerevan/Nakhchivan", 39.9, 45.0),
+                   ("Van/Tabriz rim", 38.5, 44.3), ("Iraq-Iran border", 33.4, 45.6), ("Basra/Khuzestan rim", 30.5, 47.8),
+                   ("UAE/Bandar Abbas rim", 25.4, 55.8), ("Muscat/Oman", 23.6, 58.3), ("Herat/Mashhad rim", 34.4, 61.0)]
+REGION_BOX = (10.0, 45.0, 25.0, 65.0)  # lat_min, lat_max, lon_min, lon_max  (Levant-Gulf-Iran-Caucasus)
+
+# --- state / VIP / airbridge classification (beyond the dbFlags "military" bit)
+HEX_RANGES = {"IR": (0x730000, 0x737FFF), "RU": (0x100000, 0x1FFFFF), "CN": (0x780000, 0x7BFFFF),
+              "BY": (0x510000, 0x5103FF), "SY": (0x778000, 0x77FFFF), "KP": (0x720000, 0x727FFF)}
+GOV_CS = ("GAF", "SUI", "CTM", "RRR", "SAM", "SPAR", "VENUS", "EXEC", "IAM", "NAF", "BAF", "PLF", "HUAF", "CEF",
+          "ORF", "QAF", "BAH", "KAF", "RSF", "RJZ", "JYR", "UAF", "PAF", "TUAF", "TRKAF", "SSG", "AME", "SVF",
+          "RFF", "RSD", "IRI", "IRIAF", "SHAHED", "IAF", "EGY", "LYAF", "ASY", "CFC", "AUS", "KIWI", "NOW", "DAF", "HAF")
+GOV_REG = ("A4O-", "A7-H", "A7-M", "HZ-HM", "HZ-MF", "HZ-SK", "A6-PF", "A6-AL", "A6-HR", "A6-DLM", "A9C-", "9K-AK",
+           "9K-GA", "JY-RY", "JY-ONE", "TC-ANK", "TC-CBK", "TC-TRK", "EP-IGA", "EP-AJA", "EP-PAK", "RA-96", "RA-64",
+           "RA-86", "RF-", "YK-A", "YI-AS", "SU-GG", "4K-AI", "EK-RA", "EZ-A0")
+BRIDGE_CS = ("QFZ", "PYA", "IRZ", "FPI", "IRA", "IRM", "IRC", "RDS", "IRU", "SHI", "VDA", "AZS", "RSD", "RFF",
+             "MSI", "KGT", "CKK", "CAO", "SYR", "MHS", "TBZ")
+BRIDGE_TYPES = {"IL76", "IL78", "IL62", "IL96", "A124", "A225", "AN12", "AN22", "AN26", "AN30", "AN32", "AN72", "AN74",
+                "Y20", "Y8", "Y9", "T204", "T214", "TU54", "TU95", "TU16", "TU22", "TU60", "B742", "B744", "B748"}
+INTERESTING_TYPES = {"C17", "C5M", "C130", "C30J", "A400", "KC39", "C2", "K35R", "KC46", "A332", "MRTT", "E3TF",
+                     "E3CF", "E7", "R135", "RC135", "P8", "RQ4", "Q4", "MQ9", "B52", "B1", "B2", "F35", "F22", "F15", "F16"}
+
+
+def hex_country(hx):
+    try:
+        v = int(hx, 16)
+    except Exception:
+        return None
+    for c, (a, b) in HEX_RANGES.items():
+        if a <= v <= b:
+            return c
+    return None
+
+
+def in_region(a):
+    la, lo = a.get("lat"), a.get("lon")
+    if la is None or lo is None:
+        return False
+    return REGION_BOX[0] <= la <= REGION_BOX[1] and REGION_BOX[2] <= lo <= REGION_BOX[3]
+
+
+def classify_extra(a):
+    """Return (group, why) for state/VIP/airbridge aircraft that are not flagged military, else (None, None)."""
+    cs = (a.get("flight") or "").strip().upper()
+    reg = (a.get("r") or "").upper()
+    t = (a.get("t") or "").upper()
+    hc = hex_country(a.get("hex") or "")
+    flags = a.get("dbFlags") or 0
+    if hc == "IR" or reg.startswith("EP-"):
+        return "bridge_ir", "Iranian-registered"
+    if t in BRIDGE_TYPES and (in_region(a) or hc in ("RU", "CN", "BY", "SY", "KP")):
+        return "bridge_ir", f"heavy cargo/state type {t}" + (f" ({hc})" if hc else "")
+    if any(cs.startswith(p) for p in BRIDGE_CS) and in_region(a):
+        return "bridge_ir", "sanctioned/IR-RU-CN cargo or state callsign"
+    if hc in ("RU", "CN", "BY", "SY", "KP") and in_region(a):
+        return "bridge_ir", f"{hc}-registered in region"
+    if any(reg.startswith(p) for p in GOV_REG) or any(cs.startswith(p) for p in GOV_CS):
+        return "gov", "government/VIP"
+    if flags & 2:
+        return "gov", "flagged interesting (state/VIP)"
+    return None, None
 
 
 def is_us_mil_hex(hx):
@@ -166,15 +228,38 @@ def is_us_mil_hex(hx):
         return False
 
 
-def fetch_point(lat, lon):
-    for url in (f"https://api.adsb.lol/v2/point/{lat}/{lon}/250", f"https://api.airplanes.live/v2/point/{lat}/{lon}/250"):
-        try:
-            r = requests.get(url, headers=UA, timeout=25)
-            r.raise_for_status()
-            return r.json().get("ac") or [], url.split("/")[2]
-        except Exception:
-            continue
-    raise RuntimeError("both ADS-B sources failed")
+SOURCES = ("https://api.adsb.lol", "https://api.airplanes.live")
+
+
+def _get_ac(path, retries=2):
+    """GET an ADS-B v2 path from adsb.lol, falling back to airplanes.live; backs off on 429/5xx.
+    Both APIs rate-limit (~1 req/s); the old sequential loop got throttled after ~10 points, which is
+    why every EXTRA point (Al Udeid, Prince Sultan, Diego Garcia...) failed in every run."""
+    import time
+    last = None
+    for base in SOURCES:
+        for i in range(retries):
+            try:
+                r = requests.get(base + path, headers=UA, timeout=15)
+                if r.status_code in (429, 500, 502, 503, 504):
+                    last = f"{base.split('/')[2]} {r.status_code}"
+                    time.sleep(2.5 * (i + 1))
+                    continue
+                r.raise_for_status()
+                return r.json().get("ac") or [], base.split("/")[2]
+            except Exception as e:
+                last = f"{base.split('/')[2]} {type(e).__name__}"
+                time.sleep(1.5 * (i + 1))
+    raise RuntimeError(f"ADS-B sources failed: {last}")
+
+
+def fetch_point(lat, lon, radius=250):
+    return _get_ac(f"/v2/point/{lat}/{lon}/{radius}")
+
+
+def fetch_global(kind):
+    """kind: 'mil' or 'type/IL76' etc. Global endpoints, filtered to the region by the caller."""
+    return _get_ac(f"/v2/{kind}")
 
 
 # ------------------------------------------------------------ military AIS at chokepoints (needs AISSTREAM_KEY)
