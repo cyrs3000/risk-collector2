@@ -1,46 +1,53 @@
-# brief 2026-11-09T13:50:34Z
+# brief 2026-11-09T14:07:56Z
 
 ## sources
-adsb:partial: 4 point(s) failed, firms:ok, markets:error: RuntimeError: all market symbols , iran_fx:ok, news:partial: 5 feed(s) failed: Times of Isra, telegram:ok, safeairspace:ok, polymarket:ok, state_dept:ok, embassy_alerts:error: RuntimeError: no embassy feed rea, fcdo:ok, easa_czib:ok, faa:ok, portwatch_hormuz:ok, marad:error: HTTPError: 403 Client Error: Forb, official_statements:ok, ofac:ok, ioda_iran:ok, gdelt:error: HTTPError: 429 Client Error: Too , usgs_seismic:ok, notams:error: RuntimeError: no NOTAM source rea, foreign_advisories:ok, ais_military:ok
+adsb:partial: 5 point(s) failed, firms:ok, markets:error: RuntimeError: all market symbols , iran_fx:ok, news:partial: 4 feed(s) failed: Times of Isra, telegram:ok, safeairspace:ok, polymarket:ok, state_dept:ok, embassy_alerts:error: RuntimeError: no embassy feed rea, fcdo:ok, easa_czib:ok, faa:ok, portwatch_hormuz:error: RuntimeError: no PortWatch rows, marad:error: HTTPError: 403 Client Error: Forb, official_statements:ok, ofac:ok, ioda_iran:ok, gdelt:error: HTTPError: 429 Client Error: Too , usgs_seismic:ok, notams:error: RuntimeError: no NOTAM source rea, foreign_advisories:ok, ais_military:ok
 
 ## ALERTS (verify before use)
-- {"type": "adsb_transport_above_baseline", "now": 8, "median_14d": 2, "p90_14d": 6}
-- {"type": "hormuz_transits_drop", "latest": {"date": "2026-11-01", "total": 1, "tanker": 1, "cargo": 0}, "median": 4}
-- {"type": "foreign_advisory_changed", "src": "Switzerland Iran", "country": null, "level": null, "snippet": " Access Denied Access Denied You don't have permission to access \"http&#58;&#47;&#47;www&#46;eda&#46;admin&#46;ch&#47;eda&#47;en&#47;fdfa&#47;representations&#45;and&#45;travel&#45;advice&#47;iran&#47;travel&#45;advice&#45;iran&#46;html\" on this server. Reference&#32;&#35;18&#46;d65ec817
+- {"type": "adsb_transport_above_baseline", "now": 13, "median_14d": 2.0, "p90_14d": 6}
+- {"type": "foreign_advisory_changed", "src": "Switzerland Iran", "country": null, "level": null, "snippet": " Access Denied Access Denied You don't have permission to access \"http&#58;&#47;&#47;www&#46;eda&#46;admin&#46;ch&#47;eda&#47;en&#47;fdfa&#47;representations&#45;and&#45;travel&#45;advice&#47;iran&#47;travel&#45;advice&#45;iran&#46;html\" on this server. Reference&#32;&#35;18&#46;6f6d3e17
 
 ## military air (ADS-B, 24h)
-points: Gulf 84/0mil; Israel 54/1mil; Saudi/Qatar 11/0mil; Iraq/Kuwait 8/0mil; Cyprus 73/1mil; Ramstein 802/29mil; UK 721/41mil; Crete 33/0mil; Incirlik 57/0mil; Tehran 0/0mil; Al Udeid None/Nonemil; Prince Sultan AB 16/0mil; Muwaffaq Salti 46/1mil; Diego Garcia 0/0mil; Akrotiri 82/1mil; Souda 31/0mil; Moron 211/2mil; Lajes 1/0mil; Mildenhall 708/35mil; Red Sea 0/0mil; Arabian Sea 0/0mil; Caspian/Baku None/Nonemil; Ashgabat None/Nonemil; Yerevan/Nakhchivan None/Nonemil; Van/Tabriz rim 18/0mil; Iraq-Iran border 3/0mil; Basra/Khuzestan rim 19/0mil; UAE/Bandar Abbas rim 107/0mil; Muscat/Oman 75/0mil; Herat/Mashhad rim 0/0mil
-baseline: tanker now 2 med 0; transport now 8 med 2; bomber now 0 med 0; isr now 2 med 0; gov now 19 med 0; bridge_ir now 21 med 0; mil now 64 med 6
-- 11:40-13:50Z BOOSTER HRON (isr) Cyprus,Israel
+points: Gulf 100/0mil; Israel 61/1mil; Saudi/Qatar 12/0mil; Iraq/Kuwait 14/0mil; Cyprus 83/2mil; Ramstein 824/34mil; UK 723/37mil; Crete 42/1mil; Incirlik 64/0mil; Tehran 1/0mil; Al Udeid 96/0mil; Prince Sultan AB None/Nonemil; Muwaffaq Salti None/Nonemil; Diego Garcia None/Nonemil; Akrotiri 85/1mil; Souda 42/0mil; Moron 189/1mil; Lajes 0/0mil; Mildenhall 715/32mil; Red Sea 0/0mil; Arabian Sea 0/0mil; Caspian/Baku 7/0mil; Ashgabat 0/0mil; Yerevan/Nakhchivan 21/0mil; Van/Tabriz rim None/Nonemil; Iraq-Iran border None/Nonemil; Basra/Khuzestan rim 21/0mil; UAE/Bandar Abbas rim 103/0mil; Muscat/Oman 81/0mil; Herat/Mashhad rim 0/0mil
+baseline: tanker now 1 med 0.5; transport now 13 med 2.0; bomber now 0 med 0.0; isr now 1 med 0.0; gov now 1 med 0.0; bridge_ir now 3 med 0.0; mil now 63 med 6.0
+- 11:40-14:07Z BOOSTER HRON (isr) Cyprus,Israel
 - 13:50-13:50Z TRK8 GLF5 (isr) global:mil
 - 11:40-11:40Z FAF4130 A332 (tanker) Ramstein
 - 11:40-11:40Z MMF14 A332 (tanker) Ramstein
 - 11:40-11:40Z ? K35R (tanker) UK
-- 13:50-13:50Z MMF36 A332 (tanker) Ramstein
+- 13:50-14:07Z MMF36 A332 (tanker) Ramstein
 - 13:50-13:50Z MTTE36 A332 (tanker) UK
 - 18:51-11:40Z CTM1467 A400 (transport) Gulf
 - 18:51-18:51Z RRR4116 A400 (transport) UK
 - 11:40-11:40Z GAF241 A400 (transport) Ramstein
 - 11:40-11:40Z GAF242 A400 (transport) Ramstein
-- 11:40-13:50Z PRIMR12 A400 (transport) Ramstein
+- 11:40-14:07Z PRIMR12 A400 (transport) Ramstein
 - 11:40-11:40Z 76655 IL76 (transport) Ramstein
 - 11:40-11:40Z IAM4670 C130 (transport) Ramstein
-- 11:40-13:50Z RRR4120 A400 (transport) UK
+- 11:40-14:07Z RRR4120 A400 (transport) UK
 - 11:40-11:40Z RCH429 C17 (transport) UK
-- 13:50-13:50Z RRR4189 A400 (transport) Ramstein
-- 13:50-13:50Z RRR4952 A400 (transport) Ramstein
-- 13:50-13:50Z RCH344 C17 (transport) Ramstein
-- 13:50-13:50Z RRR6133 C17 (transport) UK
-- 13:50-13:50Z GAF104 A400 (transport) UK
+- 13:50-14:07Z RRR4189 A400 (transport) Ramstein,UK
+- 13:50-14:07Z RRR4952 A400 (transport) Ramstein
+- 13:50-14:07Z RCH344 C17 (transport) Ramstein
+- 13:50-14:07Z RRR6133 C17 (transport) UK
+- 13:50-14:07Z GAF104 A400 (transport) UK
 - 13:50-13:50Z RLLE25 A400 (transport) UK
+- 14:07-14:07Z CVX35 A400 (transport) Ramstein
+- 14:07-14:07Z NAF23 C130 (transport) Ramstein
+- 14:07-14:07Z PRIMR13 A400 (transport) Ramstein
+- 14:07-14:07Z GAF155 A400 (transport) Ramstein
+- 14:07-14:07Z BAF657 A400 (transport) Ramstein
+- 14:07-14:07Z RCH4979 C17 (transport) Ramstein
 
-## Iran airbridge & state flights (24h; IR/RU/CN/BY regs, heavy cargo types, sanctioned callsigns) — 21
-global: {"mil": 2, "type/IL76": 1, "type/A124": 0, "type/Y20": 0, "type/IL62": "error: ADS-B sources failed: api.airplanes.live HTTPError", "type/IL96": "error: ADS-B sources failed: api.airplanes.live HTTPError"}
+## Iran airbridge & state flights (24h; IR/RU/CN/BY regs, heavy cargo types, sanctioned callsigns) — 22
+global: {"mil": 2, "type/IL76": 1, "type/A124": 1, "type/Y20": 0, "type/IL62": 0, "type/IL96": 0}
+- 14:07Z IVC7611 IL76 TL-ATD [] Iran-linked/sanctioned cargo or RU/BY/CN state callsign @24.423477,54.668223 alt 25 trk 0.0 Gulf
+- 14:07Z FIE3315 AN12 EK11810 [] Iran-linked/sanctioned cargo or RU/BY/CN state callsign @41.558626,45.43396 alt 28000 trk 57.8 Caspian/Baku,Van/Tabriz rim
+- 14:07Z VDA8213 A124 RA-82074 [RU] Iran-linked/sanctioned cargo or RU/BY/CN state callsign @None,None alt ground trk None Gulf
 - 13:50Z FYC727 A320 YK-BAC [SY] SY-registered in region @26.581095,52.138842 alt 37025 trk 110.16 Gulf
 - 13:50Z TVR4703 B744 ER-BAS [] heavy cargo/state type B744 @25.706797,52.184281 alt 32800 trk 114.95 Gulf
 - 13:50Z AFL531 B738 RA-73124 [RU] RU-registered in region @24.979797,54.067993 alt 19300 trk 311.48 Gulf
 - 13:50Z PBD754 B738 RA-73234 [RU] RU-registered in region @24.448929,54.6359 alt ground trk None Gulf
-- 13:50Z IVC7611 IL76 TL-ATD [] heavy cargo/state type IL76 @24.438901,54.648069 alt 25 trk 150.95 Gulf
 - 13:50Z PBD793 B738 RA-73242 [RU] RU-registered in region @25.006622,56.218262 alt 18625 trk 161.2 Gulf
 - 13:50Z ICL852 B744 4X-ICK [] heavy cargo/state type B744 @34.060876,33.939285 alt 35000 trk 182.08 Israel
 - 13:50Z AFL423 A321 RA-73704 [RU] RU-registered in region @35.213695,30.863342 alt 32000 trk 358.48 Cyprus
@@ -48,7 +55,6 @@ global: {"mil": 2, "type/IL76": 1, "type/A124": 0, "type/Y20": 0, "type/IL62": "
 - 13:50Z SYR445 B735 YK-SYR [SY] sanctioned/IR-RU-CN cargo or state callsign @40.28421,32.405457 alt 36000 trk 304.46 Incirlik
 - 13:50Z DLH729 B748 D-ABYU [] heavy cargo/state type B748 @41.361384,42.465342 alt 34000 trk 260.2 Van/Tabriz rim
 - 13:50Z CHH7992 B789 B-1540 [CN] CN-registered in region @41.377305,42.564344 alt 37000 trk 80.56 Van/Tabriz rim
-- 13:50Z FIE3315 AN12 EK11810 [] heavy cargo/state type AN12 @40.147293,44.351013 alt 4100 trk 270.66 Van/Tabriz rim
 - 13:50Z SDM6923 A320 RA-73195 [RU] RU-registered in region @40.150549,44.401432 alt ground trk None Van/Tabriz rim
 - 13:50Z AFL1861 A320 RA-73179 [RU] RU-registered in region @41.323288,44.930481 alt 27275 trk 31.54 Van/Tabriz rim
 - 13:50Z RWZ1564 SU95 RA-89187 [RU] RU-registered in region @41.670078,44.961704 alt ground trk None Van/Tabriz rim
@@ -58,7 +64,8 @@ global: {"mil": 2, "type/IL76": 1, "type/A124": 0, "type/Y20": 0, "type/IL62": "
 - 13:50Z CLX753 B744 LX-NCL [] heavy cargo/state type B744 @23.594932,58.27037 alt ground trk None UAE/Bandar Abbas rim
 - 13:50Z NCR671 B744 N952CA [] heavy cargo/state type B744 @23.512977,58.724467 alt 39000 trk 68.52 UAE/Bandar Abbas rim
 
-## government/VIP flights (24h) — 19
+## government/VIP flights (24h) — 20
+- 14:07Z SAMU28 EC45 F-HSUF  @48.648439,1.248827 trk 48.58 UK
 - 13:50Z GFA215 A320 A9C-AF  @27.832077,49.232068 trk None Gulf
 - 13:50Z OMA104 B789 A4O-SL  @28.372425,49.846156 trk 141.83 Gulf
 - 13:50Z DHX752 B763 A9C-DHT  @26.38511,50.870449 trk 11.98 Gulf
@@ -79,16 +86,15 @@ global: {"mil": 2, "type/IL76": 1, "type/A124": 0, "type/Y20": 0, "type/IL62": "
 - 13:50Z OMS105 A20N A4O-OVD  @23.265133,58.012238 trk 211.72 UAE/Bandar Abbas rim
 - 13:50Z OMA623 B38M A4O-MN  @23.598691,58.283533 trk None UAE/Bandar Abbas rim
 
-## FIRMS: total 241, not oil/gas 53 (median 61)
+## FIRMS: total 241, not oil/gas 53 (median 57.0)
 - near [('Bandar Abbas', 17)] frp 5.97 2026-11-09 1002
 - near [('Bandar Abbas', 17)] frp 2.45 2026-11-09 1002
 - near [('Parchin', 24), ('Tehran', 17)] frp 3.83 2026-11-09 1006
 
 ## markets: 
-iran fx: {"usd_rial": 2649000, "usd_toman": 264900}
+iran fx: {"usd_rial": 2639000, "usd_toman": 263900}
 
 ## official
-- Hormuz transits {'date': '2026-11-01', 'total': 1, 'tanker': 1, 'cargo': 0} median 4
 - StateDept: Iran - Level 4: Do Not Travel
 - StateDept: Syria - Level 4: Do Not Travel
 - StateDept: Yemen - Level 4: Do Not Travel
@@ -108,8 +114,9 @@ iran fx: {"usd_rial": 2649000, "usd_toman": 264900}
 - StateDept: Afghanistan - Level 4: Do Not Travel
 - StateDept: Romania - Level 1: Exercise Normal Precautions
 - StateDept: Egypt - Level 2: Exercise Increased Caution
+- IAEA: Safeguards: Our Shared Responsibility http://www.iaea.org/newscenter/multimedia/videos/safeguards-our-shared-responsibility
 - quake M4.3 10km 18 km N of Darreh Shahr, Iran 2026-11-08T07:31:52Z
-- IODA Iran: {"events_48h": [], "bgp_latest": 41752, "bgp_median_48h": 41759.0, "bgp_drop_pct": 0.0}
+- IODA Iran: {"events_48h": [], "bgp_latest": 41756, "bgp_median_48h": 41759.0, "bgp_drop_pct": 0.0}
 - GDELT: null
 - Advisory {"src": "Germany", "country": "Iran", "level": "warning", "modified": "2026-10-29T14:28:09Z", "changed_since_last_check": false}
 - Advisory {"src": "Switzerland Iran", "changed_since_last_check": true, "snippet": " Access Denied Access Denied You don't have permission to access \"http&#58;&#47;&#47;www&#46;eda&#46;admin&#46;ch&#47;eda&#47;en&#47;fdfa&#47;representations&#45;and&#45;travel&#45;advi
@@ -121,11 +128,11 @@ iran fx: {"usd_rial": 2649000, "usd_toman": 264900}
 - Israel x Iran ceasefire continues through November 15?: {'Yes': '0.925', 'No': '0.075'}
 - Iran leadership change by December 31?: {'Yes': '0.075', 'No': '0.925'}
 - Israel x Iran ceasefire continues through November 6?: {'Yes': '0.9985', 'No': '0.0015'}
-- Strait of Hormuz traffic returns to normal by December 31?: {'Yes': '0.085', 'No': '0.915'}
-- Will Benjamin Netanyahu be the next Prime Minister of Israel?: {'Yes': '0.246', 'No': '0.754'}
-- Will Gadi Eizenkot be the next Prime Minister of Israel?: {'Yes': '0.5915', 'No': '0.4085'}
-- US-Iran Hormuz Agreement by November 30?: {'Yes': '0.175', 'No': '0.825'}
-- Next US-Iran senior diplomatic meeting by November 30, 2026?: {'Yes': '0.22', 'No': '0.78'}
+- Will Benjamin Netanyahu be the next Prime Minister of Israel?: {'Yes': '0.266', 'No': '0.734'}
+- Strait of Hormuz traffic returns to normal by December 31?: {'Yes': '0.095', 'No': '0.905'}
+- Will Gadi Eizenkot be the next Prime Minister of Israel?: {'Yes': '0.5835', 'No': '0.4165'}
+- Next US-Iran senior diplomatic meeting by November 30, 2026?: {'Yes': '0.265', 'No': '0.735'}
+- US-Iran Hormuz Agreement by November 30?: {'Yes': '0.195', 'No': '0.805'}
 - Israel x Iran ceasefire continues through December 31?: {'Yes': '0.615', 'No': '0.385'}
 
 ## news (multi-source first; outlets count)
@@ -149,7 +156,7 @@ iran fx: {"usd_rial": 2649000, "usd_toman": 264900}
 - [7] Houthis claim six missile, drone attacks on Saudi Arabia, target Aramco facilities and Riyadh airport | The Economic Times, Moneycontrol.com, The Times of India, NDTV Profit | https://news.google.com/rss/articles/CBMi-gFBVV95cUxPNHlEVzYwUlE2T01hS3NWRHd3RjdsazZsQWlGOFVFMEtzQjl3UUhiUXVkOUI1Y0IzdmJQRUJ2TEFhekNGOEdZa0V6d3hqSEk0NzVJaUExcTVSWmhvS01wdFljR2JpZWU5Ukp5X0xKRk1ZanV1T2RNanF4dXhMNnlhdzI5RUtKYTl6ZXMtVE05a2NPa2x2NEdCemd3OUVRMVZVTzZ4VDU3R2RKd3k0bi04b2dvRUhEZ3VwZWpaUHN6d1VMNkFqRVJ1TEwyR3FmY1ZxVWs1dHFRVVpRd2pkR0JCeEdJM1AtRlozdEc4WUF2NWpNWm1XeUJMeUp30gH_AUFVX3lxTE9IMzNHVHJqX09oWlhET0JmbUlmdHd3dWJ1dXlYZU9GbjF4QXBXaW85Y0Z1Zmt1VFNST3B6amlTRG5OQ1R0aDJSWFlKQ280OFh4cmk0cmZKeTlPQUhPdTZjQkdQQ1JFQzlKTHEtQ1B3UGZMckJPSV8wVExWN2ZOdkRUWEMwMVY0bnZ0MGpwS3JEV3BKelFRWTVieGtUdlNsM1JFSnRkQU9uT2I5aThGTENhdFM3aVFfd3Fxdzd5MDh4MldzcG9tVkRBV1ZBeHBuYklocjllX1p2MWJOQmVfamlLZk5TWF94LUE3WjFKYUYxMHE5S1N1Njh4Uk4wWHRUTQ?oc=5
 - [7] Iraq Has Reached Understandings With US To Allow Oil Exports Through Hormuz | gCaptain, Al-Monitor, Middle East Eye, Arab News | https://gcaptain.com/iraq-has-reached-understandings-with-us-to-allow-oil-exports-through-hormuz/
 - [7] Trump says renewed Iran strikes ‘highly unlikely’ if talks progress but warns he could still strike | CNBC, Apa.az, Business Standard, The Siasat Daily | https://news.google.com/rss/articles/CBMigwFBVV95cUxNb0l6UllaNWstdHV3YXVHY3FsaTV6blctcjJ2aDl5dnNwZF9OOFdrRXM5RlN6bUYzU2ZnTGU1bndLek5kTDFTWG1LZUFuamZLbFUwUmJiMDF1a21pOFNhcjI2SzdLVHRtWWYzOHVJVl9qMk9CY3E3Y2lEY1VOZ2txYTRHOA?oc=5
-- [6] Oil falls as Trump signals restraint on Iran despite fresh shipping attacks | Yahoo Finance, Investing.com, TimesLIVE, شبكة تواصل الإخبارية | https://news.google.com/rss/articles/CBMie0FVX3lxTE5UNm1JTGhxR1lJbWlXTEpySG04ZGtxa0hvTUhUbEpwcEV1V200R1ctZk9zZmlwT2Q2bjVGZkhBcXVBTDJFMTRIdjVwUmpvR3F3aEZpRENBbU1aNE1mMDZ4OGRCdDBsbnZ5c0NQdDFpekUzQzJQRVR2THd3TQ?oc=5
+- [7] Oil falls as Trump signals restraint on Iran despite fresh shipping attacks | Yahoo Finance, Investing.com, TimesLIVE, شبكة تواصل الإخبارية | https://news.google.com/rss/articles/CBMie0FVX3lxTE5UNm1JTGhxR1lJbWlXTEpySG04ZGtxa0hvTUhUbEpwcEV1V200R1ctZk9zZmlwT2Q2bjVGZkhBcXVBTDJFMTRIdjVwUmpvR3F3aEZpRENBbU1aNE1mMDZ4OGRCdDBsbnZ5c0NQdDFpekUzQzJQRVR2THd3TQ?oc=5
 - [6] Iranian official says no vital infrastructure damaged in US attack on Qeshm island | Middle East Eye, Al Arabiya English, GMA Network, The Express Tribune | https://news.google.com/rss/articles/CBMixAFBVV95cUxQd2ZJbmNiVXhzam8ydFl1MTVaTGdrZGM1REZkNkFvZEdlTFc1ODgyV24xTEJqVTQxZXdVUkVaV0ladHJpa1dKek5RTlJnUVdWNUJ0RWdiQ1Y1RnFpZW9MOUR0U0I1Ukh4WWU0dVA4YmMtWDdUdVVQX2dYU19DWERPQV80M29Gbkp1dGdMOC00X2dURzczN0VHdnBHRXNhN0V3M0dlZFJMdGxhUHRMTUdNa1dKYVQ5Z3NaWDRqTG1aLWNwZTVJ?oc=5
 - [5] Two oil tankers are burning in the Strait of Hormuz after hitting naval mines | Demócrata, The Economic Times, Ratopati, İlke Haber Ajansı | https://news.google.com/rss/articles/CBMivAFBVV95cUxNWjV3Sk5haGpEWTZfS2tCT0tmZ2FsZE53dVlIczVFOF9DNTY0N3pERGVOODFXelAzazFoTXJydUYzSU9XUnZ2N2NoLUtVeFBzOUJ3eDBqTDZ0dXgyYkdlZFh0VzFtbDVJckk3QlpjVHllOUV0SjhhcHBVQjYtTFk3aGZPd2tzVzF0azhPZEVoUnpWZmxRMFRKbGdsdGUta0ZmU1QwZDh1cFdoVE1xMWlYZ2FXRk5qcFA4YWRGNtIBwgFBVV95cUxNcWZNNlJTMll0MWFfNnBmV1BnNENiR2lGV1c1eGFYTjNUM3hsUW82azl1cEpoaW1vaGxPN1FWMEdCRXpyQmo4TVQ4UGU4OU1NMWNyN2ItWjdBdk8ycGNyNHVubURDNHRCTG1Bc1lxMFM1R18xXzF0X1ZHSGRnNDlpY1NIMjJPekdXclY4S2RFeS1heURJTnVEa24zblNVUXlZcW9tVkVMY0VJMGlINUQ0WUpFREJtNmg0VGk3XzFRQnlaZw?oc=5
 - [5] Two tankers explode, burn in Strait of Hormuz | Mehr News Agency, Pars Today, وكالة سبأ, www.thepost.co.nz | https://news.google.com/rss/articles/CBMihwFBVV95cUxQSDRvZEUydmdXT2liVlVmRGxZWUMtcG56RlhXS0c1SUpqMDctYWN5ZmVrQzB0VjBrX0pjeGh4QVhDZlpQQVpWTlZfd0JsOGM3T21laXBOT3JfaVB0WGxGZEtOMmhFNmxsaUVEYlM4TGRPTTdUSVk1cHdwSUVpOXJLaE9wZ1RWMmM?oc=5
@@ -172,6 +179,7 @@ iran fx: {"usd_rial": 2649000, "usd_toman": 264900}
 - [3] Iran says 2-day proposal stands, warns US against renewed attacks | Anadolu Ajansı, Yeni Şafak English, JNS.org | https://news.google.com/rss/articles/CBMisgFBVV95cUxQQmY3Zkl4MlNfSDhBMkhWWmZPZHVzOWlqRmpvNDZlMmJQeU11OEZaemgzNEpkaHNLR1UyRjYxcTlkelBuSWhCSlI1OU1SMHJHamtwNXlVWlFvZTE4WU8tODhWZTVvNTBHOWllTGNPUzlCN0VUaXBHSG9jUWIxbF9Vc0tFd2FpNExtM0VvcXVNZTMyY19qQTlSZVMwSFpwTGxZVGdUNnJsQnhHSTJ3NVV5M2FB?oc=5
 - [3] Araghchi says Iran’s proposal to US on Strait of Hormuz still stands | Trend News Agency, AzerNews, Xinhua | https://news.google.com/rss/articles/CBMiT0FVX3lxTE9JZzBPYVVxY2RQVWp2Z2VnemU5UXU2OExKdTU0TUM0dFhZcXZ0R2YxWVZ2ZDBnN2RVOWtIczUtVWFCcnB0RmQtbkRRM01YQnM?oc=5
 - [3] Iran threatens to ‘rain down hell’ if US escalates war | Al Jazeera, World Israel News, Israel National News | https://www.aljazeera.com/news/2026/11/8/iran-threatens-to-rain-down-hell-if-us-escalates-war?traffic_source=rss
+- [3] Trump Sees New US Strikes on Iran as Unlikely Amid Progress in Talks | SFG Media, Arabian Business, Radio Free Europe/Radio Liberty | https://news.google.com/rss/articles/CBMigAFBVV95cUxQZHNJYzFJTG1ZQ3lKdTBha3Y5MndpSWRMemFmeWtFSVpwZXlwc0o4NlBuZ3A3eWhiOHJNVTJ2Z0UzbzI2d0lYeEF1MU4yMFVyOG1zR1R6Mzg0WGdRM1hmejkwZjRPZC1NVXFhcEdxSV8xR2hsbjVQdFhIbEtkMmRicw?oc=5
 - [3] Iran: Trump says strikes unlikely if peace talks keep moving | DW.com, Arise News, Tempo.co English | https://news.google.com/rss/articles/CBMilwFBVV95cUxQNmJ1ZUpQbVJBVkZJRFduUlpvQllXakM0QzUwYWdObVFtd2tKTG5SNVFQM0lheTlVR00xYnBfZ2RHX0tzdktEZ0dHRk1jRnEtSzJZRE56VVJsbDZNcVM1bnZQckVmaGNlbjBXTThKVl9FZWkxVVdnRWp4cWJHNTVkTXVwQTJENHBpYV92MTJYZ1Fsdk02Q0pn?oc=5
 - [3] Saudi Aramco tower damaged in Houthi missiles attack on heart of capital’s financial district | New York Post, 조선일보, Peoples Gazette Nigeria | https://news.google.com/rss/articles/CBMiugFBVV95cUxPcFExa2tKc0U4VnBvLU9pUlhiRkhyVjEzc3JZbGxnVFpzRUlrUWpTRjNLcmtZLUxFRm1XVXlvX0FacWEwN2FaT0JaZ2FuYnNHR25lSTFyd2psSVo0OWU4RWs1alZVeTFPWjJYRVV0UzR4c1B4OWtwNXBxNUJUMmc3QXY3U0J6aGpOY003dkRQOVlySmVmNnhZSlNwV0ZDWThvTFJsSV9yRWNnMFhrMk5vTS10SklKMDUzQmc?oc=5
 - [3] Iran vows ‘astonishing’ strikes and lifts missile-range limit as US targets land routes | Fox News, AOL.com, Wisdom 92.1 | https://news.google.com/rss/articles/CBMirAFBVV95cUxNVmFjY1UwcWdiOGlGSXgyQlZZakp5clRWaDZZeTUtay1ndlRWMTFUU3hSbGtVWFFUWERkN1VRVlByaXlRUGhlSWJQa09VSnNrUlRIYWpqWjhGZ0xEUXJKU3V0MXRHbGE5SVk1dHNWcTI1a0NlWlhHTEo0dHJHMXlrUDN5YVltc19XWVRBWDJLYVI5ZWVRZVl4RndYd2ZpdFA3bzVROURqS1ZFeXlv0gGyAUFVX3lxTE1OQmZMZjJrSEsxcXQ4WDlPUUlmZkVRcVBmaTRMdGQwTWRLM09EQ0dqSk5aWWhuZnRvVXFNNjVFZ1M4OFdHT3k4UkJpMS1Tc2dNQnVoc1RMbVdydWRzZHRsVmRfNVZjZDIwNmNoTDZkOHpSN3c4UV9KY3FFWU9panRjZm05WTEtb3RxdVFuRi1XVVBNTDVkLUlMdGlwc2o1QzBDQjFaNjVHaktKSE1GUk5VUEE?oc=5
@@ -179,16 +187,15 @@ iran fx: {"usd_rial": 2649000, "usd_toman": 264900}
 - [3] Trump cites dislike of Israel as key factor in GOP midterm losses alongside war with Iran | The Jerusalem Post, Anadolu Ajansı, JNS.org | https://news.google.com/rss/articles/CBMiX0FVX3lxTFA4T0xHTHdmU1VxTGp0ZUhfWGN3bW9jUHNsRUFiMzZpMVRlUnk2OUJWV0drdXdKa1NpSkFHcHlRZkhoT05fYThFSGdCZzNyb29Sa3pzUTM4Q1pIckhyTnVv?oc=5
 - [3] US-Iran war news: Donald Trump says renewed Iran attacks 'unlikely' if nuclear program, Strait of Hormuz talks show progress | ABC7 New York, ABC11 News, The Economic Times | https://news.google.com/rss/articles/CBMi1AFBVV95cUxNa2s4bFBLVnU3XzY2dVNwTmpNWktEdmlXSWJjYkVTcDRWYzdjY2Z1RnFGRUd0eHVnVGhVRmNzek9tNU1Gd05lWjhLWDd0WV9Za2pLYXpIREFmRHdUUXdtSm1VSHBabUc5U2NFdFdxbWpPWHNoMkpjenhLSVVfT3luUzRVelVncVB0bjZUcWpmQUNpZ1hOU0ZubEhqeG9BbmJyY2NGYl9OdG1rdF9QeDVPYjI2RDVscDFyRDRiNkF3akNaSzh6WWpybDVoaWN5dGs1aEVGWtIB1AFBVV95cUxNa2s4bFBLVnU3XzY2dVNwTmpNWktEdmlXSWJjYkVTcDRWYzdjY2Z1RnFGRUd0eHVnVGhVRmNzek9tNU1Gd05lWjhLWDd0WV9Za2pLYXpIREFmRHdUUXdtSm1VSHBabUc5U2NFdFdxbWpPWHNoMkpjenhLSVVfT3luUzRVelVncVB0bjZUcWpmQUNpZ1hOU0ZubEhqeG9BbmJyY2NGYl9OdG1rdF9QeDVPYjI2RDVscDFyRDRiNkF3akNaSzh6WWpybDVoaWN5dGs1aEVGWg?oc=5
 - [3] Oil Slipped After Trump Played Down New Strikes On Iran | Finimize, Arabian Gulf Business Insight | AGBI, Quartz | https://news.google.com/rss/articles/CBMijAFBVV95cUxQU0owV0ozR3NRSmJqeElodzFlVEhwaS16a3JKaGVHMnhQRENHcFQ2Sk1qNk11bkFLWU1GLUl2Q2R1X3FJeFZjQTRiRWNoRzJWRnZZaHF5VUs5OFRpc05IeUR4ZHlxUDQ3X3VGNmh5Zl9iQ0JmMWg1anJjQTd6NXlaZ05LcUg4V3g0QV9KSw?oc=5
+- [3] Trump announces Task Force Iron Gate to choke off Iran's trade routes, enforce restrictions on weapons sup | The Economic Times, The National, Outlook India | https://news.google.com/rss/articles/CBMingJBVV95cUxPLW1kZ0xtci1QTnN6OHpaNFktcTFLbURrYmxMZFBkb05rRjBENW5POHQ2UDE4MERnU2tWVWJsSXhpVzNyV1F5MHlUc0JBV0dVdjE3Y1pnNUpKdFBlLUhkeDFLdDVqOGdYZzFseXlxeVZ5YVJJdW02UXBTbXVRMVp3QlcyM204cVY4QUFIVGNQQUVOTGdGMVRMMnZnOUJEbWprYzFqVHhydkJnUEo3a29tWUlycVI1bHVwNlBiSWNXY2RtVGpreVBWbjE2TUpCeEk2dXJHNWJ1WjljN1hFWXIxUm9pSEdZVUVCVXAzSXd6UWx6U1U5blFZU2RadGs0VFhOSFpnWnRoVzdnZlZ1eUpnQlhHakRVS0Fwb3lTZnJn0gGjAkFVX3lxTE8ycHVuNmE5NmJRbGpkUjloc0RKX3JDTUpQVjVmTFJybFlxOGpXWkFJWUdOWTFWWUhxMWttd1BheDVqZWF2X3VmcFc1OGh0elBDQzl1RVpMM2ZUTy1lSmtwZEp3RFBSLTVQQjkyRG5oUWR1ank4emNLdHNsWUlTS0ZxbGN0ZU05SUNTNU0zTlBWWFF5bGdISHhHbFhUcGFoMHZZMHc1S0puRTZPa0planhCNUktTzVpdmpmaTRCaU5ET3BXNGtDMVZ1YmNCV3hqX3pLUDU4TFhsWktqMkNGNzJtT3Z0RzNKdDFJdUlGZ2lGLTZpOThSYjgwaVBQendJMnlCcko0MC1vQThsU25hNTZpU2piNXBYSzFXY0lZb29oVVI2NA?oc=5
 - [3] Trump plans to meet Qatar's prime minister on Monday as the key mediator pushes new proposals in talks with Iran | The Independent, Newswav, ETV Bharat | https://news.google.com/rss/articles/CBMic0FVX3lxTFBSNG4zSUt6Rmd1TFNLMmpmd01SXzlzYmViOTlTRGxub0NsV1hRaVN1VEdpTFpnM0JVU0F4M1RQQVgzX3A4N1c3S2YxS1V5eHlXVFA0LVZVMU5HdGRZRV9tTkY4ZHZyeGdDeGoxQnhnMVhuTU0?oc=5
 - [3] Rubio says Iran's demands are 'outrageous and ridiculous,' talks unproductive | Iran International, The Business Times, JNS.org | https://news.google.com/rss/articles/CBMiUkFVX3lxTE9SNlFRTS1FcWdWQjRBcUlMWHRrOGRpdVhtQXpOQXhWQmZhdU02SE9Gb2U3eG9Md0Y3a19xXzhSTzNEVzI2eUVkZkRDdDRXTzM1amc?oc=5
 - [3] President Trump Blames Midterm Losses on Iran War, ‘Great Dislike’ of Israel; Rubio Calls Iran Demands ‘Ridiculous’ | The Media Line, Jewish Insider, Palestine Chronicle | https://news.google.com/rss/articles/CBMi3gFBVV95cUxQNlRreTA3RUhjVExkM2YzZnd0azZJSmhGUHphMF9vdERNXzVSWUdOd1drU08wNV8wYVpUcWo4cUFjYVN3Ny05UFoyNEhhUUNZWUhFUUN1YmZTeFpKdEt4WmJ6SGw1U0dHOUU1cE1QLVd5T1lTeGVZeTRCTG9wTUR0ZS1WcDFBNUFqUVlsQ2VEQmd4RmhoeDlxQ0V4ZGxwSzMyZzl1QlJ1XzdqNmpUdTlsd2ZmYjB0bXJjbkhUUFR5SWJmR21wdUt2anVfUTRjRUx3VEhPVF90YzBaeEdCaGc?oc=5
 - [3] Americans Are Tired of Israel Dragging US into ‘Forever Wars’: Iranian FM | تسنیم, The Statesman, ANI News | https://news.google.com/rss/articles/CBMiwAFBVV95cUxNalAycmtWLWR4WmF6elJ1a1BHQlFBVjZvVkl2QjlSTHQ0VzhpNk91YU51U1NmUV94OXNibkJvd0d3QXlQOVpiVy1oZjNnWi13Ui1KZGx2VmVTYkhwVTAzMlZtdXR2bGZ5QWJRVGRnNzRBMXdlTmFHaEV3THplbTdpXzhHbDVJOEwtdE9Xanh4U1Vjem5oVV9xZUdBZmVnUjZFdVphQTRjdG1rbHRGM202NXN0T0RscVRIUjJkSTl5MWzSAcYBQVVfeXFMUHhaR2dDWExWd3RMZEgtWkoxSWF3Si02Vk1vTm1qOVRXdVFtazJGbVNpcF9VNDRURHVMVVg1SE4yT004U01JZUZBdVp6LU85UFItZldWTjNuVk5WZk9Ka3JCZXpmcF82d3lYbzlOZGJpOUhKbkhLLUNtdkFtMVpTTlk0eDVwb2VJcE5NRzVic1lKdWdHS2ZRb095N0RaV1puMm9ER1FjYncxclBIOWtPZ1JmQjc0NEtHdFRERlJXNW1NQWN6ZGZn?oc=5
 - [3] Live: Trump set to meet Qatar’s prime minister amid stalled US-Iran talks | Middle East Eye, NewsCord, 파이낸셜뉴스 | https://news.google.com/rss/articles/CBMilgFBVV95cUxNc2dqR0tHT2ZrV1FKNmI1RXVhS0lqYjVZdjFxeUVrcjJVOHNPLXBTNzcyVmg3WjdDUWtQZk5pX3dESWxKRWFfMmRfNk55THhpNm52TVZ6SjVQdkx6cFhCN2swaWprVU94ZTBSWThiY0VSbXJfYTJKUFNpSzBWUUxMMXNiUS1wenJsOU80YWt4VjBTSVAtcHc?oc=5
+- [3] Ahead of meeting with Qatar PM: Trump says Iran war 'highly unlikely' to resume | RTL Today, Opinion Nigeria, Yeni Şafak English | https://news.google.com/rss/articles/CBMikAFBVV95cUxPRlJ5S2NNRHo2Tkhmd1kycHRxVFcybmliOFFseC1CdWtoTnlOVVpkYWdDQXNVaF9Xb3pFbGZGYVFJbDdxRXBScWtRWUZ3RWh2d0V6cV9xZUV5Si1xZmFWQWNieHVERkM2ZDM3Zm0tX1ctM21ZTjJ5SU03N1puYmc0alk0NUREY2lyUFFCdDBEUmY?oc=5
 - [2] US military says strike disabled ship trying to run blockade on Iran | The Times of Israel, NewsCord | https://news.google.com/rss/articles/CBMitAFBVV95cUxNcjNmY2loYkNwUlliS1RFRGpmbzF2MkpjVEFodUlrakhGaVU0VDNQeVBCekFVdFZwZ3NMcEFXbHhiWkU5UDNJVlFRS1U3LW5pckFnVkVPN3RpMElzNEt5MGEyZWkzdG1OR0s5QW1vNG9jdWVHUzVHbS1YQWJDdVhyWnVHY0MwNjVPZnpnTEp6WlMyNmsyc3ZOVUlRcmhGem5pdVplOXphRHVpZjBKaWlfWUM4Qng?oc=5
 - [2] Iran Update, November 7, 2026 | Institute for the Study of War, Critical Threats | https://news.google.com/rss/articles/CBMihAFBVV95cUxNTVZibnpzSFBKemozbnlwa1RsZ0xnRTZHTVZMWWM5TWlEcDFZX3pEczNpWURDdWU0ZmdzZExoZjBwY0NhTUJEVTJfTFhINFhkeTAzODc5V0VlT1lJazdJSXl2aWVoLVFWTTdGZGsxSV9QSnhiM0NPOEt6R3ppZ3JFRlBuSGM?oc=5
-- [2] The U.S. attacks commercial ship that violated the blockade against Iran in the Gulf of Oman | CiberCuba, MundoNOW | https://news.google.com/rss/articles/CBMiwwFBVV95cUxNME1rME93RGltWXpXNVpoc281a0pMdVNoaEhMSHppeFRDeXExN0laS1RfTzQ3NnVYRWZRanF0Q0l0OU9obEdYMEJTTjBBY1RDWlRRV1JNLUNNMjZMUnYxeUNHRnRid2hlN3M1RzlCd0I1ekZfY0YwX0k1bGs4c0xuV3RPZk9pcURTVEd0czVrQkFuRTJGYkgzd3ZmU0Z1M290aURwUEZoWDBUbWN1bzVfYnhvRGZ1d3drdFVodHllUEl4RUU?oc=5
-- [2] Danon to Iranian UN representative: Sit quietly, you and your leaders are cowards | Israel National News, The Jerusalem Post | https://news.google.com/rss/articles/CBMiWkFVX3lxTE95SmVtNmhxaEZmMFRDYWdod3J6LVBoX2NjVnZOWmxCd3EzNDBJLXhYSkZUV3dLX2xrMEhFMUhLLVJhSzJOZHlCSHlCN25leUpROXhBMEN3aWNCUQ?oc=5
-- [2] London Protesters Condemn US-Israeli Threats against Iran | تسنیم, Tehran Times | https://news.google.com/rss/articles/CBMirwFBVV95cUxPa1hJR1UwZk51cUlWLVFpSlFrSVp1UENwZnZoQ0VHbnh3OFpwdXZCNVg4VU1ySjFnV3lkMkZqZWs5bUpla3I5U2pFTUtZb1d0dEhtMUwtRGItQlNwVlRzNE5yc3E3WlNVUWZIbWVSUWhFUW9kUlc3b3dpLXVxd2RyOWdLUXB2anpkQ3dlZEhNWGRNVEpXMnAzalVGRjJ6UHpKQ3pRNHhoVmh4cXN3ZmxJ0gG0AUFVX3lxTE1kWHptcThicDZQelliS05tV3paM0tiaUhYaXBnaGYzc0REQ2JBSE5WRjl0Rk5iYVg5MHg4RWFwdTlOZ0NlRWJxWlNhMG0ybklRSWowMFhwbnh2akdfTERWWHY0Yy05Z2IzcTJQUEF0RERHc29IUG9vSGtIWUpDY0I3WTM4MlhHT2g1QV9uLXlvcXBYWnpXN1FuampveVBmN0RWX19QU2tvOGc3b21mc0pvMEp2eQ?oc=5
 - [1] سنتکام: نیروهای آمریکایی یک کشتی تجاری را در دریای عمان هدف قرار دادند | BBC Persian | https://www.bbc.co.uk/persian/live/cjg477wl2dg2t?at_medium=RSS&at_campaign=rss
 - [1] Iran executes three men accused of working for Israel, US, taking part in anti-government protests | The Jerusalem Post | https://news.google.com/rss/articles/CBMiakFVX3lxTE1hZEdXRll6eEE4c0M2ZmtMejJKZVNubEZIOWtWQVhsbUpicU5MWTA4VExzTmFtQUFjWEhIazBkQW9iRUZVa2YtaU9fZFdqb0tHT2RaYTJTb0VpdDVsQV93Mno0YlNFVk12MWc?oc=5
 - [1] 'They sent missiles, we sent a bill': Bat Yam mayor serves Iranian diplomat with NIS 250m. lawsuit | The Jerusalem Post | https://news.google.com/rss/articles/CBMiakFVX3lxTE1NUWR1T0xMTkNJdXZWU1ViN2hjSTlYTEE1R1pVSVluQ0NBUV9HMFlqem9oclhDNVdTV2xLZVJ2MkliNTJVUlZyYjVrSHluYTdRMHY3VEQ0dFh4YTBLaHc3cEVBZVZQLVh0bkE?oc=5
@@ -231,16 +238,18 @@ iran fx: {"usd_rial": 2649000, "usd_toman": 264900}
 - [1] Iran waiting to resume talks after US midterms ‘shock’Iranian Foreign Minis | Al Jazeera | https://www.aljazeera.com/video/newsfeed/2026/11/8/iran-waiting-to-resume-talks-after-us-midterms-shockiranian-foreign-minis?traffic_source=rss
 
 ## geo (auto-located kinetic reports, UNVERIFIED keyword+place match; check date/source; conf u unless confirmed)
+- 2026-11-09T14:07:56Z قشم (26.95,56.27) strike x3 news:ABC News - Breaking News, Latest Ne: US carries out defensive airstrikes on Iran's Qeshm Island: Officials - ABC News https://news.google.com/rss/articles/CBMiswFBVV95cUxOT1lyY1JTcXBYUkJxYWhiQU9WWUc3NEZ5d0YxOW52Z0d5cU4wREtSUVg4VmZVN0c2Sml2RGR3NHlhWUdVSHNEaDhZRS1jTFpkbDN5bHRZdGdQTDRpb3dRZ0NEay1wS2JSSFZ4d2tmdEpnQTBlTFdydmF4S3Jla0Y5ZXVoNEJaaDEtWGY3VEZrRjZvd29ZOW9UWW10ZVNNZEZtZG1RYlFqOEpwSk5PNGthZmJ6Z9IBuAFBVV95cUxPS3lxaXVsX3lIZnNnQVFQMi11a29sdlplNlhBYWtCYzJaR2NVQzlPVjhKUFcxQ1pkMlFaLUxuSTNBakVmQjctTi1YUWZVd3JMQk5OaGk5cWtVR3RReW8yZWZLLWNRTExoVmpmbVhZUy1UTmNza3Q5dDA5NFpDTy1sQm1YcEwtenUxOUEyMkI4Z1gzOVdiMHBvYmVTaFpaeUtIQzdMcFpKRktSejJvejR3aEdicHdOZmE2?oc=5
+- 2026-11-09T14:01:24Z اهواز (31.32,48.67) missile x2 tg:shin_persian: Shin ✓ @hey_itsmyturn 17:27 Local time / 1357Z Missiles launched in Koy-e Ramazan, Ahvaz. Khuzestan Province, Iran [Delayed Post via FromIran · 120-second delay https://t.me/shin_persian/12179
+- 2026-11-09T13:54:48Z یزد (31.9,54.37) missile x2 tg:shin_persian: Shin ✓ @hey_itsmyturn BM launch from Kuhestan Park Yazd Yazd Province, Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/g https://t.me/shin_persian/12177
+- 2026-11-09T13:52:44Z ایلات (29.56,34.95) explosion x6 tg:yediotnews25: עדכון מבית החולים: בעקבות פיצוץ בלון הגז בטיילת באילת, שני בני אדם נפצעו בן 36 נפצע עם כוויות בגפיים ובגב ומצבו יציב. בן 78 נפצע באורח קל. השניים פונו למרכז הרפ https://t.me/yediotnews25/137533
 - 2026-11-09T13:50:34Z تهران (35.69,51.39) missile x1 news:The Times of India: Iran's Missile Blitz Near Israel's Military HQ? Tehran Drops Explosive Tel Aviv Strike Video | Watch https://news.google.com/rss/articles/CBMihwJBVV95cUxNdmp6NmNPMGhTbUVnMEQxQXI2U1QybmdCS3hQVlFFTG9KdVNqcG1lNVF3MzBvQTVJSUkxdkhWZ3VDQ0NiTGxzRHg5WnU4aEZ0TzVQZHoyblBkbl92Z2FTYUVvdmVpWjB4eU9YMk01ektCREhTRURUSzJKZnV5TThIek1OVGZZWGRQZjQ2M2w4S3NrYl80ZGdOd09wd3I4NjhHR1hWLUpKUEp6MHZSakMzX0FGc1FYemlLQ21IOXBORDB2ZjdhNlhLMjV2bGJSODc4TnZ3b2dCajNYOGhBMERGWU1adVowbUNRZlFsanFkS3pZSHU1Q1o1WS1zVWJkaFAyMGVrZUVGa9IBjAJBVV95cUxQLTBaTnJYejJFMDJOeFVaenZGTmU2REVVY2wyWUVXb1RmSmY0V2tobm5LVEdWRURJaWR6THYzeHZ2VFQyRkpFeHhwZGI3akNsNlRudm5YQkNxRmRjOVBVWFFDZ3RsUS1FT09UcHMtcGg4YTdmdmhtRnVyUE5HNkpFY1I2ZWFzVFNaOTJCSk1VX0lKc1I4dnJhaW9hUXNNMW5oa0k2OWUxVTdqRlYwX0ljSXBvbWtfdVRJYlhMV1JPNWhPN1VDTmFCOTZoM3R5VHQtWk1WUVhwaGMtT0JCczQ1TnlmVFppYjV6Y1BJM2tlU2hBWWkxWVNzbWI5eTQ1aVh2NjFYaUl6S0pLRzZs?oc=5
 - 2026-11-09T13:50:34Z صنعا (15.37,44.19) missile x1 news:Middle East Monitor: Saudi-led coalition says it destroys Houthi missile launcher in Sanaa targeting eastern Saudi Arabia https://news.google.com/rss/articles/CBMi4gFBVV95cUxQZUVGWmxNcXdXaTNCX2hwSEVxRm1TcWZJVnY4RmRjUXVTQWluTkU0ajFBckRxRlpVa3JfWENRVG9EZTJLRmJFbFdaaHVzc2JTUXdCajAzSTVNS0pBNWV1cGJ1MDZFS3YwYnpjbkd3TVFzcnEzMFJ1Z2hUeE5aOEtIU3c3R1lZQnNjRG93QzJ2aC1hRWd1WkxkUzh1cm02OEpYbVhIX0hWd1VoQ2hhMWI1RTM3WUpzTkxPczBldkFLSG9JZmRIWUdjUTNPR0JQWnlMUTJNRzhmRmZjbWdPVlBFMEh3?oc=5
-- 2026-11-09T13:22:25Z ایلات (29.56,34.95) explosion x5 tg:N12chat: איתי גל-און שני גברים בני 36 ו-78 הובהלו לבית החולים יוספטל בעקבות אירוע פיצוץ בלון הגז בטיילת באילת @N12chat https://t.me/N12chat/234125
 - 2026-11-09T13:18:04Z مشهد (36.3,59.6) fire x1 tg:mehrnews: 📹 لحظه نجات دو کودک از حریق منزل در مشهد 🔺 دقایقی حساس و نفس‌گیر؛ آتش‌نشانان مشهد در عملیاتی شبانه، جان دو کودک را از میان شعله‌ها و دود نجات دادند. 🔗 mehrnews. https://t.me/mehrnews/430212
 - 2026-11-09T11:40:38Z فجیره (25.12,56.33) air_defense/missile/drone x1 news:EnergyNow.com: Fujairah Oil Zone Hit by Fire After Drone Attack as UAE Says it Intercepted Iran Missiles https://news.google.com/rss/articles/CBMivAFBVV95cUxOUmRjOW5iTlYxTE5NSkNHZlRTZXJRWXBZTEJMZ0FyNFItWWtPV3pmWUdnVTF0M2JzMmxOTmMyMU5MMG1nM3VJcnk2OS1OMXBrS3IxbTBvVVZVb1N0S2F6M1ZSS09kT18yOWZvZUh1MEdWSzlhTWw2TlAxWmpHcGZOZEN0U0haVUNBWHBPeS1ZNzVzYmlBZkMxTmFkb25vbERIeUx1eDBSeHNoUkVSUjVkc1dZeG8yYUZRbFJoTA?oc=5
 - 2026-11-09T11:40:38Z قشم (26.95,56.27) explosion x3 news:Nacionale, BigGo Finance: Is the US striking Iran again? Trump calls new strikes 'highly unlikely' as Qeshm blasts go unexplained https://news.google.com/rss/articles/CBMipAFBVV95cUxQdWlUUEhvQnRQZGNyQ1BQdWFkbVpXYWxaMU5HV2lHdU11Q0ExckVyRm1PM3VucUtWTG0xTnh0a2g0cEVxbThvN3RCRHFzenNPSC02MEVWdTZwTzA1UjVwa0Y0aVhJZ0VRNlpORExRN2oycFZpMXFoOE8tZjdDWW1Dd1FpSWxLTGRqd2o3WVBhUFpMaGRBUllxQWpXMU9wOFJiVDFEbw?oc=5
 - 2026-11-09T11:40:38Z قشم (26.95,56.27) missile x1 news:The Times of India: Iran Targets US Naval Fleet? Qeshm Attack Triggers IRGC's Missile Response; Warships On Hit List https://news.google.com/rss/articles/CBMihAJBVV95cUxNTC1oTUVQbVpCWkJPY1lDS0VtaGZjUlBwSEoyZUtYUHp4VW1GT0xSTnllUmw1OGpHSXhNYTVrVGVCdnNJTm9JbWlPcHJKazAtQzRtYVRfZkM5THhTR2U4R2w1c3IzQWNDUmJVVmN3LXlEWGpzMFVQUEhfU0hFZjNHXzNWSElXVFg2c25ibTBMSHNsZm1YOTdpaG1LamxXOFpfODlfQ0FTbkhXbm5YZkdXbmI3MU9rU2VySXZXR2c5aE9EZDNJM3ZzLWlqanlPaVV4M0lNVGFPNEJETWR6TzYySlY1TU1OLXVvT3AzZFFVREh0Y0lXT1BScmE3MWNzNVlpSHNpQtIBigJBVV95cUxQdlZNVWlBRGp5MWtZY0Ixa1Q2ajNsUDlfQVNUdEZOSU5yVm4xZ09za0NINDhua0hLN1hjaDNzbWVwbTRTQlVQR0JGT2diSGVOcnBPd2N4aHBCRmlfXzhjbjE0alFzcjR0V2ZGMU5DQXlLYmVwblZ4Qk8xb2hwZG9SSndDbDBWaFhXOERLcDY4cnVudF83LUxHbmFwVzgteEJjTXBVRkxZMlc5dWhzb09FR2F0TUx2QWJhRTR1NHJ1YlBYNUpoNDlQcXVfUENLMnl1RFV2VXJqdE55N3g1RGZMYW10S1o0MU1zS3JaN0hLMnAxN2F1c1lfTmRJa0M4TUV6RFhRTVNWODJudw?oc=5
 - 2026-11-09T11:40:38Z دبی (25.2,55.27) drone x1 news:DD News: Drone attack injures four at Dubai Airport as Iran escalates Gulf operations https://news.google.com/rss/articles/CBMipAFBVV95cUxOQlMtamRoYTR6SVlmVkhud0JRZWpndXpPZjZZUDFGd3phSE9jRE8yQTJ4RHNWLVczNXdRdHM4VjVFbmkzNkYxakplYy1DSXNCZFZLN3hvY19oY19VN3MyVS1VbTcyQzFKZE54SVVVbm1Ib1E5SUp5WHhqR3c1S3p6bFJDZ1YzWUNjcFp6Ym5qLXJiQ2V4cy1RYUxvZG9zSE5TTmRJZw?oc=5
 - 2026-11-09T11:40:38Z تنگه هرمز (26.57,56.25) missile x1 news:Firstpost: '3 Days, 3 Strikes': US 'Pounds' Hormuz, Missiles Activated as Iran Bombs Iraq? | Firstpost Live https://news.google.com/rss/articles/CBMi4AFBVV95cUxOT0g2cGhycDYzd2h2QjJUd0J5bzdnSjhPVnoyV1E1YVNqTzRPaU5aaS1WX0dBSV9ndHRGY0JvTl9DRndYVHhiTUZUNzZyLU14NTM1VDNuLVFJdkV3RzVBLU9lVjNDaUpTbEV5cm01T1pJUTQwRnZPNW5ibmM1bktMbnQ3TXRHOHpNcmVEeUw3aUlLNHJ1YzRmaUlTYUQ4UjRzX0NJZlk1UC15VDFoYmxyandMUXBQN2d1My10SHdmdGxKaTVGcEZkMzU1MGFINFE0NVNJQ2tnNS1mNHhVQU1UeNIB5gFBVV95cUxPQkRSSk9uOHBYUXR0b2t0M3lJSk1jTWlGNHpxdTJTMkJVQkl5Q0s1Q0tfNE5WVlZfUGRHTUY5T3B0dE1jRFFGVE9xRno0THVxWUxKeGJqVS0xZ0oyNmZFd3k1ejduZld6MmFpVTJhUTRMZ2t4VldVMmptVnJIVE9maWZLU19vTmFkTjdZOHc2OFdscGNQdWNtX3k4X1huSi1vcGlKUjk2YjZxM0FWZGx1c2dYa1Z4cW1jUUVYVjNRM1hHeEJoNzRxR1dMZnNBR2o2ZDY1N0tjdk1KSENwM0FjLWRhRHpiQQ?oc=5
-- 2026-11-09T11:40:38Z قشم (26.95,56.27) strike x2 news:Yeni Şafak English, Anadolu Ajansı: Iran says US strikes on Qeshm Island caused no infrastructure damage https://news.google.com/rss/articles/CBMiqwFBVV95cUxNYWVzc2tnVzVSdTBzcUg3bE1JNS03MnlxaEhNbHg0WDlXZVFtZnZLbXJobXdDSFBZQ0hldDB0WGwtNjRSZnIzSnExM0lZUUJLUzFoU2w3bzdEdUVZRFJMYnYyT1VBa2VFcWtNTU95ZmhyYTVHeHlYd2JfN1kwelRLV0Zwd3MxTzE2NlpfZEM0MklXX00xbG1DWmc2clhOc2wtejUxaW8tQ1dCRk0?oc=5
 - 2026-11-09T11:40:38Z ریاض (24.71,46.68) missile/drone x3 news:Addis Standard: Daily_Brief: #Houthis claim wave of missile, drone attacks on #Riyadh, #Saudi_Arabia reports intercepts and minor damage to #Aramco building https://news.google.com/rss/articles/CBMiUkFVX3lxTE1nQnBvLXBmSFV5bVFTbDlaVXNuTGdaSE15WmNWMXF0ek1iNGRCdWtuQUhCQXlycGZkYnphNGoweGV3VTExNGtnak9MRmFySkdiU3c?oc=5
 - 2026-11-09T11:40:38Z تنگه هرمز (26.57,56.25) fire x1 news:JFeed: Iranian Attack Sets Oil Tanker Ablaze in Strait of Hormuz https://news.google.com/rss/articles/CBMiUEFVX3lxTFBpOUU1R212Y3pXaHNteHViU1VlY0ZoVmlzS09oZ3BJdDJLakdZNzFVLWVXMXBSNUxxLXQxNWVUTGZIM1NvN2lCakpjUFdSVDdj?oc=5
 - 2026-11-09T02:42:10Z ریاض (24.71,46.68) missile x1 news:JournalArta: Aramco Tower in Riyadh Hit as Houthis Claim New Missile Strikes https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZEFwdVJlTnBIQ0x4VXhLaHdHYnpwa0FzVTB0S3AtNHdNRUVKVm1IWWh0cU1GdE9ZVFMxWmtxczZKZE5Zc3V3TF9ZbXE1XzNqSDNBM0FkTzBZYjhIMWpLcW82b3c3cXloWWU3N0x1WVZRTHN0cnYzQjlsRklTejRzWGZIQUpPbnh5Umpz?oc=5
@@ -253,6 +262,36 @@ iran fx: {"usd_rial": 2649000, "usd_toman": 264900}
 - 2026-11-08T18:51:08Z ریاض (24.71,46.68) missile x1 news:Arab News, Saudi Gazette: Qatar, Bahrain, and Syria condemn Houthi missile attacks on Riyadh https://news.google.com/rss/articles/CBMirgFBVV95cUxOV05UbWVKZjVxaGx5el9nbUNKWGtPMHhYZ0JWNzR6WDNhSnF3c0hDNFRXV2pFdDlNRTZsb2F4RkZCUDdGQnZ5QThWdVZyOUJzeHVyb2Q4R250SndfS01UTTdITVBIQ0NYVlEtUEhuZmFlZWlKRnhBQTcyU08ydHY5QjlrY2ZBbnBQUmhaRVZUeWdzNTg5cndhYzJLOG1pX1BSdEZ3LWRhdm44SEl6QUE?oc=5
 
 ## telegram (relevant)
+- 2026-11-09T14:10:02Z @indypersian: ♦️ پیکر ۹ ایرانی که در پی برخورد یک دستگاه کامیون با مینی‌بوس مسافربری در استان وان ترکیه جان باختند، پس از انجام مراحل قانونی به ایران منتقل شد. هم‌زمان، سفارت جمهوری اسلامی ایران در آنکارا اعلام کرد https://t.me/indypersian/182280
+- 2026-11-09T14:09:56Z @warmonitors: ⚡ The UAE’s Khor Fakkan has shut down a local beach after spotting an oil spill, according to a notice posted on social media 💧 Rainbet.com the #1 Non-KYC Crypto Casino & Sportsbook @rainbetcom +18 https://t.me/warmonitors/46587
+- 2026-11-09T14:09:05Z @akhbarefori: ♦️ تصویری تماشایی از دماوند زیبا #ایران_زیبا #اخبار_مازندران در فضای مجازی 👇 @akhbarmazandaran https://t.me/akhbarefori/705626
+- 2026-11-09T14:07:42Z @Tabnak_ir: 🔺 دیدار نخست وزیر عراق با قالیباف 🔹 یک منبع آگاه سفر چند ساعته نخست وزیر عراق به تهران را تایید کرد. 🔹 به گفته این منبع آگاه این سفر روز جمعه انجام شد و طی ان علی فالح الزیدی و هیات همراهش با اقای قال https://t.me/Tabnak_ir/278652
+- 2026-11-09T14:07:34Z @isna94: سفارت ایران در ترکیه: در حال فراهم کردن مقدمات انتقال مجروحان سانحه رانندگی به کشور هستیم 🔹 سفارت ایران در آنکارا پس وقوع سانحه رانندگی در جاده وان-اوزآلپ ترکیه که به جان‌باختن ۹ شهروند ایرانی و مجروح https://t.me/isna94/412612
+- 2026-11-09T14:06:43Z @iranintltv: نشست بین‌المللی «زنان، آزادی و امنیت» با حضور فعالان حقوق بشر، چهره‌های سیاسی و مخالفان حکومت‌های اقتدارگرا در پارلمان فدرال آلمان در برلین برگزار شد. گزارش علی حسن‌پور، خبرنگار ایران‌اینترنشنال و گفت https://t.me/iranintltv/366129
+- 2026-11-09T14:06:25Z @iranintltv: شهرام خلدی، پژوهشگر تاریخ خاورمیانه و روابط بین‌الملل، در واکنش به نشست وزیران خارجه گروه هفت در پاریس گفت پایان دادن به جنگ اوکراین برای اروپا، نسبت به جنگ جمهوری اسلامی و آمریکا، اولویت دارد. @irani https://t.me/iranintltv/366128
+- 2026-11-09T14:05:00Z @geopolitics_prime: ⚛️ 📊 Palantir veterans raise $300mn to weaponize Europe’s arms supply chain Two former Palantir employees have positioned themselves to profit from Europe's aggressive military build-up, reports the F https://t.me/geopolitics_prime/77536
+- 2026-11-09T14:04:57Z @akhbarefori: 🎥 فراخوان خبرفوری؛ ایران زیبا 🔹 زیبایی‌های سرزمینمان از نگاه شما؛ پاسخی به اظهارات توهین‌آمیز ترامپ که ایران را «زشت‌ترین و خشن‌ترین کشور جهان» توصیف کرده است. 📍 استان کرمان 🔹 محبوبه اکبری 🔹 شما هم تص https://t.me/akhbarefori/705619
+- 2026-11-09T14:04:42Z @iranintltv: گوئو جیاکون، سخنگوی وزارت خارجه چین، دوشنبه ۱۸ آبان اعلام کرد که پکن درباره دیدار احتمالی روسای جمهوری چین، آمریکا و روسیه برای گفت‌وگو درباره پایان جنگ ایران، با این دو کشور در تماس است. او در نشست خ https://t.me/iranintltv/366127
+- 2026-11-09T14:03:53Z @akharinkhabar: 🔺 🔻 تکذیب خبرسازی اسرائیل دربارۀ مذاکرات ایران و آمریکا فارس: 🔹 ساعاتی پیش تعدادی از رسانه‌ها به‌نقل از روزنامه اسرائیل هیوم، مدعی شدند، ترامپ روز دوشنبه با نخست‌وزیر قطر دیدار می‌کند تا در مورد پیشنه https://t.me/akharinkhabar/643645
+- 2026-11-09T14:02:29Z @indypersian: ⭕️ تلاش دموکرات‌ها برای پایان دادن به جنگ ایران از مسیر قطع بودجهٔ نظامی 📌 دموکرات‌ها که در انتخابات میان‌دوره‌ای آمریکا به پیروزی رسیدند، خواهان تعیین محدودیت‌ها و شروطی مشخص برای جنگ با ایران‌اند ♦️ https://t.me/indypersian/182279
+- 2026-11-09T14:02:24Z @mehrnews: 📹 عزاداری ۲ هزار نوجوان قمی در سوگ حضرت زهرا(س) 🔺 قم- دو هزار نوجوان از مدارس استان قم با برپایی دسته عزاداری در حرم مطهر حضرت فاطمه معصومه(س)، در سوگ شهادت حضرت فاطمه زهرا(س) به عزاداری پرداختند. 🔗 m https://t.me/mehrnews/430223
+- 2026-11-09T14:02:24Z @mehrnews: کشف ۷۰ قبضه سلاح جنگی و شکاری غیرمجاز در هرمزگان 🔺 بندرعباس - رئیس سازمان اطلاعات فرماندهی انتظامی استان هرمزگان از کشف ۷۰ قبضه سلاح جنگی و شکاری غیرمجاز و دستگیری ۱۹ نفر در هرمزگان خبر داد. 🔗 mehrnew https://t.me/mehrnews/430224
+- 2026-11-09T14:02:24Z @mehrnews: 📹 باران پاییزی همچنان مهمان لاهیجان است 🔺 لاهیجان- تداوم بارش باران پاییزی در لاهیجان، جلوه‌ای تماشایی به فضای شهری بخشیده و حال‌وهوای پاییز بارانی را در معابر این شهر به تصویر کشیده است. 🔗 mehrnews.c https://t.me/mehrnews/430225
+- 2026-11-09T14:02:05Z @abualiexpress: רוצים לדעת איפה מחירי הנדל"ן יזנקו בעשור הקרוב? תעקבו אחרי התוכניות הממשלתיות ותראו איפה המדינה משקיעה בפרויקטים לאומיים בואו להשקיע בדיוק עכשיו בקרקע למגורים ב'באר יעקב' – במתחם שמדינת ישראל מקדמת בו https://t.me/abualiexpress/133354
+- 2026-11-09T14:01:44Z @iranintltv: بر اساس ویدیوهای منتشرشده، گروهی از بازنشستگان مخابرات در تهران دوشنبه ۱۸ آبان برای پیگیری مطالبات خود راهپیمایی اعتراضی کردند. https://t.me/iranintltv/366126
+- 2026-11-09T14:01:24Z @shin_persian: Shin ✓ @hey_itsmyturn 17:27 Local time / 1357Z Missiles launched in Koy-e Ramazan, Ahvaz. Khuzestan Province, Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/Ej https://t.me/shin_persian/12179
+- 2026-11-09T14:01:20Z @shin_persian: Shin ✓ @hey_itsmyturn 17:27 Local time / 1357Z Missiles launched in Koy-e Ramazan, Ahvaz. Khuzestan Province, Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/Ej https://t.me/shin_persian/12178
+- 2026-11-09T14:00:07Z @akharinkhabar: 🎥 تصاویری از حادثه تصادف ون حامل اتباع ایرانی در ترکیه که منجر به کشته شدن ۹ نفر و زخمی شدن ۵ نفر شد @Akharinkhabar | akharinkhabar.ir https://t.me/akharinkhabar/643643
+- 2026-11-09T13:59:28Z @mehrnews: 📹 صحبت‌های زنده‌یاد کوروش زارعی درباره رهبر شهید انقلاب 🔗 mehrnews.com 📡 @Mehrnews https://t.me/mehrnews/430222
+- 2026-11-09T13:58:02Z @irna_1313: تداوم سرما همراه با بارش باران در تهران 🔹 مدیرکل هواشناسی استان تهران از تداوم موج سرما همراه با بارش باران و همچنین وزش باد نسبتا شدید در ۴۸ ساعت آینده خبر داد. https://irna.ir/xjYHt3 @IRNA_1313 https://t.me/irna_1313/471764
+- 2026-11-09T13:57:56Z @presstv: A van carrying Iranian passengers collided with a truck in Turkey's Van province, killing nine people and injuring five others. @PressTV https://t.me/presstv/214011
+- 2026-11-09T13:57:15Z @euronewspe: مسعود پزشکیان، رئیس‌جمهوری ایران گفت که مجتبی خامنه‌ای، رهبر جمهوری اسلامی دستور داده است تا به وضعیت «نه جنگ، نه صلح» پایان داده شود. https://l.euronews.com/20KL https://t.me/euronewspe/91710
+- 2026-11-09T13:56:44Z @mehrnews: دیدار نخست‌وزیر عراق با قالیباف 🔺 رسانه های عراقی از سفر چند‌ساعته نخست‌وزیر عراق به تهران خبر دادند. برخی منابع خبری اعلام کردند که این سفر روز جمعه انجام شد و طی ان علی فالح الزیدی و هیئت همراهش با  https://t.me/mehrnews/430221
+- 2026-11-09T13:56:36Z @akhbarefori: ♦️ تصاویری از حادثه تصادف ون حامل اتباع ایرانی در ترکیه که منجر به کشته شدن ۹ نفر و زخمی شدن ۵ نفر شد 🇮🇷 ✊ @AkhbareFori | Link https://t.me/akhbarefori/705617
+- 2026-11-09T13:55:18Z @akharinkhabar: 🔺 🔻 حنظله: دیشب صدای ما را از قلب تل‌آویو شنیدید؛ این آخرین هشدار است 🔹 گروه حنظله اعلام کرد صدها هزار بیانیه هشدارآمیز در مقابل منازل ساکنان تل‌آویو نصب کرده و در صورت حمله مجدد به زیرساخت‌های انرژی  https://t.me/akharinkhabar/643640
+- 2026-11-09T13:54:48Z @shin_persian: Shin ✓ @hey_itsmyturn BM launch from Kuhestan Park Yazd Yazd Province, Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/gkF6Lf2NFAgpXi_xGMbyEzk5?xv=1 ترجمه خودکا https://t.me/shin_persian/12177
+- 2026-11-09T13:54:46Z @shin_persian: Shin ✓ @hey_itsmyturn BM launch from Kuhestan Park Yazd Yazd Province, Iran [Delayed Post via FromIran · 120-second delay] https://fromiran.sh1n.org/incidents/gkF6Lf2NFAgpXi_xGMbyEzk5?xv=1 ترجمه خودکا https://t.me/shin_persian/12176
+- 2026-11-09T13:54:15Z @iranintltv: شبکه کان اسرائیل گزارش داد پلیس این کشور دوشنبه ۱۸ آبان، پس از کشف اعلامیه‌های تهدیدآمیز در صندوق‌های پستی ساکنان شمال تل‌آویو که گمان می‌رود منشا آنها جمهوری اسلامی باشد، تحقیقاتی را آغاز کرد. هم‌زما https://t.me/iranintltv/366125
 - 2026-11-09T13:52:00Z @irna_1313: تجهیزات صنعت برق در اولویت تخصیص ارز قرار گیرد/ مطالبات انباشته پرداخت شود 🔹 محمدهادی فقیه‌زاده رئیس سندیکای صنعت برق ایران با تاکید بر اینکه صنعت برق برای بقا و تداوم تولید نیازمند نگاهی هم‌تراز با ک https://t.me/irna_1313/471762
 - 2026-11-09T13:51:39Z @jamarannews: 🔴 میدل‌ایست مدعی حضور الزیدی در سفر هیات عراقی به تهران شد 🔻 میدل‌ایست نیوز به نقل از یک منبع مطلع در وزارت خارجه عراق نوشت: در سفر هیات عراقی به تهران، علی الزیدی، نخست وزیر عراق و فالح الفیاض، رئیس  https://t.me/jamarannews/560549
 - 2026-11-09T13:51:08Z @almayadeen: إيران: مصدر مطلع لوكالة "فارس": الأخبار عن فتح مضيق هرمز مقابل الإفراج عن 8 مليارات دولار من الأصول الإيرانية لا أساس لها من الصحة https://t.me/almayadeen/405797
@@ -273,33 +312,3 @@ iran fx: {"usd_rial": 2649000, "usd_toman": 264900}
 - 2026-11-09T13:40:40Z @akhbarefori: ♦️ کوثری، عضو کمیسیون امنیت ملی مجلس: آمریکا تمام توان خود را برای بازگشایی تنگه هرمز گذاشته و نیروهایش را به ۷۰۰ تا ۱۰۰۰ کیلومتری ایران عقب برده است 🇮🇷 ✊ @AkhbareFori | Link https://t.me/akhbarefori/705614
 - 2026-11-09T13:40:40Z @jamarannews: 🔵 🔴 سخنگوی وزارت خارجه چین: ایران و آمریکا باید اختلافات را از طریق گفت‌وگو حل و فصل کنند. یک درگیری طولانی مدت به نفع هیچ‌کدام نیست. 🇮🇷 @jamarannews https://t.me/jamarannews/560547
 - 2026-11-09T13:40:36Z @isna94: تایید سفر نخست‌وزیر عراق به ایران 🔹 یک منبع در وزارت امور خارجه عراق امروز (دوشنبه) از سفر هیات عراقی به تهران در روز شنبه، به سرپرستی علی الزیدی نخست وزیر عراق و فالح الفیاض رئیس سازمان الحشد الشعبی  https://t.me/isna94/412609
-- 2026-11-09T13:40:27Z @bbcpersian: 🔻 در حالی که تلاش‌های دیپلماتیک برای جلوگیری از تشدید درگیری‌ میان ایران و آمریکا شتاب گرفته است، مسعود پزشکیان بر اولویت دادن به دیپلماسی در مقابل جنگ تاکید کرده است. رئیس‌جمهور ایران گفت: «می‌توانیم https://t.me/bbcpersian/295054
-- 2026-11-09T13:40:12Z @Tabnak_ir: 🔺 سخنگوی وزارت خارجه چین: ایران و آمریکا باید اختلافات را از طریق گفت‌وگو حل و فصل کنند 🔹 یک درگیری طولانی مدت به نفع هیچ‌کدام نیست. 🌐 Tabnak.ir @Tabnak_ir https://t.me/Tabnak_ir/278651
-- 2026-11-09T13:39:36Z @shin_persian: Shin ✓ @hey_itsmyturn IRGC-owned Fars, citing an informed source, reports Iraqi PM Ali Faleh al-Zeidi visited Tehran for several hours Friday and met Ghalibaf, Iran’s chief negotiator. Talks focused s https://t.me/shin_persian/12175
-- 2026-11-09T13:37:09Z @jamarannews: 🚩 تاج: تغییراتی در کادر فنی تیم ملی خواهیم داشت مهدی تاج، رئیس فدراسیون فوتبال: 🔴 از امیر قلعه‌نویی تا جام ملت‌های آسیا ۲۰۲۷ حمایت می‌کنیم و تغییراتی در کادر فنی خواهیم داشت. 🔴 قلعه‌نویی و گل‌محمدی نگ https://t.me/jamarannews/560546
-- 2026-11-09T13:36:00Z @akhbarefori: ♦️ اعتراف مایک فلین، مشاور پیشین امنیت ملی کاخ سفید: فکر می‌کردیم ایران با بمباران از هم می‌پاشد، اما نشد و به ما با شدت هم حمله کرد! 🇮🇷 ✊ @AkhbareFori | Link https://t.me/akhbarefori/705613
-- 2026-11-09T13:35:11Z @farsna: کوشکی برای ادامۀ درمان از گچساران به تهران می‌آید ⚽️ باشگاه استقلال: علیرضا کوشکی پس‌از انجام عمل جراحی به‌دلیل مشکلات تنفسی در شهر اهواز، به‌صورت زمینی راهی گچساران شد تا مدتی کنار خانواده باشد. ⚽️ ا https://t.me/farsna/473420
-- 2026-11-09T13:34:59Z @iranintltv: ویدیوهای رسیده به ایران‌اینترنشنال نشان می‌دهند گروهی از حواله‌‌داران خودرو دوشنبه ۱۸ آبان در اعتراض به صادر نشدن دعوتنامه خودروهای پیش‌فروش آبان و افزایش دوباره قیمت از زمان ثبت‌نام، مقابل سازمان فرو https://t.me/iranintltv/366121
-- 2026-11-09T13:34:50Z @irna_1313: پوشش زنده ایرنا؛ 🎥 اسحاقی: استقلال‌طلبی، یکی از اصول بنیادین سیاست خارجی ایران‌زمین است معاون دفتر حفظ و نشر آثار رهبر شهید: 🔹 ما معتقدیم از رهبر شهید، دو چیز به میراث مانده است؛ نخست ایران قوی که توا https://t.me/irna_1313/471754
-- 2026-11-09T13:34:45Z @akhbarefori: ♦️ ادعای الجزیره: ناو هواپیمابر آمریکایی «روزولت» و گروه رزمی آن پس از توقفی دو روزه در پایگاه دریایی سنگاپور، این پایگاه را ترک کرد تا سفر خود به مقصد خاورمیانه را از سر بگیرد 🔹 هنوز مشخص نیست که آیا https://t.me/akhbarefori/705612
-- 2026-11-09T13:34:10Z @manniefabian: Ten Palestinians affiliated with the Palestinian Islamic Jihad terror group, whom the military says were planning to carry out an attack on Israeli civilians, were captured during a raid in the West B https://t.me/manniefabian/59493
-- 2026-11-09T13:34:09Z @euronewspe: وزیران خارجه کشورهای اروپایی روز دوشنبه در نشست گروه هفت در پاریس با مارکو روبیو، وزیر خارجه آمریکا درباره جنگ اوکراین و تنش‌ها با ایران گفت‌وگو می‌کنند. انتظار می‌رود آن‌ها از واشنگتن بخواهند در تواف https://t.me/euronewspe/91709
-- 2026-11-09T13:32:20Z @iranintltv: 🔻 سحر آغنده، سرمربی تیم بسکتبال زنان آکادمی سحر، با انتقاد از لغو بدون اطلاع قبلی قطار بازگشت تیم از آبادان به تهران، گفت که اعضای تیم ناچار شدند با اتوبوس سفر کنند. سفری که با واژگونی اتوبوس و مصدومی https://t.me/iranintltv/366120
-- 2026-11-09T13:32:02Z @Tabnak_ir: 🔺 دیدار نخست وزیر عراق با قالیباف 🔹 یک منبع آگاه سفر چند ساعته نخست وزیر عراق به تهران را تایید کرد. 🔹 به گفته این منبع آگاه این سفر روز جمعه انجام شد و طی ان علی فالح الزیدی و هیات همراهش با اقای قال https://t.me/Tabnak_ir/278648
-- 2026-11-09T13:31:37Z @rotternews: טראמפ ביקש מהראש הממשלה העיראקי לפעול כבורר מול איראן (תקשורת סעודית) 📰 לאשכול המלא 📰 https://t.me/rotternews/370428
-- 2026-11-09T13:30:46Z @ynetalerts: 🔴 ‏צה"ל: נעצרו 10 מחבלים שתכננו לבצע פיגוע בשומרון למבזק המלא ב-ynet > https://t.me/ynetalerts/77524
-- 2026-11-09T13:30:39Z @mehrnews: لاوروف: مسائل امنیتی در صدر دستور کار مذاکرات ابوظبی قرار دارد 🔺 سرگئی لاوروف، وزیر امور خارجه روسیه روز دوشنبه اعلام کرد نخستین محور دستور کار مذاکرات سه‌جانبه آتی میان روسیه، آمریکا و اوکراین در ابو https://t.me/mehrnews/430216
-- 2026-11-09T13:30:12Z @clashreport: Ukraine’s parliament advances the creation of Space Forces to counter missile threats including Russia’s Oreshnik and to launch its own military satellites. READ MORE https://t.me/clashreport/105244
-- 2026-11-09T13:29:39Z @i24NEWS_HE: מקור אזורי ל-AP: סוריה צפויה להצטרף ל"ברית מכה", חשש שתבקש ממדינות ההסכם תמיכה מול ישראל (זמן קריאה: 1 דקות) הכתבה של: נטלי הוויט המקור אמר ל-AP כי א-שרע צפוי לשלוח לוחמים סורים לשטח תימן, והוסיף כי ה https://t.me/i24NEWS_HE/72649
-- 2026-11-09T13:29:01Z @isna94: سخنگوی وزارت خارجه چین: ایران و آمریکا باید اختلافات را از طریق گفت‌وگو حل و فصل کنند 🔹 یک درگیری طولانی مدت به نفع هیچ‌کدام نیست. 🔹 دو طرف باید در برقراری هرچه سریع‌تر صلح و آرامش در خاورمیانه کمک کن https://t.me/isna94/412607
-- 2026-11-09T13:28:04Z @akhbarefori: ♦️ دیدار نخست‌وزیر عراق با قالیباف در تهران با محوریت تلاش برای پایان جنگ ایران و آمریکا 🔹 به گفته یک منبع آگاه، علی فالح الزیدی روز جمعه در سفری چندساعته به تهران با قالیباف دیدار کرد و درباره تلاش‌ه https://t.me/akhbarefori/705611
-- 2026-11-09T13:26:25Z @yediotnews25: ראש המודיעין הטורקי: קטאר מתכננת מפגש בין סגן נשיא ארה״ב לבכיר איראני בשבוע הבא ראש המודיעין הטורקי איברהים קאלין אמר כי קטאר מתכננת להפגיש בדוחא בשבוע הבא בין סגן נשיא ארה״ב ג׳יי. די. ואנס לבין בכיר  https://t.me/yediotnews25/137531
-- 2026-11-09T13:25:04Z @idfofficial: IDF: Security forces apprehended a terrorist cell planning to carry out a terror attack against Israeli civilians This morning (Monday), IDF soldiers and Israel Border Police officers, guided by ISA i https://t.me/idfofficial/19459
-- 2026-11-09T13:24:53Z @presstv: Watch: Red deer roam the misty highlands of Iran’s Hyrcanian forests, creating a captivating wildlife scene. @PressTV https://t.me/presstv/214008
-- 2026-11-09T13:24:51Z @mehrnews: 📹 افزایش ظرفیت خوابگاه‌های متأهلی؛ ۶۴۰۰ واحد در دست احداث است 🔺 ظرف دو سال گذشته، ۱۲۰۰ واحد به ظرفیت ۹۸۲ واحدی خوابگاه‌های متأهلی افزوده شده و هم‌اکنون ۶۴۰۰ واحد دیگر در دست احداث است. همچنین تفاهم‌نا https://t.me/mehrnews/430215
-- 2026-11-09T13:24:02Z @manniefabian: The Israel Police and Shin Bet security agency are investigating flyers found in Tel Aviv today, tied to an Iran-linked hacker group. The flyers, which feature a QR code, were found in mailboxes at se https://t.me/manniefabian/59491
-- 2026-11-09T13:23:03Z @akharinkhabar: 🔺 🔻 دیدار نخست وزیر عراق با قالیباف 🔹 فارس به نقل از یک منبع آگاه: سفر نخست وزیر عراق روز جمعه انجام شد و طی ان علی فالح الزیدی و هیات همراهش با اقای قالیباف، رئیس هیئت مذاکره کننده ایران ملاقات و گفت https://t.me/akharinkhabar/643636
-- 2026-11-09T13:22:02Z @irna_1313: ورود اعضای تیم فوتبال امید ایران به اردو 🔹 بر اساس برنامه تعیین شده از ظهر امروز اعضای کادرفنی و ملی‌پوشان دعوت‌شده به اولین اردوی فوتبال امید ایران زیرنظر یحیی گل‌محمدی به محل مرکز ملی فوتبال وارد شد https://t.me/irna_1313/471749
-- 2026-11-09T13:21:20Z @ynetalerts: 🔴 ‏גבר נורה ברהט, מצבו קשה למבזק המלא ב-ynet > https://t.me/ynetalerts/77523
-- 2026-11-09T13:20:56Z @farsna: دیدار نخست‌وزیر عراق با قالیباف 🔹 یک منبع آگاه در گفت‌وگو با خبرنگار سیاسی فارس، سفر چند‌ساعته نخست‌وزیر عراق به تهران را تایید کرد. 🔹 به‌گفتۀ این منبع آگاه این سفر روز جمعه انجام شد و طی ان علی فالح  https://t.me/farsna/473419
-- 2026-11-09T13:20:21Z @bbcpersian: 🔻 فرود اضطراری هواپیمایی کوچک در جاده‌ای پرتردد در ایالت فلوریدای آمریکا خبرساز شده است. دفتر کلانتر شهرستان «لی» اعلام کرد که دو خلبان هواپیما به دلیل بروز نقص فنی، حوالی ظهر (به وقت محلی) تلاش کردند https://t.me/bbcpersian/295053
