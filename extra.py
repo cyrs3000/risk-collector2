@@ -168,17 +168,26 @@ REGION_BOX = (10.0, 45.0, 25.0, 65.0)  # lat_min, lat_max, lon_min, lon_max  (Le
 HEX_RANGES = {"IR": (0x730000, 0x737FFF), "RU": (0x100000, 0x1FFFFF), "CN": (0x780000, 0x7BFFFF),
               "BY": (0x510000, 0x5103FF), "SY": (0x778000, 0x77FFFF), "KP": (0x720000, 0x727FFF)}
 GOV_CS = ("GAF", "SUI", "CTM", "RRR", "SAM", "SPAR", "VENUS", "EXEC", "IAM", "NAF", "BAF", "PLF", "HUAF", "CEF",
-          "ORF", "QAF", "BAH", "KAF", "RSF", "RJZ", "JYR", "UAF", "PAF", "TUAF", "TRKAF", "SSG", "AME", "SVF",
-          "RFF", "RSD", "IRI", "IRIAF", "SHAHED", "IAF", "EGY", "LYAF", "ASY", "CFC", "AUS", "KIWI", "NOW", "DAF", "HAF")
-GOV_REG = ("A4O-", "A7-H", "A7-M", "HZ-HM", "HZ-MF", "HZ-SK", "A6-PF", "A6-AL", "A6-HR", "A6-DLM", "A9C-", "9K-AK",
-           "9K-GA", "JY-RY", "JY-ONE", "TC-ANK", "TC-CBK", "TC-TRK", "EP-IGA", "EP-AJA", "EP-PAK", "RA-96", "RA-64",
-           "RA-86", "RF-", "YK-A", "YI-AS", "SU-GG", "4K-AI", "EK-RA", "EZ-A0")
-BRIDGE_CS = ("QFZ", "PYA", "IRZ", "FPI", "IRA", "IRM", "IRC", "RDS", "IRU", "SHI", "VDA", "AZS", "RSD", "RFF",
-             "MSI", "KGT", "CKK", "CAO", "SYR", "MHS", "TBZ")
-BRIDGE_TYPES = {"IL76", "IL78", "IL62", "IL96", "A124", "A225", "AN12", "AN22", "AN26", "AN30", "AN32", "AN72", "AN74",
-                "Y20", "Y8", "Y9", "T204", "T214", "TU54", "TU95", "TU16", "TU22", "TU60", "B742", "B744", "B748"}
-INTERESTING_TYPES = {"C17", "C5M", "C130", "C30J", "A400", "KC39", "C2", "K35R", "KC46", "A332", "MRTT", "E3TF",
-                     "E3CF", "E7", "R135", "RC135", "P8", "RQ4", "Q4", "MQ9", "B52", "B1", "B2", "F35", "F22", "F15", "F16"}
+          "ORF", "QAF", "BAH", "KAF", "RSF", "RJZ", "JYR", "PAF", "TUAF", "TRK", "SSG", "AME", "SVF", "RFF", "RSD",
+          "IRIAF", "EGY", "LYAF", "ASY", "CFC", "DAF", "HAF", "UAEAF", "MMF", "NATO", "HKY", "SHF", "PRESIDENT")
+# curated state/VIP registrations (NOT the national airlines that share the same country prefix)
+GOV_REG = ("A4O-AA", "A4O-AB", "A4O-AC", "A4O-AD", "A4O-AJ", "A4O-HMS", "A4O-OMN", "A4O-SO", "A7-H", "A7-MB", "A7-MED",
+           "HZ-HM", "HZ-MF", "HZ-SK", "HZ-AFA", "A6-PF", "A6-AL", "A6-HR", "A6-DLM", "A6-MMM", "A6-UAE", "A9C-BHR",
+           "A9C-HMH", "A9C-HAK", "A9C-BRF", "9K-G", "JY-RY", "JY-ONE", "JY-AW", "TC-ANK", "TC-CBK", "TC-TRK", "TC-ATA",
+           "EP-IGA", "EP-AJA", "EP-PAK", "EP-SHA", "RA-96", "RA-64", "RA-86", "RF-", "4K-AI", "EK-RA", "EZ-A0", "YI-ASA",
+           "AP-BEH", "AP-PAK", "UP-B50", "UK-80")
+# Iran-linked / sanctioned cargo and state operators (Mahan, Qeshm Fars, Pouya, Saha, Fars Air Qeshm, IRGC-linked,
+# Russian state and sanctioned cargo, Belarus state, Chinese military cargo)
+BRIDGE_CS = ("IRM", "QFZ", "PYA", "IRZ", "FPI", "IRU", "SHI", "RDS", "VDA", "AZS", "RSD", "RFF", "MSI", "KGT",
+             "BRS", "PLAAF", "CPA9", "IVC", "FIE", "SBT", "EAG")
+# heavy military/state cargo types only (commercial 747 freighters are excluded on purpose)
+BRIDGE_TYPES = {"IL76", "IL78", "IL62", "IL96", "A124", "A225", "AN12", "AN22", "AN26", "AN30", "AN32", "AN72",
+                "AN74", "Y20", "Y8", "Y9", "T204", "T214", "TU54", "TU95", "TU16", "TU22", "TU60"}
+# scheduled airlines (never "gov", never "bridge" unless Iranian-registered)
+AIRLINE_CS = set("""GFA OMA OMS KAC JZR MSR IAW IAQ DHX QTR ETD UAE FDB ABY AXB SVA FAD NAS KNE RJA THY PGT AJT TKJ
+AFL PBD RWZ SDM SBI UTA SVR NWS AUL SSF CHH CCA CSN CES CPA CXA CHB DLH CLX NCR TAY ICL TVR UPS FDX GTI CKS AZG KZR UZB
+TJK AHY MEA ELY ISR AIZ RYR EZY WZZ ELB BAW AFR KLM SWR AUA BEL ITY TAP IBE VLG LOT CSA ROT AEE MGX ABW SQC KAL AAR
+JAL ANA SIA THA MAS GIA PIA ALK AIC IGO SEJ AXM FYC SYR ARG ACA AAL DAL UAL BTI FIN SAS NAX EIN EXS TOM CFG""".split())
 
 
 def hex_country(hx):
@@ -206,14 +215,17 @@ def classify_extra(a):
     t = (a.get("t") or "").upper()
     hc = hex_country(a.get("hex") or "")
     flags = a.get("dbFlags") or 0
+    airline = cs[:3] in AIRLINE_CS and cs[3:4].isdigit()
+    if any(cs.startswith(p) for p in BRIDGE_CS) and (in_region(a) or hc in ("IR", "RU", "BY", "CN")):
+        return "bridge_ir", "Iran-linked/sanctioned cargo or RU/BY/CN state callsign"
     if hc == "IR" or reg.startswith("EP-"):
-        return "bridge_ir", "Iranian-registered"
-    if t in BRIDGE_TYPES and (in_region(a) or hc in ("RU", "CN", "BY", "SY", "KP")):
-        return "bridge_ir", f"heavy cargo/state type {t}" + (f" ({hc})" if hc else "")
-    if any(cs.startswith(p) for p in BRIDGE_CS) and in_region(a):
-        return "bridge_ir", "sanctioned/IR-RU-CN cargo or state callsign"
-    if hc in ("RU", "CN", "BY", "SY", "KP") and in_region(a):
+        return "bridge_ir", "Iranian-registered" + (" (airline)" if airline or cs[:3] in ("IRA", "IRC", "IRB", "IRX", "TBZ", "CPN", "VRH") else "")
+    if t in BRIDGE_TYPES and not airline and (in_region(a) or hc in ("RU", "CN", "BY", "SY", "KP")):
+        return "bridge_ir", f"heavy military/state cargo type {t}" + (f" ({hc})" if hc else "")
+    if hc in ("BY", "KP") and in_region(a) and not airline:
         return "bridge_ir", f"{hc}-registered in region"
+    if airline:
+        return None, None
     if any(reg.startswith(p) for p in GOV_REG) or any(cs.startswith(p) for p in GOV_CS):
         return "gov", "government/VIP"
     if flags & 2:
@@ -254,11 +266,15 @@ def _get_ac(path, retries=2):
 
 
 def fetch_point(lat, lon, radius=250):
+    import time
+    time.sleep(0.6)  # with the 1.2 s pause in collect.py: ~1.8 s between calls (4 points still hit 429 at 1.2 s)
     return _get_ac(f"/v2/point/{lat}/{lon}/{radius}")
 
 
 def fetch_global(kind):
     """kind: 'mil' or 'type/IL76' etc. Global endpoints, filtered to the region by the caller."""
+    import time
+    time.sleep(0.8)
     return _get_ac(f"/v2/{kind}")
 
 
